@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/DarknessRandomizer/Hollow Knight 1.5 Mod1/LocalBuildProperties.props
+/DarknessRandomizer/LocalBuildProperties.props

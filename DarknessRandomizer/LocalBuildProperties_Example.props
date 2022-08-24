@@ -1,0 +1,6 @@
+﻿<Project>
+  <PropertyGroup>
+    <HollowKnightRefs>???/hollow_knight_Data/Managed</HollowKnightRefs>
+    <ExportDir>???</ExportDir>
+  </PropertyGroup>
+</Project>
