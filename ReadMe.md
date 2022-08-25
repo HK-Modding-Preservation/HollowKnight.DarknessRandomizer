@@ -1,16 +1,18 @@
 # Darkness Randomizer Mod
 
-A Rando4 connection mod to randomize dark rooms in Hallownest.
+DISCLAIMER: This documentation is aspirational. The mod is under development, and not yet released.
 
-Search "DarknessRandomizer" on Scarab to install. Requires [Rando 4](https://github.com/homothetyhk/RandomizerMod) and [ItemChangerDataLoader](https://github.com/homothetyhk/ItemChangerDataLoader). Compatible with (but does not require) [RandoPlus](https://github.com/flibber-hk/HollowKnight.RandoPlus), specifically the "Not Lantern" setting.
+A Rando 4 connection mod to randomize dark rooms in Hallownest.
+
+Search "DarknessRandomizer" on Scarab to install. Requires [Rando 4](https://github.com/homothetyhk/RandomizerMod) and [ItemChanger](https://github.com/homothetyhk/HollowKnight.ItemChanger). Compatible with (but does not require) [RandoPlus](https://github.com/flibber-hk/HollowKnight.RandoPlus), specifically the "Not Lantern" setting.
 
 Probably doesn't work well with Room Rando, but you're welcome to try.
 
-## How it works
+## Darkness Randomization
 
-DarknessRandomizer subdivides Hallownest into various connected sections, somewhat more granular than Map areas.  Depending on the darkness setting you choose, some number of 'leaf' sections are converted to pure darkness, and some number of adjacent and other sections are converted to semi-darkness.  Generally, except for some one-off rooms with special handling, you will always encounter semi-darkness in a region prior to encountering and pure-darkness in that region.
+DarknessRandomizer randomly selects various corners of Hallownest to make dark, and slowly spreads the darkness from them to the rest of the map based on a hand-crafted set of probability and cost weights. High-connectivity areas, especially those traversable with low movement (like crossroads) have low probabilities, while corners of the map like Oro and Soul Sanctum are weighted more highly. This ensures that, most of the time, you will have access to a large swath of the map without Lantern, allowing Logic to place Lantern late in progression and provide interesting seeds.
 
-This helps to provide a natural feel to the darkness, and helps ensure that Logic doesn't force Lumafly Lantern to be accessible too early. Some areas, including whatever your starting location is, as well as Dirtmouth, will always be well-lit.
+Darkness is gradual and smooth. Your starting position, and its immediate surroundings, are always well-lit for safety, but at almost any point you can encounter semi-darkness, and then eventually, darkness. Some areas, like Dirtmouth, always bright.
 
 ## Interactables
 
@@ -22,8 +24,6 @@ Semi-darkness has no effect on Logic, and only provides a slight challenge incre
 
 Rooms with particularly difficult platforming or enemies are not in Logic while dark unless Difficult Skips or Proficient Combat, respectively, are also enabled in skips. For instance, a true-dark Path of Pain is not in Logic without Lantern unless both Dark Rooms and Difficult Skips are enabled.
 
-There are some minor exceptions.  Rooms with no hazards and negligible platforming can be in logic even if they are fully dark; for instance, obtaining Greenpath Stag will put the stag check in logic even if the room is completely dark, but anything outside the stag room will remain out of logic.
-
 ## Don't Forget!
 
-While DarknessRandomizer generally adds darkness, it can also take it away! Don't forget to check the peaks' toll, darknest, No Eyes, etc., to see if you can make progress there without having Lantern.
+While DarknessRandomizer generally adds darkness, it can also take it away! Don't forget to check the areas where Hallownest is normally dark, to see if you can make progress there anyway without lantern.
