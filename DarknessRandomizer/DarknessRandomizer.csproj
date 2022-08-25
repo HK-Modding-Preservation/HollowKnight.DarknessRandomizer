@@ -61,6 +61,9 @@
     <Reference Include="GalaxyCSharp">
       <HintPath>$(HollowKnightRefs)/GalaxyCSharp.dll</HintPath>
     </Reference>
+    <Reference Include="ItemChanger">
+      <HintPath>$(HollowKnightRefs)/Mods/ItemChanger/ItemChanger.dll</HintPath>
+    </Reference>
     <Reference Include="MMHOOK_Assembly-CSharp">
       <HintPath>$(HollowKnightRefs)/MMHOOK_Assembly-CSharp.dll</HintPath>
     </Reference>
@@ -87,6 +90,12 @@
     </Reference>
     <Reference Include="PlayMaker">
       <HintPath>$(HollowKnightRefs)/PlayMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="Randomizer 4">
+      <HintPath>$(HollowKnightRefs)/Mods/Randomizer 4/RandomizerMod.dll</HintPath>
+    </Reference>
+    <Reference Include="RandomizerCore">
+      <HintPath>$(HollowKnightRefs)/Mods/RandomizerCore/RandomizerCore.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Composition">
       <HintPath>$(HollowKnightRefs)/System.ComponentModel.Composition.dll</HintPath>

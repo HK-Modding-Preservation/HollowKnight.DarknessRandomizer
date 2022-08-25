@@ -7,9 +7,10 @@ using UObject = UnityEngine.Object;
 
 namespace DarknessRandomizer
 {
-    public class DarknessRandomizer : Mod
+    public class DarknessRandomizer : Mod, IGlobalSettings<GlobalSettings>
     {
-        internal static DarknessRandomizer Instance;
+        public static DarknessRandomizer Instance { get; private set; }
+        public static GlobalSettings GS { get; private set; } = new();
 
         public DarknessRandomizer() : base("DarknessRandomizer") { }
 
@@ -17,5 +18,12 @@ namespace DarknessRandomizer
         {
             Instance = this;
         }
+
+        public void OnLoadGlobal(GlobalSettings s)
+        {
+            GS = s ?? new();
+        }
+
+        public GlobalSettings OnSaveGlobal() => GS ?? new();
     }
 }
