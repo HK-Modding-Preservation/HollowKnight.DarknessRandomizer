@@ -109,19 +109,56 @@ namespace DarknessRandomizer.Lib
             get { return sourceNodes; }
         }
 
+        private static ClusterRelativity Oppose(ClusterRelativity cr)
+        {
+            switch (cr)
+            {
+                case ClusterRelativity.LevelOrBrighter:
+                    return ClusterRelativity.LevelOrDarker;
+                case ClusterRelativity.LevelOrDarker:
+                    return ClusterRelativity.LevelOrDarker;
+                case ClusterRelativity.DarkerOrBrighter:
+                    return ClusterRelativity.DarkerOrBrighter;
+            }
+            throw new ArgumentException($"Unknown ClusterRelativity {cr}");
+        }
+
         public void Init()
         {
             sceneLookup = new();
             sourceNodes = new();
 
             foreach (var item in Clusters) {
-                if (item.Value.IsDarknessSource)
+                var name = item.Key;
+                var cluster = item.Value;
+
+                if (cluster.IsDarknessSource)
                 {
-                    sourceNodes.Add(item.Key);
+                    sourceNodes.Add(name);
                 }
-                foreach (var scene in item.Value.Scenes.Keys)
+                foreach (var scene in cluster.Scenes.Keys)
                 {
-                    sceneLookup.Add(scene, item.Key);
+                    sceneLookup.Add(scene, name);
+                }
+
+                // Mirror connections
+                foreach (var e in item.Value.AdjacentClusters)
+                {
+                    var nname = e.Key;
+                    var cr = e.Value;
+                    var ncluster = Clusters[nname];
+
+                    if (cluster.AdjacentClusters.TryGetValue(name, out ClusterRelativity ncr))
+                    {
+                        if (ncr != Oppose(cr))
+                        {
+                            throw new ArgumentException($"Clusters {name} and {nname} have mismatched ClusterRelativity");
+                        }
+                    }
+                    else
+                    {
+                        ncluster.AdjacentClusters[name] = Oppose(cr);
+                    }
                 }
             }
         }
