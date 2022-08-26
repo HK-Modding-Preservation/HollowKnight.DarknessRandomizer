@@ -10,7 +10,7 @@ namespace DarknessRandomizer.Lib
     //
     // This helps places like dark Path of Pain feel rewarding, and can allow players to confidently avoid them if they choose,
     // by ensuring that if the entrance is dark... the rest of it will be, too.
-    public enum ClusterRelativity : int
+    public enum RelativeDarkness : int
     {
         Brightwards = 0,
         None = 1,
@@ -60,7 +60,7 @@ namespace DarknessRandomizer.Lib
         }
 
         // Adjacent clusters, defined by relative darkness.
-        public Dictionary<Cluster, ClusterRelativity> AdjacentClusters = new();
+        public Dictionary<Cluster, RelativeDarkness> AdjacentClusters = new();
 
         // If false, darkness cannot start here even if it otherwise could.
         // It must start somewhere adjacent and spread here instead.
@@ -80,7 +80,7 @@ namespace DarknessRandomizer.Lib
 
                 foreach (var cr in AdjacentClusters.Values)
                 {
-                    if (cr == ClusterRelativity.Darkwards) return false;
+                    if (cr == RelativeDarkness.Darkwards) return false;
                 }
                 return true;
             }
@@ -134,16 +134,16 @@ namespace DarknessRandomizer.Lib
             get { return sourceNodes; }
         }
 
-        private static ClusterRelativity Oppose(ClusterRelativity cr)
+        private static RelativeDarkness Oppose(RelativeDarkness cr)
         {
             switch (cr)
             {
-                case ClusterRelativity.Brightwards:
-                    return ClusterRelativity.Darkwards;
-                case ClusterRelativity.Darkwards:
-                    return ClusterRelativity.Darkwards;
-                case ClusterRelativity.None:
-                    return ClusterRelativity.None;
+                case RelativeDarkness.Brightwards:
+                    return RelativeDarkness.Darkwards;
+                case RelativeDarkness.Darkwards:
+                    return RelativeDarkness.Darkwards;
+                case RelativeDarkness.None:
+                    return RelativeDarkness.None;
             }
             throw new ArgumentException($"Unknown ClusterRelativity {cr}");
         }
@@ -174,7 +174,7 @@ namespace DarknessRandomizer.Lib
                     var cr = e.Value;
                     var ncluster = Clusters[nname];
 
-                    if (cluster.AdjacentClusters.TryGetValue(name, out ClusterRelativity ncr))
+                    if (cluster.AdjacentClusters.TryGetValue(name, out RelativeDarkness ncr))
                     {
                         if (ncr != Oppose(cr))
                         {

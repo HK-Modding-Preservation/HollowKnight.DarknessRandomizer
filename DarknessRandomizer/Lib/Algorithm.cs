@@ -98,7 +98,7 @@ namespace DarknessRandomizer.Lib
                 {
                     semiDarkCandidates.Add(nname);
                     if (ncluster.MaximumDarkness >= Darkness.Dark && ncluster.AdjacentClusters.All(
-                        cr => cr.Value != ClusterRelativity.Darkwards || clusterDarkness[cr.Key] == Darkness.Dark))
+                        cr => cr.Value != RelativeDarkness.Darkwards || clusterDarkness[cr.Key] == Darkness.Dark))
                     {
                         darkCandidates.Add(nname, ncluster.ProbabilityWeight);
                     }
