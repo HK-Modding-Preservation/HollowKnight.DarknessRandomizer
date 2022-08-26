@@ -1,5 +1,6 @@
 ﻿using DarknessRandomizer.Lib;
 using Modding;
+using RandomizerMod.RandomizerData;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -15,11 +16,11 @@ namespace DarknessRandomizer.Rando
         public DarknessRandomizationSettings Settings;
         public Dictionary<string, Darkness> DarknessOverrides;
 
-        public LocalSettings(int seed)
+        public LocalSettings(int seed, StartDef startDef)
         {
             Settings = DarknessRandomizer.GS.DarknessRandomizationSettings.Clone();
 
-            Algorithm algorithm = new(seed, Settings, Graph.Instance);
+            Algorithm algorithm = new(seed, startDef, Settings, Graph.Instance);
             DarknessOverrides = algorithm.SelectDarknessLevels();
         }
     }

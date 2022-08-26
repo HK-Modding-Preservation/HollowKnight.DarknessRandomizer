@@ -32,7 +32,7 @@ namespace DarknessRandomizer.Rando
         {
             if (!RandoInterop.IsEnabled()) return;
 
-            RandoInterop.Initialize(gs.Seed);
+            lmb.VariableResolver = new DarknessVariableResolver(lmb.VariableResolver);
 
             // We want to generically modify logic by location (SceneName), but unfortunately the LogicManager is constructed
             // before any of the location info is provided via the RequestBuilder, so we have to be creative.
@@ -113,19 +113,6 @@ namespace DarknessRandomizer.Rando
                 (combat ? "PROFICIENTCOMBAT" : "DARKROOMS");
         }
 
-        private static readonly HashSet<string> VanillaDarkScenes = new()
-        {
-            Scenes.CliffsJonisDark,
-            Scenes.CrossroadsPeakDarkToll,
-            Scenes.CrystalDarkRoom,
-            Scenes.DeepnestFirstDevout,
-            Scenes.DeepnestMidwife,
-            Scenes.DeepnestOutsideGalien,
-            Scenes.DeepnestOutsideMaskMaker,
-            Scenes.DeepnestWhisperingRoot,
-            Scenes.GreenpathStoneSanctuary
-        };
-
         private static void EditSceneClause(LogicManagerBuilder lmb, string name, HashSet<string> scenes)
         {
             if (scenes.Count == 0)
@@ -133,47 +120,19 @@ namespace DarknessRandomizer.Rando
                 return;
             }
 
-            bool anyDarkness = false;
-            bool anyNewDarkness = false;
-            bool anyBrightness = false;
-            bool anyNewBrightness = false;
-            foreach (var scene in scenes)
-            {
-                if (RandoInterop.LS.DarknessOverrides.TryGetValue(scene, out Darkness d))
-                {
-                    if (d == Darkness.Dark)
-                    {
-                        anyDarkness |= true;
-                        anyNewDarkness |= !VanillaDarkScenes.Contains(scene);
-                    }
-                    else
-                    {
-                        anyBrightness |= true;
-                        anyNewBrightness |= VanillaDarkScenes.Contains(scene);
-                    }
-                }
-            }
+            // Relax the LANTERN constraint for scenes which have been brightened.
+            lmb.DoSubst(new(name, "LANTERN", $"(LANTERN | $DarknessBrightened[{String.Join(",", scenes)}])"));
 
-            if (anyNewDarkness)
-            {
-                lmb.DoLogicEdit(new(name, $"ORIG + (LANTERN | {GetDarkLogic(scenes, name)})"));
-            }
-            else if (anyNewBrightness && !anyDarkness)
-            {
-                lmb.DoSubst(new(name, "LANTERN", "ANY"));
-            }
+            // Add a darkness constraint for scenes which have been darkened.
+            lmb.DoLogicEdit(new(
+                name, $"ORIG + ($DarknessNotDarkened[{String.Join(",", scenes)}] | LANTERN | {GetDarkLogic(scenes, name)})"));
         }
 
         // TODO: Fix with bench rando
         private static Action GreenpathTollBenchOverride(LogicManagerBuilder lmb, string name, LogicClause lc)
         {
-            if (RandoInterop.LS.DarknessOverrides[Scenes.GreenpathToll] != Darkness.Dark)
-            {
-                return () => { };
-            }
-
             // The bench toll can't be opened without lantern, so we need to remove 'DARKROOMS' from the logic override.
-            return () => lmb.DoLogicEdit(new(name, "ORIG + LANTERN"));
+            return () => lmb.DoLogicEdit(new(name, $"ORIG + (LANTERN | $DarknessNotDarkened[{Scenes.GreenpathToll}])"));
         }
     }
 }

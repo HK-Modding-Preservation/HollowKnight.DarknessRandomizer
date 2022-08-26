@@ -10,31 +10,18 @@ namespace DarknessRandomizer.Rando
 {
     public static class RandoInterop
     {
-        public static LocalSettings LS { get; private set; }
+        public static LocalSettings LS { get; set; }
 
         public static void Setup()
         {
             ConnectionMenu.Setup();
             LogicPatcher.Setup();
+            RequestModifier.Setup();
 
             RandoController.OnExportCompleted += Finish;
         }
 
-        public static void Clear()
-        {
-            LS = null;
-        }
-
-        public static bool IsEnabled()
-        {
-            return DarknessRandomizer.GS.DarknessRandomizationSettings.RandomizeDarkness;
-        }
-
-        public static void Initialize(int seed)
-        {
-            Clear();
-            LS = new(seed);
-        }
+        public static bool IsEnabled() => DarknessRandomizer.GS.DarknessRandomizationSettings.RandomizeDarkness;
 
         public static void Finish(RandoController rc)
         {

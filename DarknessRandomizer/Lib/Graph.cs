@@ -127,13 +127,6 @@ namespace DarknessRandomizer.Lib
             return false;
         }
 
-        // Clusters which have no 'darker' edges, and thus can be a source of darkness.
-        private HashSet<Cluster> sourceNodes;
-        public IEnumerable<Cluster> SourceNodes
-        {
-            get { return sourceNodes; }
-        }
-
         private static RelativeDarkness Oppose(RelativeDarkness cr)
         {
             switch (cr)
@@ -151,7 +144,6 @@ namespace DarknessRandomizer.Lib
         public void Init()
         {
             sceneLookup = new();
-            sourceNodes = new();
 
             foreach (var item in Clusters) {
                 var name = item.Key;

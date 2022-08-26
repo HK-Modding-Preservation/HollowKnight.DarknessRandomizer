@@ -1,5 +1,6 @@
 ﻿using DarknessRandomizer.Data;
 using DarknessRandomizer.Rando;
+using RandomizerMod.RandomizerData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,20 +16,27 @@ namespace DarknessRandomizer.Lib
         private readonly Graph g;
 
         private int darknessAvailable;
-        private readonly WeightedHeap<Cluster> darkCandidates;
         private readonly Dictionary<Cluster, Darkness> clusterDarkness;
+        private readonly WeightedHeap<Cluster> darkCandidates;
         private readonly HashSet<Cluster> semiDarkCandidates;
+        private readonly HashSet<Cluster> forbiddenClusters;
 
-        public Algorithm(int seed, DarknessRandomizationSettings settings, Graph g)
+        public Algorithm(int seed, StartDef startDef, DarknessRandomizationSettings settings, Graph g)
         {
             this.r = new(seed);
             this.settings = settings;
             this.g = g;
 
             this.darknessAvailable = 1000;  // FIXME; based on settings
+            this.clusterDarkness = new();
             this.darkCandidates = new();
             this.semiDarkCandidates = new();
-            this.clusterDarkness = new();
+            this.forbiddenClusters = new();
+
+            foreach (var c in Starts.GetStartClusters(startDef.Name))
+            {
+                this.forbiddenClusters.Add(c);
+            }
         }
 
         public Dictionary<string, Darkness> SelectDarknessLevels()
@@ -40,10 +48,15 @@ namespace DarknessRandomizer.Lib
             }
 
             // Phase 1: Select source nodes until we run out of darkness.
-            foreach (var c in g.SourceNodes)
+            foreach (var e in g.Clusters)
             {
-                // FIXME: Don't allow the starting area to be darkened.
-                darkCandidates.Add(c, g.Clusters[c].ProbabilityWeight);
+                var cluster = e.Key;
+                var data = e.Value;
+
+                if (!forbiddenClusters.Contains(cluster))
+                {
+                    darkCandidates.Add(cluster, data.ProbabilityWeight);
+                }
             }
             while (!darkCandidates.IsEmpty() && darknessAvailable > 0)
             {
@@ -88,7 +101,7 @@ namespace DarknessRandomizer.Lib
             // Add adjacent clusters if constraints are satisfied.
             foreach (var nname in cluster.AdjacentClusters.Keys)
             {
-                if (clusterDarkness[nname] == Darkness.Dark || darkCandidates.Contains(nname))
+                if (clusterDarkness[nname] == Darkness.Dark || darkCandidates.Contains(nname) || forbiddenClusters.Contains(name))
                 {
                     continue;
                 }

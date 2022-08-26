@@ -92,7 +92,7 @@ namespace DarknessRandomizer.Data
 
             g.Clusters[Cluster.GreenpathLower] = new() {
                 Scenes = new() {
-                    { Scenes.GreenpathChargerCorridor, new() },
+                    { Scenes.GreenpathAcidBridge, new() },
                     { Scenes.GreenpathAboveSanctuaryBench, new() },
                     { Scenes.GreenpathOutsideHunter, new() },
                     { Scenes.GreenpathHunter, new() { MaximumDarkness = Darkness.SemiDark } } },

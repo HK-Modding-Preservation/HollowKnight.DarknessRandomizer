@@ -8,17 +8,30 @@ Search "DarknessRandomizer" on Scarab to install. Requires [Rando 4](https://git
 
 Probably doesn't work well with Room Rando, but you're welcome to try.
 
-## Darkness Randomization
+## Settings
+
+* Randomize Darkness: Enable to randomize dark rooms. Disable to not.
+* Darkness Level:
+  * _Dim_: Vanilla levels of darkness. Less than 5% of hallownest will be dark.
+  * _Dark_: Moderate levels of darkness. About 10-20% of hallownest will be dark.
+  * _Cursed_: Extreme levels of darkness. Up to 50% of hallownest will be dark.
+
+Some rooms will never be dark, some will never even be dim.
+Some rooms can only be dark on the Cursed setting.
+
+## How it Works
+
+### Darkness Randomization
 
 DarknessRandomizer randomly selects various corners of Hallownest to make dark, and slowly spreads the darkness from them to the rest of the map based on a hand-crafted set of probability and cost weights. High-connectivity areas, especially those traversable with low movement (like crossroads) have low probabilities, while corners of the map like Oro and Soul Sanctum are weighted more highly. This ensures that, most of the time, you will have access to a large swath of the map without Lantern, allowing Logic to place Lantern late in progression and provide interesting seeds.
 
 Darkness is gradual and smooth. Your starting position, and its immediate surroundings, are always well-lit for safety, but at almost any point you can encounter semi-darkness, and then eventually, darkness. Some areas, like Dirtmouth, always bright.
 
-## Interactables
+### Interactables
 
 Similar to No Eyes and the peaks toll gate, dark rooms render certain interactables inoperable without lantern if the room is dark. In general, toll gates, locked doors, and similar devices cannot be interacted with if the room is dark and the player doesn't have Lantern. If you find an interactable that doesn't obey this rule, it's probably a bug or an oversight.
 
-## Logic Changes
+### Logic Changes
 
 Semi-darkness has no effect on Logic, and only provides a slight challenge increase. In a room with true darkness, all checks and transitions are gated either by having Lantern, or having Dark Rooms enabled in skips.
 
