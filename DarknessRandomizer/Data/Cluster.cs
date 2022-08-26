@@ -8,10 +8,21 @@ namespace DarknessRandomizer.Data
 {
     public enum Cluster : int
     {
+        CliffsBaldur,
+        CliffsJonis,
+        CliffsMain,
+        GreenpathCliffsBridge,
+        GreenpathHornet,
         GreenpathLeft,
-        Hornet,
-        Sheo,
-        Unn,
-        UnnPass
+        GreenpathLower,
+        GreenpathMMC,
+        GreenpathNoEyes,
+        GreenpathOutsideNoEyes,
+        GreenpathSheo,
+        GreenpathThorns,
+        GreenpathUnn,
+        GreenpathUnnPass,
+        GreenpathUpper,
+        KingsPass,
     }
 }

@@ -11,9 +11,9 @@ namespace DarknessRandomizer.Lib
     // by ensuring that if the entrance is dark... the rest of it will be, too.
     public enum ClusterRelativity : int
     {
-        LevelOrBrighter = 0,
-        DarkerOrBrighter = 1,
-        LevelOrDarker = 2
+        Brightwards = 0,
+        None = 1,
+        Darkwards = 2
     }
 
     // Data specific to a scene.
@@ -74,7 +74,7 @@ namespace DarknessRandomizer.Lib
 
                 foreach (var cr in AdjacentClusters.Values)
                 {
-                    if (cr == ClusterRelativity.LevelOrDarker) return false;
+                    if (cr == ClusterRelativity.Darkwards) return false;
                 }
                 return true;
             }
@@ -124,12 +124,12 @@ namespace DarknessRandomizer.Lib
         {
             switch (cr)
             {
-                case ClusterRelativity.LevelOrBrighter:
-                    return ClusterRelativity.LevelOrDarker;
-                case ClusterRelativity.LevelOrDarker:
-                    return ClusterRelativity.LevelOrDarker;
-                case ClusterRelativity.DarkerOrBrighter:
-                    return ClusterRelativity.DarkerOrBrighter;
+                case ClusterRelativity.Brightwards:
+                    return ClusterRelativity.Darkwards;
+                case ClusterRelativity.Darkwards:
+                    return ClusterRelativity.Darkwards;
+                case ClusterRelativity.None:
+                    return ClusterRelativity.None;
             }
             throw new ArgumentException($"Unknown ClusterRelativity {cr}");
         }

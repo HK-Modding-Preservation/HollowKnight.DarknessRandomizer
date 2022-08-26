@@ -13,6 +13,43 @@ namespace DarknessRandomizer.Data
         {
             Graph g = new();
 
+            g.Clusters[Cluster.CliffsBaldur] = new() {
+                Scenes = new() { { Scenes.CliffsBaldursShell, new() } },
+                AdjacentClusters = new() {
+                    { Cluster.CliffsMain, ClusterRelativity.Darkwards },
+                    { Cluster.GreenpathLeft, ClusterRelativity.Darkwards } },
+                ProbabilityWeight = 80 };
+
+            g.Clusters[Cluster.CliffsJonis] = new() {
+                Scenes = new() { { Scenes.CliffsJonisDark, new() } },
+                AdjacentClusters = new() { { Cluster.CliffsMain, ClusterRelativity.Brightwards } },
+                ProbabilityWeight = 80 };
+
+            g.Clusters[Cluster.CliffsMain] = new() {
+                Scenes = new() {
+                    { Scenes.CliffsMain, new() },
+                    { Scenes.CliffsGrimmLantern, new() { MaximumDarkness = Darkness.SemiDark } },
+                    { Scenes.CliffsGorb, new() },
+                    { Scenes.CliffsMato, new() { MaximumDarkness = Darkness.SemiDark } },
+                    { Scenes.CliffsStagNest, new() { MaximumDarkness = Darkness.SemiDark } } },
+                AdjacentClusters = new() { { Cluster.KingsPass, ClusterRelativity.None } },
+                ProbabilityWeight = 60,
+                CostWeight = 250,
+                SemiDarkProbabilty = 40 };
+
+            g.Clusters[Cluster.GreenpathCliffsBridge] = new() {
+                Scenes = new() {
+                    { Scenes.GreenpathVengeflyKing, new() },
+                    { Scenes.GreenpathMossKnightArena, new() } },
+                AdjacentClusters = new() {
+                    { Cluster.GreenpathLeft, ClusterRelativity.Darkwards },
+                    { Cluster.CliffsMain, ClusterRelativity.None } } };
+
+            g.Clusters[Cluster.GreenpathHornet] = new() {
+                Scenes = new() { { Scenes.GreenpathHornet, new() } },
+                ProbabilityWeight = 120,
+                CostWeight = 80 };
+
             g.Clusters[Cluster.GreenpathLeft] = new() {
                 Scenes = new() {
                     { Scenes.GreenpathOutsideHornet, new() },
@@ -20,17 +57,43 @@ namespace DarknessRandomizer.Data
                     { Scenes.GreenpathStag, new() { MaximumDarkness = Darkness.SemiDark } },
                     { Scenes.GreenpathBelowTollBench, new() } },
                 AdjacentClusters = new() {
-                    { Cluster.Hornet, ClusterRelativity.LevelOrDarker },
-                    { Cluster.Sheo, ClusterRelativity.DarkerOrBrighter } },
+                    { Cluster.GreenpathHornet, ClusterRelativity.Darkwards },
+                    { Cluster.GreenpathSheo, ClusterRelativity.None } },
                 ProbabilityWeight = 60,
-                CostWeight = 200 };
+                CostWeight = 200,
+                SemiDarkProbabilty = 80 };
 
-            g.Clusters[Cluster.Hornet] = new() {
-                Scenes = new() { { Scenes.GreenpathHornet, new() } },
-                ProbabilityWeight = 120,
-                CostWeight = 80 };
+            g.Clusters[Cluster.GreenpathLower] = new() {
+                Scenes = new() {
+                    { Scenes.GreenpathChargerCorridor, new() },
+                    { Scenes.GreenpathAboveSanctuaryBench, new() },
+                    { Scenes.GreenpathOutsideHunter, new() },
+                    { Scenes.GreenpathHunter, new() { MaximumDarkness = Darkness.SemiDark } } },
+                AdjacentClusters = new() { { Cluster.GreenpathOutsideNoEyes, ClusterRelativity.None } },
+                ProbabilityWeight = 60,
+                CostWeight = 200,
+                SemiDarkProbabilty = 80 };
 
-            g.Clusters[Cluster.Sheo] = new() {
+            g.Clusters[Cluster.GreenpathMMC] = new() {
+                Scenes = new() {
+                    { Scenes.GreenpathMassiveMossCharger, new() },
+                    { Scenes.GreenpathMMCCorridor, new() } },
+                AdjacentClusters = new() { { Cluster.GreenpathOutsideNoEyes, ClusterRelativity.Brightwards } },
+                ProbabilityWeight = 80,
+                CostWeight = 120 };
+
+            g.Clusters[Cluster.GreenpathNoEyes] = new() {
+                Scenes = new() { { Scenes.GreenpathStoneSanctuary, new() } } };
+
+            g.Clusters[Cluster.GreenpathOutsideNoEyes] = new() {
+                Scenes = new() {
+                    { Scenes.GreenpathAboveFogCanyon, new() },
+                    { Scenes.GreenpathSanctuaryBench, new() { MaximumDarkness = Darkness.SemiDark } },
+                    { Scenes.GreenpathStoneSanctuaryEntrance, new() { MinimumDarkness = Darkness.SemiDark } } },
+                AdjacentClusters = new() { { Cluster.GreenpathNoEyes, ClusterRelativity.None } },
+                CostWeight = 140 };
+
+            g.Clusters[Cluster.GreenpathSheo] = new() {
                 Scenes = new() {
                     {
                         Scenes.GreenpathSheoGauntlet,
@@ -41,7 +104,11 @@ namespace DarknessRandomizer.Data
                 ProbabilityWeight = 80,
                 CostWeight = 200 };
 
-            g.Clusters[Cluster.Unn] = new() {
+            g.Clusters[Cluster.GreenpathThorns] = new() {
+                Scenes = new() { { Scenes.GreenpathThornsofAgony, new() } },
+                CostWeight = 80 };
+
+            g.Clusters[Cluster.GreenpathUnn] = new() {
                 Scenes = new() {
                     { Scenes.GreenpathLakeOfUnn, new() },
                     { Scenes.GreenpathUnn, new() },
@@ -49,12 +116,32 @@ namespace DarknessRandomizer.Data
                 ProbabilityWeight = 80,
                 CostWeight = 50 };
 
-            g.Clusters[Cluster.UnnPass] = new() {
+            g.Clusters[Cluster.GreenpathUnnPass] = new() {
                 Scenes = new() {
                     { Scenes.GreenpathCorridortoUnn, new() { MaximumDarkness = Darkness.SemiDark } } },
                 AdjacentClusters = new() {
-                    { Cluster.Unn, ClusterRelativity.LevelOrDarker },
-                    { Cluster.Hornet, ClusterRelativity.LevelOrDarker } } };
+                    { Cluster.GreenpathUnn, ClusterRelativity.Darkwards },
+                    { Cluster.GreenpathHornet, ClusterRelativity.Darkwards } } };
+
+            g.Clusters[Cluster.GreenpathUpper] = new() {
+                Scenes = new() {
+                    { Scenes.GreenpathOutsideThorns, new() },
+                    { Scenes.GreenpathToll, new() },
+                    { Scenes.GreenpathStorerooms, new() },
+                    { Scenes.GreenpathFirstHornetSighting, new() },
+                    { Scenes.GreenpathCornifer, new() },
+                    { Scenes.GreenpathChargerCorridor, new() } },
+                AdjacentClusters = new() {
+                    { Cluster.GreenpathCliffsBridge, ClusterRelativity.None },
+                    { Cluster.GreenpathLower, ClusterRelativity.None },
+                    { Cluster.GreenpathThorns, ClusterRelativity.Darkwards } },
+                ProbabilityWeight = 20,
+                CostWeight = 300,
+                SemiDarkProbabilty = 30 };
+
+            g.Clusters[Cluster.KingsPass] = new() {
+                Scenes = new() { { Scenes.KingsPass, new() } },
+                CostWeight = 50 };
 
             g.Init();
             return g;
