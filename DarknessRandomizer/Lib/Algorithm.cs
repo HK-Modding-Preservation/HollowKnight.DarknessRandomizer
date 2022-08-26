@@ -14,8 +14,9 @@ namespace DarknessRandomizer.Lib
         private readonly Graph g;
 
         private int darknessAvailable;
-        private readonly WeightedHeap<String> darknessSources;
+        private readonly WeightedHeap<String> darkCandidates;
         private readonly Dictionary<String, Darkness> clusterDarkness;
+        private readonly HashSet<String> semiDarkCandidates;
 
         public Algorithm(int seed, DarknessRandomizationSettings settings, Graph g)
         {
@@ -24,7 +25,8 @@ namespace DarknessRandomizer.Lib
             this.g = g;
 
             this.darknessAvailable = 1000;  // FIXME; based on settings
-            this.darknessSources = new();
+            this.darkCandidates = new();
+            this.semiDarkCandidates = new();
             this.clusterDarkness = new();
         }
 
@@ -37,22 +39,22 @@ namespace DarknessRandomizer.Lib
             }
 
             // Phase 1: Select source nodes until we run out of darkness.
-            foreach (var cluster in g.SourceNodes)
+            foreach (var c in g.SourceNodes)
             {
                 // FIXME: Don't allow the starting area to be darkened.
-                int weight = g.Clusters[cluster].ProbabilityWeight;
-                darknessSources.Add(cluster, weight);
+                darkCandidates.Add(c, g.Clusters[c].ProbabilityWeight);
             }
-            while (!darknessSources.IsEmpty() && darknessAvailable > 0)
+            while (!darkCandidates.IsEmpty() && darknessAvailable > 0)
             {
                 SelectNewDarknessNode();
             }
 
             // Phase 2: Turn the remaining nodes into semi-darkness with high probability.
-            foreach (var (c, _) in darknessSources.EnumerateSorted())
+            var scs = semiDarkCandidates.ToList();
+            scs.Sort();
+            foreach (var c in scs)
             {
-                var cluster = g.Clusters[c];
-                if (r.Next(0, 100) < cluster.SemiDarkProbabilty)
+                if (r.Next(0, 100) < g.Clusters[c].SemiDarkProbabilty)
                 {
                     clusterDarkness[c] = Darkness.SemiDark;
                 }
@@ -78,31 +80,31 @@ namespace DarknessRandomizer.Lib
 
         private void SelectNewDarknessNode()
         {
-            var name = darknessSources.Remove(r);
-            var cluster = g.Clusters[name];
+            var name = darkCandidates.Remove(r);
             clusterDarkness[name] = Darkness.Dark;
-            
-            // This can go negative; fixing that means we need to prune the map.
+            semiDarkCandidates.Remove(name);
+
+            // This can go negative; fixing that means we need to prune the map of high cost clusters.
+            var cluster = g.Clusters[name];
             darknessAvailable -= cluster.CostWeight;
 
             // Add adjacent clusters if constraints are satisfied.
             foreach (var nname in cluster.AdjacentClusters.Keys)
             {
-                if (clusterDarkness[name] == Darkness.Dark || darknessSources.Contains(nname))
+                if (clusterDarkness[nname] == Darkness.Dark || darkCandidates.Contains(nname))
                 {
                     continue;
                 }
 
-                var neighbor = g.Clusters[nname];
-                if (neighbor.MaximumDarkness < Darkness.Dark)
+                var ncluster = g.Clusters[nname];
+                if (ncluster.MaximumDarkness >= Darkness.SemiDark)
                 {
-                    continue;
-                }
-
-                if (neighbor.AdjacentClusters.All(
-                    cr => cr.Value != ClusterRelativity.LevelOrDarker || clusterDarkness[cr.Key] == Darkness.Dark))
-                {
-                    darknessSources.Add(nname, neighbor.ProbabilityWeight);
+                    semiDarkCandidates.Add(nname);
+                    if (ncluster.MaximumDarkness >= Darkness.Dark && ncluster.AdjacentClusters.All(
+                        cr => cr.Value != ClusterRelativity.LevelOrDarker || clusterDarkness[cr.Key] == Darkness.Dark))
+                    {
+                        darkCandidates.Add(nname, ncluster.ProbabilityWeight);
+                    }
                 }
             }
         }

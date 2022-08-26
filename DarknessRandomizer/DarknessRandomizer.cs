@@ -13,6 +13,7 @@ namespace DarknessRandomizer
     {
         public static DarknessRandomizer Instance { get; private set; }
         public static GlobalSettings GS { get; private set; } = new();
+        public static readonly Graph Graph = Graph.Instance;
 
         public DarknessRandomizer() : base("DarknessRandomizer")
         {

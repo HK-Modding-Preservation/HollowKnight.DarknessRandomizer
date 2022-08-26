@@ -18,6 +18,7 @@ namespace DarknessRandomizer.Data
                     { Scenes.GreenpathLakeOfUnn, new() },
                     { Scenes.GreenpathUnn, new() },
                     { Scenes.GreenpathUnnBench, new() { MaximumDarkness = Darkness.SemiDark} } },
+                ProbabilityWeight = 50,
                 CostWeight = 50 };
 
             g.Init();

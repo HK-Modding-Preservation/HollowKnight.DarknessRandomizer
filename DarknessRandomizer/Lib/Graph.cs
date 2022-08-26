@@ -91,7 +91,7 @@ namespace DarknessRandomizer.Lib
     {
         public static Graph Instance = GraphData.LoadGraph();
 
-        public Dictionary<String, SceneCluster> Clusters;
+        public Dictionary<String, SceneCluster> Clusters = new();
 
         // Map of scene names to cluster names.
         private Dictionary<String, String> sceneLookup;
