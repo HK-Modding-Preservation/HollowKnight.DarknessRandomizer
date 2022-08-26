@@ -8,7 +8,6 @@ namespace DarknessRandomizer.Rando
 {
     public enum DarknessLevel
     {
-        Vanilla,
         Dim,
         Dark,
         Cursed
@@ -16,7 +15,8 @@ namespace DarknessRandomizer.Rando
 
     public class DarknessRandomizationSettings
     {
-        public DarknessLevel DarknessLevel = DarknessLevel.Vanilla;
+        public bool RandomizeDarkness = false;
+        public DarknessLevel DarknessLevel = DarknessLevel.Dim;
 
         public DarknessRandomizationSettings Clone()
         {

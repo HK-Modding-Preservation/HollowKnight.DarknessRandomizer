@@ -27,7 +27,7 @@ namespace DarknessRandomizer.Rando
 
         public static bool IsEnabled()
         {
-            return DarknessRandomizer.GS.DarknessRandomizationSettings.DarknessLevel != DarknessLevel.Vanilla;
+            return DarknessRandomizer.GS.DarknessRandomizationSettings.RandomizeDarkness;
         }
 
         public static void Initialize(int seed)
