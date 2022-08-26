@@ -18,6 +18,9 @@ namespace DarknessRandomizer.Rando
     {
         public DarknessLevel DarknessLevel = DarknessLevel.Vanilla;
 
-        public DarknessRandomizationSettings Clone() => (DarknessRandomizationSettings)MemberwiseClone();
+        public DarknessRandomizationSettings Clone()
+        {
+            return (DarknessRandomizationSettings)MemberwiseClone();
+        }
     }
 }

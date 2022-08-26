@@ -20,9 +20,15 @@ namespace DarknessRandomizer.Rando
             // TODO: Logger
         }
 
-        public static void Clear() => LS = null;
+        public static void Clear()
+        {
+            LS = null;
+        }
 
-        public static bool IsEnabled() => LS != null && LS.Settings.DarknessLevel != DarknessLevel.Vanilla;
+        public static bool IsEnabled()
+        {
+            return LS != null && LS.Settings.DarknessLevel != DarknessLevel.Vanilla;
+        }
 
         public static void Initialize(int seed)
         {
@@ -33,6 +39,8 @@ namespace DarknessRandomizer.Rando
         public static void Finish(RandoController rc)
         {
             if (!IsEnabled()) return;
+
+            // TODO: Define a module for FSM edits.
 
             var dlem = ItemChangerMod.Modules.GetOrAdd<ItemChanger.Modules.DarknessLevelEditModule>();
             foreach (var entry in LS.DarknessOverrides) {

@@ -7,16 +7,6 @@ using UObject = UnityEngine.Object;
 
 namespace DarknessRandomizer.Lib
 {
-    // The type of darkness assigned to a SceneCluster
-    public enum ClusterDarkness : int
-    {
-        Bright = 0,  // All Bright
-        HalfSemiDark = 1,  // All Bright/SemiDark
-        SemiDark = 2,  // All SemiDark
-        HalfDark = 3,  // All SemiDark/Dark
-        Dark = 4  // All Dark
-    }
-
     // The relative darkness of an adjacent SceneCluster.
     // This enforces, for certain areas, that it can only get darker/brighter deeper in.
     //
@@ -32,23 +22,17 @@ namespace DarknessRandomizer.Lib
     // Data specific to a scene.
     public class Scene
     {
-        // The maximum assignable darkness level to this room.
-        public Darkness MaximumDarkness;
+        public Darkness MinimumDarkness = Darkness.Bright;
+        public Darkness MaximumDarkness = Darkness.Dark;
+        public LocationSet DifficultSkipLocs = LocationSet.NONE;
+        public LocationSet ProficientCombatLocs = LocationSet.NONE;
 
-        // Locations in this set require DIFFICULTSKIPS in addition to DARKROOMS without lantern.
-        public LocationSet DifficultSkipLocs;
-
-        // Locations in this set require PROFICIENTCOMBAT in addition to DARKROOMS without lantern.
-        public LocationSet ProficientCombatLocs;
-    }
-
-    public class Weights
-    {
-        // Relative probability of a specific ClusterDarkness being chosen.
-        public float Probability;
-
-        // Relative cost of a specific ClusterDarkness being chosen.
-        public float Cost;
+        public Darkness Clamp(Darkness d)
+        {
+            if (d < MinimumDarkness) return MinimumDarkness;
+            if (d > MaximumDarkness) return MaximumDarkness;
+            return d;
+        }
     }
 
     // A cluster of adjacent scenes that should share their darkness level.
@@ -59,30 +43,82 @@ namespace DarknessRandomizer.Lib
     public class SceneCluster
     {
         // Scene data for the cluster.
-        public Dictionary<String, Scene> Scenes;
+        public Dictionary<String, Scene> Scenes = new();
 
-        // If false, all scenes in the cluster must have the same darkness level.
-        public Boolean AllowMixed;
+        public Darkness MaximumDarkness
+        {
+            get
+            {
+                var m = Darkness.Bright;
+                foreach (var e in Scenes)
+                {
+                    if (e.Value.MaximumDarkness > m)
+                    {
+                        m = e.Value.MaximumDarkness;
+                    }
+                }
+                return m;
+            }
+        }
 
-        // Adjacent clusters, organized by relative darkness.
-        public Dictionary<ClusterRelativity, HashSet<String>> AdjacentClusters;
+        // Adjacent clusters, defined by relative darkness.
+        public Dictionary<String, ClusterRelativity> AdjacentClusters = new();
 
-        // Optional weights to apply to the probability that this cluster receives the given darkness level.
-        public Dictionary<ClusterDarkness, Weights> Weights;
+        public bool IsDarknessSource
+        {
+            get
+            {
+                foreach (var cr in AdjacentClusters.Values)
+                {
+                    if (cr == ClusterRelativity.LevelOrDarker) return false;
+                }
+                return true;
+            }
+        }
+
+        // The relative probability of this cluster being selected for darkness.
+        public int ProbabilityWeight = 100;
+
+        // The cost of this cluster being selected for darkness.
+        public int CostWeight = 100;
+
+        // The probability that this cluster is made semi-dark if it's adjacent to a dark cluster.
+        public int SemiDarkProbabilty = 100;
     }
 
     public class Graph
     {
-        Dictionary<String, SceneCluster> Clusters;
+        public Dictionary<String, SceneCluster> Clusters;
 
         // Map of scene names to cluster names.
-        [Newtonsoft.Json.JsonIgnore] private Dictionary<String, String> sceneLookup;
+        private Dictionary<String, String> sceneLookup;
+
+        public String ClusterFor(String scene)
+        {
+            if (sceneLookup.TryGetValue(scene, out String cluster))
+            {
+                return cluster;
+            }
+            return "";
+        }
+
+        // Clusters which have no 'darker' edges, and thus can be a source of darkness.
+        private HashSet<String> sourceNodes;
+        public IEnumerable<String> SourceNodes
+        {
+            get { return sourceNodes; }
+        }
 
         public void Init()
         {
             sceneLookup = new();
+            sourceNodes = new();
 
             foreach (var item in Clusters) {
+                if (item.Value.IsDarknessSource)
+                {
+                    sourceNodes.Add(item.Key);
+                }
                 foreach (var scene in item.Value.Scenes.Keys)
                 {
                     sceneLookup.Add(scene, item.Key);

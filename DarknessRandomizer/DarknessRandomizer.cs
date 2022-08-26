@@ -24,6 +24,9 @@ namespace DarknessRandomizer
             GS = s ?? new();
         }
 
-        public GlobalSettings OnSaveGlobal() => GS ?? new();
+        public GlobalSettings OnSaveGlobal()
+        {
+            return GS ?? new();
+        }
     }
 }
