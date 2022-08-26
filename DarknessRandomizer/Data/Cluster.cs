@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DarknessRandomizer.Data
 {
-    public static class Clusters
+    public enum Cluster : int
     {
-        public const String Unn = "Unn";
+        Unn
     }
 }

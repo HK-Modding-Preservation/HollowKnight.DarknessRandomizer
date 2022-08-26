@@ -1,4 +1,5 @@
-﻿using DarknessRandomizer.Rando;
+﻿using DarknessRandomizer.Data;
+using DarknessRandomizer.Rando;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +15,9 @@ namespace DarknessRandomizer.Lib
         private readonly Graph g;
 
         private int darknessAvailable;
-        private readonly WeightedHeap<String> darkCandidates;
-        private readonly Dictionary<String, Darkness> clusterDarkness;
-        private readonly HashSet<String> semiDarkCandidates;
+        private readonly WeightedHeap<Cluster> darkCandidates;
+        private readonly Dictionary<Cluster, Darkness> clusterDarkness;
+        private readonly HashSet<Cluster> semiDarkCandidates;
 
         public Algorithm(int seed, DarknessRandomizationSettings settings, Graph g)
         {
@@ -61,7 +62,7 @@ namespace DarknessRandomizer.Lib
             }
 
             // Phase 3: Output the per-scene darkness levels.
-            Dictionary<String, Darkness> darknessLevels = new();
+            Dictionary<string, Darkness> darknessLevels = new();
             foreach (var e in clusterDarkness)
             {
                 var cluster = e.Key;

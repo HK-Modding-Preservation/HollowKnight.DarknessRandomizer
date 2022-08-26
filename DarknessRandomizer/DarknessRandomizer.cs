@@ -15,7 +15,7 @@ namespace DarknessRandomizer
         public static GlobalSettings GS { get; private set; } = new();
         public static readonly Graph Graph = Graph.Instance;
 
-        public static new void Log(String msg) { ((Loggable)Instance).Log(msg); }
+        public static new void Log(string msg) { ((Loggable)Instance).Log(msg); }
 
         public DarknessRandomizer() : base("DarknessRandomizer")
         {

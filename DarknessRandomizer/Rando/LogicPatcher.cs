@@ -62,13 +62,13 @@ namespace DarknessRandomizer.Rando
                 }
             }
 
-            HashSet<String> scenes = InferScenes(lc);
+            HashSet<string> scenes = InferScenes(lc);
             return () => EditSceneClause(lmb, name, scenes);
         }
 
-        private static HashSet<String> InferScenes(LogicClause lc)
+        private static HashSet<string> InferScenes(LogicClause lc)
         {
-            HashSet<String> scenes = new();
+            HashSet<string> scenes = new();
             foreach (var token in lc.Tokens)
             {
                 if (token is SimpleToken st)
@@ -88,7 +88,7 @@ namespace DarknessRandomizer.Rando
             return scenes;
         }
 
-        private static String GetDarkLogic(IEnumerable<String> scenes, string locName)
+        private static string GetDarkLogic(IEnumerable<string> scenes, string locName)
         {
             var g = Graph.Instance;
 
@@ -97,9 +97,11 @@ namespace DarknessRandomizer.Rando
             bool combat = false;
             foreach (var scene in scenes)
             {
-                var sData = g.Clusters[g.ClusterFor(scene)].Scenes[scene];
-                difficult |= sData.DifficultSkipLocs.Contains(locName);
-                combat |= sData.ProficientCombatLocs.Contains(locName);
+                if (g.TryGetSceneData(scene, out Scene sData))
+                {
+                    difficult |= sData.DifficultSkipLocs.Contains(locName);
+                    combat |= sData.ProficientCombatLocs.Contains(locName);
+                }
             }
 
             return difficult ?
@@ -107,7 +109,7 @@ namespace DarknessRandomizer.Rando
                 (combat ? "PROFICIENTCOMBAT" : "DARKROOMS");
         }
 
-        private static readonly HashSet<String> VanillaDarkScenes = new()
+        private static readonly HashSet<string> VanillaDarkScenes = new()
         {
             Scenes.CliffsJonisDark,
             Scenes.CrossroadsPeakDarkToll,

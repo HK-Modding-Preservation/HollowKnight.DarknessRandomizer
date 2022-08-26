@@ -10,7 +10,7 @@ namespace DarknessRandomizer.Lib
     //
     // Sorted for determinism. This class may be changed in the future for performance or other reasons, but it should always
     // produce the same removal for the same-seeded Random input.
-    public class WeightedHeap<T> where T : IComparable<T>
+    public class WeightedHeap<T>
     {
         private int size = 0;
         private int weight = 0;
@@ -69,7 +69,7 @@ namespace DarknessRandomizer.Lib
                 return false;
             }
 
-            int cmp = t.CompareTo(pivot);
+            int cmp = Comparer<T>.Default.Compare(t, pivot);
             if (cmp < 0)
             {
                 return left.Contains(t);
@@ -98,7 +98,7 @@ namespace DarknessRandomizer.Lib
         {
             if (w <= 0)
             {
-                throw new ArgumentException(String.Format("Weight (%d) must be a positive integer", w));
+                throw new ArgumentException(string.Format("Weight (%d) must be a positive integer", w));
             }
 
             if (size == 0)
@@ -108,7 +108,7 @@ namespace DarknessRandomizer.Lib
             }
             else
             {
-                int cmp = t.CompareTo(pivot);
+                int cmp = Comparer<T>.Default.Compare(t, pivot);
                 if (cmp < 0)
                 {
                     (left ??= new()).Add(t, w);
@@ -119,7 +119,7 @@ namespace DarknessRandomizer.Lib
                 }
                 else
                 {
-                    throw new ArgumentException(String.Format("Element %s already in heap", t));
+                    throw new ArgumentException(string.Format("Element %s already in heap", t));
                 }
             }
 

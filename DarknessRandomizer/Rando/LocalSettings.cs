@@ -13,7 +13,7 @@ namespace DarknessRandomizer.Rando
     public class LocalSettings
     {
         public DarknessRandomizationSettings Settings;
-        public Dictionary<String, Darkness> DarknessOverrides;
+        public Dictionary<string, Darkness> DarknessOverrides;
 
         public LocalSettings(int seed)
         {

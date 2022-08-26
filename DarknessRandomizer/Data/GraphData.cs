@@ -13,7 +13,7 @@ namespace DarknessRandomizer.Data
         {
             Graph g = new();
 
-            g.Clusters[Clusters.Unn] = new() {
+            g.Clusters[Cluster.Unn] = new() {
                 Scenes = new() {
                     { Scenes.GreenpathLakeOfUnn, new() },
                     { Scenes.GreenpathUnn, new() },

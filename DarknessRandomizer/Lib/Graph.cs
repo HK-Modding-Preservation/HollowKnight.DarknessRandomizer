@@ -1,10 +1,6 @@
 ﻿using DarknessRandomizer.Data;
-using Modding;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UObject = UnityEngine.Object;
 
 namespace DarknessRandomizer.Lib
 {
@@ -44,7 +40,7 @@ namespace DarknessRandomizer.Lib
     public class SceneCluster
     {
         // Scene data for the cluster.
-        public Dictionary<String, Scene> Scenes = new();
+        public Dictionary<string, Scene> Scenes = new();
 
         public Darkness MaximumDarkness
         {
@@ -63,7 +59,7 @@ namespace DarknessRandomizer.Lib
         }
 
         // Adjacent clusters, defined by relative darkness.
-        public Dictionary<String, ClusterRelativity> AdjacentClusters = new();
+        public Dictionary<Cluster, ClusterRelativity> AdjacentClusters = new();
 
         public bool IsDarknessSource
         {
@@ -91,23 +87,28 @@ namespace DarknessRandomizer.Lib
     {
         public static Graph Instance = GraphData.LoadGraph();
 
-        public Dictionary<String, SceneCluster> Clusters = new();
+        public Dictionary<Cluster, SceneCluster> Clusters = new();
 
         // Map of scene names to cluster names.
-        private Dictionary<String, String> sceneLookup;
+        private Dictionary<string, Cluster> sceneLookup;
 
-        public String ClusterFor(String scene)
+        public bool TryGetCluster(string scene, out Cluster cluster) => sceneLookup.TryGetValue(scene, out cluster);
+
+        public bool TryGetSceneData(string scene, out Scene sceneData)
         {
-            if (sceneLookup.TryGetValue(scene, out String cluster))
+            if (TryGetCluster(scene, out Cluster c))
             {
-                return cluster;
+                sceneData = Clusters[c].Scenes[scene];
+                return true;
             }
-            return "";
+
+            sceneData = default;
+            return false;
         }
 
         // Clusters which have no 'darker' edges, and thus can be a source of darkness.
-        private HashSet<String> sourceNodes;
-        public IEnumerable<String> SourceNodes
+        private HashSet<Cluster> sourceNodes;
+        public IEnumerable<Cluster> SourceNodes
         {
             get { return sourceNodes; }
         }
