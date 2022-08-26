@@ -1,4 +1,5 @@
 ﻿using DarknessRandomizer.Data;
+using DarknessRandomizer.Rando;
 using System;
 using System.Collections.Generic;
 
@@ -61,13 +62,18 @@ namespace DarknessRandomizer.Lib
         // Adjacent clusters, defined by relative darkness.
         public Dictionary<Cluster, ClusterRelativity> AdjacentClusters = new();
 
+        // If false, darkness cannot start here even if it otherwise could.
+        // It must start somewhere adjacent and spread here instead.
         public bool OverrideIsDarknessSource = true;
+
+        // If true, this can only be made dark in Cursed mode.
+        public bool CursedOnly = false;
 
         public bool IsDarknessSource
         {
             get
             {
-                if (!OverrideIsDarknessSource || MaximumDarkness < Darkness.Dark)
+                if (!OverrideIsDarknessSource || !CanBeDark)
                 {
                     return false;
                 }
@@ -77,6 +83,14 @@ namespace DarknessRandomizer.Lib
                     if (cr == ClusterRelativity.Darkwards) return false;
                 }
                 return true;
+            }
+        }
+
+        public bool CanBeDark
+        {
+            get
+            {
+                return MaximumDarkness >= Darkness.Dark && (!CursedOnly || RandoInterop.LS.Settings.DarknessLevel == DarknessLevel.Cursed);
             }
         }
 
@@ -143,10 +157,6 @@ namespace DarknessRandomizer.Lib
                 var name = item.Key;
                 var cluster = item.Value;
 
-                if (cluster.IsDarknessSource)
-                {
-                    sourceNodes.Add(name);
-                }
                 foreach (var scene in cluster.Scenes.Keys)
                 {
                     if (sceneLookup.ContainsKey(scene))
