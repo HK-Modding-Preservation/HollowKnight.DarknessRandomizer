@@ -40,7 +40,7 @@ namespace DarknessRandomizer.Rando
         {
             if (!IsEnabled()) return;
 
-            // TODO: Define a module for FSM edits.
+            // FIXME: Define a module for FSM edits.
 
             var dlem = ItemChangerMod.Modules.GetOrAdd<ItemChanger.Modules.DarknessLevelEditModule>();
             foreach (var entry in LS.DarknessOverrides) {
