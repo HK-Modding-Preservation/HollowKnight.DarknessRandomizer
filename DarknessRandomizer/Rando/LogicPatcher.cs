@@ -104,7 +104,7 @@ namespace DarknessRandomizer.Rando
 
             return difficult ?
                 (combat ? "SPICYCOMBATSKIPS" : "DIFFICULTSKIPS") :
-                (combat ? "PROFICIENTCOMBAT" : "ANY");
+                (combat ? "PROFICIENTCOMBAT" : "DARKROOMS");
         }
 
         private static readonly HashSet<String> VanillaDarkScenes = new()
