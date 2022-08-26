@@ -11,6 +11,8 @@ namespace DarknessRandomizer.Data
         CliffsBaldur,
         CliffsJonis,
         CliffsMain,
+        DirtmouthGPZ,
+        DirtmouthGrimm,
         GreenpathCliffsBridge,
         GreenpathEntrance,
         GreenpathHornet,

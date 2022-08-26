@@ -37,6 +37,25 @@ namespace DarknessRandomizer.Data
                 CostWeight = 250,
                 SemiDarkProbabilty = 40 };
 
+            g.Clusters[Cluster.DirtmouthGPZ] = new() {
+                Scenes = new() {
+                    { Scenes.Bretta, new() {
+                        MaximumDarkness = Darkness.SemiDark,
+                        ProficientCombatLocs = new LocationsList("Boss_Essence-Grey_Prince_Zote") } },
+                    { Scenes.BrettaBasement, new() { MaximumDarkness = Darkness.SemiDark } },
+                    { Scenes.GPZ, new() } },
+                CursedOnly = true,
+                ProbabilityWeight = 40,
+                CostWeight = 200 };
+
+            g.Clusters[Cluster.DirtmouthGrimm] = new() {
+                Scenes = new() {
+                    { Scenes.GrimmTent, new() { ProficientCombatLocs = LocationSet.ALL } },
+                    { Scenes.GrimmNKG, new() } },
+                CursedOnly = true,
+                ProbabilityWeight = 50,
+                CostWeight = 200 };
+
             g.Clusters[Cluster.GreenpathCliffsBridge] = new() {
                 Scenes = new() {
                     { Scenes.GreenpathVengeflyKing, new() },
