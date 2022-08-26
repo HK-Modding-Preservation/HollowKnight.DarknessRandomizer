@@ -8,6 +8,10 @@ namespace DarknessRandomizer.Data
 {
     public enum Cluster : int
     {
-        Unn
+        GreenpathLeft,
+        Hornet,
+        Sheo,
+        Unn,
+        UnnPass
     }
 }

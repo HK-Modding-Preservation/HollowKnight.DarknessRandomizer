@@ -61,10 +61,17 @@ namespace DarknessRandomizer.Lib
         // Adjacent clusters, defined by relative darkness.
         public Dictionary<Cluster, ClusterRelativity> AdjacentClusters = new();
 
+        public bool OverrideIsDarknessSource = true;
+
         public bool IsDarknessSource
         {
             get
             {
+                if (!OverrideIsDarknessSource || MaximumDarkness < Darkness.Dark)
+                {
+                    return false;
+                }
+
                 foreach (var cr in AdjacentClusters.Values)
                 {
                     if (cr == ClusterRelativity.LevelOrDarker) return false;
@@ -142,6 +149,11 @@ namespace DarknessRandomizer.Lib
                 }
                 foreach (var scene in cluster.Scenes.Keys)
                 {
+                    if (sceneLookup.ContainsKey(scene))
+                    {
+                        throw new ArgumentException($"Duplicate scene registration: {scene}");
+                    }
+
                     sceneLookup.Add(scene, name);
                 }
 

@@ -29,6 +29,16 @@ namespace DarknessRandomizer.Lib
     {
         public HashSet<string> Locations = new();
 
+        public LocationsList() { }
+        public LocationsList(string loc1, params string[] locs)
+        {
+            Locations.Add(loc1);
+            foreach (var loc in locs)
+            {
+                Locations.Add(loc);
+            }
+        }
+
         public override bool Contains(string location) => Locations.Contains(location);
     }
 
