@@ -72,11 +72,11 @@ namespace DarknessRandomizer.Lib
             int cmp = Comparer<T>.Default.Compare(t, pivot);
             if (cmp < 0)
             {
-                return left.Contains(t);
+                return left != null && left.Contains(t);
             }
             else if (cmp > 0)
             {
-                return right.Contains(t);
+                return right != null && right.Contains(t);
             }
             else
             {
