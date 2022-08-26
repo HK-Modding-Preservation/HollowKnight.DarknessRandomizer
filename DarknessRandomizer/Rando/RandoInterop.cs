@@ -14,7 +14,8 @@ namespace DarknessRandomizer.Rando
 
         public static void Setup()
         {
-            // TODO: Menu
+            ConnectionMenu.Setup();
+            LogicPatcher.Setup();
             // TODO: Rando hooks
             RandoController.OnExportCompleted += Finish;
             // TODO: Logger

@@ -1,4 +1,5 @@
-﻿using Modding;
+﻿using DarknessRandomizer.Lib;
+using Modding;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -18,7 +19,8 @@ namespace DarknessRandomizer.Rando
         {
             Settings = DarknessRandomizer.GS.DarknessRandomizationSettings.Clone();
 
-            // TODO: Algorithm
+            Algorithm algorithm = new(seed, Settings, Graph.Instance);
+            DarknessOverrides = algorithm.SelectDarknessLevels();
         }
     }
 }

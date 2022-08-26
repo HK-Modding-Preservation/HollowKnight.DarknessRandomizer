@@ -1,4 +1,5 @@
-﻿using Modding;
+﻿using DarknessRandomizer.Data;
+using Modding;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -88,6 +89,8 @@ namespace DarknessRandomizer.Lib
 
     public class Graph
     {
+        public static Graph Instance = GraphData.LoadGraph();
+
         public Dictionary<String, SceneCluster> Clusters;
 
         // Map of scene names to cluster names.

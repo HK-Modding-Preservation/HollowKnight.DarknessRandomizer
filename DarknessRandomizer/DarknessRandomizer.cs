@@ -1,4 +1,6 @@
-﻿using Modding;
+﻿using DarknessRandomizer.Lib;
+using DarknessRandomizer.Rando;
+using Modding;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,21 +14,27 @@ namespace DarknessRandomizer
         public static DarknessRandomizer Instance { get; private set; }
         public static GlobalSettings GS { get; private set; } = new();
 
-        public DarknessRandomizer() : base("DarknessRandomizer") { }
-
-        public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects)
+        public DarknessRandomizer() : base("DarknessRandomizer")
         {
             Instance = this;
+
+            Version v = typeof(DarknessRandomizer).Assembly.GetName().Version;
+            Version = $"{v.Major}.{v.Minor}.{v.Build}";
         }
 
-        public void OnLoadGlobal(GlobalSettings s)
+        public override void Initialize()
         {
-            GS = s ?? new();
+            if (ModHooks.GetMod("Randomizer 4") is Mod)
+            {
+                RandoInterop.Setup();
+            }
         }
 
-        public GlobalSettings OnSaveGlobal()
-        {
-            return GS ?? new();
-        }
+        public void OnLoadGlobal(GlobalSettings s) => GS = s ?? new();
+
+        public GlobalSettings OnSaveGlobal() => GS ?? new();
+
+        private string Version { get; }
+        public override string GetVersion() => Version;
     }
 }
