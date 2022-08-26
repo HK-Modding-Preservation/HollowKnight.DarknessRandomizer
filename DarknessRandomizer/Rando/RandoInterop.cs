@@ -16,9 +16,8 @@ namespace DarknessRandomizer.Rando
         {
             ConnectionMenu.Setup();
             LogicPatcher.Setup();
-            // TODO: Rando hooks
+
             RandoController.OnExportCompleted += Finish;
-            // TODO: Logger
         }
 
         public static void Clear()
@@ -45,7 +44,7 @@ namespace DarknessRandomizer.Rando
 
             var dlem = ItemChangerMod.Modules.GetOrAdd<ItemChanger.Modules.DarknessLevelEditModule>();
             foreach (var entry in LS.DarknessOverrides) {
-                dlem.darknessLevelsByScene[entry.Key] = entry.Value;
+                dlem.darknessLevelsByScene[entry.Key] = (int)entry.Value;
             }
         }
     }

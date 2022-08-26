@@ -30,7 +30,7 @@ namespace DarknessRandomizer.Lib
             this.clusterDarkness = new();
         }
 
-        public Dictionary<string, int> SelectDarknessLevels()
+        public Dictionary<string, Darkness> SelectDarknessLevels()
         {
             // Phase 0: Everything starts as bright.
             foreach (var c in g.Clusters.Keys)
@@ -61,18 +61,14 @@ namespace DarknessRandomizer.Lib
             }
 
             // Phase 3: Output the per-scene darkness levels.
-            Dictionary<String, int> darknessLevels = new();
+            Dictionary<String, Darkness> darknessLevels = new();
             foreach (var e in clusterDarkness)
             {
                 var cluster = e.Key;
                 var darkness = e.Value;
                 foreach (var e2 in g.Clusters[cluster].Scenes)
                 {
-                    var scene = e2.Key;
-                    var sceneData = e2.Value;
-
-                    Darkness d = sceneData.Clamp(darkness);
-                    darknessLevels[scene] = (int)d;
+                    darknessLevels[e2.Key] = e2.Value.Clamp(darkness);
                 }
             }
             return darknessLevels;
@@ -84,7 +80,7 @@ namespace DarknessRandomizer.Lib
             clusterDarkness[name] = Darkness.Dark;
             semiDarkCandidates.Remove(name);
 
-            // This can go negative; fixing that means we need to prune the map of high cost clusters.
+            // This can go negative; fixing that would require pruning the heap of high cost clusters.
             var cluster = g.Clusters[name];
             darknessAvailable -= cluster.CostWeight;
 
