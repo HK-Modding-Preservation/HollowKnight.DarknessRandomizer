@@ -12,6 +12,7 @@ namespace DarknessRandomizer.Data
         CliffsJonis,
         CliffsMain,
         GreenpathCliffsBridge,
+        GreenpathEntrance,
         GreenpathHornet,
         GreenpathLeft,
         GreenpathLower,

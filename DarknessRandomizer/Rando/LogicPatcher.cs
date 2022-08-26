@@ -13,15 +13,20 @@ namespace DarknessRandomizer.Rando
     {
         public static void Setup()
         {
-            // FIXME: Set a proper weight here.
-            RCData.RuntimeLogicOverride.Subscribe(1.5f, ModifyLMB);
+            RCData.RuntimeLogicOverride.Subscribe(100.0f, ModifyLMB);
         }
 
-        private delegate Action SceneHandler(LogicManagerBuilder lmb, string name, LogicClause lc);
-        private delegate bool SceneMatcher(LogicManagerBuilder lmb, string name, LogicClause lc, out Action edit);
+        private delegate Action LogicOverride(LogicManagerBuilder lmb, string name, LogicClause lc);
+        private delegate bool LogicOverrideMatcher(LogicManagerBuilder lmb, string name, LogicClause lc, out Action edit);
 
-        private static Dictionary<string, SceneHandler> SpecialSceneHandlers = new();
-        private static List<SceneMatcher> SpecialSceneMatchers = new();
+        private static readonly Dictionary<string, LogicOverride> LogicOverrides = new()
+        {
+            { "Fungus1_31[top1]", GreenpathTollBenchOverride },
+            { "Fungus1_31[right1]", GreenpathTollBenchOverride },
+            { "Fungus1_31[bot1]", GreenpathTollBenchOverride }
+        };
+
+        private static readonly List<LogicOverrideMatcher> LogicOverrideMatchers = new();
 
         public static void ModifyLMB(GenerationSettings gs, LogicManagerBuilder lmb)
         {
@@ -37,24 +42,23 @@ namespace DarknessRandomizer.Rando
             // require custom handling.
             //
             // TODO: Special handling for BenchRando, TheRealJournalRando, possibly others?
+
+            // We defer the edits to avoid messing with dictionary iteration order.
             List<Action> edits = new();
             foreach (var e in lmb.LogicLookup)
             {
-                var name = e.Key;
-                var lc = e.Value;
-
-                edits.Add(InferLogicEdit(lmb, name, lc));
+                edits.Add(InferLogicEdit(lmb, e.Key, e.Value));
             }
             edits.ForEach(e => e.Invoke());
         }
 
         private static Action InferLogicEdit(LogicManagerBuilder lmb, string name, LogicClause lc)
         {
-            if (SpecialSceneHandlers.TryGetValue(name, out SceneHandler handler))
+            if (LogicOverrides.TryGetValue(name, out LogicOverride handler))
             {
                 return handler.Invoke(lmb, name, lc);
             }
-            foreach (var matcher in SpecialSceneMatchers)
+            foreach (var matcher in LogicOverrideMatchers)
             {
                 if (matcher.Invoke(lmb, name, lc, out Action action))
                 {
@@ -158,6 +162,18 @@ namespace DarknessRandomizer.Rando
             {
                 lmb.DoSubst(new(name, "LANTERN", "ANY"));
             }
+        }
+
+        // TODO: Fix with bench rando
+        private static Action GreenpathTollBenchOverride(LogicManagerBuilder lmb, string name, LogicClause lc)
+        {
+            if (RandoInterop.LS.DarknessOverrides[Scenes.GreenpathToll] != Darkness.Dark)
+            {
+                return () => { };
+            }
+
+            // The bench toll can't be opened without lantern, so we need to remove 'DARKROOMS' from the logic override.
+            return () => lmb.DoLogicEdit(new(name, "ORIG + LANTERN"));
         }
     }
 }
