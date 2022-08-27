@@ -16,14 +16,23 @@ namespace DarknessRandomizer.Rando
             RCData.RuntimeLogicOverride.Subscribe(100.0f, ModifyLMB);
         }
 
-        private delegate Action LogicOverride(LogicManagerBuilder lmb, string name, LogicClause lc);
-        private delegate bool LogicOverrideMatcher(LogicManagerBuilder lmb, string name, LogicClause lc, out Action edit);
+        private delegate void LogicOverride(LogicManagerBuilder lmb, string name, LogicClause lc);
+        private delegate bool LogicOverrideMatcher(LogicManagerBuilder lmb, string name, LogicClause lc);
 
         private static readonly Dictionary<string, LogicOverride> LogicOverrides = new()
         {
-            { "Fungus1_31[top1]", GreenpathTollBenchOverride },
-            { "Fungus1_31[right1]", GreenpathTollBenchOverride },
-            { "Fungus1_31[bot1]", GreenpathTollBenchOverride }
+            { "Boss_Essence-Elder_Hu", EditLogicClauseByScenesNoDarkroomSkips },
+            { "Boss_Essence-Galien", EditLogicClauseByScenesNoDarkroomSkips },
+            { "Boss_Essence-Gorb", EditLogicClauseByScenesNoDarkroomSkips },
+            { "Boss_Essence-Markoth", EditLogicClauseByScenesNoDarkroomSkips },
+            { "Boss_Essence-Marmu", EditLogicClauseByScenesNoDarkroomSkips },
+            { "Boss_Essence-No_Eyes", EditLogicClauseByScenesNoDarkroomSkips },
+            { "Boss_Essence-Xero", EditLogicClauseByScenesNoDarkroomSkips },
+
+            // TODO: Fix for bench rando
+            { "Fungus1_31[top1]", EditLogicClauseByScenesNoDarkroomSkips },
+            { "Fungus1_31[right1]", EditLogicClauseByScenesNoDarkroomSkips },
+            { "Fungus1_31[bot1]", EditLogicClauseByScenesNoDarkroomSkips }
         };
 
         private static readonly List<LogicOverrideMatcher> LogicOverrideMatchers = new();
@@ -47,27 +56,30 @@ namespace DarknessRandomizer.Rando
             List<Action> edits = new();
             foreach (var e in lmb.LogicLookup)
             {
-                edits.Add(InferLogicEdit(lmb, e.Key, e.Value));
+                var name = e.Key;
+                var lc = e.Value;
+                edits.Add(() => EditLogicClause(lmb, name, lc));
             }
             edits.ForEach(e => e.Invoke());
         }
 
-        private static Action InferLogicEdit(LogicManagerBuilder lmb, string name, LogicClause lc)
+        private static void EditLogicClause(LogicManagerBuilder lmb, string name, LogicClause lc)
         {
             if (LogicOverrides.TryGetValue(name, out LogicOverride handler))
             {
-                return handler.Invoke(lmb, name, lc);
+                handler.Invoke(lmb, name, lc);
+                return;
             }
+
             foreach (var matcher in LogicOverrideMatchers)
             {
-                if (matcher.Invoke(lmb, name, lc, out Action action))
+                if (matcher.Invoke(lmb, name, lc))
                 {
-                    return action;
+                    return;
                 }
             }
 
-            HashSet<string> scenes = InferScenes(lc);
-            return () => EditSceneClause(lmb, name, scenes);
+            EditLogicClauseByScenes(lmb, name, InferScenes(lc), true);
         }
 
         private static HashSet<string> InferScenes(LogicClause lc)
@@ -92,6 +104,28 @@ namespace DarknessRandomizer.Rando
             return scenes;
         }
 
+        private static string GetDarkLogic(IEnumerable<string> scenes, string locName, bool darkrooms)
+        {
+            var g = Graph.Instance;
+
+            // Hack: check all scenes for difficulty or combat, and take the highest.
+            bool difficult = false;
+            bool combat = false;
+            foreach (var scene in scenes)
+            {
+                if (g.TryGetSceneData(scene, out Scene sData))
+                {
+                    difficult |= sData.DifficultSkipLocs.Contains(locName);
+                    combat |= sData.ProficientCombatLocs.Contains(locName);
+                }
+            }
+
+            string dark = darkrooms ? "DARKROOMS" : "ANY";
+            return difficult ?
+                (combat ? $"{dark} + SPICYCOMBATSKIPS" : $"{dark} + DIFFICULTSKIPS") :
+                (combat ? $"{dark} + PROFICIENTCOMBAT" : dark);
+        }
+
         private static string GetDarkLogic(IEnumerable<string> scenes, string locName)
         {
             var g = Graph.Instance;
@@ -109,11 +143,11 @@ namespace DarknessRandomizer.Rando
             }
 
             return difficult ?
-                (combat ? "SPICYCOMBATSKIPS" : "DIFFICULTSKIPS") :
-                (combat ? "PROFICIENTCOMBAT" : "DARKROOMS");
+                (combat ? "DARKROOMS + SPICYCOMBATSKIPS" : "DARKROOMS + DIFFICULTSKIPS") :
+                (combat ? "DARKROOMS + PROFICIENTCOMBAT" : "DARKROOMS");
         }
 
-        private static void EditSceneClause(LogicManagerBuilder lmb, string name, HashSet<string> scenes)
+        private static void EditLogicClauseByScenes(LogicManagerBuilder lmb, string name, HashSet<string> scenes, bool darkrooms)
         {
             if (scenes.Count == 0)
             {
@@ -125,14 +159,12 @@ namespace DarknessRandomizer.Rando
 
             // Add a darkness constraint for scenes which have been darkened.
             lmb.DoLogicEdit(new(
-                name, $"ORIG + ($DarknessNotDarkened[{String.Join(",", scenes)}] | LANTERN | {GetDarkLogic(scenes, name)})"));
+                name, $"ORIG + ($DarknessNotDarkened[{String.Join(",", scenes)}] | LANTERN | {GetDarkLogic(scenes, name, darkrooms)})"));
         }
 
-        // TODO: Fix with bench rando
-        private static Action GreenpathTollBenchOverride(LogicManagerBuilder lmb, string name, LogicClause lc)
+        private static void EditLogicClauseByScenesNoDarkroomSkips(LogicManagerBuilder lmb, string name, LogicClause lc)
         {
-            // The bench toll can't be opened without lantern, so we need to remove 'DARKROOMS' from the logic override.
-            return () => lmb.DoLogicEdit(new(name, $"ORIG + (LANTERN | $DarknessNotDarkened[{Scenes.GreenpathToll}])"));
+            EditLogicClauseByScenes(lmb, name, InferScenes(lc), false);
         }
     }
 }
