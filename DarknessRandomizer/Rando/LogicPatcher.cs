@@ -153,27 +153,6 @@ namespace DarknessRandomizer.Rando
                 (combat ? $"{dark} + PROFICIENTCOMBAT" : dark);
         }
 
-        private static string GetDarkLogic(IEnumerable<string> scenes, string locName)
-        {
-            var g = Graph.Instance;
-
-            // Hack: check all scenes for difficulty or combat, and take the highest.
-            bool difficult = false;
-            bool combat = false;
-            foreach (var scene in scenes)
-            {
-                if (g.TryGetSceneData(scene, out Scene sData))
-                {
-                    difficult |= sData.DifficultSkipLocs.Contains(locName);
-                    combat |= sData.ProficientCombatLocs.Contains(locName);
-                }
-            }
-
-            return difficult ?
-                (combat ? "DARKROOMS + SPICYCOMBATSKIPS" : "DARKROOMS + DIFFICULTSKIPS") :
-                (combat ? "DARKROOMS + PROFICIENTCOMBAT" : "DARKROOMS");
-        }
-
         private static void EditLogicClauseByScenes(LogicManagerBuilder lmb, string name, HashSet<string> scenes, bool darkrooms)
         {
             if (scenes.Count == 0)

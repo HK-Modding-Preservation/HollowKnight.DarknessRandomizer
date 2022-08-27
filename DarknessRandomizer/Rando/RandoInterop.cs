@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ItemChanger;
+﻿using ItemChanger;
 using RandomizerMod.RC;
 
 namespace DarknessRandomizer.Rando
@@ -19,6 +14,8 @@ namespace DarknessRandomizer.Rando
             RequestModifier.Setup();
 
             RandoController.OnExportCompleted += Finish;
+            RandomizerMod.Logging.LogManager.AddLogger(new DarknessLogger());
+            // FIXME: Condensed spoiler
         }
 
         public static bool IsEnabled() => DarknessRandomizer.GS.DarknessRandomizationSettings.RandomizeDarkness;

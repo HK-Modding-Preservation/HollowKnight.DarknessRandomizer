@@ -69,29 +69,23 @@ namespace DarknessRandomizer.Lib
         // If true, this can only be made dark in Cursed mode.
         public bool CursedOnly = false;
 
-        public bool IsDarknessSource
+        public bool IsDarknessSource(DarknessRandomizationSettings settings)
         {
-            get
+            if (!OverrideIsDarknessSource || !CanBeDark(settings))
             {
-                if (!OverrideIsDarknessSource || !CanBeDark)
-                {
-                    return false;
-                }
-
-                foreach (var cr in AdjacentClusters.Values)
-                {
-                    if (cr == RelativeDarkness.Darker) return false;
-                }
-                return true;
+                return false;
             }
+
+            foreach (var cr in AdjacentClusters.Values)
+            {
+                if (cr == RelativeDarkness.Darker) return false;
+            }
+            return true;
         }
 
-        public bool CanBeDark
+        public bool CanBeDark(DarknessRandomizationSettings settings)
         {
-            get
-            {
-                return MaximumDarkness >= Darkness.Dark && (!CursedOnly || RandoInterop.LS.Settings.DarknessLevel == DarknessLevel.Cursed);
-            }
+            return MaximumDarkness >= Darkness.Dark && (!CursedOnly || settings.DarknessLevel == DarknessLevel.Cursed);
         }
 
         // The relative probability of this cluster being selected for darkness.
@@ -129,16 +123,13 @@ namespace DarknessRandomizer.Lib
 
         private static RelativeDarkness Oppose(RelativeDarkness cr)
         {
-            switch (cr)
+            return cr switch
             {
-                case RelativeDarkness.Brighter:
-                    return RelativeDarkness.Darker;
-                case RelativeDarkness.Darker:
-                    return RelativeDarkness.Darker;
-                case RelativeDarkness.Any:
-                    return RelativeDarkness.Any;
-            }
-            throw new ArgumentException($"Unknown ClusterRelativity {cr}");
+                RelativeDarkness.Brighter => RelativeDarkness.Darker,
+                RelativeDarkness.Darker => RelativeDarkness.Darker,
+                RelativeDarkness.Any => RelativeDarkness.Any,
+                _ => throw new ArgumentException($"Unknown ClusterRelativity {cr}"),
+            };
         }
 
         public void Init()

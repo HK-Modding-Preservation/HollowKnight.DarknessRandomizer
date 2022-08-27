@@ -4,11 +4,16 @@ using RandomizerMod.RandomizerData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DarknessRandomizer.Lib
 {
+    public record AlgorithmStats
+    {
+        public Dictionary<Cluster, Darkness> ClusterSelections;
+        public int DarknessSpent;
+        public int DarknessRemaining;
+    }
+
     public class Algorithm
     {
         private readonly Random r;
@@ -39,7 +44,7 @@ namespace DarknessRandomizer.Lib
             }
         }
 
-        public Dictionary<string, Darkness> SelectDarknessLevels()
+        public void SelectDarknessLevels(out Dictionary<string, Darkness> darknessOverrides, out AlgorithmStats stats)
         {
             // Phase 0: Everything starts as bright.
             foreach (var c in g.Clusters.Keys)
@@ -75,17 +80,33 @@ namespace DarknessRandomizer.Lib
             }
 
             // Phase 3: Output the per-scene darkness levels.
-            Dictionary<string, Darkness> darknessLevels = new();
+            darknessOverrides = new();
             foreach (var e in clusterDarkness)
             {
                 var cluster = e.Key;
                 var darkness = e.Value;
                 foreach (var e2 in g.Clusters[cluster].Scenes)
                 {
-                    darknessLevels[e2.Key] = e2.Value.Clamp(darkness);
+                    darknessOverrides[e2.Key] = e2.Value.Clamp(darkness);
                 }
             }
-            return darknessLevels;
+
+            stats = new();
+            stats.ClusterSelections = new(clusterDarkness);
+            stats.DarknessSpent = 0;
+            stats.DarknessRemaining = 0;
+            foreach (var e in stats.ClusterSelections)
+            {
+                var cluster = g.Clusters[e.Key];
+                if (e.Value == Darkness.Dark)
+                {
+                    stats.DarknessSpent += cluster.CostWeight;
+                }
+                else if (cluster.CanBeDark(settings) && !forbiddenClusters.Contains(e.Key))
+                {
+                    stats.DarknessRemaining += cluster.CostWeight;
+                }
+            }
         }
 
         private void SelectNewDarknessNode()

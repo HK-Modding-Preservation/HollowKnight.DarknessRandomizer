@@ -4,9 +4,7 @@ using RandomizerCore.Logic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace DarknessRandomizer.Rando
 {
@@ -97,7 +95,7 @@ namespace DarknessRandomizer.Rando
         public DarknessNotDarkenedInt(IEnumerable<string> scenes)
         {
             this.scenes = new(scenes);
-            this.Name = $"DarknessNotDarkened[{String.Join(",", scenes)}]";
+            this.Name = $"$DarknessNotDarkened[{String.Join(",", scenes)}]";
         }
 
         public override string Name { get; }
