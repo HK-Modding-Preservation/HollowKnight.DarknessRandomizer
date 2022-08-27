@@ -35,6 +35,40 @@ namespace DarknessRandomizer.Data
                 ProbabilityWeight = 80,
                 CostWeight = 60 };
 
+            g.Clusters[Cluster.CityAboveLemm] = new()
+            {
+                Scenes = new()
+                {
+                    { SceneName.CityEggAboveLemm, new() },
+                    { SceneName.CityGrubAboveLemm, new() },
+                    { SceneName.CityTollBench, new() } },
+                AdjacentClusters = new()
+                {
+                    { Cluster.CityFountain, RelativeDarkness.Any },
+                },
+                OverrideIsDarknessSource = false,
+                ProbabilityWeight = 25,
+                CostWeight = 200
+            };
+
+            g.Clusters[Cluster.CityElegantWarrior] = new()
+            {
+                Scenes = new()
+                {
+                    { SceneName.CityShadeSoulArena, new() }
+                },
+                ProbabilityWeight = 150
+            };
+
+            g.Clusters[Cluster.CityFountain] = new()
+            {
+                Scenes = new()
+                {
+                    { SceneName.CityHollowKnightFountain, SemiDark },
+                    { SceneName.CityCorridortoSpire, SemiDark }
+                }
+            };
+
             g.Clusters[Cluster.CliffsBaldur] = new() {
                 Scenes = new() { { SceneName.CliffsBaldursShell, new() } },
                 AdjacentClusters = new() {
