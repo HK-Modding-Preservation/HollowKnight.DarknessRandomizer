@@ -181,17 +181,84 @@ namespace DarknessRandomizer.Data
                 ProbabilityWeight = 5,
                 CostWeight = 120 };
 
-            // FIXME
-            g.Clusters[Cluster.CrystalPeakCrown] = new();
-            g.Clusters[Cluster.CrystalPeakCrystallizedMound] = new();
-            g.Clusters[Cluster.CrystalPeakDarkRoom] = new();
+            g.Clusters[Cluster.CrystalPeakCrown] = new() {
+                Scenes = new() {
+                    { Scenes.CrystalCrownWhisperingRoot, new() },
+                    { Scenes.CrystalCrownGrub, new() },
+                    { Scenes.CrystalCrownClimb, new() },
+                    { Scenes.CrystalCrownPeak, new() } },
+                AdjacentClusters = new() { { Cluster.CrystalPeakUpper, RelativeDarkness.Brighter } },
+                ProbabilityWeight = 150,
+                CostWeight = 200 };
+
+            g.Clusters[Cluster.CrystalPeakCrystallizedMound] = new() {
+                Scenes = new() { { Scenes.CrystalOutsideMound, SemiDark }, { Scenes.CrystalMound, new() } },
+                ProbabilityWeight = 125 };
+
+            g.Clusters[Cluster.CrystalPeakDarkRoom] = new() {
+                Scenes = new() { { Scenes.CrystalDarkRoom, new() } },
+                AdjacentClusters = new() { { Cluster.CrystalPeakCrystallizedMound, RelativeDarkness.Any } },
+                ProbabilityWeight = 250,
+                CostWeight = 250 };
+
             g.Clusters[Cluster.CrystalPeakDeepFocus] = new();
-            g.Clusters[Cluster.CrystalPeakDirtmouthBridge] = new();
-            g.Clusters[Cluster.CrystalPeakGuardian] = new();
-            g.Clusters[Cluster.CrystalPeakHeart] = new();
-            g.Clusters[Cluster.CrystalPeakLower] = new();
-            g.Clusters[Cluster.CrystalPeakUpper] = new();
-            g.Clusters[Cluster.CrystalPeakWest] = new();
+
+            g.Clusters[Cluster.CrystalPeakDirtmouthBridge] = new() {
+                Scenes = new() {
+                    { Scenes.CrystalCornifer, SemiDark },
+                    { Scenes.CrystalMimic, new() },
+                    { Scenes.CrystalElevatorEntrance, new() } } };
+
+            g.Clusters[Cluster.CrystalPeakGuardian] = new() {
+                Scenes = new() {
+                    { Scenes.CrystalGuardianBench, new() },
+                    { Scenes.CrystalEnragedGuardianArena, new() { ProficientCombatLocs = LocationSet.ALL } } },
+                CostWeight = 200 };
+
+            g.Clusters[Cluster.CrystalPeakHeart] = new() {
+                Scenes = new() { { Scenes.CrystalCrystalHeartGauntlet, new() { DifficultSkipLocs = LocationSet.ALL } } },
+                AdjacentClusters = new() { { Cluster.CrystalPeakUpper, RelativeDarkness.Brighter } },
+                ProbabilityWeight = 150,
+                CostWeight = 200 };
+
+            g.Clusters[Cluster.CrystalPeakLower] = new() {
+                Scenes = new() {
+                    { Scenes.CrystalEntranceConveyors, new() },
+                    { Scenes.CrystalDarkBench, new() },
+                    { Scenes.CrystalMainEntrance, new() },
+                    { Scenes.CrystalCorridortoSpikeGrub, new() },
+                    { Scenes.CrystalChestCrushers, new() } },
+                AdjacentClusters = new() {
+                    { Cluster.CrystalPeakDarkRoom, RelativeDarkness.Any },
+                    { Cluster.CrossroadsPeaksBridge, RelativeDarkness.Any },
+                    { Cluster.CrossroadsPeaksToll, RelativeDarkness.Any },
+                    { Cluster.CrystalPeakUpper, RelativeDarkness.Darker } },
+                ProbabilityWeight = 15,
+                CostWeight = 200 };
+
+            g.Clusters[Cluster.CrystalPeakUpper] = new() {
+                Scenes = new() {
+                    { Scenes.CrystalEastTall, new() },
+                    { Scenes.CrystalTopCorridor, SemiDark } },
+                AdjacentClusters = new() {
+                    { Cluster.CrystalPeakHeart, RelativeDarkness.Brighter },
+                    { Cluster.CrystalPeakGuardian, RelativeDarkness.Any },
+                    { Cluster.CrystalPeakWest, RelativeDarkness.Any },
+                    { Cluster.CrystalPeakLower, RelativeDarkness.Any } },
+                ProbabilityWeight = 50,
+                CostWeight = 150 };
+
+            g.Clusters[Cluster.CrystalPeakWest] = new() {
+                Scenes = new() {
+                    { Scenes.CrystalLeftOfGuardian, new() },
+                    { Scenes.CrystalSpikeGrub, new() },
+                    { Scenes.CrystalAboveSpikeGrub, new() } },
+                AdjacentClusters = new() {
+                    { Cluster.CrystalPeakDirtmouthBridge, RelativeDarkness.Any },
+                    { Cluster.CrystalPeakGuardian, RelativeDarkness.Darker },
+                    { Cluster.CrystalPeakLower, RelativeDarkness.Brighter } },
+                ProbabilityWeight = 50,
+                CostWeight = 200 };
 
             g.Clusters[Cluster.DirtmouthGPZ] = new() {
                 Scenes = new() {
