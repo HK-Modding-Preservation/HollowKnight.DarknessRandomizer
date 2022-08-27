@@ -13,10 +13,14 @@ namespace DarknessRandomizer.Data
         CliffsMain,
         DirtmouthGPZ,
         DirtmouthGrimm,
+        FogCanyonArchives,
+        FogCanyonEast,
+        FogCanyonMound,
+        FogCanyonNotch,
+        FogCanyonWest,
         GreenpathCliffsBridge,
         GreenpathEntrance,
         GreenpathHornet,
-        GreenpathLeft,
         GreenpathLower,
         GreenpathMMC,
         GreenpathNoEyes,
@@ -26,6 +30,7 @@ namespace DarknessRandomizer.Data
         GreenpathUnn,
         GreenpathUnnPass,
         GreenpathUpper,
+        GreenpathWest,
         KingsPass,
     }
 }

@@ -12,9 +12,9 @@ namespace DarknessRandomizer.Lib
     // by ensuring that if the entrance is dark... the rest of it will be, too.
     public enum RelativeDarkness : int
     {
-        Brightwards = 0,
-        None = 1,
-        Darkwards = 2
+        Brighter = 0,
+        Any = 1,
+        Darker = 2
     }
 
     // Data specific to a scene.
@@ -80,7 +80,7 @@ namespace DarknessRandomizer.Lib
 
                 foreach (var cr in AdjacentClusters.Values)
                 {
-                    if (cr == RelativeDarkness.Darkwards) return false;
+                    if (cr == RelativeDarkness.Darker) return false;
                 }
                 return true;
             }
@@ -131,12 +131,12 @@ namespace DarknessRandomizer.Lib
         {
             switch (cr)
             {
-                case RelativeDarkness.Brightwards:
-                    return RelativeDarkness.Darkwards;
-                case RelativeDarkness.Darkwards:
-                    return RelativeDarkness.Darkwards;
-                case RelativeDarkness.None:
-                    return RelativeDarkness.None;
+                case RelativeDarkness.Brighter:
+                    return RelativeDarkness.Darker;
+                case RelativeDarkness.Darker:
+                    return RelativeDarkness.Darker;
+                case RelativeDarkness.Any:
+                    return RelativeDarkness.Any;
             }
             throw new ArgumentException($"Unknown ClusterRelativity {cr}");
         }
