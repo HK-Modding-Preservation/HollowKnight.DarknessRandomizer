@@ -9,9 +9,25 @@ namespace DarknessRandomizer.Data
 {
     public static class GraphData
     {
+        private static readonly Scene SemiDark = new() { MaximumDarkness = Darkness.SemiDark };
+
         public static Graph LoadGraph()
         {
             Graph g = new();
+
+            g.Clusters[Cluster.BlackEggRadiance] = new() {
+                Scenes = new() { { Scenes.EggRadiance, new() } },
+                AdjacentClusters = new() { { Cluster.BlackEggTemple, RelativeDarkness.Darker } },
+                CursedOnly = true,
+                CostWeight = 300 };
+
+            g.Clusters[Cluster.BlackEggTemple] = new() {
+                Scenes = new() {
+                    { Scenes.EggBench, SemiDark },
+                    { Scenes.BlackEggTemple, SemiDark },
+                    { Scenes.EggHollowKnight, new() } },
+                CursedOnly = true,
+                CostWeight = 300 };
 
             g.Clusters[Cluster.CliffsBaldur] = new() {
                 Scenes = new() { { Scenes.CliffsBaldursShell, new() } },
@@ -28,21 +44,141 @@ namespace DarknessRandomizer.Data
             g.Clusters[Cluster.CliffsMain] = new() {
                 Scenes = new() {
                     { Scenes.CliffsMain, new() },
-                    { Scenes.CliffsGrimmLantern, new() { MaximumDarkness = Darkness.SemiDark } },
+                    { Scenes.CliffsGrimmLantern, SemiDark },
                     { Scenes.CliffsGorb, new() },
-                    { Scenes.CliffsMato, new() { MaximumDarkness = Darkness.SemiDark } },
-                    { Scenes.CliffsStagNest, new() { MaximumDarkness = Darkness.SemiDark } } },
+                    { Scenes.CliffsMato, SemiDark },
+                    { Scenes.CliffsStagNest, SemiDark } },
                 AdjacentClusters = new() { { Cluster.KingsPass, RelativeDarkness.Any } },
                 ProbabilityWeight = 60,
                 CostWeight = 250,
                 SemiDarkProbabilty = 40 };
+
+            g.Clusters[Cluster.CrossroadsAncestralMound] = new() {
+                Scenes = new() {
+                    { Scenes.CrossroadsOutsideMound, SemiDark },
+                    { Scenes.CrossroadsAncestralMound, new() } },
+                AdjacentClusters = new() {
+                    { Cluster.CrossroadsWest, RelativeDarkness.Brighter },
+                    { Cluster.CrossroadsFalseKnight, RelativeDarkness.Any } },
+                ProbabilityWeight = 60,
+                CostWeight = 120 };
+
+            g.Clusters[Cluster.CrossroadsCanyonBridge] = new() {
+                Scenes = new() {
+                    { Scenes.CrossroadsAcidGrub, new() },
+                    { Scenes.CrossroadsCorridortoAcidGrub, new() } },
+                AdjacentClusters = new() { { Cluster.FogCanyonEast, RelativeDarkness.Darker } },
+                ProbabilityWeight = 40,
+                CostWeight = 60 };
+
+            g.Clusters[Cluster.CrossroadsFailedChamp] = new() {
+                Scenes = new() { { Scenes.DreamFailedChampion, new() { ProficientCombatLocs = LocationSet.ALL } } },
+                AdjacentClusters = new() { { Cluster.CrossroadsFalseKnight, RelativeDarkness.Darker } },
+                CursedOnly = true,
+                ProbabilityWeight = 80,
+                CostWeight = 200 };
+
+            g.Clusters[Cluster.CrossroadsFalseKnight] = new() {
+                Scenes = new() {
+                    { Scenes.CrossroadsFalseKnightArena, new() },
+                    { Scenes.CrossroadsOutsideFalseKnight, new() } },
+                AdjacentClusters = new() { { Cluster.CrossroadsAncestralMound, RelativeDarkness.Any } },
+                ProbabilityWeight = 120 };
+
+            g.Clusters[Cluster.CrossroadsGlowingWomb] = new() {
+                Scenes = new() { { Scenes.CrossroadsGlowingWombArena, new() } },
+                AdjacentClusters = new() { { Cluster.CrossroadsFalseKnight, RelativeDarkness.Brighter } } };
+
+            g.Clusters[Cluster.CrossroadsGreenpathBridge] = new() {
+                Scenes = new() { { Scenes.CrossroadsGreenpathEntrance, new() } },
+                AdjacentClusters = new() {
+                    { Cluster.CrossroadsWest, RelativeDarkness.Any },
+                    { Cluster.GreenpathEntrance, RelativeDarkness.Any } },
+                OverrideIsDarknessSource = false,
+                ProbabilityWeight = 15,
+                CostWeight = 60 };
+
+            g.Clusters[Cluster.CrossroadsLower] = new() {
+                Scenes = new() {
+                    { Scenes.CrossroadsGruzMother, new() },
+                    { Scenes.CrossroadsOutsideStag, new() },
+                    { Scenes.CrossroadsStag, SemiDark },
+                    { Scenes.CrossroadsBeforeGruzMother, new() },
+                    { Scenes.CrossroadsRightOfMaskShard, new() },
+                    { Scenes.CrossroadsOutsideTram, new() },
+                    { Scenes.CrossroadsCorridortoTram, new() },
+                    { Scenes.CrossroadsRescueSly, SemiDark },
+                    { Scenes.CrossroadsMenderbug, SemiDark },
+                    { Scenes.Salubra, SemiDark } },
+                AdjacentClusters = new() {
+                    { Cluster.CrossroadsSpikeGrub, RelativeDarkness.Darker },
+                    { Cluster.WestCityElevator, RelativeDarkness.Darker },
+                    { Cluster.CrossroadsFalseKnight, RelativeDarkness.Any },
+                    { Cluster.CrossroadsPeaksToll, RelativeDarkness.Any },
+                    { Cluster.CrossroadsUpper, RelativeDarkness.Any } },
+                ProbabilityWeight = 15,
+                CostWeight = 200 };
+
+            g.Clusters[Cluster.CrossroadsMawlek] = new() {
+                Scenes = new() {
+                    { Scenes.CrossroadsMawlekEntrance, new() },
+                    { Scenes.CrossroadsMawlekMiddle, new() },
+                    { Scenes.CrossroadsMawlekBoss, new() } },
+                AdjacentClusters = new() {
+                    { Cluster.CrossroadsWest, RelativeDarkness.Brighter } },
+                ProbabilityWeight = 30,
+                CostWeight = 150 };
+
+            g.Clusters[Cluster.CrossroadsPeaksBridge] = new() {
+                Scenes = new() {
+                    { Scenes.CrossroadsMyla, SemiDark },
+                    { Scenes.CrystalDiveEntrance, SemiDark } },
+                AdjacentClusters = new() { { Cluster.CrossroadsUpper, RelativeDarkness.Darker } } };
+
+            g.Clusters[Cluster.CrossroadsPeaksToll] = new() {
+                Scenes = new() { { Scenes.CrossroadsPeakDarkToll, new() { MinimumDarkness = Darkness.SemiDark } } },
+                AdjacentClusters = new() { { Cluster.CrossroadsLower, RelativeDarkness.Any } },
+                ProbabilityWeight = 500,
+                CostWeight = 50 };
+
+            g.Clusters[Cluster.CrossroadsSpikeGrub] = new() {
+                Scenes = new() { { Scenes.CrossroadsSpikeGrub, new() } },
+                ProbabilityWeight = 40,
+                CostWeight = 40 };
+
+            g.Clusters[Cluster.CrossroadsUpper] = new() {
+                Scenes = new() {
+                    { Scenes.CrossroadsOutsideTemple, SemiDark },
+                    { Scenes.CrossroadsCorridorRightofTemple, new() },
+                    { Scenes.CrossroadsGuardedGrub, new() },
+                    { Scenes.CrossroadsOutsideMyla, new() },
+                    { Scenes.CrossroadsAboveLever, new() },
+                    { Scenes.CrossroadsCorridorRightofCentralGrub, new() } },
+                AdjacentClusters = new() {
+                    { Cluster.CrossroadsEntrance, RelativeDarkness.Any },
+                    { Cluster.CrossroadsWest, RelativeDarkness.Any },
+                    { Cluster.CrossroadsLower, RelativeDarkness.Any },
+                    { Cluster.CrossroadsPeaksBridge, RelativeDarkness.Any } },
+                ProbabilityWeight = 15,
+                CostWeight = 200 };
+
+            g.Clusters[Cluster.CrossroadsWest] = new() {
+                Scenes = new() {
+                    { Scenes.CrossroadsCentralGrub, new() },
+                    { Scenes.CrossroadsGruzzer, new() },
+                    { Scenes.CrossroadsCornifer, new() },
+                    { Scenes.CrossroadsAspidArena, new() },
+                    { Scenes.CrossroadsGoamMaskShard, new() },
+                    { Scenes.CrossroadsFungalEntrance, new() } },
+                ProbabilityWeight = 5,
+                CostWeight = 120 };
 
             g.Clusters[Cluster.DirtmouthGPZ] = new() {
                 Scenes = new() {
                     { Scenes.Bretta, new() {
                         MaximumDarkness = Darkness.SemiDark,
                         ProficientCombatLocs = new LocationsList("Boss_Essence-Grey_Prince_Zote") } },
-                    { Scenes.BrettaBasement, new() { MaximumDarkness = Darkness.SemiDark } },
+                    { Scenes.BrettaBasement, SemiDark },
                     { Scenes.GPZ, new() } },
                 CursedOnly = true,
                 ProbabilityWeight = 40,
@@ -58,7 +194,7 @@ namespace DarknessRandomizer.Data
 
             g.Clusters[Cluster.FogCanyonArchives] = new() {
                 Scenes = new() {
-                    { Scenes.FogArchivesBench, new() { MaximumDarkness = Darkness.SemiDark } },
+                    { Scenes.FogArchivesBench, SemiDark },
                     { Scenes.FogUumuuArena, new() { ProficientCombatLocs = LocationSet.ALL } } },
                 AdjacentClusters = new() { { Cluster.FogCanyonEast, RelativeDarkness.Any } },
                 CostWeight = 150 };
@@ -72,7 +208,7 @@ namespace DarknessRandomizer.Data
                 ProbabilityWeight = 50,
                 CostWeight = 200 };
 
-            g.Clusters[Cluster.FogCanyonMound] = new() {
+            g.Clusters[Cluster.FogCanyonOvergrownMound] = new() {
                 Scenes = new() {
                     { Scenes.FogOvergrownMoundEntrance, new() },
                     { Scenes.FogOvergrownMound, new() } },
@@ -88,11 +224,11 @@ namespace DarknessRandomizer.Data
                     { Scenes.FogUpperWestTall, new() },
                     { Scenes.FogLowerWestTall, new() },
                     { Scenes.FogCorridortoOvergrownMound, new() },
-                    { Scenes.FogLifeblood, new() { MaximumDarkness = Darkness.SemiDark } },
-                    { Scenes.FogMillibelle, new() { MaximumDarkness = Darkness.SemiDark } } },
+                    { Scenes.FogLifeblood, SemiDark },
+                    { Scenes.FogMillibelle, SemiDark } },
                 AdjacentClusters = new() {
                     { Cluster.GreenpathOutsideNoEyes, RelativeDarkness.Any },
-                    { Cluster.FogCanyonMound, RelativeDarkness.Darker } },
+                    { Cluster.FogCanyonOvergrownMound, RelativeDarkness.Darker } },
                 ProbabilityWeight = 15,
                 CostWeight = 300 };
 
@@ -106,7 +242,7 @@ namespace DarknessRandomizer.Data
 
             g.Clusters[Cluster.GreenpathEntrance] = new() {
                 Scenes = new() {
-                    { Scenes.GreenpathWaterfallBench, new() { MaximumDarkness = Darkness.SemiDark } },
+                    { Scenes.GreenpathWaterfallBench, SemiDark },
                     { Scenes.GreenpathEntrance, new() } },
                 AdjacentClusters = new() { { Cluster.GreenpathUpper, RelativeDarkness.Darker } },
                 ProbabilityWeight = 25,
@@ -122,7 +258,7 @@ namespace DarknessRandomizer.Data
                     { Scenes.GreenpathAcidBridge, new() },
                     { Scenes.GreenpathAboveSanctuaryBench, new() },
                     { Scenes.GreenpathOutsideHunter, new() },
-                    { Scenes.GreenpathHunter, new() { MaximumDarkness = Darkness.SemiDark } } },
+                    { Scenes.GreenpathHunter, SemiDark } },
                 AdjacentClusters = new() { { Cluster.GreenpathOutsideNoEyes, RelativeDarkness.Any } },
                 ProbabilityWeight = 15,
                 CostWeight = 200,
@@ -142,7 +278,7 @@ namespace DarknessRandomizer.Data
             g.Clusters[Cluster.GreenpathOutsideNoEyes] = new() {
                 Scenes = new() {
                     { Scenes.GreenpathAboveFogCanyon, new() },
-                    { Scenes.GreenpathSanctuaryBench, new() { MaximumDarkness = Darkness.SemiDark } },
+                    { Scenes.GreenpathSanctuaryBench, SemiDark },
                     { Scenes.GreenpathStoneSanctuaryEntrance, new() { MinimumDarkness = Darkness.SemiDark } } },
                 AdjacentClusters = new() { { Cluster.GreenpathNoEyes, RelativeDarkness.Any } },
                 CostWeight = 140 };
@@ -154,7 +290,7 @@ namespace DarknessRandomizer.Data
                         new() { DifficultSkipLocs = new LocationsList("Fungus1_09[left1]") }
                     },
                     { Scenes.GreenpathOutsideSheo, new() },
-                    { Scenes.GreenpathSheo, new() { MaximumDarkness = Darkness.SemiDark } } },
+                    { Scenes.GreenpathSheo, SemiDark } },
                 ProbabilityWeight = 80,
                 CostWeight = 200 };
 
@@ -172,7 +308,7 @@ namespace DarknessRandomizer.Data
 
             g.Clusters[Cluster.GreenpathUnnPass] = new() {
                 Scenes = new() {
-                    { Scenes.GreenpathCorridortoUnn, new() { MaximumDarkness = Darkness.SemiDark } } },
+                    { Scenes.GreenpathCorridortoUnn, SemiDark } },
                 AdjacentClusters = new() {
                     { Cluster.GreenpathUnn, RelativeDarkness.Darker },
                     { Cluster.GreenpathHornet, RelativeDarkness.Darker } } };
@@ -197,7 +333,7 @@ namespace DarknessRandomizer.Data
                 Scenes = new() {
                     { Scenes.GreenpathOutsideHornet, new() },
                     { Scenes.GreenpathOutsideStag, new() },
-                    { Scenes.GreenpathStag, new() { MaximumDarkness = Darkness.SemiDark } },
+                    { Scenes.GreenpathStag, SemiDark },
                     { Scenes.GreenpathBelowTollBench, new() } },
                 AdjacentClusters = new() {
                     { Cluster.GreenpathHornet, RelativeDarkness.Darker },

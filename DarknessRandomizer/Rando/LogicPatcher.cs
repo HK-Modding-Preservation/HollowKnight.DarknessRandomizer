@@ -17,9 +17,8 @@ namespace DarknessRandomizer.Rando
         }
 
         private delegate void LogicOverride(LogicManagerBuilder lmb, string name, LogicClause lc);
-        private delegate bool LogicOverrideMatcher(LogicManagerBuilder lmb, string name, LogicClause lc);
 
-        private static readonly Dictionary<string, LogicOverride> LogicOverrides = new()
+        private static readonly Dictionary<string, LogicOverride> LogicOverridesByName = new()
         {
             { "Boss_Essence-Elder_Hu", EditLogicClauseByScenesNoDarkroomSkips },
             { "Boss_Essence-Galien", EditLogicClauseByScenesNoDarkroomSkips },
@@ -29,13 +28,23 @@ namespace DarknessRandomizer.Rando
             { "Boss_Essence-No_Eyes", EditLogicClauseByScenesNoDarkroomSkips },
             { "Boss_Essence-Xero", EditLogicClauseByScenesNoDarkroomSkips },
 
-            // TODO: Fix for bench rando
-            { "Fungus1_31[top1]", EditLogicClauseByScenesNoDarkroomSkips },
-            { "Fungus1_31[right1]", EditLogicClauseByScenesNoDarkroomSkips },
-            { "Fungus1_31[bot1]", EditLogicClauseByScenesNoDarkroomSkips }
+            { "Boss_Essence-Failed_Champion", (lmb, name, lc) => EditLogicClauseByScenes(
+                lmb, name, new() { Scenes.CrossroadsFalseKnightArena, Scenes.DreamFailedChampion }, true) },
+            { "Boss_Essence-Lost_Kin", (lmb, name, lc) => EditLogicClauseByScenes(
+                lmb, name, new() { Scenes.BasinBrokenVesselGrub, Scenes.DreamLostKin }, true) },
+            { "Boss_Essence-Soul_Tyrant", (lmb, name, lc) => EditLogicClauseByScenes(
+                lmb, name, new() { Scenes.CitySoulMasterArena, Scenes.DreamSoulTyrant }, true) },
         };
 
-        private static readonly List<LogicOverrideMatcher> LogicOverrideMatchers = new();
+        private static readonly Dictionary<string, LogicOverride> LogicOverridesByTransitionScene = new()
+        {
+            // TODO: Fix for bench rando
+            { Scenes.GreenpathToll, EditLogicClauseByScenesNoDarkroomSkips },
+        };
+
+        private delegate bool LogicOverrideMatcher(LogicManagerBuilder lmb, string name, LogicClause lc);
+
+        private static readonly List<LogicOverrideMatcher> LogOverrideMatchers = new();
 
         public static void ModifyLMB(GenerationSettings gs, LogicManagerBuilder lmb)
         {
@@ -65,13 +74,24 @@ namespace DarknessRandomizer.Rando
 
         private static void EditLogicClause(LogicManagerBuilder lmb, string name, LogicClause lc)
         {
-            if (LogicOverrides.TryGetValue(name, out LogicOverride handler))
+            if (LogicOverridesByName.TryGetValue(name, out LogicOverride handler))
             {
                 handler.Invoke(lmb, name, lc);
                 return;
             }
 
-            foreach (var matcher in LogicOverrideMatchers)
+            int i = name.IndexOf('[');
+            if (i != -1)
+            {
+                var scene = name.Substring(0, i);
+                if (Scenes.IsScene(scene) && LogicOverridesByTransitionScene.TryGetValue(scene, out handler))
+                {
+                    handler.Invoke(lmb, name, lc);
+                    return;
+                }
+            }
+
+            foreach (var matcher in LogOverrideMatchers)
             {
                 if (matcher.Invoke(lmb, name, lc))
                 {
@@ -79,6 +99,7 @@ namespace DarknessRandomizer.Rando
                 }
             }
 
+            // No special case applies, so we use the default scene inference logic.
             EditLogicClauseByScenes(lmb, name, InferScenes(lc), true);
         }
 
