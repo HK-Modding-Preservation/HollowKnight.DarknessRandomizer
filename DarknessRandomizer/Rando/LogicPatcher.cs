@@ -40,6 +40,9 @@ namespace DarknessRandomizer.Rando
                 lmb, name, new() { Scenes.CitySoulMasterArena, Scenes.DreamSoulTyrant }, true) },
             { "Boss_Essence-White_Defender", (lmb, name, lc) => EditLogicClauseByScenes(
                 lmb, name, new() { Scenes.WaterwaysDungDefendersCave, Scenes.DreamWhiteDefender }, true) },
+
+            // Flower quest just requires lantern, not gonna think any harder about it.
+            { "Mask_Shard-Grey_Mourner", (lmb, name, lc) => lmb.DoLogicEdit(new(name, "ORIG + LANTERN")) },
         };
 
         private static readonly Dictionary<string, LogicOverride> LogicOverridesByTransitionScene = new()
