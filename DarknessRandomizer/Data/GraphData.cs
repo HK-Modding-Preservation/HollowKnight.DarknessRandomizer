@@ -207,7 +207,12 @@ namespace DarknessRandomizer.Data
                 ProbabilityWeight = 250,
                 CostWeight = 250 };
 
-            g.Clusters[Cluster.CrystalPeakDeepFocus] = new();
+            g.Clusters[Cluster.CrystalPeakDeepFocus] = new() {
+                Scenes = new() {
+                    { Scenes.CrystalDeepFocus, SemiDark },
+                    { Scenes.CrystalDeepFocusGauntlet, new() { ProficientCombatLocs = LocationSet.ALL } } },
+                AdjacentClusters = new() { { Cluster.CrystalPeakWest, RelativeDarkness.Any } },
+                ProbabilityWeight = 150 };
 
             g.Clusters[Cluster.CrystalPeakDirtmouthBridge] = new() {
                 Scenes = new() {
@@ -457,7 +462,6 @@ namespace DarknessRandomizer.Data
             g.Clusters[Cluster.RestingGroundsMain] = new() {
                 Scenes = new() {
                     { Scenes.GroundsWhisperingRoot, SemiDark },
-                    { Scenes.GroundsDreamNailEntrance, SemiDark },
                     { Scenes.GroundsDreamshield, SemiDark },
                     { Scenes.GroundsSpiritsGlade, SemiDark } },
                 AdjacentClusters = new() { { Cluster.RestingGroundsCatacombs, RelativeDarkness.Darker } } };
