@@ -55,9 +55,16 @@ namespace DarknessRandomizer.Rando
             { Scenes.GroundsXero, (lmb, name, lc) => { } },
         };
 
+        private static readonly Dictionary<string, LogicOverride> LogicOverridesByUniqueScene = new()
+        {
+            // Checks in these rooms are easy to obtain if the player has isma's tear; there is no danger.
+            { Scenes.GreenpathLakeOfUnn, SafeDarkRoomWithIsmasTear(Scenes.GreenpathLakeOfUnn) },
+            { Scenes.GreenpathUnn, SafeDarkRoomWithIsmasTear(Scenes.GreenpathUnn) }
+        };
+
         private delegate bool LogicOverrideMatcher(LogicManagerBuilder lmb, string name, LogicClause lc);
 
-        private static readonly List<LogicOverrideMatcher> LogOverrideMatchers = new();
+        private static readonly List<LogicOverrideMatcher> LogicOverrideMatchers = new();
 
         public static void ModifyLMB(GenerationSettings gs, LogicManagerBuilder lmb)
         {
@@ -104,7 +111,7 @@ namespace DarknessRandomizer.Rando
                 }
             }
 
-            foreach (var matcher in LogOverrideMatchers)
+            foreach (var matcher in LogicOverrideMatchers)
             {
                 if (matcher.Invoke(lmb, name, lc))
                 {
@@ -113,6 +120,13 @@ namespace DarknessRandomizer.Rando
             }
 
             // No special case applies, so we use the default scene inference logic.
+            var scenes = InferScenes(lc);
+            if (scenes.Count == 1 && LogicOverridesByUniqueScene.TryGetValue(scenes.GetEnumerator().Current, out handler))
+            {
+                handler.Invoke(lmb, name, lc);
+                return;
+            }
+
             EditLogicClauseByScenes(lmb, name, InferScenes(lc), true);
         }
 
@@ -178,6 +192,11 @@ namespace DarknessRandomizer.Rando
         private static void EditLogicClauseByScenesNoDarkroomSkips(LogicManagerBuilder lmb, string name, LogicClause lc)
         {
             EditLogicClauseByScenes(lmb, name, InferScenes(lc), false);
+        }
+
+        private static LogicOverride SafeDarkRoomWithIsmasTear(string scene)
+        {
+            return (lmb, name, lc) => lmb.DoLogicEdit(new(name, $"ORIG + ($DarknessNotDarkened[{scene}] | LANTERN | ACID)"));
         }
     }
 }
