@@ -42,6 +42,10 @@ namespace DarknessRandomizer.Rando
             { "Boss_Essence-White_Defender", (lmb, name, lc) => EditLogicClauseByScenes(
                 lmb, name, new() { SceneName.WaterwaysDungDefendersCave, SceneName.DreamWhiteDefender }, true) },
 
+            // Modify mantis lords specifically because the rewards are in another room.
+            { "Defeated_Mantis_Lords", (lmb, name, lc) => lmb.DoLogicEdit(
+                new(name, $"ORIG + ($DarknessNotDarkened[{SceneName.FungalMantisLords}] | LANTERN | DARKROOMS + PROFICIENTCOMBAT)"))},
+
             // Flower quest just requires lantern, not gonna think any harder about it.
             { "Mask_Shard-Grey_Mourner", (lmb, name, lc) => lmb.DoLogicEdit(new(name, "ORIG + LANTERN")) },
         };
@@ -51,8 +55,9 @@ namespace DarknessRandomizer.Rando
             // TODO: Fix for bench rando
             { SceneName.GreenpathToll, EditLogicClauseByScenesNoDarkroomSkips },
 
-            // Allow Xero to exist in a dark room without resting RG access.
-            // Movement through the room is trivial and hazardless.
+            // The following scenes are trivial to navigate while dark, but may contain a check which is
+            // uniquely affected by darkness.
+            { SceneName.FungalQueensStation, (lmb, name, lc) => { } },
             { SceneName.GroundsXero, (lmb, name, lc) => { } },
         };
 

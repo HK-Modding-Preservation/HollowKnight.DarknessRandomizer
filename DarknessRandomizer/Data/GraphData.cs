@@ -114,6 +114,20 @@ namespace DarknessRandomizer.Data
                 ProbabilityWeight = 15,
                 CostWeight = 60 };
 
+            g.Clusters[Cluster.CrossroadsFungalBridge] = new()
+            {
+                Scenes = new()
+                {
+                    { SceneName.CrossroadsGoamJournal, SemiDark },
+                    { SceneName.CrossroadsFungalEntrance, SemiDark }
+                },
+                AdjacentClusters = new()
+                {
+                    { Cluster.CrossroadsWest, RelativeDarkness.Any },
+                    { Cluster.FungalUpper, RelativeDarkness.Any }
+                }
+            };
+
             g.Clusters[Cluster.CrossroadsLower] = new() {
                 Scenes = new() {
                     { SceneName.CrossroadsGruzMother, new() },
@@ -139,7 +153,7 @@ namespace DarknessRandomizer.Data
                 Scenes = new() {
                     { SceneName.CrossroadsMawlekEntrance, new() },
                     { SceneName.CrossroadsMawlekMiddle, new() },
-                    { SceneName.CrossroadsMawlekBoss, new() } },
+                    { SceneName.CrossroadsMawlekBoss, new() { ProficientCombatLocs = LocationSet.ALL } } },
                 AdjacentClusters = new() {
                     { Cluster.CrossroadsWest, RelativeDarkness.Brighter } },
                 ProbabilityWeight = 30,
@@ -177,13 +191,14 @@ namespace DarknessRandomizer.Data
                 CostWeight = 200 };
 
             g.Clusters[Cluster.CrossroadsWest] = new() {
-                Scenes = new() {
+                Scenes = new()
+                {
                     { SceneName.CrossroadsCentralGrub, new() },
                     { SceneName.CrossroadsGruzzer, new() },
                     { SceneName.CrossroadsCornifer, new() },
                     { SceneName.CrossroadsAspidArena, new() },
-                    { SceneName.CrossroadsGoamMaskShard, new() },
-                    { SceneName.CrossroadsFungalEntrance, new() } },
+                    { SceneName.CrossroadsGoamMaskShard, new() }
+                },
                 ProbabilityWeight = 5,
                 CostWeight = 120 };
 
@@ -329,6 +344,161 @@ namespace DarknessRandomizer.Data
                     { Cluster.FogCanyonOvergrownMound, RelativeDarkness.Darker } },
                 ProbabilityWeight = 15,
                 CostWeight = 300 };
+
+            g.Clusters[Cluster.FungalCore] = new() {
+                Scenes = new() { { SceneName.FungalCoreUpper, new() }, { SceneName.FungalCoreLower, new() } },
+                AdjacentClusters = new() { { Cluster.FungalLowerHub, RelativeDarkness.Brighter } } };
+
+            g.Clusters[Cluster.FungalCorniferHub] = new()
+            {
+                Scenes = new() { { SceneName.FungalCornifer, new() } }
+            };
+
+            g.Clusters[Cluster.FungalElderHuWing] = new()
+            {
+                Scenes = new()
+                {
+                    { SceneName.FungalElderHu, new() },
+                    { SceneName.FungalOutsideElderHu, new() },
+                    { SceneName.FungalClothCorridor, SemiDark },
+                    { SceneName.FungalShrumalWarriorAcidBridge, new() }
+                },
+                AdjacentClusters = new()
+                {
+                    { Cluster.FungalUpper, RelativeDarkness.Brighter },
+                    { Cluster.FungalPilgrimsWay, RelativeDarkness.Any }
+                },
+                ProbabilityWeight = 50,
+                CostWeight = 150
+            };
+
+            g.Clusters[Cluster.FungalEntrance] = new()
+            {
+                Scenes = new()
+                {
+                    { SceneName.FungalOutsideQueens, new() },
+                    { SceneName.FungalShrumalWarriorLoop, new() },
+                    { SceneName.FungalBelowOgres, new() },
+                },
+                AdjacentClusters = new()
+                {
+                    { Cluster.FungalShroomals, RelativeDarkness.Darker },
+                    { Cluster.FungalCorniferHub, RelativeDarkness.Brighter }
+                },
+                ProbabilityWeight = 25
+            };
+
+            g.Clusters[Cluster.FungalLowerHub] = new()
+            {
+                Scenes = new()
+                {
+                    { SceneName.FungalEpogo, new() },
+                    { SceneName.FungalAboveMantisVillage, new() }
+                },
+                AdjacentClusters = new()
+                {
+                    { Cluster.FungalPilgrimsWay, RelativeDarkness.Any },
+                    { Cluster.FungalCore, RelativeDarkness.Darker },
+                    { Cluster.FungalMantisVillage, RelativeDarkness.Any }
+                },
+                ProbabilityWeight = 25
+            };
+
+            g.Clusters[Cluster.FungalMantisLords] = new()
+            {
+                Scenes = new()
+                {
+                    { SceneName.FungalMantisLords, new() },
+                    { SceneName.FungalMantisRewards, SemiDark }
+                },
+                AdjacentClusters = new()
+                {
+                    { Cluster.FungalMantisVillage, RelativeDarkness.Brighter }
+                },
+                CostWeight = 250
+            };
+
+            g.Clusters[Cluster.FungalMantisVillage] = new()
+            {
+                Scenes = new()
+                {
+                    { SceneName.FungalMantisVillage, new() },
+                    { SceneName.FungalMantisCorridor, new() },
+                    { SceneName.FungalBrettaBench, new() },
+                    { SceneName.FungalDashmaster, new() }
+                },
+                AdjacentClusters = new()
+                {
+                    { Cluster.FungalMantisLords, RelativeDarkness.Darker },
+                    { Cluster.FungalLowerHub, RelativeDarkness.Any }
+                },
+                ProbabilityWeight = 40,
+                CostWeight = 200 };
+
+            g.Clusters[Cluster.FungalQueenStation] = new()
+            {
+                Scenes = new()
+                {
+                    { SceneName.FungalQueensStation, new() },
+                    { SceneName.FungalQueensStag, SemiDark },
+                    { SceneName.FungalWilloh, SemiDark }
+                },
+                AdjacentClusters = new()
+                {
+                    { Cluster.FogCanyonWest, RelativeDarkness.Any },
+                    { Cluster.FungalEntrance, RelativeDarkness.Any }
+                },
+                OverrideIsDarknessSource = false,
+                ProbabilityWeight = 50,
+                CostWeight = 50
+            };
+
+            g.Clusters[Cluster.FungalPilgrimsWay] = new()
+            {
+                Scenes = new()
+                {
+                    { SceneName.FungalPilgrimsWay, new() },
+                    { SceneName.FungalLeftOfPilgrimsWay, new() }
+                },
+                ProbabilityWeight = 25 };
+
+            g.Clusters[Cluster.FungalShroomals] = new()
+            {
+                Scenes = new() { { SceneName.FungalShrumalOgres, new() } },
+                AdjacentClusters = new()
+                {
+                    { Cluster.FungalEntrance, RelativeDarkness.Brighter },
+                    { Cluster.FungalUpper, RelativeDarkness.Brighter }
+                },
+                ProbabilityWeight = 80,
+                CostWeight = 120
+            };
+
+            g.Clusters[Cluster.FungalSporeShroom] = new() {
+                Scenes = new() {
+                    { SceneName.FungalSporeShroom, new() },
+                    { SceneName.FungalRightOfSporeShroom, new() },
+                    { SceneName.FungalDeepnestFall, SemiDark } },
+                AdjacentClusters = new() {
+                    { Cluster.FungalCorniferHub, RelativeDarkness.Brighter } },
+                ProbabilityWeight = 80,
+                CostWeight = 150 };
+
+            g.Clusters[Cluster.FungalUpper] = new()
+            {
+                Scenes = new()
+                {
+                    { SceneName.FungalOutsideLegEater, new() },
+                    { SceneName.FungalLegEater, SemiDark },
+                    { SceneName.FungalLegEaterRoot, new() } },
+                AdjacentClusters = new()
+                {
+                    { Cluster.CrossroadsFungalBridge, RelativeDarkness.Any },
+                    { Cluster.FogCanyonEast, RelativeDarkness.Any },
+                    { Cluster.FungalElderHuWing, RelativeDarkness.Darker }
+                },
+                ProbabilityWeight = 10,
+                CostWeight = 200 };
 
             g.Clusters[Cluster.GreenpathCliffsBridge] = new() {
                 Scenes = new() {
