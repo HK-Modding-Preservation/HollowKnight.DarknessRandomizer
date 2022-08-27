@@ -122,7 +122,7 @@ namespace DarknessRandomizer.Lib
             // Add adjacent clusters if constraints are satisfied.
             foreach (var nname in cluster.AdjacentClusters.Keys)
             {
-                if (clusterDarkness[nname] == Darkness.Dark || darkCandidates.Contains(nname) || forbiddenClusters.Contains(name))
+                if (clusterDarkness[nname] == Darkness.Dark || forbiddenClusters.Contains(name))
                 {
                     continue;
                 }
@@ -131,8 +131,9 @@ namespace DarknessRandomizer.Lib
                 if (ncluster.MaximumDarkness >= Darkness.SemiDark)
                 {
                     semiDarkCandidates.Add(nname);
-                    if (ncluster.MaximumDarkness >= Darkness.Dark && ncluster.AdjacentClusters.All(
-                        cr => cr.Value != RelativeDarkness.Darker || clusterDarkness[cr.Key] == Darkness.Dark))
+                    if (!darkCandidates.Contains(nname) && ncluster.MaximumDarkness >= Darkness.Dark
+                        && ncluster.AdjacentClusters.All(
+                            cr => cr.Value != RelativeDarkness.Darker || clusterDarkness[cr.Key] == Darkness.Dark))
                     {
                         darkCandidates.Add(nname, ncluster.ProbabilityWeight);
                     }
