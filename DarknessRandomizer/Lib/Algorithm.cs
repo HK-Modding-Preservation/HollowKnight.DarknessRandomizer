@@ -42,6 +42,12 @@ namespace DarknessRandomizer.Lib
             {
                 this.forbiddenClusters.Add(c);
             }
+            
+            // Always include the local cluster, even in TRANDO.
+            if (SceneName.TryGetSceneName(startDef.SceneName, out SceneName sceneName) && g.TryGetCluster(sceneName, out Cluster cluster))
+            {
+                this.forbiddenClusters.Add(cluster);
+            }
         }
 
         public void SelectDarknessLevels(out DarknessDictionary darknessOverrides, out AlgorithmStats stats)
