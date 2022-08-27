@@ -4,12 +4,12 @@
     {
         BlackEggRadiance,
         BlackEggTemple,
+        BlueLake,
         CliffsBaldur,
         CliffsJonis,
         CliffsMain,
         CrossroadsAncestralMound,
         CrossroadsCanyonBridge,
-        WestCityElevator,
         CrossroadsEntrance,
         CrossroadsFailedChamp,
         CrossroadsFalseKnight,
@@ -53,5 +53,10 @@
         GreenpathUpper,
         GreenpathWest,
         KingsPass,
+        RestingGroundsCatacombs,
+        RestingGroundsDreamNail,
+        RestingGroundsMain,
+        RestingGroundsXero,
+        WestCityElevator  // FIXME: Epass lantern logic
     }
 }

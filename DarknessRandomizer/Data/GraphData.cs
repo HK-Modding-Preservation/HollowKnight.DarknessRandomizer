@@ -24,6 +24,17 @@ namespace DarknessRandomizer.Data
                 CursedOnly = true,
                 CostWeight = 300 };
 
+            g.Clusters[Cluster.BlueLake] = new() {
+                Scenes = new() {
+                    { Scenes.GroundsBlueLake, new() },
+                    { Scenes.GroundsCorridorBelowXero, new() } },
+                AdjacentClusters = new() {
+                    { Cluster.CrossroadsLower, RelativeDarkness.Any },
+                    // FIXME: EastCityElevator
+                },
+                ProbabilityWeight = 80,
+                CostWeight = 60 };
+
             g.Clusters[Cluster.CliffsBaldur] = new() {
                 Scenes = new() { { Scenes.CliffsBaldursShell, new() } },
                 AdjacentClusters = new() {
@@ -427,6 +438,35 @@ namespace DarknessRandomizer.Data
             g.Clusters[Cluster.KingsPass] = new() {
                 Scenes = new() { { Scenes.KingsPass, new() } },
                 CostWeight = 50 };
+
+            g.Clusters[Cluster.RestingGroundsCatacombs] = new() {
+                Scenes = new() {
+                    { Scenes.GroundsCrypts, new() },
+                    { Scenes.GroundsOutsideGreyMourner, SemiDark } },
+                // FIXME: EastCityElevator
+            };
+
+            g.Clusters[Cluster.RestingGroundsDreamNail] = new() {
+                Scenes = new() {
+                    { Scenes.DreamNail, new() },
+                    { Scenes.GroundsDreamNailEntrance, SemiDark } },
+                AdjacentClusters = new() { { Cluster.RestingGroundsMain, RelativeDarkness.Brighter } },
+                ProbabilityWeight = 150,
+                CostWeight = 25 };
+
+            g.Clusters[Cluster.RestingGroundsMain] = new() {
+                Scenes = new() {
+                    { Scenes.GroundsWhisperingRoot, SemiDark },
+                    { Scenes.GroundsDreamNailEntrance, SemiDark },
+                    { Scenes.GroundsDreamshield, SemiDark },
+                    { Scenes.GroundsSpiritsGlade, SemiDark } },
+                AdjacentClusters = new() { { Cluster.RestingGroundsCatacombs, RelativeDarkness.Darker } } };
+
+            g.Clusters[Cluster.RestingGroundsXero] = new() {
+                Scenes = new() { { Scenes.GroundsXero, new() } },
+                AdjacentClusters = new() {
+                    { Cluster.RestingGroundsDreamNail, RelativeDarkness.Any },
+                    { Cluster.BlueLake, RelativeDarkness.Any } } };
 
             g.Clusters[Cluster.WestCityElevator] = new() {
                 Scenes = new() {
