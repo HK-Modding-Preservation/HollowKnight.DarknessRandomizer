@@ -1,19 +1,16 @@
-﻿using DarknessRandomizer.Lib;
+﻿using DarknessRandomizer.Data;
+using DarknessRandomizer.Lib;
 using ItemChanger;
-using Modding;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace DarknessRandomizer.Rando
 {
     public class DarknessRandomizerModule : ItemChanger.Modules.Module
     {
-        public Dictionary<string, Darkness> DarknessOverrides = new();
+        public Dictionary<SceneName, Darkness> DarknessOverrides = new();
 
         [JsonIgnore]
         private readonly List<Action> UnloadHooks = new();
@@ -21,8 +18,8 @@ namespace DarknessRandomizer.Rando
         public override void Initialize()
         {
             InstallHook(new LambdaHook(
-                () => Events.OnSceneChange += MaybeDeleteHazardRespawns,
-                () => Events.OnSceneChange -= MaybeDeleteHazardRespawns));
+                () => Events.OnSceneChange += AdjustDarknessRelatedObjects,
+                () => Events.OnSceneChange -= AdjustDarknessRelatedObjects));
         }
 
         public override void Unload() => UnloadHooks.ForEach(a => a.Invoke());
@@ -35,15 +32,29 @@ namespace DarknessRandomizer.Rando
 
         private bool PlayerHasLantern() => PlayerData.instance.GetBool(nameof(PlayerData.hasLantern));
 
-        private void MaybeDeleteHazardRespawns(UnityEngine.SceneManagement.Scene scene)
+        private void DeleteHazardRespawnTriggers()
         {
-            if (!PlayerHasLantern() && DarknessOverrides.TryGetValue(scene.name, out Darkness d) && d == Darkness.Dark)
+            foreach (var obj in GameObject.FindObjectsOfType<HazardRespawnTrigger>())
             {
-                foreach (var obj in GameObject.FindObjectsOfType<HazardRespawnTrigger>())
-                {
-                    GameObject.Destroy(obj);
-                }
+                GameObject.Destroy(obj);
             }
+        }
+
+        private void AdjustDarknessRelatedObjects(UnityEngine.SceneManagement.Scene scene)
+        {
+            if (!SceneName.TryGetSceneName(scene.name, out SceneName sceneName)
+                || !DarknessOverrides.TryGetValue(sceneName, out Darkness darkness))
+            {
+                darkness = Darkness.Bright;
+            }
+
+            if (darkness == Darkness.Dark && !PlayerHasLantern())
+            {
+                DeleteHazardRespawnTriggers();
+            }
+
+            // FIXME: Scenes
+            if (darkness != Darkness.Dark) { }
 
             // FIXME: Custom respawners for bosses, arenas
         }

@@ -1,4 +1,5 @@
-﻿using DarknessRandomizer.Lib;
+﻿using DarknessRandomizer.Data;
+using DarknessRandomizer.Lib;
 using RandomizerMod.RandomizerData;
 using System.Collections.Generic;
 
@@ -9,7 +10,7 @@ namespace DarknessRandomizer.Rando
     public class LocalSettings
     {
         public DarknessRandomizationSettings Settings;
-        public Dictionary<string, Darkness> DarknessOverrides;
+        public Dictionary<SceneName, Darkness> DarknessOverrides;
         public AlgorithmStats Stats;
 
         public LocalSettings(int seed, StartDef startDef)

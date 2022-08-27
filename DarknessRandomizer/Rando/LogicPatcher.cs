@@ -32,35 +32,35 @@ namespace DarknessRandomizer.Rando
             // Dream bosses are coded specially because the checks are located where the dream nail is swung,
             // but we care whether or not the actual fight room is dark. So we have to account for both rooms.
             { "Boss_Essence-Failed_Champion", (lmb, name, lc) => EditLogicClauseByScenes(
-                lmb, name, new() { Scenes.CrossroadsFalseKnightArena, Scenes.DreamFailedChampion }, true) },
+                lmb, name, new() { SceneName.CrossroadsFalseKnightArena, SceneName.DreamFailedChampion }, true) },
             { "Boss_Essence-Grey_Prince_Zote",
-                (lmb, name, lc) => EditLogicClauseByScenes(lmb, name, new() { Scenes.Bretta, Scenes.DreamGreyPrinceZote }, true) },
+                (lmb, name, lc) => EditLogicClauseByScenes(lmb, name, new() { SceneName.Bretta, SceneName.DreamGreyPrinceZote }, true) },
             { "Boss_Essence-Lost_Kin", (lmb, name, lc) => EditLogicClauseByScenes(
-                lmb, name, new() { Scenes.BasinBrokenVesselGrub, Scenes.DreamLostKin }, true) },
+                lmb, name, new() { SceneName.BasinBrokenVesselGrub, SceneName.DreamLostKin }, true) },
             { "Boss_Essence-Soul_Tyrant", (lmb, name, lc) => EditLogicClauseByScenes(
-                lmb, name, new() { Scenes.CitySoulMasterArena, Scenes.DreamSoulTyrant }, true) },
+                lmb, name, new() { SceneName.CitySoulMasterArena, SceneName.DreamSoulTyrant }, true) },
             { "Boss_Essence-White_Defender", (lmb, name, lc) => EditLogicClauseByScenes(
-                lmb, name, new() { Scenes.WaterwaysDungDefendersCave, Scenes.DreamWhiteDefender }, true) },
+                lmb, name, new() { SceneName.WaterwaysDungDefendersCave, SceneName.DreamWhiteDefender }, true) },
 
             // Flower quest just requires lantern, not gonna think any harder about it.
             { "Mask_Shard-Grey_Mourner", (lmb, name, lc) => lmb.DoLogicEdit(new(name, "ORIG + LANTERN")) },
         };
 
-        private static readonly Dictionary<string, LogicOverride> LogicOverridesByTransitionScene = new()
+        private static readonly Dictionary<SceneName, LogicOverride> LogicOverridesByTransitionScene = new()
         {
             // TODO: Fix for bench rando
-            { Scenes.GreenpathToll, EditLogicClauseByScenesNoDarkroomSkips },
+            { SceneName.GreenpathToll, EditLogicClauseByScenesNoDarkroomSkips },
 
             // Allow Xero to exist in a dark room without resting RG access.
             // Movement through the room is trivial and hazardless.
-            { Scenes.GroundsXero, (lmb, name, lc) => { } },
+            { SceneName.GroundsXero, (lmb, name, lc) => { } },
         };
 
-        private static readonly Dictionary<string, LogicOverride> LogicOverridesByUniqueScene = new()
+        private static readonly Dictionary<SceneName, LogicOverride> LogicOverridesByUniqueScene = new()
         {
             // Checks in these rooms are easy to obtain if the player has isma's tear; there is no danger.
-            { Scenes.GreenpathLakeOfUnn, SafeDarkRoomWithIsmasTear(Scenes.GreenpathLakeOfUnn) },
-            { Scenes.GreenpathUnn, SafeDarkRoomWithIsmasTear(Scenes.GreenpathUnn) }
+            { SceneName.GreenpathLakeOfUnn, SafeDarkRoomWithIsmasTear(SceneName.GreenpathLakeOfUnn) },
+            { SceneName.GreenpathUnn, SafeDarkRoomWithIsmasTear(SceneName.GreenpathUnn) }
         };
 
         private delegate bool LogicOverrideMatcher(LogicManagerBuilder lmb, string name, LogicClause lc);
@@ -103,14 +103,11 @@ namespace DarknessRandomizer.Rando
             }
 
             int i = name.IndexOf('[');
-            if (i != -1)
+            if (i != -1 && SceneName.TryGetSceneName(name.Substring(0, i), out SceneName sceneName)
+                && LogicOverridesByTransitionScene.TryGetValue(sceneName, out handler))
             {
-                var scene = name.Substring(0, i);
-                if (Scenes.IsScene(scene) && LogicOverridesByTransitionScene.TryGetValue(scene, out handler))
-                {
-                    handler.Invoke(lmb, name, lc);
-                    return;
-                }
+                handler.Invoke(lmb, name, lc);
+                return;
             }
 
             foreach (var matcher in LogicOverrideMatchers)
@@ -132,9 +129,9 @@ namespace DarknessRandomizer.Rando
             EditLogicClauseByScenes(lmb, name, InferScenes(lc), true);
         }
 
-        private static HashSet<string> InferScenes(LogicClause lc)
+        private static HashSet<SceneName> InferScenes(LogicClause lc)
         {
-            HashSet<string> scenes = new();
+            HashSet<SceneName> sceneNames = new();
             foreach (var token in lc.Tokens)
             {
                 if (token is SimpleToken st)
@@ -143,18 +140,17 @@ namespace DarknessRandomizer.Rando
                     int i = name.IndexOf("[");
                     if (i != -1)
                     {
-                        string maybeScene = name.Substring(0, i);
-                        if (Scenes.IsScene(maybeScene))
+                        if (SceneName.TryGetSceneName(name.Substring(0, i), out SceneName sceneName))
                         {
-                            scenes.Add(maybeScene);
+                            sceneNames.Add(sceneName);
                         }
                     }
                 }
             }
-            return scenes;
+            return sceneNames;
         }
 
-        private static string GetDarkLogic(IEnumerable<string> scenes, string locName, bool darkrooms)
+        private static string GetDarkLogic(IEnumerable<SceneName> scenes, string locName, bool darkrooms)
         {
             var g = Graph.Instance;
 
@@ -163,7 +159,7 @@ namespace DarknessRandomizer.Rando
             bool combat = false;
             foreach (var scene in scenes)
             {
-                if (g.TryGetSceneData(scene, out Scene sData))
+                if (g.TryGetSceneData(scene, out Lib.SceneData sData))
                 {
                     difficult |= sData.DifficultSkipLocs.Contains(locName);
                     combat |= sData.ProficientCombatLocs.Contains(locName);
@@ -176,7 +172,7 @@ namespace DarknessRandomizer.Rando
                 (combat ? $"{dark} + PROFICIENTCOMBAT" : dark);
         }
 
-        private static void EditLogicClauseByScenes(LogicManagerBuilder lmb, string name, HashSet<string> scenes, bool darkrooms)
+        private static void EditLogicClauseByScenes(LogicManagerBuilder lmb, string name, HashSet<SceneName> scenes, bool darkrooms)
         {
             if (scenes.Count == 0)
             {
@@ -196,9 +192,9 @@ namespace DarknessRandomizer.Rando
             EditLogicClauseByScenes(lmb, name, InferScenes(lc), false);
         }
 
-        private static LogicOverride SafeDarkRoomWithIsmasTear(string scene)
+        private static LogicOverride SafeDarkRoomWithIsmasTear(SceneName sceneName)
         {
-            return (lmb, name, lc) => lmb.DoLogicEdit(new(name, $"ORIG + ($DarknessNotDarkened[{scene}] | LANTERN | ACID)"));
+            return (lmb, name, lc) => lmb.DoLogicEdit(new(name, $"ORIG + ($DarknessNotDarkened[{sceneName}] | LANTERN | ACID)"));
         }
     }
 }

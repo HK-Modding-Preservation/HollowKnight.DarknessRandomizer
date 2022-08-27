@@ -44,7 +44,7 @@ namespace DarknessRandomizer.Lib
             }
         }
 
-        public void SelectDarknessLevels(out Dictionary<string, Darkness> darknessOverrides, out AlgorithmStats stats)
+        public void SelectDarknessLevels(out Dictionary<SceneName, Darkness> darknessOverrides, out AlgorithmStats stats)
         {
             // Phase 0: Everything starts as bright.
             foreach (var c in g.Clusters.Keys)

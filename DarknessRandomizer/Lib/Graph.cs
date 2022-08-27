@@ -18,7 +18,7 @@ namespace DarknessRandomizer.Lib
     }
 
     // Data specific to a scene.
-    public class Scene
+    public class SceneData
     {
         public Darkness MinimumDarkness = Darkness.Bright;
         public Darkness MaximumDarkness = Darkness.Dark;
@@ -38,10 +38,10 @@ namespace DarknessRandomizer.Lib
     // SceneClusters are organized into a topology, where a scene may have zero to many 'lower' adjacent clusters,
     // and 'higher' adjacent clusters. Randomization enforces that as one wanders the scene cluster graph from
     // high nodes to low nodes, the cluster darkness level must be monotonically non-increasing.
-    public class SceneCluster
+    public class SceneClusterData
     {
         // Scene data for the cluster.
-        public Dictionary<string, Scene> Scenes = new();
+        public Dictionary<SceneName, SceneData> Scenes = new();
 
         public Darkness MaximumDarkness
         {
@@ -102,14 +102,14 @@ namespace DarknessRandomizer.Lib
     {
         public static Graph Instance = GraphData.LoadGraph();
 
-        public Dictionary<Cluster, SceneCluster> Clusters = new();
+        public Dictionary<Cluster, SceneClusterData> Clusters = new();
 
         // Map of scene names to cluster names.
-        private Dictionary<string, Cluster> sceneLookup;
+        private Dictionary<SceneName, Cluster> sceneLookup;
 
-        public bool TryGetCluster(string scene, out Cluster cluster) => sceneLookup.TryGetValue(scene, out cluster);
+        public bool TryGetCluster(SceneName scene, out Cluster cluster) => sceneLookup.TryGetValue(scene, out cluster);
 
-        public bool TryGetSceneData(string scene, out Scene sceneData)
+        public bool TryGetSceneData(SceneName scene, out SceneData sceneData)
         {
             if (TryGetCluster(scene, out Cluster c))
             {
