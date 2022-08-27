@@ -131,7 +131,7 @@ namespace DarknessRandomizer.Lib
                 if (ncluster.MaximumDarkness >= Darkness.SemiDark)
                 {
                     semiDarkCandidates.Add(nname);
-                    if (!darkCandidates.Contains(nname) && ncluster.MaximumDarkness >= Darkness.Dark
+                    if (!darkCandidates.Contains(nname) && ncluster.CanBeDark(settings)
                         && ncluster.AdjacentClusters.All(
                             cr => cr.Value != RelativeDarkness.Darker || clusterDarkness[cr.Key] == Darkness.Dark))
                     {
