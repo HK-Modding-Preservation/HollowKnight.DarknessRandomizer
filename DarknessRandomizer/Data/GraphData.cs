@@ -51,6 +51,8 @@ namespace DarknessRandomizer.Data
                 CostWeight = 200
             };
 
+
+
             g.Clusters[Cluster.CityElegantWarrior] = new()
             {
                 Scenes = new()
@@ -122,7 +124,7 @@ namespace DarknessRandomizer.Data
                 CostWeight = 25 };
 
             g.Clusters[Cluster.CrossroadsFailedChamp] = new() {
-                Scenes = new() { { SceneName.DreamFailedChampion, new() { ProficientCombatLocs = LocationSet.ALL } } },
+                Scenes = new() { { SceneName.DreamFailedChampion, new() { ProficientCombatLocs = LocationSet.All() } } },
                 AdjacentClusters = new() { { Cluster.CrossroadsFalseKnight, RelativeDarkness.Darker } },
                 CursedOnly = true,
                 ProbabilityWeight = 80,
@@ -187,7 +189,7 @@ namespace DarknessRandomizer.Data
                 Scenes = new() {
                     { SceneName.CrossroadsMawlekEntrance, new() },
                     { SceneName.CrossroadsMawlekMiddle, new() },
-                    { SceneName.CrossroadsMawlekBoss, new() { ProficientCombatLocs = LocationSet.ALL } } },
+                    { SceneName.CrossroadsMawlekBoss, new() { ProficientCombatLocs = LocationSet.All() } } },
                 AdjacentClusters = new() {
                     { Cluster.CrossroadsWest, RelativeDarkness.Brighter } },
                 ProbabilityWeight = 30,
@@ -259,7 +261,7 @@ namespace DarknessRandomizer.Data
             g.Clusters[Cluster.CrystalPeakDeepFocus] = new() {
                 Scenes = new() {
                     { SceneName.CrystalDeepFocus, SemiDark },
-                    { SceneName.CrystalDeepFocusGauntlet, new() { ProficientCombatLocs = LocationSet.ALL } } },
+                    { SceneName.CrystalDeepFocusGauntlet, new() { ProficientCombatLocs = LocationSet.All() } } },
                 AdjacentClusters = new() { { Cluster.CrystalPeakWest, RelativeDarkness.Any } },
                 ProbabilityWeight = 150 };
 
@@ -272,11 +274,11 @@ namespace DarknessRandomizer.Data
             g.Clusters[Cluster.CrystalPeakGuardian] = new() {
                 Scenes = new() {
                     { SceneName.CrystalGuardianBench, new() },
-                    { SceneName.CrystalEnragedGuardianArena, new() { ProficientCombatLocs = LocationSet.ALL } } },
+                    { SceneName.CrystalEnragedGuardianArena, new() { ProficientCombatLocs = LocationSet.All() } } },
                 CostWeight = 200 };
 
             g.Clusters[Cluster.CrystalPeakHeart] = new() {
-                Scenes = new() { { SceneName.CrystalCrystalHeartGauntlet, new() { DifficultSkipLocs = LocationSet.ALL } } },
+                Scenes = new() { { SceneName.CrystalCrystalHeartGauntlet, new() { DifficultSkipLocs = LocationSet.All() } } },
                 AdjacentClusters = new() { { Cluster.CrystalPeakUpper, RelativeDarkness.Brighter } },
                 ProbabilityWeight = 150,
                 CostWeight = 200 };
@@ -324,7 +326,7 @@ namespace DarknessRandomizer.Data
                 Scenes = new() {
                     { SceneName.Bretta, new() {
                         MaximumDarkness = Darkness.SemiDark,
-                        ProficientCombatLocs = new LocationsList("Boss_Essence-Grey_Prince_Zote") } },
+                        ProficientCombatLocs = new("Boss_Essence-Grey_Prince_Zote") } },
                     { SceneName.BrettaBasement, SemiDark },
                     { SceneName.GPZ, new() } },
                 CursedOnly = true,
@@ -333,7 +335,7 @@ namespace DarknessRandomizer.Data
 
             g.Clusters[Cluster.DirtmouthGrimm] = new() {
                 Scenes = new() {
-                    { SceneName.GrimmTent, new() { ProficientCombatLocs = LocationSet.ALL } },
+                    { SceneName.GrimmTent, new() { ProficientCombatLocs = LocationSet.All() } },
                     { SceneName.GrimmNKG, new() } },
                 CursedOnly = true,
                 ProbabilityWeight = 50,
@@ -342,7 +344,7 @@ namespace DarknessRandomizer.Data
             g.Clusters[Cluster.FogCanyonArchives] = new() {
                 Scenes = new() {
                     { SceneName.FogArchivesBench, SemiDark },
-                    { SceneName.FogUumuuArena, new() { ProficientCombatLocs = LocationSet.ALL } } },
+                    { SceneName.FogUumuuArena, new() { ProficientCombatLocs = LocationSet.All() } } },
                 AdjacentClusters = new() { { Cluster.FogCanyonEast, RelativeDarkness.Any } },
                 CostWeight = 150 };
 
@@ -362,7 +364,7 @@ namespace DarknessRandomizer.Data
                 CostWeight = 60 };
 
             g.Clusters[Cluster.FogCanyonNotch] = new() {
-                Scenes = new() { { SceneName.FogCharmNotch, new() { DifficultSkipLocs = LocationSet.ALL } } },
+                Scenes = new() { { SceneName.FogCharmNotch, new() { DifficultSkipLocs = LocationSet.All() } } },
                 AdjacentClusters = new() { { Cluster.FogCanyonEast, RelativeDarkness.Brighter } } };
 
             g.Clusters[Cluster.FogCanyonWest] = new() {
@@ -589,7 +591,7 @@ namespace DarknessRandomizer.Data
                 Scenes = new() {
                     {
                         SceneName.GreenpathSheoGauntlet,
-                        new() { DifficultSkipLocs = new LocationsList("Fungus1_09[left1]") }
+                        new() { DifficultSkipLocs = new("Fungus1_09[left1]") }
                     },
                     { SceneName.GreenpathOutsideSheo, new() },
                     { SceneName.GreenpathSheo, SemiDark } },

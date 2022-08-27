@@ -2,40 +2,31 @@
 
 namespace DarknessRandomizer.Lib
 {
-    public abstract class LocationSet
+    public class LocationSet
     {
-        public static readonly LocationSet NONE = new NoLocations();
-        public static readonly LocationSet ALL = new AllLocations();
+        public bool IsAll;
+        public HashSet<string> Locations;
 
-        public abstract bool Contains(string location);
-    }
-
-    public class NoLocations : LocationSet
-    {
-        public override bool Contains(string location) => false;
-    }
-
-    public class AllLocations : LocationSet
-    {
-
-        public override bool Contains(string location) => true;
-    }
-
-    public class LocationsList : LocationSet
-    {
-        public HashSet<string> Locations = new();
-
-        public LocationsList() { }
-        public LocationsList(string loc1, params string[] locs)
+        public LocationSet(bool isAll)
         {
-            Locations.Add(loc1);
-            foreach (var loc in locs)
+            this.IsAll = isAll;
+            this.Locations = new();
+        }
+
+        public LocationSet(params string[] locations)
+        {
+            this.IsAll = false;
+            this.Locations = new();
+
+            foreach (var loc in locations)
             {
-                Locations.Add(loc);
+                this.Locations.Add(loc);
             }
         }
 
-        public override bool Contains(string location) => Locations.Contains(location);
-    }
+        public static LocationSet None() => new(false);
+        public static LocationSet All() => new(true);
 
+        public bool Contains(string location) => IsAll || Locations.Contains(location);
+    }
 }
