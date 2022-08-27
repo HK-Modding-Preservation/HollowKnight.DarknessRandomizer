@@ -6,6 +6,7 @@ using RandomizerMod.RC;
 using RandomizerMod.Settings;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DarknessRandomizer.Rando
 {
@@ -70,7 +71,8 @@ namespace DarknessRandomizer.Rando
         {
             if (!RandoInterop.IsEnabled()) return;
 
-            lmb.VariableResolver = new DarknessVariableResolver(lmb.VariableResolver);
+            var newResolver = new DarknessVariableResolver(lmb.VariableResolver);
+            lmb.VariableResolver = newResolver;
 
             // We want to generically modify logic by location (SceneName), but unfortunately the LogicManager is constructed
             // before any of the location info is provided via the RequestBuilder, so we have to be creative.
@@ -121,7 +123,7 @@ namespace DarknessRandomizer.Rando
 
             // No special case applies, so we use the default scene inference logic.
             var scenes = InferScenes(lc);
-            if (scenes.Count == 1 && LogicOverridesByUniqueScene.TryGetValue(scenes.GetEnumerator().Current, out handler))
+            if (scenes.Count == 1 && LogicOverridesByUniqueScene.TryGetValue(scenes.Single(), out handler))
             {
                 handler.Invoke(lmb, name, lc);
                 return;
