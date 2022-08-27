@@ -1,5 +1,7 @@
 ﻿using DarknessRandomizer.Data;
 using DarknessRandomizer.Lib;
+using ItemChanger;
+using Newtonsoft.Json;
 using RandomizerCore.Logic;
 using System;
 using System.Collections.Generic;
@@ -10,12 +12,15 @@ namespace DarknessRandomizer.Rando
 {
     public class DarknessVariableResolver : VariableResolver
     {
-        private readonly VariableResolver parent;
+        public VariableResolver Parent;
 
         public DarknessVariableResolver(VariableResolver parent)
         {
-            this.parent = parent;
+            this.Parent = parent;
         }
+
+        [JsonConstructorAttribute]
+        DarknessVariableResolver() { }
 
         public static readonly HashSet<string> VanillaDarkScenes = new()
         {
@@ -30,9 +35,21 @@ namespace DarknessRandomizer.Rando
             Scenes.GreenpathStoneSanctuary
         };
 
+        public static bool TryGetDarkness(string scene, out Darkness d)
+        {
+            if (RandoInterop.LS != null)
+            {
+                return RandoInterop.LS.DarknessOverrides.TryGetValue(scene, out d);
+            }
+            else
+            {
+                return ItemChangerMod.Modules.Get<DarknessRandomizerModule>().DarknessOverrides.TryGetValue(scene, out d);
+            }
+        }
+
         public override bool TryMatch(LogicManager lm, string term, out LogicInt variable)
         {
-            if (parent.TryMatch(lm, term, out variable)) return true;
+            if (Parent.TryMatch(lm, term, out variable)) return true;
 
             Match match = Regex.Match(term, @"^\$DarknessBrightened\[(.+)\]$");
             if (match.Success)
@@ -55,7 +72,7 @@ namespace DarknessRandomizer.Rando
     internal class DarknessBrightenedInt : LogicInt
     {
         // TODO: Improve efficieny by converting scenes into ints, and doing an array lookup.
-        private readonly List<string> scenes;
+        public List<string> scenes;
 
         public DarknessBrightenedInt(IEnumerable<string> scenes)
         {
@@ -72,7 +89,7 @@ namespace DarknessRandomizer.Rando
             bool anyNewBrightness = false;
             foreach (var scene in scenes)
             {
-                if (RandoInterop.LS.DarknessOverrides.TryGetValue(scene, out Darkness d))
+                if (DarknessVariableResolver.TryGetDarkness(scene, out Darkness d))
                 {
                     if (d == Darkness.Dark) {
                         return 0;
@@ -90,7 +107,7 @@ namespace DarknessRandomizer.Rando
 
     internal class DarknessNotDarkenedInt : LogicInt
     {
-        private readonly List<string> scenes;
+        public List<string> scenes;
 
         public DarknessNotDarkenedInt(IEnumerable<string> scenes)
         {
@@ -106,7 +123,7 @@ namespace DarknessRandomizer.Rando
         {
             foreach (var scene in scenes)
             {
-                if (RandoInterop.LS.DarknessOverrides.TryGetValue(scene, out Darkness d))
+                if (DarknessVariableResolver.TryGetDarkness(scene, out Darkness d))
                 {
                     if (d == Darkness.Dark && !DarknessVariableResolver.VanillaDarkScenes.Contains(scene))
                     {
