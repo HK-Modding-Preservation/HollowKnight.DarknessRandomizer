@@ -35,15 +35,15 @@ namespace DarknessRandomizer.Rando
             return ret;
         }
 
-        public static bool TryGetDarkness(SceneName sceneName, out Darkness d)
+        public static bool TryGetDarkness(SceneName sceneName, out Darkness darkness)
         {
             if (RandoInterop.LS != null)
             {
-                return RandoInterop.LS.DarknessOverrides.TryGetValue(sceneName, out d);
+                return RandoInterop.LS.DarknessOverrides.TryGetValue(sceneName, out darkness);
             }
             else
             {
-                return ItemChangerMod.Modules.Get<DarknessRandomizerModule>().DarknessOverrides.TryGetValue(sceneName, out d);
+                return ItemChangerMod.Modules.Get<DarknessRandomizerModule>().DarknessOverrides.TryGetValue(sceneName, out darkness);
             }
         }
 

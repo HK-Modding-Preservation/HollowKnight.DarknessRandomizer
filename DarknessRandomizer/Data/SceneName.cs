@@ -4,7 +4,8 @@ using System.Collections.Generic;
 
 namespace DarknessRandomizer.Data
 {
-    // Int ids are used in serialization, so they *cannot* change!
+    // Int ids are usedin serialization, so they *cannot* change!
+    [JsonConverter(typeof(SceneNameConverter))]
     public class SceneName
     {
         private static readonly Dictionary<string, SceneName> scenesByName = new();
@@ -26,9 +27,6 @@ namespace DarknessRandomizer.Data
             scenesByName.Add(name, this);
             scenesById.Add(this);
         }
-
-        [JsonConstructorAttribute]
-        SceneName() { }
 
         public static bool TryGetSceneName(string s, out SceneName sceneName) => scenesByName.TryGetValue(s, out sceneName);
 
@@ -454,5 +452,19 @@ namespace DarknessRandomizer.Data
         };
 
         public bool IsVanillaDark() => VanillaDarkScenes.Contains(this);
+    }
+
+    class SceneNameConverter : JsonConverter<SceneName>
+    {
+        public override SceneName ReadJson(JsonReader reader, Type objectType, SceneName existingValue, bool hasExistingValue, JsonSerializer serializer)
+        {
+            if (reader.ReadAsString() is string name && SceneName.TryGetSceneName(name, out SceneName sceneName))
+            {
+                return sceneName;
+            }
+            throw new JsonReaderException("Error decoding SceneName");
+        }
+
+        public override void WriteJson(JsonWriter writer, SceneName value, JsonSerializer serializer) => writer.WriteValue(value.Name);
     }
 }

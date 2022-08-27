@@ -10,7 +10,7 @@ namespace DarknessRandomizer.Rando
 {
     public class DarknessRandomizerModule : ItemChanger.Modules.Module
     {
-        public Dictionary<SceneName, Darkness> DarknessOverrides = new();
+        public DarknessDictionary DarknessOverrides = new();
 
         [JsonIgnore]
         private readonly List<Action> UnloadHooks = new();
