@@ -21,8 +21,8 @@ namespace DarknessRandomizer.Rando
         public override void Initialize()
         {
             InstallHook(new LambdaHook(
-                () => ModHooks.SceneChanged += MaybeDeleteHazardRespawns,
-                () => ModHooks.SceneChanged -= MaybeDeleteHazardRespawns));
+                () => Events.OnSceneChange += MaybeDeleteHazardRespawns,
+                () => Events.OnSceneChange -= MaybeDeleteHazardRespawns));
         }
 
         public override void Unload() => UnloadHooks.ForEach(a => a.Invoke());
@@ -35,18 +35,17 @@ namespace DarknessRandomizer.Rando
 
         private bool PlayerHasLantern() => PlayerData.instance.GetBool(nameof(PlayerData.hasLantern));
 
-        private void MaybeDeleteHazardRespawns(string scene)
+        private void MaybeDeleteHazardRespawns(UnityEngine.SceneManagement.Scene scene)
         {
-            DarknessRandomizer.Log($"Maybe delete? {scene}");
-            if (!PlayerHasLantern() && DarknessOverrides.TryGetValue(scene, out Darkness d) && d == Darkness.Dark)
+            if (!PlayerHasLantern() && DarknessOverrides.TryGetValue(scene.name, out Darkness d) && d == Darkness.Dark)
             {
-                DarknessRandomizer.Log("Attempting to delete things!");
                 foreach (var obj in GameObject.FindObjectsOfType<HazardRespawnTrigger>())
                 {
-                    DarknessRandomizer.Log("Deleting thing!");
                     GameObject.Destroy(obj);
                 }
             }
+
+            // FIXME: Custom respawners for bosses, arenas
         }
     }
 
