@@ -28,12 +28,18 @@ namespace DarknessRandomizer.Rando
             { "Boss_Essence-No_Eyes", EditLogicClauseByScenesNoDarkroomSkips },
             { "Boss_Essence-Xero", EditLogicClauseByScenesNoDarkroomSkips },
 
+            // Dream bosses are coded specially because the checks are located where the dream nail is swung,
+            // but we care whether or not the actual fight room is dark. So we have to account for both rooms.
             { "Boss_Essence-Failed_Champion", (lmb, name, lc) => EditLogicClauseByScenes(
                 lmb, name, new() { Scenes.CrossroadsFalseKnightArena, Scenes.DreamFailedChampion }, true) },
+            { "Boss_Essence-Grey_Prince_Zote",
+                (lmb, name, lc) => EditLogicClauseByScenes(lmb, name, new() { Scenes.Bretta, Scenes.DreamGreyPrinceZote }, true) },
             { "Boss_Essence-Lost_Kin", (lmb, name, lc) => EditLogicClauseByScenes(
                 lmb, name, new() { Scenes.BasinBrokenVesselGrub, Scenes.DreamLostKin }, true) },
             { "Boss_Essence-Soul_Tyrant", (lmb, name, lc) => EditLogicClauseByScenes(
                 lmb, name, new() { Scenes.CitySoulMasterArena, Scenes.DreamSoulTyrant }, true) },
+            { "Boss_Essence-White_Defender", (lmb, name, lc) => EditLogicClauseByScenes(
+                lmb, name, new() { Scenes.WaterwaysDungDefendersCave, Scenes.DreamWhiteDefender }, true) },
         };
 
         private static readonly Dictionary<string, LogicOverride> LogicOverridesByTransitionScene = new()

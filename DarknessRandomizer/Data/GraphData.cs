@@ -173,6 +173,17 @@ namespace DarknessRandomizer.Data
                 ProbabilityWeight = 5,
                 CostWeight = 120 };
 
+            /*CrystalPeakCrown,
+        CrystalPeakCrystallizedMound,
+        CrystalPeakDarkRoom,
+        CrystalPeakDeepFocus,
+        CrystalPeakDirtmouthBridge,
+        CrystalPeakGuardian,
+        CrystalPeakHeart,
+        CrystalPeakLower,
+        CrystalPeakUpper,
+        CrystalPeakWest,*/
+
             g.Clusters[Cluster.DirtmouthGPZ] = new() {
                 Scenes = new() {
                     { Scenes.Bretta, new() {
