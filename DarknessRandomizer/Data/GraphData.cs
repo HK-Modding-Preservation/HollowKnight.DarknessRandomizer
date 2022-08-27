@@ -71,6 +71,16 @@ namespace DarknessRandomizer.Data
                 ProbabilityWeight = 40,
                 CostWeight = 60 };
 
+            g.Clusters[Cluster.CrossroadsEntrance] = new() {
+                Scenes = new() {
+                    { Scenes.CrossroadsWell, new() },
+                    { Scenes.CrossroadsOutsideTemple, SemiDark } },
+                AdjacentClusters = new() {
+                    { Cluster.CrossroadsUpper, RelativeDarkness.Darker },
+                    { Cluster.CrossroadsWest, RelativeDarkness.Darker } },
+                ProbabilityWeight = 5,
+                CostWeight = 25 };
+
             g.Clusters[Cluster.CrossroadsFailedChamp] = new() {
                 Scenes = new() { { Scenes.DreamFailedChampion, new() { ProficientCombatLocs = LocationSet.ALL } } },
                 AdjacentClusters = new() { { Cluster.CrossroadsFalseKnight, RelativeDarkness.Darker } },
@@ -148,14 +158,12 @@ namespace DarknessRandomizer.Data
 
             g.Clusters[Cluster.CrossroadsUpper] = new() {
                 Scenes = new() {
-                    { Scenes.CrossroadsOutsideTemple, SemiDark },
                     { Scenes.CrossroadsCorridorRightofTemple, new() },
                     { Scenes.CrossroadsGuardedGrub, new() },
                     { Scenes.CrossroadsOutsideMyla, new() },
                     { Scenes.CrossroadsAboveLever, new() },
                     { Scenes.CrossroadsCorridorRightofCentralGrub, new() } },
                 AdjacentClusters = new() {
-                    { Cluster.CrossroadsEntrance, RelativeDarkness.Any },
                     { Cluster.CrossroadsWest, RelativeDarkness.Any },
                     { Cluster.CrossroadsLower, RelativeDarkness.Any },
                     { Cluster.CrossroadsPeaksBridge, RelativeDarkness.Any } },
@@ -173,16 +181,17 @@ namespace DarknessRandomizer.Data
                 ProbabilityWeight = 5,
                 CostWeight = 120 };
 
-            /*CrystalPeakCrown,
-        CrystalPeakCrystallizedMound,
-        CrystalPeakDarkRoom,
-        CrystalPeakDeepFocus,
-        CrystalPeakDirtmouthBridge,
-        CrystalPeakGuardian,
-        CrystalPeakHeart,
-        CrystalPeakLower,
-        CrystalPeakUpper,
-        CrystalPeakWest,*/
+            // FIXME
+            g.Clusters[Cluster.CrystalPeakCrown] = new();
+            g.Clusters[Cluster.CrystalPeakCrystallizedMound] = new();
+            g.Clusters[Cluster.CrystalPeakDarkRoom] = new();
+            g.Clusters[Cluster.CrystalPeakDeepFocus] = new();
+            g.Clusters[Cluster.CrystalPeakDirtmouthBridge] = new();
+            g.Clusters[Cluster.CrystalPeakGuardian] = new();
+            g.Clusters[Cluster.CrystalPeakHeart] = new();
+            g.Clusters[Cluster.CrystalPeakLower] = new();
+            g.Clusters[Cluster.CrystalPeakUpper] = new();
+            g.Clusters[Cluster.CrystalPeakWest] = new();
 
             g.Clusters[Cluster.DirtmouthGPZ] = new() {
                 Scenes = new() {
@@ -356,6 +365,16 @@ namespace DarknessRandomizer.Data
             g.Clusters[Cluster.KingsPass] = new() {
                 Scenes = new() { { Scenes.KingsPass, new() } },
                 CostWeight = 50 };
+
+            g.Clusters[Cluster.WestCityElevator] = new() {
+                Scenes = new() {
+                    { Scenes.CrossroadsCorridortoElevator, SemiDark },
+                    { Scenes.CrossroadsElevator, SemiDark },
+                    { Scenes.CityLeftElevator, new() } },
+                AdjacentClusters = new() {
+                    { Cluster.CrossroadsLower, RelativeDarkness.Any } },
+                ProbabilityWeight = 50,
+                CostWeight = 200 };
 
             g.Init();
             return g;

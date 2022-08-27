@@ -145,6 +145,14 @@ namespace DarknessRandomizer.Lib
         {
             sceneLookup = new();
 
+            foreach (Cluster c in Enum.GetValues(typeof(Cluster)))
+            {
+                if (!Clusters.ContainsKey(c))
+                {
+                    throw new ArgumentException($"Missing cluster: {c}");
+                }
+            }
+
             foreach (var item in Clusters) {
                 var name = item.Key;
                 var cluster = item.Value;
