@@ -35,6 +35,8 @@ Similar to No Eyes and the peaks toll gate, dark rooms render certain interactab
 
 Semi-darkness has no effect on Logic, and only provides a slight challenge increase. In a room with true darkness, all checks and transitions are gated either by having Lantern, or having Dark Rooms enabled in skips.
 
+Most rooms which are trivial and safe to navigate, dark or light, are constrained to be at most semi-dark for simplicity since darkness does not add a unique challenge. However, there are some exceptions for unique purposes. Consult your helper log if unsure.
+
 Rooms with particularly difficult platforming or enemies are not in Logic while dark unless Difficult Skips or Proficient Combat, respectively, are also enabled in skips. For instance, a true-dark Path of Pain is not in Logic without Lantern unless both Dark Rooms and Difficult Skips are enabled.
 
 ## Don't Forget!

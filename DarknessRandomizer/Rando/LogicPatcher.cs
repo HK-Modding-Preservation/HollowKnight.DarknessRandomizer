@@ -49,6 +49,10 @@ namespace DarknessRandomizer.Rando
         {
             // TODO: Fix for bench rando
             { Scenes.GreenpathToll, EditLogicClauseByScenesNoDarkroomSkips },
+
+            // Allow Xero to exist in a dark room without resting RG access.
+            // Movement through the room is trivial and hazardless.
+            { Scenes.GroundsXero, (lmb, name, lc) => { } },
         };
 
         private delegate bool LogicOverrideMatcher(LogicManagerBuilder lmb, string name, LogicClause lc);
