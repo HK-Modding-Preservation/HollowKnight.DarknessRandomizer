@@ -28,7 +28,7 @@ namespace DarknessRandomizer.Rando
             drm.DarknessOverrides = new(LS.DarknessOverrides);
 
             var dlem = ItemChangerMod.Modules.GetOrAdd<ItemChanger.Modules.DarknessLevelEditModule>();
-            foreach (var entry in LS.DarknessOverrides.Dict) {
+            foreach (var entry in LS.DarknessOverrides.Enumerate()) {
                 dlem.darknessLevelsByScene[entry.Key.Name] = (int)entry.Value;
             }
         }

@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 namespace DarknessRandomizer.Data
 {
-    // Int ids are usedin serialization, so they *cannot* change!
     [JsonConverter(typeof(SceneNameConverter))]
     public class SceneName
     {
@@ -35,6 +34,8 @@ namespace DarknessRandomizer.Data
         public static bool IsScene(string s) => scenesByName.ContainsKey(s);
 
         public override string ToString() => Name;
+
+        public static int NumSceneNames() => scenesById.Count;
 
         public override bool Equals(object obj)
         {
@@ -458,13 +459,13 @@ namespace DarknessRandomizer.Data
     {
         public override SceneName ReadJson(JsonReader reader, Type objectType, SceneName existingValue, bool hasExistingValue, JsonSerializer serializer)
         {
-            if (reader.ReadAsString() is string name && SceneName.TryGetSceneName(name, out SceneName sceneName))
+            if (serializer.Deserialize(reader, typeof(string)) is string name && SceneName.TryGetSceneName(name, out SceneName sceneName))
             {
                 return sceneName;
             }
             throw new JsonReaderException("Error decoding SceneName");
         }
 
-        public override void WriteJson(JsonWriter writer, SceneName value, JsonSerializer serializer) => writer.WriteValue(value.Name);
+        public override void WriteJson(JsonWriter writer, SceneName value, JsonSerializer serializer) => serializer.Serialize(writer, value.Name);
     }
 }

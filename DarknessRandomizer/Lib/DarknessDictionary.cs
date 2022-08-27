@@ -11,25 +11,69 @@ namespace DarknessRandomizer.Lib
     // A custom wrapper around `Dictionary<SceneName, Darkness>` which doesn't serialize correctly.
     public class DarknessDictionary
     {
+        // SceneName.Id-indexed list of darkness.
         [JsonIgnore]
-        public Dictionary<SceneName, Darkness> Dict = new();
+        private readonly List<(bool, Darkness)> darknessList;
 
-        public DarknessDictionary() { }
-
-        public DarknessDictionary(DarknessDictionary other) => Dict = new(other.Dict);
-
-        List<KeyValuePair<SceneName, Darkness>> SerializedDict
+        public List<KeyValuePair<SceneName, Darkness>> SerializableEntries
         {
-            get { return Dict.ToList();  }
-            set { Dict = value.ToDictionary(e => e.Key, e => e.Value);  }
+            get { return Enumerate().ToList(); }
+            set { Clear(); value.ForEach(e => darknessList[e.Key.Id] = (true, e.Value)); }
         }
 
-        public bool TryGetValue(SceneName sceneName, out Darkness darkness) => Dict.TryGetValue(sceneName, out darkness);
+        public DarknessDictionary() {
+            darknessList = new();
+            for (int i = 0; i < SceneName.NumSceneNames(); i++)
+            {
+                darknessList.Add((false, Darkness.Bright));
+            }
+        }
+
+        public DarknessDictionary(DarknessDictionary other) => darknessList = new(other.darknessList);
+
+        public bool TryGetValue(SceneName sceneName, out Darkness darkness) {
+            bool present;
+            (present, darkness) = darknessList[sceneName.Id];
+            return present;
+        }
+
+        public Darkness Get(SceneName sceneName)
+        {
+            var (present, darkness) = darknessList[sceneName.Id];
+            if (!present)
+            {
+                throw new KeyNotFoundException($"{sceneName}");
+            }
+
+            return darkness;
+        }
+
+        public void Set(SceneName sceneName, Darkness darkness) => darknessList[sceneName.Id] = (true, darkness);
+
+        public void Clear()
+        {
+            for (int i = 0; i < darknessList.Count; i++)
+            {
+                darknessList[i] = (false, Darkness.Bright);
+            }
+        }
+
+        public IEnumerable<KeyValuePair<SceneName, Darkness>> Enumerate()
+        {
+            for (int i = 0; i < darknessList.Count; i++)
+            {
+                var (present, darkness) = darknessList[i];
+                if (present)
+                {
+                    yield return new(SceneName.FromId(i), darkness);
+                }
+            }
+        }
 
         public Darkness this[SceneName sceneName]
         {
-            get { return Dict[sceneName]; }
-            set { Dict[sceneName] = value; }
+            get { return Get(sceneName); }
+            set { Set(sceneName, value); }
         }
     }
 }
