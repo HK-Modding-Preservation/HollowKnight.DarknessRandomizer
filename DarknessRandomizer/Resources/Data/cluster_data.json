@@ -1,2 +1,55 @@
 {
+  "BasinFountain": {
+    "SceneAliases": [
+      "Basin_Fountain"
+    ],
+    "SceneNames": [
+      "Abyss_04"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "BasinHiddenStation": "Unspecified",
+      "CityBridgeToBasin": "Unspecified"
+    }
+  },
+  "BasinHiddenStation": {
+    "SceneAliases": [
+      "Basin_Palace_Grounds"
+    ],
+    "SceneNames": [
+      "Abyss_05"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "BasinFountain": "Unspecified"
+    }
+  },
+  "CityBridgeToBasin": {
+    "SceneAliases": [
+      "Basin_Broken_Bridge",
+      "Basin_Tram",
+      "City_Broken_Elevator"
+    ],
+    "SceneNames": [
+      "Abyss_01",
+      "Abyss_02",
+      "Abyss_03"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "BasinFountain": "Unspecified"
+    }
+  }
 }

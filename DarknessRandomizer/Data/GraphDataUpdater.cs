@@ -50,6 +50,7 @@ namespace DarknessRandomizer.Data
             {
                 var scene = e.Key;
                 var sData = e.Value;
+                if (sData.Cluster == "UNASSIGNED") continue;
 
                 clusterToScenes.GetOrCreate(sData.Cluster).Add(scene);
                 sceneToCluster[scene] = sData.Cluster;
@@ -60,20 +61,15 @@ namespace DarknessRandomizer.Data
             foreach (var e in clusterToScenes)
             {
                 var cluster = e.Key;
-                if (cluster == "UNASSIGNED") continue;
-
                 var scenes = e.Value;
 
                 foreach (var scene in scenes)
                 {
-                    if (SM.TryGetValue(scene, out SceneMetadata sm))
+                    foreach (var aScene in SM[scene].AdjacentScenes)
                     {
-                        foreach (var aScene in sm.AdjacentScenes)
-                        {
-                            if (sceneToCluster.TryGetValue(aScene, out string aCluster) && aCluster != "UNASSIGNED")
-                            {
-                                clusterAdjacency.GetOrCreate(cluster).Add(aCluster);
-                            }
+                        if (sceneToCluster.TryGetValue(aScene, out string aCluster) && aCluster != cluster)
+                        { 
+                            clusterAdjacency.GetOrCreate(cluster).Add(aCluster);
                         }
                     }
                 }
@@ -97,8 +93,13 @@ namespace DarknessRandomizer.Data
                 sceneAliases.Sort();
                 cData.SceneAliases = sceneAliases;
 
+                if (!clusterAdjacency.TryGetValue(cluster, out HashSet<string> aClusters))
+                {
+                    aClusters = new();
+                }
+
                 // Sync adjacencies.
-                foreach (var aCluster in clusterAdjacency[cluster])
+                foreach (var aCluster in aClusters)
                 {
                     cData.AdjacentClusters.AddIfEmpty(aCluster, () => RelativeDarkness.Unspecified);
                 }
@@ -107,7 +108,7 @@ namespace DarknessRandomizer.Data
                 List<string> toRemove = new();
                 foreach (var aCluster in cData.AdjacentClusters.Keys)
                 {
-                    if (!clusterAdjacency[cluster].Contains(aCluster))
+                    if (!aClusters.Contains(aCluster))
                     {
                         toRemove.Add(aCluster);
                     }
@@ -138,6 +139,8 @@ namespace DarknessRandomizer.Data
             {
                 throw new ArgumentException($"{exceptions.Count} data errors encountered");
             }
+
+            JsonUtil.Serialize(CD, $"{RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
         }
     }
 }

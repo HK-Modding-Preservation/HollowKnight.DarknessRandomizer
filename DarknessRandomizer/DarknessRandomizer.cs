@@ -1,4 +1,5 @@
-﻿using DarknessRandomizer.Lib;
+﻿using DarknessRandomizer.Data;
+using DarknessRandomizer.Lib;
 using DarknessRandomizer.Rando;
 using Modding;
 using System;
@@ -19,6 +20,9 @@ namespace DarknessRandomizer
 
             Version v = typeof(DarknessRandomizer).Assembly.GetName().Version;
             Version = $"{v.Major}.{v.Minor}.{v.Build}";
+
+            // Why the fuck is this hard
+            GraphDataUpdater.UpdateGraphData();
         }
 
         public override void Initialize()

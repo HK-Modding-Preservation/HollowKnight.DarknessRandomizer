@@ -43,7 +43,7 @@
   },
   "Abyss_03_b": {
     "Alias": "Deepnest_Tram",
-    "Cluster": "DeepnestTramWing",
+    "Cluster": "UNASSIGNED",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "DifficultSkipLocs": {
@@ -5501,4 +5501,5 @@
       "Locations": []
     }
   }
+}  }
 }
