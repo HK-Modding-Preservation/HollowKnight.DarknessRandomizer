@@ -46,7 +46,7 @@
   },
   "Abyss_03_b": {
     "Alias": "Deepnest_Tram",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "DeepnestTramWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
@@ -61,7 +61,7 @@
   },
   "Abyss_03_c": {
     "Alias": "Edge_Tram",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "EdgeTramEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -91,7 +91,7 @@
   },
   "Abyss_05": {
     "Alias": "Basin_Palace_Grounds",
-    "Cluster": "BasinHiddenStation",
+    "Cluster": "BasinPalaceWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
@@ -106,7 +106,7 @@
   },
   "Abyss_06_Core": {
     "Alias": "Abyss_Core",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "AbyssCore",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -121,12 +121,12 @@
   },
   "Abyss_08": {
     "Alias": "Abyss_Lifeblood_Core",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "AbyssLifebloodCore",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkipLocs": {
-      "IsAll": false,
+      "IsAll": true,
       "Locations": []
     },
     "ProficientSkipLocs": {
@@ -136,7 +136,7 @@
   },
   "Abyss_09": {
     "Alias": "Abyss_Lighthouse_Climb",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "AbyssShadeCloakWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -151,7 +151,7 @@
   },
   "Abyss_10": {
     "Alias": "Abyss_Shade_Cloak",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "AbyssShadeCloakWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -166,9 +166,9 @@
   },
   "Abyss_12": {
     "Alias": "Abyss_Shriek",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "AbyssShriekWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkipLocs": {
       "IsAll": false,
@@ -181,7 +181,7 @@
   },
   "Abyss_15": {
     "Alias": "Abyss_Birthplace",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "AbyssBirthplace",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -196,7 +196,7 @@
   },
   "Abyss_16": {
     "Alias": "Abyss_Corridor_to_Lighthouse",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "AbyssShadeCloakWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -211,7 +211,7 @@
   },
   "Abyss_17": {
     "Alias": "Basin_Cloth",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "BasinCloth",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -226,7 +226,7 @@
   },
   "Abyss_18": {
     "Alias": "Basin_Corridor_to_Broken_Vessel",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "BasinBrokenVesselWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -241,7 +241,7 @@
   },
   "Abyss_19": {
     "Alias": "Basin_Broken_Vessel_Grub",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "BasinBrokenVesselWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -256,7 +256,7 @@
   },
   "Abyss_20": {
     "Alias": "Basin_Simple_Key",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "BasinBrokenVesselWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -271,9 +271,9 @@
   },
   "Abyss_21": {
     "Alias": "Basin_Monarch_Wings",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "BasinBrokenVesselWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkipLocs": {
       "IsAll": false,
@@ -286,9 +286,9 @@
   },
   "Abyss_22": {
     "Alias": "Basin_Hidden_Station",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "BasinPalaceWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkipLocs": {
       "IsAll": false,
@@ -301,9 +301,9 @@
   },
   "Abyss_Lighthouse_room": {
     "Alias": "Abyss_Lighthouse",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "AbyssShadeCloakWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkipLocs": {
       "IsAll": false,
@@ -2311,9 +2311,9 @@
   },
   "Fungus1_25": {
     "Alias": "Greenpath_Corridor_to_Unn",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathUnnBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkipLocs": {
       "IsAll": false,
@@ -2326,7 +2326,7 @@
   },
   "Fungus1_26": {
     "Alias": "Greenpath_Lake_Of_Unn",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathUnn",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2341,7 +2341,7 @@
   },
   "Fungus1_28": {
     "Alias": "Cliffs_Baldur's_Shell",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CliffsBaldurShell",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2356,7 +2356,7 @@
   },
   "Fungus1_29": {
     "Alias": "Greenpath_Massive_Moss_Charger",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathMMC",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2371,7 +2371,7 @@
   },
   "Fungus1_30": {
     "Alias": "Greenpath_Below_Toll_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2401,7 +2401,7 @@
   },
   "Fungus1_32": {
     "Alias": "Greenpath_Moss_Knight_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathUpper",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2416,8 +2416,8 @@
   },
   "Fungus1_34": {
     "Alias": "Greenpath_Stone_Sanctuary_Entrance",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
+    "Cluster": "GreenpathStoneSanctuaryApproach",
+    "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkipLocs": {
@@ -2431,10 +2431,10 @@
   },
   "Fungus1_35": {
     "Alias": "Greenpath_Stone_Sanctuary",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
+    "Cluster": "GreenpathStoneSanctuary",
+    "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
+    "IsVanillaDark": true,
     "DifficultSkipLocs": {
       "IsAll": false,
       "Locations": []
@@ -2446,9 +2446,9 @@
   },
   "Fungus1_36": {
     "Alias": "Greenpath_Stone_Sanctuary_Mask_Shard",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathStoneSanctuary",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkipLocs": {
       "IsAll": false,
@@ -2461,9 +2461,9 @@
   },
   "Fungus1_37": {
     "Alias": "Greenpath_Sanctuary_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathStoneSanctuaryBench",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkipLocs": {
       "IsAll": false,
@@ -2476,7 +2476,7 @@
   },
   "Fungus1_Slug": {
     "Alias": "Greenpath_Unn",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathUnn",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2491,7 +2491,7 @@
   },
   "Fungus2_01": {
     "Alias": "Fungal_Queen's_Station",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalQueensStation",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2506,9 +2506,9 @@
   },
   "Fungus2_02": {
     "Alias": "Fungal_Queen's_Stag",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalQueensStation",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkipLocs": {
       "IsAll": false,
@@ -2521,7 +2521,7 @@
   },
   "Fungus2_03": {
     "Alias": "Fungal_Outside_Queen's",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2536,7 +2536,7 @@
   },
   "Fungus2_04": {
     "Alias": "Fungal_Below_Ogres",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2551,7 +2551,7 @@
   },
   "Fungus2_05": {
     "Alias": "Fungal_Shrumal_Ogres",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalOgres",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2566,7 +2566,7 @@
   },
   "Fungus2_06": {
     "Alias": "Fungal_Outside_Leg_Eater",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalUpper",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2581,7 +2581,7 @@
   },
   "Fungus2_07": {
     "Alias": "Fungal_Shrumal_Warrior_Acid_Bridge",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalElderHuWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2596,7 +2596,7 @@
   },
   "Fungus2_08": {
     "Alias": "Fungal_Outside_Elder_Hu",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalElderHuWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2611,9 +2611,9 @@
   },
   "Fungus2_09": {
     "Alias": "Fungal_Cloth_Corridor",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalClothCorridor",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkipLocs": {
       "IsAll": false,

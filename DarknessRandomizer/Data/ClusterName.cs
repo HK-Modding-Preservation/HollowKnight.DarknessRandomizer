@@ -46,9 +46,33 @@ namespace DarknessRandomizer.Data
         public override int GetHashCode() => Id;
 
         // @@@ INSERT_CLUSTER_NAMES START @@@
+        public static readonly ClusterName AbyssBirthplace = new("AbyssBirthplace");
+        public static readonly ClusterName AbyssCore = new("AbyssCore");
+        public static readonly ClusterName AbyssLifebloodCore = new("AbyssLifebloodCore");
+        public static readonly ClusterName AbyssShadeCloakWing = new("AbyssShadeCloakWing");
+        public static readonly ClusterName AbyssShriekWing = new("AbyssShriekWing");
+        public static readonly ClusterName BasinBrokenVesselWing = new("BasinBrokenVesselWing");
+        public static readonly ClusterName BasinCloth = new("BasinCloth");
         public static readonly ClusterName BasinFountain = new("BasinFountain");
-        public static readonly ClusterName BasinHiddenStation = new("BasinHiddenStation");
+        public static readonly ClusterName BasinPalaceWing = new("BasinPalaceWing");
         public static readonly ClusterName CityBridgeToBasin = new("CityBridgeToBasin");
+        public static readonly ClusterName CliffsBaldurShell = new("CliffsBaldurShell");
+        public static readonly ClusterName DeepnestTramWing = new("DeepnestTramWing");
+        public static readonly ClusterName EdgeTramEntrance = new("EdgeTramEntrance");
+        public static readonly ClusterName FungalClothCorridor = new("FungalClothCorridor");
+        public static readonly ClusterName FungalElderHuWing = new("FungalElderHuWing");
+        public static readonly ClusterName FungalEntrance = new("FungalEntrance");
+        public static readonly ClusterName FungalOgres = new("FungalOgres");
+        public static readonly ClusterName FungalQueensStation = new("FungalQueensStation");
+        public static readonly ClusterName FungalUpper = new("FungalUpper");
+        public static readonly ClusterName GreenpathMMC = new("GreenpathMMC");
+        public static readonly ClusterName GreenpathStoneSanctuary = new("GreenpathStoneSanctuary");
+        public static readonly ClusterName GreenpathStoneSanctuaryApproach = new("GreenpathStoneSanctuaryApproach");
+        public static readonly ClusterName GreenpathStoneSanctuaryBench = new("GreenpathStoneSanctuaryBench");
+        public static readonly ClusterName GreenpathUnn = new("GreenpathUnn");
+        public static readonly ClusterName GreenpathUnnBridge = new("GreenpathUnnBridge");
+        public static readonly ClusterName GreenpathUpper = new("GreenpathUpper");
+        public static readonly ClusterName GreenpathWest = new("GreenpathWest");
         // @@@ INSERT_CLUSTER_NAMES END @@@
     }
 

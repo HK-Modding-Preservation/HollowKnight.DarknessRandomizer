@@ -1,4 +1,132 @@
 {
+  "AbyssBirthplace": {
+    "SceneAliases": [
+      "Abyss_Birthplace"
+    ],
+    "SceneNames": [
+      "Abyss_15"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "AbyssCore": "Unspecified"
+    }
+  },
+  "AbyssCore": {
+    "SceneAliases": [
+      "Abyss_Core"
+    ],
+    "SceneNames": [
+      "Abyss_06_Core"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "AbyssBirthplace": "Unspecified",
+      "AbyssLifebloodCore": "Unspecified",
+      "AbyssShadeCloakWing": "Unspecified",
+      "AbyssShriekWing": "Unspecified",
+      "BasinFountain": "Unspecified"
+    }
+  },
+  "AbyssLifebloodCore": {
+    "SceneAliases": [
+      "Abyss_Lifeblood_Core"
+    ],
+    "SceneNames": [
+      "Abyss_08"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "AbyssCore": "Unspecified"
+    }
+  },
+  "AbyssShadeCloakWing": {
+    "SceneAliases": [
+      "Abyss_Corridor_to_Lighthouse",
+      "Abyss_Lighthouse",
+      "Abyss_Lighthouse_Climb",
+      "Abyss_Shade_Cloak"
+    ],
+    "SceneNames": [
+      "Abyss_09",
+      "Abyss_10",
+      "Abyss_16",
+      "Abyss_Lighthouse_room"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "AbyssCore": "Unspecified"
+    }
+  },
+  "AbyssShriekWing": {
+    "SceneAliases": [
+      "Abyss_Shriek"
+    ],
+    "SceneNames": [
+      "Abyss_12"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "AbyssCore": "Unspecified"
+    }
+  },
+  "BasinBrokenVesselWing": {
+    "SceneAliases": [
+      "Basin_Broken_Vessel_Grub",
+      "Basin_Corridor_to_Broken_Vessel",
+      "Basin_Monarch_Wings",
+      "Basin_Simple_Key"
+    ],
+    "SceneNames": [
+      "Abyss_18",
+      "Abyss_19",
+      "Abyss_20",
+      "Abyss_21"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "BasinFountain": "Unspecified"
+    }
+  },
+  "BasinCloth": {
+    "SceneAliases": [
+      "Basin_Cloth"
+    ],
+    "SceneNames": [
+      "Abyss_17"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "CityBridgeToBasin": "Unspecified"
+    }
+  },
   "BasinFountain": {
     "SceneAliases": [
       "Basin_Fountain"
@@ -12,16 +140,20 @@
     "CostWeight": 100,
     "SemiDarkProbability": 100,
     "AdjacentClusters": {
-      "BasinHiddenStation": "Unspecified",
+      "AbyssCore": "Unspecified",
+      "BasinBrokenVesselWing": "Unspecified",
+      "BasinPalaceWing": "Unspecified",
       "CityBridgeToBasin": "Unspecified"
     }
   },
-  "BasinHiddenStation": {
+  "BasinPalaceWing": {
     "SceneAliases": [
+      "Basin_Hidden_Station",
       "Basin_Palace_Grounds"
     ],
     "SceneNames": [
-      "Abyss_05"
+      "Abyss_05",
+      "Abyss_22"
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
@@ -49,7 +181,280 @@
     "CostWeight": 100,
     "SemiDarkProbability": 100,
     "AdjacentClusters": {
+      "BasinCloth": "Unspecified",
       "BasinFountain": "Unspecified"
     }
+  },
+  "CliffsBaldurShell": {
+    "SceneAliases": [
+      "Cliffs_Baldur's_Shell"
+    ],
+    "SceneNames": [
+      "Fungus1_28"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {}
+  },
+  "DeepnestTramWing": {
+    "SceneAliases": [
+      "Deepnest_Tram"
+    ],
+    "SceneNames": [
+      "Abyss_03_b"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {}
+  },
+  "EdgeTramEntrance": {
+    "SceneAliases": [
+      "Edge_Tram"
+    ],
+    "SceneNames": [
+      "Abyss_03_c"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {}
+  },
+  "FungalClothCorridor": {
+    "SceneAliases": [
+      "Fungal_Cloth_Corridor"
+    ],
+    "SceneNames": [
+      "Fungus2_09"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "FungalElderHuWing": "Unspecified"
+    }
+  },
+  "FungalElderHuWing": {
+    "SceneAliases": [
+      "Fungal_Outside_Elder_Hu",
+      "Fungal_Shrumal_Warrior_Acid_Bridge"
+    ],
+    "SceneNames": [
+      "Fungus2_07",
+      "Fungus2_08"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "FungalClothCorridor": "Unspecified",
+      "FungalUpper": "Unspecified"
+    }
+  },
+  "FungalEntrance": {
+    "SceneAliases": [
+      "Fungal_Below_Ogres",
+      "Fungal_Outside_Queen's"
+    ],
+    "SceneNames": [
+      "Fungus2_03",
+      "Fungus2_04"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "FungalOgres": "Unspecified",
+      "FungalQueensStation": "Unspecified"
+    }
+  },
+  "FungalOgres": {
+    "SceneAliases": [
+      "Fungal_Shrumal_Ogres"
+    ],
+    "SceneNames": [
+      "Fungus2_05"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "FungalEntrance": "Unspecified",
+      "FungalUpper": "Unspecified"
+    }
+  },
+  "FungalQueensStation": {
+    "SceneAliases": [
+      "Fungal_Queen's_Stag",
+      "Fungal_Queen's_Station"
+    ],
+    "SceneNames": [
+      "Fungus2_01",
+      "Fungus2_02"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "FungalEntrance": "Unspecified"
+    }
+  },
+  "FungalUpper": {
+    "SceneAliases": [
+      "Fungal_Outside_Leg_Eater"
+    ],
+    "SceneNames": [
+      "Fungus2_06"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "FungalElderHuWing": "Unspecified",
+      "FungalOgres": "Unspecified"
+    }
+  },
+  "GreenpathMMC": {
+    "SceneAliases": [
+      "Greenpath_Massive_Moss_Charger"
+    ],
+    "SceneNames": [
+      "Fungus1_29"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {}
+  },
+  "GreenpathStoneSanctuary": {
+    "SceneAliases": [
+      "Greenpath_Stone_Sanctuary",
+      "Greenpath_Stone_Sanctuary_Mask_Shard"
+    ],
+    "SceneNames": [
+      "Fungus1_35",
+      "Fungus1_36"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "GreenpathStoneSanctuaryApproach": "Unspecified"
+    }
+  },
+  "GreenpathStoneSanctuaryApproach": {
+    "SceneAliases": [
+      "Greenpath_Stone_Sanctuary_Entrance"
+    ],
+    "SceneNames": [
+      "Fungus1_34"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "GreenpathStoneSanctuary": "Unspecified"
+    }
+  },
+  "GreenpathStoneSanctuaryBench": {
+    "SceneAliases": [
+      "Greenpath_Sanctuary_Bench"
+    ],
+    "SceneNames": [
+      "Fungus1_37"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {}
+  },
+  "GreenpathUnn": {
+    "SceneAliases": [
+      "Greenpath_Lake_Of_Unn",
+      "Greenpath_Unn"
+    ],
+    "SceneNames": [
+      "Fungus1_26",
+      "Fungus1_Slug"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "GreenpathUnnBridge": "Unspecified"
+    }
+  },
+  "GreenpathUnnBridge": {
+    "SceneAliases": [
+      "Greenpath_Corridor_to_Unn"
+    ],
+    "SceneNames": [
+      "Fungus1_25"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {
+      "GreenpathUnn": "Unspecified"
+    }
+  },
+  "GreenpathUpper": {
+    "SceneAliases": [
+      "Greenpath_Moss_Knight_Arena"
+    ],
+    "SceneNames": [
+      "Fungus1_32"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {}
+  },
+  "GreenpathWest": {
+    "SceneAliases": [
+      "Greenpath_Below_Toll_Bench"
+    ],
+    "SceneNames": [
+      "Fungus1_30"
+    ],
+    "CanBeDarknessSource": true,
+    "CursedOnly": false,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100,
+    "AdjacentClusters": {}
   }
 }
