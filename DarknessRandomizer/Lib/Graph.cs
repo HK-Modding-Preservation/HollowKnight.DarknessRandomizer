@@ -10,11 +10,12 @@ namespace DarknessRandomizer.Lib
     //
     // This helps places like dark Path of Pain feel rewarding, and can allow players to confidently avoid them if they choose,
     // by ensuring that if the entrance is dark... the rest of it will be, too.
-    public enum RelativeDarkness : int
+    public enum RelativeDarkness
     {
-        Brighter = 0,
-        Any = 1,
-        Darker = 2
+        Unspecified,
+        Brighter,
+        Any,
+        Darker
     }
 
     // Data specific to a scene.
@@ -121,17 +122,6 @@ namespace DarknessRandomizer.Lib
             return false;
         }
 
-        private static RelativeDarkness Oppose(RelativeDarkness cr)
-        {
-            return cr switch
-            {
-                RelativeDarkness.Brighter => RelativeDarkness.Darker,
-                RelativeDarkness.Darker => RelativeDarkness.Darker,
-                RelativeDarkness.Any => RelativeDarkness.Any,
-                _ => throw new ArgumentException($"Unknown ClusterRelativity {cr}"),
-            };
-        }
-
         public void Init()
         {
             sceneLookup = new();
@@ -167,14 +157,14 @@ namespace DarknessRandomizer.Lib
 
                     if (cluster.AdjacentClusters.TryGetValue(name, out RelativeDarkness ncr))
                     {
-                        if (ncr != Oppose(cr))
+                        if (ncr != cr.Opposite())
                         {
                             throw new ArgumentException($"Clusters {name} and {nname} have mismatched ClusterRelativity");
                         }
                     }
                     else
                     {
-                        ncluster.AdjacentClusters[name] = Oppose(cr);
+                        ncluster.AdjacentClusters[name] = cr.Opposite();
                     }
                 }
             }

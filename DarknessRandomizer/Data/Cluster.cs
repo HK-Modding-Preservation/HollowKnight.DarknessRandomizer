@@ -8,7 +8,6 @@
         CityAboveLemm,
         CityElegantWarrior,
         CityFountain,
-        CityWatcherKnights,
         CliffsBaldur,
         CliffsJonis,
         CliffsMain,
