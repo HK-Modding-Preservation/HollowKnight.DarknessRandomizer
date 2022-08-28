@@ -61,7 +61,7 @@ namespace DarknessRandomizer.Lib
         }
 
         // Adjacent clusters, defined by relative darkness.
-        public Dictionary<Cluster, RelativeDarkness> AdjacentClusters = new();
+        public Dictionary<LegacyCluster, RelativeDarkness> AdjacentClusters = new();
 
         // If false, darkness cannot start here even if it otherwise could.
         // It must start somewhere adjacent and spread here instead.
@@ -103,16 +103,16 @@ namespace DarknessRandomizer.Lib
     {
         public static Graph Instance = GraphData.LoadGraph();
 
-        public Dictionary<Cluster, SceneClusterData> Clusters = new();
+        public Dictionary<LegacyCluster, SceneClusterData> Clusters = new();
 
         // Map of scene names to cluster names.
-        private Dictionary<SceneName, Cluster> sceneLookup;
+        private Dictionary<SceneName, LegacyCluster> sceneLookup;
 
-        public bool TryGetCluster(SceneName scene, out Cluster cluster) => sceneLookup.TryGetValue(scene, out cluster);
+        public bool TryGetCluster(SceneName scene, out LegacyCluster cluster) => sceneLookup.TryGetValue(scene, out cluster);
 
         public bool TryGetSceneData(SceneName scene, out SceneData sceneData)
         {
-            if (TryGetCluster(scene, out Cluster c))
+            if (TryGetCluster(scene, out LegacyCluster c))
             {
                 sceneData = Clusters[c].Scenes[scene];
                 return true;
@@ -126,7 +126,7 @@ namespace DarknessRandomizer.Lib
         {
             sceneLookup = new();
 
-            foreach (Cluster c in Enum.GetValues(typeof(Cluster)))
+            foreach (LegacyCluster c in Enum.GetValues(typeof(LegacyCluster)))
             {
                 if (!Clusters.ContainsKey(c))
                 {

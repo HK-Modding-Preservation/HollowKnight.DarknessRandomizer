@@ -9,7 +9,7 @@ namespace DarknessRandomizer.Lib
 {
     public record AlgorithmStats
     {
-        public Dictionary<Cluster, Darkness> ClusterSelections;
+        public Dictionary<LegacyCluster, Darkness> ClusterSelections;
         public int DarknessSpent;
         public int DarknessRemaining;
     }
@@ -21,10 +21,10 @@ namespace DarknessRandomizer.Lib
         private readonly Graph g;
 
         private int darknessAvailable;
-        private readonly Dictionary<Cluster, Darkness> clusterDarkness;
-        private readonly WeightedHeap<Cluster> darkCandidates;
-        private readonly HashSet<Cluster> semiDarkCandidates;
-        private readonly HashSet<Cluster> forbiddenClusters;
+        private readonly Dictionary<LegacyCluster, Darkness> clusterDarkness;
+        private readonly WeightedHeap<LegacyCluster> darkCandidates;
+        private readonly HashSet<LegacyCluster> semiDarkCandidates;
+        private readonly HashSet<LegacyCluster> forbiddenClusters;
 
         public Algorithm(int seed, StartDef startDef, DarknessRandomizationSettings settings, Graph g)
         {
@@ -44,7 +44,7 @@ namespace DarknessRandomizer.Lib
             }
             
             // Always include the local cluster, even in TRANDO.
-            if (SceneName.TryGetSceneName(startDef.SceneName, out SceneName sceneName) && g.TryGetCluster(sceneName, out Cluster cluster))
+            if (SceneName.TryGetSceneName(startDef.SceneName, out SceneName sceneName) && g.TryGetCluster(sceneName, out LegacyCluster cluster))
             {
                 this.forbiddenClusters.Add(cluster);
             }

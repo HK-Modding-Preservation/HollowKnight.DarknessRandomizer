@@ -1,6 +1,6 @@
 ﻿namespace DarknessRandomizer.Data
 {
-    public enum Cluster : int
+    public enum LegacyCluster : int
     {
         BlackEggRadiance,
         BlackEggTemple,

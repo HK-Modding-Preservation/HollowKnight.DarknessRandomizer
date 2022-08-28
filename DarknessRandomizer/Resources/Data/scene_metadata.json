@@ -2392,6 +2392,13 @@
       "RestingGrounds_12"
     ]
   },
+  "Room_mapper": {
+    "Alias": "Iselda",
+    "MapArea": "Dirtmouth",
+    "AdjacentScenes": [
+      "Town"
+    ]
+  },
   "Room_Mask_Maker": {
     "Alias": "Deepnest_Mask_Maker",
     "MapArea": "Deepnest",
@@ -2404,63 +2411,6 @@
     "MapArea": "Forgotten Crossroads",
     "AdjacentScenes": [
       "Crossroads_04"
-    ]
-  },
-  "Room_Ouiji": {
-    "Alias": "Jiji",
-    "MapArea": "Dirtmouth",
-    "AdjacentScenes": [
-      "Town"
-    ]
-  },
-  "Room_Queen": {
-    "Alias": "Gardens_White_Lady",
-    "MapArea": "Queen's Gardens",
-    "AdjacentScenes": [
-      "Fungus3_48"
-    ]
-  },
-  "Room_Slug_Shrine": {
-    "Alias": "Greenpath_Unn_Bench",
-    "MapArea": "Greenpath",
-    "AdjacentScenes": [
-      "Fungus1_26"
-    ]
-  },
-  "Room_Sly_Storeroom": {
-    "Alias": "Sly_Basement",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "Room_Town_Stag_Station": {
-    "Alias": "Dirtmouth_Stag",
-    "MapArea": "Dirtmouth",
-    "AdjacentScenes": [
-      "Town"
-    ]
-  },
-  "Room_Tram": {
-    "Alias": "Lower_Tram",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "Room_Tram_RG": {
-    "Alias": "Upper_Tram",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "Room_Wyrm": {
-    "Alias": "Edge_Cast-Off_Shell",
-    "MapArea": "Kingdom's Edge",
-    "AdjacentScenes": [
-      "Deepnest_East_Hornet"
-    ]
-  },
-  "Room_mapper": {
-    "Alias": "Iselda",
-    "MapArea": "Dirtmouth",
-    "AdjacentScenes": [
-      "Town"
     ]
   },
   "Room_nailmaster": {
@@ -2491,6 +2441,20 @@
       "Ruins1_04"
     ]
   },
+  "Room_Ouiji": {
+    "Alias": "Jiji",
+    "MapArea": "Dirtmouth",
+    "AdjacentScenes": [
+      "Town"
+    ]
+  },
+  "Room_Queen": {
+    "Alias": "Gardens_White_Lady",
+    "MapArea": "Queen's Gardens",
+    "AdjacentScenes": [
+      "Fungus3_48"
+    ]
+  },
   "Room_ruinhouse": {
     "Alias": "Crossroads_Rescue_Sly",
     "MapArea": "Forgotten Crossroads",
@@ -2505,6 +2469,18 @@
       "Town"
     ]
   },
+  "Room_Slug_Shrine": {
+    "Alias": "Greenpath_Unn_Bench",
+    "MapArea": "Greenpath",
+    "AdjacentScenes": [
+      "Fungus1_26"
+    ]
+  },
+  "Room_Sly_Storeroom": {
+    "Alias": "Sly_Basement",
+    "MapArea": "",
+    "AdjacentScenes": []
+  },
   "Room_spider_small": {
     "Alias": "Deepnest_Brumm",
     "MapArea": "Deepnest",
@@ -2517,6 +2493,68 @@
     "MapArea": "Forgotten Crossroads",
     "AdjacentScenes": [
       "Crossroads_02"
+    ]
+  },
+  "Room_Town_Stag_Station": {
+    "Alias": "Dirtmouth_Stag",
+    "MapArea": "Dirtmouth",
+    "AdjacentScenes": [
+      "Town"
+    ]
+  },
+  "Room_Tram": {
+    "Alias": "Lower_Tram",
+    "MapArea": "",
+    "AdjacentScenes": []
+  },
+  "Room_Tram_RG": {
+    "Alias": "Upper_Tram",
+    "MapArea": "",
+    "AdjacentScenes": []
+  },
+  "Room_Wyrm": {
+    "Alias": "Edge_Cast-Off_Shell",
+    "MapArea": "Kingdom's Edge",
+    "AdjacentScenes": [
+      "Deepnest_East_Hornet"
+    ]
+  },
+  "Ruins_Bathhouse": {
+    "Alias": "City_Pleasure_House_Bench",
+    "MapArea": "City of Tears",
+    "AdjacentScenes": [
+      "Ruins2_10b",
+      "Ruins_Elevator"
+    ]
+  },
+  "Ruins_Elevator": {
+    "Alias": "City_Pleasure_House_Elevator",
+    "MapArea": "City of Tears",
+    "AdjacentScenes": [
+      "Ruins2_04",
+      "Ruins_Bathhouse"
+    ]
+  },
+  "Ruins_House_01": {
+    "Alias": "City_Guarded_Grub",
+    "MapArea": "City of Tears",
+    "AdjacentScenes": [
+      "Ruins2_04"
+    ]
+  },
+  "Ruins_House_02": {
+    "Alias": "City_Gorgeous_Husk",
+    "MapArea": "City of Tears",
+    "AdjacentScenes": [
+      "Ruins2_04"
+    ]
+  },
+  "Ruins_House_03": {
+    "Alias": "City_Emilitia",
+    "MapArea": "City of Tears",
+    "AdjacentScenes": [
+      "Ruins2_04",
+      "Waterways_07"
     ]
   },
   "Ruins1_01": {
@@ -2829,44 +2867,6 @@
     "MapArea": "City of Tears",
     "AdjacentScenes": [
       "Ruins2_03"
-    ]
-  },
-  "Ruins_Bathhouse": {
-    "Alias": "City_Pleasure_House_Bench",
-    "MapArea": "City of Tears",
-    "AdjacentScenes": [
-      "Ruins2_10b",
-      "Ruins_Elevator"
-    ]
-  },
-  "Ruins_Elevator": {
-    "Alias": "City_Pleasure_House_Elevator",
-    "MapArea": "City of Tears",
-    "AdjacentScenes": [
-      "Ruins2_04",
-      "Ruins_Bathhouse"
-    ]
-  },
-  "Ruins_House_01": {
-    "Alias": "City_Guarded_Grub",
-    "MapArea": "City of Tears",
-    "AdjacentScenes": [
-      "Ruins2_04"
-    ]
-  },
-  "Ruins_House_02": {
-    "Alias": "City_Gorgeous_Husk",
-    "MapArea": "City of Tears",
-    "AdjacentScenes": [
-      "Ruins2_04"
-    ]
-  },
-  "Ruins_House_03": {
-    "Alias": "City_Emilitia",
-    "MapArea": "City of Tears",
-    "AdjacentScenes": [
-      "Ruins2_04",
-      "Waterways_07"
     ]
   },
   "Town": {

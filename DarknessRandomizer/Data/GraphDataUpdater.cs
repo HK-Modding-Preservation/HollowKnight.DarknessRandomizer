@@ -1,14 +1,18 @@
 ﻿using DarknessRandomizer.Lib;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace DarknessRandomizer.Data
 {
     class GraphDataUpdater
     {
+        // TODO(Contributor): Change this to point to the root of your own checked out repository.
+        // Add a call to `GraphDataUpdater.UpdateGraphData()` in DarknessRandomizer.cs to update graph data on mod load.
         private const string RepoRoot = "C:/Users/danie/source/repos/HollowKnight.DarknessRandomizer";
 
         private static void SyncDicts<K,V1,V2>(IDictionary<K, V1> src, IDictionary<K, V2> dst, Func<K, V2> creator)
@@ -39,9 +43,6 @@ namespace DarknessRandomizer.Data
             var CD = ClusterData.Instance;
 
             SyncDicts(SM, SD, k => new() { Alias = SM[k].Alias });
-
-            // Write out the updates to SceneData.
-            JsonUtil.Serialize(SD, $"{RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
 
             // Build up metadata maps.
             Dictionary<string, HashSet<string>> clusterToScenes = new();
@@ -140,7 +141,70 @@ namespace DarknessRandomizer.Data
                 throw new ArgumentException($"{exceptions.Count} data errors encountered");
             }
 
+            // Only update data at the end, if we have no exceptions.
+            JsonUtil.Serialize(SM, $"{RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
+            JsonUtil.Serialize(SD, $"{RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
             JsonUtil.Serialize(CD, $"{RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
+
+            UpdateCSFile("Data/SceneName.cs", "INSERT_SCENE_NAMES", SM,
+                (n, sm) => $"SceneName {CSharpClean(sm.Alias)} = new(\"{n}\")");
+            UpdateCSFile("Data/ClusterName.cs", "INSERT_CLUSTER_NAMES", CD,
+                (n, cd) => $"ClusterName {CSharpClean(n)} = new(\"{n}\")");
+            // TODO: Update Cluster file.
+        }
+
+        private static string CSharpClean(string name)
+        {
+            return name.Replace("_", "").Replace("'", "").Replace("-", "");
+        }
+
+        private delegate string CSAssignment<K, V>(K key, V value);
+
+        private static void UpdateCSFile<K, V>(string fname, string marker, IDictionary<K, V> dict, CSAssignment<K, V> assigner)
+        {
+            string path = $"{RepoRoot}/DarknessRandomizer/{fname}";
+            StreamReader sr = new(path);
+            List<string> outLines = new();
+            string line, indent;
+            int state = 0;
+            while (true)
+            {
+                line = sr.ReadLine();
+                if (line == null) break;
+
+                if (state == 0)
+                {
+                    outLines.Add(line);
+                    Match match = Regex.Match(line, $"^(.+)// @@@ {marker} START @@@$");
+                    if (match.Success)
+                    {
+                        state = 1;
+                        indent = match.Groups[1].Value;
+                        foreach (var e in dict)
+                        {
+                            outLines.Add($"{indent}public static readonly {assigner.Invoke(e.Key, e.Value)};");
+                        }
+                    }
+                }
+                else if (state == 1)
+                {
+                    Match match = Regex.Match(line, $"^.+// @@@ {marker} END @@@$");
+                    if (match.Success)
+                    {
+                        state = 2;
+                        outLines.Add(line);
+                    }
+                }
+                else
+                {
+                    outLines.Add(line);
+                }
+            }
+            sr.Close();
+
+            StreamWriter sw = new(path);
+            outLines.ForEach(l => sw.WriteLine(l));
+            sw.Close();
         }
     }
 }

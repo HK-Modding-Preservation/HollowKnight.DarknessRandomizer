@@ -7,18 +7,18 @@ namespace DarknessRandomizer.Data
     {
         // FIXME: Add clusters
         // Some of these are transition-rando only, and so won't benefit from clusters outside the area
-        private static readonly Dictionary<String, HashSet<Cluster>> ProtectedStartClusters = new()
+        private static readonly Dictionary<String, HashSet<LegacyCluster>> ProtectedStartClusters = new()
         {
             { "Abyss", new() },  // TRANDO only
             {
                 "Ancestral Mound",
                 new()
                 {
-                    Cluster.CrossroadsAncestralMound,
-                    Cluster.CrossroadsEntrance,
-                    Cluster.CrossroadsWest,
-                    Cluster.CrossroadsLower,
-                    Cluster.CrossroadsMawlek
+                    LegacyCluster.CrossroadsAncestralMound,
+                    LegacyCluster.CrossroadsEntrance,
+                    LegacyCluster.CrossroadsWest,
+                    LegacyCluster.CrossroadsLower,
+                    LegacyCluster.CrossroadsMawlek
                 }
             },
             { "City Storerooms", new() },
@@ -27,8 +27,8 @@ namespace DarknessRandomizer.Data
                 "Crystallized Mound",
                 new()
                 {
-                    Cluster.CrystalPeakCrystallizedMound,
-                    Cluster.RestingGroundsMain
+                    LegacyCluster.CrystalPeakCrystallizedMound,
+                    LegacyCluster.RestingGroundsMain
                 }
             },
             { "Distant Village", new() },
@@ -36,27 +36,27 @@ namespace DarknessRandomizer.Data
                 "East Blue Lake",
                 new()
                 {
-                    Cluster.BlueLake,
-                    Cluster.RestingGroundsMain
+                    LegacyCluster.BlueLake,
+                    LegacyCluster.RestingGroundsMain
                 }
             },
             {
                 "East Crossroads",
                 new()
                 {
-                    Cluster.CrossroadsUpper,
-                    Cluster.CrossroadsEntrance,
-                    Cluster.CrossroadsWest,
-                    Cluster.CrossroadsPeaksBridge
+                    LegacyCluster.CrossroadsUpper,
+                    LegacyCluster.CrossroadsEntrance,
+                    LegacyCluster.CrossroadsWest,
+                    LegacyCluster.CrossroadsPeaksBridge
                 }
             },
             {
                 "East Fog Canyon",
                 new()
                 {
-                    Cluster.FogCanyonEast,
-                    Cluster.GreenpathOutsideNoEyes,
-                    Cluster.GreenpathLower
+                    LegacyCluster.FogCanyonEast,
+                    LegacyCluster.GreenpathOutsideNoEyes,
+                    LegacyCluster.GreenpathLower
                 }
             },
             { "Far Greenpath", new() },  // TRANDO only
@@ -66,21 +66,21 @@ namespace DarknessRandomizer.Data
                 "Greenpath",
                 new()
                 {
-                    Cluster.GreenpathCliffsBridge,
-                    Cluster.GreenpathLower,
-                    Cluster.GreenpathOutsideNoEyes,
-                    Cluster.GreenpathUpper,
-                    Cluster.GreenpathWest
+                    LegacyCluster.GreenpathCliffsBridge,
+                    LegacyCluster.GreenpathLower,
+                    LegacyCluster.GreenpathOutsideNoEyes,
+                    LegacyCluster.GreenpathUpper,
+                    LegacyCluster.GreenpathWest
                 }
             },
             {
                 "Hallownest's Crown",
                 new()
                 {
-                    Cluster.CrystalPeakCrown,
-                    Cluster.CrystalPeakUpper,
-                    Cluster.CrystalPeakWest,
-                    Cluster.CrystalPeakLower
+                    LegacyCluster.CrystalPeakCrown,
+                    LegacyCluster.CrystalPeakUpper,
+                    LegacyCluster.CrystalPeakWest,
+                    LegacyCluster.CrystalPeakLower
                 }
             },
             { "Hive", new() },  // TRANDO only
@@ -88,10 +88,10 @@ namespace DarknessRandomizer.Data
                 "King's Pass",
                 new()
                 {
-                    Cluster.KingsPass,
-                    Cluster.CrossroadsEntrance,
-                    Cluster.CrossroadsWest,
-                    Cluster.CrossroadsUpper
+                    LegacyCluster.KingsPass,
+                    LegacyCluster.CrossroadsEntrance,
+                    LegacyCluster.CrossroadsWest,
+                    LegacyCluster.CrossroadsUpper
                 }
             },
             { "King's Station", new() },
@@ -100,11 +100,11 @@ namespace DarknessRandomizer.Data
                 "Lower Greenpath",
                 new()
                 {
-                    Cluster.FogCanyonWest,
-                    Cluster.GreenpathLower,
-                    Cluster.GreenpathMMC,
-                    Cluster.GreenpathOutsideNoEyes,
-                    Cluster.GreenpathUpper
+                    LegacyCluster.FogCanyonWest,
+                    LegacyCluster.GreenpathLower,
+                    LegacyCluster.GreenpathMMC,
+                    LegacyCluster.GreenpathOutsideNoEyes,
+                    LegacyCluster.GreenpathUpper
                 }
             },
             { "Mantis Village", new() },
@@ -114,37 +114,37 @@ namespace DarknessRandomizer.Data
             { "Royal Waterways", new() },
             { "Stag Nest", new()
             {
-                Cluster.CliffsMain,
-                Cluster.KingsPass,
-                Cluster.CliffsBaldur,
-                Cluster.GreenpathUpper,
-                Cluster.CrossroadsEntrance
+                LegacyCluster.CliffsMain,
+                LegacyCluster.KingsPass,
+                LegacyCluster.CliffsBaldur,
+                LegacyCluster.GreenpathUpper,
+                LegacyCluster.CrossroadsEntrance
             } },
             {
                 "West Blue Lake",
                 new()
                 {
 
-                    Cluster.BlueLake,
-                    Cluster.CrossroadsLower,
-                    Cluster.CrossroadsUpper,
-                    Cluster.CrossroadsEntrance
+                    LegacyCluster.BlueLake,
+                    LegacyCluster.CrossroadsLower,
+                    LegacyCluster.CrossroadsUpper,
+                    LegacyCluster.CrossroadsEntrance
                 }
             },
             {
                 "West Crossroads",
                 new()
                 {
-                    Cluster.CrossroadsMawlek,
-                    Cluster.CrossroadsWest,
-                    Cluster.CrossroadsEntrance,
-                    Cluster.CrossroadsLower
+                    LegacyCluster.CrossroadsMawlek,
+                    LegacyCluster.CrossroadsWest,
+                    LegacyCluster.CrossroadsEntrance,
+                    LegacyCluster.CrossroadsLower
                 }
             },
             { "West Fog Canyon", new() },
             { "West Waterways", new() }
         };
 
-        public static IReadOnlyCollection<Cluster> GetStartClusters(string start) => ProtectedStartClusters[start];
+        public static IReadOnlyCollection<LegacyCluster> GetStartClusters(string start) => ProtectedStartClusters[start];
     }
 }

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
@@ -47,7 +47,7 @@ namespace DarknessRandomizer.Data
 
         // @@@ INSERT_SCENE_NAMES START @@@
         public static readonly SceneName CityBrokenElevator = new("Abyss_01");
-        public static readonly SceneName Basin = new("Abyss_02");
+        public static readonly SceneName BasinBrokenBridge = new("Abyss_02");
         public static readonly SceneName BasinTram = new("Abyss_03");
         public static readonly SceneName DeepnestTram = new("Abyss_03_b");
         public static readonly SceneName EdgeTram = new("Abyss_03_c");
@@ -344,25 +344,30 @@ namespace DarknessRandomizer.Data
         public static readonly SceneName WaterwaysFlukeHermit = new("Room_GG_Shortcut");
         public static readonly SceneName Jinn = new("Room_Jinn");
         public static readonly SceneName GroundsGreyMourner = new("Room_Mansion");
+        public static readonly SceneName Iselda = new("Room_mapper");
         public static readonly SceneName DeepnestMaskMaker = new("Room_Mask_Maker");
         public static readonly SceneName CrossroadsMenderbug = new("Room_Mender_House");
-        public static readonly SceneName Jiji = new("Room_Ouiji");
-        public static readonly SceneName GardensWhiteLady = new("Room_Queen");
-        public static readonly SceneName GreenpathUnnBench = new("Room_Slug_Shrine");
-        public static readonly SceneName SlyBasement = new("Room_Sly_Storeroom");
-        public static readonly SceneName DirtmouthStag = new("Room_Town_Stag_Station");
-        public static readonly SceneName LowerTram = new("Room_Tram");
-        public static readonly SceneName UpperTram = new("Room_Tram_RG");
-        public static readonly SceneName EdgeCastOffShell = new("Room_Wyrm");
-        public static readonly SceneName Iselda = new("Room_mapper");
         public static readonly SceneName CliffsMato = new("Room_nailmaster");
         public static readonly SceneName GreenpathSheo = new("Room_nailmaster_02");
         public static readonly SceneName EdgeOro = new("Room_nailmaster_03");
         public static readonly SceneName CityNailsmith = new("Room_nailsmith");
+        public static readonly SceneName Jiji = new("Room_Ouiji");
+        public static readonly SceneName GardensWhiteLady = new("Room_Queen");
         public static readonly SceneName CrossroadsRescueSly = new("Room_ruinhouse");
         public static readonly SceneName Sly = new("Room_shop");
+        public static readonly SceneName GreenpathUnnBench = new("Room_Slug_Shrine");
+        public static readonly SceneName SlyBasement = new("Room_Sly_Storeroom");
         public static readonly SceneName DeepnestBrumm = new("Room_spider_small");
         public static readonly SceneName BlackEggTemple = new("Room_temple");
+        public static readonly SceneName DirtmouthStag = new("Room_Town_Stag_Station");
+        public static readonly SceneName LowerTram = new("Room_Tram");
+        public static readonly SceneName UpperTram = new("Room_Tram_RG");
+        public static readonly SceneName EdgeCastOffShell = new("Room_Wyrm");
+        public static readonly SceneName CityPleasureHouseBench = new("Ruins_Bathhouse");
+        public static readonly SceneName CityPleasureHouseElevator = new("Ruins_Elevator");
+        public static readonly SceneName CityGuardedGrub = new("Ruins_House_01");
+        public static readonly SceneName CityGorgeousHusk = new("Ruins_House_02");
+        public static readonly SceneName CityEmilitia = new("Ruins_House_03");
         public static readonly SceneName CityPilgrimsEntrance = new("Ruins1_01");
         public static readonly SceneName CityQuirrelBench = new("Ruins1_02");
         public static readonly SceneName CityRafters = new("Ruins1_03");
@@ -399,11 +404,6 @@ namespace DarknessRandomizer.Data
         public static readonly SceneName CityCollectorArena = new("Ruins2_11");
         public static readonly SceneName CityTowerofLove = new("Ruins2_11_b");
         public static readonly SceneName CityLurienElevator = new("Ruins2_Watcher_Room");
-        public static readonly SceneName CityPleasureHouseBench = new("Ruins_Bathhouse");
-        public static readonly SceneName CityPleasureHouseElevator = new("Ruins_Elevator");
-        public static readonly SceneName CityGuardedGrub = new("Ruins_House_01");
-        public static readonly SceneName CityGorgeousHusk = new("Ruins_House_02");
-        public static readonly SceneName CityEmilitia = new("Ruins_House_03");
         public static readonly SceneName Dirtmouth = new("Town");
         public static readonly SceneName KingsPass = new("Tutorial_01");
         public static readonly SceneName WaterwaysEntrance = new("Waterways_01");
