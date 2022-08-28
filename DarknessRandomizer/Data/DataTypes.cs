@@ -9,27 +9,33 @@ namespace DarknessRandomizer.Data
 {
     public class SceneMetadata
     {
+        public static readonly SortedDictionary<string, SceneMetadata> Instance =
+            JsonUtil.Deserialize<SortedDictionary<string, SceneMetadata>>("DarknessRandomizer.Resources.Data.scene_metadata.json");
+
         public String Alias;
         public String MapArea;
         public List<String> AdjacentScenes;
-
-        public static SortedDictionary<string, SceneMetadata> LoadAll() => JsonUtil.Deserialize<SortedDictionary<string, SceneMetadata>>("DarknessRandomizer.Resources.Data.scene_metadata.json");
     }
 
     public class SceneData
     {
+        public static readonly SortedDictionary<string, SceneData> Instance =
+            JsonUtil.Deserialize<SortedDictionary<string, SceneData>>("DarknessRandomizer.Resources.Data.scene_data.json");
+
         public string Alias;
         public string Cluster = "UNASSIGNED";
         public Darkness MinimumDarkness = Darkness.Bright;
         public Darkness MaximumDarkness = Darkness.Dark;
+        public bool IsVanillaDark = false;
         public LocationSet DifficultSkipLocs = LocationSet.None();
         public LocationSet ProficientSkipLocs = LocationSet.None();
-
-        public static SortedDictionary<string, SceneData> LoadAll() => JsonUtil.Deserialize<SortedDictionary<string, SceneData>>("DarknessRandomizer.Resources.Data.scene_data.json");
     }
 
     public class ClusterData
     {
+        public static readonly SortedDictionary<string, ClusterData> Instance =
+            JsonUtil.Deserialize<SortedDictionary<string, ClusterData>>("DarknessRandomizer.Resources.Data.cluster_data.json");
+
         public List<string> SceneAliases = new();
         public List<string> SceneNames = new();
         public bool CanBeDarknessSource = true;
@@ -38,7 +44,5 @@ namespace DarknessRandomizer.Data
         public int CostWeight = 100;
         public int SemiDarkProbability = 100;
         public SortedDictionary<string, RelativeDarkness> AdjacentClusters = new();
-
-        public static SortedDictionary<string, ClusterData> LoadAll() => JsonUtil.Deserialize<SortedDictionary<string, ClusterData>>("DarknessRandomizer.Resources.Data.cluster_data.json");
     }
 }

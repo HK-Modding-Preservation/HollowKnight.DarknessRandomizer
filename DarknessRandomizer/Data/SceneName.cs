@@ -45,6 +45,7 @@ namespace DarknessRandomizer.Data
 
         public override int GetHashCode() => Id;
 
+        // @@@ INSERT_SCENE_NAMES START @@@
         public static readonly SceneName CityBrokenElevator = new("Abyss_01");
         public static readonly SceneName Basin = new("Abyss_02");
         public static readonly SceneName BasinTram = new("Abyss_03");
@@ -438,6 +439,7 @@ namespace DarknessRandomizer.Data
         public static readonly SceneName POPEntrance = new("White_Palace_18");
         public static readonly SceneName POPVertical = new("White_Palace_19");
         public static readonly SceneName POPFinal = new("White_Palace_20");
+        // @@@ INSERT_SCENE_NAMES END @@@
 
         private static readonly HashSet<SceneName> VanillaDarkScenes = new()
         {

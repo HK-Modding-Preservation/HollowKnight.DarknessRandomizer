@@ -34,9 +34,9 @@ namespace DarknessRandomizer.Data
         public static void UpdateGraphData()
         {
             // Load all the data.
-            var SM = SceneMetadata.LoadAll();
-            var SD = SceneData.LoadAll();
-            var CD = ClusterData.LoadAll();
+            var SM = SceneMetadata.Instance;
+            var SD = SceneData.Instance;
+            var CD = ClusterData.Instance;
 
             SyncDicts(SM, SD, k => new() { Alias = SM[k].Alias });
 
