@@ -32,10 +32,12 @@ namespace DarknessRandomizer.Data
         public Darkness MinimumDarkness = Darkness.Bright;
         public Darkness MaximumDarkness = Darkness.Dark;
         public bool IsVanillaDark = false;
-        public LogicNameSet DifficultSkips = LogicNameSet.None();
-        public LogicNameSet ProficientSkips = LogicNameSet.None();
-    }
+        public LogicNameSet DifficultSkips = null;
+        public LogicNameSet ProficientSkips = null;
 
+        public bool IsDifficultSkip(string logicName) => DifficultSkips != null && DifficultSkips.Contains(logicName);
+        public bool IsProficientSkip(string logicName) => ProficientSkips != null && ProficientSkips.Contains(logicName);
+    }
     public class DarkSettings
     {
         public int ProbabilityWeight = 100;

@@ -71,6 +71,14 @@ namespace DarknessRandomizer.Data
                 {
                     exceptions.Add($"Invalid darkness settings for scene {scene}");
                 }
+                if (sData.DifficultSkips != null && sData.DifficultSkips.Empty)
+                {
+                    sData.DifficultSkips = null;
+                }
+                if (sData.ProficientSkips != null && sData.ProficientSkips.Empty)
+                {
+                    sData.ProficientSkips = null;
+                }
             }
             MaybeThrowException(exceptions);
 
