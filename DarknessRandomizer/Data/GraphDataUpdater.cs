@@ -180,9 +180,17 @@ namespace DarknessRandomizer.Data
                 {
                     origOverride = null;
                 }
+                else
+                {
+                    origOverride ??= false;
+                }
                 if (cData.MaximumDarkness(SD) < Darkness.Dark)
                 {
                     origCursed = null;
+                }
+                else
+                {
+                    origCursed ??= false;
                 }
                 cData.OverrideCannotBeDarknessSource = origOverride;
                 cData.CursedOnly = origCursed;
