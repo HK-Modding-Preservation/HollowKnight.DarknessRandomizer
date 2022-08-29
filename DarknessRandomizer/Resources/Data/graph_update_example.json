@@ -1,4 +1,3 @@
 ﻿{
-  "UpdateGraphData": false,
-  "RepoRoot": "/Put/the/path/do/your/git/root/here"
+  "RepoRoot": "/Put/the/path/to/your/git/root/here"
 }

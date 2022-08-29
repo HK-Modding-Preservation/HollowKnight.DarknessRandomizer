@@ -11,7 +11,10 @@ namespace DarknessRandomizer.Data
     public class SceneMetadata
     {
         public static readonly SortedDictionary<string, SceneMetadata> Instance =
-            JsonUtil.Deserialize<SortedDictionary<string, SceneMetadata>>("DarknessRandomizer.Resources.Data.scene_metadata.json");
+            JsonUtil.DeserializeEmbedded<SortedDictionary<string, SceneMetadata>>("DarknessRandomizer.Resources.Data.scene_metadata.json");
+
+        public static SortedDictionary<string, SceneMetadata> LoadFromPath(string path) =>
+            JsonUtil.DeserializeFromPath<SortedDictionary<string, SceneMetadata>>(path);
 
         public static SceneMetadata Get(SceneName sceneName) => Instance[sceneName.Name];
 
@@ -23,7 +26,10 @@ namespace DarknessRandomizer.Data
     public class SceneData
     {
         public static readonly SortedDictionary<string, SceneData> Instance =
-            JsonUtil.Deserialize<SortedDictionary<string, SceneData>>("DarknessRandomizer.Resources.Data.scene_data.json");
+            JsonUtil.DeserializeEmbedded<SortedDictionary<string, SceneData>>("DarknessRandomizer.Resources.Data.scene_data.json");
+
+        public static SortedDictionary<string, SceneData> LoadFromPath(string path) =>
+            JsonUtil.DeserializeFromPath<SortedDictionary<string, SceneData>>(path);
 
         public static SceneData Get(SceneName sceneName) => Instance[sceneName.Name];
 
@@ -52,7 +58,10 @@ namespace DarknessRandomizer.Data
     public class ClusterData
     {
         public static readonly SortedDictionary<string, ClusterData> Instance =
-            JsonUtil.Deserialize<SortedDictionary<string, ClusterData>>("DarknessRandomizer.Resources.Data.cluster_data.json");
+            JsonUtil.DeserializeEmbedded<SortedDictionary<string, ClusterData>>("DarknessRandomizer.Resources.Data.cluster_data.json");
+
+        public static SortedDictionary<string, ClusterData> LoadFromPath(string path) =>
+            JsonUtil.DeserializeFromPath<SortedDictionary<string, ClusterData>>(path);
 
         public static ClusterData Get(ClusterName clusterName) => Instance[clusterName.Name];
 

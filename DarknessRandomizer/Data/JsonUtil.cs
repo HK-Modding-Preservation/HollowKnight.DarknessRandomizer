@@ -7,9 +7,15 @@ namespace DarknessRandomizer
     // Borrowed from https://github.com/homothetyhk/BenchRando/blob/master/BenchRando/JsonUtil.cs
     internal static class JsonUtil
     {
-        public static T Deserialize<T>(string embeddedResourcePath)
+        public static T DeserializeEmbedded<T>(string embeddedResourcePath)
         {
             using StreamReader sr = new(typeof(JsonUtil).Assembly.GetManifestResourceStream(embeddedResourcePath));
+            using JsonTextReader jtr = new(sr);
+            return _js.Deserialize<T>(jtr);
+        }
+        public static T DeserializeFromPath<T>(string path)
+        {
+            using StreamReader sr = new(path);
             using JsonTextReader jtr = new(sr);
             return _js.Deserialize<T>(jtr);
         }
