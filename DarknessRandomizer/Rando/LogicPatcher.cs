@@ -32,11 +32,30 @@ namespace DarknessRandomizer.Rando
 
             // Dream bosses are coded specially because the checks are located where the dream nail is swung,
             // but we care whether or not the actual fight room is dark. So we have to account for both rooms.
-            { "Defeated_Failed_Champion", CustomSceneLogicEdit(SceneName.DreamFailedChampion, "SPICYCOMBATSKIPS") },
-            { "Defeated_Grey_Prince_Zote", CustomSceneLogicEdit(SceneName.GPZ, "SPICYCOMBATSKIPS") },
+            { "Defeated_Failed_Champion", CustomSceneLogicEdit(SceneName.DreamFailedChampion, "FALSE") },
+            { "Defeated_Grey_Prince_Zote", CustomSceneLogicEdit(SceneName.GPZ, "FALSE") },
             { "Defeated_Lost_Kin", CustomSceneLogicEdit(SceneName.DreamLostKin, "SPICYCOMBATSKIPS") },
             { "Defeated_Soul_Tyrant", CustomSceneLogicEdit(SceneName.DreamSoulTyrant, "SPICYCOMBATSKIPS") },
             { "Defeated_White_Defender", CustomSceneLogicEdit(SceneName.DreamWhiteDefender, "SPICYCOMBATSKIPS") },
+
+            // These bosses are deemed difficult in the dark.
+            { "Defeated_Broken_Vessel", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
+            { "Defeated_Brooding_Mawlek", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
+            { "Defeated_Collector", CustomDarkLogicEdit("SPICYCOMBATSKIPS") },
+            { "Defeated_Colloseum_1", CustomDarkLogicEdit("SPICYCOMBATSKIPS") },
+            { "Defeated_Colloseum_2", CustomDarkLogicEdit("FALSE") },
+            { "Defeated_Colloseum_3", CustomDarkLogicEdit("FALSE") },
+            { "Defeated_Crystal_Guardian", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
+            { "Defeated_Enraged_Guardian", CustomDarkLogicEdit("SPICYCOMBATSKIPS") },
+            { "Defeated_Flukemarm", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
+            { "Defeated_Hornet_Sentinel", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
+            { "Defeated_Mantis_Lords", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
+            { "Defeated_Nosk", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
+            { "Defeated_Pale_Lurker", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
+            { "Defeated_Soul_Master", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
+            { "Defeated_Traitor_Lord", CustomDarkLogicEdit("SPICYCOMBATSKIPS") },
+            { "Defeated_Uumuu", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
+            { "Defeated_Watcher_Knights", CustomDarkLogicEdit("SPICYCOMBATSKIPS") },
 
             // Flower quest just requires lantern, not gonna think any harder about it.
             { "Mask_Shard-Grey_Mourner", CustomDarkLogicEdit("FALSE") },
