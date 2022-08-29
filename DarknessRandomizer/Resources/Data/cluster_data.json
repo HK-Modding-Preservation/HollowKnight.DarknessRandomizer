@@ -8,9 +8,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "AbyssCore": "Unspecified"
     }
@@ -24,9 +28,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "AbyssBirthplace": "Unspecified",
       "AbyssLifebloodCore": "Unspecified",
@@ -44,9 +52,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "AbyssCore": "Unspecified"
     }
@@ -66,9 +78,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "AbyssCore": "Unspecified"
     }
@@ -80,11 +96,12 @@
     "SceneNames": [
       "Abyss_12"
     ],
-    "CanBeDarknessSource": true,
+    "CanBeDarknessSource": false,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "AbyssCore": "Unspecified"
     }
@@ -104,9 +121,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "BasinFountain": "Unspecified"
     }
@@ -120,9 +141,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "CityBridgeToBasin": "Unspecified"
     }
@@ -136,9 +161,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "AbyssCore": "Unspecified",
       "BasinBrokenVesselWing": "Unspecified",
@@ -155,11 +184,12 @@
       "Abyss_05",
       "Abyss_22"
     ],
-    "CanBeDarknessSource": true,
+    "CanBeDarknessSource": false,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "BasinFountain": "Unspecified"
     }
@@ -177,9 +207,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "BasinCloth": "Unspecified",
       "BasinFountain": "Unspecified"
@@ -194,9 +228,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {}
   },
   "DeepnestTramWing": {
@@ -206,11 +244,12 @@
     "SceneNames": [
       "Abyss_03_b"
     ],
-    "CanBeDarknessSource": true,
+    "CanBeDarknessSource": false,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {}
   },
   "EdgeTramEntrance": {
@@ -222,9 +261,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {}
   },
   "FungalClothCorridor": {
@@ -234,11 +277,12 @@
     "SceneNames": [
       "Fungus2_09"
     ],
-    "CanBeDarknessSource": true,
+    "CanBeDarknessSource": false,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "FungalElderHuWing": "Unspecified"
     }
@@ -254,9 +298,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "FungalClothCorridor": "Unspecified",
       "FungalUpper": "Unspecified"
@@ -273,9 +321,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "FungalOgres": "Unspecified",
       "FungalQueensStation": "Unspecified"
@@ -290,9 +342,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "FungalEntrance": "Unspecified",
       "FungalUpper": "Unspecified"
@@ -309,9 +365,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "FungalEntrance": "Unspecified"
     }
@@ -325,9 +385,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "FungalElderHuWing": "Unspecified",
       "FungalOgres": "Unspecified"
@@ -342,9 +406,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {}
   },
   "GreenpathStoneSanctuary": {
@@ -358,9 +426,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "GreenpathStoneSanctuaryApproach": "Unspecified"
     }
@@ -374,9 +446,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "GreenpathStoneSanctuary": "Unspecified"
     }
@@ -388,11 +464,10 @@
     "SceneNames": [
       "Fungus1_37"
     ],
-    "CanBeDarknessSource": true,
+    "CanBeDarknessSource": false,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": null,
+    "SemiDarkSettings": null,
     "AdjacentClusters": {}
   },
   "GreenpathUnn": {
@@ -406,9 +481,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "GreenpathUnnBridge": "Unspecified"
     }
@@ -420,11 +499,12 @@
     "SceneNames": [
       "Fungus1_25"
     ],
-    "CanBeDarknessSource": true,
+    "CanBeDarknessSource": false,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {
       "GreenpathUnn": "Unspecified"
     }
@@ -438,9 +518,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {}
   },
   "GreenpathWest": {
@@ -452,9 +536,13 @@
     ],
     "CanBeDarknessSource": true,
     "CursedOnly": false,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "AdjacentClusters": {}
   }
 }

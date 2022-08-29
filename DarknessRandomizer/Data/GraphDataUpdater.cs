@@ -44,6 +44,19 @@ namespace DarknessRandomizer.Data
 
             SyncDicts(SM, SD, k => new() { Alias = SM[k].Alias });
 
+            // Validate SceneData
+            List<string> exceptions = new();
+            foreach (var e in SD)
+            {
+                var scene = e.Key;
+                var sData = e.Value;
+                if (sData.MaximumDarkness < sData.MinimumDarkness)
+                {
+                    exceptions.Add($"Invalid darkness settings for scene {scene}");
+                }
+            }
+            MaybeThrowException(exceptions);
+
             // Build up metadata maps.
             Dictionary<string, HashSet<string>> clusterToScenes = new();
             Dictionary<string, string> sceneToCluster = new();
@@ -79,7 +92,6 @@ namespace DarknessRandomizer.Data
             SyncDicts(clusterToScenes, CD, k => new());
 
             // Update and validate each cluster.
-            List<string> exceptions = new();
             foreach (var e in CD)
             {
                 var cluster = e.Key;
@@ -133,13 +145,28 @@ namespace DarknessRandomizer.Data
                         exceptions.Add($"RelativeDarkness mismatch between {cluster} and {aCluster}");
                     }
                 }
-            }
 
-            exceptions.ForEach(DarknessRandomizer.Log);
-            if (exceptions.Count > 0)
-            {
-                throw new ArgumentException($"{exceptions.Count} data errors encountered");
+                // Handle darkness settings.
+                if (cData.MaximumDarkness() < Darkness.Dark)
+                {
+                    cData.DarkSettings = null;
+                    cData.CanBeDarknessSource = false;
+                }
+                else if (cData.DarkSettings == null)
+                {
+                    cData.DarkSettings = new();
+                    cData.CanBeDarknessSource = true;
+                }
+                if (cData.MaximumDarkness() < Darkness.SemiDark || cData.MinimumDarkness() > Darkness.SemiDark)
+                {
+                    cData.SemiDarkSettings = null;
+                }
+                else
+                {
+                    cData.SemiDarkSettings ??= new();
+                }
             }
+            MaybeThrowException(exceptions);
 
             // Only update data at the end, if we have no exceptions.
             JsonUtil.Serialize(SM, $"{RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
@@ -151,6 +178,15 @@ namespace DarknessRandomizer.Data
             UpdateCSFile("Data/ClusterName.cs", "INSERT_CLUSTER_NAMES", CD,
                 (n, cd) => $"ClusterName {CSharpClean(n)} = new(\"{n}\")");
             // TODO: Update Cluster file.
+        }
+
+        private static void MaybeThrowException(List<string> exceptions)
+        {
+            exceptions.ForEach(DarknessRandomizer.Log);
+            if (exceptions.Count > 0)
+            {
+                throw new ArgumentException($"{exceptions.Count} data errors encountered");
+            }
         }
 
         private static string CSharpClean(string name)
