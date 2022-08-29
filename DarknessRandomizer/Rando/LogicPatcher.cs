@@ -70,8 +70,9 @@ namespace DarknessRandomizer.Rando
 
             // The following scenes are trivial to navigate while dark, but may contain a check which is
             // uniquely affected by darkness.
-            { SceneName.FungalQueensStation, (lmb, name, lc) => { } },
-            { SceneName.GroundsXero, (lmb, name, lc) => { } },
+            { SceneName.FungalQueensStation, NoLogicEdit },
+            { SceneName.GroundsBlueLake, NoLogicEdit },
+            { SceneName.GroundsXero, NoLogicEdit }
         };
 
         private static readonly Dictionary<SceneName, LogicOverride> LogicOverridesByUniqueScene = new()
@@ -200,7 +201,7 @@ namespace DarknessRandomizer.Rando
             if (darkrooms)
             {
                 sink.Add(DarkroomsToken);
-            }    
+            }
             if (difficult)
             {
                 sink.Add(DifficultSkipsToken);
@@ -237,6 +238,8 @@ namespace DarknessRandomizer.Rando
         {
             EditLogicClauseBySceneInference(lmb, name, InferScenes(lc), (ln, sn, si) => AddDarkLogic(ln, sn, false, si));
         }
+
+        private static void NoLogicEdit(LogicManagerBuilder lmb, string name, LogicClause lc) { }
 
         private static LogicOverride CustomDarkLogicEdit(string darkLogic)
         {
