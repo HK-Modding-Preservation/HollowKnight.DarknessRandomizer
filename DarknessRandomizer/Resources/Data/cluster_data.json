@@ -16,7 +16,7 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "AbyssCore": "Unspecified"
+      "AbyssCore": "Brighter"
     }
   },
   "AbyssCore": {
@@ -36,11 +36,11 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "AbyssBirthplace": "Unspecified",
-      "AbyssLifebloodCore": "Unspecified",
-      "AbyssShadeCloakWing": "Unspecified",
-      "AbyssShriekWing": "Unspecified",
-      "BasinFountain": "Unspecified"
+      "AbyssBirthplace": "Darker",
+      "AbyssLifebloodCore": "Any",
+      "AbyssShadeCloakWing": "Darker",
+      "AbyssShriekWing": "Any",
+      "BasinFountain": "Any"
     }
   },
   "AbyssLifebloodCore": {
@@ -60,7 +60,7 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "AbyssCore": "Unspecified"
+      "AbyssCore": "Any"
     }
   },
   "AbyssShadeCloakWing": {
@@ -76,7 +76,7 @@
       "Abyss_16",
       "Abyss_Lighthouse_room"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -86,7 +86,7 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "AbyssCore": "Unspecified"
+      "AbyssCore": "Brighter"
     }
   },
   "AbyssShriekWing": {
@@ -103,7 +103,7 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "AbyssCore": "Unspecified"
+      "AbyssCore": "Any"
     }
   },
   "BasinBrokenVesselWing": {
@@ -169,7 +169,7 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "AbyssCore": "Unspecified",
+      "AbyssCore": "Any",
       "BasinBrokenVesselWing": "Unspecified",
       "BasinPalaceWing": "Unspecified",
       "CityBridgeToBasin": "Unspecified"
@@ -1880,6 +1880,9 @@
     "AdjacentClusters": {
       "CrossroadsElevatorApproach": "Unspecified",
       "CrossroadsVesselFragment": "Unspecified"
+    }
+  }
+}": "Unspecified"
     }
   }
 }

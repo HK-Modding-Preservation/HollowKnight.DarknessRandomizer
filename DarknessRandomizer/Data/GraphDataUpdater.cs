@@ -157,17 +157,25 @@ namespace DarknessRandomizer.Data
                 foreach (var e2 in cData.AdjacentClusters)
                 {
                     var aCluster = e2.Key;
+                    var aData = CD[aCluster];
                     var rd = e2.Value;
                     if (rd == RelativeDarkness.Unspecified) continue;
 
                     // Inspect the opposing cluster.
-                    if (!CD[aCluster].AdjacentClusters.TryGetValue(cluster, out RelativeDarkness ord) || ord == RelativeDarkness.Unspecified)
+                    if (!aData.AdjacentClusters.TryGetValue(cluster, out RelativeDarkness ord) || ord == RelativeDarkness.Unspecified)
                     {
-                        CD[aCluster].AdjacentClusters[cluster] = rd.Opposite();
+                        aData.AdjacentClusters[cluster] = rd.Opposite();
                     }
                     else if (ord != rd.Opposite())
                     {
                         exceptions.Add($"RelativeDarkness mismatch between {cluster} and {aCluster}");
+                    }
+
+                    // Can't set a Darker edge if the other cluster can't be dark.
+                    if ((rd == RelativeDarkness.Darker && aData.MaximumDarkness(SD) < Darkness.Dark)
+                        || (rd == RelativeDarkness.Brighter && cData.MaximumDarkness(SD) < Darkness.Dark))
+                    {
+                        exceptions.Add($"Darkness edge between {cluster} and {aCluster} cannot be satisfied");
                     }
                 }
 
