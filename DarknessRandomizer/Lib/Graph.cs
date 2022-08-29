@@ -24,8 +24,8 @@ namespace DarknessRandomizer.Lib
     {
         public Darkness MinimumDarkness = Darkness.Bright;
         public Darkness MaximumDarkness = Darkness.Dark;
-        public LocationSet DifficultSkipLocs = LocationSet.None();
-        public LocationSet ProficientCombatLocs = LocationSet.None();
+        public LogicNameSet DifficultSkipLocs = LogicNameSet.None();
+        public LogicNameSet ProficientCombatLocs = LogicNameSet.None();
 
         public Darkness Clamp(Darkness d)
         {

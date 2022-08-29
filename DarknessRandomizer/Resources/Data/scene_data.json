@@ -5,12 +5,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -20,12 +20,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -35,12 +35,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -50,12 +50,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -65,12 +65,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -80,12 +80,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -95,12 +95,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -110,12 +110,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -125,12 +125,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": true,
+    "DifficultSkips": {
+      "Inclusive": true,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -140,12 +140,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -155,12 +155,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -170,12 +170,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -185,12 +185,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -200,12 +200,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -215,12 +215,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -230,12 +230,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -245,12 +245,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -260,12 +260,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -275,12 +275,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -290,12 +290,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -305,12 +305,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -320,12 +320,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -335,12 +335,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -350,12 +350,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -365,12 +365,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -380,12 +380,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -395,12 +395,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -410,12 +410,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -425,12 +425,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -440,12 +440,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -455,12 +455,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -470,12 +470,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -485,12 +485,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -500,12 +500,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -515,12 +515,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -530,12 +530,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -545,12 +545,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -560,12 +560,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -575,12 +575,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -590,12 +590,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -605,12 +605,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -620,12 +620,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -635,12 +635,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -650,12 +650,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -665,12 +665,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -680,12 +680,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -695,12 +695,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -710,12 +710,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -725,12 +725,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -740,12 +740,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -755,12 +755,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -770,12 +770,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -785,12 +785,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -800,12 +800,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -815,12 +815,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -830,12 +830,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -845,12 +845,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -860,12 +860,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -875,12 +875,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -890,12 +890,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -905,12 +905,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -920,12 +920,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -935,12 +935,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -950,12 +950,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -965,12 +965,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -980,12 +980,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -995,12 +995,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1010,12 +1010,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1025,12 +1025,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1040,12 +1040,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1055,12 +1055,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1070,12 +1070,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1085,12 +1085,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1100,12 +1100,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1115,12 +1115,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1130,12 +1130,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1145,12 +1145,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1160,12 +1160,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1175,12 +1175,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1190,12 +1190,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1205,12 +1205,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1220,12 +1220,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1235,12 +1235,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1250,12 +1250,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1265,12 +1265,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1280,12 +1280,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1295,12 +1295,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1310,12 +1310,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1325,12 +1325,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1340,12 +1340,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1355,12 +1355,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1370,12 +1370,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1385,12 +1385,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1400,12 +1400,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1415,12 +1415,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1430,12 +1430,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1445,12 +1445,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1460,12 +1460,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1475,12 +1475,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1490,12 +1490,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1505,12 +1505,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1520,12 +1520,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1535,12 +1535,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1550,12 +1550,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1565,12 +1565,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1580,12 +1580,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1595,12 +1595,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1610,12 +1610,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1625,12 +1625,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1640,12 +1640,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1655,12 +1655,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1670,12 +1670,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1685,12 +1685,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1700,12 +1700,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1715,12 +1715,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1730,12 +1730,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1745,12 +1745,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1760,12 +1760,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1775,12 +1775,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1790,12 +1790,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1805,12 +1805,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1820,12 +1820,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1835,12 +1835,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1850,12 +1850,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1865,12 +1865,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1880,12 +1880,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1895,12 +1895,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1910,12 +1910,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1925,12 +1925,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1940,12 +1940,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1955,12 +1955,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1970,12 +1970,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -1985,12 +1985,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2000,12 +2000,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2015,12 +2015,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2030,12 +2030,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2045,12 +2045,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2060,12 +2060,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2075,12 +2075,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2090,12 +2090,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2105,12 +2105,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2120,12 +2120,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2135,12 +2135,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2150,12 +2150,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2165,12 +2165,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2180,12 +2180,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2195,12 +2195,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2210,12 +2210,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2225,12 +2225,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2240,12 +2240,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2255,12 +2255,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2270,12 +2270,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2285,12 +2285,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2300,12 +2300,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2315,12 +2315,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2330,12 +2330,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2345,12 +2345,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2360,12 +2360,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2375,12 +2375,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2390,12 +2390,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2405,12 +2405,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2420,12 +2420,12 @@
     "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2435,12 +2435,12 @@
     "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": true,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2450,12 +2450,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2465,12 +2465,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2480,12 +2480,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2495,12 +2495,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2510,12 +2510,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2525,12 +2525,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2540,12 +2540,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2555,12 +2555,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2570,12 +2570,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2585,12 +2585,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2600,12 +2600,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2615,12 +2615,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2630,12 +2630,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2645,12 +2645,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2660,12 +2660,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2675,12 +2675,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2690,12 +2690,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2705,12 +2705,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2720,12 +2720,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2735,12 +2735,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2750,12 +2750,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2765,12 +2765,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2780,12 +2780,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2795,12 +2795,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2810,12 +2810,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2825,12 +2825,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2840,12 +2840,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2855,12 +2855,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2870,12 +2870,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2885,12 +2885,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2900,12 +2900,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2915,12 +2915,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2930,12 +2930,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2945,12 +2945,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2960,12 +2960,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2975,12 +2975,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -2990,12 +2990,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3005,12 +3005,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3020,12 +3020,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3035,12 +3035,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3050,12 +3050,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3065,12 +3065,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3080,12 +3080,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3095,12 +3095,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3110,12 +3110,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3125,12 +3125,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3140,12 +3140,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3155,12 +3155,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3170,12 +3170,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3185,12 +3185,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3200,12 +3200,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3215,12 +3215,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3230,12 +3230,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3245,12 +3245,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3260,12 +3260,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3275,12 +3275,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3290,12 +3290,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3305,12 +3305,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3320,12 +3320,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3335,12 +3335,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3350,12 +3350,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3365,12 +3365,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3380,12 +3380,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3395,12 +3395,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3410,12 +3410,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3425,12 +3425,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3440,12 +3440,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3455,12 +3455,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3470,12 +3470,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3485,12 +3485,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3500,12 +3500,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3515,12 +3515,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3530,12 +3530,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3545,12 +3545,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3560,12 +3560,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3575,12 +3575,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3590,12 +3590,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3605,12 +3605,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3620,12 +3620,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3635,12 +3635,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3650,12 +3650,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3665,12 +3665,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3680,12 +3680,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3695,12 +3695,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3710,12 +3710,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3725,12 +3725,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3740,12 +3740,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3755,12 +3755,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3770,12 +3770,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3785,12 +3785,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3800,12 +3800,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3815,12 +3815,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3830,12 +3830,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3845,12 +3845,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3860,12 +3860,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3875,12 +3875,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3890,12 +3890,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3905,12 +3905,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3920,12 +3920,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3935,12 +3935,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3950,12 +3950,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3965,12 +3965,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3980,12 +3980,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -3995,12 +3995,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4010,12 +4010,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4025,12 +4025,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4040,12 +4040,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4055,12 +4055,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4070,12 +4070,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4085,12 +4085,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4100,12 +4100,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4115,12 +4115,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4130,12 +4130,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4145,12 +4145,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4160,12 +4160,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4175,12 +4175,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4190,12 +4190,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4205,12 +4205,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4220,12 +4220,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4235,12 +4235,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4250,12 +4250,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4265,12 +4265,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4280,12 +4280,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4295,12 +4295,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4310,12 +4310,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4325,12 +4325,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4340,12 +4340,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4355,12 +4355,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4370,12 +4370,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4385,12 +4385,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4400,12 +4400,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4415,12 +4415,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4430,12 +4430,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4445,12 +4445,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4460,12 +4460,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4475,12 +4475,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4490,12 +4490,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4505,12 +4505,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4520,12 +4520,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4535,12 +4535,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4550,12 +4550,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4565,12 +4565,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4580,12 +4580,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4595,12 +4595,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4610,12 +4610,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4625,12 +4625,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4640,12 +4640,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4655,12 +4655,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4670,12 +4670,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4685,12 +4685,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4700,12 +4700,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4715,12 +4715,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4730,12 +4730,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4745,12 +4745,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4760,12 +4760,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4775,12 +4775,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4790,12 +4790,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4805,12 +4805,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4820,12 +4820,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4835,12 +4835,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4850,12 +4850,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4865,12 +4865,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4880,12 +4880,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4895,12 +4895,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4910,12 +4910,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4925,12 +4925,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4940,12 +4940,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4955,12 +4955,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4970,12 +4970,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -4985,12 +4985,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5000,12 +5000,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5015,12 +5015,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5030,12 +5030,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5045,12 +5045,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5060,12 +5060,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5075,12 +5075,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5090,12 +5090,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5105,12 +5105,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5120,12 +5120,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5135,12 +5135,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5150,12 +5150,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5165,12 +5165,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5180,12 +5180,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5195,12 +5195,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5210,12 +5210,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5225,12 +5225,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5240,12 +5240,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5255,12 +5255,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5270,12 +5270,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5285,12 +5285,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5300,12 +5300,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5315,12 +5315,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5330,12 +5330,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5345,12 +5345,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5360,12 +5360,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5375,12 +5375,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5390,12 +5390,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5405,12 +5405,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5420,12 +5420,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5435,12 +5435,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5450,12 +5450,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5465,12 +5465,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5480,12 +5480,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5495,12 +5495,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5510,12 +5510,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5525,12 +5525,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5540,12 +5540,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5555,12 +5555,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5570,12 +5570,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5585,12 +5585,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5600,12 +5600,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5615,12 +5615,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5630,12 +5630,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5645,12 +5645,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5660,12 +5660,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5675,12 +5675,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5690,12 +5690,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5705,12 +5705,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5720,12 +5720,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5735,12 +5735,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5750,12 +5750,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5765,12 +5765,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5780,12 +5780,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5795,12 +5795,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5810,12 +5810,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5825,12 +5825,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5840,12 +5840,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5855,12 +5855,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5870,12 +5870,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   },
@@ -5885,12 +5885,12 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkipLocs": {
-      "IsAll": false,
+    "DifficultSkips": {
+      "Inclusive": false,
       "Locations": []
     },
-    "ProficientSkipLocs": {
-      "IsAll": false,
+    "ProficientSkips": {
+      "Inclusive": false,
       "Locations": []
     }
   }

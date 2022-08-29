@@ -32,8 +32,8 @@ namespace DarknessRandomizer.Data
         public Darkness MinimumDarkness = Darkness.Bright;
         public Darkness MaximumDarkness = Darkness.Dark;
         public bool IsVanillaDark = false;
-        public LocationSet DifficultSkipLocs = LocationSet.None();
-        public LocationSet ProficientSkipLocs = LocationSet.None();
+        public LogicNameSet DifficultSkips = LogicNameSet.None();
+        public LogicNameSet ProficientSkips = LogicNameSet.None();
     }
 
     public class DarkSettings
