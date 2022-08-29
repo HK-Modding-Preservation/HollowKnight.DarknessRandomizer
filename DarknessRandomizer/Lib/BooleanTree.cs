@@ -12,7 +12,7 @@ namespace DarknessRandomizer.Lib
     //
     // T is the node type, and stored only on leaves.
     // M is the metadata type, and stored on every node.
-    public class BooleanTree<T, M> where M : new()
+    public class BooleanTree<T, M>
     {
         private class OpNode
         {
@@ -26,7 +26,7 @@ namespace DarknessRandomizer.Lib
         }
 
         private readonly Variant<T, OpNode> contents;
-        public M Metadata = new();
+        public M Metadata;
 
         private BooleanTree(Variant<T, OpNode> contents)
         {

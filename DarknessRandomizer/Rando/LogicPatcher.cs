@@ -122,7 +122,7 @@ namespace DarknessRandomizer.Rando
                 return;
             }
 
-            EditLogicClauseBySceneInference(lmb, name, si, (s, n) => GetDarkLogic(s, n, true));
+            EditLogicClauseBySceneInference(lmb, name, si, (ln, sn, si) => AddDarkLogic(ln, sn, true, si));
         }
 
         private class SceneInference
@@ -158,7 +158,11 @@ namespace DarknessRandomizer.Rando
             return si;
         }
 
-        private static string GetDarkLogic(SceneName scene, string locName, bool darkrooms)
+        private static readonly SimpleToken DarkroomsToken = new("DARKROOMS");
+        private static readonly SimpleToken DifficultSkipsToken = new("DIFFICULTSKIPS");
+        private static readonly SimpleToken ProficientCombatToken = new("PROFICIENTCOMBAT");
+
+        private static void AddDarkLogic(string logicName, SceneName scene, bool darkrooms, List<LogicToken> sink)
         {
             var g = Graph.Instance;
 
@@ -167,50 +171,62 @@ namespace DarknessRandomizer.Rando
             bool combat = false;
             if (g.TryGetSceneData(scene, out Lib.SceneData sData))
             {
-                difficult |= sData.DifficultSkipLocs.Contains(locName);
-                combat |= sData.ProficientCombatLocs.Contains(locName);
+                difficult = sData.DifficultSkipLocs.Contains(logicName);
+                combat = sData.ProficientCombatLocs.Contains(logicName);
             }
 
-            string dark = darkrooms ? "DARKROOMS" : "ANY";
-            return difficult ?
-                (combat ? $"{dark} + SPICYCOMBATSKIPS" : $"{dark} + DIFFICULTSKIPS") :
-                (combat ? $"{dark} + PROFICIENTCOMBAT" : dark);
+            int tokens = (darkrooms ? 1 : 0) + (difficult ? 1 : 0) + (combat ? 1 : 0);
+            if (darkrooms)
+            {
+                sink.Add(DarkroomsToken);
+            }    
+            if (difficult)
+            {
+                sink.Add(DifficultSkipsToken);
+            }
+            if (combat)
+            {
+                sink.Add(ProficientCombatToken);
+            }
+
+            if (tokens == 0)
+            {
+                sink.Add(ConstToken.True);
+            }
+            else
+            {
+                for (int i = 1; i < tokens; i++)
+                {
+                    sink.Add(OperatorToken.AND);
+                }
+            }
         }
 
-        private delegate string DarkLogicProducer(SceneName sceneName, string locName);
-
-        private static void EditLogicClauseBySceneInference(LogicManagerBuilder lmb, string name, SceneInference si, DarkLogicProducer dlp)
+        private static void EditLogicClauseBySceneInference(LogicManagerBuilder lmb, string name, SceneInference si, DarknessLogicAdder dla)
         {
             if (si.NumScenes == 0)
             {
                 return;
             }
 
-            if (si.HasLantern)
-            {
-                LanternSubstitution.Apply(lmb, name);
-            }
-
-            // Add a darkness constraint for scenes which have been darkened.
-            foreach (var e in si.TransitionTermsBySceneName)
-            {
-                var scene = e.Key;
-                foreach (var transition in e.Value)
-                {
-                    lmb.DoSubst(new(name, transition,
-                        $"{transition} + (LANTERN | $DarknessLevel[{scene}]<2 | {dlp.Invoke(scene, name)})"));
-                }
-            }
+            LogicClauseEditor.EditDarkness(lmb, name, dla);
         }
 
         private static void EditLogicClauseBySceneInferenceNoDarkrooms(LogicManagerBuilder lmb, string name, LogicClause lc)
         {
-            EditLogicClauseBySceneInference(lmb, name, InferScenes(lc), (s, n) => GetDarkLogic(s, n, false));
+            EditLogicClauseBySceneInference(lmb, name, InferScenes(lc), (ln, sn, si) => AddDarkLogic(ln, sn, false, si));
         }
 
         private static LogicOverride CustomDarkLogicEdit(string darkLogic)
         {
-            return (lmb, name, lc) => EditLogicClauseBySceneInference(lmb, name, InferScenes(lc), (s, n) => darkLogic);
+            LogicClause lc = new(darkLogic);
+            return (lmb, name, lc) => EditLogicClauseBySceneInference(lmb, name, InferScenes(lc), (ln, sn, si) =>
+            {
+                foreach (var t in lc)
+                {
+                    si.Add(t);
+                }
+            });
         }
 
         private static LogicOverride CustomSceneLogicEdit(SceneName sceneName, string darkLogic)

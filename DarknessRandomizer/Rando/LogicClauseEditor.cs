@@ -10,13 +10,28 @@ using System.Threading.Tasks;
 
 namespace DarknessRandomizer.Rando
 {
-    using LogicTree = BooleanTree<ParsedToken, LogicTreeMetadata>;
-    using SceneTree = BooleanTree<ParsedToken, SceneTreeMetadata>;
+    using SceneTree = BooleanTree<SceneOrLantern, SceneTreeMetadata>;
 
-    internal class LogicTreeMetadata
+    // Can't use alias in another alias?
+    using LogicTree = BooleanTree<ParsedToken, BooleanTree<SceneOrLantern, SceneTreeMetadata>>;
+
+    public delegate void DarknessLogicAdder(string logicName, SceneName sceneName, List<LogicToken> sink);
+
+    internal enum Lantern { Instance }
+
+    internal class SceneOrLantern : Variant<SceneName, Lantern>
     {
-        public LogicTree Parent;
-        public SceneTree SceneTree;
+        public SceneOrLantern(SceneName sceneName) : base(sceneName) { }
+
+        private SceneOrLantern(Lantern lantern) : base(lantern) { }
+
+        public static readonly SceneOrLantern Lantern = new(Rando.Lantern.Instance);
+
+        public bool IsScene => HasFirst;
+
+        public SceneName SceneName => First;
+
+        public bool IsLantern => HasSecond;
     }
 
     internal class SceneTreeMetadata
@@ -24,17 +39,18 @@ namespace DarknessRandomizer.Rando
         public bool GuaranteedLantern = false;
     }
 
-    public static class LanternSubstitution
+    public static class LogicClauseEditor
     {
-        public static void Apply(LogicManagerBuilder lmb, string name)
+        private static bool GuaranteedLantern(this SceneTree tree) => tree.Metadata != null && tree.Metadata.GuaranteedLantern;
+
+        public static void EditDarkness(LogicManagerBuilder lmb, string name, DarknessLogicAdder dla)
         {
             var lc = lmb.LogicLookup[name];
 
             // Parse to tree of +|
             Stack<LogicTree> stack = new();
-            for (int i = 0; i < lc.Count; i++)
+            foreach (var lt in lc)
             {
-                var lt = lc[i];
                 if (lt is OperatorToken ot)
                 {
                     stack.Push(LogicTree.CreateTree(ot.OperatorType, new List<LogicTree> { stack.Pop(), stack.Pop() }));
@@ -52,44 +68,48 @@ namespace DarknessRandomizer.Rando
                 throw new ArgumentException($"Bad logic expression: {lc.ToInfix()}");
             }
 
-            CalculateParentsAndSceneTrees(ln, null);
+            CalculateSceneTrees(ln);
 
             // At this point we can create a new LogicClause.
             List<LogicToken> tokens = new();
-            ListNewTokens(ln, null, tokens);
+            bool lanternSubstituted = false;
+            ExpandModifiedLogicTree(name, ln, dla, null, ref lanternSubstituted, tokens);
             LogicClauseBuilder lcb = new(tokens);
             lmb.LogicLookup[name] = new(lcb);
         }
 
-        private static void CalculateParentsAndSceneTrees(LogicTree tree, LogicTree parent)
+        private static void CalculateSceneTrees(LogicTree tree)
         {
-            tree.Metadata.Parent = parent;
             if (tree.IsTree)
             {
                 foreach (var t in tree.Children)
                 {
-                    CalculateParentsAndSceneTrees(t, tree);
+                    CalculateSceneTrees(t);
                 }
 
                 // Child SceneTrees are now calculated, so we can calculate ours.
-                tree.Metadata.SceneTree = Combine(tree.Op, tree.Children.Select(t => t.Metadata.SceneTree));
+                tree.Metadata = Combine(tree.Op, tree.Children.Select(t => t.Metadata));
             }
-            else
+            else if (tree.Value.IsLantern)
             {
-                tree.Metadata.SceneTree = SceneTree.CreateLeaf(tree.Value);
+                tree.Metadata = LanternSceneTree();
+            }
+            else if (tree.Value.IsScene)
+            {
+                tree.Metadata = SceneTree.CreateLeaf(new(tree.Value.SceneName));
             }
         }
 
         private static SceneTree LanternSceneTree()
         {
-            var tree = SceneTree.CreateLeaf(ParsedToken.Lantern);
-            tree.Metadata.GuaranteedLantern = true;
+            var tree = SceneTree.CreateLeaf(SceneOrLantern.Lantern);
+            tree.Metadata = new() { GuaranteedLantern = true };
             return tree;
         }
 
         private static SceneTree Combine(OperatorType op, IEnumerable<SceneTree> trees)
         {
-            var treeList = trees.Where(t => t != null && (t.IsTree || t.Value.IsRelevant)).ToList();
+            var treeList = trees.Where(t => t != null).ToList();
             if (treeList.Count == 0)
             {
                 return null;
@@ -102,7 +122,7 @@ namespace DarknessRandomizer.Rando
                 {
                     return LanternSceneTree();
                 }
-                guaranteedLantern = treeList.All(t => t.Metadata.GuaranteedLantern);
+                guaranteedLantern = treeList.All(t => t.GuaranteedLantern());
             }
             else
             {
@@ -110,7 +130,7 @@ namespace DarknessRandomizer.Rando
                 {
                     return LanternSceneTree();
                 }
-                guaranteedLantern = treeList.Any(t => t.Metadata.GuaranteedLantern);
+                guaranteedLantern = treeList.Any(t => t.GuaranteedLantern());
             }
 
             // Deduplicate identical SceneNames at the same level.
@@ -143,7 +163,7 @@ namespace DarknessRandomizer.Rando
             else
             {
                 var tree = SceneTree.CreateTree(op, list);
-                tree.Metadata.GuaranteedLantern = guaranteedLantern;
+                tree.Metadata = new() { GuaranteedLantern = guaranteedLantern };
                 return tree;
             }
         }
@@ -153,28 +173,45 @@ namespace DarknessRandomizer.Rando
             return type == OperatorType.OR ? OperatorToken.OR : OperatorToken.AND;
         }
 
-        private static void ListNewTokens(LogicTree tree, SceneTree sceneTree, List<LogicToken> sink)
+        private static readonly SimpleToken LanternToken = new("LANTERN");
+
+        private static void ExpandModifiedLogicTree(
+            string logicName, LogicTree tree, DarknessLogicAdder dla, SceneTree sceneTree, ref bool lanternSubstituted, List<LogicToken> sink)
         {
             // The authoritative SceneTree for this branch is the one from the top-most conjunction.
             // These comprise the scenes necessary for this Lantern to be unnecessary.
             if (tree.IsLeaf || tree.Op == OperatorType.AND)
             {
-                sceneTree ??= tree.Metadata.SceneTree;
+                sceneTree ??= tree.Metadata;
             }
 
             if (tree.IsLeaf)
             {
                 if (tree.Value.IsLantern)
                 {
-                    if (ListLanternTreeTokens(sceneTree, sink))
+                    if (!sceneTree.GuaranteedLantern() || !lanternSubstituted)
                     {
-                        sink.Add(ParsedToken.LanternToken);
-                        sink.Add(OperatorToken.OR);
+                        sink.Add(LanternToken);
+                        if (ListLanternTreeTokens(sceneTree, sink))
+                        {
+                            sink.Add(OperatorToken.OR);
+                        }
+                        lanternSubstituted = true;
                     }
                     else
                     {
-                        sink.Add(ParsedToken.LanternToken);
+                        sink.Add(ConstToken.True);
                     }
+                }
+                else if (tree.Value.IsScene && (sceneTree == null || !sceneTree.GuaranteedLantern()))
+                {
+                    sink.Add(LanternToken);
+                    AddDarknessCheck(tree.Value.SceneName, sink);
+                    sink.Add(OperatorToken.OR);
+                    dla.Invoke(logicName, tree.Value.SceneName, sink);
+                    sink.Add(OperatorToken.OR);
+                    sink.Add(tree.Value.Token);
+                    sink.Add(OperatorToken.AND);
                 }
                 else
                 {
@@ -183,9 +220,10 @@ namespace DarknessRandomizer.Rando
             }
             else
             {
+                bool internalLanternSubstited = lanternSubstituted;
                 for (int i = 0; i < tree.Children.Count; i++)
                 {
-                    ListNewTokens(tree.Children[i], sceneTree, sink);
+                    ExpandModifiedLogicTree(logicName, tree.Children[i], dla, sceneTree, ref internalLanternSubstited, sink);
                     if (i > 0)
                     {
                         sink.Add(GetOperatorToken(tree.Op));
@@ -203,7 +241,7 @@ namespace DarknessRandomizer.Rando
 
             if (tree.IsLeaf)
             {
-                sink.Add(new ComparisonToken(ComparisonType.LT, $"$DarknessLevel[{tree.Value.SceneName}]", "2"));
+                AddDarknessCheck(tree.Value.SceneName, sink);
             }
             else
             {
@@ -217,6 +255,11 @@ namespace DarknessRandomizer.Rando
                 }
             }
             return true;
+        }
+
+        private static void AddDarknessCheck(SceneName sceneName, List<LogicToken> sink)
+        {
+            sink.Add(new ComparisonToken(ComparisonType.LT, $"$DarknessLevel[{sceneName}]", "2"));
         }
     }
 
@@ -240,8 +283,7 @@ namespace DarknessRandomizer.Rando
             this.sceneName = sceneName;
         }
 
-        public static readonly SimpleToken LanternToken = new("LANTERN");
-        public static readonly ParsedToken Lantern = new(LanternToken, TokenType.Lantern, null);
+        public static readonly ParsedToken Lantern = new(new SimpleToken("LANTERN"), TokenType.Lantern, null);
 
         public static ParsedToken Parse(LogicToken token)
         {
