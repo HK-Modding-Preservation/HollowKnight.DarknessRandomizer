@@ -10,7 +10,7 @@
     public class DarknessRandomizationSettings
     {
         public bool RandomizeDarkness = false;
-        public DarknessLevel DarknessLevel = DarknessLevel.Dim;
+        public DarknessLevel DarknessLevel = DarknessLevel.Dark;
 
         public DarknessRandomizationSettings Clone()
         {
