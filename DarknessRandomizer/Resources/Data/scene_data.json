@@ -1045,7 +1045,7 @@
   },
   "Deepnest_Spider_Town": {
     "Alias": "Deepnest_Beast's_Den",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "DeepnestBeastsDen",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1054,7 +1054,7 @@
   },
   "Dream_01_False_Knight": {
     "Alias": "Dream_Failed_Champion",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrossroadsFailedChampion",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1063,7 +1063,7 @@
   },
   "Dream_02_Mage_Lord": {
     "Alias": "Dream_Soul_Tyrant",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "SanctumSoulTyrant",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1072,7 +1072,7 @@
   },
   "Dream_03_Infected_Knight": {
     "Alias": "Dream_Lost_Kin",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "BasinLostKin",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1081,7 +1081,7 @@
   },
   "Dream_04_White_Defender": {
     "Alias": "Dream_White_Defender",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysWhiteDefender",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1090,7 +1090,7 @@
   },
   "Dream_Abyss": {
     "Alias": "Dream_Abyss",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "AbyssClimb",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1099,16 +1099,16 @@
   },
   "Dream_Backer_Shrine": {
     "Alias": "Dream_Outside_Shrine",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GroundsShrineOfBelievers",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Dream_Final": {
     "Alias": "Egg_Radiance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "BlackEggRadiance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1117,34 +1117,34 @@
   },
   "Dream_Guardian_Hegemol": {
     "Alias": "Dream_Herrah",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "DeepnestHerrah",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Dream_Guardian_Lurien": {
     "Alias": "Dream_Lurien",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityLurien",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Dream_Guardian_Monomon": {
     "Alias": "Dream_Monomon",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "ArchivesMonomon",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Dream_Mighty_Zote": {
     "Alias": "Dream_Grey_Prince_Zote",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "DirtmouthGPZ",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1153,7 +1153,7 @@
   },
   "Dream_Nailcollection": {
     "Alias": "Dream_Nail",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GroundsDreamNail",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1162,16 +1162,16 @@
   },
   "Dream_Room_Believer_Shrine": {
     "Alias": "Dream_Shrine_of_Believers",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GroundsShrineOfBelievers",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Fungus1_01": {
     "Alias": "Greenpath_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathUpperEast",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1180,16 +1180,16 @@
   },
   "Fungus1_01b": {
     "Alias": "Greenpath_Waterfall_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathUpperEast",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Fungus1_02": {
     "Alias": "Greenpath_First_Hornet_Sighting",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathUpperEast",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1198,7 +1198,7 @@
   },
   "Fungus1_03": {
     "Alias": "Greenpath_Storerooms",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathUpperWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1207,7 +1207,7 @@
   },
   "Fungus1_04": {
     "Alias": "Greenpath_Hornet",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathHornet",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1216,7 +1216,7 @@
   },
   "Fungus1_05": {
     "Alias": "Greenpath_Outside_Thorns",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathLowerPass",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1225,7 +1225,7 @@
   },
   "Fungus1_06": {
     "Alias": "Greenpath_Cornifer",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathUpperEast",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1234,7 +1234,7 @@
   },
   "Fungus1_07": {
     "Alias": "Greenpath_Outside_Hunter",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathUpperEast",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1243,16 +1243,16 @@
   },
   "Fungus1_08": {
     "Alias": "Greenpath_Hunter",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathHunter",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Fungus1_09": {
     "Alias": "Greenpath_Sheo_Gauntlet",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathSheo",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1261,7 +1261,7 @@
   },
   "Fungus1_10": {
     "Alias": "Greenpath_Acid_Bridge",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathLowerPass",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1270,7 +1270,7 @@
   },
   "Fungus1_11": {
     "Alias": "Greenpath_Above_Fog_Canyon",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathLowerHub",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1279,7 +1279,7 @@
   },
   "Fungus1_12": {
     "Alias": "Greenpath_MMC_Corridor",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathMMC",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1288,7 +1288,7 @@
   },
   "Fungus1_13": {
     "Alias": "Greenpath_Whispering_Root",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathMMC",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1297,7 +1297,7 @@
   },
   "Fungus1_14": {
     "Alias": "Greenpath_Thorns_of_Agony",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathThorns",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1306,7 +1306,7 @@
   },
   "Fungus1_15": {
     "Alias": "Greenpath_Outside_Sheo",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathSheo",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1315,16 +1315,16 @@
   },
   "Fungus1_16_alt": {
     "Alias": "Greenpath_Stag",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathStag",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Fungus1_17": {
     "Alias": "Greenpath_Charger_Corridor",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathUpperWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1333,7 +1333,7 @@
   },
   "Fungus1_19": {
     "Alias": "Greenpath_Above_Sanctuary_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathLowerPass",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1342,7 +1342,7 @@
   },
   "Fungus1_20_v02": {
     "Alias": "Greenpath_Vengefly_King",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathUpperWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1351,7 +1351,7 @@
   },
   "Fungus1_21": {
     "Alias": "Greenpath_Outside_Hornet",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1360,7 +1360,7 @@
   },
   "Fungus1_22": {
     "Alias": "Greenpath_Outside_Stag",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1432,7 +1432,7 @@
   },
   "Fungus1_31": {
     "Alias": "Greenpath_Toll",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathToll",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1441,7 +1441,7 @@
   },
   "Fungus1_32": {
     "Alias": "Greenpath_Moss_Knight_Arena",
-    "Cluster": "GreenpathUpper",
+    "Cluster": "GreenpathUpperWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2494,16 +2494,16 @@
   },
   "RestingGrounds_07": {
     "Alias": "Grounds_Seer",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GroundsSeer",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "RestingGrounds_08": {
     "Alias": "Grounds_Spirit's_Glade",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GroundsGlade",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3232,7 +3232,7 @@
   },
   "Tutorial_01": {
     "Alias": "King's_Pass",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "KingsPass",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3241,7 +3241,7 @@
   },
   "Waterways_01": {
     "Alias": "Waterways_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysMain",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3250,7 +3250,7 @@
   },
   "Waterways_02": {
     "Alias": "Waterways_Main_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysMain",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3259,16 +3259,16 @@
   },
   "Waterways_03": {
     "Alias": "Waterways_Tuk",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Waterways_04": {
     "Alias": "Waterways_Hidden_Grub",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysWestWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3277,7 +3277,7 @@
   },
   "Waterways_04b": {
     "Alias": "Waterways_Mask_Shard",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysWestWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3286,7 +3286,7 @@
   },
   "Waterways_05": {
     "Alias": "Waterways_Dung_Defender_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysDungDefender",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3295,7 +3295,7 @@
   },
   "Waterways_06": {
     "Alias": "Waterways_Corridor_to_Broken_Elevator",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysMain",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3304,7 +3304,7 @@
   },
   "Waterways_07": {
     "Alias": "Waterways_Left_Of_Isma's_Grove",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysIsmasGrove",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3313,7 +3313,7 @@
   },
   "Waterways_08": {
     "Alias": "Waterways_Outside_Flukemarm",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysOutsideFlukemarm",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3322,7 +3322,7 @@
   },
   "Waterways_09": {
     "Alias": "Waterways_Cornifer",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysWestWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3331,7 +3331,7 @@
   },
   "Waterways_12": {
     "Alias": "Waterways_Flukemarm_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysFlukemarm",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3340,7 +3340,7 @@
   },
   "Waterways_13": {
     "Alias": "Waterways_Isma's_Grove",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysOutsideFlukemarm",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3349,25 +3349,25 @@
   },
   "Waterways_14": {
     "Alias": "Waterways_Edge_Acid_Corridor",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysEdgeAcidCorridor",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Waterways_15": {
     "Alias": "Waterways_Dung_Defender's_Cave",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysDungDefenderCave",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "White_Palace_01": {
     "Alias": "Palace_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3376,7 +3376,7 @@
   },
   "White_Palace_02": {
     "Alias": "Palace_First_Mold",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceInnerKingsmould",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3385,16 +3385,16 @@
   },
   "White_Palace_03_hub": {
     "Alias": "Palace_Hub",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "White_Palace_04": {
     "Alias": "Palace_Left_Of_Hub",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceWings",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3403,7 +3403,7 @@
   },
   "White_Palace_05": {
     "Alias": "Palace_Saw_Room",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceWings",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3412,16 +3412,16 @@
   },
   "White_Palace_06": {
     "Alias": "Palace_Balcony",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "White_Palace_07": {
     "Alias": "Palace_Lamp_Pogo",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceFinale",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3430,34 +3430,34 @@
   },
   "White_Palace_08": {
     "Alias": "Palace_Workshop",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceWorkshop",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "White_Palace_09": {
     "Alias": "Palace_Throne",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceThrone",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "White_Palace_11": {
     "Alias": "Palace_Outside",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "White_Palace_12": {
     "Alias": "Palace_Spike_Drop",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceWings",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3466,7 +3466,7 @@
   },
   "White_Palace_13": {
     "Alias": "Palace_Thorn_Jump",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceWings",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3475,7 +3475,7 @@
   },
   "White_Palace_14": {
     "Alias": "Palace_Hell_Corridor",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceWings",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3484,7 +3484,7 @@
   },
   "White_Palace_15": {
     "Alias": "Palace_Caged_Lever",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceWings",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3493,7 +3493,7 @@
   },
   "White_Palace_16": {
     "Alias": "Palace_Saw_Climb",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalaceWings",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3502,7 +3502,7 @@
   },
   "White_Palace_17": {
     "Alias": "POP_Lever",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalacePOPEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3511,7 +3511,7 @@
   },
   "White_Palace_18": {
     "Alias": "POP_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalacePOPEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3520,7 +3520,7 @@
   },
   "White_Palace_19": {
     "Alias": "POP_Vertical",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalacePOPFinal",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3529,1807 +3529,11 @@
   },
   "White_Palace_20": {
     "Alias": "POP_Final",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "PalacePOPFinal",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
-  }
-}ark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "RestingGrounds_04": {
-    "Alias": "Grounds_Dream_Nail_Entrance",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "RestingGrounds_05": {
-    "Alias": "Grounds_Whispering_Root",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "RestingGrounds_06": {
-    "Alias": "Grounds_Corridor_Below_Xero",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "RestingGrounds_07": {
-    "Alias": "Grounds_Seer",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "RestingGrounds_08": {
-    "Alias": "Grounds_Spirit's_Glade",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "RestingGrounds_09": {
-    "Alias": "Grounds_Stag",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "RestingGrounds_10": {
-    "Alias": "Grounds_Crypts",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "RestingGrounds_12": {
-    "Alias": "Grounds_Outside_Grey_Mourner",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "RestingGrounds_17": {
-    "Alias": "Grounds_Dreamshield",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Bretta": {
-    "Alias": "Bretta",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Bretta_Basement": {
-    "Alias": "Bretta_Basement",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Charm_Shop": {
-    "Alias": "Salubra",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Colosseum_01": {
-    "Alias": "Edge_Colo_Entrance",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Colosseum_02": {
-    "Alias": "Edge_Colo_Bench",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Colosseum_Bronze": {
-    "Alias": "Edge_Colo_1_Arena",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Colosseum_Gold": {
-    "Alias": "Edge_Colo_3_Arena",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Colosseum_Silver": {
-    "Alias": "Edge_Colo_2_Arena",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Colosseum_Spectate": {
-    "Alias": "Edge_Colo_Spectate",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Final_Boss_Atrium": {
-    "Alias": "Egg_Bench",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Final_Boss_Core": {
-    "Alias": "Egg_Hollow_Knight",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Fungus_Shaman": {
-    "Alias": "Fog_Overgrown_Mound",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_GG_Shortcut": {
-    "Alias": "Waterways_Fluke_Hermit",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Jinn": {
-    "Alias": "Jinn",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Mansion": {
-    "Alias": "Grounds_Grey_Mourner",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_mapper": {
-    "Alias": "Iselda",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Mask_Maker": {
-    "Alias": "Deepnest_Mask_Maker",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Mender_House": {
-    "Alias": "Crossroads_Menderbug",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_nailmaster": {
-    "Alias": "Cliffs_Mato",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_nailmaster_02": {
-    "Alias": "Greenpath_Sheo",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_nailmaster_03": {
-    "Alias": "Edge_Oro",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_nailsmith": {
-    "Alias": "City_Nailsmith",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Ouiji": {
-    "Alias": "Jiji",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Queen": {
-    "Alias": "Gardens_White_Lady",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_ruinhouse": {
-    "Alias": "Crossroads_Rescue_Sly",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_shop": {
-    "Alias": "Sly",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Slug_Shrine": {
-    "Alias": "Greenpath_Unn_Bench",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Sly_Storeroom": {
-    "Alias": "Sly_Basement",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_spider_small": {
-    "Alias": "Deepnest_Brumm",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_temple": {
-    "Alias": "Black_Egg_Temple",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Town_Stag_Station": {
-    "Alias": "Dirtmouth_Stag",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Tram": {
-    "Alias": "Lower_Tram",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Tram_RG": {
-    "Alias": "Upper_Tram",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Room_Wyrm": {
-    "Alias": "Edge_Cast-Off_Shell",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins_Bathhouse": {
-    "Alias": "City_Pleasure_House_Bench",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins_Elevator": {
-    "Alias": "City_Pleasure_House_Elevator",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins_House_01": {
-    "Alias": "City_Guarded_Grub",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins_House_02": {
-    "Alias": "City_Gorgeous_Husk",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins_House_03": {
-    "Alias": "City_Emilitia",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_01": {
-    "Alias": "City_Pilgrim's_Entrance",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_02": {
-    "Alias": "City_Quirrel_Bench",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_03": {
-    "Alias": "City_Rafters",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_04": {
-    "Alias": "City_Outside_Nailsmith",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_05": {
-    "Alias": "City_Grub_Above_Lemm",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_05b": {
-    "Alias": "City_Lemm",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_05c": {
-    "Alias": "City_Egg_Above_Lemm",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_06": {
-    "Alias": "City_Corridor_to_Storerooms",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_09": {
-    "Alias": "City_Soul_Twister_Arena",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_17": {
-    "Alias": "City_Whispering_Root",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_18": {
-    "Alias": "City_Corridor_to_Spire",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_23": {
-    "Alias": "City_Sanctum_Entrance",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_24": {
-    "Alias": "City_Soul_Master_Arena",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_25": {
-    "Alias": "City_Sanctum_East_Elevators",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_27": {
-    "Alias": "City_Hollow_Knight_Fountain",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_28": {
-    "Alias": "City_Storerooms",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_29": {
-    "Alias": "City_Storerooms_Stag",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_30": {
-    "Alias": "City_Sanctum_Spell_Twister",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_31": {
-    "Alias": "City_Toll_Bench",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_31b": {
-    "Alias": "City_Shade_Soul_Arena",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins1_32": {
-    "Alias": "City_Soul_Master_Rewards",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_01": {
-    "Alias": "City_Spire_Great_Husk",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_01_b": {
-    "Alias": "City_Spire_Base",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_03": {
-    "Alias": "City_Spire_Watchers",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_03b": {
-    "Alias": "City_Spire_Below_Watchers",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_04": {
-    "Alias": "City_Right_Hub",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_05": {
-    "Alias": "City_Above_King's",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_06": {
-    "Alias": "City_King's_Station",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_07": {
-    "Alias": "City_Grub_Below_King's",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_08": {
-    "Alias": "City_King's_Stag",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_09": {
-    "Alias": "City_King's_Vessel_Fragment",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_10": {
-    "Alias": "Grounds_Elevator",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_10b": {
-    "Alias": "City_Right_Elevator",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_11": {
-    "Alias": "City_Collector_Arena",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_11_b": {
-    "Alias": "City_Tower_of_Love",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Ruins2_Watcher_Room": {
-    "Alias": "City_Lurien_Elevator",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Town": {
-    "Alias": "Dirtmouth",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Tutorial_01": {
-    "Alias": "King's_Pass",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_01": {
-    "Alias": "Waterways_Entrance",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_02": {
-    "Alias": "Waterways_Main_Bench",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_03": {
-    "Alias": "Waterways_Tuk",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_04": {
-    "Alias": "Waterways_Hidden_Grub",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_04b": {
-    "Alias": "Waterways_Mask_Shard",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_05": {
-    "Alias": "Waterways_Dung_Defender_Arena",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_06": {
-    "Alias": "Waterways_Corridor_to_Broken_Elevator",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_07": {
-    "Alias": "Waterways_Left_Of_Isma's_Grove",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_08": {
-    "Alias": "Waterways_Outside_Flukemarm",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_09": {
-    "Alias": "Waterways_Cornifer",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_12": {
-    "Alias": "Waterways_Flukemarm_Arena",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_13": {
-    "Alias": "Waterways_Isma's_Grove",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_14": {
-    "Alias": "Waterways_Edge_Acid_Corridor",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "Waterways_15": {
-    "Alias": "Waterways_Dung_Defender's_Cave",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_01": {
-    "Alias": "Palace_Entrance",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_02": {
-    "Alias": "Palace_First_Mold",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_03_hub": {
-    "Alias": "Palace_Hub",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_04": {
-    "Alias": "Palace_Left_Of_Hub",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_05": {
-    "Alias": "Palace_Saw_Room",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_06": {
-    "Alias": "Palace_Balcony",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_07": {
-    "Alias": "Palace_Lamp_Pogo",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_08": {
-    "Alias": "Palace_Workshop",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_09": {
-    "Alias": "Palace_Throne",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_11": {
-    "Alias": "Palace_Outside",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_12": {
-    "Alias": "Palace_Spike_Drop",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_13": {
-    "Alias": "Palace_Thorn_Jump",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_14": {
-    "Alias": "Palace_Hell_Corridor",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_15": {
-    "Alias": "Palace_Caged_Lever",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_16": {
-    "Alias": "Palace_Saw_Climb",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_17": {
-    "Alias": "POP_Lever",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_18": {
-    "Alias": "POP_Entrance",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_19": {
-    "Alias": "POP_Vertical",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
-  },
-  "White_Palace_20": {
-    "Alias": "POP_Final",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": {
-      "Exclusive": false,
-      "Locations": []
-    },
-    "ProficientSkips": {
-      "Exclusive": false,
-      "Locations": []
-    }
   }
 }
