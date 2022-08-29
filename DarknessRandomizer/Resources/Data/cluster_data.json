@@ -433,7 +433,8 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "CrossroadsWest": "Unspecified"
+      "CrossroadsWest": "Unspecified",
+      "FogCanyonEast": "Unspecified"
     }
   },
   "CrossroadsCentralPass": {
@@ -1138,10 +1139,12 @@
   },
   "DeepnestMantisEntrance": {
     "SceneAliases": [
-      "Deepnest_After_Lower_Cornifer"
+      "Deepnest_After_Lower_Cornifer",
+      "Deepnest_Lower_Cornifer"
     ],
     "SceneNames": [
-      "Deepnest_16"
+      "Deepnest_16",
+      "Fungus2_25"
     ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
@@ -1153,7 +1156,8 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "DeepnestDescent": "Unspecified"
+      "DeepnestDescent": "Unspecified",
+      "FungalMantisLords": "Unspecified"
     }
   },
   "DeepnestNosk": {
@@ -1299,10 +1303,12 @@
   },
   "DirtmouthGPZ": {
     "SceneAliases": [
-      "Dream_Grey_Prince_Zote"
+      "Dream_Grey_Prince_Zote",
+      "GPZ"
     ],
     "SceneNames": [
-      "Dream_Mighty_Zote"
+      "Dream_Mighty_Zote",
+      "GG_Mighty_Zote"
     ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
@@ -1540,6 +1546,24 @@
       "EdgeUpperEast": "Unspecified"
     }
   },
+  "EdgePaleLurker": {
+    "SceneAliases": [
+      "Edge_Pale_Lurker"
+    ],
+    "SceneNames": [
+      "GG_Lurker"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {}
+  },
   "EdgeTramAppraoch": {
     "SceneAliases": [
       "Edge_Above_Hive",
@@ -1606,6 +1630,204 @@
       "EdgeOroStrip": "Unspecified"
     }
   },
+  "FogCanyonArchives": {
+    "SceneAliases": [
+      "Fog_Archives_Bench",
+      "Fog_Uumuu_Arena"
+    ],
+    "SceneNames": [
+      "Fungus3_archive",
+      "Fungus3_archive_02"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FogCanyonOutsideArchives": "Unspecified"
+    }
+  },
+  "FogCanyonAutoPilot": {
+    "SceneAliases": [
+      "Fog_Lifeblood"
+    ],
+    "SceneNames": [
+      "Fungus3_30"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FogCanyonWestWing": "Unspecified"
+    }
+  },
+  "FogCanyonCharmNotch": {
+    "SceneAliases": [
+      "Fog_Charm_Notch"
+    ],
+    "SceneNames": [
+      "Fungus3_28"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FogCanyonEast": "Unspecified"
+    }
+  },
+  "FogCanyonEast": {
+    "SceneAliases": [
+      "Fog_Cornifer",
+      "Fog_Corridor_to_Cornifer",
+      "Fog_East_Tall"
+    ],
+    "SceneNames": [
+      "Fungus3_25",
+      "Fungus3_25b",
+      "Fungus3_26"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "CrossroadsCanyonBridge": "Unspecified",
+      "FogCanyonCharmNotch": "Unspecified",
+      "FogCanyonOutsideArchives": "Unspecified",
+      "FogCanyonWest": "Unspecified",
+      "FungalUpper": "Unspecified"
+    }
+  },
+  "FogCanyonOutsideArchives": {
+    "SceneAliases": [
+      "Fog_Archives_Entrance",
+      "Fog_Corridor_to_Archives"
+    ],
+    "SceneNames": [
+      "Fungus3_27",
+      "Fungus3_47"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FogCanyonArchives": "Unspecified",
+      "FogCanyonEast": "Unspecified",
+      "FogCanyonWest": "Unspecified"
+    }
+  },
+  "FogCanyonQGA": {
+    "SceneAliases": [
+      "Fog_Queen's_Gardens_Acid_Entrance"
+    ],
+    "SceneNames": [
+      "Fungus3_03"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FogCanyonWest": "Unspecified",
+      "GardensEntrance": "Unspecified"
+    }
+  },
+  "FogCanyonRobber": {
+    "SceneAliases": [
+      "Fog_Millibelle"
+    ],
+    "SceneNames": [
+      "Fungus3_35"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FogCanyonWest": "Unspecified"
+    }
+  },
+  "FogCanyonWest": {
+    "SceneAliases": [
+      "Fog_Lower_West_Tall",
+      "Fog_Upper_West_Tall"
+    ],
+    "SceneNames": [
+      "Fungus3_01",
+      "Fungus3_02"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FogCanyonEast": "Unspecified",
+      "FogCanyonOutsideArchives": "Unspecified",
+      "FogCanyonQGA": "Unspecified",
+      "FogCanyonRobber": "Unspecified",
+      "FogCanyonWestWing": "Unspecified",
+      "FungalQueensStation": "Unspecified",
+      "GreenpathLowerHub": "Unspecified"
+    }
+  },
+  "FogCanyonWestWing": {
+    "SceneAliases": [
+      "Fog_Corridor_to_Overgrown_Mound",
+      "Fog_Overgrown_Mound_Entrance"
+    ],
+    "SceneNames": [
+      "Fungus3_24",
+      "Fungus3_44"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FogCanyonAutoPilot": "Unspecified",
+      "FogCanyonWest": "Unspecified",
+      "GardensEntrance": "Unspecified"
+    }
+  },
   "FungalClothCorridor": {
     "SceneAliases": [
       "Fungal_Cloth_Corridor"
@@ -1620,7 +1842,53 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "FungalElderHuWing": "Unspecified"
+      "FungalElderHuWing": "Unspecified",
+      "FungalPilgrimsWay": "Unspecified"
+    }
+  },
+  "FungalCore": {
+    "SceneAliases": [
+      "Fungal_Core_Lower",
+      "Fungal_Core_Upper"
+    ],
+    "SceneNames": [
+      "Fungus2_29",
+      "Fungus2_30"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "DeepnestMantisEntrance": "Unspecified",
+      "FungalLowerHub": "Unspecified"
+    }
+  },
+  "FungalCorniferHub": {
+    "SceneAliases": [
+      "Fungal_Cornifer"
+    ],
+    "SceneNames": [
+      "Fungus2_18"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FungalEntrance": "Unspecified",
+      "FungalLowerHub": "Unspecified",
+      "FungalSporeShroom": "Unspecified"
     }
   },
   "FungalDeepnestFall": {
@@ -1637,17 +1905,21 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "DeepnestLightEast": "Unspecified"
+      "DeepnestLightEast": "Unspecified",
+      "FungalSporeShroom": "Unspecified",
+      "GardensLowerPass": "Unspecified"
     }
   },
   "FungalElderHuWing": {
     "SceneAliases": [
+      "Fungal_Elder_Hu",
       "Fungal_Outside_Elder_Hu",
       "Fungal_Shrumal_Warrior_Acid_Bridge"
     ],
     "SceneNames": [
       "Fungus2_07",
-      "Fungus2_08"
+      "Fungus2_08",
+      "Fungus2_32"
     ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
@@ -1666,11 +1938,13 @@
   "FungalEntrance": {
     "SceneAliases": [
       "Fungal_Below_Ogres",
-      "Fungal_Outside_Queen's"
+      "Fungal_Outside_Queen's",
+      "Fungal_Shrumal_Warrior_Loop"
     ],
     "SceneNames": [
       "Fungus2_03",
-      "Fungus2_04"
+      "Fungus2_04",
+      "Fungus2_28"
     ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
@@ -1682,8 +1956,104 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
+      "FungalCorniferHub": "Unspecified",
       "FungalOgres": "Unspecified",
       "FungalQueensStation": "Unspecified"
+    }
+  },
+  "FungalLowerHub": {
+    "SceneAliases": [
+      "Fungal_Above_Mantis_Village",
+      "Fungal_Epogo"
+    ],
+    "SceneNames": [
+      "Fungus2_11",
+      "Fungus2_17"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FungalCore": "Unspecified",
+      "FungalCorniferHub": "Unspecified",
+      "FungalMantisVillage": "Unspecified",
+      "FungalPilgrimsWay": "Unspecified"
+    }
+  },
+  "FungalMantisLords": {
+    "SceneAliases": [
+      "Fungal_Mantis_Lords"
+    ],
+    "SceneNames": [
+      "Fungus2_15"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "DeepnestMantisEntrance": "Unspecified",
+      "FungalMantisRewards": "Unspecified",
+      "FungalMantisVillage": "Unspecified"
+    }
+  },
+  "FungalMantisRewards": {
+    "SceneAliases": [
+      "Fungal_Mantis_Rewards"
+    ],
+    "SceneNames": [
+      "Fungus2_31"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FungalMantisLords": "Unspecified"
+    }
+  },
+  "FungalMantisVillage": {
+    "SceneAliases": [
+      "Fungal_Bretta_Bench",
+      "Fungal_Dashmaster",
+      "Fungal_Mantis_Corridor",
+      "Fungal_Mantis_Village"
+    ],
+    "SceneNames": [
+      "Fungus2_12",
+      "Fungus2_13",
+      "Fungus2_14",
+      "Fungus2_23"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FungalLowerHub": "Unspecified",
+      "FungalMantisLords": "Unspecified",
+      "WaterwaysWestWing": "Unspecified"
     }
   },
   "FungalOgres": {
@@ -1707,14 +2077,14 @@
       "FungalUpper": "Unspecified"
     }
   },
-  "FungalQueensStation": {
+  "FungalPilgrimsWay": {
     "SceneAliases": [
-      "Fungal_Queen's_Stag",
-      "Fungal_Queen's_Station"
+      "Fungal_Left_Of_Pilgrim's_Way",
+      "Fungal_Pilgrim's_Way"
     ],
     "SceneNames": [
-      "Fungus2_01",
-      "Fungus2_02"
+      "Fungus2_10",
+      "Fungus2_21"
     ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
@@ -1726,15 +2096,68 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
+      "FungalClothCorridor": "Unspecified",
+      "FungalLowerHub": "Unspecified"
+    }
+  },
+  "FungalQueensStation": {
+    "SceneAliases": [
+      "Fungal_Queen's_Stag",
+      "Fungal_Queen's_Station",
+      "Fungal_Willoh"
+    ],
+    "SceneNames": [
+      "Fungus2_01",
+      "Fungus2_02",
+      "Fungus2_34"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FogCanyonWest": "Unspecified",
       "FungalEntrance": "Unspecified"
+    }
+  },
+  "FungalSporeShroom": {
+    "SceneAliases": [
+      "Fungal_Right_Of_Spore_Shroom",
+      "Fungal_Spore_Shroom"
+    ],
+    "SceneNames": [
+      "Fungus2_19",
+      "Fungus2_20"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FungalCorniferHub": "Unspecified",
+      "FungalDeepnestFall": "Unspecified"
     }
   },
   "FungalUpper": {
     "SceneAliases": [
+      "Fungal_Leg_Eater",
+      "Fungal_Leg_Eater_Root",
       "Fungal_Outside_Leg_Eater"
     ],
     "SceneNames": [
-      "Fungus2_06"
+      "Fungus2_06",
+      "Fungus2_26",
+      "Fungus2_33"
     ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
@@ -1747,8 +2170,29 @@
     },
     "AdjacentClusters": {
       "CrossroadsFungalBridge": "Unspecified",
+      "FogCanyonEast": "Unspecified",
       "FungalElderHuWing": "Unspecified",
       "FungalOgres": "Unspecified"
+    }
+  },
+  "GardensCornifer": {
+    "SceneAliases": [
+      "Gardens_Cornifer"
+    ],
+    "SceneNames": [
+      "Fungus1_24"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "GardensPetraArena": "Unspecified"
     }
   },
   "GardensDeepnestBridge": {
@@ -1768,7 +2212,254 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "DeepnestDark": "Unspecified"
+      "DeepnestDark": "Unspecified",
+      "GardensLowerPass": "Unspecified",
+      "GardensTollBench": "Unspecified"
+    }
+  },
+  "GardensEntrance": {
+    "SceneAliases": [
+      "Gardens_Entrance"
+    ],
+    "SceneNames": [
+      "Fungus3_34"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FogCanyonQGA": "Unspecified",
+      "FogCanyonWestWing": "Unspecified",
+      "GardensStagHub": "Unspecified"
+    }
+  },
+  "GardensFrogsWing": {
+    "SceneAliases": [
+      "Gardens_First_Loodle_Corridor",
+      "Gardens_Outside_White_Lady"
+    ],
+    "SceneNames": [
+      "Fungus1_23",
+      "Fungus3_48"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "GardensStag": "Unspecified",
+      "GardensStagHub": "Unspecified",
+      "GardensTraitorLord": "Unspecified"
+    }
+  },
+  "GardensLowerPass": {
+    "SceneAliases": [
+      "Gardens_Lower_Petra_Corridor",
+      "Gardens_Moss_Prophet",
+      "Gardens_Whispering_Root"
+    ],
+    "SceneNames": [
+      "Fungus3_08",
+      "Fungus3_11",
+      "Fungus3_39"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "FungalDeepnestFall": "Unspecified",
+      "GardensDeepnestBridge": "Unspecified",
+      "GardensMainArena": "Unspecified",
+      "GardensPetraArena": "Unspecified"
+    }
+  },
+  "GardensMainArena": {
+    "SceneAliases": [
+      "Gardens_Main_Arena"
+    ],
+    "SceneNames": [
+      "Fungus3_10"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "GardensLowerPass": "Unspecified",
+      "GardensStagHub": "Unspecified"
+    }
+  },
+  "GardensPetraArena": {
+    "SceneAliases": [
+      "Gardens_Petra_Arena"
+    ],
+    "SceneNames": [
+      "Fungus3_05"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "GardensCornifer": "Unspecified",
+      "GardensLowerPass": "Unspecified",
+      "GardensStagHub": "Unspecified"
+    }
+  },
+  "GardensStag": {
+    "SceneAliases": [
+      "Gardens_Gardens_Stag"
+    ],
+    "SceneNames": [
+      "Fungus3_40"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "GardensFrogsWing": "Unspecified",
+      "GardensStagHub": "Unspecified"
+    }
+  },
+  "GardensStagHub": {
+    "SceneAliases": [
+      "Gardens_Before_Petra_Arena",
+      "Gardens_Outside_Stag"
+    ],
+    "SceneNames": [
+      "Fungus3_04",
+      "Fungus3_13"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "GardensEntrance": "Unspecified",
+      "GardensFrogsWing": "Unspecified",
+      "GardensMainArena": "Unspecified",
+      "GardensPetraArena": "Unspecified",
+      "GardensStag": "Unspecified",
+      "GardensTraitorsGrave": "Unspecified",
+      "GardensUpper": "Unspecified"
+    }
+  },
+  "GardensTollBench": {
+    "SceneAliases": [
+      "Gardens_Toll_Bench"
+    ],
+    "SceneNames": [
+      "Fungus3_50"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": null,
+    "AdjacentClusters": {
+      "GardensDeepnestBridge": "Unspecified"
+    }
+  },
+  "GardensTraitorLord": {
+    "SceneAliases": [
+      "Gardens_Traitor_Lord_Arena"
+    ],
+    "SceneNames": [
+      "Fungus3_23"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "GardensFrogsWing": "Unspecified",
+      "GardensUpper": "Unspecified"
+    }
+  },
+  "GardensTraitorsGrave": {
+    "SceneAliases": [
+      "Gardens_Traitor's_Child's_Grave"
+    ],
+    "SceneNames": [
+      "Fungus3_49"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "GardensStagHub": "Unspecified"
+    }
+  },
+  "GardensUpper": {
+    "SceneAliases": [
+      "Gardens_Corridor_to_Traitor_Lord",
+      "Gardens_Upper_Grub"
+    ],
+    "SceneNames": [
+      "Fungus3_21",
+      "Fungus3_22"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "GardensStagHub": "Unspecified",
+      "GardensTraitorLord": "Unspecified",
+      "GreenpathMMC": "Unspecified"
     }
   },
   "GreenpathHornet": {
@@ -1826,6 +2517,7 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
+      "FogCanyonWest": "Unspecified",
       "GreenpathLowerPass": "Unspecified",
       "GreenpathMMC": "Unspecified",
       "GreenpathStoneSanctuaryApproach": "Unspecified",
@@ -1881,6 +2573,7 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
+      "GardensUpper": "Unspecified",
       "GreenpathLowerHub": "Unspecified"
     }
   },
@@ -2566,6 +3259,26 @@
       "WaterwaysOutsideFlukemarm": "Unspecified"
     }
   },
+  "WaterwaysJunkPit": {
+    "SceneAliases": [
+      "Waterways_Junk_Pit"
+    ],
+    "SceneNames": [
+      "GG_Waterways"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "WaterwaysOutsideFlukemarm": "Unspecified"
+    }
+  },
   "WaterwaysMain": {
     "SceneAliases": [
       "Waterways_Corridor_to_Broken_Elevator",
@@ -2597,10 +3310,12 @@
   },
   "WaterwaysOutsideFlukemarm": {
     "SceneAliases": [
+      "Waterways_Flukemunga_Corridor",
       "Waterways_Isma's_Grove",
       "Waterways_Outside_Flukemarm"
     ],
     "SceneNames": [
+      "GG_Pipeway",
       "Waterways_08",
       "Waterways_13"
     ],
@@ -2616,6 +3331,7 @@
     "AdjacentClusters": {
       "WaterwaysFlukemarm": "Unspecified",
       "WaterwaysIsmasGrove": "Unspecified",
+      "WaterwaysJunkPit": "Unspecified",
       "WaterwaysMain": "Unspecified"
     }
   },
@@ -2640,6 +3356,7 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
+      "FungalMantisVillage": "Unspecified",
       "WaterwaysMain": "Unspecified"
     }
   },

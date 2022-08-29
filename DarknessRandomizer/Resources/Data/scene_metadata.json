@@ -1850,26 +1850,6 @@
       "Fungus3_archive"
     ]
   },
-  "GG_Atrium": {
-    "Alias": "Godhome_Atrium",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "GG_Atrium_Roof": {
-    "Alias": "Godhome_Roof",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "GG_Blue_Room": {
-    "Alias": "Godhome_Lifeblood",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "GG_Land_Of_Storms": {
-    "Alias": "Godhome_Land_Of_Storms",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
   "GG_Lurker": {
     "Alias": "Edge_Pale_Lurker",
     "MapArea": "Kingdom's Edge",
@@ -1890,29 +1870,12 @@
       "Waterways_08"
     ]
   },
-  "GG_Unlock_Wastes": {
-    "Alias": "Godhome_Godtuner",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
   "GG_Waterways": {
     "Alias": "Waterways_Junk_Pit",
     "MapArea": "Royal Waterways",
     "AdjacentScenes": [
       "GG_Pipeway",
       "Room_GG_Shortcut"
-    ]
-  },
-  "GG_Workshop": {
-    "Alias": "Godhome_Hall_Of_Gods",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "Grimm_Divine": {
-    "Alias": "Grimm_Divine",
-    "MapArea": "Dirtmouth",
-    "AdjacentScenes": [
-      "Town"
     ]
   },
   "Grimm_Main_Tent": {

@@ -1369,7 +1369,7 @@
   },
   "Fungus1_23": {
     "Alias": "Gardens_First_Loodle_Corridor",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensFrogsWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1378,7 +1378,7 @@
   },
   "Fungus1_24": {
     "Alias": "Gardens_Cornifer",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensCornifer",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1576,7 +1576,7 @@
   },
   "Fungus2_10": {
     "Alias": "Fungal_Left_Of_Pilgrim's_Way",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalPilgrimsWay",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1585,7 +1585,7 @@
   },
   "Fungus2_11": {
     "Alias": "Fungal_Epogo",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalLowerHub",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1594,7 +1594,7 @@
   },
   "Fungus2_12": {
     "Alias": "Fungal_Mantis_Corridor",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalMantisVillage",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1603,7 +1603,7 @@
   },
   "Fungus2_13": {
     "Alias": "Fungal_Bretta_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalMantisVillage",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1612,7 +1612,7 @@
   },
   "Fungus2_14": {
     "Alias": "Fungal_Mantis_Village",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalMantisVillage",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1621,7 +1621,7 @@
   },
   "Fungus2_15": {
     "Alias": "Fungal_Mantis_Lords",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalMantisLords",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1630,7 +1630,7 @@
   },
   "Fungus2_17": {
     "Alias": "Fungal_Above_Mantis_Village",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalLowerHub",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1639,7 +1639,7 @@
   },
   "Fungus2_18": {
     "Alias": "Fungal_Cornifer",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalCorniferHub",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1648,7 +1648,7 @@
   },
   "Fungus2_19": {
     "Alias": "Fungal_Right_Of_Spore_Shroom",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalSporeShroom",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1657,7 +1657,7 @@
   },
   "Fungus2_20": {
     "Alias": "Fungal_Spore_Shroom",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalSporeShroom",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1666,7 +1666,7 @@
   },
   "Fungus2_21": {
     "Alias": "Fungal_Pilgrim's_Way",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalPilgrimsWay",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1675,7 +1675,7 @@
   },
   "Fungus2_23": {
     "Alias": "Fungal_Dashmaster",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalMantisVillage",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1684,7 +1684,7 @@
   },
   "Fungus2_25": {
     "Alias": "Deepnest_Lower_Cornifer",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "DeepnestMantisEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1693,16 +1693,16 @@
   },
   "Fungus2_26": {
     "Alias": "Fungal_Leg_Eater",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalUpper",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Fungus2_28": {
     "Alias": "Fungal_Shrumal_Warrior_Loop",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1711,7 +1711,7 @@
   },
   "Fungus2_29": {
     "Alias": "Fungal_Core_Upper",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalCore",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1720,7 +1720,7 @@
   },
   "Fungus2_30": {
     "Alias": "Fungal_Core_Lower",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalCore",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1729,7 +1729,7 @@
   },
   "Fungus2_31": {
     "Alias": "Fungal_Mantis_Rewards",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalMantisRewards",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1738,7 +1738,7 @@
   },
   "Fungus2_32": {
     "Alias": "Fungal_Elder_Hu",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalElderHuWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1747,7 +1747,7 @@
   },
   "Fungus2_33": {
     "Alias": "Fungal_Leg_Eater_Root",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalUpper",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1756,16 +1756,16 @@
   },
   "Fungus2_34": {
     "Alias": "Fungal_Willoh",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FungalQueensStation",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Fungus3_01": {
     "Alias": "Fog_Upper_West_Tall",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1774,7 +1774,7 @@
   },
   "Fungus3_02": {
     "Alias": "Fog_Lower_West_Tall",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1783,16 +1783,16 @@
   },
   "Fungus3_03": {
     "Alias": "Fog_Queen's_Gardens_Acid_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonQGA",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Fungus3_04": {
     "Alias": "Gardens_Before_Petra_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensStagHub",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1801,7 +1801,7 @@
   },
   "Fungus3_05": {
     "Alias": "Gardens_Petra_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensPetraArena",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1810,7 +1810,7 @@
   },
   "Fungus3_08": {
     "Alias": "Gardens_Lower_Petra_Corridor",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensLowerPass",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1819,7 +1819,7 @@
   },
   "Fungus3_10": {
     "Alias": "Gardens_Main_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensMainArena",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1828,7 +1828,7 @@
   },
   "Fungus3_11": {
     "Alias": "Gardens_Whispering_Root",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensLowerPass",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1837,7 +1837,7 @@
   },
   "Fungus3_13": {
     "Alias": "Gardens_Outside_Stag",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensStagHub",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1846,7 +1846,7 @@
   },
   "Fungus3_21": {
     "Alias": "Gardens_Corridor_to_Traitor_Lord",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensUpper",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1855,7 +1855,7 @@
   },
   "Fungus3_22": {
     "Alias": "Gardens_Upper_Grub",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensUpper",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1864,7 +1864,7 @@
   },
   "Fungus3_23": {
     "Alias": "Gardens_Traitor_Lord_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensTraitorLord",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1873,7 +1873,7 @@
   },
   "Fungus3_24": {
     "Alias": "Fog_Corridor_to_Overgrown_Mound",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonWestWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1882,7 +1882,7 @@
   },
   "Fungus3_25": {
     "Alias": "Fog_Cornifer",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonEast",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1891,7 +1891,7 @@
   },
   "Fungus3_25b": {
     "Alias": "Fog_Corridor_to_Cornifer",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonEast",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1900,7 +1900,7 @@
   },
   "Fungus3_26": {
     "Alias": "Fog_East_Tall",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonEast",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1909,16 +1909,16 @@
   },
   "Fungus3_27": {
     "Alias": "Fog_Corridor_to_Archives",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonOutsideArchives",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Fungus3_28": {
     "Alias": "Fog_Charm_Notch",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonCharmNotch",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1927,16 +1927,16 @@
   },
   "Fungus3_30": {
     "Alias": "Fog_Lifeblood",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonAutoPilot",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Fungus3_34": {
     "Alias": "Gardens_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1945,16 +1945,16 @@
   },
   "Fungus3_35": {
     "Alias": "Fog_Millibelle",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonRobber",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Fungus3_39": {
     "Alias": "Gardens_Moss_Prophet",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensLowerPass",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1963,7 +1963,7 @@
   },
   "Fungus3_40": {
     "Alias": "Gardens_Gardens_Stag",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensStag",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1972,7 +1972,7 @@
   },
   "Fungus3_44": {
     "Alias": "Fog_Overgrown_Mound_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonWestWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1981,7 +1981,7 @@
   },
   "Fungus3_47": {
     "Alias": "Fog_Archives_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonOutsideArchives",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1990,7 +1990,7 @@
   },
   "Fungus3_48": {
     "Alias": "Gardens_Outside_White_Lady",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensFrogsWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1999,7 +1999,7 @@
   },
   "Fungus3_49": {
     "Alias": "Gardens_Traitor's_Child's_Grave",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensTraitorsGrave",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2008,61 +2008,25 @@
   },
   "Fungus3_50": {
     "Alias": "Gardens_Toll_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GardensTollBench",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Fungus3_archive": {
     "Alias": "Fog_Archives_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonArchives",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
   },
   "Fungus3_archive_02": {
     "Alias": "Fog_Uumuu_Arena",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "GG_Atrium": {
-    "Alias": "Godhome_Atrium",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "GG_Atrium_Roof": {
-    "Alias": "Godhome_Roof",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "GG_Blue_Room": {
-    "Alias": "Godhome_Lifeblood",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "GG_Land_Of_Storms": {
-    "Alias": "Godhome_Land_Of_Storms",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonArchives",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2071,7 +2035,7 @@
   },
   "GG_Lurker": {
     "Alias": "Edge_Pale_Lurker",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "EdgePaleLurker",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2080,7 +2044,7 @@
   },
   "GG_Mighty_Zote": {
     "Alias": "GPZ",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "DirtmouthGPZ",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2089,16 +2053,7 @@
   },
   "GG_Pipeway": {
     "Alias": "Waterways_Flukemunga_Corridor",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "GG_Unlock_Wastes": {
-    "Alias": "Godhome_Godtuner",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysOutsideFlukemarm",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2107,25 +2062,7 @@
   },
   "GG_Waterways": {
     "Alias": "Waterways_Junk_Pit",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "GG_Workshop": {
-    "Alias": "Godhome_Hall_Of_Gods",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "Grimm_Divine": {
-    "Alias": "Grimm_Divine",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysJunkPit",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3526,6 +3463,17 @@
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
+  },
+  "White_Palace_20": {
+    "Alias": "POP_Final",
+    "Cluster": "PalacePOPFinal",
+    "MinimumDarkness": "Bright",
+    "MaximumDarkness": "Dark",
+    "IsVanillaDark": false,
+    "DifficultSkips": null,
+    "ProficientSkips": null
+  }
+}ll
   },
   "White_Palace_20": {
     "Alias": "POP_Final",
