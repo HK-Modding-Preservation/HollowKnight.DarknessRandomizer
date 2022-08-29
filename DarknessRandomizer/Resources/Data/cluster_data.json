@@ -6,7 +6,7 @@
     "SceneNames": [
       "Abyss_15"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -347,11 +347,13 @@
       "CrossroadsWest": "Unspecified"
     }
   },
-  "CrossroadsCenterBridge": {
+  "CrossroadsCentralPass": {
     "SceneAliases": [
-      "Crossroads_Above_Lever"
+      "Crossroads_Above_Lever",
+      "Crossroads_Central_Grub"
     ],
     "SceneNames": [
+      "Crossroads_05",
       "Crossroads_16"
     ],
     "OverrideCannotBeDarknessSource": false,
@@ -366,27 +368,7 @@
     "AdjacentClusters": {
       "CrossroadsMiddleBridge": "Unspecified",
       "CrossroadsPeaksBridge": "Unspecified",
-      "CrossroadsStagHub": "Unspecified"
-    }
-  },
-  "CrossroadsCentralBridge": {
-    "SceneAliases": [
-      "Crossroads_Central_Grub"
-    ],
-    "SceneNames": [
-      "Crossroads_05"
-    ],
-    "OverrideCannotBeDarknessSource": false,
-    "CursedOnly": false,
-    "DarkSettings": {
-      "ProbabilityWeight": 100,
-      "CostWeight": 100
-    },
-    "SemiDarkSettings": {
-      "SemiDarkProbability": 100
-    },
-    "AdjacentClusters": {
-      "CrossroadsMiddleBridge": "Unspecified",
+      "CrossroadsStagHub": "Unspecified",
       "CrossroadsWest": "Unspecified"
     }
   },
@@ -640,8 +622,7 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "CrossroadsCenterBridge": "Unspecified",
-      "CrossroadsCentralBridge": "Unspecified"
+      "CrossroadsCentralPass": "Unspecified"
     }
   },
   "CrossroadsOutsideMound": {
@@ -704,7 +685,7 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "CrossroadsCenterBridge": "Unspecified",
+      "CrossroadsCentralPass": "Unspecified",
       "CrossroadsOutsideTemple": "Unspecified"
     }
   },
@@ -773,7 +754,7 @@
     },
     "AdjacentClusters": {
       "BlueLake": "Unspecified",
-      "CrossroadsCenterBridge": "Unspecified",
+      "CrossroadsCentralPass": "Unspecified",
       "CrossroadsElevatorApproach": "Unspecified",
       "CrossroadsFalseKnight": "Unspecified",
       "CrossroadsGlowingWomb": "Unspecified",
@@ -842,7 +823,7 @@
     },
     "AdjacentClusters": {
       "CrossroadsCanyonBridge": "Unspecified",
-      "CrossroadsCentralBridge": "Unspecified",
+      "CrossroadsCentralPass": "Unspecified",
       "CrossroadsEntrance": "Unspecified",
       "CrossroadsFungalBridge": "Unspecified",
       "CrossroadsGreenpathBridge": "Unspecified",
@@ -889,10 +870,12 @@
   },
   "DeepnestDescent": {
     "SceneAliases": [
+      "Deepnest_Garpede_Corridor_Below_Cornifer",
       "Deepnest_Hot_Spring",
       "Deepnest_Mimics"
     ],
     "SceneNames": [
+      "Deepnest_17",
       "Deepnest_30",
       "Deepnest_36"
     ],
@@ -906,41 +889,23 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "DeepnestDesent": "Unspecified",
+      "DeepnestFailedTram": "Unspecified",
       "DeepnestLightEast": "Unspecified",
       "DeepnestLightWest": "Unspecified",
-      "DeepnestTramCorridor": "Unspecified"
-    }
-  },
-  "DeepnestDesent": {
-    "SceneAliases": [
-      "Deepnest_Garpede_Corridor_Below_Cornifer"
-    ],
-    "SceneNames": [
-      "Deepnest_17"
-    ],
-    "OverrideCannotBeDarknessSource": false,
-    "CursedOnly": false,
-    "DarkSettings": {
-      "ProbabilityWeight": 100,
-      "CostWeight": 100
-    },
-    "SemiDarkSettings": {
-      "SemiDarkProbability": 100
-    },
-    "AdjacentClusters": {
-      "DeepnestDescent": "Unspecified",
-      "DeepnestLightEast": "Unspecified",
       "DeepnestMantisEntrance": "Unspecified",
-      "DeepnestTramBench": "Unspecified"
+      "DeepnestTramCorridor": "Unspecified"
     }
   },
   "DeepnestFailedTram": {
     "SceneAliases": [
+      "Deepnest_Failed_Tramway_Bench",
       "Deepnest_Failed_Tramway_Lifeblood",
+      "Deepnest_Tram",
       "Deepnest_Tram_Pass"
     ],
     "SceneNames": [
+      "Abyss_03_b",
+      "Deepnest_14",
       "Deepnest_26",
       "Deepnest_26b"
     ],
@@ -955,7 +920,9 @@
     },
     "AdjacentClusters": {
       "DeepnestDark": "Unspecified",
-      "DeepnestTramBench": "Unspecified"
+      "DeepnestDescent": "Unspecified",
+      "DeepnestLightWest": "Unspecified",
+      "DeepnestTramCorridor": "Unspecified"
     }
   },
   "DeepnestGalien": {
@@ -998,7 +965,6 @@
     },
     "AdjacentClusters": {
       "DeepnestDescent": "Unspecified",
-      "DeepnestDesent": "Unspecified",
       "FungalDeepnestFall": "Unspecified"
     }
   },
@@ -1023,8 +989,8 @@
     "AdjacentClusters": {
       "DeepnestDark": "Unspecified",
       "DeepnestDescent": "Unspecified",
-      "DeepnestNoskApproach": "Unspecified",
-      "DeepnestTramBench": "Unspecified"
+      "DeepnestFailedTram": "Unspecified",
+      "DeepnestNoskApproach": "Unspecified"
     }
   },
   "DeepnestMantisEntrance": {
@@ -1044,7 +1010,7 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "DeepnestDesent": "Unspecified"
+      "DeepnestDescent": "Unspecified"
     }
   },
   "DeepnestNosk": {
@@ -1102,25 +1068,6 @@
       "DeepnestVillage": "Unspecified"
     }
   },
-  "DeepnestTramBench": {
-    "SceneAliases": [
-      "Deepnest_Failed_Tramway_Bench"
-    ],
-    "SceneNames": [
-      "Deepnest_14"
-    ],
-    "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": null,
-    "DarkSettings": null,
-    "SemiDarkSettings": {
-      "SemiDarkProbability": 100
-    },
-    "AdjacentClusters": {
-      "DeepnestDesent": "Unspecified",
-      "DeepnestFailedTram": "Unspecified",
-      "DeepnestLightWest": "Unspecified"
-    }
-  },
   "DeepnestTramCorridor": {
     "SceneAliases": [
       "Deepnest_Corridor_to_Tram"
@@ -1139,8 +1086,8 @@
     },
     "AdjacentClusters": {
       "DeepnestDescent": "Unspecified",
-      "DeepnestTramOutliers": "Unspecified",
-      "DeepnestTramWing": "Unspecified"
+      "DeepnestFailedTram": "Unspecified",
+      "DeepnestTramOutliers": "Unspecified"
     }
   },
   "DeepnestTramOutliers": {
@@ -1158,23 +1105,6 @@
       "ProbabilityWeight": 100,
       "CostWeight": 100
     },
-    "SemiDarkSettings": {
-      "SemiDarkProbability": 100
-    },
-    "AdjacentClusters": {
-      "DeepnestTramCorridor": "Unspecified"
-    }
-  },
-  "DeepnestTramWing": {
-    "SceneAliases": [
-      "Deepnest_Tram"
-    ],
-    "SceneNames": [
-      "Abyss_03_b"
-    ],
-    "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": null,
-    "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
     },
@@ -1297,7 +1227,7 @@
     "AdjacentClusters": {
       "EdgeColoApproach": "Unspecified",
       "EdgeEastUpper": "Unspecified",
-      "EdgeOroStip": "Unspecified",
+      "EdgeOroStrip": "Unspecified",
       "EdgeTramAppraoch": "Unspecified"
     }
   },
@@ -1421,16 +1351,17 @@
       "SemiDarkProbability": 100
     },
     "AdjacentClusters": {
-      "EdgeOroStip": "Unspecified",
       "EdgeOroStrip": "Unspecified"
     }
   },
-  "EdgeOroStip": {
+  "EdgeOroStrip": {
     "SceneAliases": [
+      "Edge_Oro_Scarecrow",
       "Edge_Outside_Oro"
     ],
     "SceneNames": [
-      "Deepnest_East_06"
+      "Deepnest_East_06",
+      "Deepnest_East_16"
     ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
@@ -1444,26 +1375,7 @@
     "AdjacentClusters": {
       "EdgeColumn": "Unspecified",
       "EdgeOroDive": "Unspecified",
-      "EdgeOroStrip": "Unspecified",
       "EdgeUpperEast": "Unspecified"
-    }
-  },
-  "EdgeOroStrip": {
-    "SceneAliases": [
-      "Edge_Oro_Scarecrow"
-    ],
-    "SceneNames": [
-      "Deepnest_East_16"
-    ],
-    "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": null,
-    "DarkSettings": null,
-    "SemiDarkSettings": {
-      "SemiDarkProbability": 100
-    },
-    "AdjacentClusters": {
-      "EdgeOroDive": "Unspecified",
-      "EdgeOroStip": "Unspecified"
     }
   },
   "EdgeTramAppraoch": {
@@ -1528,7 +1440,7 @@
     "AdjacentClusters": {
       "EdgeEastUpper": "Unspecified",
       "EdgeMarkoth": "Unspecified",
-      "EdgeOroStip": "Unspecified"
+      "EdgeOroStrip": "Unspecified"
     }
   },
   "FungalClothCorridor": {
@@ -1792,6 +1704,97 @@
     }
   },
   "GreenpathUnnBridge": {
+    "SceneAliases": [
+      "Greenpath_Corridor_to_Unn"
+    ],
+    "SceneNames": [
+      "Fungus1_25"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "GreenpathUnn": "Unspecified"
+    }
+  },
+  "GreenpathUpper": {
+    "SceneAliases": [
+      "Greenpath_Moss_Knight_Arena"
+    ],
+    "SceneNames": [
+      "Fungus1_32"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {}
+  },
+  "GreenpathWest": {
+    "SceneAliases": [
+      "Greenpath_Below_Toll_Bench"
+    ],
+    "SceneNames": [
+      "Fungus1_30"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {}
+  },
+  "GroundsTram": {
+    "SceneAliases": [
+      "Grounds_Tram"
+    ],
+    "SceneNames": [
+      "Crossroads_46b"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {}
+  },
+  "WestCityElevator": {
+    "SceneAliases": [
+      "City_Left_Elevator",
+      "Crossroads_Elevator"
+    ],
+    "SceneNames": [
+      "Crossroads_49",
+      "Crossroads_49b"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "AdjacentClusters": {
+      "CrossroadsElevatorApproach": "Unspecified",
+      "CrossroadsVesselFragment": "Unspecified"
+    }
+  }
+}nBridge": {
     "SceneAliases": [
       "Greenpath_Corridor_to_Unn"
     ],

@@ -62,8 +62,7 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName CliffsMain = new("CliffsMain");
         public static readonly ClusterName CrossroadsAncestralMound = new("CrossroadsAncestralMound");
         public static readonly ClusterName CrossroadsCanyonBridge = new("CrossroadsCanyonBridge");
-        public static readonly ClusterName CrossroadsCenterBridge = new("CrossroadsCenterBridge");
-        public static readonly ClusterName CrossroadsCentralBridge = new("CrossroadsCentralBridge");
+        public static readonly ClusterName CrossroadsCentralPass = new("CrossroadsCentralPass");
         public static readonly ClusterName CrossroadsElevatorApproach = new("CrossroadsElevatorApproach");
         public static readonly ClusterName CrossroadsEntrance = new("CrossroadsEntrance");
         public static readonly ClusterName CrossroadsFalseKnight = new("CrossroadsFalseKnight");
@@ -88,7 +87,6 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName CrossroadsWest = new("CrossroadsWest");
         public static readonly ClusterName DeepnestDark = new("DeepnestDark");
         public static readonly ClusterName DeepnestDescent = new("DeepnestDescent");
-        public static readonly ClusterName DeepnestDesent = new("DeepnestDesent");
         public static readonly ClusterName DeepnestFailedTram = new("DeepnestFailedTram");
         public static readonly ClusterName DeepnestGalien = new("DeepnestGalien");
         public static readonly ClusterName DeepnestLightEast = new("DeepnestLightEast");
@@ -97,10 +95,8 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName DeepnestNosk = new("DeepnestNosk");
         public static readonly ClusterName DeepnestNoskApproach = new("DeepnestNoskApproach");
         public static readonly ClusterName DeepnestStag = new("DeepnestStag");
-        public static readonly ClusterName DeepnestTramBench = new("DeepnestTramBench");
         public static readonly ClusterName DeepnestTramCorridor = new("DeepnestTramCorridor");
         public static readonly ClusterName DeepnestTramOutliers = new("DeepnestTramOutliers");
-        public static readonly ClusterName DeepnestTramWing = new("DeepnestTramWing");
         public static readonly ClusterName DeepnestVillage = new("DeepnestVillage");
         public static readonly ClusterName DeepnestWeaversDen = new("DeepnestWeaversDen");
         public static readonly ClusterName EdgeCampBench = new("EdgeCampBench");
@@ -113,7 +109,6 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName EdgeLifeblood = new("EdgeLifeblood");
         public static readonly ClusterName EdgeMarkoth = new("EdgeMarkoth");
         public static readonly ClusterName EdgeOroDive = new("EdgeOroDive");
-        public static readonly ClusterName EdgeOroStip = new("EdgeOroStip");
         public static readonly ClusterName EdgeOroStrip = new("EdgeOroStrip");
         public static readonly ClusterName EdgeTramAppraoch = new("EdgeTramAppraoch");
         public static readonly ClusterName EdgeTramEntrance = new("EdgeTramEntrance");

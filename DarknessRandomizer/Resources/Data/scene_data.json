@@ -28,7 +28,7 @@
   },
   "Abyss_03_b": {
     "Alias": "Deepnest_Tram",
-    "Cluster": "DeepnestTramWing",
+    "Cluster": "DeepnestFailedTram",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
@@ -280,7 +280,7 @@
   },
   "Crossroads_05": {
     "Alias": "Crossroads_Central_Grub",
-    "Cluster": "CrossroadsCentralBridge",
+    "Cluster": "CrossroadsCentralPass",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -379,7 +379,7 @@
   },
   "Crossroads_16": {
     "Alias": "Crossroads_Above_Lever",
-    "Cluster": "CrossroadsCenterBridge",
+    "Cluster": "CrossroadsCentralPass",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -685,7 +685,7 @@
   },
   "Deepnest_14": {
     "Alias": "Deepnest_Failed_Tramway_Bench",
-    "Cluster": "DeepnestTramBench",
+    "Cluster": "DeepnestFailedTram",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
@@ -703,7 +703,7 @@
   },
   "Deepnest_17": {
     "Alias": "Deepnest_Garpede_Corridor_Below_Cornifer",
-    "Cluster": "DeepnestDesent",
+    "Cluster": "DeepnestDescent",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -910,7 +910,7 @@
   },
   "Deepnest_East_06": {
     "Alias": "Edge_Outside_Oro",
-    "Cluster": "EdgeOroStip",
+    "Cluster": "EdgeOroStrip",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
