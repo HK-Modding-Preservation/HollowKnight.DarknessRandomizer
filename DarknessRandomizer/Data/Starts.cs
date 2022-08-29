@@ -7,7 +7,7 @@ namespace DarknessRandomizer.Data
     {
         // FIXME: Add clusters
         // Some of these are transition-rando only, and so won't benefit from clusters outside the area
-        private static readonly Dictionary<String, HashSet<LegacyCluster>> ProtectedStartClusters = new()
+        private static readonly Dictionary<string, HashSet<LegacyCluster>> ProtectedStartClusters = new()
         {
             { "Abyss", new() },  // TRANDO only
             {

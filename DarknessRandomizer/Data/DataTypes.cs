@@ -1,4 +1,5 @@
 ﻿using DarknessRandomizer.Lib;
+using DarknessRandomizer.Rando;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +15,9 @@ namespace DarknessRandomizer.Data
 
         public static SceneMetadata Get(SceneName sceneName) => Instance[sceneName.Name];
 
-        public String Alias;
-        public String MapArea;
-        public List<String> AdjacentScenes;
+        public string Alias;
+        public string MapArea;
+        public List<string> AdjacentScenes;
     }
 
     public class SceneData
@@ -55,13 +56,25 @@ namespace DarknessRandomizer.Data
 
         public List<string> SceneAliases = new();
         public List<string> SceneNames = new();
-        public bool CanBeDarknessSource = true;
-        public bool CursedOnly = false;
+        public bool? OverrideCannotBeDarknessSource = null;
+        public bool? CursedOnly = false;
         public DarkSettings DarkSettings = null;
         public SemiDarkSettings SemiDarkSettings = null;
         public SortedDictionary<string, RelativeDarkness> AdjacentClusters = new();
 
-        public Darkness MaximumDarkness(SortedDictionary<string, SceneData> SD = null)
+        public bool CanBeDarknessSource(SortedDictionary<string, SceneData> SD) => CanBeDarknessSource(null, SD);
+
+        public bool CanBeDarknessSource(DarknessRandomizationSettings settings = null, SortedDictionary<string, SceneData> SD = null)
+        {
+            SD ??= SceneData.Instance;
+            if (MaximumDarkness(settings, SD) < Darkness.Dark) return false;
+            if (OverrideCannotBeDarknessSource is bool b && b) return false;
+            return AdjacentClusters.Values.All(rd => rd != RelativeDarkness.Brighter);
+        }
+
+        public Darkness MaximumDarkness(SortedDictionary<string, SceneData> SD) => MaximumDarkness(null, SD);
+
+        public Darkness MaximumDarkness(DarknessRandomizationSettings settings = null, SortedDictionary<string, SceneData> SD = null)
         {
             SD ??= SceneData.Instance;
             var d = Darkness.Bright;
@@ -69,6 +82,11 @@ namespace DarknessRandomizer.Data
             {
                 Darkness d2 = SD[sn].MaximumDarkness;
                 if (d2 > d) d = d2;
+            }
+
+            if (d == Darkness.Dark && CursedOnly is bool b && b && settings != null && settings.DarknessLevel != DarknessLevel.Cursed)
+            {
+                return Darkness.SemiDark;
             }
             return d;
         }

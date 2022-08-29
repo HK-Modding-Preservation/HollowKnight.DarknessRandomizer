@@ -146,18 +146,32 @@ namespace DarknessRandomizer.Data
                     }
                 }
 
+                // Don't set optional bools if they have no effect.
+                bool? origOverride = cData.OverrideCannotBeDarknessSource;
+                bool? origCursed = cData.CursedOnly;
+                cData.OverrideCannotBeDarknessSource = null;
+                cData.CursedOnly = null;
+                if (!cData.CanBeDarknessSource(SD))
+                {
+                    origOverride = null;
+                }
+                if (cData.MaximumDarkness(SD) < Darkness.Dark)
+                {
+                    origCursed = null;
+                }
+                cData.OverrideCannotBeDarknessSource = origOverride;
+                cData.CursedOnly = origCursed;
+
                 // Handle darkness settings.
-                if (cData.MaximumDarkness() < Darkness.Dark)
+                if (cData.MaximumDarkness(SD) < Darkness.Dark)
                 {
                     cData.DarkSettings = null;
-                    cData.CanBeDarknessSource = false;
                 }
-                else if (cData.DarkSettings == null)
+                else
                 {
-                    cData.DarkSettings = new();
-                    cData.CanBeDarknessSource = true;
+                    cData.DarkSettings ??= new();
                 }
-                if (cData.MaximumDarkness() < Darkness.SemiDark || cData.MinimumDarkness() > Darkness.SemiDark)
+                if (cData.MaximumDarkness(SD) < Darkness.SemiDark || cData.MinimumDarkness(SD) > Darkness.SemiDark)
                 {
                     cData.SemiDarkSettings = null;
                 }

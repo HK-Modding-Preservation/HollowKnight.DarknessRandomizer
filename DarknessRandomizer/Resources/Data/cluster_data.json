@@ -6,7 +6,7 @@
     "SceneNames": [
       "Abyss_15"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -26,7 +26,7 @@
     "SceneNames": [
       "Abyss_06_Core"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -50,7 +50,7 @@
     "SceneNames": [
       "Abyss_08"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -76,7 +76,7 @@
       "Abyss_16",
       "Abyss_Lighthouse_room"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -96,8 +96,8 @@
     "SceneNames": [
       "Abyss_12"
     ],
-    "CanBeDarknessSource": false,
-    "CursedOnly": false,
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
@@ -119,7 +119,7 @@
       "Abyss_20",
       "Abyss_21"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -139,7 +139,7 @@
     "SceneNames": [
       "Abyss_17"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -159,7 +159,7 @@
     "SceneNames": [
       "Abyss_04"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -184,8 +184,8 @@
       "Abyss_05",
       "Abyss_22"
     ],
-    "CanBeDarknessSource": false,
-    "CursedOnly": false,
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
@@ -205,7 +205,7 @@
       "Abyss_02",
       "Abyss_03"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -226,7 +226,7 @@
     "SceneNames": [
       "Fungus1_28"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -244,8 +244,8 @@
     "SceneNames": [
       "Abyss_03_b"
     ],
-    "CanBeDarknessSource": false,
-    "CursedOnly": false,
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
@@ -259,7 +259,7 @@
     "SceneNames": [
       "Abyss_03_c"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -277,8 +277,8 @@
     "SceneNames": [
       "Fungus2_09"
     ],
-    "CanBeDarknessSource": false,
-    "CursedOnly": false,
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
@@ -296,7 +296,7 @@
       "Fungus2_07",
       "Fungus2_08"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -319,7 +319,7 @@
       "Fungus2_03",
       "Fungus2_04"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -340,7 +340,7 @@
     "SceneNames": [
       "Fungus2_05"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -363,7 +363,7 @@
       "Fungus2_01",
       "Fungus2_02"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -383,7 +383,7 @@
     "SceneNames": [
       "Fungus2_06"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -404,7 +404,7 @@
     "SceneNames": [
       "Fungus1_29"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -424,7 +424,7 @@
       "Fungus1_35",
       "Fungus1_36"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -444,7 +444,7 @@
     "SceneNames": [
       "Fungus1_34"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -464,8 +464,8 @@
     "SceneNames": [
       "Fungus1_37"
     ],
-    "CanBeDarknessSource": false,
-    "CursedOnly": false,
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
     "DarkSettings": null,
     "SemiDarkSettings": null,
     "AdjacentClusters": {}
@@ -479,7 +479,7 @@
       "Fungus1_26",
       "Fungus1_Slug"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -499,8 +499,8 @@
     "SceneNames": [
       "Fungus1_25"
     ],
-    "CanBeDarknessSource": false,
-    "CursedOnly": false,
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
@@ -516,7 +516,7 @@
     "SceneNames": [
       "Fungus1_32"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -534,7 +534,7 @@
     "SceneNames": [
       "Fungus1_30"
     ],
-    "CanBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,

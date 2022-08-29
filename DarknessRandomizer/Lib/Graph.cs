@@ -15,7 +15,8 @@ namespace DarknessRandomizer.Lib
         Unspecified,
         Brighter,
         Any,
-        Darker
+        Darker,
+        Disconnected
     }
 
     // Data specific to a scene.
