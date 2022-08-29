@@ -21,8 +21,7 @@ namespace DarknessRandomizer
             Version v = typeof(DarknessRandomizer).Assembly.GetName().Version;
             Version = $"{v.Major}.{v.Minor}.{v.Build}";
 
-            // Why the fuck is this hard
-            GraphDataUpdater.UpdateGraphData();
+            GraphDataUpdater.MaybeUpdateGraphData();
         }
 
         public override void Initialize()

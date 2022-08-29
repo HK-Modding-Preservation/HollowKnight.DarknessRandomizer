@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 
 namespace DarknessRandomizer.Data
 {
+    // TODO(You): Make a copy of /Resources/Data/graph_update_example.json as graph_update.json, and fill in your own params.
+    public class GraphUpdate
+    {
+        public bool UpdateGraphData;
+        public string RepoRoot;
+    }
+
     class GraphDataUpdater
     {
-        // TODO(Contributor): Change this to point to the root of your own checked out repository.
-        // Add a call to `GraphDataUpdater.UpdateGraphData()` in DarknessRandomizer.cs to update graph data on mod load.
-        private const string RepoRoot = "C:/Users/danie/source/repos/HollowKnight.DarknessRandomizer";
-
         private static void SyncDicts<K,V1,V2>(IDictionary<K, V1> src, IDictionary<K, V2> dst, Func<K, V2> creator)
         {
             // Add missing values.
@@ -35,8 +38,22 @@ namespace DarknessRandomizer.Data
             toRemove.ForEach(k => dst.Remove(k));
         }
 
-        public static void UpdateGraphData()
+        public static void MaybeUpdateGraphData()
         {
+            GraphUpdate gu;
+            try
+            {
+                gu = JsonUtil.Deserialize<GraphUpdate>("DarknessRandomizer.Resources.Data.graph_update.json");
+            }
+            catch (Exception e)
+            {
+                DarknessRandomizer.Log($"Not updating graph data: Could not load graph_update.json ({e})");
+                return;
+            }
+
+            if (!gu.UpdateGraphData) return;
+            DarknessRandomizer.Log("Updating graph data...");
+
             // Load all the data.
             var SM = SceneMetadata.Instance;
             var SD = SceneData.Instance;
@@ -183,15 +200,14 @@ namespace DarknessRandomizer.Data
             MaybeThrowException(exceptions);
 
             // Only update data at the end, if we have no exceptions.
-            JsonUtil.Serialize(SM, $"{RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
-            JsonUtil.Serialize(SD, $"{RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
-            JsonUtil.Serialize(CD, $"{RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
+            JsonUtil.Serialize(SM, $"{gu.RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
+            JsonUtil.Serialize(SD, $"{gu.RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
+            JsonUtil.Serialize(CD, $"{gu.RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
 
-            UpdateCSFile("Data/SceneName.cs", "INSERT_SCENE_NAMES", SM,
+            UpdateCSFile($"{gu.RepoRoot}/DarknessRandomizer/Data/SceneName.cs", "INSERT_SCENE_NAMES", SM,
                 (n, sm) => $"SceneName {CSharpClean(sm.Alias)} = new(\"{n}\")");
-            UpdateCSFile("Data/ClusterName.cs", "INSERT_CLUSTER_NAMES", CD,
+            UpdateCSFile($"{gu.RepoRoot}/DarknessRandomizer/Data/ClusterName.cs", "INSERT_CLUSTER_NAMES", CD,
                 (n, cd) => $"ClusterName {CSharpClean(n)} = new(\"{n}\")");
-            // TODO: Update Cluster file.
         }
 
         private static void MaybeThrowException(List<string> exceptions)
@@ -210,9 +226,8 @@ namespace DarknessRandomizer.Data
 
         private delegate string CSAssignment<K, V>(K key, V value);
 
-        private static void UpdateCSFile<K, V>(string fname, string marker, IDictionary<K, V> dict, CSAssignment<K, V> assigner)
+        private static void UpdateCSFile<K, V>(string path, string marker, IDictionary<K, V> dict, CSAssignment<K, V> assigner)
         {
-            string path = $"{RepoRoot}/DarknessRandomizer/{fname}";
             StreamReader sr = new(path);
             List<string> outLines = new();
             string line, indent;
