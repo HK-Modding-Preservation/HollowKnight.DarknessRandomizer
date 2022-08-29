@@ -89,25 +89,46 @@ namespace DarknessRandomizer.Rando
 
         private static SceneTree Combine(OperatorType op, IEnumerable<SceneTree> trees)
         {
+            var treeList = trees.ToList();
             bool guaranteedLantern;
             if (op == OperatorType.AND)
             {
-                if (trees.All(t => t != null && t.IsLeaf && t.Value.IsLantern))
+                if (treeList.All(t => t != null && t.IsLeaf && t.Value.IsLantern))
                 {
                     return LanternSceneTree();
                 }
-                guaranteedLantern = trees.All(t => t != null && t.Metadata.GuaranteedLantern);
+                guaranteedLantern = treeList.All(t => t != null && t.Metadata.GuaranteedLantern);
             }
             else
             {
-                if (trees.Any(t => t != null && t.IsLeaf && t.Value.IsLantern))
+                if (treeList.Any(t => t != null && t.IsLeaf && t.Value.IsLantern))
                 {
                     return LanternSceneTree();
                 }
-                guaranteedLantern = trees.Any(t => t != null && t.Metadata.GuaranteedLantern);
+                guaranteedLantern = treeList.Any(t => t != null && t.Metadata.GuaranteedLantern);
             }
 
-            var list = trees.Where(t => t != null && (t.IsTree || t.Value.IsScene)).ToList();
+            // Deduplicate identical SceneNames at the same level.
+            List<SceneTree> subtrees = new();
+            Dictionary<SceneName, SceneTree> uniqueAtoms = new();
+            foreach (var t in treeList)
+            {
+                if (t == null) continue;
+                if (t.IsTree)
+                {
+                    subtrees.Add(t);
+                }
+                else
+                {
+                    if (!t.Value.IsScene) continue;
+                    uniqueAtoms[t.Value.SceneName] = t;
+                }
+            }
+
+            List<SceneTree> list = new();
+            subtrees.ForEach(t => list.Add(t));
+            uniqueAtoms.Values.ToList().ForEach(t => list.Add(t));
+
             if (list.Count == 0)
             {
                 return guaranteedLantern ? LanternSceneTree() : null;
