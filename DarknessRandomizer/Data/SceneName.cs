@@ -45,6 +45,18 @@ namespace DarknessRandomizer.Data
 
         public override int GetHashCode() => Id;
 
+        public static bool IsTransition(string token, out SceneName sceneName)
+        {
+            int i = token.IndexOf('[');
+            if (i != -1 && SceneName.TryGetSceneName(token.Substring(0, i), out sceneName))
+            {
+                return true;
+            }
+
+            sceneName = default;
+            return false;
+        }
+
         // @@@ INSERT_SCENE_NAMES START @@@
         public static readonly SceneName CityBrokenElevator = new("Abyss_01");
         public static readonly SceneName BasinBrokenBridge = new("Abyss_02");

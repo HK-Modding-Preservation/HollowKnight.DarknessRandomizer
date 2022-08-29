@@ -51,17 +51,10 @@ namespace DarknessRandomizer.Rando
         {
             if (Parent.TryMatch(lm, term, out variable)) return true;
 
-            Match match = Regex.Match(term, @"^\$DarknessBrightened\[(.+)\]$");
-            if (match.Success)
+            Match match = Regex.Match(term, @"^\$DarknessLevel\[(.+)\]$");
+            if (match.Success && SceneName.TryGetSceneName(match.Groups[1].Value, out SceneName sceneName))
             {
-                variable = new DarknessBrightenedInt(ToSceneIds(match.Groups[1].Value));
-                return true;
-            }
-
-            match = Regex.Match(term, @"^\$DarknessNotDarkened\[(.+)\]$");
-            if (match.Success)
-            {
-                variable = new DarknessNotDarkenedInt(ToSceneIds(match.Groups[1].Value));
+                variable = new DarknessLevelInt(sceneName);
                 return true;
             }
 
@@ -69,14 +62,14 @@ namespace DarknessRandomizer.Rando
         }
     }
 
-    internal class DarknessBrightenedInt : LogicInt
+    internal class DarknessLevelInt : LogicInt
     {
-        public List<int> sceneIds;
+        public SceneName sceneName;
 
-        public DarknessBrightenedInt(IEnumerable<int> sceneIds)
+        public DarknessLevelInt(SceneName sceneName)
         {
-            this.sceneIds = new(sceneIds);
-            this.Name = $"$DarknessBrightened[{String.Join(",", sceneIds.Select(SceneName.FromId))}]";
+            this.sceneName = sceneName;
+            this.Name = $"$DarknessLevel[{sceneName}]";
         }
 
         public override string Name { get; }
@@ -85,55 +78,13 @@ namespace DarknessRandomizer.Rando
 
         public override int GetValue(object sender, ProgressionManager pm)
         {
-            bool anyNewBrightness = false;
-            foreach (var id in sceneIds)
+            if (DarknessVariableResolver.TryGetDarkness(sceneName, out Darkness d))
             {
-                var sceneName = SceneName.FromId(id);
-                if (DarknessVariableResolver.TryGetDarkness(sceneName, out Darkness d))
-                {
-                    if (d == Darkness.Dark) {
-                        return 0;
-                    }
-                    else
-                    {
-                        anyNewBrightness |= sceneName.IsVanillaDark();
-                    }
-                }
-            }
-
-            return anyNewBrightness ? 1 : 0;
-        }
-    }
-
-    internal class DarknessNotDarkenedInt : LogicInt
-    {
-        public List<int> sceneIds;
-
-        public DarknessNotDarkenedInt(IEnumerable<int> sceneIds)
-        {
-            this.sceneIds = new(sceneIds);
-            this.Name = $"$DarknessNotDarkened[{String.Join(",", sceneIds.Select(SceneName.FromId))}]";
-        }
-
-        public override string Name { get; }
-
-        public override IEnumerable<Term> GetTerms() => Enumerable.Empty<Term>();
-
-        public override int GetValue(object sender, ProgressionManager pm)
-        {
-            foreach (var id in sceneIds)
+                return (int)d;
+            } else
             {
-                var sceneName = SceneName.FromId(id);
-                if (DarknessVariableResolver.TryGetDarkness(sceneName, out Darkness d))
-                {
-                    if (d == Darkness.Dark && !sceneName.IsVanillaDark())
-                    {
-                        return 0;
-                    }
-                }
+                return (int)Darkness.Bright;
             }
-
-            return 1;
         }
     }
 }
