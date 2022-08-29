@@ -45,9 +45,9 @@ namespace DarknessRandomizer.Data
             {
                 gu = JsonUtil.Deserialize<GraphUpdate>("DarknessRandomizer.Resources.Data.graph_update.json");
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                DarknessRandomizer.Log($"Not updating graph data: Could not load graph_update.json ({e})");
+                // Ignore.
                 return;
             }
 
