@@ -89,23 +89,28 @@ namespace DarknessRandomizer.Rando
 
         private static SceneTree Combine(OperatorType op, IEnumerable<SceneTree> trees)
         {
-            var treeList = trees.ToList();
+            var treeList = trees.Where(t => t != null && (t.IsTree || t.Value.IsRelevant)).ToList();
+            if (treeList.Count == 0)
+            {
+                return null;
+            }
+
             bool guaranteedLantern;
             if (op == OperatorType.AND)
             {
-                if (treeList.All(t => t != null && t.IsLeaf && t.Value.IsLantern))
+                if (treeList.All(t => t.IsLeaf && t.Value.IsLantern))
                 {
                     return LanternSceneTree();
                 }
-                guaranteedLantern = treeList.All(t => t != null && t.Metadata.GuaranteedLantern);
+                guaranteedLantern = treeList.All(t => t.Metadata.GuaranteedLantern);
             }
             else
             {
-                if (treeList.Any(t => t != null && t.IsLeaf && t.Value.IsLantern))
+                if (treeList.Any(t => t.IsLeaf && t.Value.IsLantern))
                 {
                     return LanternSceneTree();
                 }
-                guaranteedLantern = treeList.Any(t => t != null && t.Metadata.GuaranteedLantern);
+                guaranteedLantern = treeList.Any(t => t.Metadata.GuaranteedLantern);
             }
 
             // Deduplicate identical SceneNames at the same level.
@@ -113,14 +118,12 @@ namespace DarknessRandomizer.Rando
             Dictionary<SceneName, SceneTree> uniqueAtoms = new();
             foreach (var t in treeList)
             {
-                if (t == null) continue;
                 if (t.IsTree)
                 {
                     subtrees.Add(t);
                 }
-                else
+                else if (t.Value.IsScene)
                 {
-                    if (!t.Value.IsScene) continue;
                     uniqueAtoms[t.Value.SceneName] = t;
                 }
             }
