@@ -26,13 +26,21 @@ namespace DarknessRandomizer.Rando
             InstallHook(new LambdaHook(
                 () => Events.OnSceneChange += AdjustDarknessRelatedObjects,
                 () => Events.OnSceneChange -= AdjustDarknessRelatedObjects));
+
+            // Allow dark objects to be used if the room is bright.
             InstallMaybeDisableLanternCheck(SceneName.CrossroadsPeakDarkToll, new("Toll Gate Machine", "Disable if No Lantern"));
             InstallMaybeDisableLanternCheck(SceneName.CrossroadsPeakDarkToll, new("Toll Gate Machine (1)", "Disable if No Lantern"));
             InstallMaybeDisableLanternCheck(SceneName.GreenpathStoneSanctuary, new("Ghost Warrior NPC", "FSM"));
+            InstallNoEyesHazardRespawn();
 
-            // Set respawns when fighting Ghost Warriors
-            InstallSetRespawnOnFightStart(SceneName.CliffsGorb);
-            InstallSetRespawnOnFightStart(SceneName.GreenpathStoneSanctuary);
+            // Delete ghost warriors in dark rooms.
+            InstallDeleteGhostWarriorIfDark(SceneName.CliffsGorb);
+            InstallDeleteGhostWarriorIfDark(SceneName.DeepnestGalienArena);
+            InstallDeleteGhostWarriorIfDark(SceneName.EdgeMarkothArena);
+            InstallDeleteGhostWarriorIfDark(SceneName.FungalElderHu);
+            InstallDeleteGhostWarriorIfDark(SceneName.GardensGardensStag);
+            InstallDeleteGhostWarriorIfDark(SceneName.GreenpathStoneSanctuary);
+            InstallDeleteGhostWarriorIfDark(SceneName.GroundsXero);
 
             // Make tollgates unusable in dark rooms.
             InstallDarkTollgateCheck(SceneName.GreenpathToll, "Toll Gate Machine");
@@ -66,17 +74,11 @@ namespace DarknessRandomizer.Rando
         {
             foreach (var obj in GameObject.FindObjectsOfType<HazardRespawnTrigger>())
             {
-                if (!PreservedHazardRespawns.TryGetValue(sceneName, out HashSet<string> names)
+                if (sceneName == null || !PreservedHazardRespawns.TryGetValue(sceneName, out HashSet<string> names)
                     || !names.Contains(obj.name))
                 {
                     GameObject.Destroy(obj);
                 }
-            }
-
-            GameObject dwn = GameObject.Find("Ghost Warrior NPC");
-            if (dwn != null)
-            {
-                GameObject.Destroy(dwn);
             }
         }
 
@@ -111,7 +113,7 @@ namespace DarknessRandomizer.Rando
             }
         }
 
-        private Dictionary<string, bool> customBool = new();
+        private readonly Dictionary<string, bool> customBool = new();
 
         private bool IsDark(SceneName sceneName)
         {
@@ -131,6 +133,13 @@ namespace DarknessRandomizer.Rando
             return newName;
         }
 
+        private string GetFalseBool()
+        {
+            const string bname = "DarknessRandomizerFalse";
+            customBool[bname] = false;
+            return bname;
+        }
+
         private bool OverrideGetBool(string name, bool orig) => customBool.TryGetValue(name, out bool b) ? b : orig;
 
         private void InstallMaybeDisableLanternCheck(SceneName sceneName, FsmID id)
@@ -147,20 +156,35 @@ namespace DarknessRandomizer.Rando
             {
                 if (IsDark(sceneName))
                 {
-                    fsm.GetState("Out Of Range").RemoveActionsOfType<Trigger2dEvent>();
+                    Wait wait = new();
+                    wait.time = 1000000.0f;
+                    fsm.GetState("Init").AddLastAction(wait);
                 }
             }));
         }
 
-        private void InstallSetRespawnOnFightStart(SceneName sceneName)
+        private void InstallDeleteGhostWarriorIfDark(SceneName sceneName)
         {
-            var bname = GetSceneIsBrightBool(sceneName);
             InstallHook(new FsmEditHook(sceneName, new("Ghost Warrior NPC", "Conversation Control"), fsm =>
             {
-                fsm.GetState("Start Fight").AddFirstAction(new Lambda(() =>
+                if (IsDark(sceneName))
                 {
-                    HeroController.instance.SetHazardRespawn(HeroController.instance.transform.position, true);
-                }));
+                    GameObject.Destroy(fsm.gameObject);
+                }
+            }));
+        }
+
+        private void InstallNoEyesHazardRespawn()
+        {
+            InstallHook(new FsmEditHook(SceneName.GreenpathStoneSanctuary, new("Ghost Warrior NPC", "Conversation Control"), fsm =>
+            {
+                if (DarknessOverrides[SceneName.GreenpathStoneSanctuary] != Darkness.Dark && PlayerHasLantern())
+                {
+                    fsm.GetState("Start Fight").AddFirstAction(new Lambda(() =>
+                    {
+                        HeroController.instance.SetHazardRespawn(HeroController.instance.transform.position, true);
+                    }));
+                }
             }));
         }
 
@@ -170,7 +194,9 @@ namespace DarknessRandomizer.Rando
             {
                 if (IsDark(SceneName.CityTollBench))
                 {
-                    fsm.GetState("Idle").RemoveActionsOfType<Trigger2dEvent>();
+                    Wait wait = new();
+                    wait.time = 1000000.0f;
+                    fsm.GetState("Init").AddLastAction(wait);
                 }
             }));
         }

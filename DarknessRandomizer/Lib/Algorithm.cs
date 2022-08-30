@@ -45,7 +45,6 @@ namespace DarknessRandomizer.Lib
             // Always include the local cluster, even in TRANDO.
             if (SceneName.TryGetSceneName(startDef.SceneName, out SceneName sceneName))
             {
-                DarknessRandomizer.Log($"SceneName: {sceneName}");
                 this.forbiddenClusters.Add(Data.SceneData.Get(sceneName).Cluster);
             }
 
@@ -90,6 +89,18 @@ namespace DarknessRandomizer.Lib
             {
                 clusterDarkness[c] = Darkness.SemiDark;
             }
+
+            // Inject custom darkness here.
+            foreach (var c in ClusterName.All())
+            {
+                var cData = ClusterData.Get(c);
+                clusterDarkness[c] = cData.MaximumDarkness(settings);
+            }
+            clusterDarkness[ClusterName.GreenpathStoneSanctuary] = Darkness.Bright;
+            clusterDarkness[ClusterName.DeepnestDark] = Darkness.Bright;
+            clusterDarkness[ClusterName.CrystalPeaksToll] = Darkness.Bright;
+            clusterDarkness[ClusterName.CrystalPeaksDarkRoom] = Darkness.Bright;
+            clusterDarkness[ClusterName.CliffsJonis] = Darkness.Bright;
 
             // Phase 3: Output the per-scene darkness levels.
             darknessOverrides = new();

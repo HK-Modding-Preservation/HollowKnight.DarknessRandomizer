@@ -717,9 +717,12 @@
     "SceneNames": [
       "Ruins1_31"
     ],
-    "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": null,
-    "DarkSettings": null
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 40,
+      "CostWeight": 150
+    }
   },
   "CityTowerOfLove": {
     "AdjacentClusters": {

@@ -2152,7 +2152,7 @@
     "Alias": "City_Toll_Bench",
     "Cluster": "CityTollBench",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark",
+    "MaximumDarkness": "Dark",
     "IsVanillaDark": false
   },
   "Ruins1_31b": {
