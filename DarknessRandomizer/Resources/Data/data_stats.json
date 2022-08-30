@@ -1,0 +1,15 @@
+{
+  "NumClusters": 213,
+  "NumSemiDarkOnlyClusters": 48,
+  "NumCursedOnlyClusters": 16,
+  "NumClusterAdjacencies": 255,
+  "NumScenes": 359,
+  "NumSemiDarkOnlyScenes": 76,
+  "NumCursedOnlyScenes": 18,
+  "NumSceneAdjacencies": 411,
+  "NumDarknessSources": 42,
+  "TotalSourceBudget": 4345,
+  "TotalCursedSourceBudget": 6595,
+  "TotalDarknessBudget": 24825,
+  "TotalCursedDarknessBudget": 29075
+}

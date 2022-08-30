@@ -30,7 +30,7 @@ namespace DarknessRandomizer.Lib
             this.r = new(seed);
             this.settings = settings;
 
-            this.darknessAvailable = 1000;  // FIXME; based on settings
+            this.darknessAvailable = settings.GetDarknessBudget(r);
             this.clusterDarkness = new();
             this.darkCandidates = new();
             this.semiDarkCandidates = new();
@@ -49,7 +49,7 @@ namespace DarknessRandomizer.Lib
             }
         }
 
-        public void SelectDarknessLevels(out SceneDictionary<Darkness> darknessOverrides, out AlgorithmStats stats)
+        public void SelectDarknessLevels(out SceneDarknessDict darknessOverrides, out AlgorithmStats stats)
         {
             // Phase 0: Everything starts as bright.
             foreach (var c in ClusterName.All())

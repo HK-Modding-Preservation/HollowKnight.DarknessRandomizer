@@ -96,4 +96,7 @@ namespace DarknessRandomizer.Lib
             serializer.Serialize(writer, value.AsSortedDict);
         }
     }
+
+    [JsonConverter(typeof(TypedIdDictionaryConverter<SceneName, Darkness, SceneDarknessDict>))]
+    public class SceneDarknessDict : SceneDictionary<Darkness> { }
 }
