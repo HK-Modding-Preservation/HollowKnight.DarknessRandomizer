@@ -26,17 +26,17 @@ namespace DarknessRandomizer.Data
         public ClusterDictionary(ClusterDictionary<V> other) : base(other) { }
     }
 
-    public class BaseSceneMetadata<S>
+    public class BaseSceneMetadata<SceneNameT>
     {
         public string Alias;
         public string MapArea;
-        public SortedSet<S> AdjacentScenes;
+        public SortedSet<SceneNameT> AdjacentScenes;
     }
 
-    public class BaseSceneData<C>
+    public class BaseSceneData<ClusterNameT>
     {
         public string Alias;
-        public C Cluster;
+        public ClusterNameT Cluster;
         public Darkness MinimumDarkness = Darkness.Bright;
         public Darkness MaximumDarkness = Darkness.Dark;
         public bool IsVanillaDark = false;
@@ -64,19 +64,19 @@ namespace DarknessRandomizer.Data
         public int CostWeight = 100;
     }
 
-    public abstract class BaseClusterData<S, C>
+    public abstract class BaseClusterData<SceneNameT, ClusterNameT>
     {
         public SortedSet<string> SceneAliases = new();
-        public SortedSet<S> SceneNames = new();
+        public SortedSet<SceneNameT> SceneNames = new();
         public bool? OverrideCannotBeDarknessSource = null;
         public bool? CursedOnly = false;
         public DarkSettings DarkSettings = null;
 
-        public delegate BaseSceneData<C> SceneLookup(S scene);
+        public delegate BaseSceneData<ClusterNameT> SceneLookup(SceneNameT scene);
 
-        protected abstract IEnumerable<KeyValuePair<C, RelativeDarkness>> AdjacentDarkness();
+        protected abstract IEnumerable<KeyValuePair<ClusterNameT, RelativeDarkness>> AdjacentDarkness();
 
-        protected abstract RelativeDarkness GetAdjacentDarkness(C cluster);
+        protected abstract RelativeDarkness GetAdjacentDarkness(ClusterNameT cluster);
 
         [JsonIgnore]
         public int ProbabilityWeight => DarkSettings?.ProbabilityWeight ?? 100;
