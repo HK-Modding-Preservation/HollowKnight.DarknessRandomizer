@@ -185,9 +185,7 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName EdgeOroWing = new("EdgeOroWing");
         public static readonly ClusterName EdgePaleLurker = new("EdgePaleLurker");
         public static readonly ClusterName EdgeTallRooms = new("EdgeTallRooms");
-        public static readonly ClusterName EdgeTramApproach = new("EdgeTramApproach");
-        public static readonly ClusterName EdgeTramEntrance = new("EdgeTramEntrance");
-        public static readonly ClusterName EdgeUpperEast = new("EdgeUpperEast");
+        public static readonly ClusterName EdgeTramWing = new("EdgeTramWing");
         public static readonly ClusterName FogCanyonArchives = new("FogCanyonArchives");
         public static readonly ClusterName FogCanyonAutoPilot = new("FogCanyonAutoPilot");
         public static readonly ClusterName FogCanyonCharmNotch = new("FogCanyonCharmNotch");
@@ -206,7 +204,6 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName FungalEntrance = new("FungalEntrance");
         public static readonly ClusterName FungalLowerHub = new("FungalLowerHub");
         public static readonly ClusterName FungalMantisLords = new("FungalMantisLords");
-        public static readonly ClusterName FungalMantisRewards = new("FungalMantisRewards");
         public static readonly ClusterName FungalMantisVillage = new("FungalMantisVillage");
         public static readonly ClusterName FungalOgres = new("FungalOgres");
         public static readonly ClusterName FungalPilgrimsWay = new("FungalPilgrimsWay");
@@ -237,14 +234,12 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName GreenpathStoneSanctuaryApproach = new("GreenpathStoneSanctuaryApproach");
         public static readonly ClusterName GreenpathStoneSanctuaryBench = new("GreenpathStoneSanctuaryBench");
         public static readonly ClusterName GreenpathThorns = new("GreenpathThorns");
-        public static readonly ClusterName GreenpathToll = new("GreenpathToll");
         public static readonly ClusterName GreenpathUnn = new("GreenpathUnn");
         public static readonly ClusterName GreenpathUnnBench = new("GreenpathUnnBench");
         public static readonly ClusterName GreenpathUnnBridge = new("GreenpathUnnBridge");
         public static readonly ClusterName GreenpathUpperEast = new("GreenpathUpperEast");
         public static readonly ClusterName GreenpathUpperWest = new("GreenpathUpperWest");
         public static readonly ClusterName GreenpathWest = new("GreenpathWest");
-        public static readonly ClusterName GroundsBelowXero = new("GroundsBelowXero");
         public static readonly ClusterName GroundsCatacombs = new("GroundsCatacombs");
         public static readonly ClusterName GroundsDreamNail = new("GroundsDreamNail");
         public static readonly ClusterName GroundsDreamshield = new("GroundsDreamshield");

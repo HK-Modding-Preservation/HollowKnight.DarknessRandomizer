@@ -1861,12 +1861,16 @@
   "Grimm_Main_Tent": {
     "Alias": "Grimm_Tent",
     "MapArea": "Dirtmouth",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Grimm_Nightmare"
+    ]
   },
   "Grimm_Nightmare": {
     "Alias": "Grimm_NKG",
     "MapArea": "",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Grimm_Main_Tent"
+    ]
   },
   "Hive_01": {
     "Alias": "Hive_Entrance_And_Bench",

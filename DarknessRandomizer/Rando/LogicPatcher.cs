@@ -33,7 +33,7 @@ namespace DarknessRandomizer.Rando
             // Dream bosses are coded specially because the checks are located where the dream nail is swung,
             // but we care whether or not the actual fight room is dark. So we have to account for both rooms.
             { "Defeated_Failed_Champion", CustomSceneLogicEdit(SceneName.DreamFailedChampion, "FALSE") },
-            { "Defeated_Grey_Prince_Zote", CustomSceneLogicEdit(SceneName.GPZ, "FALSE") },
+            { "Defeated_Grey_Prince_Zote", CustomSceneLogicEdit(SceneName.DreamGreyPrinceZote, "FALSE") },
             { "Defeated_Lost_Kin", CustomSceneLogicEdit(SceneName.DreamLostKin, "SPICYCOMBATSKIPS") },
             { "Defeated_Soul_Tyrant", CustomSceneLogicEdit(SceneName.DreamSoulTyrant, "SPICYCOMBATSKIPS") },
             { "Defeated_White_Defender", CustomSceneLogicEdit(SceneName.DreamWhiteDefender, "SPICYCOMBATSKIPS") },

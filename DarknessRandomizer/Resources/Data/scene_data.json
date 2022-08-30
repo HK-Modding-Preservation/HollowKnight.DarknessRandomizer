@@ -29,7 +29,7 @@
   },
   "Abyss_03_c": {
     "Alias": "Edge_Tram",
-    "Cluster": "EdgeTramEntrance",
+    "Cluster": "EdgeTramWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
@@ -680,14 +680,14 @@
   },
   "Deepnest_East_01": {
     "Alias": "Edge_Left_Of_Hive",
-    "Cluster": "EdgeTramApproach",
+    "Cluster": "EdgeTramWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
   },
   "Deepnest_East_02": {
     "Alias": "Edge_Above_Hive",
-    "Cluster": "EdgeTramApproach",
+    "Cluster": "EdgeTramWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
@@ -799,7 +799,7 @@
   },
   "Deepnest_East_18": {
     "Alias": "Edge_Outside_Markoth",
-    "Cluster": "EdgeUpperEast",
+    "Cluster": "EdgeEastUpper",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
@@ -1079,7 +1079,7 @@
   },
   "Fungus1_31": {
     "Alias": "Greenpath_Toll",
-    "Cluster": "GreenpathToll",
+    "Cluster": "GreenpathUpperWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
@@ -1310,7 +1310,7 @@
   },
   "Fungus2_31": {
     "Alias": "Fungal_Mantis_Rewards",
-    "Cluster": "FungalMantisRewards",
+    "Cluster": "FungalMantisLords",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
@@ -1842,7 +1842,7 @@
   },
   "RestingGrounds_06": {
     "Alias": "Grounds_Corridor_Below_Xero",
-    "Cluster": "GroundsBelowXero",
+    "Cluster": "BlueLake",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
