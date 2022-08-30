@@ -149,8 +149,9 @@ namespace DarknessRandomizer.Lib
             foreach (var e in cData.AdjacentClusters.Enumerate())
             {
                 var nname = e.Key;
+                var rd = e.Value;
 
-                if (clusterDarkness[nname] == Darkness.Dark || forbiddenClusters.Contains(name))
+                if (clusterDarkness[nname] == Darkness.Dark || rd == RelativeDarkness.Disconnected || forbiddenClusters.Contains(name))
                 {
                     continue;
                 }
