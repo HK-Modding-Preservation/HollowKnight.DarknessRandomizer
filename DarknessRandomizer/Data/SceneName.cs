@@ -1,3 +1,4 @@
+using DarknessRandomizer.Lib;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -5,14 +6,22 @@ using System.Collections.Generic;
 namespace DarknessRandomizer.Data
 {
     [JsonConverter(typeof(SceneNameConverter))]
-    public class SceneName
+    public class SceneName : ITypedId
     {
+        private class FactoryImpl : ITypedIdFactory<SceneName>
+        {
+            public int Count() => scenesById.Count;
+            public SceneName FromId(int id) => SceneName.FromId(id);
+        }
+
+        public static readonly ITypedIdFactory<SceneName> Factory = new FactoryImpl();
+
         private static readonly Dictionary<string, SceneName> scenesByName = new();
         private static readonly List<SceneName> scenesById = new();
         private static int NextId = 0;
 
         public readonly string Name;
-        public readonly int Id;
+        private readonly int id;
 
         private SceneName(string name)
         {
@@ -22,10 +31,12 @@ namespace DarknessRandomizer.Data
             }
 
             this.Name = name;
-            this.Id = NextId++;
+            this.id = NextId++;
             scenesByName.Add(name, this);
             scenesById.Add(this);
         }
+
+        public int Id() => id;
 
         public static bool TryGetSceneName(string s, out SceneName sceneName) => scenesByName.TryGetValue(s, out sceneName);
 
@@ -35,15 +46,15 @@ namespace DarknessRandomizer.Data
 
         public override string ToString() => Name;
 
-        public static int NumSceneNames() => scenesById.Count;
+        public static IReadOnlyList<SceneName> All() => scenesById;
 
         public override bool Equals(object obj)
         {
             return obj is SceneName name &&
-                   Id == name.Id;
+                   id == name.id;
         }
 
-        public override int GetHashCode() => Id;
+        public override int GetHashCode() => id;
 
         public static bool IsTransition(string token, out SceneName sceneName)
         {
@@ -332,11 +343,9 @@ namespace DarknessRandomizer.Data
         public static readonly SceneName GroundsSpiritsGlade = new("RestingGrounds_08");
         public static readonly SceneName GroundsStag = new("RestingGrounds_09");
         public static readonly SceneName GroundsCrypts = new("RestingGrounds_10");
-        public static readonly SceneName GroundsOutsideGreyMourner = new("RestingGrounds_12");
         public static readonly SceneName GroundsDreamshield = new("RestingGrounds_17");
         public static readonly SceneName Bretta = new("Room_Bretta");
         public static readonly SceneName BrettaBasement = new("Room_Bretta_Basement");
-        public static readonly SceneName Salubra = new("Room_Charm_Shop");
         public static readonly SceneName EdgeColoEntrance = new("Room_Colosseum_01");
         public static readonly SceneName EdgeColoBench = new("Room_Colosseum_02");
         public static readonly SceneName EdgeColo1Arena = new("Room_Colosseum_Bronze");
@@ -347,11 +356,6 @@ namespace DarknessRandomizer.Data
         public static readonly SceneName EggHollowKnight = new("Room_Final_Boss_Core");
         public static readonly SceneName FogOvergrownMound = new("Room_Fungus_Shaman");
         public static readonly SceneName WaterwaysFlukeHermit = new("Room_GG_Shortcut");
-        public static readonly SceneName Jinn = new("Room_Jinn");
-        public static readonly SceneName GroundsGreyMourner = new("Room_Mansion");
-        public static readonly SceneName Iselda = new("Room_mapper");
-        public static readonly SceneName DeepnestMaskMaker = new("Room_Mask_Maker");
-        public static readonly SceneName CrossroadsMenderbug = new("Room_Mender_House");
         public static readonly SceneName CliffsMato = new("Room_nailmaster");
         public static readonly SceneName GreenpathSheo = new("Room_nailmaster_02");
         public static readonly SceneName EdgeOro = new("Room_nailmaster_03");

@@ -255,8 +255,6 @@
       "Crossroads_19",
       "Crossroads_27",
       "Crossroads_50",
-      "Room_Charm_Shop",
-      "Room_Mender_House",
       "Room_ruinhouse"
     ]
   },
@@ -779,8 +777,7 @@
     "MapArea": "Deepnest",
     "AdjacentScenes": [
       "Deepnest_39",
-      "Deepnest_43",
-      "Room_Mask_Maker"
+      "Deepnest_43"
     ]
   },
   "Deepnest_43": {
@@ -2241,16 +2238,7 @@
     "MapArea": "Resting Grounds",
     "AdjacentScenes": [
       "RestingGrounds_05",
-      "RestingGrounds_12",
       "Ruins2_10"
-    ]
-  },
-  "RestingGrounds_12": {
-    "Alias": "Grounds_Outside_Grey_Mourner",
-    "MapArea": "Resting Grounds",
-    "AdjacentScenes": [
-      "RestingGrounds_10",
-      "Room_Mansion"
     ]
   },
   "RestingGrounds_17": {
@@ -2271,13 +2259,6 @@
     "Alias": "Bretta_Basement",
     "MapArea": "",
     "AdjacentScenes": []
-  },
-  "Room_Charm_Shop": {
-    "Alias": "Salubra",
-    "MapArea": "Forgotten Crossroads",
-    "AdjacentScenes": [
-      "Crossroads_04"
-    ]
   },
   "Room_Colosseum_01": {
     "Alias": "Edge_Colo_Entrance",
@@ -2341,39 +2322,6 @@
     "AdjacentScenes": [
       "GG_Waterways",
       "Ruins1_04"
-    ]
-  },
-  "Room_Jinn": {
-    "Alias": "Jinn",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "Room_Mansion": {
-    "Alias": "Grounds_Grey_Mourner",
-    "MapArea": "Resting Grounds",
-    "AdjacentScenes": [
-      "RestingGrounds_12"
-    ]
-  },
-  "Room_mapper": {
-    "Alias": "Iselda",
-    "MapArea": "Dirtmouth",
-    "AdjacentScenes": [
-      "Town"
-    ]
-  },
-  "Room_Mask_Maker": {
-    "Alias": "Deepnest_Mask_Maker",
-    "MapArea": "Deepnest",
-    "AdjacentScenes": [
-      "Deepnest_42"
-    ]
-  },
-  "Room_Mender_House": {
-    "Alias": "Crossroads_Menderbug",
-    "MapArea": "Forgotten Crossroads",
-    "AdjacentScenes": [
-      "Crossroads_04"
     ]
   },
   "Room_nailmaster": {
@@ -2486,16 +2434,16 @@
     "Alias": "City_Pleasure_House_Bench",
     "MapArea": "City of Tears",
     "AdjacentScenes": [
-      "Ruins2_10b",
-      "Ruins_Elevator"
+      "Ruins_Elevator",
+      "Ruins2_10b"
     ]
   },
   "Ruins_Elevator": {
     "Alias": "City_Pleasure_House_Elevator",
     "MapArea": "City of Tears",
     "AdjacentScenes": [
-      "Ruins2_04",
-      "Ruins_Bathhouse"
+      "Ruins_Bathhouse",
+      "Ruins2_04"
     ]
   },
   "Ruins_House_01": {
@@ -2742,12 +2690,12 @@
     "MapArea": "City of Tears",
     "AdjacentScenes": [
       "Abyss_01",
-      "Ruins2_01_b",
-      "Ruins2_06",
       "Ruins_Elevator",
       "Ruins_House_01",
       "Ruins_House_02",
-      "Ruins_House_03"
+      "Ruins_House_03",
+      "Ruins2_01_b",
+      "Ruins2_06"
     ]
   },
   "Ruins2_05": {
@@ -2805,8 +2753,8 @@
     "MapArea": "City of Tears",
     "AdjacentScenes": [
       "Deepnest_East_09",
-      "Ruins2_05",
-      "Ruins_Bathhouse"
+      "Ruins_Bathhouse",
+      "Ruins2_05"
     ]
   },
   "Ruins2_11": {
@@ -2837,14 +2785,12 @@
     "MapArea": "Dirtmouth",
     "AdjacentScenes": [
       "Crossroads_01",
-      "Grimm_Divine",
       "Grimm_Main_Tent",
       "Mines_10",
       "Room_Bretta",
       "Room_Ouiji",
-      "Room_Town_Stag_Station",
-      "Room_mapper",
       "Room_shop",
+      "Room_Town_Stag_Station",
       "Tutorial_01"
     ]
   },
@@ -3118,6 +3064,15 @@
       "White_Palace_17",
       "White_Palace_20"
     ]
+  },
+  "White_Palace_20": {
+    "Alias": "POP_Final",
+    "MapArea": "White Palace",
+    "AdjacentScenes": [
+      "White_Palace_19"
+    ]
+  }
+}
   },
   "White_Palace_20": {
     "Alias": "POP_Final",

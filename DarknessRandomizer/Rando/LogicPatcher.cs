@@ -50,7 +50,9 @@ namespace DarknessRandomizer.Rando
             { "Defeated_Crystal_Guardian", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
             { "Defeated_Enraged_Guardian", CustomDarkLogicEdit("SPICYCOMBATSKIPS") },
             { "Defeated_Flukemarm", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
+            { "Defeated_Hive_Knight", CustomDarkLogicEdit("SPICYCOMBATSKIPS") },
             { "Defeated_Hornet_Sentinel", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
+            { "Defeated_Grimm", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
             { "Defeated_Mantis_Lords", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
             { "Defeated_Nosk", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
             { "Defeated_Pale_Lurker", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
@@ -59,8 +61,8 @@ namespace DarknessRandomizer.Rando
             { "Defeated_Uumuu", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
             { "Defeated_Watcher_Knights", CustomDarkLogicEdit("SPICYCOMBATSKIPS") },
 
-            // Flower quest just requires lantern, not gonna think any harder about it.
-            { "Mask_Shard-Grey_Mourner", CustomDarkLogicEdit("FALSE") },
+            // Flower quest simply requires lantern.
+            { "Mask_Shard-Grey_Mourner", (lmb, ln, lc) => lmb.DoLogicEdit(new(ln, "ORIG + LANTERN")) }
         };
 
         private static readonly Dictionary<SceneName, LogicOverride> LogicOverridesByTransitionScene = new()
@@ -169,7 +171,7 @@ namespace DarknessRandomizer.Rando
                     string name = st.Write();
                     if (SceneName.IsTransition(name, out SceneName sceneName))
                     {
-                        si.TransitionTermsBySceneName.GetOrCreate(sceneName).Add(name);
+                        si.TransitionTermsBySceneName.GetOrAddNew(sceneName).Add(name);
                     }
                     else if (name == "LANTERN")
                     {
@@ -186,16 +188,9 @@ namespace DarknessRandomizer.Rando
 
         private static void AddDarkLogic(string logicName, SceneName scene, bool darkrooms, List<LogicToken> sink)
         {
-            var g = Graph.Instance;
-
-            // Hack: check all scenes for difficulty or combat, and take the highest.
-            bool difficult = false;
-            bool combat = false;
-            if (g.TryGetSceneData(scene, out Lib.SceneData sData))
-            {
-                difficult = sData.DifficultSkipLocs.Contains(logicName);
-                combat = sData.ProficientCombatLocs.Contains(logicName);
-            }
+            var sData = Data.SceneData.Get(scene);
+            bool difficult = sData.DifficultSkips.Contains(logicName);
+            bool combat = sData.ProficientCombat.Contains(logicName);
 
             int tokens = (darkrooms ? 1 : 0) + (difficult ? 1 : 0) + (combat ? 1 : 0);
             if (darkrooms)

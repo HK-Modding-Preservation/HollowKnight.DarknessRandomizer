@@ -44,10 +44,18 @@ namespace DarknessRandomizer.Data
             DarknessRandomizer.Log("Loading Graph Data for update...");
 
             // Load all the data.
-            var SM = SceneMetadata.LoadFromPath($"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
-            var SD = SceneData.LoadFromPath($"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
-            var CD = ClusterData.LoadFromPath($"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
+            var SM = RawSceneMetadata.LoadFromPath($"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
+            var SD = RawSceneData.LoadFromPath($"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
+            var CD = RawClusterData.LoadFromPath($"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
 
+            // We delete scenes from metadata to not track them; make sure adjacencies are also updated.
+            foreach (var sData in SM.Values)
+            {
+                sData.AdjacentScenes = sData.AdjacentScenes.Where(s => SM.ContainsKey(s)).ToList();
+                sData.AdjacentScenes.Sort();
+            }
+
+            // Sync SceneData to SceneMetadata.
             SyncDicts(SM, SD, k => new() { Alias = SM[k].Alias });
 
             // Validate SceneData
@@ -64,9 +72,9 @@ namespace DarknessRandomizer.Data
                 {
                     sData.DifficultSkips = null;
                 }
-                if (sData.ProficientSkips != null && sData.ProficientSkips.Empty)
+                if (sData.ProficientCombat != null && sData.ProficientCombat.Empty)
                 {
-                    sData.ProficientSkips = null;
+                    sData.ProficientCombat = null;
                 }
             }
             MaybeThrowException(exceptions);
@@ -80,7 +88,7 @@ namespace DarknessRandomizer.Data
                 var sData = e.Value;
                 if (sData.Cluster == "UNASSIGNED") continue;
 
-                clusterToScenes.GetOrCreate(sData.Cluster).Add(scene);
+                clusterToScenes.GetOrAddNew(sData.Cluster).Add(scene);
                 sceneToCluster[scene] = sData.Cluster;
             }
 
@@ -97,7 +105,7 @@ namespace DarknessRandomizer.Data
                     {
                         if (sceneToCluster.TryGetValue(aScene, out string aCluster) && aCluster != cluster)
                         { 
-                            clusterAdjacency.GetOrCreate(cluster).Add(aCluster);
+                            clusterAdjacency.GetOrAddNew(cluster).Add(aCluster);
                         }
                     }
                 }
@@ -161,8 +169,8 @@ namespace DarknessRandomizer.Data
                     }
 
                     // Can't set a Darker edge if the other cluster can't be dark.
-                    if ((rd == RelativeDarkness.Darker && aData.MaximumDarkness(SD) < Darkness.Dark)
-                        || (rd == RelativeDarkness.Brighter && cData.MaximumDarkness(SD) < Darkness.Dark))
+                    if ((rd == RelativeDarkness.Darker && aData.MaximumDarkness(s => SD[s]) < Darkness.Dark)
+                        || (rd == RelativeDarkness.Brighter && cData.MaximumDarkness(s => SD[s]) < Darkness.Dark))
                     {
                         exceptions.Add($"Darkness edge between {cluster} and {aCluster} cannot be satisfied");
                     }
@@ -173,7 +181,7 @@ namespace DarknessRandomizer.Data
                 bool? origCursed = cData.CursedOnly;
                 cData.OverrideCannotBeDarknessSource = null;
                 cData.CursedOnly = null;
-                if (!cData.CanBeDarknessSource(SD))
+                if (!cData.CanBeDarknessSource(s => SD[s]))
                 {
                     origOverride = null;
                 }
@@ -181,7 +189,7 @@ namespace DarknessRandomizer.Data
                 {
                     origOverride ??= false;
                 }
-                if (cData.MaximumDarkness(SD) < Darkness.Dark)
+                if (cData.MaximumDarkness(s => SD[s]) < Darkness.Dark)
                 {
                     origCursed = null;
                 }
@@ -193,7 +201,7 @@ namespace DarknessRandomizer.Data
                 cData.CursedOnly = origCursed;
 
                 // Handle darkness settings.
-                if (cData.MaximumDarkness(SD) < Darkness.Dark)
+                if (cData.MaximumDarkness(s => SD[s]) < Darkness.Dark)
                 {
                     cData.DarkSettings = null;
                 }
@@ -201,7 +209,7 @@ namespace DarknessRandomizer.Data
                 {
                     cData.DarkSettings ??= new();
                 }
-                if (cData.MaximumDarkness(SD) < Darkness.SemiDark || cData.MinimumDarkness(SD) > Darkness.SemiDark)
+                if (cData.MaximumDarkness(s => SD[s]) < Darkness.SemiDark || cData.MinimumDarkness(s => SD[s]) > Darkness.SemiDark)
                 {
                     cData.SemiDarkSettings = null;
                 }

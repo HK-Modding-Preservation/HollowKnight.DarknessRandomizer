@@ -22,19 +22,6 @@ namespace DarknessRandomizer.Rando
         [JsonConstructorAttribute]
         DarknessVariableResolver() { }
 
-        private static IEnumerable<int> ToSceneIds(string csv)
-        {
-            List<int> ret = new();
-            foreach (var scene in csv.Split(','))
-            {
-                if (SceneName.TryGetSceneName(scene, out SceneName sceneName))
-                {
-                    ret.Add(sceneName.Id);
-                }
-            }
-            return ret;
-        }
-
         public static bool TryGetDarkness(SceneName sceneName, out Darkness darkness)
         {
             if (RandoInterop.LS != null)

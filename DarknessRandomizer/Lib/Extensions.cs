@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DarknessRandomizer.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,7 @@ namespace DarknessRandomizer.Lib
             }
         }
 
-        public static V GetOrCreate<K,V>(this IDictionary<K, V> dict, K key) where V : new()
+        public static V GetOrAddNew<K,V>(this IDictionary<K, V> dict, K key) where V : new()
         {
             if (dict.TryGetValue(key, out V value))
             {
@@ -28,21 +29,14 @@ namespace DarknessRandomizer.Lib
             return (dict[key] = new());
         }
 
-        public static RelativeDarkness Opposite(this RelativeDarkness rd)
+        public static V GetOrDefault<K,V>(this IDictionary<K, V> dict, K key, Supplier<V> creator)
         {
-            switch (rd)
+            if (dict.TryGetValue(key, out V value))
             {
-                case RelativeDarkness.Any:
-                    return RelativeDarkness.Any;
-                case RelativeDarkness.Brighter:
-                    return RelativeDarkness.Darker;
-                case RelativeDarkness.Darker:
-                    return RelativeDarkness.Brighter;
-                case RelativeDarkness.Unspecified:
-                    return RelativeDarkness.Unspecified;
-                default:
-                    throw new ArgumentException($"Unknown RelativeDarkness {rd}");
+                return value;
             }
+
+            return creator.Invoke();
         }
     }
 }

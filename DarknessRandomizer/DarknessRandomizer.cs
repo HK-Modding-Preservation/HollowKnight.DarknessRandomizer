@@ -15,8 +15,6 @@ namespace DarknessRandomizer
 
         public bool ToggleButtonInsideMenu => throw new NotImplementedException();
 
-        public static readonly Graph Graph = Graph.Instance;
-
         public static new void Log(string msg) { ((Loggable)Instance).Log(msg); }
 
         public DarknessRandomizer() : base("DarknessRandomizer")
@@ -30,6 +28,10 @@ namespace DarknessRandomizer
             {
                 RandoInterop.Setup();
             }
+
+            SceneMetadata.Load();
+            Data.SceneData.Load();
+            ClusterData.Load();
         }
 
         public void OnLoadGlobal(GlobalSettings s) => GS = s ?? new();

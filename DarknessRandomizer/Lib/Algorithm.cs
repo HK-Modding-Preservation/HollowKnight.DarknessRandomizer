@@ -9,7 +9,7 @@ namespace DarknessRandomizer.Lib
 {
     public record AlgorithmStats
     {
-        public Dictionary<LegacyCluster, Darkness> ClusterSelections;
+        public ClusterDictionary<Darkness> ClusterDarkness;
         public int DarknessSpent;
         public int DarknessRemaining;
     }
@@ -18,19 +18,17 @@ namespace DarknessRandomizer.Lib
     {
         private readonly Random r;
         private readonly DarknessRandomizationSettings settings;
-        private readonly Graph g;
 
         private int darknessAvailable;
-        private readonly Dictionary<LegacyCluster, Darkness> clusterDarkness;
-        private readonly WeightedHeap<LegacyCluster> darkCandidates;
-        private readonly HashSet<LegacyCluster> semiDarkCandidates;
-        private readonly HashSet<LegacyCluster> forbiddenClusters;
+        private readonly ClusterDictionary<Darkness> clusterDarkness;
+        private readonly WeightedHeap<ClusterName> darkCandidates;
+        private readonly HashSet<ClusterName> semiDarkCandidates;
+        private readonly HashSet<ClusterName> forbiddenClusters;
 
-        public Algorithm(int seed, StartDef startDef, DarknessRandomizationSettings settings, Graph g)
+        public Algorithm(int seed, StartDef startDef, DarknessRandomizationSettings settings)
         {
             this.r = new(seed);
             this.settings = settings;
-            this.g = g;
 
             this.darknessAvailable = 1000;  // FIXME; based on settings
             this.clusterDarkness = new();
@@ -44,29 +42,27 @@ namespace DarknessRandomizer.Lib
             }
             
             // Always include the local cluster, even in TRANDO.
-            if (SceneName.TryGetSceneName(startDef.SceneName, out SceneName sceneName) && g.TryGetCluster(sceneName, out LegacyCluster cluster))
+            if (SceneName.TryGetSceneName(startDef.SceneName, out SceneName sceneName))
             {
-                this.forbiddenClusters.Add(cluster);
+                this.forbiddenClusters.Add(Data.SceneData.Get(sceneName).Cluster);
             }
         }
 
-        public void SelectDarknessLevels(out DarknessDictionary darknessOverrides, out AlgorithmStats stats)
+        public void SelectDarknessLevels(out SceneDictionary<Darkness> darknessOverrides, out AlgorithmStats stats)
         {
             // Phase 0: Everything starts as bright.
-            foreach (var c in g.Clusters.Keys)
+            foreach (var c in ClusterName.All())
             {
                 clusterDarkness[c] = Darkness.Bright;
             }
 
             // Phase 1: Select source nodes until we run out of darkness.
-            foreach (var e in g.Clusters)
+            foreach (var c in ClusterName.All())
             {
-                var cluster = e.Key;
-                var data = e.Value;
-
-                if (!forbiddenClusters.Contains(cluster))
+                var cData = ClusterData.Get(c);
+                if (ClusterData.Get(c).CanBeDarknessSource(settings) && !forbiddenClusters.Contains(c))
                 {
-                    darkCandidates.Add(cluster, data.ProbabilityWeight);
+                    darkCandidates.Add(c, cData.ProbabilityWeight);
                 }
             }
             while (!darkCandidates.IsEmpty() && darknessAvailable > 0)
@@ -79,7 +75,7 @@ namespace DarknessRandomizer.Lib
             scs.Sort();
             foreach (var c in scs)
             {
-                if (r.Next(0, 100) < g.Clusters[c].SemiDarkProbabilty)
+                if (r.Next(0, 100) < ClusterData.Get(c).SemiDarkProbability)
                 {
                     clusterDarkness[c] = Darkness.SemiDark;
                 }
@@ -87,30 +83,30 @@ namespace DarknessRandomizer.Lib
 
             // Phase 3: Output the per-scene darkness levels.
             darknessOverrides = new();
-            foreach (var e in clusterDarkness)
+            foreach (var e in clusterDarkness.Enumerate())
             {
                 var cluster = e.Key;
                 var darkness = e.Value;
-                foreach (var e2 in g.Clusters[cluster].Scenes)
+                foreach (var scene in ClusterData.Get(cluster).SceneNames)
                 {
-                    darknessOverrides[e2.Key] = e2.Value.Clamp(darkness);
+                    darknessOverrides[scene] = Data.SceneData.Get(scene).ClampDarkness(darkness);
                 }
             }
 
             stats = new();
-            stats.ClusterSelections = new(clusterDarkness);
+            stats.ClusterDarkness = new(clusterDarkness);
             stats.DarknessSpent = 0;
             stats.DarknessRemaining = 0;
-            foreach (var e in stats.ClusterSelections)
+            foreach (var e in stats.ClusterDarkness.Enumerate())
             {
-                var cluster = g.Clusters[e.Key];
+                var cData = ClusterData.Get(e.Key);
                 if (e.Value == Darkness.Dark)
                 {
-                    stats.DarknessSpent += cluster.CostWeight;
+                    stats.DarknessSpent += cData.CostWeight;
                 }
-                else if (cluster.CanBeDark(settings) && !forbiddenClusters.Contains(e.Key))
+                else if (cData.MaximumDarkness(settings) == Darkness.Dark && !forbiddenClusters.Contains(e.Key))
                 {
-                    stats.DarknessRemaining += cluster.CostWeight;
+                    stats.DarknessRemaining += cData.CostWeight;
                 }
             }
         }
@@ -122,24 +118,27 @@ namespace DarknessRandomizer.Lib
             semiDarkCandidates.Remove(name);
 
             // This can go negative; fixing that would require pruning the heap of high cost clusters.
-            var cluster = g.Clusters[name];
-            darknessAvailable -= cluster.CostWeight;
+            var cData = ClusterData.Get(name);
+            darknessAvailable -= cData.CostWeight;
 
             // Add adjacent clusters if constraints are satisfied.
-            foreach (var nname in cluster.AdjacentClusters.Keys)
+            foreach (var e in cData.AdjacentClusters.Enumerate())
             {
+                var nname = e.Key;
+
                 if (clusterDarkness[nname] == Darkness.Dark || forbiddenClusters.Contains(name))
                 {
                     continue;
                 }
 
-                var ncluster = g.Clusters[nname];
-                if (ncluster.MaximumDarkness >= Darkness.SemiDark)
+                var ncluster = ClusterData.Get(nname);
+                Darkness maxDark = ncluster.MaximumDarkness(settings);
+                if (maxDark >= Darkness.SemiDark)
                 {
                     semiDarkCandidates.Add(nname);
-                    if (!darkCandidates.Contains(nname) && ncluster.CanBeDark(settings)
-                        && ncluster.AdjacentClusters.All(
-                            cr => cr.Value != RelativeDarkness.Darker || clusterDarkness[cr.Key] == Darkness.Dark))
+                    if (!darkCandidates.Contains(nname) && maxDark == Darkness.Dark
+                        && ncluster.AdjacentClusters.Enumerate().All(
+                            e => e.Value != RelativeDarkness.Darker || clusterDarkness[e.Key] == Darkness.Dark))
                     {
                         darkCandidates.Add(nname, ncluster.ProbabilityWeight);
                     }

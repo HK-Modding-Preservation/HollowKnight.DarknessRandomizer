@@ -10,7 +10,7 @@ namespace DarknessRandomizer.Rando
 {
     public class DarknessRandomizerModule : ItemChanger.Modules.Module
     {
-        public DarknessDictionary DarknessOverrides = new();
+        public SceneDictionary<Darkness> DarknessOverrides = new();
 
         [JsonIgnore]
         private readonly List<Action> UnloadHooks = new();
@@ -40,6 +40,14 @@ namespace DarknessRandomizer.Rando
             }
         }
 
+        private void EnableDisabledLanternObjects()
+        {
+            foreach (var obj in GameObject.FindObjectsOfType<DeactivateInDarknessWithoutLantern>())
+            {
+                obj.enabled = true;
+            }
+        }
+
         private void AdjustDarknessRelatedObjects(UnityEngine.SceneManagement.Scene scene)
         {
             if (!SceneName.TryGetSceneName(scene.name, out SceneName sceneName)
@@ -48,14 +56,18 @@ namespace DarknessRandomizer.Rando
                 darkness = Darkness.Bright;
             }
 
-            if (darkness == Darkness.Dark && !PlayerHasLantern())
+            bool dark = darkness == Darkness.Dark;
+            bool lantern = PlayerHasLantern();
+            if (dark && !lantern)
             {
                 DeleteHazardRespawnTriggers();
             }
+            if (!dark)
+            {
+                EnableDisabledLanternObjects();
+            }
 
             // FIXME: Scenes
-            if (darkness != Darkness.Dark) { }
-
             // FIXME: Custom respawners for bosses, arenas
         }
     }

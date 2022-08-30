@@ -1,3 +1,4 @@
+using DarknessRandomizer.Lib;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -5,14 +6,22 @@ using System.Collections.Generic;
 namespace DarknessRandomizer.Data
 {
     [JsonConverter(typeof(ClusterNameConverter))]
-    public class ClusterName
+    public class ClusterName : ITypedId
     {
+        private class FactoryImpl : ITypedIdFactory<ClusterName>
+        {
+            public int Count() => clustersById.Count;
+            public ClusterName FromId(int id) => ClusterName.FromId(id);
+        }
+
+        public static readonly ITypedIdFactory<ClusterName> Factory = new FactoryImpl();
+
         private static readonly Dictionary<string, ClusterName> clustersByName = new();
         private static readonly List<ClusterName> clustersById = new();
         private static int NextId = 0;
 
         public readonly string Name;
-        public readonly int Id;
+        private readonly int id;
 
         private ClusterName(string name)
         {
@@ -22,10 +31,12 @@ namespace DarknessRandomizer.Data
             }
 
             this.Name = name;
-            this.Id = NextId++;
+            this.id = NextId++;
             clustersByName.Add(name, this);
             clustersById.Add(this);
         }
+
+        public int Id() => id;
 
         public static bool TryGetClusterName(string s, out ClusterName cluster) => clustersByName.TryGetValue(s, out cluster);
 
@@ -35,15 +46,17 @@ namespace DarknessRandomizer.Data
 
         public override string ToString() => Name;
 
-        public static int NumSceneNames() => clustersById.Count;
+        public static int Count() => clustersById.Count;
+
+        public static IReadOnlyList<ClusterName> All() => clustersById;
 
         public override bool Equals(object obj)
         {
             return obj is ClusterName name &&
-                   Id == name.Id;
+                   id == name.id;
         }
 
-        public override int GetHashCode() => Id;
+        public override int GetHashCode() => id;
 
         // @@@ INSERT_CLUSTER_NAMES START @@@
         public static readonly ClusterName AbyssBirthplace = new("AbyssBirthplace");
@@ -65,6 +78,7 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName CliffsBaldurShell = new("CliffsBaldurShell");
         public static readonly ClusterName CliffsJonis = new("CliffsJonis");
         public static readonly ClusterName CliffsMain = new("CliffsMain");
+        public static readonly ClusterName CrossraodsPeaksBridge = new("CrossraodsPeaksBridge");
         public static readonly ClusterName CrossroadsAncestralMound = new("CrossroadsAncestralMound");
         public static readonly ClusterName CrossroadsCanyonBridge = new("CrossroadsCanyonBridge");
         public static readonly ClusterName CrossroadsCentralPass = new("CrossroadsCentralPass");
@@ -91,6 +105,26 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName CrossroadsTram = new("CrossroadsTram");
         public static readonly ClusterName CrossroadsVesselFragment = new("CrossroadsVesselFragment");
         public static readonly ClusterName CrossroadsWest = new("CrossroadsWest");
+        public static readonly ClusterName CrystalPeaksCrown = new("CrystalPeaksCrown");
+        public static readonly ClusterName CrystalPeaksCrownGrub = new("CrystalPeaksCrownGrub");
+        public static readonly ClusterName CrystalPeaksCrushersGrub = new("CrystalPeaksCrushersGrub");
+        public static readonly ClusterName CrystalPeaksCrystalHeart = new("CrystalPeaksCrystalHeart");
+        public static readonly ClusterName CrystalPeaksCrystallizedMound = new("CrystalPeaksCrystallizedMound");
+        public static readonly ClusterName CrystalPeaksDarkRoom = new("CrystalPeaksDarkRoom");
+        public static readonly ClusterName CrystalPeaksDeepFocus = new("CrystalPeaksDeepFocus");
+        public static readonly ClusterName CrystalPeaksElevatorRing = new("CrystalPeaksElevatorRing");
+        public static readonly ClusterName CrystalPeaksElevatorWing = new("CrystalPeaksElevatorWing");
+        public static readonly ClusterName CrystalPeaksEnragedGuardian = new("CrystalPeaksEnragedGuardian");
+        public static readonly ClusterName CrystalPeaksGuardian = new("CrystalPeaksGuardian");
+        public static readonly ClusterName CrystalPeaksLowerPass = new("CrystalPeaksLowerPass");
+        public static readonly ClusterName CrystalPeaksMiddleBridge = new("CrystalPeaksMiddleBridge");
+        public static readonly ClusterName CrystalPeaksMimic = new("CrystalPeaksMimic");
+        public static readonly ClusterName CrystalPeaksOutsideMound = new("CrystalPeaksOutsideMound");
+        public static readonly ClusterName CrystalPeaksRoot = new("CrystalPeaksRoot");
+        public static readonly ClusterName CrystalPeaksTallHub = new("CrystalPeaksTallHub");
+        public static readonly ClusterName CrystalPeaksToll = new("CrystalPeaksToll");
+        public static readonly ClusterName CrystalPeaksUpper = new("CrystalPeaksUpper");
+        public static readonly ClusterName CrystalPeaksWest = new("CrystalPeaksWest");
         public static readonly ClusterName DeepnestBeastsDen = new("DeepnestBeastsDen");
         public static readonly ClusterName DeepnestDark = new("DeepnestDark");
         public static readonly ClusterName DeepnestDescent = new("DeepnestDescent");
@@ -107,7 +141,10 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName DeepnestTramOutliers = new("DeepnestTramOutliers");
         public static readonly ClusterName DeepnestVillage = new("DeepnestVillage");
         public static readonly ClusterName DeepnestWeaversDen = new("DeepnestWeaversDen");
+        public static readonly ClusterName DirtmouthBretta = new("DirtmouthBretta");
         public static readonly ClusterName DirtmouthGPZ = new("DirtmouthGPZ");
+        public static readonly ClusterName DirtmouthGrimm = new("DirtmouthGrimm");
+        public static readonly ClusterName DirtmouthGrimmNKG = new("DirtmouthGrimmNKG");
         public static readonly ClusterName EdgeCampBench = new("EdgeCampBench");
         public static readonly ClusterName EdgeColoApproach = new("EdgeColoApproach");
         public static readonly ClusterName EdgeColoCorridor = new("EdgeColoCorridor");
@@ -177,11 +214,21 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName GreenpathUpperEast = new("GreenpathUpperEast");
         public static readonly ClusterName GreenpathUpperWest = new("GreenpathUpperWest");
         public static readonly ClusterName GreenpathWest = new("GreenpathWest");
+        public static readonly ClusterName GroundsBelowXero = new("GroundsBelowXero");
+        public static readonly ClusterName GroundsCatacombs = new("GroundsCatacombs");
         public static readonly ClusterName GroundsDreamNail = new("GroundsDreamNail");
+        public static readonly ClusterName GroundsDreamshield = new("GroundsDreamshield");
         public static readonly ClusterName GroundsGlade = new("GroundsGlade");
+        public static readonly ClusterName GroundsMain = new("GroundsMain");
+        public static readonly ClusterName GroundsOutsideDreamNail = new("GroundsOutsideDreamNail");
         public static readonly ClusterName GroundsSeer = new("GroundsSeer");
         public static readonly ClusterName GroundsShrineOfBelievers = new("GroundsShrineOfBelievers");
+        public static readonly ClusterName GroundsStag = new("GroundsStag");
         public static readonly ClusterName GroundsTram = new("GroundsTram");
+        public static readonly ClusterName GroundsXero = new("GroundsXero");
+        public static readonly ClusterName HiveEntrance = new("HiveEntrance");
+        public static readonly ClusterName HiveKnight = new("HiveKnight");
+        public static readonly ClusterName HiveMain = new("HiveMain");
         public static readonly ClusterName KingsPass = new("KingsPass");
         public static readonly ClusterName PalaceEntrance = new("PalaceEntrance");
         public static readonly ClusterName PalaceFinale = new("PalaceFinale");

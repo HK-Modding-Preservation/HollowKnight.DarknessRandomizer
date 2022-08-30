@@ -6,7 +6,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_02": {
     "Alias": "Basin_Broken_Bridge",
@@ -15,7 +15,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_03": {
     "Alias": "Basin_Tram",
@@ -24,7 +24,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_03_b": {
     "Alias": "Deepnest_Tram",
@@ -33,7 +33,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_03_c": {
     "Alias": "Edge_Tram",
@@ -42,7 +42,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_04": {
     "Alias": "Basin_Fountain",
@@ -51,7 +51,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_05": {
     "Alias": "Basin_Palace_Grounds",
@@ -60,7 +60,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_06_Core": {
     "Alias": "Abyss_Core",
@@ -69,7 +69,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_08": {
     "Alias": "Abyss_Lifeblood_Core",
@@ -78,7 +78,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_09": {
     "Alias": "Abyss_Lighthouse_Climb",
@@ -87,7 +87,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_10": {
     "Alias": "Abyss_Shade_Cloak",
@@ -96,7 +96,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_12": {
     "Alias": "Abyss_Shriek",
@@ -105,7 +105,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_15": {
     "Alias": "Abyss_Birthplace",
@@ -114,7 +114,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_16": {
     "Alias": "Abyss_Corridor_to_Lighthouse",
@@ -123,7 +123,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_17": {
     "Alias": "Basin_Cloth",
@@ -132,7 +132,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_18": {
     "Alias": "Basin_Corridor_to_Broken_Vessel",
@@ -141,7 +141,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_19": {
     "Alias": "Basin_Broken_Vessel_Grub",
@@ -150,7 +150,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_20": {
     "Alias": "Basin_Simple_Key",
@@ -159,7 +159,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_21": {
     "Alias": "Basin_Monarch_Wings",
@@ -168,7 +168,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_22": {
     "Alias": "Basin_Hidden_Station",
@@ -177,7 +177,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Abyss_Lighthouse_room": {
     "Alias": "Abyss_Lighthouse",
@@ -186,7 +186,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Cliffs_01": {
     "Alias": "Cliffs_Main",
@@ -195,7 +195,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Cliffs_02": {
     "Alias": "Cliffs_Gorb",
@@ -204,7 +204,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Cliffs_03": {
     "Alias": "Cliffs_Stag_Nest",
@@ -213,7 +213,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Cliffs_04": {
     "Alias": "Cliffs_Joni's_Dark",
@@ -222,7 +222,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Cliffs_05": {
     "Alias": "Cliffs_Joni's_Pickup",
@@ -231,7 +231,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Cliffs_06": {
     "Alias": "Cliffs_Grimm_Lantern",
@@ -240,7 +240,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_01": {
     "Alias": "Crossroads_Well",
@@ -249,7 +249,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_02": {
     "Alias": "Crossroads_Outside_Temple",
@@ -258,7 +258,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_03": {
     "Alias": "Crossroads_Outside_Stag",
@@ -267,7 +267,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_04": {
     "Alias": "Crossroads_Gruz_Mother",
@@ -276,7 +276,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_05": {
     "Alias": "Crossroads_Central_Grub",
@@ -285,7 +285,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_06": {
     "Alias": "Crossroads_Outside_Mound",
@@ -294,7 +294,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_07": {
     "Alias": "Crossroads_Gruzzer",
@@ -303,7 +303,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_08": {
     "Alias": "Crossroads_Aspid_Arena",
@@ -312,7 +312,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_09": {
     "Alias": "Crossroads_Mawlek_Boss",
@@ -321,7 +321,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_10": {
     "Alias": "Crossroads_False_Knight_Arena",
@@ -330,7 +330,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_11_alt": {
     "Alias": "Crossroads_Greenpath_Entrance",
@@ -339,7 +339,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_12": {
     "Alias": "Crossroads_Corridor_to_Acid_Grub",
@@ -348,7 +348,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_13": {
     "Alias": "Crossroads_Goam_Mask_Shard",
@@ -357,7 +357,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_14": {
     "Alias": "Crossroads_Outside_Myla",
@@ -366,7 +366,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_15": {
     "Alias": "Crossroads_Corridor_to_Tram",
@@ -375,7 +375,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_16": {
     "Alias": "Crossroads_Above_Lever",
@@ -384,7 +384,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_18": {
     "Alias": "Crossroads_Fungal_Entrance",
@@ -393,7 +393,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_19": {
     "Alias": "Crossroads_Before_Gruz_Mother",
@@ -402,7 +402,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_21": {
     "Alias": "Crossroads_Outside_False_Knight",
@@ -411,7 +411,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_22": {
     "Alias": "Crossroads_Glowing_Womb_Arena",
@@ -420,7 +420,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_25": {
     "Alias": "Crossroads_Mawlek_Entrance",
@@ -429,7 +429,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_27": {
     "Alias": "Crossroads_Outside_Tram",
@@ -438,7 +438,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_30": {
     "Alias": "Crossroads_Hot_Spring",
@@ -447,7 +447,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_31": {
     "Alias": "Crossroads_Spike_Grub",
@@ -456,7 +456,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_33": {
     "Alias": "Crossroads_Cornifer",
@@ -465,7 +465,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_35": {
     "Alias": "Crossroads_Acid_Grub",
@@ -474,7 +474,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_36": {
     "Alias": "Crossroads_Mawlek_Middle",
@@ -483,7 +483,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_37": {
     "Alias": "Crossroads_Vessel_Fragment",
@@ -492,7 +492,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_38": {
     "Alias": "Crossroads_Grubfather",
@@ -501,7 +501,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_39": {
     "Alias": "Crossroads_Corridor_Right_of_Temple",
@@ -510,7 +510,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_40": {
     "Alias": "Crossroads_Corridor_Right_of_Central_Grub",
@@ -519,7 +519,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_42": {
     "Alias": "Crossroads_Right_Of_Mask_Shard",
@@ -528,7 +528,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_43": {
     "Alias": "Crossroads_Corridor_to_Elevator",
@@ -537,7 +537,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_45": {
     "Alias": "Crossroads_Myla",
@@ -546,7 +546,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_46": {
     "Alias": "Crossroads_Tram",
@@ -555,7 +555,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_46b": {
     "Alias": "Grounds_Tram",
@@ -564,7 +564,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_47": {
     "Alias": "Crossroads_Stag",
@@ -573,7 +573,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_48": {
     "Alias": "Crossroads_Guarded_Grub",
@@ -582,7 +582,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_49": {
     "Alias": "Crossroads_Elevator",
@@ -591,7 +591,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_49b": {
     "Alias": "City_Left_Elevator",
@@ -600,7 +600,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_50": {
     "Alias": "Grounds_Blue_Lake",
@@ -609,7 +609,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_52": {
     "Alias": "Crossroads_Goam_Journal",
@@ -618,7 +618,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Crossroads_ShamanTemple": {
     "Alias": "Crossroads_Ancestral_Mound",
@@ -627,7 +627,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_01": {
     "Alias": "Fungal_Deepnest_Fall",
@@ -636,7 +636,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_01b": {
     "Alias": "Deepnest_Upper_Cornifer",
@@ -645,7 +645,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_02": {
     "Alias": "Deepnest_Outside_Mimics",
@@ -654,7 +654,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_03": {
     "Alias": "Deepnest_Left_Of_Hot_Spring",
@@ -663,7 +663,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_09": {
     "Alias": "Deepnest_Distant_Village_Stag",
@@ -672,7 +672,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_10": {
     "Alias": "Deepnest_Distant_Village",
@@ -681,7 +681,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_14": {
     "Alias": "Deepnest_Failed_Tramway_Bench",
@@ -690,7 +690,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_16": {
     "Alias": "Deepnest_After_Lower_Cornifer",
@@ -699,7 +699,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_17": {
     "Alias": "Deepnest_Garpede_Corridor_Below_Cornifer",
@@ -708,7 +708,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_26": {
     "Alias": "Deepnest_Failed_Tramway_Lifeblood",
@@ -717,7 +717,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_26b": {
     "Alias": "Deepnest_Tram_Pass",
@@ -726,7 +726,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_30": {
     "Alias": "Deepnest_Hot_Spring",
@@ -735,7 +735,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_31": {
     "Alias": "Deepnest_Nosk_Corridor",
@@ -744,7 +744,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_32": {
     "Alias": "Deepnest_Nosk_Arena",
@@ -753,7 +753,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_33": {
     "Alias": "Deepnest_Zote_Arena",
@@ -762,7 +762,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_34": {
     "Alias": "Deepnest_First_Devout",
@@ -771,7 +771,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_35": {
     "Alias": "Deepnest_Outside_Galien",
@@ -780,7 +780,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_36": {
     "Alias": "Deepnest_Mimics",
@@ -789,7 +789,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_37": {
     "Alias": "Deepnest_Corridor_to_Tram",
@@ -798,7 +798,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_38": {
     "Alias": "Deepnest_Vessel_Fragment",
@@ -807,7 +807,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_39": {
     "Alias": "Deepnest_Whispering_Root",
@@ -816,7 +816,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_40": {
     "Alias": "Deepnest_Galien_Arena",
@@ -825,7 +825,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_41": {
     "Alias": "Deepnest_Midwife",
@@ -834,7 +834,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_42": {
     "Alias": "Deepnest_Outside_Mask_Maker",
@@ -843,7 +843,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_43": {
     "Alias": "Gardens_Corridor_To_Deepnest",
@@ -852,7 +852,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_44": {
     "Alias": "Deepnest_Sharp_Shadow",
@@ -861,7 +861,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_45_v02": {
     "Alias": "Deepnest_Weaver's_Den",
@@ -870,7 +870,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_01": {
     "Alias": "Edge_Left_Of_Hive",
@@ -879,7 +879,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_02": {
     "Alias": "Edge_Above_Hive",
@@ -888,7 +888,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_03": {
     "Alias": "Edge_Entrance",
@@ -897,7 +897,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_04": {
     "Alias": "Edge_Bardoon",
@@ -906,7 +906,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_06": {
     "Alias": "Edge_Outside_Oro",
@@ -915,7 +915,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_07": {
     "Alias": "Edge_Whispering_Root",
@@ -924,7 +924,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_08": {
     "Alias": "Edge_Great_Hopper_Idol",
@@ -933,7 +933,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_09": {
     "Alias": "Edge_Corridor_Outside_Colosseum",
@@ -942,7 +942,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_10": {
     "Alias": "Edge_Markoth_Arena",
@@ -951,7 +951,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_11": {
     "Alias": "Edge_Below_Camp_Bench",
@@ -960,7 +960,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_12": {
     "Alias": "Edge_Hornet_Sentinel_Corridor",
@@ -969,7 +969,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_13": {
     "Alias": "Edge_Camp_Bench",
@@ -978,7 +978,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_14": {
     "Alias": "Edge_Below_Oro",
@@ -987,7 +987,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_14b": {
     "Alias": "Edge_Quick_Slash",
@@ -996,7 +996,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_15": {
     "Alias": "Edge_Lifeblood",
@@ -1005,7 +1005,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_16": {
     "Alias": "Edge_Oro_Scarecrow",
@@ -1014,7 +1014,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_17": {
     "Alias": "Edge_420_Geo_Rock",
@@ -1023,7 +1023,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_18": {
     "Alias": "Edge_Outside_Markoth",
@@ -1032,7 +1032,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_East_Hornet": {
     "Alias": "Edge_Hornet_Sentinel_Arena",
@@ -1041,7 +1041,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Deepnest_Spider_Town": {
     "Alias": "Deepnest_Beast's_Den",
@@ -1050,7 +1050,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Dream_01_False_Knight": {
     "Alias": "Dream_Failed_Champion",
@@ -1059,7 +1059,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Dream_02_Mage_Lord": {
     "Alias": "Dream_Soul_Tyrant",
@@ -1068,7 +1068,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Dream_03_Infected_Knight": {
     "Alias": "Dream_Lost_Kin",
@@ -1077,7 +1077,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Dream_04_White_Defender": {
     "Alias": "Dream_White_Defender",
@@ -1086,7 +1086,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Dream_Abyss": {
     "Alias": "Dream_Abyss",
@@ -1095,7 +1095,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Dream_Backer_Shrine": {
     "Alias": "Dream_Outside_Shrine",
@@ -1104,7 +1104,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Dream_Final": {
     "Alias": "Egg_Radiance",
@@ -1113,7 +1113,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Dream_Guardian_Hegemol": {
     "Alias": "Dream_Herrah",
@@ -1122,7 +1122,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Dream_Guardian_Lurien": {
     "Alias": "Dream_Lurien",
@@ -1131,7 +1131,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Dream_Guardian_Monomon": {
     "Alias": "Dream_Monomon",
@@ -1140,7 +1140,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Dream_Mighty_Zote": {
     "Alias": "Dream_Grey_Prince_Zote",
@@ -1149,7 +1149,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Dream_Nailcollection": {
     "Alias": "Dream_Nail",
@@ -1158,7 +1158,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Dream_Room_Believer_Shrine": {
     "Alias": "Dream_Shrine_of_Believers",
@@ -1167,7 +1167,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_01": {
     "Alias": "Greenpath_Entrance",
@@ -1176,7 +1176,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_01b": {
     "Alias": "Greenpath_Waterfall_Bench",
@@ -1185,7 +1185,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_02": {
     "Alias": "Greenpath_First_Hornet_Sighting",
@@ -1194,7 +1194,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_03": {
     "Alias": "Greenpath_Storerooms",
@@ -1203,7 +1203,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_04": {
     "Alias": "Greenpath_Hornet",
@@ -1212,7 +1212,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_05": {
     "Alias": "Greenpath_Outside_Thorns",
@@ -1221,7 +1221,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_06": {
     "Alias": "Greenpath_Cornifer",
@@ -1230,7 +1230,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_07": {
     "Alias": "Greenpath_Outside_Hunter",
@@ -1239,7 +1239,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_08": {
     "Alias": "Greenpath_Hunter",
@@ -1248,7 +1248,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_09": {
     "Alias": "Greenpath_Sheo_Gauntlet",
@@ -1257,7 +1257,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_10": {
     "Alias": "Greenpath_Acid_Bridge",
@@ -1266,7 +1266,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_11": {
     "Alias": "Greenpath_Above_Fog_Canyon",
@@ -1275,7 +1275,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_12": {
     "Alias": "Greenpath_MMC_Corridor",
@@ -1284,7 +1284,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_13": {
     "Alias": "Greenpath_Whispering_Root",
@@ -1293,7 +1293,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_14": {
     "Alias": "Greenpath_Thorns_of_Agony",
@@ -1302,7 +1302,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_15": {
     "Alias": "Greenpath_Outside_Sheo",
@@ -1311,7 +1311,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_16_alt": {
     "Alias": "Greenpath_Stag",
@@ -1320,7 +1320,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_17": {
     "Alias": "Greenpath_Charger_Corridor",
@@ -1329,7 +1329,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_19": {
     "Alias": "Greenpath_Above_Sanctuary_Bench",
@@ -1338,7 +1338,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_20_v02": {
     "Alias": "Greenpath_Vengefly_King",
@@ -1347,7 +1347,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_21": {
     "Alias": "Greenpath_Outside_Hornet",
@@ -1356,7 +1356,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_22": {
     "Alias": "Greenpath_Outside_Stag",
@@ -1365,7 +1365,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_23": {
     "Alias": "Gardens_First_Loodle_Corridor",
@@ -1374,7 +1374,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_24": {
     "Alias": "Gardens_Cornifer",
@@ -1383,7 +1383,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_25": {
     "Alias": "Greenpath_Corridor_to_Unn",
@@ -1392,7 +1392,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_26": {
     "Alias": "Greenpath_Lake_Of_Unn",
@@ -1401,7 +1401,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_28": {
     "Alias": "Cliffs_Baldur's_Shell",
@@ -1410,7 +1410,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_29": {
     "Alias": "Greenpath_Massive_Moss_Charger",
@@ -1419,7 +1419,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_30": {
     "Alias": "Greenpath_Below_Toll_Bench",
@@ -1428,7 +1428,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_31": {
     "Alias": "Greenpath_Toll",
@@ -1437,7 +1437,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_32": {
     "Alias": "Greenpath_Moss_Knight_Arena",
@@ -1446,7 +1446,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_34": {
     "Alias": "Greenpath_Stone_Sanctuary_Entrance",
@@ -1455,7 +1455,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_35": {
     "Alias": "Greenpath_Stone_Sanctuary",
@@ -1464,7 +1464,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": true,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_36": {
     "Alias": "Greenpath_Stone_Sanctuary_Mask_Shard",
@@ -1473,7 +1473,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_37": {
     "Alias": "Greenpath_Sanctuary_Bench",
@@ -1482,7 +1482,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus1_Slug": {
     "Alias": "Greenpath_Unn",
@@ -1491,7 +1491,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_01": {
     "Alias": "Fungal_Queen's_Station",
@@ -1500,7 +1500,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_02": {
     "Alias": "Fungal_Queen's_Stag",
@@ -1509,7 +1509,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_03": {
     "Alias": "Fungal_Outside_Queen's",
@@ -1518,7 +1518,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_04": {
     "Alias": "Fungal_Below_Ogres",
@@ -1527,7 +1527,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_05": {
     "Alias": "Fungal_Shrumal_Ogres",
@@ -1536,7 +1536,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_06": {
     "Alias": "Fungal_Outside_Leg_Eater",
@@ -1545,7 +1545,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_07": {
     "Alias": "Fungal_Shrumal_Warrior_Acid_Bridge",
@@ -1554,7 +1554,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_08": {
     "Alias": "Fungal_Outside_Elder_Hu",
@@ -1563,7 +1563,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_09": {
     "Alias": "Fungal_Cloth_Corridor",
@@ -1572,7 +1572,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_10": {
     "Alias": "Fungal_Left_Of_Pilgrim's_Way",
@@ -1581,7 +1581,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_11": {
     "Alias": "Fungal_Epogo",
@@ -1590,7 +1590,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_12": {
     "Alias": "Fungal_Mantis_Corridor",
@@ -1599,7 +1599,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_13": {
     "Alias": "Fungal_Bretta_Bench",
@@ -1608,7 +1608,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_14": {
     "Alias": "Fungal_Mantis_Village",
@@ -1617,7 +1617,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_15": {
     "Alias": "Fungal_Mantis_Lords",
@@ -1626,7 +1626,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_17": {
     "Alias": "Fungal_Above_Mantis_Village",
@@ -1635,7 +1635,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_18": {
     "Alias": "Fungal_Cornifer",
@@ -1644,7 +1644,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_19": {
     "Alias": "Fungal_Right_Of_Spore_Shroom",
@@ -1653,7 +1653,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_20": {
     "Alias": "Fungal_Spore_Shroom",
@@ -1662,7 +1662,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_21": {
     "Alias": "Fungal_Pilgrim's_Way",
@@ -1671,7 +1671,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_23": {
     "Alias": "Fungal_Dashmaster",
@@ -1680,7 +1680,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_25": {
     "Alias": "Deepnest_Lower_Cornifer",
@@ -1689,7 +1689,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_26": {
     "Alias": "Fungal_Leg_Eater",
@@ -1698,7 +1698,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_28": {
     "Alias": "Fungal_Shrumal_Warrior_Loop",
@@ -1707,7 +1707,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_29": {
     "Alias": "Fungal_Core_Upper",
@@ -1716,7 +1716,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_30": {
     "Alias": "Fungal_Core_Lower",
@@ -1725,7 +1725,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_31": {
     "Alias": "Fungal_Mantis_Rewards",
@@ -1734,7 +1734,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_32": {
     "Alias": "Fungal_Elder_Hu",
@@ -1743,7 +1743,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_33": {
     "Alias": "Fungal_Leg_Eater_Root",
@@ -1752,7 +1752,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus2_34": {
     "Alias": "Fungal_Willoh",
@@ -1761,7 +1761,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_01": {
     "Alias": "Fog_Upper_West_Tall",
@@ -1770,7 +1770,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_02": {
     "Alias": "Fog_Lower_West_Tall",
@@ -1779,7 +1779,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_03": {
     "Alias": "Fog_Queen's_Gardens_Acid_Entrance",
@@ -1788,7 +1788,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_04": {
     "Alias": "Gardens_Before_Petra_Arena",
@@ -1797,7 +1797,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_05": {
     "Alias": "Gardens_Petra_Arena",
@@ -1806,7 +1806,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_08": {
     "Alias": "Gardens_Lower_Petra_Corridor",
@@ -1815,7 +1815,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_10": {
     "Alias": "Gardens_Main_Arena",
@@ -1824,7 +1824,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_11": {
     "Alias": "Gardens_Whispering_Root",
@@ -1833,7 +1833,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_13": {
     "Alias": "Gardens_Outside_Stag",
@@ -1842,7 +1842,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_21": {
     "Alias": "Gardens_Corridor_to_Traitor_Lord",
@@ -1851,7 +1851,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_22": {
     "Alias": "Gardens_Upper_Grub",
@@ -1860,7 +1860,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_23": {
     "Alias": "Gardens_Traitor_Lord_Arena",
@@ -1869,7 +1869,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_24": {
     "Alias": "Fog_Corridor_to_Overgrown_Mound",
@@ -1878,7 +1878,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_25": {
     "Alias": "Fog_Cornifer",
@@ -1887,7 +1887,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_25b": {
     "Alias": "Fog_Corridor_to_Cornifer",
@@ -1896,7 +1896,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_26": {
     "Alias": "Fog_East_Tall",
@@ -1905,7 +1905,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_27": {
     "Alias": "Fog_Corridor_to_Archives",
@@ -1914,7 +1914,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_28": {
     "Alias": "Fog_Charm_Notch",
@@ -1923,7 +1923,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_30": {
     "Alias": "Fog_Lifeblood",
@@ -1932,7 +1932,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_34": {
     "Alias": "Gardens_Entrance",
@@ -1941,7 +1941,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_35": {
     "Alias": "Fog_Millibelle",
@@ -1950,7 +1950,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_39": {
     "Alias": "Gardens_Moss_Prophet",
@@ -1959,7 +1959,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_40": {
     "Alias": "Gardens_Gardens_Stag",
@@ -1968,7 +1968,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_44": {
     "Alias": "Fog_Overgrown_Mound_Entrance",
@@ -1977,7 +1977,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_47": {
     "Alias": "Fog_Archives_Entrance",
@@ -1986,7 +1986,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_48": {
     "Alias": "Gardens_Outside_White_Lady",
@@ -1995,7 +1995,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_49": {
     "Alias": "Gardens_Traitor's_Child's_Grave",
@@ -2004,7 +2004,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_50": {
     "Alias": "Gardens_Toll_Bench",
@@ -2013,7 +2013,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_archive": {
     "Alias": "Fog_Archives_Bench",
@@ -2022,7 +2022,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Fungus3_archive_02": {
     "Alias": "Fog_Uumuu_Arena",
@@ -2031,7 +2031,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "GG_Lurker": {
     "Alias": "Edge_Pale_Lurker",
@@ -2040,7 +2040,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "GG_Mighty_Zote": {
     "Alias": "GPZ",
@@ -2049,7 +2049,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "GG_Pipeway": {
     "Alias": "Waterways_Flukemunga_Corridor",
@@ -2058,7 +2058,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "GG_Waterways": {
     "Alias": "Waterways_Junk_Pit",
@@ -2067,367 +2067,367 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Grimm_Main_Tent": {
     "Alias": "Grimm_Tent",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "DirtmouthGrimm",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Grimm_Nightmare": {
     "Alias": "Grimm_NKG",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "DirtmouthGrimmNKG",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Hive_01": {
     "Alias": "Hive_Entrance_And_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "HiveEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Hive_02": {
     "Alias": "Hive_Whispering_Root",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "HiveEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Hive_03": {
     "Alias": "Hive_Outside_Grub",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "HiveMain",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Hive_03_c": {
     "Alias": "Hive_Outside_Shortcut",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "HiveMain",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Hive_04": {
     "Alias": "Hive_Mask_Shard",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "HiveMain",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Hive_05": {
     "Alias": "Hive_Knight_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "HiveKnight",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_01": {
     "Alias": "Crystal_Dive_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrossraodsPeaksBridge",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_02": {
     "Alias": "Crystal_Main_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksLowerPass",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_03": {
     "Alias": "Crystal_Spike_Grub",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_04": {
     "Alias": "Crystal_Entrance_Conveyors",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksLowerPass",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_05": {
     "Alias": "Crystal_Above_Spike_Grub",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_06": {
     "Alias": "Crystal_Deep_Focus_Gauntlet",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksDeepFocus",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_07": {
     "Alias": "Crystal_Dark_Room",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
+    "Cluster": "CrystalPeaksDarkRoom",
+    "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_10": {
     "Alias": "Crystal_Elevator_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksElevatorWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_11": {
     "Alias": "Crystal_Left_Of_Guardian",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_13": {
     "Alias": "Crystal_Top_Corridor",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksUpper",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_16": {
     "Alias": "Crystal_Mimic",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksMimic",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_17": {
     "Alias": "Crystal_Corridor_to_Spike_Grub",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksMiddleBridge",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_18": {
     "Alias": "Crystal_Guardian_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksGuardian",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_19": {
     "Alias": "Crystal_Grub_Crushers",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksCrushersGrub",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_20": {
     "Alias": "Crystal_East_Tall",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksTallHub",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_23": {
     "Alias": "Crystal_Crown_Whispering_Root",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksRoot",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_24": {
     "Alias": "Crystal_Crown_Grub",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksCrownGrub",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_25": {
     "Alias": "Crystal_Crown_Climb",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksCrown",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_28": {
     "Alias": "Crystal_Outside_Mound",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksOutsideMound",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_29": {
     "Alias": "Crystal_Dark_Bench",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
+    "Cluster": "CrystalPeaksLowerPass",
+    "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_30": {
     "Alias": "Crystal_Cornifer",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksElevatorRing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_31": {
     "Alias": "Crystal_Crystal_Heart_Gauntlet",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksCrystalHeart",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_32": {
     "Alias": "Crystal_Enraged_Guardian_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksEnragedGuardian",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_33": {
     "Alias": "Crossroads_Peak_Dark_Toll",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
+    "Cluster": "CrystalPeaksToll",
+    "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_34": {
     "Alias": "Crystal_Crown_Peak",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksCrown",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_35": {
     "Alias": "Crystal_Mound",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksCrystallizedMound",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_36": {
     "Alias": "Crystal_Deep_Focus",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksDeepFocus",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Mines_37": {
     "Alias": "Crystal_Chest_Crushers",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrystalPeaksTallHub",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "RestingGrounds_02": {
     "Alias": "Grounds_Xero",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GroundsXero",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "RestingGrounds_04": {
     "Alias": "Grounds_Dream_Nail_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GroundsOutsideDreamNail",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "RestingGrounds_05": {
     "Alias": "Grounds_Whispering_Root",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GroundsMain",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "RestingGrounds_06": {
     "Alias": "Grounds_Corridor_Below_Xero",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GroundsBelowXero",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "RestingGrounds_07": {
     "Alias": "Grounds_Seer",
@@ -2436,7 +2436,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "RestingGrounds_08": {
     "Alias": "Grounds_Spirit's_Glade",
@@ -2445,70 +2445,52 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "RestingGrounds_09": {
     "Alias": "Grounds_Stag",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GroundsStag",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "RestingGrounds_10": {
     "Alias": "Grounds_Crypts",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GroundsCatacombs",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "RestingGrounds_12": {
-    "Alias": "Grounds_Outside_Grey_Mourner",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "RestingGrounds_17": {
     "Alias": "Grounds_Dreamshield",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GroundsDreamshield",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Bretta": {
     "Alias": "Bretta",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "DirtmouthBretta",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Bretta_Basement": {
     "Alias": "Bretta_Basement",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "DirtmouthBretta",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "Room_Charm_Shop": {
-    "Alias": "Salubra",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Colosseum_01": {
     "Alias": "Edge_Colo_Entrance",
@@ -2517,7 +2499,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Colosseum_02": {
     "Alias": "Edge_Colo_Bench",
@@ -2526,7 +2508,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Colosseum_Bronze": {
     "Alias": "Edge_Colo_1_Arena",
@@ -2535,7 +2517,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Colosseum_Gold": {
     "Alias": "Edge_Colo_3_Arena",
@@ -2544,7 +2526,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Colosseum_Silver": {
     "Alias": "Edge_Colo_2_Arena",
@@ -2553,7 +2535,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Colosseum_Spectate": {
     "Alias": "Edge_Colo_Spectate",
@@ -2562,7 +2544,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Final_Boss_Atrium": {
     "Alias": "Egg_Bench",
@@ -2571,7 +2553,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Final_Boss_Core": {
     "Alias": "Egg_Hollow_Knight",
@@ -2580,7 +2562,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Fungus_Shaman": {
     "Alias": "Fog_Overgrown_Mound",
@@ -2589,7 +2571,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_GG_Shortcut": {
     "Alias": "Waterways_Fluke_Hermit",
@@ -2598,52 +2580,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "Room_Jinn": {
-    "Alias": "Jinn",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "Room_Mansion": {
-    "Alias": "Grounds_Grey_Mourner",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "Room_mapper": {
-    "Alias": "Iselda",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "Room_Mask_Maker": {
-    "Alias": "Deepnest_Mask_Maker",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "Room_Mender_House": {
-    "Alias": "Crossroads_Menderbug",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_nailmaster": {
     "Alias": "Cliffs_Mato",
@@ -2652,7 +2589,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_nailmaster_02": {
     "Alias": "Greenpath_Sheo",
@@ -2661,7 +2598,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_nailmaster_03": {
     "Alias": "Edge_Oro",
@@ -2670,7 +2607,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_nailsmith": {
     "Alias": "City_Nailsmith",
@@ -2679,7 +2616,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Ouiji": {
     "Alias": "Jiji",
@@ -2688,7 +2625,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Queen": {
     "Alias": "Gardens_White_Lady",
@@ -2697,7 +2634,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_ruinhouse": {
     "Alias": "Crossroads_Rescue_Sly",
@@ -2706,7 +2643,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_shop": {
     "Alias": "Sly",
@@ -2715,7 +2652,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Slug_Shrine": {
     "Alias": "Greenpath_Unn_Bench",
@@ -2724,7 +2661,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Sly_Storeroom": {
     "Alias": "Sly_Basement",
@@ -2733,7 +2670,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_spider_small": {
     "Alias": "Deepnest_Brumm",
@@ -2742,7 +2679,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_temple": {
     "Alias": "Black_Egg_Temple",
@@ -2751,7 +2688,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Town_Stag_Station": {
     "Alias": "Dirtmouth_Stag",
@@ -2760,7 +2697,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Tram": {
     "Alias": "Lower_Tram",
@@ -2769,7 +2706,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Tram_RG": {
     "Alias": "Upper_Tram",
@@ -2778,7 +2715,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Room_Wyrm": {
     "Alias": "Edge_Cast-Off_Shell",
@@ -2787,7 +2724,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins_Bathhouse": {
     "Alias": "City_Pleasure_House_Bench",
@@ -2796,7 +2733,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins_Elevator": {
     "Alias": "City_Pleasure_House_Elevator",
@@ -2805,7 +2742,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins_House_01": {
     "Alias": "City_Guarded_Grub",
@@ -2814,7 +2751,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins_House_02": {
     "Alias": "City_Gorgeous_Husk",
@@ -2823,7 +2760,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins_House_03": {
     "Alias": "City_Emilitia",
@@ -2832,7 +2769,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_01": {
     "Alias": "City_Pilgrim's_Entrance",
@@ -2841,7 +2778,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_02": {
     "Alias": "City_Quirrel_Bench",
@@ -2850,7 +2787,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_03": {
     "Alias": "City_Rafters",
@@ -2859,7 +2796,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_04": {
     "Alias": "City_Outside_Nailsmith",
@@ -2868,7 +2805,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_05": {
     "Alias": "City_Grub_Above_Lemm",
@@ -2877,7 +2814,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_05b": {
     "Alias": "City_Lemm",
@@ -2886,7 +2823,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_05c": {
     "Alias": "City_Egg_Above_Lemm",
@@ -2895,7 +2832,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_06": {
     "Alias": "City_Corridor_to_Storerooms",
@@ -2904,7 +2841,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_09": {
     "Alias": "City_Soul_Twister_Arena",
@@ -2913,7 +2850,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_17": {
     "Alias": "City_Whispering_Root",
@@ -2922,7 +2859,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_18": {
     "Alias": "City_Corridor_to_Spire",
@@ -2931,7 +2868,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_23": {
     "Alias": "City_Sanctum_Entrance",
@@ -2940,7 +2877,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_24": {
     "Alias": "City_Soul_Master_Arena",
@@ -2949,7 +2886,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_25": {
     "Alias": "City_Sanctum_East_Elevators",
@@ -2958,7 +2895,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_27": {
     "Alias": "City_Hollow_Knight_Fountain",
@@ -2967,7 +2904,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_28": {
     "Alias": "City_Storerooms",
@@ -2976,7 +2913,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_29": {
     "Alias": "City_Storerooms_Stag",
@@ -2985,7 +2922,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_30": {
     "Alias": "City_Sanctum_Spell_Twister",
@@ -2994,7 +2931,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_31": {
     "Alias": "City_Toll_Bench",
@@ -3003,7 +2940,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_31b": {
     "Alias": "City_Shade_Soul_Arena",
@@ -3012,7 +2949,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins1_32": {
     "Alias": "City_Soul_Master_Rewards",
@@ -3021,7 +2958,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_01": {
     "Alias": "City_Spire_Great_Husk",
@@ -3030,7 +2967,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_01_b": {
     "Alias": "City_Spire_Base",
@@ -3039,7 +2976,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_03": {
     "Alias": "City_Spire_Watchers",
@@ -3048,7 +2985,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_03b": {
     "Alias": "City_Spire_Below_Watchers",
@@ -3057,7 +2994,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_04": {
     "Alias": "City_Right_Hub",
@@ -3066,7 +3003,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_05": {
     "Alias": "City_Above_King's",
@@ -3075,7 +3012,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_06": {
     "Alias": "City_King's_Station",
@@ -3084,7 +3021,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_07": {
     "Alias": "City_Grub_Below_King's",
@@ -3093,7 +3030,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_08": {
     "Alias": "City_King's_Stag",
@@ -3102,7 +3039,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_09": {
     "Alias": "City_King's_Vessel_Fragment",
@@ -3111,7 +3048,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_10": {
     "Alias": "Grounds_Elevator",
@@ -3120,7 +3057,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_10b": {
     "Alias": "City_Right_Elevator",
@@ -3129,7 +3066,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_11": {
     "Alias": "City_Collector_Arena",
@@ -3138,7 +3075,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_11_b": {
     "Alias": "City_Tower_of_Love",
@@ -3147,7 +3084,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Ruins2_Watcher_Room": {
     "Alias": "City_Lurien_Elevator",
@@ -3156,7 +3093,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Town": {
     "Alias": "Dirtmouth",
@@ -3165,7 +3102,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Tutorial_01": {
     "Alias": "King's_Pass",
@@ -3174,7 +3111,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_01": {
     "Alias": "Waterways_Entrance",
@@ -3183,7 +3120,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_02": {
     "Alias": "Waterways_Main_Bench",
@@ -3192,7 +3129,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_03": {
     "Alias": "Waterways_Tuk",
@@ -3201,7 +3138,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_04": {
     "Alias": "Waterways_Hidden_Grub",
@@ -3210,7 +3147,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_04b": {
     "Alias": "Waterways_Mask_Shard",
@@ -3219,7 +3156,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_05": {
     "Alias": "Waterways_Dung_Defender_Arena",
@@ -3228,7 +3165,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_06": {
     "Alias": "Waterways_Corridor_to_Broken_Elevator",
@@ -3237,7 +3174,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_07": {
     "Alias": "Waterways_Left_Of_Isma's_Grove",
@@ -3246,7 +3183,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_08": {
     "Alias": "Waterways_Outside_Flukemarm",
@@ -3255,7 +3192,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_09": {
     "Alias": "Waterways_Cornifer",
@@ -3264,7 +3201,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_12": {
     "Alias": "Waterways_Flukemarm_Arena",
@@ -3273,7 +3210,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_13": {
     "Alias": "Waterways_Isma's_Grove",
@@ -3282,7 +3219,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_14": {
     "Alias": "Waterways_Edge_Acid_Corridor",
@@ -3291,7 +3228,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "Waterways_15": {
     "Alias": "Waterways_Dung_Defender's_Cave",
@@ -3300,7 +3237,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_01": {
     "Alias": "Palace_Entrance",
@@ -3309,7 +3246,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_02": {
     "Alias": "Palace_First_Mold",
@@ -3318,7 +3255,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_03_hub": {
     "Alias": "Palace_Hub",
@@ -3327,7 +3264,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_04": {
     "Alias": "Palace_Left_Of_Hub",
@@ -3336,7 +3273,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_05": {
     "Alias": "Palace_Saw_Room",
@@ -3345,7 +3282,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_06": {
     "Alias": "Palace_Balcony",
@@ -3354,7 +3291,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_07": {
     "Alias": "Palace_Lamp_Pogo",
@@ -3363,7 +3300,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_08": {
     "Alias": "Palace_Workshop",
@@ -3372,7 +3309,7 @@
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_09": {
     "Alias": "Palace_Throne",
@@ -3381,7 +3318,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_11": {
     "Alias": "Palace_Outside",
@@ -3390,7 +3327,7 @@
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_12": {
     "Alias": "Palace_Spike_Drop",
@@ -3399,7 +3336,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_13": {
     "Alias": "Palace_Thorn_Jump",
@@ -3408,7 +3345,7 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_14": {
     "Alias": "Palace_Hell_Corridor",
@@ -3417,13 +3354,63 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
-    "ProficientSkips": null
+    "ProficientCombat": null
   },
   "White_Palace_15": {
     "Alias": "Palace_Caged_Lever",
     "Cluster": "PalaceWings",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
+    "IsVanillaDark": false,
+    "DifficultSkips": null,
+    "ProficientCombat": null
+  },
+  "White_Palace_16": {
+    "Alias": "Palace_Saw_Climb",
+    "Cluster": "PalaceWings",
+    "MinimumDarkness": "Bright",
+    "MaximumDarkness": "Dark",
+    "IsVanillaDark": false,
+    "DifficultSkips": null,
+    "ProficientCombat": null
+  },
+  "White_Palace_17": {
+    "Alias": "POP_Lever",
+    "Cluster": "PalacePOPEntrance",
+    "MinimumDarkness": "Bright",
+    "MaximumDarkness": "Dark",
+    "IsVanillaDark": false,
+    "DifficultSkips": null,
+    "ProficientCombat": null
+  },
+  "White_Palace_18": {
+    "Alias": "POP_Entrance",
+    "Cluster": "PalacePOPEntrance",
+    "MinimumDarkness": "Bright",
+    "MaximumDarkness": "Dark",
+    "IsVanillaDark": false,
+    "DifficultSkips": null,
+    "ProficientCombat": null
+  },
+  "White_Palace_19": {
+    "Alias": "POP_Vertical",
+    "Cluster": "PalacePOPFinal",
+    "MinimumDarkness": "Bright",
+    "MaximumDarkness": "Dark",
+    "IsVanillaDark": false,
+    "DifficultSkips": null,
+    "ProficientCombat": null
+  },
+  "White_Palace_20": {
+    "Alias": "POP_Final",
+    "Cluster": "PalacePOPFinal",
+    "MinimumDarkness": "Bright",
+    "MaximumDarkness": "Dark",
+    "IsVanillaDark": false,
+    "DifficultSkips": null,
+    "ProficientCombat": null
+  }
+}",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientSkips": null
