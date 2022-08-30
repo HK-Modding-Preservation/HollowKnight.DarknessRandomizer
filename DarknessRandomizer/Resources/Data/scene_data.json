@@ -1553,13 +1553,6 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
   },
-  "GG_Mighty_Zote": {
-    "Alias": "GPZ",
-    "Cluster": "DirtmouthGPZ",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false
-  },
   "GG_Pipeway": {
     "Alias": "Waterways_Flukemunga_Corridor",
     "Cluster": "WaterwaysOutsideFlukemarm",

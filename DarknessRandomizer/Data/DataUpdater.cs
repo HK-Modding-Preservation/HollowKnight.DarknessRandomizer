@@ -75,6 +75,10 @@ namespace DarknessRandomizer.Data
                 {
                     exceptions.Add($"Invalid darkness settings for scene {scene}");
                 }
+                if (sData.Cluster == null || sData.Alias == null)
+                {
+                    exceptions.Add($"Scene {scene} is missing fields");
+                }
             }
             MaybeThrowException(exceptions);
 
@@ -87,8 +91,8 @@ namespace DarknessRandomizer.Data
                 var sData = e.Value;
                 if (sData.Cluster == "UNASSIGNED") continue;
 
-                clusterToScenes.GetOrAddNew(sData.Cluster).Add(scene);
                 sceneToCluster[scene] = sData.Cluster;
+                clusterToScenes.GetOrAddNew(sData.Cluster).Add(scene);
             }
 
             // Determine cluster adjacency.

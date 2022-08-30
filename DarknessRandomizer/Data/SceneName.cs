@@ -291,7 +291,6 @@ namespace DarknessRandomizer.Data
         public static readonly SceneName FogArchivesBench = new("Fungus3_archive");
         public static readonly SceneName FogUumuuArena = new("Fungus3_archive_02");
         public static readonly SceneName EdgePaleLurker = new("GG_Lurker");
-        public static readonly SceneName GPZ = new("GG_Mighty_Zote");
         public static readonly SceneName WaterwaysFlukemungaCorridor = new("GG_Pipeway");
         public static readonly SceneName WaterwaysJunkPit = new("GG_Waterways");
         public static readonly SceneName GrimmTent = new("Grimm_Main_Tent");

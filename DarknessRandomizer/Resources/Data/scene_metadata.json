@@ -1842,11 +1842,6 @@
       "Room_Colosseum_Spectate"
     ]
   },
-  "GG_Mighty_Zote": {
-    "Alias": "GPZ",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
   "GG_Pipeway": {
     "Alias": "Waterways_Flukemunga_Corridor",
     "MapArea": "Royal Waterways",

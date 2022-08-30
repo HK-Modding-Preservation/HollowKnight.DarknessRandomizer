@@ -40,6 +40,7 @@ namespace DarknessRandomizer.Rando
 
             // These bosses are deemed difficult in the dark.
             { "Defeated_Any_Hollow_Knight", CustomDarkLogicEdit("SPICYCOMBATSKIPS") },
+            { "Defeated_Any_Nightmare_King", CustomDarkLogicEdit("FALSE") },
             { "Defeated_Any_Radiance", CustomDarkLogicEdit("FALSE") },
             { "Defeated_Broken_Vessel", CustomDarkLogicEdit("PROFICIENTCOMBAT") },
             { "Defeated_Brooding_Mawlek", CustomDarkLogicEdit("PROFICIENTCOMBAT") },

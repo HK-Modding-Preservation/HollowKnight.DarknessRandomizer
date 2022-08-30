@@ -96,7 +96,7 @@
   "BasinBrokenVesselWing": {
     "AdjacentClusters": {
       "BasinFountain": "Brighter",
-      "BasinLostKin": "Darker"
+      "BasinLostKin": "Brighter"
     },
     "SceneAliases": [
       "Basin_Broken_Vessel_Grub",
@@ -156,7 +156,7 @@
   },
   "BasinLostKin": {
     "AdjacentClusters": {
-      "BasinBrokenVesselWing": "Brighter"
+      "BasinBrokenVesselWing": "Darker"
     },
     "SceneAliases": [
       "Dream_Lost_Kin"
@@ -164,8 +164,8 @@
     "SceneNames": [
       "Dream_03_Infected_Knight"
     ],
-    "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": false,
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
       "CostWeight": 100
@@ -198,7 +198,7 @@
       "Room_Final_Boss_Core"
     ],
     "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": false,
+    "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
       "CostWeight": 100
@@ -215,7 +215,7 @@
       "Dream_Final"
     ],
     "OverrideCannotBeDarknessSource": false,
-    "CursedOnly": false,
+    "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
       "CostWeight": 100
@@ -315,7 +315,7 @@
       "Ruins2_11"
     ],
     "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": false,
+    "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
       "CostWeight": 100
@@ -594,7 +594,7 @@
       "Dream_02_Mage_Lord"
     ],
     "OverrideCannotBeDarknessSource": false,
-    "CursedOnly": false,
+    "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
       "CostWeight": 100
@@ -922,7 +922,7 @@
   },
   "CrossroadsFailedChampion": {
     "AdjacentClusters": {
-      "CrossroadsFalseKnight": "Brighter"
+      "CrossroadsFalseKnight": "Darker"
     },
     "SceneAliases": [
       "Dream_Failed_Champion"
@@ -930,7 +930,7 @@
     "SceneNames": [
       "Dream_01_False_Knight"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -939,7 +939,7 @@
   },
   "CrossroadsFalseKnight": {
     "AdjacentClusters": {
-      "CrossroadsFailedChampion": "Darker",
+      "CrossroadsFailedChampion": "Brighter",
       "CrossroadsOutsideMound": "Brighter",
       "CrossroadsStagHub": "Brighter"
     },
@@ -1992,15 +1992,13 @@
       "DirtmouthBretta": "Brighter"
     },
     "SceneAliases": [
-      "Dream_Grey_Prince_Zote",
-      "GPZ"
+      "Dream_Grey_Prince_Zote"
     ],
     "SceneNames": [
-      "Dream_Mighty_Zote",
-      "GG_Mighty_Zote"
+      "Dream_Mighty_Zote"
     ],
     "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": false,
+    "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
       "CostWeight": 100
@@ -2561,7 +2559,7 @@
       "FogCanyonRobber": "Brighter",
       "FogCanyonWestWing": "Unspecified",
       "FungalQueensStation": "Unspecified",
-      "GreenpathLowerHub": "Unspecified"
+      "GreenpathLowerHub": "Any"
     },
     "SceneAliases": [
       "Fog_Lower_West_Tall",
@@ -3065,8 +3063,8 @@
       "GardensMainArena": "Unspecified",
       "GardensPetraArena": "Unspecified",
       "GardensStag": "Unspecified",
-      "GardensTraitorsGrave": "Unspecified",
-      "GardensUpper": "Unspecified"
+      "GardensTraitorsGrave": "Any",
+      "GardensUpper": "Darker"
     },
     "SceneAliases": [
       "Gardens_Before_Petra_Arena",
@@ -3100,7 +3098,7 @@
   "GardensTraitorLord": {
     "AdjacentClusters": {
       "GardensFrogsWing": "Unspecified",
-      "GardensUpper": "Unspecified"
+      "GardensUpper": "Brighter"
     },
     "SceneAliases": [
       "Gardens_Traitor_Lord_Arena"
@@ -3108,8 +3106,8 @@
     "SceneNames": [
       "Fungus3_23"
     ],
-    "OverrideCannotBeDarknessSource": false,
-    "CursedOnly": false,
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
       "CostWeight": 100
@@ -3117,7 +3115,7 @@
   },
   "GardensTraitorsGrave": {
     "AdjacentClusters": {
-      "GardensStagHub": "Unspecified"
+      "GardensStagHub": "Any"
     },
     "SceneAliases": [
       "Gardens_Traitor's_Child's_Grave"
@@ -3134,9 +3132,9 @@
   },
   "GardensUpper": {
     "AdjacentClusters": {
-      "GardensStagHub": "Unspecified",
-      "GardensTraitorLord": "Unspecified",
-      "GreenpathMMC": "Unspecified"
+      "GardensStagHub": "Brighter",
+      "GardensTraitorLord": "Darker",
+      "GreenpathMMC": "Disconnected"
     },
     "SceneAliases": [
       "Gardens_Corridor_to_Traitor_Lord",
@@ -3146,7 +3144,7 @@
       "Fungus3_21",
       "Fungus3_22"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -3156,7 +3154,7 @@
   "GreenpathHornet": {
     "AdjacentClusters": {
       "GreenpathUnnBridge": "Brighter",
-      "GreenpathWest": "Unspecified"
+      "GreenpathWest": "Brighter"
     },
     "SceneAliases": [
       "Greenpath_Hornet"
@@ -3187,10 +3185,10 @@
   },
   "GreenpathLowerHub": {
     "AdjacentClusters": {
-      "FogCanyonWest": "Unspecified",
-      "GreenpathLowerPass": "Unspecified",
-      "GreenpathMMC": "Unspecified",
-      "GreenpathStoneSanctuaryApproach": "Unspecified",
+      "FogCanyonWest": "Any",
+      "GreenpathLowerPass": "Any",
+      "GreenpathMMC": "Darker",
+      "GreenpathStoneSanctuaryApproach": "Any",
       "GreenpathStoneSanctuaryBench": "Brighter"
     },
     "SceneAliases": [
@@ -3208,7 +3206,7 @@
   },
   "GreenpathLowerPass": {
     "AdjacentClusters": {
-      "GreenpathLowerHub": "Unspecified",
+      "GreenpathLowerHub": "Any",
       "GreenpathThorns": "Unspecified",
       "GreenpathUpperEast": "Unspecified",
       "GreenpathUpperWest": "Unspecified",
@@ -3233,8 +3231,8 @@
   },
   "GreenpathMMC": {
     "AdjacentClusters": {
-      "GardensUpper": "Unspecified",
-      "GreenpathLowerHub": "Unspecified"
+      "GardensUpper": "Disconnected",
+      "GreenpathLowerHub": "Brighter"
     },
     "SceneAliases": [
       "Greenpath_Massive_Moss_Charger",
@@ -3246,7 +3244,7 @@
       "Fungus1_13",
       "Fungus1_29"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -3309,7 +3307,7 @@
   },
   "GreenpathStoneSanctuaryApproach": {
     "AdjacentClusters": {
-      "GreenpathLowerHub": "Unspecified",
+      "GreenpathLowerHub": "Any",
       "GreenpathStoneSanctuary": "Unspecified"
     },
     "SceneAliases": [
@@ -3480,7 +3478,7 @@
   },
   "GreenpathWest": {
     "AdjacentClusters": {
-      "GreenpathHornet": "Unspecified",
+      "GreenpathHornet": "Darker",
       "GreenpathLowerPass": "Unspecified",
       "GreenpathSheo": "Unspecified",
       "GreenpathStag": "Brighter",
@@ -3717,7 +3715,7 @@
       "Hive_05"
     ],
     "OverrideCannotBeDarknessSource": false,
-    "CursedOnly": false,
+    "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
       "CostWeight": 100
