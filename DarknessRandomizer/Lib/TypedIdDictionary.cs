@@ -13,11 +13,15 @@ namespace DarknessRandomizer.Lib
         int Count();
 
         T FromId(int id);
+
+        T FromName(string name);
     }
 
     public interface ITypedId
     {
         int Id();
+
+        string Name();
     }
 
     // A custom wrapper around `Dictionary<Id, Value>` which doesn't serialize correctly when Id is a special type.
@@ -26,13 +30,25 @@ namespace DarknessRandomizer.Lib
         private readonly ITypedIdFactory<K> factory;
         private Dictionary<K, V> dict;
 
-        public List<KeyValuePair<K, V>> SerializableEntries
+        [JsonIgnore]
+        public SortedDictionary<string, V> AsSortedDict
         {
-            get { return Enumerate().OrderBy(e => e.Key.Id()).ToList(); }
+            get
+            {
+                SortedDictionary<string, V> ret = new();
+                foreach (var e in dict)
+                {
+                    ret[e.Key.Name()] = e.Value;
+                }
+                return ret;
+            }
             set
             {
                 Clear();
-                value.ForEach(e => dict[e.Key] = e.Value);
+                foreach (var e in value)
+                {
+                    dict[factory.FromName(e.Key)] = e.Value;
+                }
             }
         }
 
@@ -63,6 +79,21 @@ namespace DarknessRandomizer.Lib
         {
             get { return dict[k]; }
             set { dict[k] = value; }
+        }
+    }
+
+    public class TypedIdDictionaryConverter<K, V, T> : JsonConverter<T> where K : ITypedId where T : TypedIdDictionary<K, V>, new()
+    {
+        public override T ReadJson(JsonReader reader, Type objectType, T existingValue, bool hasExistingValue, JsonSerializer serializer)
+        {
+            T ret = new();
+            ret.AsSortedDict = serializer.Deserialize<SortedDictionary<string, V>>(reader);
+            return ret;
+        }
+
+        public override void WriteJson(JsonWriter writer, T value, JsonSerializer serializer)
+        {
+            serializer.Serialize(writer, value.AsSortedDict);
         }
     }
 }

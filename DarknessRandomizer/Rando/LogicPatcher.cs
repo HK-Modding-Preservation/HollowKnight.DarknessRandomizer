@@ -169,7 +169,7 @@ namespace DarknessRandomizer.Rando
 
             if (ret.Count == 1)
             {
-                sceneName = ret.GetEnumerator().Current;
+                sceneName = ret.Single();
                 return true;
             }
 

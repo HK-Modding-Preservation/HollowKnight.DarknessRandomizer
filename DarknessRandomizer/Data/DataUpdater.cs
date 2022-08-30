@@ -27,6 +27,7 @@ namespace DarknessRandomizer.Data
         public int NumSceneAdjacencies;
         public int NumDarknessSources;
         public int TotalSourceBudget;
+        public int TotalCursedSourceBudget;
         public int TotalDarknessBudget;
         public int TotalCursedDarknessBudget;
     }
@@ -290,8 +291,36 @@ namespace DarknessRandomizer.Data
                 var cluster = e.Key;
                 var cData = e.Value;
 
-                // TODO: Calculate stats
+                bool darkSource = cData.CanBeDarknessSource(s => SD[s]);
+                bool semiDark = cData.MaximumDarkness(s => SD[s]) == Darkness.SemiDark;
+                bool cursed = cData.CursedOnly ?? false;
+                int darkCost = cData.CostWeight;
+
+                ++DS.NumClusters;
+                DS.NumDarknessSources += darkSource ? 1 : 0;
+                DS.NumClusterAdjacencies += cData.AdjacentClusters.Count;
+                DS.NumCursedOnlyClusters += cursed ? 1 : 0;
+                DS.NumSemiDarkOnlyClusters += semiDark ? 1 : 0;
+                DS.TotalDarknessBudget += cursed ? 0 : darkCost;
+                DS.TotalCursedDarknessBudget += darkCost;
+                DS.TotalSourceBudget += darkSource ? (cursed ? 0 : darkCost) : 0;
+                DS.TotalCursedSourceBudget += darkSource ? darkCost : 0;
             }
+            foreach (var e in SD)
+            {
+                var scene = e.Key;
+                var sData = e.Value;
+                var cData = CD[sData.Cluster];
+
+                bool semiDark = sData.MaximumDarkness == Darkness.SemiDark;
+
+                ++DS.NumScenes;
+                DS.NumSceneAdjacencies += SM[scene].AdjacentScenes.Count;
+                DS.NumSemiDarkOnlyScenes += semiDark ? 1 : 0;
+                DS.NumCursedOnlyScenes += cData.CursedOnly ?? false ? 1 : 0;
+            }
+            DS.NumSceneAdjacencies /= 2;
+            DS.NumClusterAdjacencies /= 2;
             return DS;
         }
 

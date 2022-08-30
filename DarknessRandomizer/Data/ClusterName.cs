@@ -6,12 +6,13 @@ using System.Collections.Generic;
 namespace DarknessRandomizer.Data
 {
     [JsonConverter(typeof(ClusterNameConverter))]
-    public class ClusterName : ITypedId
+    public class ClusterName : ITypedId, IComparable<ClusterName>
     {
         private class FactoryImpl : ITypedIdFactory<ClusterName>
         {
             public int Count() => clustersById.Count;
             public ClusterName FromId(int id) => ClusterName.FromId(id);
+            public ClusterName FromName(string name) => ClusterName.FromName(name);
         }
 
         public static readonly ITypedIdFactory<ClusterName> Factory = new FactoryImpl();
@@ -20,7 +21,7 @@ namespace DarknessRandomizer.Data
         private static readonly List<ClusterName> clustersById = new();
         private static int NextId = 0;
 
-        public readonly string Name;
+        public readonly string name;
         private readonly int id;
 
         private ClusterName(string name)
@@ -30,7 +31,7 @@ namespace DarknessRandomizer.Data
                 throw new ArgumentException($"Duplicate cluster: {name}");
             }
 
-            this.Name = name;
+            this.name = name;
             this.id = NextId++;
             clustersByName.Add(name, this);
             clustersById.Add(this);
@@ -38,17 +39,30 @@ namespace DarknessRandomizer.Data
 
         public int Id() => id;
 
+        public string Name() => name;
+
         public static bool TryGetClusterName(string s, out ClusterName cluster) => clustersByName.TryGetValue(s, out cluster);
+
+        public static ClusterName FromName(string name)
+        {
+            if (!TryGetClusterName(name, out ClusterName cluster))
+            {
+                throw new ArgumentException($"Not a ClusterName: {name}");
+            }
+            return cluster;
+        }
 
         public static ClusterName FromId(int id) => clustersById[id];
 
         public static bool IsScene(string s) => clustersByName.ContainsKey(s);
 
-        public override string ToString() => Name;
+        public override string ToString() => name;
 
         public static int Count() => clustersById.Count;
 
         public static IReadOnlyList<ClusterName> All() => clustersById;
+
+        public int CompareTo(ClusterName other) => Math.Sign(id - other.id);
 
         public override bool Equals(object obj)
         {
@@ -286,6 +300,6 @@ namespace DarknessRandomizer.Data
             throw new JsonReaderException("Error decoding ClusterName");
         }
 
-        public override void WriteJson(JsonWriter writer, ClusterName value, JsonSerializer serializer) => serializer.Serialize(writer, value.Name);
+        public override void WriteJson(JsonWriter writer, ClusterName value, JsonSerializer serializer) => serializer.Serialize(writer, value.Name());
     }
 }

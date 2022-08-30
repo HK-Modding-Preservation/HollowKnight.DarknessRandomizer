@@ -44,6 +44,7 @@ namespace DarknessRandomizer.Lib
             // Always include the local cluster, even in TRANDO.
             if (SceneName.TryGetSceneName(startDef.SceneName, out SceneName sceneName))
             {
+                DarknessRandomizer.Log($"SceneName: {sceneName}");
                 this.forbiddenClusters.Add(Data.SceneData.Get(sceneName).Cluster);
             }
         }

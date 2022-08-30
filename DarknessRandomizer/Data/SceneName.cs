@@ -6,12 +6,13 @@ using System.Collections.Generic;
 namespace DarknessRandomizer.Data
 {
     [JsonConverter(typeof(SceneNameConverter))]
-    public class SceneName : ITypedId
+    public class SceneName : ITypedId, IComparable<SceneName>
     {
         private class FactoryImpl : ITypedIdFactory<SceneName>
         {
             public int Count() => scenesById.Count;
             public SceneName FromId(int id) => SceneName.FromId(id);
+            public SceneName FromName(string name) => SceneName.FromName(name);
         }
 
         public static readonly ITypedIdFactory<SceneName> Factory = new FactoryImpl();
@@ -20,7 +21,7 @@ namespace DarknessRandomizer.Data
         private static readonly List<SceneName> scenesById = new();
         private static int NextId = 0;
 
-        public readonly string Name;
+        private readonly string name;
         private readonly int id;
 
         private SceneName(string name)
@@ -30,7 +31,7 @@ namespace DarknessRandomizer.Data
                 throw new ArgumentException($"Duplicate scene name: {name}");
             }
 
-            this.Name = name;
+            this.name = name;
             this.id = NextId++;
             scenesByName.Add(name, this);
             scenesById.Add(this);
@@ -38,15 +39,28 @@ namespace DarknessRandomizer.Data
 
         public int Id() => id;
 
+        public string Name() => name;
+
         public static bool TryGetSceneName(string s, out SceneName sceneName) => scenesByName.TryGetValue(s, out sceneName);
+
+        public static SceneName FromName(string name)
+        {
+            if (!TryGetSceneName(name, out SceneName scene))
+            {
+                throw new ArgumentException($"Not a SceneName: {name}");
+            }
+            return scene;
+        }
 
         public static SceneName FromId(int id) => scenesById[id];
 
         public static bool IsScene(string s) => scenesByName.ContainsKey(s);
 
-        public override string ToString() => Name;
+        public override string ToString() => name;
 
         public static IReadOnlyList<SceneName> All() => scenesById;
+
+        public int CompareTo(SceneName other) => Math.Sign(id - other.id);
 
         public override bool Equals(object obj)
         {
@@ -457,6 +471,6 @@ namespace DarknessRandomizer.Data
             throw new JsonReaderException("Error decoding SceneName");
         }
 
-        public override void WriteJson(JsonWriter writer, SceneName value, JsonSerializer serializer) => serializer.Serialize(writer, value.Name);
+        public override void WriteJson(JsonWriter writer, SceneName value, JsonSerializer serializer) => serializer.Serialize(writer, value.Name());
     }
 }

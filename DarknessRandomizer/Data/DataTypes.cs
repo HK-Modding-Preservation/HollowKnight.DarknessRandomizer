@@ -1,5 +1,6 @@
 ﻿using DarknessRandomizer.Lib;
 using DarknessRandomizer.Rando;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,10 @@ namespace DarknessRandomizer.Data
 {
     public class SceneMetadata : BaseSceneMetadata<SceneName>
     {
-        private static readonly SceneDictionary<SceneMetadata> data = JsonUtil.DeserializeEmbedded<SceneDictionary<SceneMetadata>>(
+        [JsonConverter(typeof(TypedIdDictionaryConverter<SceneName, SceneMetadata, SMDict>))]
+        public class SMDict : SceneDictionary<SceneMetadata> { }
+
+        private static readonly SMDict data = JsonUtil.DeserializeEmbedded<SMDict>(
                 "DarknessRandomizer.Resources.Data.scene_metadata.json");
 
         public static SceneMetadata Get(SceneName sceneName) => data[sceneName];
@@ -20,7 +24,10 @@ namespace DarknessRandomizer.Data
 
     public class SceneData : BaseSceneData<ClusterName>
     {
-        private static readonly SceneDictionary<SceneData> data = JsonUtil.DeserializeEmbedded<SceneDictionary<SceneData>>(
+        [JsonConverter(typeof(TypedIdDictionaryConverter<SceneName, SceneData, SDDict>))]
+        public class SDDict : SceneDictionary<SceneData> { }
+
+        private static readonly SDDict data = JsonUtil.DeserializeEmbedded<SDDict>(
                 "DarknessRandomizer.Resources.Data.scene_data.json");
 
         public static SceneData Get(SceneName sceneName) => data[sceneName];
@@ -30,10 +37,16 @@ namespace DarknessRandomizer.Data
 
     public class ClusterData : BaseClusterData<SceneName, ClusterName>
     {
-        private static readonly ClusterDictionary<ClusterData> data = JsonUtil.DeserializeEmbedded<ClusterDictionary<ClusterData>>(
+        [JsonConverter(typeof(TypedIdDictionaryConverter<ClusterName, ClusterData, CDDict>))]
+        public class CDDict : ClusterDictionary<ClusterData> { }
+
+        [JsonConverter(typeof(TypedIdDictionaryConverter<ClusterName, RelativeDarkness, RDDict>))]
+        public class RDDict : ClusterDictionary<RelativeDarkness> { }
+
+        private static readonly CDDict data = JsonUtil.DeserializeEmbedded<CDDict>(
                 "DarknessRandomizer.Resources.Data.cluster_data.json");
 
-        public ClusterDictionary<RelativeDarkness> AdjacentClusters = new();
+        public RDDict AdjacentClusters = new();
 
         public static ClusterData Get(ClusterName clusterName) => data[clusterName];
 
