@@ -19,7 +19,6 @@ namespace DarknessRandomizer.Lib
     {
         private readonly Random r;
         private readonly DarknessRandomizationSettings settings;
-        private readonly GenerationSettings GS;
 
         private int darknessAvailable;
         private readonly ClusterDarknessDict clusterDarkness;
@@ -27,9 +26,9 @@ namespace DarknessRandomizer.Lib
         private readonly HashSet<ClusterName> semiDarkCandidates;
         private readonly HashSet<ClusterName> forbiddenClusters;
 
-        public Algorithm(int seed, StartDef startDef, DarknessRandomizationSettings settings, GenerationSettings GS)
+        public Algorithm(GenerationSettings GS, StartDef startDef, DarknessRandomizationSettings settings)
         {
-            this.r = new(seed);
+            this.r = new(GS.Seed + 7);
             this.settings = settings;
 
             this.darknessAvailable = settings.GetDarknessBudget(r);
@@ -51,11 +50,12 @@ namespace DarknessRandomizer.Lib
             }
 
             // If white palace rando is disabled, add all white palace rooms to the forbidden set.
-            if (!GS.LongLocationSettings.WhitePalaceRando)
+            if (GS.LongLocationSettings.WhitePalaceRando != LongLocationSettings.WPSetting.Allowed)
             {
                 foreach (var cluster in ClusterName.All())
                 {
-                    if (ClusterData.Get(cluster).IsInWhitePalace)
+                    var cData = ClusterData.Get(cluster);
+                    if (cData.IsInPathOfPain || (GS.LongLocationSettings.WhitePalaceRando == LongLocationSettings.WPSetting.ExcludeWhitePalace && cData.IsInWhitePalace))
                     {
                         this.forbiddenClusters.Add(cluster);
                     }

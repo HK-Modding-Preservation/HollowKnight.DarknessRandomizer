@@ -12,7 +12,7 @@ namespace DarknessRandomizer.Rando
         private static void InitLocalSettings(RequestBuilder rb)
         {
             if (!RandoInterop.IsEnabled()) return;
-            RandoInterop.LS = new(rb.gs.Seed, rb.ctx.StartDef);
+            RandoInterop.LS = new(rb.gs, rb.ctx.StartDef);
         }
     }
 }

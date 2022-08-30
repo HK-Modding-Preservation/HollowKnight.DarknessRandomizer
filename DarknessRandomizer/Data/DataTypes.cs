@@ -56,6 +56,8 @@ namespace DarknessRandomizer.Data
 
         public bool IsInWhitePalace => SceneNames.Any(s => SceneMetadata.Get(s).MapArea == "White Palace");
 
+        public bool IsInPathOfPain => SceneNames.Any(s => SceneMetadata.Get(s).Alias.StartsWith("POP_"));
+
         public static void Load() { DarknessRandomizer.Log("Loaded ClusterData"); }
 
         public bool CanBeDarknessSource(DarknessRandomizationSettings settings) => base.CanBeDarknessSource(SceneData.Get, settings);

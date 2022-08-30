@@ -13,11 +13,11 @@ namespace DarknessRandomizer.Rando
         public SceneDarknessDict DarknessOverrides;
         public AlgorithmStats Stats;
 
-        public LocalSettings(int seed, StartDef startDef)
+        public LocalSettings(RandomizerMod.Settings.GenerationSettings GS, StartDef startDef)
         {
             Settings = DarknessRandomizer.GS.DarknessRandomizationSettings.Clone();
 
-            Algorithm algorithm = new(seed, startDef, Settings);
+            Algorithm algorithm = new(GS, startDef, Settings);
             algorithm.SelectDarknessLevels(out DarknessOverrides, out Stats);
         }
     }

@@ -18,6 +18,9 @@ namespace DarknessRandomizer.Rando
         public override void Initialize()
         {
             InstallHook(new LambdaHook(
+                () => Modding.ModHooks.GetPlayerBoolHook += OverrideGetBool,
+                () => Modding.ModHooks.GetPlayerBoolHook -= OverrideGetBool));
+            InstallHook(new LambdaHook(
                 () => Events.OnSceneChange += AdjustDarknessRelatedObjects,
                 () => Events.OnSceneChange -= AdjustDarknessRelatedObjects));
         }
@@ -72,6 +75,18 @@ namespace DarknessRandomizer.Rando
 
             // FIXME: Scenes
             // FIXME: Custom respawners for bosses, arenas
+        }
+
+        private Dictionary<string, bool> sceneIsBrightBool = new();
+
+        public bool OverrideGetBool(string name, bool orig)
+        {
+            if (sceneIsBrightBool.TryGetValue(name, out bool b))
+            {
+                return b || PlayerHasLantern();
+            }
+
+            return orig;
         }
     }
 
