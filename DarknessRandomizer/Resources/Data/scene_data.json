@@ -253,7 +253,7 @@
   },
   "Crossroads_02": {
     "Alias": "Crossroads_Outside_Temple",
-    "Cluster": "CrossroadsOutsideTemple",
+    "Cluster": "CrossroadsOutsideBlackEgg",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
@@ -442,7 +442,7 @@
   },
   "Crossroads_30": {
     "Alias": "Crossroads_Hot_Spring",
-    "Cluster": "CrossroadsHotSpring",
+    "Cluster": "CrossroadsHotSprings",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
@@ -640,7 +640,7 @@
   },
   "Deepnest_01b": {
     "Alias": "Deepnest_Upper_Cornifer",
-    "Cluster": "DeepnestLightEast",
+    "Cluster": "DeepnestDescent",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -649,7 +649,7 @@
   },
   "Deepnest_02": {
     "Alias": "Deepnest_Outside_Mimics",
-    "Cluster": "DeepnestLightEast",
+    "Cluster": "DeepnestDescent",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -658,7 +658,7 @@
   },
   "Deepnest_03": {
     "Alias": "Deepnest_Left_Of_Hot_Spring",
-    "Cluster": "DeepnestLightWest",
+    "Cluster": "DeepnestLight",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -757,7 +757,7 @@
   },
   "Deepnest_33": {
     "Alias": "Deepnest_Zote_Arena",
-    "Cluster": "DeepnestLightWest",
+    "Cluster": "DeepnestLight",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -874,7 +874,7 @@
   },
   "Deepnest_East_01": {
     "Alias": "Edge_Left_Of_Hive",
-    "Cluster": "EdgeTramAppraoch",
+    "Cluster": "EdgeTramApproach",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -883,7 +883,7 @@
   },
   "Deepnest_East_02": {
     "Alias": "Edge_Above_Hive",
-    "Cluster": "EdgeTramAppraoch",
+    "Cluster": "EdgeTramApproach",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -892,7 +892,7 @@
   },
   "Deepnest_East_03": {
     "Alias": "Edge_Entrance",
-    "Cluster": "EdgeColumn",
+    "Cluster": "EdgeTallRooms",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -910,7 +910,7 @@
   },
   "Deepnest_East_06": {
     "Alias": "Edge_Outside_Oro",
-    "Cluster": "EdgeOroStrip",
+    "Cluster": "EdgeOroWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -919,7 +919,7 @@
   },
   "Deepnest_East_07": {
     "Alias": "Edge_Whispering_Root",
-    "Cluster": "EdgeColumn",
+    "Cluster": "EdgeTallRooms",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -1009,7 +1009,7 @@
   },
   "Deepnest_East_16": {
     "Alias": "Edge_Oro_Scarecrow",
-    "Cluster": "EdgeOroStrip",
+    "Cluster": "EdgeOroWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
@@ -2323,7 +2323,7 @@
   },
   "Mines_30": {
     "Alias": "Crystal_Cornifer",
-    "Cluster": "CrystalPeaksElevatorRing",
+    "Cluster": "CrystalPeaksElevatorWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2557,7 +2557,7 @@
   },
   "Room_Final_Boss_Core": {
     "Alias": "Egg_Hollow_Knight",
-    "Cluster": "BlackEggNight",
+    "Cluster": "BlackEggKnight",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3115,7 +3115,7 @@
   },
   "Waterways_13": {
     "Alias": "Waterways_Isma's_Grove",
-    "Cluster": "WaterwaysOutsideFlukemarm",
+    "Cluster": "WaterwaysIsmasGrove",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
