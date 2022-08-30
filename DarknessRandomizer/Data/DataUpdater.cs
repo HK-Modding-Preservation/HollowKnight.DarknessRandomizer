@@ -53,17 +53,12 @@ namespace DarknessRandomizer.Data
             {
                 var scene = e.Key;
                 var sData = e.Value;
-                sData.AdjacentScenes = sData.AdjacentScenes.Where(s => SM.ContainsKey(s)).Distinct().ToList();
-                sData.AdjacentScenes.Sort();
+                sData.AdjacentScenes.RemoveWhere(s => !SM.ContainsKey(s));
 
                 // Ensure adjacencies are reflected.
                 foreach (var aScene in sData.AdjacentScenes)
                 {
-                    if (!SM[aScene].AdjacentScenes.Contains(scene))
-                    {
-                        SM[aScene].AdjacentScenes.Add(scene);
-                        SM[aScene].AdjacentScenes.Sort();
-                    }
+                    SM[aScene].AdjacentScenes.Add(scene);
                 }
             }
 
@@ -124,13 +119,13 @@ namespace DarknessRandomizer.Data
                 var cData = e.Value;
 
                 // Update scene names.
-                List<string> sceneNames = new(clusterToScenes[cluster]);
-                sceneNames.Sort();
-                cData.SceneNames = sceneNames;
-                List<string> sceneAliases = new();
-                sceneNames.ForEach(n => sceneAliases.Add(SM[n].Alias));
-                sceneAliases.Sort();
-                cData.SceneAliases = sceneAliases;
+                cData.SceneNames = new();
+                cData.SceneAliases = new();
+                foreach (var scene in clusterToScenes[cluster])
+                {
+                    cData.SceneNames.Add(scene);
+                    cData.SceneAliases.Add(SM[scene].Alias);
+                }
 
                 if (!clusterAdjacency.TryGetValue(cluster, out HashSet<string> aClusters))
                 {

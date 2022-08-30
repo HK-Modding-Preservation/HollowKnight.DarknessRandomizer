@@ -30,7 +30,7 @@ namespace DarknessRandomizer.Data
     {
         public string Alias;
         public string MapArea;
-        public List<S> AdjacentScenes;
+        public SortedSet<S> AdjacentScenes;
     }
 
     public class BaseSceneData<C>
@@ -66,8 +66,8 @@ namespace DarknessRandomizer.Data
 
     public abstract class BaseClusterData<S, C>
     {
-        public List<string> SceneAliases = new();
-        public List<S> SceneNames = new();
+        public SortedSet<string> SceneAliases = new();
+        public SortedSet<S> SceneNames = new();
         public bool? OverrideCannotBeDarknessSource = null;
         public bool? CursedOnly = false;
         public DarkSettings DarkSettings = null;
