@@ -271,7 +271,7 @@
   },
   "Crossroads_04": {
     "Alias": "Crossroads_Gruz_Mother",
-    "Cluster": "CrossroadsStagHub",
+    "Cluster": "CrossroadsShops",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,

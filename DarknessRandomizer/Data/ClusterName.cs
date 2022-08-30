@@ -124,6 +124,7 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName CrossroadsOutsideBlackEgg = new("CrossroadsOutsideBlackEgg");
         public static readonly ClusterName CrossroadsOutsideMound = new("CrossroadsOutsideMound");
         public static readonly ClusterName CrossroadsPeaksBridge = new("CrossroadsPeaksBridge");
+        public static readonly ClusterName CrossroadsShops = new("CrossroadsShops");
         public static readonly ClusterName CrossroadsSlyRescue = new("CrossroadsSlyRescue");
         public static readonly ClusterName CrossroadsSpikeGrub = new("CrossroadsSpikeGrub");
         public static readonly ClusterName CrossroadsStag = new("CrossroadsStag");

@@ -129,8 +129,8 @@
   },
   "BasinBrokenVesselWing": {
     "AdjacentClusters": {
-      "BasinFountain": "Unspecified",
-      "BasinLostKin": "Unspecified"
+      "BasinFountain": "Brighter",
+      "BasinLostKin": "Darker"
     },
     "SceneAliases": [
       "Basin_Broken_Vessel_Grub",
@@ -144,7 +144,7 @@
       "Abyss_20",
       "Abyss_21"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -156,7 +156,7 @@
   },
   "BasinCloth": {
     "AdjacentClusters": {
-      "CityBridgeToBasin": "Unspecified"
+      "CityBridgeToBasin": "Darker"
     },
     "SceneAliases": [
       "Basin_Cloth"
@@ -177,9 +177,9 @@
   "BasinFountain": {
     "AdjacentClusters": {
       "AbyssCore": "Any",
-      "BasinBrokenVesselWing": "Unspecified",
-      "BasinPalaceWing": "Unspecified",
-      "CityBridgeToBasin": "Unspecified"
+      "BasinBrokenVesselWing": "Darker",
+      "BasinPalaceWing": "Brighter",
+      "CityBridgeToBasin": "Any"
     },
     "SceneAliases": [
       "Basin_Fountain"
@@ -187,7 +187,7 @@
     "SceneNames": [
       "Abyss_04"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -199,7 +199,7 @@
   },
   "BasinLostKin": {
     "AdjacentClusters": {
-      "BasinBrokenVesselWing": "Unspecified"
+      "BasinBrokenVesselWing": "Brighter"
     },
     "SceneAliases": [
       "Dream_Lost_Kin"
@@ -207,7 +207,7 @@
     "SceneNames": [
       "Dream_03_Infected_Knight"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -219,7 +219,7 @@
   },
   "BasinPalaceWing": {
     "AdjacentClusters": {
-      "BasinFountain": "Unspecified"
+      "BasinFountain": "Darker"
     },
     "SceneAliases": [
       "Basin_Hidden_Station",
@@ -238,7 +238,7 @@
   },
   "BlackEggKnight": {
     "AdjacentClusters": {
-      "BlackEggRadiance": "Unspecified"
+      "BlackEggRadiance": "Brighter"
     },
     "SceneAliases": [
       "Egg_Hollow_Knight"
@@ -246,7 +246,7 @@
     "SceneNames": [
       "Room_Final_Boss_Core"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -258,7 +258,7 @@
   },
   "BlackEggRadiance": {
     "AdjacentClusters": {
-      "BlackEggKnight": "Unspecified"
+      "BlackEggKnight": "Darker"
     },
     "SceneAliases": [
       "Egg_Radiance"
@@ -278,7 +278,7 @@
   },
   "BlackEggTemple": {
     "AdjacentClusters": {
-      "CrossroadsOutsideBlackEgg": "Unspecified"
+      "CrossroadsOutsideBlackEgg": "Disconnected"
     },
     "SceneAliases": [
       "Black_Egg_Temple",
@@ -297,8 +297,8 @@
   },
   "BlueLake": {
     "AdjacentClusters": {
-      "CrossroadsStagHub": "Unspecified",
-      "GroundsBelowXero": "Unspecified"
+      "GroundsBelowXero": "Any",
+      "CrossroadsShops": "Any"
     },
     "SceneAliases": [
       "Grounds_Blue_Lake"
@@ -318,11 +318,11 @@
   },
   "CityAboveLemm": {
     "AdjacentClusters": {
-      "CitySanctumEast": "Unspecified",
-      "CityLowerSpire": "Unspecified",
-      "CityTollBench": "Unspecified",
-      "CityEastEntrance": "Unspecified",
-      "CityLemm": "Unspecified"
+      "CitySanctumEast": "Any",
+      "CityLowerSpire": "Brighter",
+      "CityTollBench": "Brighter",
+      "CityEastEntrance": "Any",
+      "CityLemm": "Brighter"
     },
     "SceneAliases": [
       "City_Egg_Above_Lemm",
@@ -332,7 +332,7 @@
       "Ruins1_05",
       "Ruins1_05c"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -344,8 +344,8 @@
   },
   "CityBridgeToBasin": {
     "AdjacentClusters": {
-      "BasinCloth": "Unspecified",
-      "BasinFountain": "Unspecified",
+      "BasinCloth": "Brighter",
+      "BasinFountain": "Any",
       "WaterwaysDungDefender": "Disconnected",
       "WaterwaysIsmasGrove": "Disconnected",
       "WaterwaysMain": "Disconnected",
@@ -361,7 +361,7 @@
       "Abyss_02",
       "Abyss_03"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -396,7 +396,7 @@
       "FungalPilgrimsWay": "Unspecified",
       "CityStorerooms": "Unspecified",
       "CityLemm": "Unspecified",
-      "CityAboveLemm": "Unspecified",
+      "CityAboveLemm": "Any",
       "WaterwaysFlukeHermit": "Disconnected"
     },
     "SceneAliases": [
@@ -529,7 +529,7 @@
   "CityLemm": {
     "AdjacentClusters": {
       "CityEastEntrance": "Unspecified",
-      "CityAboveLemm": "Unspecified",
+      "CityAboveLemm": "Darker",
       "CityFountain": "Unspecified",
       "WaterwaysMain": "Darker"
     },
@@ -548,7 +548,7 @@
   },
   "CityLowerSpire": {
     "AdjacentClusters": {
-      "CityAboveLemm": "Unspecified",
+      "CityAboveLemm": "Darker",
       "CitySpireLower": "Unspecified"
     },
     "SceneAliases": [
@@ -650,7 +650,7 @@
   },
   "CitySanctumEast": {
     "AdjacentClusters": {
-      "CityAboveLemm": "Unspecified",
+      "CityAboveLemm": "Any",
       "CitySanctumMiddle": "Unspecified",
       "CityTollBench": "Unspecified"
     },
@@ -811,7 +811,7 @@
   },
   "CityTollBench": {
     "AdjacentClusters": {
-      "CityAboveLemm": "Unspecified",
+      "CityAboveLemm": "Darker",
       "CityStorerooms": "Unspecified",
       "CitySanctumEast": "Unspecified",
       "CityShadeSoul": "Unspecified"
@@ -1323,7 +1323,7 @@
     "AdjacentClusters": {
       "CrossroadsEntrance": "Unspecified",
       "CrossroadsPeaksBridge": "Unspecified",
-      "BlackEggTemple": "Unspecified"
+      "BlackEggTemple": "Disconnected"
     },
     "SceneAliases": [
       "Crossroads_Outside_Temple"
@@ -1385,9 +1385,31 @@
       "SemiDarkProbability": 100
     }
   },
+  "CrossroadsShops": {
+    "AdjacentClusters": {
+      "CrossroadsStagHub": "Unspecified",
+      "BlueLake": "Any",
+      "CrossroadsSlyRescue": "Unspecified"
+    },
+    "SceneAliases": [
+      "Crossroads_Gruz_Mother"
+    ],
+    "SceneNames": [
+      "Crossroads_04"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
   "CrossroadsSlyRescue": {
     "AdjacentClusters": {
-      "CrossroadsStagHub": "Unspecified"
+      "CrossroadsShops": "Unspecified"
     },
     "SceneAliases": [
       "Crossroads_Rescue_Sly"
@@ -1441,7 +1463,6 @@
   },
   "CrossroadsStagHub": {
     "AdjacentClusters": {
-      "BlueLake": "Unspecified",
       "CrossroadsCentralPass": "Unspecified",
       "CrossroadsElevatorApproach": "Unspecified",
       "CrossroadsFalseKnight": "Unspecified",
@@ -1451,19 +1472,17 @@
       "CrossroadsStag": "Unspecified",
       "CrossroadsTram": "Unspecified",
       "CrystalPeaksToll": "Unspecified",
-      "CrossroadsSlyRescue": "Unspecified"
+      "CrossroadsShops": "Unspecified"
     },
     "SceneAliases": [
       "Crossroads_Before_Gruz_Mother",
       "Crossroads_Corridor_to_Tram",
-      "Crossroads_Gruz_Mother",
       "Crossroads_Outside_False_Knight",
       "Crossroads_Outside_Stag",
       "Crossroads_Outside_Tram"
     ],
     "SceneNames": [
       "Crossroads_03",
-      "Crossroads_04",
       "Crossroads_15",
       "Crossroads_19",
       "Crossroads_21",
@@ -4064,7 +4083,7 @@
   },
   "GroundsBelowXero": {
     "AdjacentClusters": {
-      "BlueLake": "Unspecified",
+      "BlueLake": "Any",
       "GroundsXero": "Unspecified",
       "EastCityElevator": "Unspecified"
     },
