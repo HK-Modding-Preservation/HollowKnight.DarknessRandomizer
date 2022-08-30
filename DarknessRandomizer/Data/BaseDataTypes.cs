@@ -40,11 +40,6 @@ namespace DarknessRandomizer.Data
         public Darkness MinimumDarkness = Darkness.Bright;
         public Darkness MaximumDarkness = Darkness.Dark;
         public bool IsVanillaDark = false;
-        public LogicNameSet DifficultSkips = null;
-        public LogicNameSet ProficientCombat = null;
-
-        public bool IsDifficultSkip(string logicName) => DifficultSkips != null && DifficultSkips.Contains(logicName);
-        public bool IsProficientSkip(string logicName) => ProficientCombat != null && ProficientCombat.Contains(logicName);
 
         public Darkness ClampDarkness(Darkness d)
         {

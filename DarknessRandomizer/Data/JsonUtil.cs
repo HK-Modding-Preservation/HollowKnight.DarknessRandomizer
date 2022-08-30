@@ -39,6 +39,7 @@ namespace DarknessRandomizer
             {
                 DefaultValueHandling = DefaultValueHandling.Include,
                 Formatting = Formatting.Indented,
+                MissingMemberHandling = MissingMemberHandling.Ignore,
                 TypeNameHandling = TypeNameHandling.Auto,
             };
 

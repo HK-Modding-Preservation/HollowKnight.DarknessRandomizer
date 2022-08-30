@@ -15,7 +15,7 @@ namespace DarknessRandomizer.Rando
     // Can't use alias in another alias?
     using LogicTree = BooleanTree<ParsedToken, BooleanTree<SceneOrLantern, SceneTreeMetadata>>;
 
-    public delegate void DarknessLogicAdder(string logicName, SceneName sceneName, List<LogicToken> sink);
+    using DarknessLogicAdder = Action<List<LogicToken>>;
 
     internal enum Lantern { Instance }
 
@@ -208,7 +208,7 @@ namespace DarknessRandomizer.Rando
                     sink.Add(LanternToken);
                     AddDarknessCheck(tree.Value.SceneName, sink);
                     sink.Add(OperatorToken.OR);
-                    dla.Invoke(logicName, tree.Value.SceneName, sink);
+                    dla.Invoke(sink);
                     sink.Add(OperatorToken.OR);
                     sink.Add(tree.Value.Token);
                     sink.Add(OperatorToken.AND);

@@ -22,13 +22,13 @@ namespace DarknessRandomizer.Rando
         private static readonly Dictionary<string, LogicOverride> LogicOverridesByName = new()
         {
             // Dream warriors do not appear in dark rooms without lantern.
-            { "Defeated_Elder_Hu", EditLogicClauseBySceneInferenceNoDarkrooms },
-            { "Defeated_Galien", EditLogicClauseBySceneInferenceNoDarkrooms },
-            { "Defeated_Gorb", EditLogicClauseBySceneInferenceNoDarkrooms },
-            { "Defeated_Markoth", EditLogicClauseBySceneInferenceNoDarkrooms },
-            { "Defeated_Marmu", EditLogicClauseBySceneInferenceNoDarkrooms },
-            { "Defeated_No_Eyes", EditLogicClauseBySceneInferenceNoDarkrooms },
-            { "Defeated_Xero", EditLogicClauseBySceneInferenceNoDarkrooms },
+            { "Defeated_Elder_Hu", CustomDarkLogicEdit("FALSE") },
+            { "Defeated_Galien", CustomDarkLogicEdit("FALSE") },
+            { "Defeated_Gorb", CustomDarkLogicEdit("FALSE") },
+            { "Defeated_Markoth", CustomDarkLogicEdit("FALSE") },
+            { "Defeated_Marmu", CustomDarkLogicEdit("FALSE") },
+            { "Defeated_No_Eyes", CustomDarkLogicEdit("FALSE") },
+            { "Defeated_Xero", CustomDarkLogicEdit("FALSE") },
 
             // Dream bosses are coded specially because the checks are located where the dream nail is swung,
             // but we care whether or not the actual fight room is dark. So we have to account for both rooms.
@@ -68,7 +68,7 @@ namespace DarknessRandomizer.Rando
         private static readonly Dictionary<SceneName, LogicOverride> LogicOverridesByTransitionScene = new()
         {
             // TODO: Fix for bench rando
-            { SceneName.GreenpathToll, EditLogicClauseBySceneInferenceNoDarkrooms },
+            { SceneName.GreenpathToll, CustomDarkLogicEdit("FALSE") },
 
             // The following scenes are trivial to navigate while dark, but may contain a check which is
             // uniquely affected by darkness.
@@ -115,6 +115,8 @@ namespace DarknessRandomizer.Rando
             edits.ForEach(e => e.Invoke());
         }
 
+        private static readonly SimpleToken DarkroomsToken = new("DARKROOMS");
+
         private static void EditLogicClause(LogicManagerBuilder lmb, string name, LogicClause lc)
         {
             if (LogicOverridesByName.TryGetValue(name, out LogicOverride handler))
@@ -138,100 +140,40 @@ namespace DarknessRandomizer.Rando
                 }
             }
 
-            // No special case applies, so we use the default scene inference logic.
-            var si = InferScenes(lc);
-            if (si.NumScenes == 1 && LogicOverridesByUniqueScene.TryGetValue(si.Single(), out handler))
+            // Check for an inferred scene match.
+            if (InferSingleScene(lc, out SceneName inferred) && LogicOverridesByUniqueScene.TryGetValue(inferred, out handler))
             {
                 handler.Invoke(lmb, name, lc);
                 return;
             }
 
-            EditLogicClauseBySceneInference(lmb, name, si, (ln, sn, si) => AddDarkLogic(ln, sn, true, si));
+            // No special matches, use the default editor.
+            LogicClauseEditor.EditDarkness(lmb, name, (sink) => sink.Add(DarkroomsToken));
         }
 
-        private class SceneInference
+        private static bool InferSingleScene(LogicClause lc, out SceneName sceneName)
         {
-            public bool HasLantern = false;
-            public Dictionary<SceneName, HashSet<string>> TransitionTermsBySceneName = new();
-
-            public int NumScenes => TransitionTermsBySceneName.Count;
-
-            public IEnumerable<SceneName> Scenes => TransitionTermsBySceneName.Keys;
-
-            public SceneName Single() => TransitionTermsBySceneName.Keys.Single();
-        }
-
-        private static SceneInference InferScenes(LogicClause lc)
-        {
-            SceneInference si = new();
-            foreach (var token in lc.Tokens)
+            HashSet<SceneName> ret = new();
+            foreach (var token in lc)
             {
                 if (token is SimpleToken st)
                 {
                     string name = st.Write();
-                    if (SceneName.IsTransition(name, out SceneName sceneName))
+                    if (SceneName.IsTransition(name, out SceneName newName))
                     {
-                        si.TransitionTermsBySceneName.GetOrAddNew(sceneName).Add(name);
-                    }
-                    else if (name == "LANTERN")
-                    {
-                        si.HasLantern = true;
+                        ret.Add(newName);
                     }
                 }
             }
-            return si;
-        }
 
-        private static readonly SimpleToken DarkroomsToken = new("DARKROOMS");
-        private static readonly SimpleToken DifficultSkipsToken = new("DIFFICULTSKIPS");
-        private static readonly SimpleToken ProficientCombatToken = new("PROFICIENTCOMBAT");
-
-        private static void AddDarkLogic(string logicName, SceneName scene, bool darkrooms, List<LogicToken> sink)
-        {
-            var sData = Data.SceneData.Get(scene);
-            bool difficult = sData.DifficultSkips.Contains(logicName);
-            bool combat = sData.ProficientCombat.Contains(logicName);
-
-            int tokens = (darkrooms ? 1 : 0) + (difficult ? 1 : 0) + (combat ? 1 : 0);
-            if (darkrooms)
+            if (ret.Count == 1)
             {
-                sink.Add(DarkroomsToken);
-            }
-            if (difficult)
-            {
-                sink.Add(DifficultSkipsToken);
-            }
-            if (combat)
-            {
-                sink.Add(ProficientCombatToken);
+                sceneName = ret.GetEnumerator().Current;
+                return true;
             }
 
-            if (tokens == 0)
-            {
-                sink.Add(ConstToken.True);
-            }
-            else
-            {
-                for (int i = 1; i < tokens; i++)
-                {
-                    sink.Add(OperatorToken.AND);
-                }
-            }
-        }
-
-        private static void EditLogicClauseBySceneInference(LogicManagerBuilder lmb, string name, SceneInference si, DarknessLogicAdder dla)
-        {
-            if (si.NumScenes == 0)
-            {
-                return;
-            }
-
-            LogicClauseEditor.EditDarkness(lmb, name, dla);
-        }
-
-        private static void EditLogicClauseBySceneInferenceNoDarkrooms(LogicManagerBuilder lmb, string name, LogicClause lc)
-        {
-            EditLogicClauseBySceneInference(lmb, name, InferScenes(lc), (ln, sn, si) => AddDarkLogic(ln, sn, false, si));
+            sceneName = default;
+            return false;
         }
 
         private static void NoLogicEdit(LogicManagerBuilder lmb, string name, LogicClause lc) { }
@@ -239,11 +181,11 @@ namespace DarknessRandomizer.Rando
         private static LogicOverride CustomDarkLogicEdit(string darkLogic)
         {
             LogicClause lc = new(darkLogic);
-            return (lmb, name, lc) => EditLogicClauseBySceneInference(lmb, name, InferScenes(lc), (ln, sn, si) =>
+            return (lmb, name, lc) => LogicClauseEditor.EditDarkness(lmb, name, (sink) =>
             {
                 foreach (var t in lc)
                 {
-                    si.Add(t);
+                    sink.Add(t);
                 }
             });
         }

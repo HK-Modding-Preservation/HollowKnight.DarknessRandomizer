@@ -60,7 +60,6 @@ namespace DarknessRandomizer.Data
 
         // @@@ INSERT_CLUSTER_NAMES START @@@
         public static readonly ClusterName AbyssBirthplace = new("AbyssBirthplace");
-        public static readonly ClusterName AbyssClimb = new("AbyssClimb");
         public static readonly ClusterName AbyssCore = new("AbyssCore");
         public static readonly ClusterName AbyssLifebloodCore = new("AbyssLifebloodCore");
         public static readonly ClusterName AbyssShadeCloakWing = new("AbyssShadeCloakWing");
@@ -91,6 +90,7 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName CityRightHubRooms = new("CityRightHubRooms");
         public static readonly ClusterName CitySanctumEast = new("CitySanctumEast");
         public static readonly ClusterName CitySanctumMiddle = new("CitySanctumMiddle");
+        public static readonly ClusterName CitySanctumSoulTyrant = new("CitySanctumSoulTyrant");
         public static readonly ClusterName CitySanctumWest = new("CitySanctumWest");
         public static readonly ClusterName CityShadeSoul = new("CityShadeSoul");
         public static readonly ClusterName CitySpireLower = new("CitySpireLower");
@@ -103,7 +103,6 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName CliffsJonis = new("CliffsJonis");
         public static readonly ClusterName CliffsMain = new("CliffsMain");
         public static readonly ClusterName CliffsMato = new("CliffsMato");
-        public static readonly ClusterName CrossraodsPeaksBridge = new("CrossraodsPeaksBridge");
         public static readonly ClusterName CrossroadsAncestralMound = new("CrossroadsAncestralMound");
         public static readonly ClusterName CrossroadsCanyonBridge = new("CrossroadsCanyonBridge");
         public static readonly ClusterName CrossroadsCentralPass = new("CrossroadsCentralPass");
@@ -120,7 +119,6 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName CrossroadsLowerPass = new("CrossroadsLowerPass");
         public static readonly ClusterName CrossroadsMawlek = new("CrossroadsMawlek");
         public static readonly ClusterName CrossroadsMawlekApproach = new("CrossroadsMawlekApproach");
-        public static readonly ClusterName CrossroadsMiddleBridge = new("CrossroadsMiddleBridge");
         public static readonly ClusterName CrossroadsOutsideBlackEgg = new("CrossroadsOutsideBlackEgg");
         public static readonly ClusterName CrossroadsOutsideMound = new("CrossroadsOutsideMound");
         public static readonly ClusterName CrossroadsPeaksBridge = new("CrossroadsPeaksBridge");
@@ -270,7 +268,6 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName PalaceThrone = new("PalaceThrone");
         public static readonly ClusterName PalaceWings = new("PalaceWings");
         public static readonly ClusterName PalaceWorkshop = new("PalaceWorkshop");
-        public static readonly ClusterName SanctumSoulTyrant = new("SanctumSoulTyrant");
         public static readonly ClusterName WaterwaysDungDefender = new("WaterwaysDungDefender");
         public static readonly ClusterName WaterwaysEdgeAcidCorridor = new("WaterwaysEdgeAcidCorridor");
         public static readonly ClusterName WaterwaysFlukeHermit = new("WaterwaysFlukeHermit");
