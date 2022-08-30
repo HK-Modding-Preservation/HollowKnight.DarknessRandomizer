@@ -283,8 +283,7 @@
       "Crossroads_05",
       "Crossroads_11_alt",
       "Crossroads_25",
-      "Crossroads_33",
-      "Crossroads_38"
+      "Crossroads_33"
     ]
   },
   "Crossroads_08": {
@@ -464,13 +463,6 @@
     "MapArea": "Forgotten Crossroads",
     "AdjacentScenes": [
       "Crossroads_49"
-    ]
-  },
-  "Crossroads_38": {
-    "Alias": "Crossroads_Grubfather",
-    "MapArea": "Forgotten Crossroads",
-    "AdjacentScenes": [
-      "Crossroads_07"
     ]
   },
   "Crossroads_39": {
@@ -1027,7 +1019,9 @@
   "Dream_Nailcollection": {
     "Alias": "Dream_Nail",
     "MapArea": "",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "RestingGrounds_04"
+    ]
   },
   "Fungus1_01": {
     "Alias": "Greenpath_Entrance",
@@ -1303,15 +1297,7 @@
     "Alias": "Greenpath_Stone_Sanctuary",
     "MapArea": "Greenpath",
     "AdjacentScenes": [
-      "Fungus1_34",
-      "Fungus1_36"
-    ]
-  },
-  "Fungus1_36": {
-    "Alias": "Greenpath_Stone_Sanctuary_Mask_Shard",
-    "MapArea": "Greenpath",
-    "AdjacentScenes": [
-      "Fungus1_35"
+      "Fungus1_34"
     ]
   },
   "Fungus1_37": {
@@ -2174,6 +2160,7 @@
     "Alias": "Grounds_Dream_Nail_Entrance",
     "MapArea": "Resting Grounds",
     "AdjacentScenes": [
+      "Dream_Nailcollection",
       "RestingGrounds_02",
       "RestingGrounds_05"
     ]
@@ -2183,7 +2170,6 @@
     "MapArea": "Resting Grounds",
     "AdjacentScenes": [
       "RestingGrounds_04",
-      "RestingGrounds_07",
       "RestingGrounds_08",
       "RestingGrounds_09",
       "RestingGrounds_10",
@@ -2197,13 +2183,6 @@
       "Crossroads_50",
       "RestingGrounds_02",
       "Ruins2_10"
-    ]
-  },
-  "RestingGrounds_07": {
-    "Alias": "Grounds_Seer",
-    "MapArea": "Resting Grounds",
-    "AdjacentScenes": [
-      "RestingGrounds_05"
     ]
   },
   "RestingGrounds_08": {
@@ -2269,17 +2248,24 @@
   "Room_Colosseum_Bronze": {
     "Alias": "Edge_Colo_1_Arena",
     "MapArea": "Kingdom's Edge",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Room_Colosseum_Silver"
+    ]
   },
   "Room_Colosseum_Gold": {
     "Alias": "Edge_Colo_3_Arena",
     "MapArea": "Kingdom's Edge",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Room_Colosseum_Silver"
+    ]
   },
   "Room_Colosseum_Silver": {
     "Alias": "Edge_Colo_2_Arena",
     "MapArea": "Kingdom's Edge",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Room_Colosseum_Bronze",
+      "Room_Colosseum_Gold"
+    ]
   },
   "Room_Colosseum_Spectate": {
     "Alias": "Edge_Colo_Spectate",
@@ -2292,13 +2278,16 @@
   "Room_Final_Boss_Atrium": {
     "Alias": "Egg_Bench",
     "MapArea": "",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Room_Final_Boss_Core"
+    ]
   },
   "Room_Final_Boss_Core": {
     "Alias": "Egg_Hollow_Knight",
     "MapArea": "",
     "AdjacentScenes": [
-      "Dream_Final"
+      "Dream_Final",
+      "Room_Final_Boss_Atrium"
     ]
   },
   "Room_Fungus_Shaman": {

@@ -22,7 +22,7 @@
   },
   "Abyss_03_b": {
     "Alias": "Deepnest_Tram",
-    "Cluster": "DeepnestFailedTram",
+    "Cluster": "DeepnestTramCorridor",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false
@@ -382,13 +382,6 @@
     "Cluster": "CrossroadsVesselFragment",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "IsVanillaDark": false
-  },
-  "Crossroads_38": {
-    "Alias": "Crossroads_Grubfather",
-    "Cluster": "CrossroadsGrubfather",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright",
     "IsVanillaDark": false
   },
   "Crossroads_39": {
@@ -1105,13 +1098,6 @@
     "MaximumDarkness": "Dark",
     "IsVanillaDark": true
   },
-  "Fungus1_36": {
-    "Alias": "Greenpath_Stone_Sanctuary_Mask_Shard",
-    "Cluster": "GreenpathStoneSanctuary",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright",
-    "IsVanillaDark": false
-  },
   "Fungus1_37": {
     "Alias": "Greenpath_Sanctuary_Bench",
     "Cluster": "GreenpathStoneSanctuaryBench",
@@ -1564,7 +1550,7 @@
     "Alias": "Waterways_Junk_Pit",
     "Cluster": "WaterwaysJunkPit",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false
   },
   "Grimm_Main_Tent": {
@@ -1845,13 +1831,6 @@
     "Cluster": "BlueLake",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "IsVanillaDark": false
-  },
-  "RestingGrounds_07": {
-    "Alias": "Grounds_Seer",
-    "Cluster": "GroundsSeer",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright",
     "IsVanillaDark": false
   },
   "RestingGrounds_08": {
@@ -2472,14 +2451,14 @@
   },
   "White_Palace_12": {
     "Alias": "Palace_Spike_Drop",
-    "Cluster": "PalaceWings",
+    "Cluster": "PalaceFinale",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
   },
   "White_Palace_13": {
     "Alias": "Palace_Thorn_Jump",
-    "Cluster": "PalaceWings",
+    "Cluster": "PalaceFinale",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false

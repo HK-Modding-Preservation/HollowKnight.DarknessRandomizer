@@ -114,7 +114,6 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName CrossroadsGlowingWomb = new("CrossroadsGlowingWomb");
         public static readonly ClusterName CrossroadsGoamJournal = new("CrossroadsGoamJournal");
         public static readonly ClusterName CrossroadsGreenpathBridge = new("CrossroadsGreenpathBridge");
-        public static readonly ClusterName CrossroadsGrubfather = new("CrossroadsGrubfather");
         public static readonly ClusterName CrossroadsHotSprings = new("CrossroadsHotSprings");
         public static readonly ClusterName CrossroadsLowerPass = new("CrossroadsLowerPass");
         public static readonly ClusterName CrossroadsMawlek = new("CrossroadsMawlek");
@@ -246,7 +245,6 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName GroundsGlade = new("GroundsGlade");
         public static readonly ClusterName GroundsMain = new("GroundsMain");
         public static readonly ClusterName GroundsOutsideDreamNail = new("GroundsOutsideDreamNail");
-        public static readonly ClusterName GroundsSeer = new("GroundsSeer");
         public static readonly ClusterName GroundsStag = new("GroundsStag");
         public static readonly ClusterName GroundsTram = new("GroundsTram");
         public static readonly ClusterName GroundsXero = new("GroundsXero");

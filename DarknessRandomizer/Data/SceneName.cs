@@ -124,7 +124,6 @@ namespace DarknessRandomizer.Data
         public static readonly SceneName CrossroadsAcidGrub = new("Crossroads_35");
         public static readonly SceneName CrossroadsMawlekMiddle = new("Crossroads_36");
         public static readonly SceneName CrossroadsVesselFragment = new("Crossroads_37");
-        public static readonly SceneName CrossroadsGrubfather = new("Crossroads_38");
         public static readonly SceneName CrossroadsCorridorRightofTemple = new("Crossroads_39");
         public static readonly SceneName CrossroadsCorridorRightofCentralGrub = new("Crossroads_40");
         public static readonly SceneName CrossroadsRightOfMaskShard = new("Crossroads_42");
@@ -227,7 +226,6 @@ namespace DarknessRandomizer.Data
         public static readonly SceneName GreenpathMossKnightArena = new("Fungus1_32");
         public static readonly SceneName GreenpathStoneSanctuaryEntrance = new("Fungus1_34");
         public static readonly SceneName GreenpathStoneSanctuary = new("Fungus1_35");
-        public static readonly SceneName GreenpathStoneSanctuaryMaskShard = new("Fungus1_36");
         public static readonly SceneName GreenpathSanctuaryBench = new("Fungus1_37");
         public static readonly SceneName GreenpathUnn = new("Fungus1_Slug");
         public static readonly SceneName FungalQueensStation = new("Fungus2_01");
@@ -333,7 +331,6 @@ namespace DarknessRandomizer.Data
         public static readonly SceneName GroundsDreamNailEntrance = new("RestingGrounds_04");
         public static readonly SceneName GroundsWhisperingRoot = new("RestingGrounds_05");
         public static readonly SceneName GroundsCorridorBelowXero = new("RestingGrounds_06");
-        public static readonly SceneName GroundsSeer = new("RestingGrounds_07");
         public static readonly SceneName GroundsSpiritsGlade = new("RestingGrounds_08");
         public static readonly SceneName GroundsStag = new("RestingGrounds_09");
         public static readonly SceneName GroundsCrypts = new("RestingGrounds_10");
