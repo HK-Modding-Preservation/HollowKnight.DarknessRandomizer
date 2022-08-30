@@ -29,12 +29,12 @@ namespace DarknessRandomizer.Rando
                     max = 1500;
                     break;
                 case DarknessLevel.Dark:
-                    min = 4500;
-                    max = 6000;
+                    min = 3500;
+                    max = 4500;
                     break;
                 case DarknessLevel.Cursed:
-                    min = 13500;
-                    max = 16500;
+                    min = 12000;
+                    max = 15000;
                     break;
                 default:
                     throw new ArgumentException($"Unknown DarknessLevel: {DarknessLevel}");
