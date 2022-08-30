@@ -28,7 +28,7 @@ namespace DarknessRandomizer.Lib
 
         public List<KeyValuePair<K, V>> SerializableEntries
         {
-            get { return Enumerate().ToList(); }
+            get { return Enumerate().OrderBy(e => e.Key.Id()).ToList(); }
             set
             {
                 Clear();

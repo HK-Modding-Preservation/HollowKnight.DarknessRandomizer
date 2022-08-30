@@ -25,7 +25,7 @@ namespace DarknessRandomizer.Data
         public static SortedDictionary<string, RawClusterData> LoadFromPath(string path) =>
             JsonUtil.DeserializeFromPath<SortedDictionary<string, RawClusterData>>(path);
 
-        public Dictionary<string, RelativeDarkness> AdjacentClusters = new();
+        public SortedDictionary<string, RelativeDarkness> AdjacentClusters = new();
 
         protected override IEnumerable<KeyValuePair<string, RelativeDarkness>> AdjacentDarkness() {
             foreach (var e in AdjacentClusters)

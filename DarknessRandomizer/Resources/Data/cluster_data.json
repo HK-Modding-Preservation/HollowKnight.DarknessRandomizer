@@ -239,8 +239,8 @@
   },
   "BlueLake": {
     "AdjacentClusters": {
-      "GroundsBelowXero": "Any",
-      "CrossroadsShops": "Any"
+      "CrossroadsShops": "Any",
+      "GroundsBelowXero": "Any"
     },
     "SceneAliases": [
       "Grounds_Blue_Lake"
@@ -257,11 +257,11 @@
   },
   "CityAboveLemm": {
     "AdjacentClusters": {
-      "CitySanctumEast": "Any",
-      "CityLowerSpire": "Brighter",
-      "CityTollBench": "Brighter",
       "CityEastEntrance": "Any",
-      "CityLemm": "Brighter"
+      "CityLemm": "Brighter",
+      "CityLowerSpire": "Brighter",
+      "CitySanctumEast": "Any",
+      "CityTollBench": "Brighter"
     },
     "SceneAliases": [
       "City_Egg_Above_Lemm",
@@ -282,10 +282,10 @@
     "AdjacentClusters": {
       "BasinCloth": "Brighter",
       "BasinFountain": "Any",
+      "CityRightHub": "Any",
       "WaterwaysDungDefender": "Disconnected",
       "WaterwaysIsmasGrove": "Disconnected",
-      "WaterwaysMain": "Disconnected",
-      "CityRightHub": "Any"
+      "WaterwaysMain": "Disconnected"
     },
     "SceneAliases": [
       "Basin_Broken_Bridge",
@@ -323,10 +323,10 @@
   },
   "CityEastEntrance": {
     "AdjacentClusters": {
-      "FungalPilgrimsWay": "Any",
-      "CityStorerooms": "Darker",
-      "CityLemm": "Brighter",
       "CityAboveLemm": "Any",
+      "CityLemm": "Brighter",
+      "CityStorerooms": "Darker",
+      "FungalPilgrimsWay": "Any",
       "WaterwaysFlukeHermit": "Disconnected"
     },
     "SceneAliases": [
@@ -350,9 +350,9 @@
   },
   "CityEdgeBridge": {
     "AdjacentClusters": {
-      "EdgeTallRooms": "Darker",
       "CityKingsStation": "Any",
-      "CityTowerOfLove": "Brighter"
+      "CityTowerOfLove": "Brighter",
+      "EdgeTallRooms": "Darker"
     },
     "SceneAliases": [
       "City_Grub_Below_King's"
@@ -369,8 +369,8 @@
   },
   "CityEmilitia": {
     "AdjacentClusters": {
-      "WaterwaysIsmasGrove": "Darker",
-      "CityRightHub": "Darker"
+      "CityRightHub": "Darker",
+      "WaterwaysIsmasGrove": "Darker"
     },
     "SceneAliases": [
       "City_Emilitia"
@@ -416,10 +416,10 @@
   },
   "CityKingsStation": {
     "AdjacentClusters": {
+      "CityEdgeBridge": "Any",
       "CityKingsArena": "Darker",
-      "EastCityElevator": "Brighter",
       "CityRightHub": "Any",
-      "CityEdgeBridge": "Any"
+      "EastCityElevator": "Brighter"
     },
     "SceneAliases": [
       "City_Above_King's",
@@ -440,8 +440,8 @@
   },
   "CityLemm": {
     "AdjacentClusters": {
-      "CityEastEntrance": "Darker",
       "CityAboveLemm": "Darker",
+      "CityEastEntrance": "Darker",
       "CityFountain": "Any",
       "WaterwaysMain": "Darker"
     },
@@ -486,8 +486,8 @@
   },
   "CityPleasureHouse": {
     "AdjacentClusters": {
-      "EastCityElevator": "Any",
-      "CityRightHub": "Darker"
+      "CityRightHub": "Darker",
+      "EastCityElevator": "Any"
     },
     "SceneAliases": [
       "City_Pleasure_House_Bench",
@@ -504,11 +504,11 @@
   "CityRightHub": {
     "AdjacentClusters": {
       "CityBridgeToBasin": "Any",
+      "CityEmilitia": "Brighter",
+      "CityKingsStation": "Any",
       "CityPleasureHouse": "Brighter",
       "CityRightHubRooms": "Brighter",
-      "CityEmilitia": "Brighter",
-      "CitySpireLower": "Any",
-      "CityKingsStation": "Any"
+      "CitySpireLower": "Any"
     },
     "SceneAliases": [
       "City_Right_Hub"
@@ -639,8 +639,8 @@
   },
   "CitySpireLower": {
     "AdjacentClusters": {
-      "CityLowerSpire": "Brighter",
       "CityFountain": "Brighter",
+      "CityLowerSpire": "Brighter",
       "CityRightHub": "Any",
       "CityWatcherKnights": "Darker"
     },
@@ -663,10 +663,10 @@
   },
   "CityStorerooms": {
     "AdjacentClusters": {
-      "CityTollBench": "Brighter",
       "CityEastEntrance": "Brighter",
-      "WestCityElevator": "Darker",
-      "CityStoreroomsStag": "Brighter"
+      "CityStoreroomsStag": "Brighter",
+      "CityTollBench": "Brighter",
+      "WestCityElevator": "Darker"
     },
     "SceneAliases": [
       "City_Corridor_to_Storerooms",
@@ -702,9 +702,9 @@
   "CityTollBench": {
     "AdjacentClusters": {
       "CityAboveLemm": "Darker",
-      "CityStorerooms": "Darker",
       "CitySanctumEast": "Darker",
-      "CityShadeSoul": "Darker"
+      "CityShadeSoul": "Darker",
+      "CityStorerooms": "Darker"
     },
     "SceneAliases": [
       "City_Toll_Bench"
@@ -718,9 +718,9 @@
   },
   "CityTowerOfLove": {
     "AdjacentClusters": {
-      "EdgeTallRooms": "Darker",
+      "CityCollector": "Darker",
       "CityEdgeBridge": "Darker",
-      "CityCollector": "Darker"
+      "EdgeTallRooms": "Darker"
     },
     "SceneAliases": [
       "City_Tower_of_Love"
@@ -734,8 +734,8 @@
   },
   "CityWatcherKnights": {
     "AdjacentClusters": {
-      "CitySpireLower": "Brighter",
-      "CityLurien": "Brighter"
+      "CityLurien": "Brighter",
+      "CitySpireLower": "Brighter"
     },
     "SceneAliases": [
       "City_Spire_Watchers"
@@ -789,8 +789,8 @@
     "AdjacentClusters": {
       "CliffsBaldurShell": "Any",
       "CliffsJonis": "Any",
-      "KingsPass": "Brighter",
-      "CliffsMato": "Brighter"
+      "CliffsMato": "Brighter",
+      "KingsPass": "Brighter"
     },
     "SceneAliases": [
       "Cliffs_Gorb",
@@ -866,9 +866,9 @@
   },
   "CrossroadsCentralPass": {
     "AdjacentClusters": {
-      "CrossroadsWest": "Brighter",
+      "CrossroadsPeaksBridge": "Any",
       "CrossroadsStagHub": "Brighter",
-      "CrossroadsPeaksBridge": "Any"
+      "CrossroadsWest": "Brighter"
     },
     "SceneAliases": [
       "Crossroads_Above_Lever",
@@ -904,8 +904,8 @@
   },
   "CrossroadsEntrance": {
     "AdjacentClusters": {
-      "CrossroadsWest": "Any",
-      "CrossroadsOutsideBlackEgg": "Brighter"
+      "CrossroadsOutsideBlackEgg": "Brighter",
+      "CrossroadsWest": "Any"
     },
     "SceneAliases": [
       "Crossroads_Well"
@@ -939,9 +939,9 @@
   },
   "CrossroadsFalseKnight": {
     "AdjacentClusters": {
+      "CrossroadsFailedChampion": "Darker",
       "CrossroadsOutsideMound": "Brighter",
-      "CrossroadsStagHub": "Brighter",
-      "CrossroadsFailedChampion": "Darker"
+      "CrossroadsStagHub": "Brighter"
     },
     "SceneAliases": [
       "Crossroads_False_Knight_Arena"
@@ -1109,9 +1109,9 @@
   },
   "CrossroadsOutsideBlackEgg": {
     "AdjacentClusters": {
+      "BlackEggTemple": "Disconnected",
       "CrossroadsEntrance": "Darker",
-      "CrossroadsPeaksBridge": "Darker",
-      "BlackEggTemple": "Disconnected"
+      "CrossroadsPeaksBridge": "Darker"
     },
     "SceneAliases": [
       "Crossroads_Outside_Temple"
@@ -1168,9 +1168,9 @@
   },
   "CrossroadsShops": {
     "AdjacentClusters": {
-      "CrossroadsStagHub": "Brighter",
       "BlueLake": "Any",
-      "CrossroadsSlyRescue": "Brighter"
+      "CrossroadsSlyRescue": "Brighter",
+      "CrossroadsStagHub": "Brighter"
     },
     "SceneAliases": [
       "Crossroads_Gruz_Mother"
@@ -1237,11 +1237,11 @@
       "CrossroadsFalseKnight": "Darker",
       "CrossroadsGlowingWomb": "Darker",
       "CrossroadsLowerPass": "Any",
+      "CrossroadsShops": "Darker",
       "CrossroadsSpikeGrub": "Darker",
       "CrossroadsStag": "Brighter",
       "CrossroadsTram": "Brighter",
-      "CrystalPeaksToll": "Disconnected",
-      "CrossroadsShops": "Darker"
+      "CrystalPeaksToll": "Disconnected"
     },
     "SceneAliases": [
       "Crossroads_Before_Gruz_Mother",
@@ -1303,11 +1303,11 @@
       "CrossroadsFungalBridge": "Brighter",
       "CrossroadsGreenpathBridge": "Darker",
       "CrossroadsGrubfather": "Brighter",
+      "CrossroadsHotSprings": "Brighter",
       "CrossroadsLowerPass": "Darker",
       "CrossroadsMawlek": "Any",
       "CrossroadsMawlekApproach": "Any",
-      "CrossroadsOutsideMound": "Brighter",
-      "CrossroadsHotSprings": "Brighter"
+      "CrossroadsOutsideMound": "Brighter"
     },
     "SceneAliases": [
       "Crossroads_Aspid_Arena",
@@ -1648,9 +1648,9 @@
   },
   "CrystalPeaksUpper": {
     "AdjacentClusters": {
+      "CrystalPeaksCrown": "Disconnected",
       "CrystalPeaksTallHub": "Darker",
-      "CrystalPeaksWest": "Darker",
-      "CrystalPeaksCrown": "Disconnected"
+      "CrystalPeaksWest": "Darker"
     },
     "SceneAliases": [
       "Crystal_Top_Corridor"
@@ -1666,11 +1666,11 @@
     "AdjacentClusters": {
       "CrystalPeaksCrushersGrub": "Unspecified",
       "CrystalPeaksDeepFocus": "Unspecified",
+      "CrystalPeaksElevatorWing": "Unspecified",
       "CrystalPeaksGuardian": "Unspecified",
       "CrystalPeaksLowerPass": "Unspecified",
       "CrystalPeaksMiddleBridge": "Unspecified",
-      "CrystalPeaksUpper": "Brighter",
-      "CrystalPeaksElevatorWing": "Unspecified"
+      "CrystalPeaksUpper": "Brighter"
     },
     "SceneAliases": [
       "Crystal_Above_Spike_Grub",
@@ -1710,10 +1710,10 @@
     "AdjacentClusters": {
       "DeepnestFailedTram": "Unspecified",
       "DeepnestGalien": "Unspecified",
+      "DeepnestLight": "Unspecified",
       "DeepnestVillage": "Unspecified",
       "DeepnestWeaversDen": "Unspecified",
-      "GardensDeepnestBridge": "Unspecified",
-      "DeepnestLight": "Unspecified"
+      "GardensDeepnestBridge": "Unspecified"
     },
     "SceneAliases": [
       "Deepnest_First_Devout",
@@ -1739,10 +1739,10 @@
   "DeepnestDescent": {
     "AdjacentClusters": {
       "DeepnestFailedTram": "Unspecified",
+      "DeepnestLight": "Unspecified",
       "DeepnestMantisEntrance": "Unspecified",
       "DeepnestTramCorridor": "Unspecified",
-      "FungalDeepnestFall": "Brighter",
-      "DeepnestLight": "Unspecified"
+      "FungalDeepnestFall": "Brighter"
     },
     "SceneAliases": [
       "Deepnest_Garpede_Corridor_Below_Cornifer",
@@ -1769,8 +1769,8 @@
     "AdjacentClusters": {
       "DeepnestDark": "Unspecified",
       "DeepnestDescent": "Unspecified",
-      "DeepnestTramCorridor": "Unspecified",
-      "DeepnestLight": "Unspecified"
+      "DeepnestLight": "Unspecified",
+      "DeepnestTramCorridor": "Unspecified"
     },
     "SceneAliases": [
       "Deepnest_Failed_Tramway_Bench",
@@ -1810,10 +1810,10 @@
   },
   "DeepnestLight": {
     "AdjacentClusters": {
-      "DeepnestDescent": "Unspecified",
-      "DeepnestNoskApproach": "Brighter",
       "DeepnestDark": "Unspecified",
-      "DeepnestFailedTram": "Unspecified"
+      "DeepnestDescent": "Unspecified",
+      "DeepnestFailedTram": "Unspecified",
+      "DeepnestNoskApproach": "Brighter"
     },
     "SceneAliases": [
       "Deepnest_Left_Of_Hot_Spring",
@@ -1833,8 +1833,8 @@
   "DeepnestMantisEntrance": {
     "AdjacentClusters": {
       "DeepnestDescent": "Unspecified",
-      "FungalMantisLords": "Unspecified",
-      "FungalCore": "Unspecified"
+      "FungalCore": "Unspecified",
+      "FungalMantisLords": "Unspecified"
     },
     "SceneAliases": [
       "Deepnest_After_Lower_Cornifer",
@@ -1870,8 +1870,8 @@
   },
   "DeepnestNoskApproach": {
     "AdjacentClusters": {
-      "DeepnestNosk": "Darker",
-      "DeepnestLight": "Darker"
+      "DeepnestLight": "Darker",
+      "DeepnestNosk": "Darker"
     },
     "SceneAliases": [
       "Deepnest_Nosk_Corridor"
@@ -2038,11 +2038,11 @@
   },
   "EastCityElevator": {
     "AdjacentClusters": {
-      "GroundsBelowXero": "Darker",
-      "GroundsCatacombs": "Darker",
-      "EdgeColoCorridor": "Any",
+      "CityKingsStation": "Darker",
       "CityPleasureHouse": "Any",
-      "CityKingsStation": "Darker"
+      "EdgeColoCorridor": "Any",
+      "GroundsBelowXero": "Darker",
+      "GroundsCatacombs": "Darker"
     },
     "SceneAliases": [
       "City_Right_Elevator",
@@ -2154,9 +2154,9 @@
   },
   "EdgeColoCorridor": {
     "AdjacentClusters": {
-      "EdgeColoApproach": "Darker",
+      "EastCityElevator": "Any",
       "EdgeColo": "Any",
-      "EastCityElevator": "Any"
+      "EdgeColoApproach": "Darker"
     },
     "SceneAliases": [
       "Edge_Corridor_Outside_Colosseum"
@@ -2171,9 +2171,9 @@
   "EdgeEastUpper": {
     "AdjacentClusters": {
       "EdgeCampBench": "Brighter",
-      "EdgeTallRooms": "Unspecified",
       "EdgeHornetApproach": "Brighter",
       "EdgeLifeblood": "Brighter",
+      "EdgeTallRooms": "Unspecified",
       "EdgeUpperEast": "Unspecified"
     },
     "SceneAliases": [
@@ -2291,10 +2291,10 @@
   },
   "EdgeOroWing": {
     "AdjacentClusters": {
-      "EdgeTallRooms": "Unspecified",
+      "EdgeOro": "Brighter",
       "EdgeOroDive": "Unspecified",
-      "EdgeUpperEast": "Unspecified",
-      "EdgeOro": "Brighter"
+      "EdgeTallRooms": "Unspecified",
+      "EdgeUpperEast": "Unspecified"
     },
     "SceneAliases": [
       "Edge_Oro_Scarecrow",
@@ -2330,12 +2330,12 @@
   },
   "EdgeTallRooms": {
     "AdjacentClusters": {
+      "CityEdgeBridge": "Brighter",
+      "CityTowerOfLove": "Brighter",
       "EdgeColoApproach": "Unspecified",
       "EdgeEastUpper": "Unspecified",
       "EdgeOroWing": "Unspecified",
-      "EdgeTramApproach": "Unspecified",
-      "CityEdgeBridge": "Brighter",
-      "CityTowerOfLove": "Brighter"
+      "EdgeTramApproach": "Unspecified"
     },
     "SceneAliases": [
       "Edge_Entrance",
@@ -2581,9 +2581,9 @@
   "FogCanyonWestWing": {
     "AdjacentClusters": {
       "FogCanyonAutoPilot": "Brighter",
+      "FogCanyonOvergrownMound": "Unspecified",
       "FogCanyonWest": "Unspecified",
-      "GardensEntrance": "Unspecified",
-      "FogCanyonOvergrownMound": "Unspecified"
+      "GardensEntrance": "Unspecified"
     },
     "SceneAliases": [
       "Fog_Corridor_to_Overgrown_Mound",
@@ -2656,9 +2656,9 @@
   },
   "FungalDeepnestFall": {
     "AdjacentClusters": {
+      "DeepnestDescent": "Darker",
       "FungalSporeShroom": "Darker",
-      "GardensLowerPass": "Darker",
-      "DeepnestDescent": "Darker"
+      "GardensLowerPass": "Darker"
     },
     "SceneAliases": [
       "Fungal_Deepnest_Fall"
@@ -2818,9 +2818,9 @@
   },
   "FungalPilgrimsWay": {
     "AdjacentClusters": {
+      "CityEastEntrance": "Any",
       "FungalClothCorridor": "Brighter",
-      "FungalLowerHub": "Unspecified",
-      "CityEastEntrance": "Any"
+      "FungalLowerHub": "Unspecified"
     },
     "SceneAliases": [
       "Fungal_Left_Of_Pilgrim's_Way",
@@ -3376,8 +3376,8 @@
   },
   "GreenpathUnn": {
     "AdjacentClusters": {
-      "GreenpathUnnBridge": "Brighter",
-      "GreenpathUnnBench": "Brighter"
+      "GreenpathUnnBench": "Brighter",
+      "GreenpathUnnBridge": "Brighter"
     },
     "SceneAliases": [
       "Greenpath_Lake_Of_Unn",
@@ -3507,8 +3507,8 @@
   "GroundsBelowXero": {
     "AdjacentClusters": {
       "BlueLake": "Any",
-      "GroundsXero": "Unspecified",
-      "EastCityElevator": "Brighter"
+      "EastCityElevator": "Brighter",
+      "GroundsXero": "Unspecified"
     },
     "SceneAliases": [
       "Grounds_Corridor_Below_Xero"
@@ -3525,8 +3525,8 @@
   },
   "GroundsCatacombs": {
     "AdjacentClusters": {
-      "GroundsMain": "Unspecified",
-      "EastCityElevator": "Brighter"
+      "EastCityElevator": "Brighter",
+      "GroundsMain": "Unspecified"
     },
     "SceneAliases": [
       "Grounds_Crypts"
@@ -3668,10 +3668,10 @@
   },
   "GroundsXero": {
     "AdjacentClusters": {
+      "CrystalPeaksOutsideMound": "Brighter",
       "GroundsBelowXero": "Unspecified",
       "GroundsOutsideDreamNail": "Brighter",
-      "GroundsTram": "Brighter",
-      "CrystalPeaksOutsideMound": "Brighter"
+      "GroundsTram": "Brighter"
     },
     "SceneAliases": [
       "Grounds_Xero"
@@ -3974,8 +3974,8 @@
   },
   "WaterwaysFlukeHermit": {
     "AdjacentClusters": {
-      "WaterwaysJunkPit": "Any",
-      "CityEastEntrance": "Disconnected"
+      "CityEastEntrance": "Disconnected",
+      "WaterwaysJunkPit": "Any"
     },
     "SceneAliases": [
       "Waterways_Fluke_Hermit"
@@ -4010,8 +4010,8 @@
   "WaterwaysIsmasGrove": {
     "AdjacentClusters": {
       "CityBridgeToBasin": "Disconnected",
-      "WaterwaysEdgeAcidCorridor": "Brighter",
-      "CityEmilitia": "Brighter"
+      "CityEmilitia": "Brighter",
+      "WaterwaysEdgeAcidCorridor": "Brighter"
     },
     "SceneAliases": [
       "Waterways_Isma's_Grove",
@@ -4030,8 +4030,8 @@
   },
   "WaterwaysJunkPit": {
     "AdjacentClusters": {
-      "WaterwaysOutsideFlukemarm": "Any",
-      "WaterwaysFlukeHermit": "Any"
+      "WaterwaysFlukeHermit": "Any",
+      "WaterwaysOutsideFlukemarm": "Any"
     },
     "SceneAliases": [
       "Waterways_Junk_Pit"
@@ -4049,10 +4049,10 @@
   "WaterwaysMain": {
     "AdjacentClusters": {
       "CityBridgeToBasin": "Disconnected",
+      "CityLemm": "Brighter",
       "WaterwaysDungDefender": "Darker",
       "WaterwaysOutsideFlukemarm": "Darker",
-      "WaterwaysWestWing": "Any",
-      "CityLemm": "Brighter"
+      "WaterwaysWestWing": "Any"
     },
     "SceneAliases": [
       "Waterways_Corridor_to_Broken_Elevator",
@@ -4135,9 +4135,9 @@
   },
   "WestCityElevator": {
     "AdjacentClusters": {
+      "CityStorerooms": "Brighter",
       "CrossroadsElevatorApproach": "Brighter",
-      "CrossroadsVesselFragment": "Any",
-      "CityStorerooms": "Brighter"
+      "CrossroadsVesselFragment": "Any"
     },
     "SceneAliases": [
       "City_Left_Elevator",
