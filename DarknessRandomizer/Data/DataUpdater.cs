@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace DarknessRandomizer.Data
 {
-    // TODO(You): Make a copy of /Resources/Data/graph_update_example.json as graph_update.json, and fill in your own params.
-    public class GraphUpdateData
+    // TODO(You): Make a copy of /Resources/Data/data_updater_metadata.json as graph_update.json, and fill in your own params.
+    public class DataUpdaterMetadata
     {
         public string RepoRoot;
     }
 
-    class GraphDataUpdater
+    class DataUpdater
     {
         private static void SyncDicts<K,V1,V2>(IDictionary<K, V1> src, IDictionary<K, V2> dst, Func<K, V2> creator)
         {
@@ -39,8 +39,8 @@ namespace DarknessRandomizer.Data
 
         public static void UpdateGraphData()
         {
-            GraphUpdateData gud =
-                JsonUtil.DeserializeEmbedded<GraphUpdateData>("DarknessRandomizer.Resources.Data.graph_update.json");
+            DataUpdaterMetadata gud =
+                JsonUtil.DeserializeEmbedded<DataUpdaterMetadata>("DarknessRandomizer.Resources.Data.data_updater_metadata.json");
             DarknessRandomizer.Log("Loading Graph Data for update...");
 
             // Load all the data.
@@ -169,8 +169,6 @@ namespace DarknessRandomizer.Data
                     var aCluster = e2.Key;
                     var aData = CD[aCluster];
                     var rd = e2.Value;
-                    if (rd == RelativeDarkness.Unspecified) continue;
-
                     if (rd == RelativeDarkness.Disconnected
                         || (aData.AdjacentClusters.TryGetValue(cluster, out RelativeDarkness ard) && ard == RelativeDarkness.Disconnected))
                     {
@@ -200,6 +198,9 @@ namespace DarknessRandomizer.Data
                         aData.AdjacentClusters[cluster] = RelativeDarkness.Brighter;
                         continue;
                     }
+
+                    // If we're unspecified, let the other side force our hand.
+                    if (rd == RelativeDarkness.Unspecified) continue;
 
                     // Inspect and validate te opposing cluster.
                     if (!aData.AdjacentClusters.TryGetValue(cluster, out ard) || ard == RelativeDarkness.Unspecified)

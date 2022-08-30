@@ -43,7 +43,7 @@ namespace DarknessRandomizer
         public MenuScreen GetMenuScreen(MenuScreen modListMenu, ModToggleDelegates? toggleDelegates)
         {
             ModMenuScreenBuilder builder = new(Localization.Localize("Darkness Randomizer Viewer"), modListMenu);
-            builder.AddButton(Localization.Localize("(DEV) Rebuild Graph Data"), null, GraphDataUpdater.UpdateGraphData);
+            builder.AddButton(Localization.Localize("(DEV) Rebuild Graph Data"), null, DataUpdater.UpdateGraphData);
             return builder.CreateMenuScreen();
         }
     }
