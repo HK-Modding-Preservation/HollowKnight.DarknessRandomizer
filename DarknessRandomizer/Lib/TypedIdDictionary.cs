@@ -98,5 +98,15 @@ namespace DarknessRandomizer.Lib
     }
 
     [JsonConverter(typeof(TypedIdDictionaryConverter<SceneName, Darkness, SceneDarknessDict>))]
-    public class SceneDarknessDict : SceneDictionary<Darkness> { }
+    public class SceneDarknessDict : SceneDictionary<Darkness>
+    {
+        public SceneDarknessDict() { }
+        public SceneDarknessDict(SceneDarknessDict other) : base(other) { }
+    }
+
+    [JsonConverter(typeof(TypedIdDictionaryConverter<ClusterName, Darkness, ClusterDarknessDict>))]
+    public class ClusterDarknessDict : ClusterDictionary<Darkness> {
+        public ClusterDarknessDict() { }
+        public ClusterDarknessDict(ClusterDarknessDict other) : base(other) { }
+    }
 }

@@ -58,13 +58,16 @@ namespace DarknessRandomizer.Rando
 
             bool dark = darkness == Darkness.Dark;
             bool lantern = PlayerHasLantern();
-            if (dark && !lantern)
+            if (!lantern)
             {
-                DeleteHazardRespawnTriggers();
-            }
-            if (!dark)
-            {
-                EnableDisabledLanternObjects();
+                if (dark)
+                {
+                    DeleteHazardRespawnTriggers();
+                }
+                else
+                {
+                    EnableDisabledLanternObjects();
+                }
             }
 
             // FIXME: Scenes

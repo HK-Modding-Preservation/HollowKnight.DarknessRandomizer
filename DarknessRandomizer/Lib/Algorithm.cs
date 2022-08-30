@@ -9,7 +9,7 @@ namespace DarknessRandomizer.Lib
 {
     public record AlgorithmStats
     {
-        public ClusterDictionary<Darkness> ClusterDarkness;
+        public ClusterDarknessDict ClusterDarkness;
         public int DarknessSpent;
         public int DarknessRemaining;
     }
@@ -20,7 +20,7 @@ namespace DarknessRandomizer.Lib
         private readonly DarknessRandomizationSettings settings;
 
         private int darknessAvailable;
-        private readonly ClusterDictionary<Darkness> clusterDarkness;
+        private readonly ClusterDarknessDict clusterDarkness;
         private readonly WeightedHeap<ClusterName> darkCandidates;
         private readonly HashSet<ClusterName> semiDarkCandidates;
         private readonly HashSet<ClusterName> forbiddenClusters;
