@@ -239,14 +239,6 @@ namespace DarknessRandomizer.Data
                 {
                     cData.DarkSettings ??= new();
                 }
-                if (cData.MaximumDarkness(s => SD[s]) < Darkness.SemiDark || cData.MinimumDarkness(s => SD[s]) > Darkness.SemiDark)
-                {
-                    cData.SemiDarkSettings = null;
-                }
-                else
-                {
-                    cData.SemiDarkSettings ??= new();
-                }
             }
             MaybeThrowException(exceptions);
 

@@ -70,15 +70,10 @@ namespace DarknessRandomizer.Lib
                 SelectNewDarknessNode();
             }
 
-            // Phase 2: Turn the remaining nodes into semi-darkness with high probability.
-            var scs = semiDarkCandidates.ToList();
-            scs.Sort();
-            foreach (var c in scs)
+            // Phase 2: Turn the remaining nodes into semi-darkness.
+            foreach (var c in semiDarkCandidates)
             {
-                if (r.Next(0, 100) < ClusterData.Get(c).SemiDarkProbability)
-                {
-                    clusterDarkness[c] = Darkness.SemiDark;
-                }
+                clusterDarkness[c] = Darkness.SemiDark;
             }
 
             // Phase 3: Output the per-scene darkness levels.

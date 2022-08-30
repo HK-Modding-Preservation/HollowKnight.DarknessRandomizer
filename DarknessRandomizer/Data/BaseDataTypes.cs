@@ -64,11 +64,6 @@ namespace DarknessRandomizer.Data
         public int CostWeight = 100;
     }
 
-    public class SemiDarkSettings
-    {
-        public int SemiDarkProbability = 100;
-    }
-
     public abstract class BaseClusterData<S, C>
     {
         public List<string> SceneAliases = new();
@@ -76,7 +71,6 @@ namespace DarknessRandomizer.Data
         public bool? OverrideCannotBeDarknessSource = null;
         public bool? CursedOnly = false;
         public DarkSettings DarkSettings = null;
-        public SemiDarkSettings SemiDarkSettings = null;
 
         public delegate BaseSceneData<C> SceneLookup(S scene);
 
@@ -89,9 +83,6 @@ namespace DarknessRandomizer.Data
 
         [JsonIgnore]
         public int CostWeight => DarkSettings?.CostWeight ?? 100;
-
-        [JsonIgnore]
-        public int SemiDarkProbability => SemiDarkSettings?.SemiDarkProbability ?? 100;
 
         public bool CanBeDarknessSource(SceneLookup SL, DarknessRandomizationSettings settings = null)
         {
