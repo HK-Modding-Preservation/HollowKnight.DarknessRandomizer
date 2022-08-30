@@ -1,5 +1,6 @@
 ﻿using DarknessRandomizer.Data;
 using DarknessRandomizer.Lib;
+using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
 using ItemChanger;
 using ItemChanger.Extensions;
@@ -43,9 +44,10 @@ namespace DarknessRandomizer.Rando
             InstallDeleteGhostWarriorIfDark(SceneName.GroundsXero);
 
             // Make tollgates unusable in dark rooms.
-            InstallDarkTollgateCheck(SceneName.GreenpathToll, "Toll Gate Machine");
-            InstallDarkTollgateCheck(SceneName.GreenpathToll, "Toll Gate Machine (1)");
-            InstallDarkTollgateCheck(SceneName.CityTollBench, "Toll Gate Machine");
+            InstallDarkTollgateCheck(SceneName.GreenpathToll, new("Toll Gate Machine", "Toll Machine"));
+            InstallDarkTollgateCheck(SceneName.GreenpathToll, new("Toll Gate Machine (1)", "Toll Machine"));
+            InstallDarkTollgateCheck(SceneName.CityTollBench, new("Toll Machine Bench", "Toll Machine Bench"));
+            InstallDarkTollgateCheck(SceneName.BasinCorridortoBrokenVessel, new("Toll Machine Bench", "Toll Machine Bench"));
 
             // The Shade Soul door is inoperable in the dark.
             InstallElegantKeyDarkCheck();
@@ -113,7 +115,13 @@ namespace DarknessRandomizer.Rando
             }
         }
 
-        private readonly Dictionary<string, bool> customBool = new();
+        private const string TrueBool = "DarknessRandomizerTrue";
+        private const string FalseBool = "DarknessRandomizerFalse";
+        private readonly Dictionary<string, bool> customBool = new()
+        {
+            { TrueBool, true },
+            { FalseBool, false }
+        };
 
         private bool IsDark(SceneName sceneName)
         {
@@ -126,39 +134,33 @@ namespace DarknessRandomizer.Rando
             return false;
         }
 
-        private string GetSceneIsBrightBool(SceneName sceneName)
-        {
-            string newName = $"DarknessRandomizerBool{sceneName}";
-            customBool[newName] = !IsDark(sceneName);
-            return newName;
-        }
-
-        private string GetFalseBool()
-        {
-            const string bname = "DarknessRandomizerFalse";
-            customBool[bname] = false;
-            return bname;
-        }
-
         private bool OverrideGetBool(string name, bool orig) => customBool.TryGetValue(name, out bool b) ? b : orig;
 
         private void InstallMaybeDisableLanternCheck(SceneName sceneName, FsmID id)
         {
             InstallHook(new FsmEditHook(sceneName, id, fsm =>
             {
-                fsm.GetState("Check").GetFirstActionOfType<PlayerDataBoolTest>().boolName = GetSceneIsBrightBool(sceneName);
+                if (!IsDark(sceneName))
+                {
+                    fsm.GetState("Check").GetFirstActionOfType<PlayerDataBoolTest>().boolName = TrueBool;
+                }
             }));
         }
 
-        private void InstallDarkTollgateCheck(SceneName sceneName, string name)
+        private void InstallDarkTollgateCheck(SceneName sceneName, FsmID id)
         {
-            InstallHook(new FsmEditHook(sceneName, new(name, "Toll Gate Machine"), fsm =>
+            InstallHook(new FsmEditHook(sceneName, id, fsm =>
             {
                 if (IsDark(sceneName))
                 {
-                    Wait wait = new();
-                    wait.time = 1000000.0f;
-                    fsm.GetState("Init").AddLastAction(wait);
+                    fsm.GetState("Can Inspect?").GetFirstActionOfType<BoolTest>().boolVariable = new FsmBool() { Value = false };
+                }
+            }));
+            InstallHook(new FsmEditHook(sceneName, new("Arrow Prompt(Clone)", "Prompt Control"), fsm =>
+            {
+                if (IsDark(sceneName))
+                {
+                    GameObject.Destroy(fsm.gameObject);
                 }
             }));
         }
@@ -190,13 +192,13 @@ namespace DarknessRandomizer.Rando
 
         private void InstallElegantKeyDarkCheck()
         {
-            InstallHook(new FsmEditHook(SceneName.CityTollBench, new("Mage Door", "Door Control"), fsm =>
+            InstallHook(new FsmEditHook(SceneName.CityTollBench, new("Mage Door", "npc_control"), fsm =>
             {
                 if (IsDark(SceneName.CityTollBench))
                 {
-                    Wait wait = new();
-                    wait.time = 1000000.0f;
-                    fsm.GetState("Init").AddLastAction(wait);
+                    fsm.GetState("Can Talk?").GetFirstActionOfType<BoolTest>().boolVariable = new FsmBool() { Value = false };
+                    var prompt = GameObject.Find("/Mage Door/Prompt Marker");
+                    GameObject.Destroy(prompt);
                 }
             }));
         }

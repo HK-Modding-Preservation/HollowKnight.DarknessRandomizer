@@ -91,16 +91,19 @@ namespace DarknessRandomizer.Lib
             }
 
             // Inject custom darkness here.
-            foreach (var c in ClusterName.All())
-            {
-                var cData = ClusterData.Get(c);
-                clusterDarkness[c] = cData.MaximumDarkness(settings);
-            }
-            clusterDarkness[ClusterName.GreenpathStoneSanctuary] = Darkness.Bright;
-            clusterDarkness[ClusterName.DeepnestDark] = Darkness.Bright;
-            clusterDarkness[ClusterName.CrystalPeaksToll] = Darkness.Bright;
-            clusterDarkness[ClusterName.CrystalPeaksDarkRoom] = Darkness.Bright;
-            clusterDarkness[ClusterName.CliffsJonis] = Darkness.Bright;
+            // The code below does a full inversion - all traditionally lit rooms are dark, and vice versa.
+            // Mainly for debugging/testing purposes. You'll need to turn on DARKROOMS for this to get past Logic.
+            //
+            // foreach (var c in ClusterName.All())
+            // {
+            //     var cData = ClusterData.Get(c);
+            //     clusterDarkness[c] = cData.MaximumDarkness(settings);
+            // }
+            // clusterDarkness[ClusterName.GreenpathStoneSanctuary] = Darkness.Bright;
+            // clusterDarkness[ClusterName.DeepnestDark] = Darkness.Bright;
+            // clusterDarkness[ClusterName.CrystalPeaksToll] = Darkness.Bright;
+            // clusterDarkness[ClusterName.CrystalPeaksDarkRoom] = Darkness.Bright;
+            // clusterDarkness[ClusterName.CliffsJonis] = Darkness.Bright;
 
             // Phase 3: Output the per-scene darkness levels.
             darknessOverrides = new();
