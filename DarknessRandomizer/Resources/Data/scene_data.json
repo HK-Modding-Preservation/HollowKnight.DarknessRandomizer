@@ -2494,25 +2494,25 @@
   },
   "Room_Colosseum_01": {
     "Alias": "Edge_Colo_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "EdgeColo",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Room_Colosseum_02": {
     "Alias": "Edge_Colo_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "EdgeColo",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Room_Colosseum_Bronze": {
     "Alias": "Edge_Colo_1_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "EdgeColo1",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2521,7 +2521,7 @@
   },
   "Room_Colosseum_Gold": {
     "Alias": "Edge_Colo_3_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "EdgeColo3",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2530,7 +2530,7 @@
   },
   "Room_Colosseum_Silver": {
     "Alias": "Edge_Colo_2_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "EdgeColo2",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2539,25 +2539,25 @@
   },
   "Room_Colosseum_Spectate": {
     "Alias": "Edge_Colo_Spectate",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "EdgeColo",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Room_Final_Boss_Atrium": {
     "Alias": "Egg_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "BlackEggTemple",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Room_Final_Boss_Core": {
     "Alias": "Egg_Hollow_Knight",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "BlackEggNight",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2566,7 +2566,7 @@
   },
   "Room_Fungus_Shaman": {
     "Alias": "Fog_Overgrown_Mound",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "FogCanyonOvergrownMound",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2575,7 +2575,7 @@
   },
   "Room_GG_Shortcut": {
     "Alias": "Waterways_Fluke_Hermit",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "WaterwaysFlukeHermit",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2584,169 +2584,79 @@
   },
   "Room_nailmaster": {
     "Alias": "Cliffs_Mato",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CliffsMato",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Room_nailmaster_02": {
     "Alias": "Greenpath_Sheo",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathSheo",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Room_nailmaster_03": {
     "Alias": "Edge_Oro",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "EdgeOro",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Room_nailsmith": {
-    "Alias": "City_Nailsmith",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Room_Ouiji": {
-    "Alias": "Jiji",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Room_Queen": {
-    "Alias": "Gardens_White_Lady",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Room_ruinhouse": {
     "Alias": "Crossroads_Rescue_Sly",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CrossroadsSlyRescue",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Room_shop": {
-    "Alias": "Sly",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Room_Slug_Shrine": {
     "Alias": "Greenpath_Unn_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "GreenpathUnnBench",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Room_Sly_Storeroom": {
-    "Alias": "Sly_Basement",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Room_spider_small": {
-    "Alias": "Deepnest_Brumm",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Room_temple": {
     "Alias": "Black_Egg_Temple",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "BlackEggTemple",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Room_Town_Stag_Station": {
-    "Alias": "Dirtmouth_Stag",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Room_Tram": {
-    "Alias": "Lower_Tram",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Room_Tram_RG": {
-    "Alias": "Upper_Tram",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Room_Wyrm": {
-    "Alias": "Edge_Cast-Off_Shell",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins_Bathhouse": {
     "Alias": "City_Pleasure_House_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityPleasureHouse",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins_Elevator": {
     "Alias": "City_Pleasure_House_Elevator",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityPleasureHouse",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins_House_01": {
     "Alias": "City_Guarded_Grub",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityRightHubRooms",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2755,7 +2665,7 @@
   },
   "Ruins_House_02": {
     "Alias": "City_Gorgeous_Husk",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityRightHubRooms",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2764,16 +2674,16 @@
   },
   "Ruins_House_03": {
     "Alias": "City_Emilitia",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityEmilitia",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins1_01": {
     "Alias": "City_Pilgrim's_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityEastEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2782,7 +2692,7 @@
   },
   "Ruins1_02": {
     "Alias": "City_Quirrel_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityEastEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2791,7 +2701,7 @@
   },
   "Ruins1_03": {
     "Alias": "City_Rafters",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityEastEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2800,7 +2710,7 @@
   },
   "Ruins1_04": {
     "Alias": "City_Outside_Nailsmith",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityEastEntrance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2809,7 +2719,7 @@
   },
   "Ruins1_05": {
     "Alias": "City_Grub_Above_Lemm",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityAboveLemm",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2818,16 +2728,16 @@
   },
   "Ruins1_05b": {
     "Alias": "City_Lemm",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityLemm",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins1_05c": {
     "Alias": "City_Egg_Above_Lemm",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityAboveLemm",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2836,16 +2746,16 @@
   },
   "Ruins1_06": {
     "Alias": "City_Corridor_to_Storerooms",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityStorerooms",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins1_09": {
     "Alias": "City_Soul_Twister_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CitySanctumEast",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2854,7 +2764,7 @@
   },
   "Ruins1_17": {
     "Alias": "City_Whispering_Root",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityStorerooms",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2863,16 +2773,16 @@
   },
   "Ruins1_18": {
     "Alias": "City_Corridor_to_Spire",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityLowerSpire",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins1_23": {
     "Alias": "City_Sanctum_Entrance",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CitySanctumEast",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2881,7 +2791,7 @@
   },
   "Ruins1_24": {
     "Alias": "City_Soul_Master_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CitySanctumWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2890,7 +2800,7 @@
   },
   "Ruins1_25": {
     "Alias": "City_Sanctum_East_Elevators",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CitySanctumEast",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2899,16 +2809,16 @@
   },
   "Ruins1_27": {
     "Alias": "City_Hollow_Knight_Fountain",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityFountain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins1_28": {
     "Alias": "City_Storerooms",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityStorerooms",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2917,16 +2827,16 @@
   },
   "Ruins1_29": {
     "Alias": "City_Storerooms_Stag",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityStoreroomsStag",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins1_30": {
     "Alias": "City_Sanctum_Spell_Twister",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CitySanctumMiddle",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2935,16 +2845,16 @@
   },
   "Ruins1_31": {
     "Alias": "City_Toll_Bench",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityTollBench",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins1_31b": {
     "Alias": "City_Shade_Soul_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityShadeSoul",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2953,7 +2863,7 @@
   },
   "Ruins1_32": {
     "Alias": "City_Soul_Master_Rewards",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CitySanctumWest",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2962,7 +2872,7 @@
   },
   "Ruins2_01": {
     "Alias": "City_Spire_Great_Husk",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CitySpireLower",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2971,7 +2881,7 @@
   },
   "Ruins2_01_b": {
     "Alias": "City_Spire_Base",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CitySpireLower",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2980,7 +2890,7 @@
   },
   "Ruins2_03": {
     "Alias": "City_Spire_Watchers",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityWatcherKnights",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2989,7 +2899,7 @@
   },
   "Ruins2_03b": {
     "Alias": "City_Spire_Below_Watchers",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CitySpireLower",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -2998,7 +2908,7 @@
   },
   "Ruins2_04": {
     "Alias": "City_Right_Hub",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityRightHub",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3007,7 +2917,7 @@
   },
   "Ruins2_05": {
     "Alias": "City_Above_King's",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityKingsStation",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3016,7 +2926,7 @@
   },
   "Ruins2_06": {
     "Alias": "City_King's_Station",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityKingsStation",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3025,7 +2935,7 @@
   },
   "Ruins2_07": {
     "Alias": "City_Grub_Below_King's",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityEdgeBridge",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3034,16 +2944,16 @@
   },
   "Ruins2_08": {
     "Alias": "City_King's_Stag",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityKingsStation",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins2_09": {
     "Alias": "City_King's_Vessel_Fragment",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityKingsArena",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3052,25 +2962,25 @@
   },
   "Ruins2_10": {
     "Alias": "Grounds_Elevator",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "EastCityElevator",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins2_10b": {
     "Alias": "City_Right_Elevator",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "EastCityElevator",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins2_11": {
     "Alias": "City_Collector_Arena",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityCollector",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
@@ -3079,27 +2989,18 @@
   },
   "Ruins2_11_b": {
     "Alias": "City_Tower_of_Love",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityTowerOfLove",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },
   "Ruins2_Watcher_Room": {
     "Alias": "City_Lurien_Elevator",
-    "Cluster": "UNASSIGNED",
+    "Cluster": "CityLurien",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Town": {
-    "Alias": "Dirtmouth",
-    "Cluster": "UNASSIGNED",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
@@ -3409,66 +3310,5 @@
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
-  }
-}",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "White_Palace_16": {
-    "Alias": "Palace_Saw_Climb",
-    "Cluster": "PalaceWings",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "White_Palace_17": {
-    "Alias": "POP_Lever",
-    "Cluster": "PalacePOPEntrance",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "White_Palace_18": {
-    "Alias": "POP_Entrance",
-    "Cluster": "PalacePOPEntrance",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "White_Palace_19": {
-    "Alias": "POP_Vertical",
-    "Cluster": "PalacePOPFinal",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  },
-  "White_Palace_20": {
-    "Alias": "POP_Final",
-    "Cluster": "PalacePOPFinal",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
-  }
-}ll
-  },
-  "White_Palace_20": {
-    "Alias": "POP_Final",
-    "Cluster": "PalacePOPFinal",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientSkips": null
   }
 }

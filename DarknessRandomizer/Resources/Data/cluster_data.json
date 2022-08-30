@@ -281,6 +281,27 @@
     "CostWeight": 100,
     "SemiDarkProbability": 100
   },
+  "BlackEggNight": {
+    "AdjacentClusters": {},
+    "SceneAliases": [
+      "Egg_Hollow_Knight"
+    ],
+    "SceneNames": [
+      "Room_Final_Boss_Core"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
   "BlackEggRadiance": {
     "AdjacentClusters": {},
     "SceneAliases": [
@@ -295,6 +316,28 @@
       "ProbabilityWeight": 100,
       "CostWeight": 100
     },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "BlackEggTemple": {
+    "AdjacentClusters": {
+      "CrossroadsOutsideTemple": "Unspecified"
+    },
+    "SceneAliases": [
+      "Black_Egg_Temple",
+      "Egg_Bench"
+    ],
+    "SceneNames": [
+      "Room_Final_Boss_Atrium",
+      "Room_temple"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
     },
@@ -326,13 +369,43 @@
     "CostWeight": 100,
     "SemiDarkProbability": 100
   },
+  "CityAboveLemm": {
+    "AdjacentClusters": {
+      "CitySanctumEast": "Unspecified",
+      "CityLowerSpire": "Unspecified",
+      "CityTollBench": "Unspecified",
+      "CityEastEntrance": "Unspecified",
+      "CityLemm": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Egg_Above_Lemm",
+      "City_Grub_Above_Lemm"
+    ],
+    "SceneNames": [
+      "Ruins1_05",
+      "Ruins1_05c"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
   "CityBridgeToBasin": {
     "AdjacentClusters": {
       "BasinCloth": "Unspecified",
       "BasinFountain": "Unspecified",
       "WaterwaysDungDefender": "Unspecified",
       "WaterwaysIsmasGrove": "Unspecified",
-      "WaterwaysMain": "Unspecified"
+      "WaterwaysMain": "Unspecified",
+      "CityRightHub": "Unspecified"
     },
     "SceneAliases": [
       "Basin_Broken_Bridge",
@@ -357,17 +430,567 @@
     "CostWeight": 100,
     "SemiDarkProbability": 100
   },
-  "CityLurien": {
-    "AdjacentClusters": {},
+  "CityCollector": {
+    "AdjacentClusters": {
+      "CityTowerOfLove": "Unspecified"
+    },
     "SceneAliases": [
-      "Dream_Lurien"
+      "City_Collector_Arena"
     ],
     "SceneNames": [
-      "Dream_Guardian_Lurien"
+      "Ruins2_11"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityEastEntrance": {
+    "AdjacentClusters": {
+      "FungalPilgrimsWay": "Unspecified",
+      "CityStorerooms": "Unspecified",
+      "CityLemm": "Unspecified",
+      "CityAboveLemm": "Unspecified",
+      "WaterwaysFlukeHermit": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Outside_Nailsmith",
+      "City_Pilgrim's_Entrance",
+      "City_Quirrel_Bench",
+      "City_Rafters"
+    ],
+    "SceneNames": [
+      "Ruins1_01",
+      "Ruins1_02",
+      "Ruins1_03",
+      "Ruins1_04"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityEdgeBridge": {
+    "AdjacentClusters": {
+      "EdgeColumn": "Unspecified",
+      "CityKingsStation": "Unspecified",
+      "CityTowerOfLove": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Grub_Below_King's"
+    ],
+    "SceneNames": [
+      "Ruins2_07"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityEmilitia": {
+    "AdjacentClusters": {
+      "WaterwaysIsmasGrove": "Unspecified",
+      "CityRightHub": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Emilitia"
+    ],
+    "SceneNames": [
+      "Ruins_House_03"
     ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityFountain": {
+    "AdjacentClusters": {
+      "CityLemm": "Unspecified",
+      "CitySpireLower": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Hollow_Knight_Fountain"
+    ],
+    "SceneNames": [
+      "Ruins1_27"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityKingsArena": {
+    "AdjacentClusters": {
+      "CityKingsStation": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_King's_Vessel_Fragment"
+    ],
+    "SceneNames": [
+      "Ruins2_09"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityKingsStation": {
+    "AdjacentClusters": {
+      "CityKingsArena": "Unspecified",
+      "EastCityElevator": "Unspecified",
+      "CityRightHub": "Unspecified",
+      "CityEdgeBridge": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Above_King's",
+      "City_King's_Stag",
+      "City_King's_Station"
+    ],
+    "SceneNames": [
+      "Ruins2_05",
+      "Ruins2_06",
+      "Ruins2_08"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityLemm": {
+    "AdjacentClusters": {
+      "CityEastEntrance": "Unspecified",
+      "CityAboveLemm": "Unspecified",
+      "CityFountain": "Unspecified",
+      "WaterwaysMain": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Lemm"
+    ],
+    "SceneNames": [
+      "Ruins1_05b"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityLowerSpire": {
+    "AdjacentClusters": {
+      "CityAboveLemm": "Unspecified",
+      "CitySpireLower": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Corridor_to_Spire"
+    ],
+    "SceneNames": [
+      "Ruins1_18"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityLurien": {
+    "AdjacentClusters": {
+      "CityWatcherKnights": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Lurien_Elevator",
+      "Dream_Lurien"
+    ],
+    "SceneNames": [
+      "Dream_Guardian_Lurien",
+      "Ruins2_Watcher_Room"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityPleasureHouse": {
+    "AdjacentClusters": {
+      "EastCityElevator": "Unspecified",
+      "CityRightHub": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Pleasure_House_Bench",
+      "City_Pleasure_House_Elevator"
+    ],
+    "SceneNames": [
+      "Ruins_Bathhouse",
+      "Ruins_Elevator"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityRightHub": {
+    "AdjacentClusters": {
+      "CityBridgeToBasin": "Unspecified",
+      "CityPleasureHouse": "Unspecified",
+      "CityRightHubRooms": "Unspecified",
+      "CityEmilitia": "Unspecified",
+      "CitySpireLower": "Unspecified",
+      "CityKingsStation": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Right_Hub"
+    ],
+    "SceneNames": [
+      "Ruins2_04"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityRightHubRooms": {
+    "AdjacentClusters": {
+      "CityRightHub": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Gorgeous_Husk",
+      "City_Guarded_Grub"
+    ],
+    "SceneNames": [
+      "Ruins_House_01",
+      "Ruins_House_02"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CitySanctumEast": {
+    "AdjacentClusters": {
+      "CityAboveLemm": "Unspecified",
+      "CitySanctumMiddle": "Unspecified",
+      "CityTollBench": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Sanctum_East_Elevators",
+      "City_Sanctum_Entrance",
+      "City_Soul_Twister_Arena"
+    ],
+    "SceneNames": [
+      "Ruins1_09",
+      "Ruins1_23",
+      "Ruins1_25"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CitySanctumMiddle": {
+    "AdjacentClusters": {
+      "CitySanctumEast": "Unspecified",
+      "CitySanctumWest": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Sanctum_Spell_Twister"
+    ],
+    "SceneNames": [
+      "Ruins1_30"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CitySanctumWest": {
+    "AdjacentClusters": {
+      "CitySanctumMiddle": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Soul_Master_Arena",
+      "City_Soul_Master_Rewards"
+    ],
+    "SceneNames": [
+      "Ruins1_24",
+      "Ruins1_32"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityShadeSoul": {
+    "AdjacentClusters": {
+      "CityTollBench": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Shade_Soul_Arena"
+    ],
+    "SceneNames": [
+      "Ruins1_31b"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CitySpireLower": {
+    "AdjacentClusters": {
+      "CityLowerSpire": "Unspecified",
+      "CityFountain": "Unspecified",
+      "CityRightHub": "Unspecified",
+      "CityWatcherKnights": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Spire_Base",
+      "City_Spire_Below_Watchers",
+      "City_Spire_Great_Husk"
+    ],
+    "SceneNames": [
+      "Ruins2_01",
+      "Ruins2_01_b",
+      "Ruins2_03b"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityStorerooms": {
+    "AdjacentClusters": {
+      "CityTollBench": "Unspecified",
+      "CityEastEntrance": "Unspecified",
+      "WestCityElevator": "Unspecified",
+      "CityStoreroomsStag": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Corridor_to_Storerooms",
+      "City_Storerooms",
+      "City_Whispering_Root"
+    ],
+    "SceneNames": [
+      "Ruins1_06",
+      "Ruins1_17",
+      "Ruins1_28"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityStoreroomsStag": {
+    "AdjacentClusters": {
+      "CityStorerooms": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Storerooms_Stag"
+    ],
+    "SceneNames": [
+      "Ruins1_29"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityTollBench": {
+    "AdjacentClusters": {
+      "CityAboveLemm": "Unspecified",
+      "CityStorerooms": "Unspecified",
+      "CitySanctumEast": "Unspecified",
+      "CityShadeSoul": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Toll_Bench"
+    ],
+    "SceneNames": [
+      "Ruins1_31"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityTowerOfLove": {
+    "AdjacentClusters": {
+      "EdgeColumn": "Unspecified",
+      "CityEdgeBridge": "Unspecified",
+      "CityCollector": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Tower_of_Love"
+    ],
+    "SceneNames": [
+      "Ruins2_11_b"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CityWatcherKnights": {
+    "AdjacentClusters": {
+      "CitySpireLower": "Unspecified",
+      "CityLurien": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Spire_Watchers"
+    ],
+    "SceneNames": [
+      "Ruins2_03"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
     },
@@ -426,7 +1049,8 @@
     "AdjacentClusters": {
       "CliffsBaldurShell": "Unspecified",
       "CliffsJonis": "Unspecified",
-      "KingsPass": "Unspecified"
+      "KingsPass": "Unspecified",
+      "CliffsMato": "Unspecified"
     },
     "SceneAliases": [
       "Cliffs_Gorb",
@@ -448,6 +1072,26 @@
       "ProbabilityWeight": 100,
       "CostWeight": 100
     },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CliffsMato": {
+    "AdjacentClusters": {
+      "CliffsMain": "Unspecified"
+    },
+    "SceneAliases": [
+      "Cliffs_Mato"
+    ],
+    "SceneNames": [
+      "Room_nailmaster"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
     },
@@ -892,7 +1536,8 @@
   "CrossroadsOutsideTemple": {
     "AdjacentClusters": {
       "CrossroadsEntrance": "Unspecified",
-      "CrossroadsPeaksBridge": "Unspecified"
+      "CrossroadsPeaksBridge": "Unspecified",
+      "BlackEggTemple": "Unspecified"
     },
     "SceneAliases": [
       "Crossroads_Outside_Temple"
@@ -934,6 +1579,26 @@
       "ProbabilityWeight": 100,
       "CostWeight": 100
     },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "CrossroadsSlyRescue": {
+    "AdjacentClusters": {
+      "CrossroadsStagHub": "Unspecified"
+    },
+    "SceneAliases": [
+      "Crossroads_Rescue_Sly"
+    ],
+    "SceneNames": [
+      "Room_ruinhouse"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
     },
@@ -995,7 +1660,8 @@
       "CrossroadsSpikeGrub": "Unspecified",
       "CrossroadsStag": "Unspecified",
       "CrossroadsTram": "Unspecified",
-      "CrystalPeaksToll": "Unspecified"
+      "CrystalPeaksToll": "Unspecified",
+      "CrossroadsSlyRescue": "Unspecified"
     },
     "SceneAliases": [
       "Crossroads_Before_Gruz_Mother",
@@ -2094,6 +2760,32 @@
     "CostWeight": 100,
     "SemiDarkProbability": 100
   },
+  "EastCityElevator": {
+    "AdjacentClusters": {
+      "GroundsBelowXero": "Unspecified",
+      "GroundsCatacombs": "Unspecified",
+      "EdgeColoCorridor": "Unspecified",
+      "CityPleasureHouse": "Unspecified",
+      "CityKingsStation": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Right_Elevator",
+      "Grounds_Elevator"
+    ],
+    "SceneNames": [
+      "Ruins2_10",
+      "Ruins2_10b"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
   "EdgeCampBench": {
     "AdjacentClusters": {
       "EdgeEastUpper": "Unspecified"
@@ -2108,6 +2800,94 @@
     "CursedOnly": null,
     "DarkSettings": null,
     "SemiDarkSettings": null,
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "EdgeColo": {
+    "AdjacentClusters": {
+      "EdgeColoCorridor": "Unspecified",
+      "EdgePaleLurker": "Unspecified"
+    },
+    "SceneAliases": [
+      "Edge_Colo_Bench",
+      "Edge_Colo_Entrance",
+      "Edge_Colo_Spectate"
+    ],
+    "SceneNames": [
+      "Room_Colosseum_01",
+      "Room_Colosseum_02",
+      "Room_Colosseum_Spectate"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "EdgeColo1": {
+    "AdjacentClusters": {},
+    "SceneAliases": [
+      "Edge_Colo_1_Arena"
+    ],
+    "SceneNames": [
+      "Room_Colosseum_Bronze"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "EdgeColo2": {
+    "AdjacentClusters": {},
+    "SceneAliases": [
+      "Edge_Colo_2_Arena"
+    ],
+    "SceneNames": [
+      "Room_Colosseum_Silver"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "EdgeColo3": {
+    "AdjacentClusters": {},
+    "SceneAliases": [
+      "Edge_Colo_3_Arena"
+    ],
+    "SceneNames": [
+      "Room_Colosseum_Gold"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
     "ProbabilityWeight": 100,
     "CostWeight": 100,
     "SemiDarkProbability": 100
@@ -2138,7 +2918,9 @@
   },
   "EdgeColoCorridor": {
     "AdjacentClusters": {
-      "EdgeColoApproach": "Unspecified"
+      "EdgeColoApproach": "Unspecified",
+      "EdgeColo": "Unspecified",
+      "EastCityElevator": "Unspecified"
     },
     "SceneAliases": [
       "Edge_Corridor_Outside_Colosseum"
@@ -2161,7 +2943,9 @@
       "EdgeColoApproach": "Unspecified",
       "EdgeEastUpper": "Unspecified",
       "EdgeOroStrip": "Unspecified",
-      "EdgeTramAppraoch": "Unspecified"
+      "EdgeTramAppraoch": "Unspecified",
+      "CityEdgeBridge": "Unspecified",
+      "CityTowerOfLove": "Unspecified"
     },
     "SceneAliases": [
       "Edge_Entrance",
@@ -2298,6 +3082,26 @@
     "CostWeight": 100,
     "SemiDarkProbability": 100
   },
+  "EdgeOro": {
+    "AdjacentClusters": {
+      "EdgeOroStrip": "Unspecified"
+    },
+    "SceneAliases": [
+      "Edge_Oro"
+    ],
+    "SceneNames": [
+      "Room_nailmaster_03"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
   "EdgeOroDive": {
     "AdjacentClusters": {
       "EdgeOroStrip": "Unspecified"
@@ -2329,7 +3133,8 @@
     "AdjacentClusters": {
       "EdgeColumn": "Unspecified",
       "EdgeOroDive": "Unspecified",
-      "EdgeUpperEast": "Unspecified"
+      "EdgeUpperEast": "Unspecified",
+      "EdgeOro": "Unspecified"
     },
     "SceneAliases": [
       "Edge_Oro_Scarecrow",
@@ -2353,7 +3158,9 @@
     "SemiDarkProbability": 100
   },
   "EdgePaleLurker": {
-    "AdjacentClusters": {},
+    "AdjacentClusters": {
+      "EdgeColo": "Unspecified"
+    },
     "SceneAliases": [
       "Edge_Pale_Lurker"
     ],
@@ -2576,6 +3383,29 @@
     "CostWeight": 100,
     "SemiDarkProbability": 100
   },
+  "FogCanyonOvergrownMound": {
+    "AdjacentClusters": {
+      "FogCanyonWestWing": "Unspecified"
+    },
+    "SceneAliases": [
+      "Fog_Overgrown_Mound"
+    ],
+    "SceneNames": [
+      "Room_Fungus_Shaman"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
   "FogCanyonQGA": {
     "AdjacentClusters": {
       "FogCanyonWest": "Unspecified",
@@ -2652,7 +3482,8 @@
     "AdjacentClusters": {
       "FogCanyonAutoPilot": "Unspecified",
       "FogCanyonWest": "Unspecified",
-      "GardensEntrance": "Unspecified"
+      "GardensEntrance": "Unspecified",
+      "FogCanyonOvergrownMound": "Unspecified"
     },
     "SceneAliases": [
       "Fog_Corridor_to_Overgrown_Mound",
@@ -2960,7 +3791,8 @@
   "FungalPilgrimsWay": {
     "AdjacentClusters": {
       "FungalClothCorridor": "Unspecified",
-      "FungalLowerHub": "Unspecified"
+      "FungalLowerHub": "Unspecified",
+      "CityEastEntrance": "Unspecified"
     },
     "SceneAliases": [
       "Fungal_Left_Of_Pilgrim's_Way",
@@ -3529,11 +4361,13 @@
     },
     "SceneAliases": [
       "Greenpath_Outside_Sheo",
+      "Greenpath_Sheo",
       "Greenpath_Sheo_Gauntlet"
     ],
     "SceneNames": [
       "Fungus1_09",
-      "Fungus1_15"
+      "Fungus1_15",
+      "Room_nailmaster_02"
     ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
@@ -3684,7 +4518,8 @@
   },
   "GreenpathUnn": {
     "AdjacentClusters": {
-      "GreenpathUnnBridge": "Unspecified"
+      "GreenpathUnnBridge": "Unspecified",
+      "GreenpathUnnBench": "Unspecified"
     },
     "SceneAliases": [
       "Greenpath_Lake_Of_Unn",
@@ -3700,6 +4535,26 @@
       "ProbabilityWeight": 100,
       "CostWeight": 100
     },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
+  "GreenpathUnnBench": {
+    "AdjacentClusters": {
+      "GreenpathUnn": "Unspecified"
+    },
+    "SceneAliases": [
+      "Greenpath_Unn_Bench"
+    ],
+    "SceneNames": [
+      "Room_Slug_Shrine"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
     },
@@ -3830,7 +4685,8 @@
   "GroundsBelowXero": {
     "AdjacentClusters": {
       "BlueLake": "Unspecified",
-      "GroundsXero": "Unspecified"
+      "GroundsXero": "Unspecified",
+      "EastCityElevator": "Unspecified"
     },
     "SceneAliases": [
       "Grounds_Corridor_Below_Xero"
@@ -3853,7 +4709,8 @@
   },
   "GroundsCatacombs": {
     "AdjacentClusters": {
-      "GroundsMain": "Unspecified"
+      "GroundsMain": "Unspecified",
+      "EastCityElevator": "Unspecified"
     },
     "SceneAliases": [
       "Grounds_Crypts"
@@ -4501,6 +5358,30 @@
     "CostWeight": 100,
     "SemiDarkProbability": 100
   },
+  "WaterwaysFlukeHermit": {
+    "AdjacentClusters": {
+      "WaterwaysJunkPit": "Unspecified",
+      "CityEastEntrance": "Unspecified"
+    },
+    "SceneAliases": [
+      "Waterways_Fluke_Hermit"
+    ],
+    "SceneNames": [
+      "Room_GG_Shortcut"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    },
+    "ProbabilityWeight": 100,
+    "CostWeight": 100,
+    "SemiDarkProbability": 100
+  },
   "WaterwaysFlukemarm": {
     "AdjacentClusters": {
       "WaterwaysOutsideFlukemarm": "Unspecified"
@@ -4528,7 +5409,8 @@
     "AdjacentClusters": {
       "CityBridgeToBasin": "Unspecified",
       "WaterwaysEdgeAcidCorridor": "Unspecified",
-      "WaterwaysOutsideFlukemarm": "Unspecified"
+      "WaterwaysOutsideFlukemarm": "Unspecified",
+      "CityEmilitia": "Unspecified"
     },
     "SceneAliases": [
       "Waterways_Left_Of_Isma's_Grove"
@@ -4551,7 +5433,8 @@
   },
   "WaterwaysJunkPit": {
     "AdjacentClusters": {
-      "WaterwaysOutsideFlukemarm": "Unspecified"
+      "WaterwaysOutsideFlukemarm": "Unspecified",
+      "WaterwaysFlukeHermit": "Unspecified"
     },
     "SceneAliases": [
       "Waterways_Junk_Pit"
@@ -4577,7 +5460,8 @@
       "CityBridgeToBasin": "Unspecified",
       "WaterwaysDungDefender": "Unspecified",
       "WaterwaysOutsideFlukemarm": "Unspecified",
-      "WaterwaysWestWing": "Unspecified"
+      "WaterwaysWestWing": "Unspecified",
+      "CityLemm": "Unspecified"
     },
     "SceneAliases": [
       "Waterways_Corridor_to_Broken_Elevator",
@@ -4686,7 +5570,8 @@
   "WestCityElevator": {
     "AdjacentClusters": {
       "CrossroadsElevatorApproach": "Unspecified",
-      "CrossroadsVesselFragment": "Unspecified"
+      "CrossroadsVesselFragment": "Unspecified",
+      "CityStorerooms": "Unspecified"
     },
     "SceneAliases": [
       "City_Left_Elevator",

@@ -185,7 +185,6 @@
       "Cliffs_01",
       "Cliffs_03",
       "Room_nailmaster",
-      "Town",
       "Tutorial_01"
     ]
   },
@@ -223,8 +222,7 @@
     "MapArea": "Forgotten Crossroads",
     "AdjacentScenes": [
       "Crossroads_02",
-      "Crossroads_07",
-      "Town"
+      "Crossroads_07"
     ]
   },
   "Crossroads_02": {
@@ -626,8 +624,7 @@
     "AdjacentScenes": [
       "Deepnest_09",
       "Deepnest_41",
-      "Deepnest_Spider_Town",
-      "Room_spider_small"
+      "Deepnest_Spider_Town"
     ]
   },
   "Deepnest_14": {
@@ -965,8 +962,7 @@
     "Alias": "Edge_Hornet_Sentinel_Arena",
     "MapArea": "Kingdom's Edge",
     "AdjacentScenes": [
-      "Deepnest_East_12",
-      "Room_Wyrm"
+      "Deepnest_East_12"
     ]
   },
   "Deepnest_Spider_Town": {
@@ -1814,8 +1810,7 @@
     "AdjacentScenes": [
       "Fungus1_23",
       "Fungus3_23",
-      "Fungus3_40",
-      "Room_Queen"
+      "Fungus3_40"
     ]
   },
   "Fungus3_49": {
@@ -1878,9 +1873,7 @@
   "Grimm_Main_Tent": {
     "Alias": "Grimm_Tent",
     "MapArea": "Dirtmouth",
-    "AdjacentScenes": [
-      "Town"
-    ]
+    "AdjacentScenes": []
   },
   "Grimm_Nightmare": {
     "Alias": "Grimm_NKG",
@@ -2007,8 +2000,7 @@
     "MapArea": "Crystal Peak",
     "AdjacentScenes": [
       "Mines_16",
-      "Mines_30",
-      "Town"
+      "Mines_30"
     ]
   },
   "Mines_11": {
@@ -2251,9 +2243,7 @@
   "Room_Bretta": {
     "Alias": "Bretta",
     "MapArea": "Dirtmouth",
-    "AdjacentScenes": [
-      "Town"
-    ]
+    "AdjacentScenes": []
   },
   "Room_Bretta_Basement": {
     "Alias": "Bretta_Basement",
@@ -2345,39 +2335,11 @@
       "Deepnest_East_06"
     ]
   },
-  "Room_nailsmith": {
-    "Alias": "City_Nailsmith",
-    "MapArea": "City of Tears",
-    "AdjacentScenes": [
-      "Ruins1_04"
-    ]
-  },
-  "Room_Ouiji": {
-    "Alias": "Jiji",
-    "MapArea": "Dirtmouth",
-    "AdjacentScenes": [
-      "Town"
-    ]
-  },
-  "Room_Queen": {
-    "Alias": "Gardens_White_Lady",
-    "MapArea": "Queen's Gardens",
-    "AdjacentScenes": [
-      "Fungus3_48"
-    ]
-  },
   "Room_ruinhouse": {
     "Alias": "Crossroads_Rescue_Sly",
     "MapArea": "Forgotten Crossroads",
     "AdjacentScenes": [
       "Crossroads_04"
-    ]
-  },
-  "Room_shop": {
-    "Alias": "Sly",
-    "MapArea": "Dirtmouth",
-    "AdjacentScenes": [
-      "Town"
     ]
   },
   "Room_Slug_Shrine": {
@@ -2387,47 +2349,11 @@
       "Fungus1_26"
     ]
   },
-  "Room_Sly_Storeroom": {
-    "Alias": "Sly_Basement",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "Room_spider_small": {
-    "Alias": "Deepnest_Brumm",
-    "MapArea": "Deepnest",
-    "AdjacentScenes": [
-      "Deepnest_10"
-    ]
-  },
   "Room_temple": {
     "Alias": "Black_Egg_Temple",
     "MapArea": "Forgotten Crossroads",
     "AdjacentScenes": [
       "Crossroads_02"
-    ]
-  },
-  "Room_Town_Stag_Station": {
-    "Alias": "Dirtmouth_Stag",
-    "MapArea": "Dirtmouth",
-    "AdjacentScenes": [
-      "Town"
-    ]
-  },
-  "Room_Tram": {
-    "Alias": "Lower_Tram",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "Room_Tram_RG": {
-    "Alias": "Upper_Tram",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "Room_Wyrm": {
-    "Alias": "Edge_Cast-Off_Shell",
-    "MapArea": "Kingdom's Edge",
-    "AdjacentScenes": [
-      "Deepnest_East_Hornet"
     ]
   },
   "Ruins_Bathhouse": {
@@ -2500,7 +2426,6 @@
     "MapArea": "City of Tears",
     "AdjacentScenes": [
       "Room_GG_Shortcut",
-      "Room_nailsmith",
       "Ruins1_03"
     ]
   },
@@ -2780,26 +2705,11 @@
       "Ruins2_03"
     ]
   },
-  "Town": {
-    "Alias": "Dirtmouth",
-    "MapArea": "Dirtmouth",
-    "AdjacentScenes": [
-      "Crossroads_01",
-      "Grimm_Main_Tent",
-      "Mines_10",
-      "Room_Bretta",
-      "Room_Ouiji",
-      "Room_shop",
-      "Room_Town_Stag_Station",
-      "Tutorial_01"
-    ]
-  },
   "Tutorial_01": {
     "Alias": "King's_Pass",
     "MapArea": "Dirtmouth",
     "AdjacentScenes": [
-      "Cliffs_02",
-      "Town"
+      "Cliffs_02"
     ]
   },
   "Waterways_01": {
@@ -3068,6 +2978,24 @@
   "White_Palace_20": {
     "Alias": "POP_Final",
     "MapArea": "White Palace",
+    "AdjacentScenes": [
+      "White_Palace_19"
+    ]
+  }
+}l",
+    "MapArea": "White Palace",
+    "AdjacentScenes": [
+      "White_Palace_19"
+    ]
+  }
+}e_19"
+    ]
+  }
+}  "AdjacentScenes": [
+      "White_Palace_19"
+    ]
+  }
+}Area": "White Palace",
     "AdjacentScenes": [
       "White_Palace_19"
     ]

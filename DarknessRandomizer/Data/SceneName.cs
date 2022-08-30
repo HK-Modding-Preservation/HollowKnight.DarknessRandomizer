@@ -359,19 +359,9 @@ namespace DarknessRandomizer.Data
         public static readonly SceneName CliffsMato = new("Room_nailmaster");
         public static readonly SceneName GreenpathSheo = new("Room_nailmaster_02");
         public static readonly SceneName EdgeOro = new("Room_nailmaster_03");
-        public static readonly SceneName CityNailsmith = new("Room_nailsmith");
-        public static readonly SceneName Jiji = new("Room_Ouiji");
-        public static readonly SceneName GardensWhiteLady = new("Room_Queen");
         public static readonly SceneName CrossroadsRescueSly = new("Room_ruinhouse");
-        public static readonly SceneName Sly = new("Room_shop");
         public static readonly SceneName GreenpathUnnBench = new("Room_Slug_Shrine");
-        public static readonly SceneName SlyBasement = new("Room_Sly_Storeroom");
-        public static readonly SceneName DeepnestBrumm = new("Room_spider_small");
         public static readonly SceneName BlackEggTemple = new("Room_temple");
-        public static readonly SceneName DirtmouthStag = new("Room_Town_Stag_Station");
-        public static readonly SceneName LowerTram = new("Room_Tram");
-        public static readonly SceneName UpperTram = new("Room_Tram_RG");
-        public static readonly SceneName EdgeCastOffShell = new("Room_Wyrm");
         public static readonly SceneName CityPleasureHouseBench = new("Ruins_Bathhouse");
         public static readonly SceneName CityPleasureHouseElevator = new("Ruins_Elevator");
         public static readonly SceneName CityGuardedGrub = new("Ruins_House_01");
@@ -413,7 +403,6 @@ namespace DarknessRandomizer.Data
         public static readonly SceneName CityCollectorArena = new("Ruins2_11");
         public static readonly SceneName CityTowerofLove = new("Ruins2_11_b");
         public static readonly SceneName CityLurienElevator = new("Ruins2_Watcher_Room");
-        public static readonly SceneName Dirtmouth = new("Town");
         public static readonly SceneName KingsPass = new("Tutorial_01");
         public static readonly SceneName WaterwaysEntrance = new("Waterways_01");
         public static readonly SceneName WaterwaysMainBench = new("Waterways_02");
