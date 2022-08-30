@@ -17,10 +17,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "AbyssClimb": {
     "AdjacentClusters": {},
@@ -38,10 +35,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "AbyssCore": {
     "AdjacentClusters": {
@@ -65,10 +59,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "AbyssLifebloodCore": {
     "AdjacentClusters": {
@@ -88,10 +79,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "AbyssShadeCloakWing": {
     "AdjacentClusters": {
@@ -117,10 +105,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "AbyssShriekWing": {
     "AdjacentClusters": {
@@ -137,10 +122,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "ArchivesMonomon": {
     "AdjacentClusters": {},
@@ -155,10 +137,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "BasinBrokenVesselWing": {
     "AdjacentClusters": {
@@ -184,10 +163,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "BasinCloth": {
     "AdjacentClusters": {
@@ -207,10 +183,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "BasinFountain": {
     "AdjacentClusters": {
@@ -233,10 +206,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "BasinLostKin": {
     "AdjacentClusters": {},
@@ -254,10 +224,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "BasinPalaceWing": {
     "AdjacentClusters": {
@@ -276,10 +243,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "BlackEggNight": {
     "AdjacentClusters": {},
@@ -297,10 +261,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "BlackEggRadiance": {
     "AdjacentClusters": {},
@@ -318,10 +279,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "BlackEggTemple": {
     "AdjacentClusters": {
@@ -340,10 +298,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "BlueLake": {
     "AdjacentClusters": {
@@ -364,10 +319,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityAboveLemm": {
     "AdjacentClusters": {
@@ -393,10 +345,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityBridgeToBasin": {
     "AdjacentClusters": {
@@ -425,10 +374,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityCollector": {
     "AdjacentClusters": {
@@ -448,10 +394,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityEastEntrance": {
     "AdjacentClusters": {
@@ -481,10 +424,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityEdgeBridge": {
     "AdjacentClusters": {
@@ -506,10 +446,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityEmilitia": {
     "AdjacentClusters": {
@@ -527,10 +464,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityFountain": {
     "AdjacentClusters": {
@@ -548,10 +482,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityKingsArena": {
     "AdjacentClusters": {
@@ -571,10 +502,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityKingsStation": {
     "AdjacentClusters": {
@@ -601,10 +529,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityLemm": {
     "AdjacentClusters": {
@@ -624,10 +549,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityLowerSpire": {
     "AdjacentClusters": {
@@ -645,10 +567,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityLurien": {
     "AdjacentClusters": {
@@ -667,10 +586,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityPleasureHouse": {
     "AdjacentClusters": {
@@ -690,10 +606,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityRightHub": {
     "AdjacentClusters": {
@@ -718,10 +631,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityRightHubRooms": {
     "AdjacentClusters": {
@@ -743,10 +653,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CitySanctumEast": {
     "AdjacentClusters": {
@@ -772,10 +679,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CitySanctumMiddle": {
     "AdjacentClusters": {
@@ -796,10 +700,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CitySanctumWest": {
     "AdjacentClusters": {
@@ -821,10 +722,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityShadeSoul": {
     "AdjacentClusters": {
@@ -844,10 +742,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CitySpireLower": {
     "AdjacentClusters": {
@@ -874,10 +769,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityStorerooms": {
     "AdjacentClusters": {
@@ -904,10 +796,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityStoreroomsStag": {
     "AdjacentClusters": {
@@ -924,10 +813,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityTollBench": {
     "AdjacentClusters": {
@@ -947,10 +833,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityTowerOfLove": {
     "AdjacentClusters": {
@@ -969,10 +852,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CityWatcherKnights": {
     "AdjacentClusters": {
@@ -993,10 +873,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CliffsBaldurShell": {
     "AdjacentClusters": {
@@ -1017,10 +894,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CliffsJonis": {
     "AdjacentClusters": {
@@ -1040,10 +914,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CliffsMain": {
     "AdjacentClusters": {
@@ -1074,10 +945,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CliffsMato": {
     "AdjacentClusters": {
@@ -1094,10 +962,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossraodsPeaksBridge": {
     "AdjacentClusters": {
@@ -1118,10 +983,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsAncestralMound": {
     "AdjacentClusters": {
@@ -1138,10 +1000,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsCanyonBridge": {
     "AdjacentClusters": {
@@ -1164,10 +1023,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsCentralPass": {
     "AdjacentClusters": {
@@ -1192,10 +1048,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsElevatorApproach": {
     "AdjacentClusters": {
@@ -1213,10 +1066,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsEntrance": {
     "AdjacentClusters": {
@@ -1237,10 +1087,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsFailedChampion": {
     "AdjacentClusters": {},
@@ -1258,10 +1105,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsFalseKnight": {
     "AdjacentClusters": {
@@ -1282,10 +1126,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsFungalBridge": {
     "AdjacentClusters": {
@@ -1304,10 +1145,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsGlowingWomb": {
     "AdjacentClusters": {
@@ -1327,10 +1165,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsGoamJournal": {
     "AdjacentClusters": {
@@ -1347,10 +1182,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsGreenpathBridge": {
     "AdjacentClusters": {
@@ -1371,10 +1203,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsGrubfather": {
     "AdjacentClusters": {
@@ -1389,10 +1218,7 @@
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null,
-    "SemiDarkSettings": null,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    "SemiDarkSettings": null
   },
   "CrossroadsHotSpring": {
     "AdjacentClusters": {
@@ -1407,10 +1233,7 @@
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null,
-    "SemiDarkSettings": null,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    "SemiDarkSettings": null
   },
   "CrossroadsLowerPass": {
     "AdjacentClusters": {
@@ -1433,10 +1256,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsMawlek": {
     "AdjacentClusters": {
@@ -1457,10 +1277,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsMawlekApproach": {
     "AdjacentClusters": {
@@ -1483,10 +1300,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsMiddleBridge": {
     "AdjacentClusters": {
@@ -1506,10 +1320,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsOutsideMound": {
     "AdjacentClusters": {
@@ -1528,10 +1339,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsOutsideTemple": {
     "AdjacentClusters": {
@@ -1550,10 +1358,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsPeaksBridge": {
     "AdjacentClusters": {
@@ -1581,10 +1386,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsSlyRescue": {
     "AdjacentClusters": {
@@ -1601,10 +1403,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsSpikeGrub": {
     "AdjacentClusters": {
@@ -1624,10 +1423,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsStag": {
     "AdjacentClusters": {
@@ -1644,10 +1440,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsStagHub": {
     "AdjacentClusters": {
@@ -1687,10 +1480,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsTram": {
     "AdjacentClusters": {
@@ -1707,10 +1497,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsVesselFragment": {
     "AdjacentClusters": {
@@ -1730,10 +1517,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrossroadsWest": {
     "AdjacentClusters": {
@@ -1767,10 +1551,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksCrown": {
     "AdjacentClusters": {
@@ -1793,10 +1574,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksCrownGrub": {
     "AdjacentClusters": {
@@ -1816,10 +1594,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksCrushersGrub": {
     "AdjacentClusters": {
@@ -1840,10 +1615,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksCrystalHeart": {
     "AdjacentClusters": {
@@ -1863,10 +1635,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksCrystallizedMound": {
     "AdjacentClusters": {
@@ -1886,10 +1655,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksDarkRoom": {
     "AdjacentClusters": {
@@ -1910,10 +1676,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksDeepFocus": {
     "AdjacentClusters": {
@@ -1935,10 +1698,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksElevatorRing": {
     "AdjacentClusters": {
@@ -1959,10 +1719,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksElevatorWing": {
     "AdjacentClusters": {
@@ -1983,10 +1740,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksEnragedGuardian": {
     "AdjacentClusters": {
@@ -2006,10 +1760,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksGuardian": {
     "AdjacentClusters": {
@@ -2031,10 +1782,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksLowerPass": {
     "AdjacentClusters": {
@@ -2063,10 +1811,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksMiddleBridge": {
     "AdjacentClusters": {
@@ -2087,10 +1832,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksMimic": {
     "AdjacentClusters": {
@@ -2110,10 +1852,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksOutsideMound": {
     "AdjacentClusters": {
@@ -2132,10 +1871,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksRoot": {
     "AdjacentClusters": {
@@ -2157,10 +1893,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksTallHub": {
     "AdjacentClusters": {
@@ -2187,10 +1920,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksToll": {
     "AdjacentClusters": {
@@ -2211,10 +1941,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksUpper": {
     "AdjacentClusters": {
@@ -2232,10 +1959,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "CrystalPeaksWest": {
     "AdjacentClusters": {
@@ -2265,10 +1989,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestBeastsDen": {
     "AdjacentClusters": {
@@ -2288,10 +2009,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestDark": {
     "AdjacentClusters": {
@@ -2324,10 +2042,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestDescent": {
     "AdjacentClusters": {
@@ -2355,10 +2070,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestFailedTram": {
     "AdjacentClusters": {
@@ -2387,10 +2099,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestGalien": {
     "AdjacentClusters": {
@@ -2410,10 +2119,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestHerrah": {
     "AdjacentClusters": {},
@@ -2428,10 +2134,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestLightEast": {
     "AdjacentClusters": {
@@ -2454,10 +2157,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestLightWest": {
     "AdjacentClusters": {
@@ -2482,10 +2182,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestMantisEntrance": {
     "AdjacentClusters": {
@@ -2508,10 +2205,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestNosk": {
     "AdjacentClusters": {
@@ -2531,10 +2225,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestNoskApproach": {
     "AdjacentClusters": {
@@ -2552,10 +2243,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestStag": {
     "AdjacentClusters": {
@@ -2572,10 +2260,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestTramCorridor": {
     "AdjacentClusters": {
@@ -2597,10 +2282,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestTramOutliers": {
     "AdjacentClusters": {
@@ -2622,10 +2304,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestVillage": {
     "AdjacentClusters": {
@@ -2647,10 +2326,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DeepnestWeaversDen": {
     "AdjacentClusters": {
@@ -2670,10 +2346,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DirtmouthBretta": {
     "AdjacentClusters": {},
@@ -2690,10 +2363,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DirtmouthGPZ": {
     "AdjacentClusters": {},
@@ -2713,10 +2383,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DirtmouthGrimm": {
     "AdjacentClusters": {},
@@ -2734,10 +2401,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "DirtmouthGrimmNKG": {
     "AdjacentClusters": {},
@@ -2755,10 +2419,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EastCityElevator": {
     "AdjacentClusters": {
@@ -2781,10 +2442,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeCampBench": {
     "AdjacentClusters": {
@@ -2799,10 +2457,7 @@
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null,
-    "SemiDarkSettings": null,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    "SemiDarkSettings": null
   },
   "EdgeColo": {
     "AdjacentClusters": {
@@ -2824,10 +2479,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeColo1": {
     "AdjacentClusters": {},
@@ -2845,10 +2497,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeColo2": {
     "AdjacentClusters": {},
@@ -2866,10 +2515,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeColo3": {
     "AdjacentClusters": {},
@@ -2887,10 +2533,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeColoApproach": {
     "AdjacentClusters": {
@@ -2911,10 +2554,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeColoCorridor": {
     "AdjacentClusters": {
@@ -2933,10 +2573,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeColumn": {
     "AdjacentClusters": {
@@ -2963,10 +2600,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeEastUpper": {
     "AdjacentClusters": {
@@ -2992,10 +2626,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeHornetApproach": {
     "AdjacentClusters": {
@@ -3013,10 +2644,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeHornetSentinel": {
     "AdjacentClusters": {
@@ -3036,10 +2664,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeLifeblood": {
     "AdjacentClusters": {
@@ -3054,10 +2679,7 @@
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null,
-    "SemiDarkSettings": null,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    "SemiDarkSettings": null
   },
   "EdgeMarkoth": {
     "AdjacentClusters": {
@@ -3077,10 +2699,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeOro": {
     "AdjacentClusters": {
@@ -3097,10 +2716,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeOroDive": {
     "AdjacentClusters": {
@@ -3124,10 +2740,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeOroStrip": {
     "AdjacentClusters": {
@@ -3152,10 +2765,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgePaleLurker": {
     "AdjacentClusters": {
@@ -3175,10 +2785,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeTramAppraoch": {
     "AdjacentClusters": {
@@ -3203,10 +2810,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeTramEntrance": {
     "AdjacentClusters": {
@@ -3227,10 +2831,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "EdgeUpperEast": {
     "AdjacentClusters": {
@@ -3252,10 +2853,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FogCanyonArchives": {
     "AdjacentClusters": {
@@ -3277,10 +2875,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FogCanyonAutoPilot": {
     "AdjacentClusters": {
@@ -3297,10 +2892,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FogCanyonCharmNotch": {
     "AdjacentClusters": {
@@ -3320,10 +2912,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FogCanyonEast": {
     "AdjacentClusters": {
@@ -3351,10 +2940,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FogCanyonOutsideArchives": {
     "AdjacentClusters": {
@@ -3378,10 +2964,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FogCanyonOvergrownMound": {
     "AdjacentClusters": {
@@ -3401,10 +2984,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FogCanyonQGA": {
     "AdjacentClusters": {
@@ -3422,10 +3002,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FogCanyonRobber": {
     "AdjacentClusters": {
@@ -3442,10 +3019,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FogCanyonWest": {
     "AdjacentClusters": {
@@ -3473,10 +3047,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FogCanyonWestWing": {
     "AdjacentClusters": {
@@ -3501,10 +3072,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalClothCorridor": {
     "AdjacentClusters": {
@@ -3522,10 +3090,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalCore": {
     "AdjacentClusters": {
@@ -3548,10 +3113,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalCorniferHub": {
     "AdjacentClusters": {
@@ -3573,10 +3135,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalDeepnestFall": {
     "AdjacentClusters": {
@@ -3595,10 +3154,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalElderHuWing": {
     "AdjacentClusters": {
@@ -3623,10 +3179,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalEntrance": {
     "AdjacentClusters": {
@@ -3652,10 +3205,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalLowerHub": {
     "AdjacentClusters": {
@@ -3680,10 +3230,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalMantisLords": {
     "AdjacentClusters": {
@@ -3705,10 +3252,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalMantisRewards": {
     "AdjacentClusters": {
@@ -3728,10 +3272,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalMantisVillage": {
     "AdjacentClusters": {
@@ -3759,10 +3300,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalOgres": {
     "AdjacentClusters": {
@@ -3783,10 +3321,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalPilgrimsWay": {
     "AdjacentClusters": {
@@ -3810,10 +3345,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalQueensStation": {
     "AdjacentClusters": {
@@ -3838,10 +3370,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalSporeShroom": {
     "AdjacentClusters": {
@@ -3864,10 +3393,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "FungalUpper": {
     "AdjacentClusters": {
@@ -3894,10 +3420,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GardensCornifer": {
     "AdjacentClusters": {
@@ -3917,10 +3440,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GardensDeepnestBridge": {
     "AdjacentClusters": {
@@ -3942,10 +3462,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GardensEntrance": {
     "AdjacentClusters": {
@@ -3967,10 +3484,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GardensFrogsWing": {
     "AdjacentClusters": {
@@ -3994,10 +3508,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GardensLowerPass": {
     "AdjacentClusters": {
@@ -4024,10 +3535,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GardensMainArena": {
     "AdjacentClusters": {
@@ -4048,10 +3556,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GardensPetraArena": {
     "AdjacentClusters": {
@@ -4073,10 +3578,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GardensStag": {
     "AdjacentClusters": {
@@ -4097,10 +3599,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GardensStagHub": {
     "AdjacentClusters": {
@@ -4128,10 +3627,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GardensTollBench": {
     "AdjacentClusters": {
@@ -4146,10 +3642,7 @@
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null,
-    "SemiDarkSettings": null,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    "SemiDarkSettings": null
   },
   "GardensTraitorLord": {
     "AdjacentClusters": {
@@ -4170,10 +3663,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GardensTraitorsGrave": {
     "AdjacentClusters": {
@@ -4193,10 +3683,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GardensUpper": {
     "AdjacentClusters": {
@@ -4220,10 +3707,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathHornet": {
     "AdjacentClusters": {
@@ -4244,10 +3728,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathHunter": {
     "AdjacentClusters": {
@@ -4264,10 +3745,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathLowerHub": {
     "AdjacentClusters": {
@@ -4291,10 +3769,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathLowerPass": {
     "AdjacentClusters": {
@@ -4322,10 +3797,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathMMC": {
     "AdjacentClusters": {
@@ -4350,10 +3822,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathSheo": {
     "AdjacentClusters": {
@@ -4377,10 +3846,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathStag": {
     "AdjacentClusters": {
@@ -4397,10 +3863,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathStoneSanctuary": {
     "AdjacentClusters": {
@@ -4422,10 +3885,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathStoneSanctuaryApproach": {
     "AdjacentClusters": {
@@ -4446,10 +3906,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathStoneSanctuaryBench": {
     "AdjacentClusters": {
@@ -4464,10 +3921,7 @@
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null,
-    "SemiDarkSettings": null,
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    "SemiDarkSettings": null
   },
   "GreenpathThorns": {
     "AdjacentClusters": {
@@ -4487,10 +3941,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathToll": {
     "AdjacentClusters": {
@@ -4511,10 +3962,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathUnn": {
     "AdjacentClusters": {
@@ -4537,10 +3985,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathUnnBench": {
     "AdjacentClusters": {
@@ -4557,10 +4002,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathUnnBridge": {
     "AdjacentClusters": {
@@ -4578,10 +4020,7 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathUpperEast": {
     "AdjacentClusters": {
@@ -4612,10 +4051,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathUpperWest": {
     "AdjacentClusters": {
@@ -4645,10 +4081,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GreenpathWest": {
     "AdjacentClusters": {
@@ -4677,10 +4110,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GroundsBelowXero": {
     "AdjacentClusters": {
@@ -4702,10 +4132,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GroundsCatacombs": {
     "AdjacentClusters": {
@@ -4726,10 +4153,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GroundsDreamNail": {
     "AdjacentClusters": {},
@@ -4747,10 +4171,7 @@
     },
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GroundsDreamshield": {
     "AdjacentClusters": {
@@ -4767,13 +4188,729 @@
     "DarkSettings": null,
     "SemiDarkSettings": {
       "SemiDarkProbability": 100
-    },
-    "ProbabilityWeight": 100,
-    "CostWeight": 100,
-    "SemiDarkProbability": 100
+    }
   },
   "GroundsGlade": {
     "AdjacentClusters": {
+      "GroundsMain": "Unspecified"
+    },
+    "SceneAliases": [
+      "Grounds_Spirit's_Glade"
+    ],
+    "SceneNames": [
+      "RestingGrounds_08"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "GroundsMain": {
+    "AdjacentClusters": {
+      "GroundsCatacombs": "Unspecified",
+      "GroundsDreamshield": "Unspecified",
+      "GroundsGlade": "Unspecified",
+      "GroundsOutsideDreamNail": "Unspecified",
+      "GroundsSeer": "Unspecified",
+      "GroundsStag": "Unspecified"
+    },
+    "SceneAliases": [
+      "Grounds_Whispering_Root"
+    ],
+    "SceneNames": [
+      "RestingGrounds_05"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "GroundsOutsideDreamNail": {
+    "AdjacentClusters": {
+      "GroundsMain": "Unspecified",
+      "GroundsXero": "Unspecified"
+    },
+    "SceneAliases": [
+      "Grounds_Dream_Nail_Entrance"
+    ],
+    "SceneNames": [
+      "RestingGrounds_04"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "GroundsSeer": {
+    "AdjacentClusters": {
+      "GroundsMain": "Unspecified"
+    },
+    "SceneAliases": [
+      "Grounds_Seer"
+    ],
+    "SceneNames": [
+      "RestingGrounds_07"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": null
+  },
+  "GroundsShrineOfBelievers": {
+    "AdjacentClusters": {},
+    "SceneAliases": [
+      "Dream_Outside_Shrine",
+      "Dream_Shrine_of_Believers"
+    ],
+    "SceneNames": [
+      "Dream_Backer_Shrine",
+      "Dream_Room_Believer_Shrine"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": null
+  },
+  "GroundsStag": {
+    "AdjacentClusters": {
+      "GroundsMain": "Unspecified"
+    },
+    "SceneAliases": [
+      "Grounds_Stag"
+    ],
+    "SceneNames": [
+      "RestingGrounds_09"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "GroundsTram": {
+    "AdjacentClusters": {
+      "GroundsXero": "Unspecified"
+    },
+    "SceneAliases": [
+      "Grounds_Tram"
+    ],
+    "SceneNames": [
+      "Crossroads_46b"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "GroundsXero": {
+    "AdjacentClusters": {
+      "GroundsBelowXero": "Unspecified",
+      "GroundsOutsideDreamNail": "Unspecified",
+      "GroundsTram": "Unspecified"
+    },
+    "SceneAliases": [
+      "Grounds_Xero"
+    ],
+    "SceneNames": [
+      "RestingGrounds_02"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "HiveEntrance": {
+    "AdjacentClusters": {
+      "EdgeTramEntrance": "Unspecified",
+      "HiveMain": "Unspecified"
+    },
+    "SceneAliases": [
+      "Hive_Entrance_And_Bench",
+      "Hive_Whispering_Root"
+    ],
+    "SceneNames": [
+      "Hive_01",
+      "Hive_02"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "HiveKnight": {
+    "AdjacentClusters": {
+      "HiveMain": "Unspecified"
+    },
+    "SceneAliases": [
+      "Hive_Knight_Arena"
+    ],
+    "SceneNames": [
+      "Hive_05"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "HiveMain": {
+    "AdjacentClusters": {
+      "EdgeTramAppraoch": "Unspecified",
+      "HiveEntrance": "Unspecified",
+      "HiveKnight": "Unspecified"
+    },
+    "SceneAliases": [
+      "Hive_Mask_Shard",
+      "Hive_Outside_Grub",
+      "Hive_Outside_Shortcut"
+    ],
+    "SceneNames": [
+      "Hive_03",
+      "Hive_03_c",
+      "Hive_04"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "KingsPass": {
+    "AdjacentClusters": {
+      "CliffsMain": "Unspecified"
+    },
+    "SceneAliases": [
+      "King's_Pass"
+    ],
+    "SceneNames": [
+      "Tutorial_01"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "PalaceEntrance": {
+    "AdjacentClusters": {
+      "PalaceHub": "Unspecified",
+      "PalaceInnerKingsmould": "Unspecified"
+    },
+    "SceneAliases": [
+      "Palace_Entrance",
+      "Palace_Outside"
+    ],
+    "SceneNames": [
+      "White_Palace_01",
+      "White_Palace_11"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "PalaceFinale": {
+    "AdjacentClusters": {
+      "PalaceHub": "Unspecified",
+      "PalaceWings": "Unspecified"
+    },
+    "SceneAliases": [
+      "Palace_Lamp_Pogo"
+    ],
+    "SceneNames": [
+      "White_Palace_07"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "PalaceHub": {
+    "AdjacentClusters": {
+      "PalaceEntrance": "Unspecified",
+      "PalaceFinale": "Unspecified",
+      "PalacePOPEntrance": "Unspecified",
+      "PalaceWings": "Unspecified"
+    },
+    "SceneAliases": [
+      "Palace_Balcony",
+      "Palace_Hub"
+    ],
+    "SceneNames": [
+      "White_Palace_03_hub",
+      "White_Palace_06"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "PalaceInnerKingsmould": {
+    "AdjacentClusters": {
+      "PalaceEntrance": "Unspecified"
+    },
+    "SceneAliases": [
+      "Palace_First_Mold"
+    ],
+    "SceneNames": [
+      "White_Palace_02"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "PalacePOPEntrance": {
+    "AdjacentClusters": {
+      "PalaceHub": "Unspecified",
+      "PalacePOPFinal": "Unspecified"
+    },
+    "SceneAliases": [
+      "POP_Entrance",
+      "POP_Lever"
+    ],
+    "SceneNames": [
+      "White_Palace_17",
+      "White_Palace_18"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "PalacePOPFinal": {
+    "AdjacentClusters": {
+      "PalacePOPEntrance": "Unspecified"
+    },
+    "SceneAliases": [
+      "POP_Final",
+      "POP_Vertical"
+    ],
+    "SceneNames": [
+      "White_Palace_19",
+      "White_Palace_20"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "PalaceThrone": {
+    "AdjacentClusters": {
+      "PalaceWings": "Unspecified"
+    },
+    "SceneAliases": [
+      "Palace_Throne"
+    ],
+    "SceneNames": [
+      "White_Palace_09"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "PalaceWings": {
+    "AdjacentClusters": {
+      "PalaceFinale": "Unspecified",
+      "PalaceHub": "Unspecified",
+      "PalaceThrone": "Unspecified",
+      "PalaceWorkshop": "Unspecified"
+    },
+    "SceneAliases": [
+      "Palace_Caged_Lever",
+      "Palace_Hell_Corridor",
+      "Palace_Left_Of_Hub",
+      "Palace_Saw_Climb",
+      "Palace_Saw_Room",
+      "Palace_Spike_Drop",
+      "Palace_Thorn_Jump"
+    ],
+    "SceneNames": [
+      "White_Palace_04",
+      "White_Palace_05",
+      "White_Palace_12",
+      "White_Palace_13",
+      "White_Palace_14",
+      "White_Palace_15",
+      "White_Palace_16"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "PalaceWorkshop": {
+    "AdjacentClusters": {
+      "PalaceWings": "Unspecified"
+    },
+    "SceneAliases": [
+      "Palace_Workshop"
+    ],
+    "SceneNames": [
+      "White_Palace_08"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": null
+  },
+  "SanctumSoulTyrant": {
+    "AdjacentClusters": {},
+    "SceneAliases": [
+      "Dream_Soul_Tyrant"
+    ],
+    "SceneNames": [
+      "Dream_02_Mage_Lord"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "WaterwaysDungDefender": {
+    "AdjacentClusters": {
+      "CityBridgeToBasin": "Unspecified",
+      "WaterwaysDungDefenderCave": "Unspecified",
+      "WaterwaysMain": "Unspecified"
+    },
+    "SceneAliases": [
+      "Waterways_Dung_Defender_Arena"
+    ],
+    "SceneNames": [
+      "Waterways_05"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "WaterwaysDungDefenderCave": {
+    "AdjacentClusters": {
+      "WaterwaysDungDefender": "Unspecified"
+    },
+    "SceneAliases": [
+      "Waterways_Dung_Defender's_Cave"
+    ],
+    "SceneNames": [
+      "Waterways_15"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "WaterwaysEdgeAcidCorridor": {
+    "AdjacentClusters": {
+      "EdgeTramAppraoch": "Unspecified",
+      "WaterwaysIsmasGrove": "Unspecified"
+    },
+    "SceneAliases": [
+      "Waterways_Edge_Acid_Corridor"
+    ],
+    "SceneNames": [
+      "Waterways_14"
+    ],
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null,
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "WaterwaysFlukeHermit": {
+    "AdjacentClusters": {
+      "WaterwaysJunkPit": "Unspecified",
+      "CityEastEntrance": "Unspecified"
+    },
+    "SceneAliases": [
+      "Waterways_Fluke_Hermit"
+    ],
+    "SceneNames": [
+      "Room_GG_Shortcut"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "WaterwaysFlukemarm": {
+    "AdjacentClusters": {
+      "WaterwaysOutsideFlukemarm": "Unspecified"
+    },
+    "SceneAliases": [
+      "Waterways_Flukemarm_Arena"
+    ],
+    "SceneNames": [
+      "Waterways_12"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "WaterwaysIsmasGrove": {
+    "AdjacentClusters": {
+      "CityBridgeToBasin": "Unspecified",
+      "WaterwaysEdgeAcidCorridor": "Unspecified",
+      "WaterwaysOutsideFlukemarm": "Unspecified",
+      "CityEmilitia": "Unspecified"
+    },
+    "SceneAliases": [
+      "Waterways_Left_Of_Isma's_Grove"
+    ],
+    "SceneNames": [
+      "Waterways_07"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "WaterwaysJunkPit": {
+    "AdjacentClusters": {
+      "WaterwaysOutsideFlukemarm": "Unspecified",
+      "WaterwaysFlukeHermit": "Unspecified"
+    },
+    "SceneAliases": [
+      "Waterways_Junk_Pit"
+    ],
+    "SceneNames": [
+      "GG_Waterways"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "WaterwaysMain": {
+    "AdjacentClusters": {
+      "CityBridgeToBasin": "Unspecified",
+      "WaterwaysDungDefender": "Unspecified",
+      "WaterwaysOutsideFlukemarm": "Unspecified",
+      "WaterwaysWestWing": "Unspecified",
+      "CityLemm": "Unspecified"
+    },
+    "SceneAliases": [
+      "Waterways_Corridor_to_Broken_Elevator",
+      "Waterways_Entrance",
+      "Waterways_Main_Bench",
+      "Waterways_Tuk"
+    ],
+    "SceneNames": [
+      "Waterways_01",
+      "Waterways_02",
+      "Waterways_03",
+      "Waterways_06"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "WaterwaysOutsideFlukemarm": {
+    "AdjacentClusters": {
+      "WaterwaysFlukemarm": "Unspecified",
+      "WaterwaysIsmasGrove": "Unspecified",
+      "WaterwaysJunkPit": "Unspecified",
+      "WaterwaysMain": "Unspecified"
+    },
+    "SceneAliases": [
+      "Waterways_Flukemunga_Corridor",
+      "Waterways_Isma's_Grove",
+      "Waterways_Outside_Flukemarm"
+    ],
+    "SceneNames": [
+      "GG_Pipeway",
+      "Waterways_08",
+      "Waterways_13"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "WaterwaysWestWing": {
+    "AdjacentClusters": {
+      "FungalMantisVillage": "Unspecified",
+      "WaterwaysMain": "Unspecified"
+    },
+    "SceneAliases": [
+      "Waterways_Cornifer",
+      "Waterways_Hidden_Grub",
+      "Waterways_Mask_Shard"
+    ],
+    "SceneNames": [
+      "Waterways_04",
+      "Waterways_04b",
+      "Waterways_09"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "WaterwaysWhiteDefender": {
+    "AdjacentClusters": {},
+    "SceneAliases": [
+      "Dream_White_Defender"
+    ],
+    "SceneNames": [
+      "Dream_04_White_Defender"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  },
+  "WestCityElevator": {
+    "AdjacentClusters": {
+      "CrossroadsElevatorApproach": "Unspecified",
+      "CrossroadsVesselFragment": "Unspecified",
+      "CityStorerooms": "Unspecified"
+    },
+    "SceneAliases": [
+      "City_Left_Elevator",
+      "Crossroads_Elevator"
+    ],
+    "SceneNames": [
+      "Crossroads_49",
+      "Crossroads_49b"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  }
+}  "AdjacentClusters": {
       "GroundsMain": "Unspecified"
     },
     "SceneAliases": [

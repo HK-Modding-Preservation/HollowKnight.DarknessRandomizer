@@ -1,5 +1,6 @@
 ﻿using DarknessRandomizer.Lib;
 using DarknessRandomizer.Rando;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -88,10 +89,13 @@ namespace DarknessRandomizer.Data
 
         protected abstract RelativeDarkness GetAdjacentDarkness(C cluster);
 
+        [JsonIgnore]
         public int ProbabilityWeight => DarkSettings?.ProbabilityWeight ?? 100;
 
+        [JsonIgnore]
         public int CostWeight => DarkSettings?.CostWeight ?? 100;
 
+        [JsonIgnore]
         public int SemiDarkProbability => SemiDarkSettings?.SemiDarkProbability ?? 100;
 
         public bool CanBeDarknessSource(SceneLookup SL, DarknessRandomizationSettings settings = null)
