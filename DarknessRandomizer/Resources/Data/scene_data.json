@@ -3088,7 +3088,7 @@
   },
   "Waterways_15": {
     "Alias": "Waterways_Dung_Defender's_Cave",
-    "Cluster": "WaterwaysDungDefenderCave",
+    "Cluster": "WaterwaysDungDefender",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
@@ -3218,55 +3218,6 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "White_Palace_16": {
-    "Alias": "Palace_Saw_Climb",
-    "Cluster": "PalaceWings",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "White_Palace_17": {
-    "Alias": "POP_Lever",
-    "Cluster": "PalacePOPEntrance",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "White_Palace_18": {
-    "Alias": "POP_Entrance",
-    "Cluster": "PalacePOPEntrance",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "White_Palace_19": {
-    "Alias": "POP_Vertical",
-    "Cluster": "PalacePOPFinal",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "White_Palace_20": {
-    "Alias": "POP_Final",
-    "Cluster": "PalacePOPFinal",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  }
-}IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },

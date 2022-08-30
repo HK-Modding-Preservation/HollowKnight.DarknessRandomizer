@@ -1000,7 +1000,7 @@
     "Alias": "Dream_White_Defender",
     "MapArea": "",
     "AdjacentScenes": [
-      "Waterways_15"
+      "Waterways_05"
     ]
   },
   "Dream_Abyss": {
@@ -2766,6 +2766,7 @@
     "MapArea": "Royal Waterways",
     "AdjacentScenes": [
       "Abyss_01",
+      "Dream_04_White_Defender",
       "Waterways_02",
       "Waterways_15"
     ]
@@ -2831,7 +2832,6 @@
     "Alias": "Waterways_Dung_Defender's_Cave",
     "MapArea": "Royal Waterways",
     "AdjacentScenes": [
-      "Dream_04_White_Defender",
       "Waterways_05"
     ]
   },
@@ -2980,14 +2980,6 @@
       "White_Palace_20"
     ]
   },
-  "White_Palace_20": {
-    "Alias": "POP_Final",
-    "MapArea": "White Palace",
-    "AdjacentScenes": [
-      "White_Palace_19"
-    ]
-  }
-}
   "White_Palace_20": {
     "Alias": "POP_Final",
     "MapArea": "White Palace",

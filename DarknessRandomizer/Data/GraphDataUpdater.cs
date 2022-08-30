@@ -258,9 +258,9 @@ namespace DarknessRandomizer.Data
             MaybeThrowException(exceptions);
 
             // Only update data at the end, if we have no exceptions.
-            JsonUtil.Serialize(SM, $"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
-            JsonUtil.Serialize(SD, $"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
-            JsonUtil.Serialize(CD, $"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
+            RewriteJsonFile(SM, $"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
+            RewriteJsonFile(SD, $"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
+            RewriteJsonFile(CD, $"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
 
             UpdateCSFile($"{gud.RepoRoot}/DarknessRandomizer/Data/SceneName.cs", "INSERT_SCENE_NAMES", SM,
                 (n, sm) => $"SceneName {CSharpClean(sm.Alias)} = new(\"{n}\")");
@@ -276,6 +276,12 @@ namespace DarknessRandomizer.Data
             {
                 throw new ArgumentException($"{exceptions.Count} data errors encountered");
             }
+        }
+
+        private static void RewriteJsonFile<T>(T data, string path)
+        {
+            File.Delete(path);
+            JsonUtil.Serialize(data, path);
         }
 
         private static string CSharpClean(string name)
@@ -326,6 +332,7 @@ namespace DarknessRandomizer.Data
             }
             sr.Close();
 
+            File.Delete(path);
             StreamWriter sw = new(path);
             outLines.ForEach(l => sw.WriteLine(l));
             sw.Close();

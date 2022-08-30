@@ -271,7 +271,6 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName PalaceWorkshop = new("PalaceWorkshop");
         public static readonly ClusterName SanctumSoulTyrant = new("SanctumSoulTyrant");
         public static readonly ClusterName WaterwaysDungDefender = new("WaterwaysDungDefender");
-        public static readonly ClusterName WaterwaysDungDefenderCave = new("WaterwaysDungDefenderCave");
         public static readonly ClusterName WaterwaysEdgeAcidCorridor = new("WaterwaysEdgeAcidCorridor");
         public static readonly ClusterName WaterwaysFlukeHermit = new("WaterwaysFlukeHermit");
         public static readonly ClusterName WaterwaysFlukemarm = new("WaterwaysFlukemarm");
