@@ -1676,7 +1676,7 @@
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
-      "CostWeight": 200
+      "CostWeight": 250
     }
   },
   "DeepnestBeastsDen": {
