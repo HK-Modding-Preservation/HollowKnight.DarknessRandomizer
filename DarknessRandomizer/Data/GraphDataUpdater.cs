@@ -151,6 +151,7 @@ namespace DarknessRandomizer.Data
                 toRemove.ForEach(c => cData.AdjacentClusters.Remove(c));
 
                 // Validate the remaining adjacencies.
+                List<Action> deferred = new();
                 foreach (var e2 in cData.AdjacentClusters)
                 {
                     var aCluster = e2.Key;
@@ -158,23 +159,47 @@ namespace DarknessRandomizer.Data
                     var rd = e2.Value;
                     if (rd == RelativeDarkness.Unspecified) continue;
 
-                    // Inspect the opposing cluster.
-                    if (!aData.AdjacentClusters.TryGetValue(cluster, out RelativeDarkness ord) || ord == RelativeDarkness.Unspecified)
+                    if (rd == RelativeDarkness.Disconnected
+                        || (aData.AdjacentClusters.TryGetValue(cluster, out RelativeDarkness ard) && ard == RelativeDarkness.Disconnected))
+                    {
+                        deferred.Add(() => cData.AdjacentClusters[aCluster] = RelativeDarkness.Disconnected);
+                        aData.AdjacentClusters[cluster] = RelativeDarkness.Disconnected;
+                        continue;
+                    }
+
+                    // If a certain relationship is forced, apply that.
+                    bool canBeDark = cData.MaximumDarkness(s => SD[s]) == Darkness.Dark;
+                    bool aCanBeDark = aData.MaximumDarkness(s => SD[s]) == Darkness.Dark;
+                    if (!canBeDark && !aCanBeDark)
+                    {
+                        deferred.Add(() => cData.AdjacentClusters[aCluster] = RelativeDarkness.Any);
+                        aData.AdjacentClusters[cluster] = RelativeDarkness.Any;
+                        continue;
+                    }
+                    else if (canBeDark && !aCanBeDark)
+                    {
+                        deferred.Add(() => cData.AdjacentClusters[aCluster] = RelativeDarkness.Brighter);
+                        aData.AdjacentClusters[cluster] = RelativeDarkness.Darker;
+                        continue;
+                    }
+                    else if (!canBeDark && aCanBeDark)
+                    {
+                        deferred.Add(() => cData.AdjacentClusters[aCluster] = RelativeDarkness.Darker);
+                        aData.AdjacentClusters[cluster] = RelativeDarkness.Brighter;
+                        continue;
+                    }
+
+                    // Inspect and validate te opposing cluster.
+                    if (!aData.AdjacentClusters.TryGetValue(cluster, out ard) || ard == RelativeDarkness.Unspecified)
                     {
                         aData.AdjacentClusters[cluster] = rd.Opposite();
                     }
-                    else if (ord != rd.Opposite())
+                    else if (ard != rd.Opposite())
                     {
                         exceptions.Add($"RelativeDarkness mismatch between {cluster} and {aCluster}");
                     }
-
-                    // Can't set a Darker edge if the other cluster can't be dark.
-                    if ((rd == RelativeDarkness.Darker && aData.MaximumDarkness(s => SD[s]) < Darkness.Dark)
-                        || (rd == RelativeDarkness.Brighter && cData.MaximumDarkness(s => SD[s]) < Darkness.Dark))
-                    {
-                        exceptions.Add($"Darkness edge between {cluster} and {aCluster} cannot be satisfied");
-                    }
                 }
+                deferred.ForEach(a => a.Invoke());
 
                 // Don't set optional bools if they have no effect.
                 bool? origOverride = cData.OverrideCannotBeDarknessSource;

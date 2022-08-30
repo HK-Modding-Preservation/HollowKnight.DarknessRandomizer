@@ -48,7 +48,7 @@
       "AbyssBirthplace": "Darker",
       "AbyssLifebloodCore": "Any",
       "AbyssShadeCloakWing": "Darker",
-      "AbyssShriekWing": "Any",
+      "AbyssShriekWing": "Brighter",
       "BasinFountain": "Any"
     },
     "SceneAliases": [
@@ -57,7 +57,7 @@
     "SceneNames": [
       "Abyss_06_Core"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -124,7 +124,7 @@
   },
   "AbyssShriekWing": {
     "AdjacentClusters": {
-      "AbyssCore": "Any"
+      "AbyssCore": "Darker"
     },
     "SceneAliases": [
       "Abyss_Shriek"
