@@ -1097,47 +1097,11 @@
     "DifficultSkips": null,
     "ProficientCombat": null
   },
-  "Dream_Backer_Shrine": {
-    "Alias": "Dream_Outside_Shrine",
-    "Cluster": "GroundsShrineOfBelievers",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
   "Dream_Final": {
     "Alias": "Egg_Radiance",
     "Cluster": "BlackEggRadiance",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Dream_Guardian_Hegemol": {
-    "Alias": "Dream_Herrah",
-    "Cluster": "DeepnestHerrah",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Dream_Guardian_Lurien": {
-    "Alias": "Dream_Lurien",
-    "Cluster": "CityLurien",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Dream_Guardian_Monomon": {
-    "Alias": "Dream_Monomon",
-    "Cluster": "ArchivesMonomon",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
@@ -1156,15 +1120,6 @@
     "Cluster": "GroundsDreamNail",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "IsVanillaDark": false,
-    "DifficultSkips": null,
-    "ProficientCombat": null
-  },
-  "Dream_Room_Believer_Shrine": {
-    "Alias": "Dream_Shrine_of_Believers",
-    "Cluster": "GroundsShrineOfBelievers",
-    "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright",
     "IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
@@ -3263,6 +3218,55 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false,
+    "DifficultSkips": null,
+    "ProficientCombat": null
+  },
+  "White_Palace_16": {
+    "Alias": "Palace_Saw_Climb",
+    "Cluster": "PalaceWings",
+    "MinimumDarkness": "Bright",
+    "MaximumDarkness": "Dark",
+    "IsVanillaDark": false,
+    "DifficultSkips": null,
+    "ProficientCombat": null
+  },
+  "White_Palace_17": {
+    "Alias": "POP_Lever",
+    "Cluster": "PalacePOPEntrance",
+    "MinimumDarkness": "Bright",
+    "MaximumDarkness": "Dark",
+    "IsVanillaDark": false,
+    "DifficultSkips": null,
+    "ProficientCombat": null
+  },
+  "White_Palace_18": {
+    "Alias": "POP_Entrance",
+    "Cluster": "PalacePOPEntrance",
+    "MinimumDarkness": "Bright",
+    "MaximumDarkness": "Dark",
+    "IsVanillaDark": false,
+    "DifficultSkips": null,
+    "ProficientCombat": null
+  },
+  "White_Palace_19": {
+    "Alias": "POP_Vertical",
+    "Cluster": "PalacePOPFinal",
+    "MinimumDarkness": "Bright",
+    "MaximumDarkness": "Dark",
+    "IsVanillaDark": false,
+    "DifficultSkips": null,
+    "ProficientCombat": null
+  },
+  "White_Palace_20": {
+    "Alias": "POP_Final",
+    "Cluster": "PalacePOPFinal",
+    "MinimumDarkness": "Bright",
+    "MaximumDarkness": "Dark",
+    "IsVanillaDark": false,
+    "DifficultSkips": null,
+    "ProficientCombat": null
+  }
+}IsVanillaDark": false,
     "DifficultSkips": null,
     "ProficientCombat": null
   },

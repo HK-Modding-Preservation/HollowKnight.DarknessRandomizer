@@ -49,10 +49,22 @@ namespace DarknessRandomizer.Data
             var CD = RawClusterData.LoadFromPath($"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
 
             // We delete scenes from metadata to not track them; make sure adjacencies are also updated.
-            foreach (var sData in SM.Values)
+            foreach (var e in SM)
             {
-                sData.AdjacentScenes = sData.AdjacentScenes.Where(s => SM.ContainsKey(s)).ToList();
+                var scene = e.Key;
+                var sData = e.Value;
+                sData.AdjacentScenes = sData.AdjacentScenes.Where(s => SM.ContainsKey(s)).Distinct().ToList();
                 sData.AdjacentScenes.Sort();
+
+                // Ensure adjacencies are reflected.
+                foreach (var aScene in sData.AdjacentScenes)
+                {
+                    if (!SM[aScene].AdjacentScenes.Contains(scene))
+                    {
+                        SM[aScene].AdjacentScenes.Add(scene);
+                        SM[aScene].AdjacentScenes.Sort();
+                    }
+                }
             }
 
             // Sync SceneData to SceneMetadata.

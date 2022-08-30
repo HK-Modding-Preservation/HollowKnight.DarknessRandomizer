@@ -65,7 +65,6 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName AbyssLifebloodCore = new("AbyssLifebloodCore");
         public static readonly ClusterName AbyssShadeCloakWing = new("AbyssShadeCloakWing");
         public static readonly ClusterName AbyssShriekWing = new("AbyssShriekWing");
-        public static readonly ClusterName ArchivesMonomon = new("ArchivesMonomon");
         public static readonly ClusterName BasinBrokenVesselWing = new("BasinBrokenVesselWing");
         public static readonly ClusterName BasinCloth = new("BasinCloth");
         public static readonly ClusterName BasinFountain = new("BasinFountain");
@@ -156,7 +155,6 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName DeepnestDescent = new("DeepnestDescent");
         public static readonly ClusterName DeepnestFailedTram = new("DeepnestFailedTram");
         public static readonly ClusterName DeepnestGalien = new("DeepnestGalien");
-        public static readonly ClusterName DeepnestHerrah = new("DeepnestHerrah");
         public static readonly ClusterName DeepnestLight = new("DeepnestLight");
         public static readonly ClusterName DeepnestMantisEntrance = new("DeepnestMantisEntrance");
         public static readonly ClusterName DeepnestNosk = new("DeepnestNosk");
@@ -255,7 +253,6 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName GroundsMain = new("GroundsMain");
         public static readonly ClusterName GroundsOutsideDreamNail = new("GroundsOutsideDreamNail");
         public static readonly ClusterName GroundsSeer = new("GroundsSeer");
-        public static readonly ClusterName GroundsShrineOfBelievers = new("GroundsShrineOfBelievers");
         public static readonly ClusterName GroundsStag = new("GroundsStag");
         public static readonly ClusterName GroundsTram = new("GroundsTram");
         public static readonly ClusterName GroundsXero = new("GroundsXero");

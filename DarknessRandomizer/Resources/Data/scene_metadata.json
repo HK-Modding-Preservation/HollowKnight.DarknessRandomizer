@@ -105,7 +105,8 @@
     "Alias": "Abyss_Birthplace",
     "MapArea": "Ancient Basin",
     "AdjacentScenes": [
-      "Abyss_06_Core"
+      "Abyss_06_Core",
+      "Dream_Abyss"
     ]
   },
   "Abyss_16": {
@@ -128,7 +129,8 @@
     "MapArea": "Ancient Basin",
     "AdjacentScenes": [
       "Abyss_04",
-      "Abyss_19"
+      "Abyss_19",
+      "Dream_03_Infected_Knight"
     ]
   },
   "Abyss_19": {
@@ -308,7 +310,8 @@
     "MapArea": "Forgotten Crossroads",
     "AdjacentScenes": [
       "Crossroads_06",
-      "Crossroads_21"
+      "Crossroads_21",
+      "Dream_01_False_Knight"
     ]
   },
   "Crossroads_11_alt": {
@@ -975,65 +978,54 @@
   "Dream_01_False_Knight": {
     "Alias": "Dream_Failed_Champion",
     "MapArea": "",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Crossroads_10"
+    ]
   },
   "Dream_02_Mage_Lord": {
     "Alias": "Dream_Soul_Tyrant",
     "MapArea": "",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Ruins1_24"
+    ]
   },
   "Dream_03_Infected_Knight": {
     "Alias": "Dream_Lost_Kin",
     "MapArea": "",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Abyss_18"
+    ]
   },
   "Dream_04_White_Defender": {
     "Alias": "Dream_White_Defender",
     "MapArea": "",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Waterways_15"
+    ]
   },
   "Dream_Abyss": {
     "Alias": "Dream_Abyss",
     "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "Dream_Backer_Shrine": {
-    "Alias": "Dream_Outside_Shrine",
-    "MapArea": "",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Abyss_15"
+    ]
   },
   "Dream_Final": {
     "Alias": "Egg_Radiance",
     "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "Dream_Guardian_Hegemol": {
-    "Alias": "Dream_Herrah",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "Dream_Guardian_Lurien": {
-    "Alias": "Dream_Lurien",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "Dream_Guardian_Monomon": {
-    "Alias": "Dream_Monomon",
-    "MapArea": "",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Room_Final_Boss_Core"
+    ]
   },
   "Dream_Mighty_Zote": {
     "Alias": "Dream_Grey_Prince_Zote",
     "MapArea": "",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Room_Bretta_Basement"
+    ]
   },
   "Dream_Nailcollection": {
     "Alias": "Dream_Nail",
-    "MapArea": "",
-    "AdjacentScenes": []
-  },
-  "Dream_Room_Believer_Shrine": {
-    "Alias": "Dream_Shrine_of_Believers",
     "MapArea": "",
     "AdjacentScenes": []
   },
@@ -1524,7 +1516,8 @@
     "MapArea": "Deepnest",
     "AdjacentScenes": [
       "Deepnest_16",
-      "Fungus2_15"
+      "Fungus2_15",
+      "Fungus2_30"
     ]
   },
   "Fungus2_26": {
@@ -2017,7 +2010,8 @@
     "MapArea": "Crystal Peak",
     "AdjacentScenes": [
       "Mines_11",
-      "Mines_20"
+      "Mines_20",
+      "Mines_34"
     ]
   },
   "Mines_16": {
@@ -2070,7 +2064,8 @@
     "AdjacentScenes": [
       "Mines_20",
       "Mines_24",
-      "Mines_25"
+      "Mines_25",
+      "Mines_34"
     ]
   },
   "Mines_24": {
@@ -2171,6 +2166,7 @@
     "MapArea": "Resting Grounds",
     "AdjacentScenes": [
       "Crossroads_46b",
+      "Mines_28",
       "RestingGrounds_04",
       "RestingGrounds_06"
     ]
@@ -2243,12 +2239,17 @@
   "Room_Bretta": {
     "Alias": "Bretta",
     "MapArea": "Dirtmouth",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Room_Bretta_Basement"
+    ]
   },
   "Room_Bretta_Basement": {
     "Alias": "Bretta_Basement",
     "MapArea": "",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Dream_Mighty_Zote",
+      "Room_Bretta"
+    ]
   },
   "Room_Colosseum_01": {
     "Alias": "Edge_Colo_Entrance",
@@ -2297,7 +2298,9 @@
   "Room_Final_Boss_Core": {
     "Alias": "Egg_Hollow_Knight",
     "MapArea": "",
-    "AdjacentScenes": []
+    "AdjacentScenes": [
+      "Dream_Final"
+    ]
   },
   "Room_Fungus_Shaman": {
     "Alias": "Fog_Overgrown_Mound",
@@ -2506,6 +2509,7 @@
     "Alias": "City_Soul_Master_Arena",
     "MapArea": "City of Tears",
     "AdjacentScenes": [
+      "Dream_02_Mage_Lord",
       "Ruins1_30",
       "Ruins1_32"
     ]
@@ -2827,6 +2831,7 @@
     "Alias": "Waterways_Dung_Defender's_Cave",
     "MapArea": "Royal Waterways",
     "AdjacentScenes": [
+      "Dream_04_White_Defender",
       "Waterways_05"
     ]
   },
@@ -2982,26 +2987,7 @@
       "White_Palace_19"
     ]
   }
-}l",
-    "MapArea": "White Palace",
-    "AdjacentScenes": [
-      "White_Palace_19"
-    ]
-  }
-}e_19"
-    ]
-  }
-}  "AdjacentScenes": [
-      "White_Palace_19"
-    ]
-  }
-}Area": "White Palace",
-    "AdjacentScenes": [
-      "White_Palace_19"
-    ]
-  }
 }
-  },
   "White_Palace_20": {
     "Alias": "POP_Final",
     "MapArea": "White Palace",

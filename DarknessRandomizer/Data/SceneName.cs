@@ -191,14 +191,9 @@ namespace DarknessRandomizer.Data
         public static readonly SceneName DreamLostKin = new("Dream_03_Infected_Knight");
         public static readonly SceneName DreamWhiteDefender = new("Dream_04_White_Defender");
         public static readonly SceneName DreamAbyss = new("Dream_Abyss");
-        public static readonly SceneName DreamOutsideShrine = new("Dream_Backer_Shrine");
         public static readonly SceneName EggRadiance = new("Dream_Final");
-        public static readonly SceneName DreamHerrah = new("Dream_Guardian_Hegemol");
-        public static readonly SceneName DreamLurien = new("Dream_Guardian_Lurien");
-        public static readonly SceneName DreamMonomon = new("Dream_Guardian_Monomon");
         public static readonly SceneName DreamGreyPrinceZote = new("Dream_Mighty_Zote");
         public static readonly SceneName DreamNail = new("Dream_Nailcollection");
-        public static readonly SceneName DreamShrineofBelievers = new("Dream_Room_Believer_Shrine");
         public static readonly SceneName GreenpathEntrance = new("Fungus1_01");
         public static readonly SceneName GreenpathWaterfallBench = new("Fungus1_01b");
         public static readonly SceneName GreenpathFirstHornetSighting = new("Fungus1_02");

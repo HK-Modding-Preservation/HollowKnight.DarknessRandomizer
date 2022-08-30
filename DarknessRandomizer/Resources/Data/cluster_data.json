@@ -1,7 +1,8 @@
 {
   "AbyssBirthplace": {
     "AdjacentClusters": {
-      "AbyssCore": "Brighter"
+      "AbyssCore": "Brighter",
+      "AbyssClimb": "Unspecified"
     },
     "SceneAliases": [
       "Abyss_Birthplace"
@@ -20,7 +21,9 @@
     }
   },
   "AbyssClimb": {
-    "AdjacentClusters": {},
+    "AdjacentClusters": {
+      "AbyssBirthplace": "Unspecified"
+    },
     "SceneAliases": [
       "Dream_Abyss"
     ],
@@ -124,24 +127,10 @@
       "SemiDarkProbability": 100
     }
   },
-  "ArchivesMonomon": {
-    "AdjacentClusters": {},
-    "SceneAliases": [
-      "Dream_Monomon"
-    ],
-    "SceneNames": [
-      "Dream_Guardian_Monomon"
-    ],
-    "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": null,
-    "DarkSettings": null,
-    "SemiDarkSettings": {
-      "SemiDarkProbability": 100
-    }
-  },
   "BasinBrokenVesselWing": {
     "AdjacentClusters": {
-      "BasinFountain": "Unspecified"
+      "BasinFountain": "Unspecified",
+      "BasinLostKin": "Unspecified"
     },
     "SceneAliases": [
       "Basin_Broken_Vessel_Grub",
@@ -209,7 +198,9 @@
     }
   },
   "BasinLostKin": {
-    "AdjacentClusters": {},
+    "AdjacentClusters": {
+      "BasinBrokenVesselWing": "Unspecified"
+    },
     "SceneAliases": [
       "Dream_Lost_Kin"
     ],
@@ -246,7 +237,9 @@
     }
   },
   "BlackEggKnight": {
-    "AdjacentClusters": {},
+    "AdjacentClusters": {
+      "BlackEggRadiance": "Unspecified"
+    },
     "SceneAliases": [
       "Egg_Hollow_Knight"
     ],
@@ -264,7 +257,9 @@
     }
   },
   "BlackEggRadiance": {
-    "AdjacentClusters": {},
+    "AdjacentClusters": {
+      "BlackEggKnight": "Unspecified"
+    },
     "SceneAliases": [
       "Egg_Radiance"
     ],
@@ -352,8 +347,8 @@
       "BasinCloth": "Unspecified",
       "BasinFountain": "Unspecified",
       "WaterwaysDungDefender": "Unspecified",
-      "WaterwaysIsmasGrove": "Unspecified",
-      "WaterwaysMain": "Unspecified",
+      "WaterwaysIsmasGrove": "Disconnected",
+      "WaterwaysMain": "Disconnected",
       "CityRightHub": "Unspecified"
     },
     "SceneAliases": [
@@ -450,7 +445,7 @@
   },
   "CityEmilitia": {
     "AdjacentClusters": {
-      "WaterwaysIsmasGrove": "Unspecified",
+      "WaterwaysIsmasGrove": "Darker",
       "CityRightHub": "Unspecified"
     },
     "SceneAliases": [
@@ -536,7 +531,7 @@
       "CityEastEntrance": "Unspecified",
       "CityAboveLemm": "Unspecified",
       "CityFountain": "Unspecified",
-      "WaterwaysMain": "Unspecified"
+      "WaterwaysMain": "Darker"
     },
     "SceneAliases": [
       "City_Lemm"
@@ -574,11 +569,9 @@
       "CityWatcherKnights": "Unspecified"
     },
     "SceneAliases": [
-      "City_Lurien_Elevator",
-      "Dream_Lurien"
+      "City_Lurien_Elevator"
     ],
     "SceneNames": [
-      "Dream_Guardian_Lurien",
       "Ruins2_Watcher_Room"
     ],
     "OverrideCannotBeDarknessSource": null,
@@ -704,7 +697,8 @@
   },
   "CitySanctumWest": {
     "AdjacentClusters": {
-      "CitySanctumMiddle": "Unspecified"
+      "CitySanctumMiddle": "Unspecified",
+      "SanctumSoulTyrant": "Unspecified"
     },
     "SceneAliases": [
       "City_Soul_Master_Arena",
@@ -1090,7 +1084,9 @@
     }
   },
   "CrossroadsFailedChampion": {
-    "AdjacentClusters": {},
+    "AdjacentClusters": {
+      "CrossroadsFalseKnight": "Unspecified"
+    },
     "SceneAliases": [
       "Dream_Failed_Champion"
     ],
@@ -1110,7 +1106,8 @@
   "CrossroadsFalseKnight": {
     "AdjacentClusters": {
       "CrossroadsOutsideMound": "Unspecified",
-      "CrossroadsStagHub": "Unspecified"
+      "CrossroadsStagHub": "Unspecified",
+      "CrossroadsFailedChampion": "Unspecified"
     },
     "SceneAliases": [
       "Crossroads_False_Knight_Arena"
@@ -1927,7 +1924,8 @@
   "CrystalPeaksUpper": {
     "AdjacentClusters": {
       "CrystalPeaksTallHub": "Unspecified",
-      "CrystalPeaksWest": "Unspecified"
+      "CrystalPeaksWest": "Unspecified",
+      "CrystalPeaksCrown": "Unspecified"
     },
     "SceneAliases": [
       "Crystal_Top_Corridor"
@@ -2106,21 +2104,6 @@
       "SemiDarkProbability": 100
     }
   },
-  "DeepnestHerrah": {
-    "AdjacentClusters": {},
-    "SceneAliases": [
-      "Dream_Herrah"
-    ],
-    "SceneNames": [
-      "Dream_Guardian_Hegemol"
-    ],
-    "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": null,
-    "DarkSettings": null,
-    "SemiDarkSettings": {
-      "SemiDarkProbability": 100
-    }
-  },
   "DeepnestLight": {
     "AdjacentClusters": {
       "DeepnestDescent": "Unspecified",
@@ -2149,7 +2132,8 @@
   "DeepnestMantisEntrance": {
     "AdjacentClusters": {
       "DeepnestDescent": "Unspecified",
-      "FungalMantisLords": "Unspecified"
+      "FungalMantisLords": "Unspecified",
+      "FungalCore": "Unspecified"
     },
     "SceneAliases": [
       "Deepnest_After_Lower_Cornifer",
@@ -2311,7 +2295,9 @@
     }
   },
   "DirtmouthBretta": {
-    "AdjacentClusters": {},
+    "AdjacentClusters": {
+      "DirtmouthGPZ": "Unspecified"
+    },
     "SceneAliases": [
       "Bretta",
       "Bretta_Basement"
@@ -2328,7 +2314,9 @@
     }
   },
   "DirtmouthGPZ": {
-    "AdjacentClusters": {},
+    "AdjacentClusters": {
+      "DirtmouthBretta": "Unspecified"
+    },
     "SceneAliases": [
       "Dream_Grey_Prince_Zote",
       "GPZ"
@@ -3240,7 +3228,7 @@
     "AdjacentClusters": {
       "FungalLowerHub": "Unspecified",
       "FungalMantisLords": "Unspecified",
-      "WaterwaysWestWing": "Unspecified"
+      "WaterwaysWestWing": "Any"
     },
     "SceneAliases": [
       "Fungal_Bretta_Bench",
@@ -4230,21 +4218,6 @@
     "DarkSettings": null,
     "SemiDarkSettings": null
   },
-  "GroundsShrineOfBelievers": {
-    "AdjacentClusters": {},
-    "SceneAliases": [
-      "Dream_Outside_Shrine",
-      "Dream_Shrine_of_Believers"
-    ],
-    "SceneNames": [
-      "Dream_Backer_Shrine",
-      "Dream_Room_Believer_Shrine"
-    ],
-    "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": null,
-    "DarkSettings": null,
-    "SemiDarkSettings": null
-  },
   "GroundsStag": {
     "AdjacentClusters": {
       "GroundsMain": "Unspecified"
@@ -4283,7 +4256,8 @@
     "AdjacentClusters": {
       "GroundsBelowXero": "Unspecified",
       "GroundsOutsideDreamNail": "Unspecified",
-      "GroundsTram": "Unspecified"
+      "GroundsTram": "Unspecified",
+      "CrystalPeaksOutsideMound": "Unspecified"
     },
     "SceneAliases": [
       "Grounds_Xero"
@@ -4589,7 +4563,9 @@
     "SemiDarkSettings": null
   },
   "SanctumSoulTyrant": {
-    "AdjacentClusters": {},
+    "AdjacentClusters": {
+      "CitySanctumWest": "Unspecified"
+    },
     "SceneAliases": [
       "Dream_Soul_Tyrant"
     ],
@@ -4610,7 +4586,7 @@
     "AdjacentClusters": {
       "CityBridgeToBasin": "Unspecified",
       "WaterwaysDungDefenderCave": "Unspecified",
-      "WaterwaysMain": "Unspecified"
+      "WaterwaysMain": "Brighter"
     },
     "SceneAliases": [
       "Waterways_Dung_Defender_Arena"
@@ -4618,7 +4594,7 @@
     "SceneNames": [
       "Waterways_05"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -4630,7 +4606,8 @@
   },
   "WaterwaysDungDefenderCave": {
     "AdjacentClusters": {
-      "WaterwaysDungDefender": "Unspecified"
+      "WaterwaysDungDefender": "Unspecified",
+      "WaterwaysWhiteDefender": "Unspecified"
     },
     "SceneAliases": [
       "Waterways_Dung_Defender's_Cave"
@@ -4648,7 +4625,7 @@
   "WaterwaysEdgeAcidCorridor": {
     "AdjacentClusters": {
       "EdgeTramApproach": "Unspecified",
-      "WaterwaysIsmasGrove": "Unspecified"
+      "WaterwaysIsmasGrove": "Darker"
     },
     "SceneAliases": [
       "Waterways_Edge_Acid_Corridor"
@@ -4665,7 +4642,7 @@
   },
   "WaterwaysFlukeHermit": {
     "AdjacentClusters": {
-      "WaterwaysJunkPit": "Unspecified",
+      "WaterwaysJunkPit": "Any",
       "CityEastEntrance": "Unspecified"
     },
     "SceneAliases": [
@@ -4686,7 +4663,7 @@
   },
   "WaterwaysFlukemarm": {
     "AdjacentClusters": {
-      "WaterwaysOutsideFlukemarm": "Unspecified"
+      "WaterwaysOutsideFlukemarm": "Darker"
     },
     "SceneAliases": [
       "Waterways_Flukemarm_Arena"
@@ -4706,9 +4683,9 @@
   },
   "WaterwaysIsmasGrove": {
     "AdjacentClusters": {
-      "CityBridgeToBasin": "Unspecified",
-      "WaterwaysEdgeAcidCorridor": "Unspecified",
-      "CityEmilitia": "Unspecified"
+      "CityBridgeToBasin": "Disconnected",
+      "WaterwaysEdgeAcidCorridor": "Brighter",
+      "CityEmilitia": "Brighter"
     },
     "SceneAliases": [
       "Waterways_Isma's_Grove",
@@ -4718,7 +4695,7 @@
       "Waterways_07",
       "Waterways_13"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -4730,8 +4707,8 @@
   },
   "WaterwaysJunkPit": {
     "AdjacentClusters": {
-      "WaterwaysOutsideFlukemarm": "Unspecified",
-      "WaterwaysFlukeHermit": "Unspecified"
+      "WaterwaysOutsideFlukemarm": "Any",
+      "WaterwaysFlukeHermit": "Any"
     },
     "SceneAliases": [
       "Waterways_Junk_Pit"
@@ -4751,11 +4728,11 @@
   },
   "WaterwaysMain": {
     "AdjacentClusters": {
-      "CityBridgeToBasin": "Unspecified",
-      "WaterwaysDungDefender": "Unspecified",
-      "WaterwaysOutsideFlukemarm": "Unspecified",
-      "WaterwaysWestWing": "Unspecified",
-      "CityLemm": "Unspecified"
+      "CityBridgeToBasin": "Disconnected",
+      "WaterwaysDungDefender": "Darker",
+      "WaterwaysOutsideFlukemarm": "Darker",
+      "WaterwaysWestWing": "Any",
+      "CityLemm": "Brighter"
     },
     "SceneAliases": [
       "Waterways_Corridor_to_Broken_Elevator",
@@ -4769,7 +4746,7 @@
       "Waterways_03",
       "Waterways_06"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -4781,9 +4758,9 @@
   },
   "WaterwaysOutsideFlukemarm": {
     "AdjacentClusters": {
-      "WaterwaysFlukemarm": "Unspecified",
-      "WaterwaysJunkPit": "Unspecified",
-      "WaterwaysMain": "Unspecified"
+      "WaterwaysFlukemarm": "Brighter",
+      "WaterwaysJunkPit": "Any",
+      "WaterwaysMain": "Brighter"
     },
     "SceneAliases": [
       "Waterways_Flukemunga_Corridor",
@@ -4793,7 +4770,7 @@
       "GG_Pipeway",
       "Waterways_08"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -4805,8 +4782,8 @@
   },
   "WaterwaysWestWing": {
     "AdjacentClusters": {
-      "FungalMantisVillage": "Unspecified",
-      "WaterwaysMain": "Unspecified"
+      "FungalMantisVillage": "Any",
+      "WaterwaysMain": "Any"
     },
     "SceneAliases": [
       "Waterways_Cornifer",
@@ -4829,7 +4806,9 @@
     }
   },
   "WaterwaysWhiteDefender": {
-    "AdjacentClusters": {},
+    "AdjacentClusters": {
+      "WaterwaysDungDefenderCave": "Unspecified"
+    },
     "SceneAliases": [
       "Dream_White_Defender"
     ],
@@ -4837,7 +4816,7 @@
       "Dream_04_White_Defender"
     ],
     "OverrideCannotBeDarknessSource": false,
-    "CursedOnly": false,
+    "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
       "CostWeight": 100
@@ -4870,6 +4849,31 @@
       "SemiDarkProbability": 100
     }
   }
+}rossroads_Elevator"
+    ],
+    "SceneNames": [
+      "Crossroads_49",
+      "Crossroads_49b"
+    ],
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    },
+    "SemiDarkSettings": {
+      "SemiDarkProbability": 100
+    }
+  }
+}
+  }
+}}
+    }
+  }
+}0
+    }
+  }
+}}
 }Weight": 100
     },
     "SemiDarkSettings": {
