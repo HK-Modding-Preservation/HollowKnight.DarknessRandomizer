@@ -15,6 +15,22 @@ namespace DarknessRandomizer.Data
         public string RepoRoot;
     }
 
+    public class DataStats
+    {
+        public int NumClusters;
+        public int NumSemiDarkOnlyClusters;
+        public int NumCursedOnlyClusters;
+        public int NumClusterAdjacencies;
+        public int NumScenes;
+        public int NumSemiDarkOnlyScenes;
+        public int NumCursedOnlyScenes;
+        public int NumSceneAdjacencies;
+        public int NumDarknessSources;
+        public int TotalSourceBudget;
+        public int TotalDarknessBudget;
+        public int TotalCursedDarknessBudget;
+    }
+
     class DataUpdater
     {
         private static void SyncDicts<K,V1,V2>(IDictionary<K, V1> src, IDictionary<K, V2> dst, Func<K, V2> creator)
@@ -241,6 +257,9 @@ namespace DarknessRandomizer.Data
             }
             MaybeThrowException(exceptions);
 
+            var DS = ComputeDataStats(SM, SD, CD);
+            RewriteJsonFile(DS, $"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/data_stats.json");
+
             // Only update data at the end, if we have no exceptions.
             RewriteJsonFile(SM, $"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
             RewriteJsonFile(SD, $"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
@@ -260,6 +279,20 @@ namespace DarknessRandomizer.Data
             {
                 throw new ArgumentException($"{exceptions.Count} data errors encountered");
             }
+        }
+
+        private static DataStats ComputeDataStats(SortedDictionary<string, RawSceneMetadata> SM,
+            SortedDictionary<string, RawSceneData> SD, SortedDictionary<string, RawClusterData> CD)
+        {
+            DataStats DS = new();
+            foreach (var e in CD)
+            {
+                var cluster = e.Key;
+                var cData = e.Value;
+
+                // TODO: Calculate stats
+            }
+            return DS;
         }
 
         private static void RewriteJsonFile<T>(T data, string path)
