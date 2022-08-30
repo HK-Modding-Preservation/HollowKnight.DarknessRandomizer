@@ -54,6 +54,8 @@ namespace DarknessRandomizer.Data
 
         protected override RelativeDarkness GetAdjacentDarkness(ClusterName cluster) => AdjacentClusters[cluster];
 
+        public bool IsInWhitePalace => SceneNames.Any(s => SceneMetadata.Get(s).MapArea == "White Palace");
+
         public static void Load() { DarknessRandomizer.Log("Loaded ClusterData"); }
 
         public bool CanBeDarknessSource(DarknessRandomizationSettings settings) => base.CanBeDarknessSource(SceneData.Get, settings);
