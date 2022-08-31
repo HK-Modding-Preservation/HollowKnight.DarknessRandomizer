@@ -1066,7 +1066,7 @@
   "CrossroadsMawlek": {
     "AdjacentClusters": {
       "CrossroadsMawlekApproach": "Brighter",
-      "CrossroadsWest": "Any"
+      "CrossroadsWest": "Disconnected"
     },
     "SceneAliases": [
       "Crossroads_Mawlek_Boss"
@@ -1298,7 +1298,7 @@
       "CrossroadsGreenpathBridge": "Darker",
       "CrossroadsHotSprings": "Brighter",
       "CrossroadsLowerPass": "Darker",
-      "CrossroadsMawlek": "Any",
+      "CrossroadsMawlek": "Disconnected",
       "CrossroadsMawlekApproach": "Any",
       "CrossroadsOutsideMound": "Brighter"
     },
