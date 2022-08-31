@@ -19,7 +19,19 @@ namespace DarknessRandomizer.Rando
 
         private delegate void LogicOverride(LogicManagerBuilder lmb, string name, LogicClause lc);
 
-        private static readonly Dictionary<string, LogicOverride> LogicOverridesByName = new()
+        private static readonly Dictionary<string, LogicClause> logicCache = new();
+     
+        private static LogicClause FromLogicCache(string logic)
+        {
+            if (!logicCache.TryGetValue(logic, out LogicClause lc))
+            {
+                lc = new(logic);
+                logicCache[logic] = lc;
+            }
+            return lc;
+        }
+
+    private static readonly Dictionary<string, LogicOverride> LogicOverridesByName = new()
         {
             // Dream warriors do not appear in dark rooms without lantern.
             { "Defeated_Elder_Hu", CustomDarkLogicEdit("FALSE") },
@@ -188,19 +200,12 @@ namespace DarknessRandomizer.Rando
 
         private static void NoLogicEdit(LogicManagerBuilder lmb, string name, LogicClause lc) { }
 
-        private static readonly Dictionary<string, LogicClause> logicCache = new();
-
         private static LogicOverride CustomDarkLogicEdit(string darkLogic)
         {
-            if (!logicCache.TryGetValue(darkLogic, out LogicClause lc))
-            {
-                lc = new(darkLogic);
-                logicCache[darkLogic] = lc;
-            }
-
+            var dlogic = FromLogicCache(darkLogic);
             return (lmb, name, lc) => LogicClauseEditor.EditDarkness(lmb, name, (sink) =>
             {
-                foreach (var t in lc)
+                foreach (var t in dlogic)
                 {
                     sink.Add(t);
                 }
