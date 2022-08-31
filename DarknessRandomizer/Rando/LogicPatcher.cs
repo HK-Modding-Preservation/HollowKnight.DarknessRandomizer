@@ -188,9 +188,16 @@ namespace DarknessRandomizer.Rando
 
         private static void NoLogicEdit(LogicManagerBuilder lmb, string name, LogicClause lc) { }
 
+        private static readonly Dictionary<string, LogicClause> logicCache = new();
+
         private static LogicOverride CustomDarkLogicEdit(string darkLogic)
         {
-            LogicClause lc = new(darkLogic);
+            if (!logicCache.TryGetValue(darkLogic, out LogicClause lc))
+            {
+                lc = new(darkLogic);
+                logicCache[darkLogic] = lc;
+            }
+
             return (lmb, name, lc) => LogicClauseEditor.EditDarkness(lmb, name, (sink) =>
             {
                 foreach (var t in lc)
