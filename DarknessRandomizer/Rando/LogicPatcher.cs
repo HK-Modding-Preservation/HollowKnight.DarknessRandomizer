@@ -19,19 +19,7 @@ namespace DarknessRandomizer.Rando
 
         private delegate void LogicOverride(LogicManagerBuilder lmb, string name, LogicClause lc);
 
-        private static readonly Dictionary<string, LogicClause> logicCache = new();
-     
-        private static LogicClause FromLogicCache(string logic)
-        {
-            if (!logicCache.TryGetValue(logic, out LogicClause lc))
-            {
-                lc = new(logic);
-                logicCache[logic] = lc;
-            }
-            return lc;
-        }
-
-    private static readonly Dictionary<string, LogicOverride> LogicOverridesByName = new()
+        private static readonly Dictionary<string, LogicOverride> LogicOverridesByName = new()
         {
             // Dream warriors do not appear in dark rooms without lantern.
             { "Defeated_Elder_Hu", CustomDarkLogicEdit("FALSE") },
@@ -46,36 +34,36 @@ namespace DarknessRandomizer.Rando
             // but we care whether or not the actual fight room is dark. So we have to account for both rooms.
             { "Defeated_Failed_Champion", CustomSceneLogicEdit(SceneName.DreamFailedChampion, "FALSE") },
             { "Defeated_Grey_Prince_Zote", CustomSceneLogicEdit(SceneName.DreamGreyPrinceZote, "FALSE") },
-            { "Defeated_Lost_Kin", CustomSceneLogicEdit(SceneName.DreamLostKin, "DARKROOMS + SPICYCOMBATSKIPS") },
-            { "Defeated_Soul_Tyrant", CustomSceneLogicEdit(SceneName.DreamSoulTyrant, "DARKROOMS + SPICYCOMBATSKIPS") },
-            { "Defeated_White_Defender", CustomSceneLogicEdit(SceneName.DreamWhiteDefender, "DARKROOMS + SPICYCOMBATSKIPS") },
+            { "Defeated_Lost_Kin", CustomSceneLogicEdit(SceneName.DreamLostKin, "DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
+            { "Defeated_Soul_Tyrant", CustomSceneLogicEdit(SceneName.DreamSoulTyrant, "DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
+            { "Defeated_White_Defender", CustomSceneLogicEdit(SceneName.DreamWhiteDefender, "DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
 
             // Specific checks with difficult platforming.
             { "Void_Heart", CustomSceneLogicEdit(SceneName.AbyssBirthplace, "DARKROOMS + DIFFICULTSKIPS") },
 
             // These bosses are deemed difficult in the dark.
-            { "Defeated_Any_Hollow_Knight", CustomDarkLogicEdit("DARKROOMS + SPICYCOMBATSKIPS") },
+            { "Defeated_Any_Hollow_Knight", CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
             { "Defeated_Any_Nightmare_King", CustomDarkLogicEdit("FALSE") },
             { "Defeated_Any_Radiance", CustomDarkLogicEdit("FALSE") },
             { "Defeated_Broken_Vessel", CustomDarkLogicEdit("DARKROOMS + PROFICIENTCOMBAT") },
             { "Defeated_Brooding_Mawlek", CustomDarkLogicEdit("DARKROOMS + PROFICIENTCOMBAT") },
-            { "Defeated_Collector", CustomDarkLogicEdit("DARKROOMS + SPICYCOMBATSKIPS") },
-            { "Defeated_Colloseum_1", CustomDarkLogicEdit("DARKROOMS + SPICYCOMBATSKIPS") },
+            { "Defeated_Collector", CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
+            { "Defeated_Colloseum_1", CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
             { "Defeated_Colloseum_2", CustomDarkLogicEdit("FALSE") },
             { "Defeated_Colloseum_3", CustomDarkLogicEdit("FALSE") },
             { "Defeated_Crystal_Guardian", CustomDarkLogicEdit("DARKROOMS + PROFICIENTCOMBAT") },
-            { "Defeated_Enraged_Guardian", CustomDarkLogicEdit("DARKROOMS + SPICYCOMBATSKIPS") },
+            { "Defeated_Enraged_Guardian", CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
             { "Defeated_Flukemarm", CustomDarkLogicEdit("DARKROOMS + PROFICIENTCOMBAT") },
-            { "Defeated_Hive_Knight", CustomDarkLogicEdit("DARKROOMS + SPICYCOMBATSKIPS") },
+            { "Defeated_Hive_Knight", CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
             { "Defeated_Hornet_Sentinel", CustomDarkLogicEdit("DARKROOMS + PROFICIENTCOMBAT") },
             { "Defeated_Grimm", CustomDarkLogicEdit("DARKROOMS + PROFICIENTCOMBAT") },
             { "Defeated_Mantis_Lords", CustomDarkLogicEdit("DARKROOMS + PROFICIENTCOMBAT") },
             { "Defeated_Nosk", CustomDarkLogicEdit("DARKROOMS + PROFICIENTCOMBAT") },
             { "Defeated_Pale_Lurker", CustomDarkLogicEdit("DARKROOMS + PROFICIENTCOMBAT") },
             { "Defeated_Soul_Master", CustomDarkLogicEdit("DARKROOMS + PROFICIENTCOMBAT") },
-            { "Defeated_Traitor_Lord", CustomDarkLogicEdit("DARKROOMS + SPICYCOMBATSKIPS") },
+            { "Defeated_Traitor_Lord", CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
             { "Defeated_Uumuu", CustomDarkLogicEdit("DARKROOMS + PROFICIENTCOMBAT") },
-            { "Defeated_Watcher_Knights", CustomDarkLogicEdit("DARKROOMS + SPICYCOMBATSKIPS") },
+            { "Defeated_Watcher_Knights", CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
 
             // Flower quest simply requires lantern.
             { "Mask_Shard-Grey_Mourner", (lmb, ln, lc) => lmb.DoLogicEdit(new(ln, "ORIG + LANTERN")) }
@@ -202,10 +190,10 @@ namespace DarknessRandomizer.Rando
 
         private static LogicOverride CustomDarkLogicEdit(string darkLogic)
         {
-            var dlogic = FromLogicCache(darkLogic);
             return (lmb, name, lc) => LogicClauseEditor.EditDarkness(lmb, name, (sink) =>
             {
-                foreach (var t in dlogic)
+                LogicClause repl = new(darkLogic);
+                foreach (var t in repl)
                 {
                     sink.Add(t);
                 }
