@@ -94,10 +94,6 @@ namespace DarknessRandomizer.Rando
             { SceneName.GreenpathSheoGauntlet, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") }
         };
 
-        private delegate bool LogicOverrideMatcher(LogicManagerBuilder lmb, string name, LogicClause lc);
-
-        private static readonly List<LogicOverrideMatcher> LogicOverrideMatchers = new();
-
         public static void ModifyLMB(GenerationSettings gs, LogicManagerBuilder lmb)
         {
             if (!RandoInterop.IsEnabled()) return;
@@ -140,14 +136,6 @@ namespace DarknessRandomizer.Rando
             {
                 handler.Invoke(lmb, name, lc);
                 return;
-            }
-
-            foreach (var matcher in LogicOverrideMatchers)
-            {
-                if (matcher.Invoke(lmb, name, lc))
-                {
-                    return;
-                }
             }
 
             // Check for an inferred scene match.
