@@ -1494,10 +1494,10 @@
     "SceneNames": [
       "Mines_18"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": true,
     "CursedOnly": false,
     "DarkSettings": {
-      "ProbabilityWeight": 40,
+      "ProbabilityWeight": 50,
       "CostWeight": 140
     }
   },

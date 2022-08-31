@@ -58,42 +58,42 @@
   "Abyss_08": {
     "Alias": "Abyss_Lifeblood_Core",
     "Cluster": "AbyssLifebloodCore",
-    "MinimumDarkness": "Bright",
+    "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
   },
   "Abyss_09": {
     "Alias": "Abyss_Lighthouse_Climb",
     "Cluster": "AbyssShadeCloakWing",
-    "MinimumDarkness": "Bright",
+    "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
   },
   "Abyss_10": {
     "Alias": "Abyss_Shade_Cloak",
     "Cluster": "AbyssShadeCloakWing",
-    "MinimumDarkness": "Bright",
+    "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
   },
   "Abyss_12": {
     "Alias": "Abyss_Shriek",
     "Cluster": "AbyssShriekWing",
-    "MinimumDarkness": "Bright",
+    "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false
   },
   "Abyss_15": {
     "Alias": "Abyss_Birthplace",
     "Cluster": "AbyssBirthplace",
-    "MinimumDarkness": "Bright",
+    "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
   },
   "Abyss_16": {
     "Alias": "Abyss_Corridor_to_Lighthouse",
     "Cluster": "AbyssShadeCloakWing",
-    "MinimumDarkness": "Bright",
+    "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "Dark",
     "IsVanillaDark": false
   },
