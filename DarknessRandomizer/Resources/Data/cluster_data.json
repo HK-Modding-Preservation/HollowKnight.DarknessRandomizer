@@ -11,7 +11,7 @@
       "Abyss_15",
       "Dream_Abyss"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 150,
@@ -72,7 +72,7 @@
       "Abyss_16",
       "Abyss_Lighthouse_room"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -110,7 +110,7 @@
       "Abyss_20",
       "Abyss_21"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -127,7 +127,7 @@
     "SceneNames": [
       "Abyss_17"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -164,7 +164,7 @@
     "SceneNames": [
       "Dream_03_Infected_Knight"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -198,7 +198,7 @@
     "SceneNames": [
       "Room_Final_Boss_Core"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -215,7 +215,7 @@
     "SceneNames": [
       "Dream_Final"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -276,7 +276,7 @@
       "Ruins1_05",
       "Ruins1_05c"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 40,
@@ -302,7 +302,7 @@
       "Abyss_02",
       "Abyss_03"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 40,
@@ -319,7 +319,7 @@
     "SceneNames": [
       "Ruins2_11"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -412,7 +412,7 @@
     "SceneNames": [
       "Ruins2_09"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 60,
@@ -540,7 +540,7 @@
       "Ruins_House_01",
       "Ruins_House_02"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 140,
@@ -563,7 +563,7 @@
       "Ruins1_23",
       "Ruins1_25"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -581,7 +581,7 @@
     "SceneNames": [
       "Ruins1_30"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 200,
@@ -598,7 +598,7 @@
     "SceneNames": [
       "Dream_02_Mage_Lord"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -618,7 +618,7 @@
       "Ruins1_24",
       "Ruins1_32"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 150,
@@ -635,7 +635,7 @@
     "SceneNames": [
       "Ruins1_31b"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -717,7 +717,7 @@
     "SceneNames": [
       "Ruins1_31"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 40,
@@ -751,7 +751,7 @@
     "SceneNames": [
       "Ruins2_03"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -814,7 +814,7 @@
       "Cliffs_05",
       "Cliffs_06"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 30,
@@ -845,7 +845,7 @@
     "SceneNames": [
       "Crossroads_ShamanTemple"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -865,7 +865,7 @@
       "Crossroads_12",
       "Crossroads_35"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 40,
@@ -888,7 +888,7 @@
       "Crossroads_16",
       "Crossroads_40"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -921,7 +921,7 @@
     "SceneNames": [
       "Crossroads_01"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 5,
@@ -938,7 +938,7 @@
     "SceneNames": [
       "Dream_01_False_Knight"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -957,7 +957,7 @@
     "SceneNames": [
       "Crossroads_10"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 60,
@@ -990,7 +990,7 @@
     "SceneNames": [
       "Crossroads_22"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -1022,7 +1022,7 @@
     "SceneNames": [
       "Crossroads_11_alt"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 10,
@@ -1056,7 +1056,7 @@
       "Crossroads_13",
       "Crossroads_42"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 20,
@@ -1066,7 +1066,7 @@
   "CrossroadsMawlek": {
     "AdjacentClusters": {
       "CrossroadsMawlekApproach": "Brighter",
-      "CrossroadsWest": "Disconnected"
+      "CrossroadsWest": "Any"
     },
     "SceneAliases": [
       "Crossroads_Mawlek_Boss"
@@ -1074,7 +1074,7 @@
     "SceneNames": [
       "Crossroads_09"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 50,
@@ -1094,7 +1094,7 @@
       "Crossroads_25",
       "Crossroads_36"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 50,
@@ -1153,7 +1153,7 @@
       "Crossroads_48",
       "Mines_01"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 25,
@@ -1172,7 +1172,7 @@
     "SceneNames": [
       "Crossroads_04"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 15,
@@ -1203,7 +1203,7 @@
     "SceneNames": [
       "Crossroads_31"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -1298,7 +1298,7 @@
       "CrossroadsGreenpathBridge": "Darker",
       "CrossroadsHotSprings": "Brighter",
       "CrossroadsLowerPass": "Darker",
-      "CrossroadsMawlek": "Disconnected",
+      "CrossroadsMawlek": "Any",
       "CrossroadsMawlekApproach": "Any",
       "CrossroadsOutsideMound": "Brighter"
     },
@@ -1332,7 +1332,7 @@
       "Mines_25",
       "Mines_34"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 120,
@@ -1349,7 +1349,7 @@
     "SceneNames": [
       "Mines_24"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 120,
@@ -1367,7 +1367,7 @@
     "SceneNames": [
       "Mines_19"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -1384,7 +1384,7 @@
     "SceneNames": [
       "Mines_31"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 200,
@@ -1401,7 +1401,7 @@
     "SceneNames": [
       "Mines_35"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 150,
@@ -1419,7 +1419,7 @@
     "SceneNames": [
       "Mines_07"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 125,
@@ -1438,7 +1438,7 @@
       "Mines_06",
       "Mines_36"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -1458,7 +1458,7 @@
       "Mines_10",
       "Mines_30"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -1475,7 +1475,7 @@
     "SceneNames": [
       "Mines_32"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -1494,7 +1494,7 @@
     "SceneNames": [
       "Mines_18"
     ],
-    "OverrideCannotBeDarknessSource": true,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 50,
@@ -1520,7 +1520,7 @@
       "Mines_04",
       "Mines_29"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 15,
@@ -1538,7 +1538,7 @@
     "SceneNames": [
       "Mines_17"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 50,
@@ -1555,7 +1555,7 @@
     "SceneNames": [
       "Mines_16"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 150,
@@ -1590,7 +1590,7 @@
     "SceneNames": [
       "Mines_23"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 150,
@@ -1692,7 +1692,7 @@
     "SceneNames": [
       "Deepnest_Spider_Town"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -1751,7 +1751,7 @@
       "Deepnest_30",
       "Deepnest_36"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 40,
@@ -1813,7 +1813,7 @@
       "Deepnest_03",
       "Deepnest_33"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 50,
@@ -1851,7 +1851,7 @@
     "SceneNames": [
       "Deepnest_32"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 125,
@@ -1900,7 +1900,7 @@
       "Abyss_03_b",
       "Deepnest_37"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -1919,7 +1919,7 @@
       "Deepnest_38",
       "Deepnest_44"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 150,
@@ -1988,7 +1988,7 @@
     "SceneNames": [
       "Dream_Mighty_Zote"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -2005,7 +2005,7 @@
     "SceneNames": [
       "Grimm_Main_Tent"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 50,
@@ -2022,7 +2022,7 @@
     "SceneNames": [
       "Grimm_Nightmare"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 50,
@@ -2092,7 +2092,7 @@
     "SceneNames": [
       "Room_Colosseum_Bronze"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -2127,7 +2127,7 @@
     "SceneNames": [
       "Room_Colosseum_Gold"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -2145,7 +2145,7 @@
     "SceneNames": [
       "Deepnest_East_08"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 60,
@@ -2219,7 +2219,7 @@
     "SceneNames": [
       "Deepnest_East_Hornet"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -2250,7 +2250,7 @@
     "SceneNames": [
       "Deepnest_East_10"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 150,
@@ -2285,7 +2285,7 @@
       "Deepnest_East_14b",
       "Deepnest_East_17"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 150,
@@ -2324,7 +2324,7 @@
     "SceneNames": [
       "GG_Lurker"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -2391,7 +2391,7 @@
       "Fungus3_archive",
       "Fungus3_archive_02"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -2422,7 +2422,7 @@
     "SceneNames": [
       "Fungus3_28"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 150,
@@ -2447,7 +2447,7 @@
       "Fungus3_25b",
       "Fungus3_26"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 60,
@@ -2468,7 +2468,7 @@
       "Fungus3_27",
       "Fungus3_47"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 120,
@@ -2485,7 +2485,7 @@
     "SceneNames": [
       "Room_Fungus_Shaman"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 120,
@@ -2596,7 +2596,7 @@
       "Fungus2_29",
       "Fungus2_30"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 150,
@@ -2615,7 +2615,7 @@
     "SceneNames": [
       "Fungus2_18"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 40,
@@ -2653,7 +2653,7 @@
       "Fungus2_08",
       "Fungus2_32"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 30,
@@ -2676,7 +2676,7 @@
       "Fungus2_04",
       "Fungus2_28"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 20,
@@ -2698,7 +2698,7 @@
       "Fungus2_11",
       "Fungus2_17"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -2718,7 +2718,7 @@
       "Fungus2_15",
       "Fungus2_31"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -2743,7 +2743,7 @@
       "Fungus2_14",
       "Fungus2_23"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -2761,7 +2761,7 @@
     "SceneNames": [
       "Fungus2_05"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 50,
@@ -2782,7 +2782,7 @@
       "Fungus2_10",
       "Fungus2_21"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 50,
@@ -2824,7 +2824,7 @@
       "Fungus2_19",
       "Fungus2_20"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 50,
@@ -2865,7 +2865,7 @@
     "SceneNames": [
       "Fungus1_24"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -2884,7 +2884,7 @@
     "SceneNames": [
       "Deepnest_43"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 60,
@@ -2924,7 +2924,7 @@
       "Fungus1_23",
       "Fungus3_48"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 50,
@@ -2966,7 +2966,7 @@
     "SceneNames": [
       "Fungus3_10"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 125,
@@ -3003,7 +3003,7 @@
     "SceneNames": [
       "Fungus3_40"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -3060,7 +3060,7 @@
     "SceneNames": [
       "Fungus3_23"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -3116,7 +3116,7 @@
     "SceneNames": [
       "Fungus1_04"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 125,
@@ -3176,7 +3176,7 @@
       "Fungus1_10",
       "Fungus1_19"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 25,
@@ -3198,7 +3198,7 @@
       "Fungus1_13",
       "Fungus1_29"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 125,
@@ -3219,7 +3219,7 @@
       "Fungus1_15",
       "Room_nailmaster_02"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -3250,7 +3250,7 @@
     "SceneNames": [
       "Fungus1_35"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -3268,7 +3268,7 @@
     "SceneNames": [
       "Fungus1_34"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -3299,7 +3299,7 @@
     "SceneNames": [
       "Fungus1_14"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 90,
@@ -3319,7 +3319,7 @@
       "Fungus1_26",
       "Fungus1_Slug"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -3376,7 +3376,7 @@
       "Fungus1_06",
       "Fungus1_07"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 10,
@@ -3404,7 +3404,7 @@
       "Fungus1_31",
       "Fungus1_32"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 40,
@@ -3447,7 +3447,7 @@
     "SceneNames": [
       "RestingGrounds_10"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 200,
@@ -3464,7 +3464,7 @@
     "SceneNames": [
       "Dream_Nailcollection"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 75,
@@ -3495,7 +3495,7 @@
     "SceneNames": [
       "RestingGrounds_08"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -3580,7 +3580,7 @@
     "SceneNames": [
       "RestingGrounds_02"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 150,
@@ -3600,7 +3600,7 @@
       "Hive_01",
       "Hive_02"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -3640,7 +3640,7 @@
       "Hive_03_c",
       "Hive_04"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -3657,7 +3657,7 @@
     "SceneNames": [
       "Tutorial_01"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 5,
@@ -3700,7 +3700,7 @@
       "White_Palace_12",
       "White_Palace_13"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 50,
@@ -3736,7 +3736,7 @@
     "SceneNames": [
       "White_Palace_02"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -3775,7 +3775,7 @@
       "White_Palace_19",
       "White_Palace_20"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 200,
@@ -3814,7 +3814,7 @@
       "White_Palace_15",
       "White_Palace_16"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -3849,7 +3849,7 @@
       "Waterways_05",
       "Waterways_15"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 125,
@@ -3882,7 +3882,7 @@
     "SceneNames": [
       "Room_GG_Shortcut"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -3899,7 +3899,7 @@
     "SceneNames": [
       "Waterways_12"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 150,
@@ -3920,7 +3920,7 @@
       "Waterways_07",
       "Waterways_13"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 75,
@@ -3983,7 +3983,7 @@
       "GG_Pipeway",
       "Waterways_08"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 80,
@@ -4022,7 +4022,7 @@
     "SceneNames": [
       "Dream_04_White_Defender"
     ],
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
       "ProbabilityWeight": 100,
@@ -4043,7 +4043,7 @@
       "Crossroads_49",
       "Crossroads_49b"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 30,

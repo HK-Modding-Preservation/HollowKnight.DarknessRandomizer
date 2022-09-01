@@ -7,9 +7,9 @@
   "NumSemiDarkOnlyScenes": 75,
   "NumCursedOnlyScenes": 18,
   "NumSceneAdjacencies": 411,
-  "NumDarknessSources": 43,
-  "TotalSourceBudget": 4495,
-  "TotalCursedSourceBudget": 6745,
+  "NumDarknessSources": 96,
+  "TotalSourceBudget": 11865,
+  "TotalCursedSourceBudget": 13615,
   "TotalDarknessBudget": 24925,
   "TotalCursedDarknessBudget": 29175
 }

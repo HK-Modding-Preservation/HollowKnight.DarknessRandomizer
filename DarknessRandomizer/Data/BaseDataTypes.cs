@@ -87,8 +87,8 @@ namespace DarknessRandomizer.Data
         public bool CanBeDarknessSource(SceneLookup SL, DarknessRandomizationSettings settings = null)
         {
             if (MaximumDarkness(SL, settings) < Darkness.Dark) return false;
-            if (OverrideCannotBeDarknessSource is bool b && b) return false;
-            return AdjacentDarkness().All(e => e.Value != RelativeDarkness.Brighter);
+            if (OverrideCannotBeDarknessSource ?? false) return false;
+            return AdjacentDarkness().All(e => e.Value != RelativeDarkness.Darker);
         }
 
         public Darkness MaximumDarkness(SceneLookup SL, DarknessRandomizationSettings settings = null)
