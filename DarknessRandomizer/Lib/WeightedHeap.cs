@@ -70,11 +70,11 @@ namespace DarknessRandomizer.Lib
             int cmp = Comparer<T>.Default.Compare(t, pivot);
             if (cmp < 0)
             {
-                return left != null && left.Contains(t);
+                return left?.Contains(t) ?? false;
             }
             else if (cmp > 0)
             {
-                return right != null && right.Contains(t);
+                return right?.Contains(t) ?? false;
             }
             else
             {
@@ -138,7 +138,7 @@ namespace DarknessRandomizer.Lib
                 throw new InvalidOperationException("WeightedHeap is empty");
             }
 
-            int lw = left != null ? left.Weight() : 0;
+            int lw = left?.Weight() ?? 0;
             (T, int) ret;
             if (i < lw)
             {
@@ -172,14 +172,7 @@ namespace DarknessRandomizer.Lib
                 throw new InvalidOperationException("Cannot remove from an empty heap");
             }
 
-            (T, int) ret;
-            if (left != null)
-            {
-                ret = left.RemoveFirst();
-            } else
-            {
-                ret = RemovePivotNoAccounting();
-            }
+            (T, int) ret = left?.RemoveFirst() ?? RemovePivotNoAccounting();
 
             --size;
             weight -= ret.Item2;
@@ -194,14 +187,7 @@ namespace DarknessRandomizer.Lib
                 throw new InvalidOperationException("Cannot remove from an empty heap");
             }
 
-            (T, int) ret;
-            if (right != null)
-            {
-                ret = right.RemoveLast();
-            } else
-            {
-                ret = RemovePivotNoAccounting();
-            }
+            (T, int) ret = right?.RemoveLast() ?? RemovePivotNoAccounting();
 
             --size;
             weight -= ret.Item2;
@@ -249,28 +235,24 @@ namespace DarknessRandomizer.Lib
                 return;
             }
 
+            int ls = left?.Size() ?? 0;
+            int rs = right?.Size() ?? 0;
             if (pivotWeight == 0)
             {
-                if (left != null && (right == null || right.Size() > left.Size()))
-                {
-                    (pivot, pivotWeight) = left.RemoveLast();
-                } else if (right != null)
+                if (ls < rs)
                 {
                     (pivot, pivotWeight) = right.RemoveFirst();
                 }
+                else
+                {
+                    (pivot, pivotWeight) = left.RemoveLast();
+                }
             }
 
-            if (left != null && left.Size() == 0)
-            {
-                left = null;
-            }
-            if (right != null && right.Size() == 0)
-            {
-                right = null;
-            }
-
-            int ls = left != null ? left.Size() : 0;
-            int rs = right != null ? right.Size() : 0;
+            ls = left?.Size() ?? 0;
+            rs = right?.Size() ?? 0;
+            if (ls == 0) left = null;
+            if (rs == 0) right = null;
             if (size > 10 && 3*Math.Abs(ls - rs) > size)
             {
                 Copy(new WeightedHeap<T>(EnumerateSorted().ToList()));
