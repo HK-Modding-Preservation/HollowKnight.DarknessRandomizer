@@ -17,6 +17,10 @@ namespace DarknessRandomizer.Rando
 
     using DarknessLogicAdder = Action<List<LogicToken>>;
 
+    // Infers if a particular logic token is explicitly related to a particular SceneName.
+    // If so, the darkness level of that scene name is assumed relevant to logic.
+    public delegate bool SceneNameInferrer(string term, out SceneName sceneName);
+
     internal enum Lantern { Instance }
 
     internal class SceneOrLantern : Variant<SceneName, Lantern>
@@ -43,7 +47,7 @@ namespace DarknessRandomizer.Rando
     {
         private static bool GuaranteedLantern(this SceneTree tree) => tree.Metadata != null && tree.Metadata.GuaranteedLantern;
 
-        public static void EditDarkness(LogicManagerBuilder lmb, string name, DarknessLogicAdder dla)
+        public static void EditDarkness(LogicManagerBuilder lmb, string name, SceneNameInferrer si, DarknessLogicAdder dla)
         {
             var lc = lmb.LogicLookup[name];
 
@@ -57,7 +61,7 @@ namespace DarknessRandomizer.Rando
                 }
                 else
                 {
-                    stack.Push(LogicTree.CreateLeaf(ParsedToken.Parse(lt)));
+                    stack.Push(LogicTree.CreateLeaf(ParsedToken.Parse(lt, si)));
                 }
             }
 
@@ -285,7 +289,7 @@ namespace DarknessRandomizer.Rando
 
         public static readonly ParsedToken Lantern = new(new SimpleToken("LANTERN"), TokenType.Lantern, null);
 
-        public static ParsedToken Parse(LogicToken token)
+        public static ParsedToken Parse(LogicToken token, SceneNameInferrer si)
         {
             if (token is SimpleToken st)
             {
@@ -295,7 +299,7 @@ namespace DarknessRandomizer.Rando
                     return Lantern;
                 }
 
-                if (SceneName.IsTransition(name, out SceneName sceneName))
+                if (si.Invoke(name, out SceneName sceneName))
                 {
                     return new(token, TokenType.Scene, sceneName);
                 }
