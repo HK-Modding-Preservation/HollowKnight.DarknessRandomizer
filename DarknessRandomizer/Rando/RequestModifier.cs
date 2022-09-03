@@ -16,7 +16,7 @@ namespace DarknessRandomizer.Rando
 
         private static void SetupRefs(RequestBuilder rb)
         {
-            if (!RandoInterop.IsEnabled()) return;
+            if (!RandoInterop.ShardedLantern) return;
 
             rb.EditItemRequest(LanternShardItem.Name, info =>
             {
@@ -32,16 +32,14 @@ namespace DarknessRandomizer.Rando
 
         private static void RandomizeDarkness(RequestBuilder rb)
         {
-            if (!RandoInterop.IsEnabled()) return;
+            if (!RandoInterop.RandomizeDarkness) return;
 
             RandoInterop.LS = new(rb.gs, rb.ctx.StartDef);
         }
 
         private static void AddItems(RequestBuilder rb)
         {
-            if (!RandoInterop.IsEnabled()) return;
-
-            if (rb.StartItems.GetCount(ItemNames.Lumafly_Lantern) > 0 || !RandoInterop.ShardedLantern)
+            if (!RandoInterop.ShardedLantern || rb.StartItems.GetCount(ItemNames.Lumafly_Lantern) > 0)
             {
                 // Nothing further to do.
                 return;
@@ -54,8 +52,9 @@ namespace DarknessRandomizer.Rando
             {
                 for (int i = 0; i < LanternShardItem.TotalNumShards; ++i) rb.AddItemByName(LanternShardItem.Name);
 
-                int dupes = rb.gs.DuplicateItemSettings.DuplicateUniqueKeys ? 2 : 0;
+                int dupes = LanternShardItem.TotalNumShards;
                 dupes += RandoInterop.LS.Settings.TwoDupeShards ? 2 : 0;
+                dupes *= rb.gs.DuplicateItemSettings.DuplicateUniqueKeys ? 2 : 1;
                 for (int i = 0; i < dupes; ++i) rb.AddItemByName($"{PlaceholderItem.Prefix}{LanternShardItem.Name}");
             }
             else

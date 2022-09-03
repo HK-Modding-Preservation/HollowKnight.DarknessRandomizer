@@ -259,16 +259,16 @@ namespace DarknessRandomizer.Rando
 
         public static void ModifyLMB(GenerationSettings gs, LogicManagerBuilder lmb)
         {
-            if (!RandoInterop.IsEnabled()) return;
-
-            var newResolver = new DarknessVariableResolver(lmb.VariableResolver);
-            lmb.VariableResolver = newResolver;
-
             if (RandoInterop.ShardedLantern)
             {
                 LanternShardLogicItem lsli = new(lmb.GetOrAddTerm("LANTERNSHARDS"), lmb.GetOrAddTerm("LANTERN"));
                 lmb.AddItem(lsli);
             }
+
+            if (!RandoInterop.RandomizeDarkness) return;
+
+            var newResolver = new DarknessVariableResolver(lmb.VariableResolver);
+            lmb.VariableResolver = newResolver;
 
             LogicOverrides overrides = new();
 

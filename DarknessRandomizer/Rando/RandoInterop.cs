@@ -18,13 +18,15 @@ namespace DarknessRandomizer.Rando
             // FIXME: Condensed spoiler
         }
 
-        public static bool IsEnabled() => DarknessRandomizer.GS.DarknessRandomizationSettings.RandomizeDarkness;
+        public static bool IsEnabled => ShardedLantern || RandomizeDarkness;
+
+        public static bool RandomizeDarkness => DarknessRandomizer.GS.DarknessRandomizationSettings.RandomizeDarkness;
 
         public static bool ShardedLantern => DarknessRandomizer.GS.DarknessRandomizationSettings.ShardedLantern;
 
         public static void Finish(RandoController rc)
         {
-            if (!IsEnabled()) return;
+            if (!IsEnabled) return;
 
             var drm = ItemChangerMod.Modules.GetOrAdd<DarknessRandomizerModule>();
             drm.DarknessOverrides = new(LS.DarknessOverrides);
