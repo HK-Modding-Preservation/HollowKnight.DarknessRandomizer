@@ -80,7 +80,6 @@ namespace DarknessRandomizer.Rando
                     || !names.Contains(obj.name))
                 {
                     obj.gameObject.GetOrAddComponent<DeactivateInDarknessWithoutLantern>();
-                    obj.gameObject.SetActive(false);
                 }
             }
         }
