@@ -65,6 +65,9 @@ namespace DarknessRandomizer.Rando
             { "Defeated_Uumuu", CustomDarkLogicEdit("DARKROOMS + PROFICIENTCOMBAT") },
             { "Defeated_Watcher_Knights", CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
 
+            // Using Elegant Key requires lantern.
+            { $"{SceneName.CityTollBench.Name()}[left3]", CustomDarkLogicEdit("FALSE") },
+
             // Flower quest simply requires lantern.
             { "Mask_Shard-Grey_Mourner", (lmb, ln, lc) => lmb.DoLogicEdit(new(ln, "ORIG + LANTERN")) }
         };
@@ -86,6 +89,10 @@ namespace DarknessRandomizer.Rando
             // Checks in these rooms are easy to obtain if the player has isma's tear; there is no danger.
             { SceneName.GreenpathLakeOfUnn, CustomDarkLogicEdit("ACID") },
             { SceneName.GreenpathUnn, CustomDarkLogicEdit("ACID") },
+
+            // Checks in these scenes are free, even if dark.
+            { SceneName.BasinCorridortoBrokenVessel, CustomDarkLogicEdit("ANY") },
+            { SceneName.CityTollBench, CustomDarkLogicEdit("ANY") },
 
             // These scenes have difficult dark platforming.
             { SceneName.CrystalCrystalHeartGauntlet, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") },

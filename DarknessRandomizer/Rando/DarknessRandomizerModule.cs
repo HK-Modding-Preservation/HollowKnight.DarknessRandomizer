@@ -32,7 +32,6 @@ namespace DarknessRandomizer.Rando
             InstallMaybeDisableLanternCheck(SceneName.CrossroadsPeakDarkToll, new("Toll Gate Machine", "Disable if No Lantern"));
             InstallMaybeDisableLanternCheck(SceneName.CrossroadsPeakDarkToll, new("Toll Gate Machine (1)", "Disable if No Lantern"));
             InstallMaybeDisableLanternCheck(SceneName.GreenpathStoneSanctuary, new("Ghost Warrior NPC", "FSM"));
-            InstallNoEyesHazardRespawn();
 
             // Delete ghost warriors in dark rooms.
             InstallDeleteGhostWarriorIfDark(SceneName.CliffsGorb);
@@ -172,21 +171,7 @@ namespace DarknessRandomizer.Rando
             {
                 if (IsDark(sceneName))
                 {
-                    GameObject.Destroy(fsm.gameObject);
-                }
-            }));
-        }
-
-        private void InstallNoEyesHazardRespawn()
-        {
-            InstallHook(new FsmEditHook(SceneName.GreenpathStoneSanctuary, new("Ghost Warrior NPC", "Conversation Control"), fsm =>
-            {
-                if (DarknessOverrides[SceneName.GreenpathStoneSanctuary] != Darkness.Dark && PlayerHasLantern())
-                {
-                    fsm.GetState("Start Fight").AddFirstAction(new Lambda(() =>
-                    {
-                        HeroController.instance.SetHazardRespawn(HeroController.instance.transform.position, true);
-                    }));
+                    fsm.gameObject.GetOrAddComponent<DeactivateInDarknessWithoutLantern>();
                 }
             }));
         }
@@ -198,8 +183,7 @@ namespace DarknessRandomizer.Rando
                 if (IsDark(SceneName.CityTollBench))
                 {
                     fsm.GetState("Can Talk?").GetFirstActionOfType<BoolTest>().boolVariable = new FsmBool() { Value = false };
-                    var prompt = GameObject.Find("/Mage Door/Prompt Marker");
-                    GameObject.Destroy(prompt);
+                    GameObject.Find("/Mage Door/Prompt Marker")?.GetOrAddComponent<DeactivateInDarknessWithoutLantern>();
                 }
             }));
         }
