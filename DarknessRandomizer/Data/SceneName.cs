@@ -41,11 +41,11 @@ namespace DarknessRandomizer.Data
 
         public string Name() => name;
 
-        public static bool TryGetSceneName(string s, out SceneName sceneName) => scenesByName.TryGetValue(s, out sceneName);
+        public static bool TryGetValue(string s, out SceneName sceneName) => scenesByName.TryGetValue(s, out sceneName);
 
         public static SceneName FromName(string name)
         {
-            if (!TryGetSceneName(name, out SceneName scene))
+            if (!TryGetValue(name, out SceneName scene))
             {
                 throw new ArgumentException($"Not a SceneName: {name}");
             }
@@ -73,7 +73,7 @@ namespace DarknessRandomizer.Data
         public static bool IsTransition(string token, out SceneName sceneName)
         {
             int i = token.IndexOf('[');
-            if (i != -1 && SceneName.TryGetSceneName(token.Substring(0, i), out sceneName))
+            if (i != -1 && SceneName.TryGetValue(token.Substring(0, i), out sceneName))
             {
                 return true;
             }
@@ -464,7 +464,7 @@ namespace DarknessRandomizer.Data
     {
         public override SceneName ReadJson(JsonReader reader, Type objectType, SceneName existingValue, bool hasExistingValue, JsonSerializer serializer)
         {
-            if (serializer.Deserialize(reader, typeof(string)) is string name && SceneName.TryGetSceneName(name, out SceneName sceneName))
+            if (serializer.Deserialize(reader, typeof(string)) is string name && SceneName.TryGetValue(name, out SceneName sceneName))
             {
                 return sceneName;
             }

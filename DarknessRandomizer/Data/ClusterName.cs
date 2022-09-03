@@ -41,11 +41,11 @@ namespace DarknessRandomizer.Data
 
         public string Name() => name;
 
-        public static bool TryGetClusterName(string s, out ClusterName cluster) => clustersByName.TryGetValue(s, out cluster);
+        public static bool TryGetValue(string s, out ClusterName cluster) => clustersByName.TryGetValue(s, out cluster);
 
         public static ClusterName FromName(string name)
         {
-            if (!TryGetClusterName(name, out ClusterName cluster))
+            if (!TryGetValue(name, out ClusterName cluster))
             {
                 throw new ArgumentException($"Not a ClusterName: {name}");
             }
@@ -293,7 +293,7 @@ namespace DarknessRandomizer.Data
     {
         public override ClusterName ReadJson(JsonReader reader, Type objectType, ClusterName existingValue, bool hasExistingValue, JsonSerializer serializer)
         {
-            if (serializer.Deserialize(reader, typeof(string)) is string name && ClusterName.TryGetClusterName(name, out ClusterName clusterName))
+            if (serializer.Deserialize(reader, typeof(string)) is string name && ClusterName.TryGetValue(name, out ClusterName clusterName))
             {
                 return clusterName;
             }

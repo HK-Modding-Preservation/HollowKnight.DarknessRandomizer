@@ -94,7 +94,7 @@ namespace DarknessRandomizer.Rando
 
         private void AdjustDarknessRelatedObjects(UnityEngine.SceneManagement.Scene scene)
         {
-            if (!SceneName.TryGetSceneName(scene.name, out SceneName sceneName)
+            if (!SceneName.TryGetValue(scene.name, out SceneName sceneName)
                 || !DarknessOverrides.TryGetValue(sceneName, out Darkness darkness))
             {
                 darkness = Darkness.Bright;

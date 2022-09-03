@@ -119,7 +119,7 @@ namespace DarknessRandomizer.Rando
             {
                 var benchName = e.Key;
                 var def = e.Value;
-                if (!SceneName.TryGetSceneName(def.SceneName, out SceneName sceneName)) continue;
+                if (!SceneName.TryGetValue(def.SceneName, out SceneName sceneName)) continue;
 
                 // Make sure we apply darkness logic to other checks in the room obtainable from the bench.
                 benchScenes[e.Key] = sceneName;

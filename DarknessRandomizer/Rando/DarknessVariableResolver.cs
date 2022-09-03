@@ -39,7 +39,7 @@ namespace DarknessRandomizer.Rando
             if (Parent.TryMatch(lm, term, out variable)) return true;
 
             Match match = Regex.Match(term, @"^\$DarknessLevel\[(.+)\]$");
-            if (match.Success && SceneName.TryGetSceneName(match.Groups[1].Value, out SceneName sceneName))
+            if (match.Success && SceneName.TryGetValue(match.Groups[1].Value, out SceneName sceneName))
             {
                 variable = new DarknessLevelInt(sceneName);
                 return true;
