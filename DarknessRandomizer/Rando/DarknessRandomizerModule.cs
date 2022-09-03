@@ -160,7 +160,7 @@ namespace DarknessRandomizer.Rando
             {
                 if (IsDark(sceneName))
                 {
-                    GameObject.Destroy(fsm.gameObject);
+                    fsm.gameObject.GetOrAddComponent<DeactivateInDarknessWithoutLantern>();
                 }
             }));
         }
