@@ -94,10 +94,25 @@ namespace DarknessRandomizer.Rando
             { SceneName.GreenpathSheoGauntlet, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") }
         };
 
+        private static Dictionary<string, LogicClause> logicCache;
+
+        private static LogicClause GetCachedLogic(string logic)
+        {
+            if (logicCache.TryGetValue(logic, out LogicClause lc))
+            {
+                return lc;
+            }
+
+            lc = new(logic);
+            logicCache[logic] = lc;
+            return lc;
+        }
+
         public static void ModifyLMB(GenerationSettings gs, LogicManagerBuilder lmb)
         {
             if (!RandoInterop.IsEnabled()) return;
 
+            logicCache = new();
             var newResolver = new DarknessVariableResolver(lmb.VariableResolver);
             lmb.VariableResolver = newResolver;
 
@@ -180,7 +195,7 @@ namespace DarknessRandomizer.Rando
         {
             return (lmb, name, lc) => LogicClauseEditor.EditDarkness(lmb, name, (sink) =>
             {
-                LogicClause repl = new(darkLogic);
+                LogicClause repl = GetCachedLogic(darkLogic);
                 foreach (var t in repl)
                 {
                     sink.Add(t);
