@@ -100,11 +100,9 @@ namespace DarknessRandomizer.Rando
                 darkness = Darkness.Bright;
             }
 
-            bool dark = darkness == Darkness.Dark;
-            bool lantern = PlayerHasLantern();
-            if (!lantern)
+            if (!PlayerHasLantern())
             {
-                if (dark)
+                if (darkness == Darkness.Dark)
                 {
                     DisableDarkRoomObjects(sceneName);
                 }
