@@ -145,6 +145,8 @@ namespace DarknessRandomizer.Rando
             }));
         }
 
+        private static readonly Color darkTollColor = new(0.2647f, 0.2647f, 0.2647f);
+
         private void InstallDarkTollgateCheck(SceneName sceneName, FsmID id)
         {
             InstallHook(new FsmEditHook(sceneName, id, fsm =>
@@ -152,7 +154,7 @@ namespace DarknessRandomizer.Rando
                 if (IsDark(sceneName))
                 {
                     fsm.GetState("Can Inspect?").GetFirstActionOfType<BoolTest>().boolVariable = new FsmBool() { Value = false };
-                    fsm.gameObject.GetComponent<tk2dSprite>().color = new(0.2647f, 0.2647f, 0.2647f);
+                    fsm.gameObject.GetComponent<tk2dSprite>().color = darkTollColor;
                 }
             }));
             InstallHook(new FsmEditHook(sceneName, new("Arrow Prompt(Clone)", "Prompt Control"), fsm =>
@@ -182,6 +184,7 @@ namespace DarknessRandomizer.Rando
                 if (IsDark(SceneName.CityTollBench))
                 {
                     fsm.GetState("Can Talk?").GetFirstActionOfType<BoolTest>().boolVariable = new FsmBool() { Value = false };
+                    fsm.gameObject.GetComponent<tk2dSprite>().color = darkTollColor;
                     GameObject.Find("/Mage Door/Prompt Marker")?.GetOrAddComponent<DeactivateInDarknessWithoutLantern>();
                 }
             }));
