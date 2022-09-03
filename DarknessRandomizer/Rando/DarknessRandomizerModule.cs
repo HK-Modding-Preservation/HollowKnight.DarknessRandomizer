@@ -79,16 +79,18 @@ namespace DarknessRandomizer.Rando
                 if (sceneName == null || !PreservedHazardRespawns.TryGetValue(sceneName, out HashSet<string> names)
                     || !names.Contains(obj.name))
                 {
-                    GameObject.Destroy(obj);
+                    obj.gameObject.GetOrAddComponent<DeactivateInDarknessWithoutLantern>();
+                    obj.gameObject.SetActive(false);
                 }
             }
         }
 
         private void EnableDisabledLanternObjects()
         {
-            foreach (var obj in GameObject.FindObjectsOfType<DeactivateInDarknessWithoutLantern>())
+            foreach (var obj in GameObject.FindObjectsOfType<DeactivateInDarknessWithoutLantern>(true))
             {
-                obj.enabled = true;
+                obj.enabled = false;
+                obj.gameObject.SetActive(true);
             }
         }
 
