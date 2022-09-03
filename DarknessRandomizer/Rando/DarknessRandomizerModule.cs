@@ -152,6 +152,7 @@ namespace DarknessRandomizer.Rando
                 if (IsDark(sceneName))
                 {
                     fsm.GetState("Can Inspect?").GetFirstActionOfType<BoolTest>().boolVariable = new FsmBool() { Value = false };
+                    fsm.gameObject.GetComponent<tk2dSprite>().color = new(0.2647f, 0.2647f, 0.2647f);
                 }
             }));
             InstallHook(new FsmEditHook(sceneName, new("Arrow Prompt(Clone)", "Prompt Control"), fsm =>
