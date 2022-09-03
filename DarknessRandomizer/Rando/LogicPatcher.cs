@@ -43,6 +43,10 @@ namespace DarknessRandomizer.Rando
                 // Specific checks with difficult platforming.
                 { "Void_Heart", CustomSceneLogicEdit(SceneName.AbyssBirthplace, "DARKROOMS + DIFFICULTSKIPS") },
 
+                // QG stag checks are free except for these two.
+                { "Soul_Totem-Below_Marmu", CustomDarkLogicEdit("DARKROOMS") },
+                { $"{SceneName.GardensGardensStag}[top1]", CustomDarkLogicEdit("DARKROOMS") },
+
                 // These bosses are deemed difficult in the dark.
                 { "Defeated_Any_Hollow_Knight", CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
                 { "Defeated_Any_Nightmare_King", CustomDarkLogicEdit("FALSE") },
@@ -95,6 +99,8 @@ namespace DarknessRandomizer.Rando
                 // Checks in these scenes are free, even if dark.
                 { SceneName.BasinCorridortoBrokenVessel, CustomDarkLogicEdit("ANY") },
                 { SceneName.CityTollBench, CustomDarkLogicEdit("ANY") },
+                // Gardens checks by the stag are free; marmu, marmu totem, and the upper transition are exceptions.
+                { SceneName.GardensGardensStag, CustomDarkLogicEdit("ANY") },
 
                 // These scenes have difficult dark platforming.
                 { SceneName.CrystalCrystalHeartGauntlet, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") },
@@ -111,7 +117,7 @@ namespace DarknessRandomizer.Rando
 
         private static readonly SimpleToken DarkroomsToken = new("DARKROOMS");
 
-        private Dictionary<string, SceneName> benchScenes = new();
+        private Dictionary<string, SceneName> customSceneInferences = new();
 
         private void DoBenchRandoInterop()
         {
@@ -122,7 +128,7 @@ namespace DarknessRandomizer.Rando
                 if (!SceneName.TryGetValue(def.SceneName, out SceneName sceneName)) continue;
 
                 // Make sure we apply darkness logic to other checks in the room obtainable from the bench.
-                benchScenes[e.Key] = sceneName;
+                customSceneInferences[e.Key] = sceneName;
 
                 // Bench checks are obtainable even in dark rooms, if the player has the benchwarp pickup.
                 logicOverridesByName[e.Key] = (lmb, name, lc) =>
@@ -148,7 +154,7 @@ namespace DarknessRandomizer.Rando
                 return true;
             }
 
-            if (benchScenes.TryGetValue(term, out sceneName))
+            if (customSceneInferences.TryGetValue(term, out sceneName))
             {
                 return true;
             }
