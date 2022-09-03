@@ -20,6 +20,8 @@ namespace DarknessRandomizer.Rando
 
         public static bool IsEnabled() => DarknessRandomizer.GS.DarknessRandomizationSettings.RandomizeDarkness;
 
+        public static bool ShardedLantern => DarknessRandomizer.GS.DarknessRandomizationSettings.ShardedLantern;
+
         public static void Finish(RandoController rc)
         {
             if (!IsEnabled()) return;

@@ -1,10 +1,12 @@
 ﻿using DarknessRandomizer.Data;
+using DarknessRandomizer.IC;
 using DarknessRandomizer.Lib;
 using DarknessRandomizer.Rando;
 using ItemChanger.Internal.Menu;
 using Modding;
 using RandomizerMod;
 using System;
+using System.IO;
 
 namespace DarknessRandomizer
 {
@@ -13,7 +15,7 @@ namespace DarknessRandomizer
         public static DarknessRandomizer Instance { get; private set; }
         public static GlobalSettings GS { get; private set; } = new();
 
-        public bool ToggleButtonInsideMenu => throw new NotImplementedException();
+        public bool ToggleButtonInsideMenu => false;
 
         public static new void Log(string msg) { ((Loggable)Instance).Log(msg); }
 
@@ -32,6 +34,8 @@ namespace DarknessRandomizer
             SceneMetadata.Load();
             Data.SceneData.Load();
             ClusterData.Load();
+
+            LanternShardItem.DefineICRefs();
         }
 
         public void OnLoadGlobal(GlobalSettings s) => GS = s ?? new();
@@ -43,8 +47,22 @@ namespace DarknessRandomizer
         public MenuScreen GetMenuScreen(MenuScreen modListMenu, ModToggleDelegates? toggleDelegates)
         {
             ModMenuScreenBuilder builder = new(Localization.Localize("Darkness Randomizer Viewer"), modListMenu);
+            builder.AddButton(Localization.Localize("Open DarknessSpoiler.json"), null, OpenDarknessSpoiler);
             builder.AddButton(Localization.Localize("(DEV) Run Data Updater"), null, DataUpdater.UpdateGraphData);
             return builder.CreateMenuScreen();
+        }
+
+        private void OpenDarknessSpoiler()
+        {
+            string fname = Path.Combine(RandomizerMod.Logging.LogManager.RecentDirectory, "DarknessSpoiler.json");
+            try
+            {
+                System.Diagnostics.Process.Start(fname);
+            }
+            catch (Exception e)
+            {
+                LogError(e);
+            }
         }
     }
 }

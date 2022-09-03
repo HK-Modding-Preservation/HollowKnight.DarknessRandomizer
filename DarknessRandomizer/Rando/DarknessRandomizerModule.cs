@@ -1,4 +1,5 @@
 ﻿using DarknessRandomizer.Data;
+using DarknessRandomizer.IC;
 using DarknessRandomizer.Lib;
 using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
@@ -15,6 +16,7 @@ namespace DarknessRandomizer.Rando
     public class DarknessRandomizerModule : ItemChanger.Modules.Module
     {
         public SceneDarknessDict DarknessOverrides = new();
+        public int NumLanternShardsCollected = 0;
 
         [JsonIgnore]
         private readonly List<Action> UnloadHooks = new();
@@ -24,6 +26,15 @@ namespace DarknessRandomizer.Rando
             InstallHook(new LambdaHook(
                 () => Modding.ModHooks.GetPlayerBoolHook += OverrideGetBool,
                 () => Modding.ModHooks.GetPlayerBoolHook -= OverrideGetBool));
+            InstallHook(new LambdaHook(
+                () => Modding.ModHooks.SetPlayerBoolHook += OverrideSetBool,
+                () => Modding.ModHooks.SetPlayerBoolHook -= OverrideSetBool));
+            InstallHook(new LambdaHook(
+                () => Modding.ModHooks.GetPlayerIntHook += OverrideGetInt,
+                () => Modding.ModHooks.GetPlayerIntHook -= OverrideGetInt));
+            InstallHook(new LambdaHook(
+                () => Modding.ModHooks.SetPlayerIntHook += OverrideSetInt,
+                () => Modding.ModHooks.SetPlayerIntHook -= OverrideSetInt));
             InstallHook(new LambdaHook(
                 () => Events.OnSceneChange += AdjustDarknessRelatedObjects,
                 () => Events.OnSceneChange -= AdjustDarknessRelatedObjects));
@@ -121,6 +132,31 @@ namespace DarknessRandomizer.Rando
             { FalseBool, false }
         };
 
+        private bool OverrideGetBool(string name, bool orig) => customBool.TryGetValue(name, out bool b) ? b : orig;
+
+        private bool OverrideSetBool(string name, bool orig)
+        {
+            if (name == nameof(PlayerData.instance.hasLantern) && orig)
+            {
+                NumLanternShardsCollected = LanternShardItem.TotalNumShards;
+            }
+
+            return orig;
+        }
+
+        private int OverrideGetInt(string name, int orig) => name == LanternShardItem.PDName ? NumLanternShardsCollected : orig;
+
+        private int OverrideSetInt(string name, int orig)
+        {
+            if (name == LanternShardItem.PDName)
+            {
+                NumLanternShardsCollected = Math.Min(LanternShardItem.TotalNumShards, orig);
+                return NumLanternShardsCollected;
+            }
+
+            return orig;
+        }
+
         private bool IsDark(SceneName sceneName)
         {
             if (PlayerHasLantern()) return false;
@@ -131,8 +167,6 @@ namespace DarknessRandomizer.Rando
             }
             return false;
         }
-
-        private bool OverrideGetBool(string name, bool orig) => customBool.TryGetValue(name, out bool b) ? b : orig;
 
         private void InstallMaybeDisableLanternCheck(SceneName sceneName, FsmID id)
         {

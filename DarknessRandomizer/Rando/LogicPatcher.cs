@@ -1,7 +1,9 @@
 ﻿using DarknessRandomizer.Data;
 using DarknessRandomizer.Lib;
 using Modding;
+using RandomizerCore;
 using RandomizerCore.Logic;
+using RandomizerCore.LogicItems;
 using RandomizerCore.StringLogic;
 using RandomizerMod.RC;
 using RandomizerMod.Settings;
@@ -261,6 +263,12 @@ namespace DarknessRandomizer.Rando
 
             var newResolver = new DarknessVariableResolver(lmb.VariableResolver);
             lmb.VariableResolver = newResolver;
+
+            if (RandoInterop.ShardedLantern)
+            {
+                LanternShardLogicItem lsli = new(lmb.GetOrAddTerm("LANTERNSHARDS"), lmb.GetOrAddTerm("LANTERN"));
+                lmb.AddItem(lsli);
+            }
 
             LogicOverrides overrides = new();
 
