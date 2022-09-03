@@ -19,11 +19,12 @@ namespace DarknessRandomizer.Rando
             this.Parent = parent;
         }
 
-        [JsonConstructorAttribute]
+        [JsonConstructor]
         DarknessVariableResolver() { }
 
         public static bool TryGetDarkness(SceneName sceneName, out Darkness darkness)
         {
+            // FIXME: Figure out how to make this faster; it incurs a non-trivial performance penalty on randomization.
             if (RandoInterop.LS != null)
             {
                 return RandoInterop.LS.DarknessOverrides.TryGetValue(sceneName, out darkness);

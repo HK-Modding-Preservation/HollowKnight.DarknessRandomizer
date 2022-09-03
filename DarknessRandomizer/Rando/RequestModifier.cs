@@ -32,7 +32,7 @@ namespace DarknessRandomizer.Rando
 
         private static void RandomizeDarkness(RequestBuilder rb)
         {
-            if (!RandoInterop.RandomizeDarkness) return;
+            if (!RandoInterop.IsEnabled) return;
 
             RandoInterop.LS = new(rb.gs, rb.ctx.StartDef);
         }
@@ -50,12 +50,13 @@ namespace DarknessRandomizer.Rando
 
             if (rb.gs.PoolSettings.Keys)
             {
-                for (int i = 0; i < LanternShardItem.TotalNumShards; ++i) rb.AddItemByName(LanternShardItem.Name);
-
-                int dupes = LanternShardItem.TotalNumShards;
-                dupes += RandoInterop.LS.Settings.TwoDupeShards ? 2 : 0;
-                dupes *= rb.gs.DuplicateItemSettings.DuplicateUniqueKeys ? 2 : 1;
-                for (int i = 0; i < dupes; ++i) rb.AddItemByName($"{PlaceholderItem.Prefix}{LanternShardItem.Name}");
+                int numShards = LanternShardItem.TotalNumShards;
+                numShards += DarknessRandomizer.GS.DarknessRandomizationSettings.TwoDupeShards ? 2 : 0;
+                numShards *= rb.gs.DuplicateItemSettings.DuplicateUniqueKeys ? 2 : 1;
+                for (int i = 0; i < numShards; ++i)
+                {
+                    rb.AddItemByName(i < LanternShardItem.TotalNumShards ? LanternShardItem.Name : $"{PlaceholderItem.Prefix}{LanternShardItem.Name}");
+                }
             }
             else
             {
