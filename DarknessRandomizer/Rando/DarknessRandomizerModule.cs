@@ -43,10 +43,10 @@ namespace DarknessRandomizer.Rando
             InstallDeleteGhostWarriorIfDark(SceneName.GroundsXero);
 
             // Make tollgates unusable in dark rooms.
+            InstallDarkTollgateCheck(SceneName.BasinCorridortoBrokenVessel, new("Toll Machine Bench", "Toll Machine Bench"));
+            InstallDarkTollgateCheck(SceneName.CityTollBench, new("Toll Machine Bench", "Toll Machine Bench"));
             InstallDarkTollgateCheck(SceneName.GreenpathToll, new("Toll Gate Machine", "Toll Machine"));
             InstallDarkTollgateCheck(SceneName.GreenpathToll, new("Toll Gate Machine (1)", "Toll Machine"));
-            InstallDarkTollgateCheck(SceneName.CityTollBench, new("Toll Machine Bench", "Toll Machine Bench"));
-            InstallDarkTollgateCheck(SceneName.BasinCorridortoBrokenVessel, new("Toll Machine Bench", "Toll Machine Bench"));
 
             // The Shade Soul door is inoperable in the dark.
             InstallElegantKeyDarkCheck();
