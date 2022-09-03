@@ -7,7 +7,11 @@ namespace DarknessRandomizer.Rando
     {
         public override void Log(LogArguments args)
         {
-            LogManager.Write(DoLog, "DarknessSpoiler.json");
+            if (RandoInterop.LS != null)
+            {
+
+                LogManager.Write(DoLog, "DarknessSpoiler.json");
+            }
         }
 
         public void DoLog(TextWriter tw)
