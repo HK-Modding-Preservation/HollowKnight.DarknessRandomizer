@@ -20,6 +20,7 @@ namespace DarknessRandomizer.Data
         public SceneDictionary() : base(SceneName.Factory) { }
         public SceneDictionary(SceneDictionary<V> other) : base(other) { }
     }
+
     public class ClusterDictionary<V> : TypedIdDictionary<ClusterName, V>
     {
         public ClusterDictionary() : base(ClusterName.Factory) { }
