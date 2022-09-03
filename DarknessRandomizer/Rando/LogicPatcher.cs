@@ -1,5 +1,6 @@
 ﻿using DarknessRandomizer.Data;
 using DarknessRandomizer.Lib;
+using Modding;
 using RandomizerCore.Logic;
 using RandomizerCore.StringLogic;
 using RandomizerMod.RC;
@@ -101,11 +102,53 @@ namespace DarknessRandomizer.Rando
                 { SceneName.EdgeWhisperingRoot, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") },
                 { SceneName.GreenpathSheoGauntlet, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") }
             };
+
+            if (ModHooks.GetMod("BenchRando") is Mod)
+            {
+                DoBenchRandoInterop();
+            }
+        }
+
+        private static readonly SimpleToken DarkroomsToken = new("DARKROOMS");
+
+        private Dictionary<string, SceneName> benchScenes = new();
+
+        private void DoBenchRandoInterop()
+        {
+            foreach (var e in BenchRando.BRData.BenchLookup)
+            {
+                var benchName = e.Key;
+                var def = e.Value;
+                if (!SceneName.TryGetSceneName(def.SceneName, out SceneName sceneName)) continue;
+
+                // Make sure we apply darkness logic to other checks in the room obtainable from the bench.
+                benchScenes[e.Key] = sceneName;
+
+                // Bench checks are obtainable even in dark rooms, if the player has the benchwarp pickup.
+                logicOverridesByName[e.Key] = (lmb, name, lc) =>
+                {
+                    bool inferScene(string term, out SceneName sceneName)
+                    {
+                        if (term == benchName)
+                        {
+                            sceneName = default;
+                            return false;
+                        }
+                        return InferSceneName(term, out sceneName);
+                    }
+                    LogicClauseEditor.EditDarkness(lmb, name, inferScene, tokens => tokens.Add(DarkroomsToken));
+                };
+            }
         }
 
         public bool InferSceneName(string term, out SceneName sceneName)
-        {
+        { 
             if (SceneName.IsTransition(term, out sceneName))
+            {
+                return true;
+            }
+
+            if (benchScenes.TryGetValue(term, out sceneName))
             {
                 return true;
             }
@@ -242,7 +285,7 @@ namespace DarknessRandomizer.Rando
             if (overrides.MaybeInvokeLogicOverride(lmb, name, lc)) return;
 
             // No special matches, use the default editor.
-            LogicClauseEditor.EditDarkness(lmb, name, overrides.InferSceneName, (sink) => sink.Add(DarkroomsToken));
+            LogicClauseEditor.EditDarkness(lmb, name, overrides.InferSceneName, sink => sink.Add(DarkroomsToken));
         }
     }
 }
