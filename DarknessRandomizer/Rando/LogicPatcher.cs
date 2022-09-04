@@ -285,8 +285,6 @@ namespace DarknessRandomizer.Rando
             // we will update the logic accordingly. If there are zero scenes, we ignore it, and if there are two or more, we
             // require custom handling.
             //
-            // TODO: Special handling for BenchRando, TheRealJournalRando, possibly others?
-
             // We defer the edits to avoid messing with dictionary iteration order.
             List<Action> edits = new();
             foreach (var e in lmb.LogicLookup)
