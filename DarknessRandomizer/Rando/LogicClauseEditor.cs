@@ -297,7 +297,7 @@ namespace DarknessRandomizer.Rando
                     return Lantern;
                 }
 
-                if (si.Invoke(name, out SceneName sceneName))
+                if (si.Invoke(name, out SceneName sceneName) && Data.SceneData.Get(sceneName).MaximumDarkness == Darkness.Dark)
                 {
                     return new(token, TokenType.Scene, sceneName);
                 }
