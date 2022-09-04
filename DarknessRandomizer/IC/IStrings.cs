@@ -30,14 +30,14 @@ namespace DarknessRandomizer.IC
             {
                 switch (LanternShardItem.GetPDShardCount())
                 {
-                    case 1:
+                    case 0:
                         return "I suppose this piece of trash is worth something?";
-                    case 2:
+                    case 1:
                         return "What are you going to do with two pieces of trash?";
-                    case 3:
+                    case 2:
                         return "Are you going to weld these together or something?  How?!";
                     default:
-                        return "Shouldn't get here";
+                        return "Pay no attention to the debug message behind the curtain.";
                 }
             }
         }

@@ -15,7 +15,6 @@ namespace DarknessRandomizer.Rando
 
             RandoController.OnExportCompleted += Finish;
             RandomizerMod.Logging.LogManager.AddLogger(new DarknessLogger());
-            // FIXME: Condensed spoiler
         }
 
         public static bool IsEnabled => RandomizeDarkness || ShatteredLantern;
