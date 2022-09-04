@@ -24,7 +24,8 @@ namespace DarknessRandomizer.Rando
 
         public static bool TryGetDarkness(SceneName sceneName, out Darkness darkness)
         {
-            // FIXME: Figure out how to make this faster; it incurs a non-trivial performance penalty on randomization.
+            // Both of these paths are needed. The former during randomization, before the module is created; the latter on save
+            // load, where LS is no longer populated.
             if (RandoInterop.LS != null)
             {
                 return RandoInterop.LS.DarknessOverrides.TryGetValue(sceneName, out darkness);
@@ -64,8 +65,12 @@ namespace DarknessRandomizer.Rando
 
         public override IEnumerable<Term> GetTerms() => Enumerable.Empty<Term>();
 
-        public override int GetValue(object sender, ProgressionManager pm)
-        {
+        // Darkness levels don't change during randomization, so it's safe to cache this.
+        private int? cache;
+
+        public override int GetValue(object sender, ProgressionManager pm) => cache ?? (cache = GetValueImpl()).Value;
+
+        private int GetValueImpl() {
             if (DarknessVariableResolver.TryGetDarkness(sceneName, out Darkness d))
             {
                 return (int)d;

@@ -38,6 +38,9 @@ namespace DarknessRandomizer.Rando
                     dlem.darknessLevelsByScene[entry.Key.Name()] = (int)entry.Value;
                 }
             }
+
+            // We can zero this out now.
+            LS = null;
         }
     }
 }
