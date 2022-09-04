@@ -14,8 +14,8 @@ namespace DarknessRandomizer.IC
         {
             get
             {
-                int count = LanternShardItem.GetPDShardCount();
-                return count >= LanternShardItem.TotalNumShards ? "Lantern Shard" : $"Lantern Shard (#{count})";
+                int count = LanternShards.GetPDShardCount();
+                return count >= LanternShards.TotalNumShards ? "Lantern Shard" : $"Lantern Shard (#{count})";
             }
         }
 
@@ -28,7 +28,7 @@ namespace DarknessRandomizer.IC
         {
             get
             {
-                switch (LanternShardItem.GetPDShardCount())
+                switch (LanternShards.GetPDShardCount())
                 {
                     case 0:
                         return "I suppose this piece of trash is worth something?";

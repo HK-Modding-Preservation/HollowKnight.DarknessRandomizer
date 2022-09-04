@@ -106,6 +106,9 @@
     <Reference Include="RandomizerCore">
       <HintPath>$(HollowKnightRefs)/Mods/RandomizerCore/RandomizerCore.dll</HintPath>
     </Reference>
+    <Reference Include="RandoPlus">
+      <HintPath>$(HollowKnightRefs)/Mods/RandoPlus/RandoPlus.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.Composition">
       <HintPath>$(HollowKnightRefs)/System.ComponentModel.Composition.dll</HintPath>
     </Reference>

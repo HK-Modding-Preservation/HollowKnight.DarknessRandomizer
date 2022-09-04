@@ -12,19 +12,23 @@ using System.Threading.Tasks;
 
 namespace DarknessRandomizer.IC
 {
-    public class LanternShardItem : AbstractItem
+    public static class LanternShards
     {
-        public const string Name = "Lantern_Shard";
+        public const string PDName = "numLanternShards";
 
         public const int TotalNumShards = 4;
 
-        public const string PDName = "numLanternShards";
-
         public static int GetPDShardCount() => PlayerData.instance.GetInt(PDName);
+    }
 
-        LanternShardItem()
+    public class AbstractLanternShardItem : AbstractItem
+    {
+        public string FinalItemName;
+
+        protected AbstractLanternShardItem(string name, string finalName)
         {
-            this.name = Name;
+            this.name = name;
+            this.FinalItemName = finalName;
             this.UIDef = new MsgUIDef()
             {
                 name = new LanternShardNameString(),
@@ -40,23 +44,28 @@ namespace DarknessRandomizer.IC
             ModifyItem += MaybeCompleteLantern;
         }
 
-        public override void GiveImmediate(GiveInfo info) => PlayerData.instance.SetInt(PDName, GetPDShardCount() + 1);
+        public override void GiveImmediate(GiveInfo info) => PlayerData.instance.SetInt(LanternShards.PDName, LanternShards.GetPDShardCount() + 1);
 
         public override bool Redundant() => PlayerData.instance.GetBool(nameof(PlayerData.instance.hasLantern));
 
         private void MaybeCompleteLantern(GiveEventArgs args)
         {
-            if (LanternShardItem.GetPDShardCount() == LanternShardItem.TotalNumShards - 1
+            if (LanternShards.GetPDShardCount() == LanternShards.TotalNumShards - 1
                 || PlayerData.instance.GetBool(nameof(PlayerData.instance.hasLantern)))
             {
-                args.Item = Finder.GetItem(ItemNames.Lumafly_Lantern);
+                args.Item = Finder.GetItem(FinalItemName);
             }
         }
+    }
 
-        public static void DefineICRefs()
-        {
-            LanternShardItem lanternShard = new();
-            Finder.DefineCustomItem(lanternShard);
-        }
+    public class LanternShardItem : AbstractLanternShardItem
+    {
+        public const string ItemName = "Lantern_Shard";
+
+        public LanternShardItem() : base(ItemName, ItemNames.Lumafly_Lantern) { }
+
+        public override AbstractItem Clone() => new LanternShardItem();
+
+        public static void DefineICRefs() => Finder.DefineCustomItem(new LanternShardItem());
     }
 }

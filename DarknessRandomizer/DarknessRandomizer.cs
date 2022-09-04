@@ -36,6 +36,7 @@ namespace DarknessRandomizer
             ClusterData.Load();
 
             LanternShardItem.DefineICRefs();
+            RandoPlusInterop.DefineICRefs();
         }
 
         public void OnLoadGlobal(GlobalSettings s) => GS = s ?? new();

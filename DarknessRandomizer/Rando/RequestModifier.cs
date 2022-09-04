@@ -1,5 +1,6 @@
 ﻿using DarknessRandomizer.IC;
 using ItemChanger;
+using Modding;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
 
@@ -10,19 +11,22 @@ namespace DarknessRandomizer.Rando
         public static void Setup()
         {
             RequestBuilder.OnUpdate.Subscribe(-500f, SetupRefs);
-            RequestBuilder.OnUpdate.Subscribe(50.0f, ModifyItems);
-            RequestBuilder.OnUpdate.Subscribe(50.0f, RandomizeDarkness);
+
+            // These should come after RandoPlus, which uses 50f.
+            RequestBuilder.OnUpdate.Subscribe(51f, ModifyItems);
+            RequestBuilder.OnUpdate.Subscribe(52f, RandomizeDarkness);
         }
 
         private static void SetupRefs(RequestBuilder rb)
         {
             if (!RandoInterop.ShatteredLantern) return;
 
-            rb.EditItemRequest(LanternShardItem.Name, info =>
+            var itemName = RandoInterop.LanternShardItemName;
+            rb.EditItemRequest(itemName, info =>
             {
                 info.getItemDef = () => new()
                 {
-                    Name = LanternShardItem.Name,
+                    Name = itemName,
                     Pool = PoolNames.Key,
                     MajorItem = false,
                     PriceCap = 750
@@ -41,33 +45,35 @@ namespace DarknessRandomizer.Rando
 
         private static void ModifyItems(RequestBuilder rb)
         {
-            if (!RandoInterop.ShatteredLantern || rb.StartItems.GetCount(ItemNames.Lumafly_Lantern) > 0)
+            var lanternItemName = RandoInterop.LanternItemName;
+            if (!RandoInterop.ShatteredLantern || rb.StartItems.GetCount(lanternItemName) > 0)
             {
                 // Nothing further to do.
                 return;
             }
 
-            rb.RemoveItemByName(ItemNames.Lumafly_Lantern);
-            rb.RemoveItemByName(Placeholder(ItemNames.Lumafly_Lantern));
+            rb.RemoveItemByName(lanternItemName);
+            rb.RemoveItemByName(Placeholder(lanternItemName));
 
+            string lanternShardItemName = RandoInterop.LanternShardItemName;
             if (rb.gs.PoolSettings.Keys)
             {
-                int numShards = LanternShardItem.TotalNumShards;
+                int numShards = LanternShards.TotalNumShards;
                 numShards += DarknessRandomizer.GS.DarknessRandomizationSettings.TwoDupeShards ? 2 : 0;
                 numShards *= rb.gs.DuplicateItemSettings.DuplicateUniqueKeys ? 2 : 1;
-                rb.AddItemByName(LanternShardItem.Name, LanternShardItem.TotalNumShards);
-                rb.AddItemByName(Placeholder(LanternShardItem.Name), numShards - LanternShardItem.TotalNumShards);
+                rb.AddItemByName(lanternShardItemName, LanternShards.TotalNumShards);
+                rb.AddItemByName(Placeholder(lanternShardItemName), numShards - LanternShards.TotalNumShards);
             }
             else
             {
                 // Ideally, vanilla shards would go in Sly's shop but it just doesn't work and idk why.
-                // It doesn't actually provide any interesting gameplay so no FIXME
-                rb.RemoveFromVanilla(LocationNames.Sly, ItemNames.Lumafly_Lantern);
-                rb.RemoveFromVanilla(LocationNames.Sly, Placeholder(ItemNames.Lumafly_Lantern));
+                // It doesn't actually provide any interesting gameplay though, so not a priority to fix.
+                rb.RemoveFromVanilla(LocationNames.Sly, lanternItemName);
+                rb.RemoveFromVanilla(LocationNames.Sly, Placeholder(lanternItemName));
                 
-                for (int i = 0; i < LanternShardItem.TotalNumShards; ++i)
+                for (int i = 0; i < LanternShards.TotalNumShards; ++i)
                 {
-                    VanillaDef def = new(LanternShardItem.Name, LocationNames.Sly, new CostDef[] { new("GEO", 300 + i * 100) });
+                    VanillaDef def = new(lanternShardItemName, LocationNames.Sly, new CostDef[] { new("GEO", 300 + i * 100) });
                     rb.AddToVanilla(def);
                 }
             }

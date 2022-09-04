@@ -1,4 +1,5 @@
-﻿using ItemChanger;
+﻿using DarknessRandomizer.IC;
+using ItemChanger;
 using RandomizerMod.RC;
 
 namespace DarknessRandomizer.Rando
@@ -23,6 +24,12 @@ namespace DarknessRandomizer.Rando
 
         public static bool ShatteredLantern => DarknessRandomizer.GS.DarknessRandomizationSettings.ShatteredLantern;
 
+        public static string LanternTermName => RandoPlusInterop.NoLantern ? "NOLANTERN" : "LANTERN";
+
+        public static string LanternItemName => RandoPlusInterop.NoLantern ? RandoPlus.Consts.NoLantern : ItemNames.Lumafly_Lantern;
+
+        public static string LanternShardItemName => RandoPlusInterop.NoLantern ? NoLanternShardItem.ItemName : LanternShardItem.ItemName;
+
         public static void Finish(RandoController rc)
         {
             if (!IsEnabled) return;
@@ -38,9 +45,6 @@ namespace DarknessRandomizer.Rando
                     dlem.darknessLevelsByScene[entry.Key.Name()] = (int)entry.Value;
                 }
             }
-
-            // We can zero this out now.
-            LS = null;
         }
     }
 }

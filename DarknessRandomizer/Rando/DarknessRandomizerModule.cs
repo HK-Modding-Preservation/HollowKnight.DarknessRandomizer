@@ -138,19 +138,19 @@ namespace DarknessRandomizer.Rando
         {
             if (name == nameof(PlayerData.instance.hasLantern) && orig)
             {
-                NumLanternShardsCollected = LanternShardItem.TotalNumShards;
+                NumLanternShardsCollected = LanternShards.TotalNumShards;
             }
 
             return orig;
         }
 
-        private int OverrideGetInt(string name, int orig) => name == LanternShardItem.PDName ? NumLanternShardsCollected : orig;
+        private int OverrideGetInt(string name, int orig) => name == LanternShards.PDName ? NumLanternShardsCollected : orig;
 
         private int OverrideSetInt(string name, int orig)
         {
-            if (name == LanternShardItem.PDName)
+            if (name == LanternShards.PDName)
             {
-                NumLanternShardsCollected = Math.Min(LanternShardItem.TotalNumShards, orig);
+                NumLanternShardsCollected = Math.Min(LanternShards.TotalNumShards, orig);
                 return NumLanternShardsCollected;
             }
 

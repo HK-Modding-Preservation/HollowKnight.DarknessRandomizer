@@ -1,9 +1,7 @@
 ﻿using DarknessRandomizer.Data;
 using DarknessRandomizer.IC;
-using DarknessRandomizer.Lib;
 using ItemChanger;
 using Modding;
-using RandomizerCore;
 using RandomizerCore.Logic;
 using RandomizerCore.LogicItems;
 using RandomizerCore.LogicItems.Templates;
@@ -24,8 +22,12 @@ namespace DarknessRandomizer.Rando
         private readonly Dictionary<SceneName, LogicOverride> logicOverridesByTransitionScene;
         private readonly Dictionary<SceneName, LogicOverride> logicOverridesByUniqueScene;
 
+        public SimpleToken LanternToken { get; }
+
         public LogicOverrides()
         {
+            LanternToken = new SimpleToken(RandoInterop.LanternTermName);
+
             logicOverridesByName = new()
             {
                 // Dream warriors do not appear in dark rooms without lantern.
@@ -80,7 +82,7 @@ namespace DarknessRandomizer.Rando
                 { $"{SceneName.CityTollBench.Name()}[left3]", CustomDarkLogicEdit("FALSE") },
 
                 // Flower quest simply requires lantern.
-                { "Mask_Shard-Grey_Mourner", (lmb, ln, lc) => lmb.DoLogicEdit(new(ln, "ORIG + LANTERN")) }
+                { "Mask_Shard-Grey_Mourner", (lmb, ln, lc) => lmb.DoLogicEdit(new(ln, $"ORIG + {LanternToken.Write()}")) }
             };
 
             logicOverridesByTransitionScene = new()
@@ -147,10 +149,12 @@ namespace DarknessRandomizer.Rando
                         }
                         return InferSceneName(term, out sceneName);
                     }
-                    LogicClauseEditor.EditDarkness(lmb, name, inferScene, tokens => tokens.Add(DarkroomsToken));
+                    LogicClauseEditor.EditDarkness(lmb, name, LanternToken, inferScene, tokens => tokens.Add(DarkroomsToken));
                 };
             }
         }
+
+        private LogicClause DoRandoPlusInterop(LogicManagerBuilder lmb) => new(RandoPlus.RandoPlus.GS.NoLantern ? "NOLANTERN" : "LANTERN");
 
         public bool InferSceneName(string term, out SceneName sceneName)
         { 
@@ -236,7 +240,7 @@ namespace DarknessRandomizer.Rando
 
         private LogicOverride CustomDarkLogicEdit(string darkLogic)
         {
-            return (lmb, name, lc) => LogicClauseEditor.EditDarkness(lmb, name, InferSceneName, (sink) =>
+            return (lmb, name, lc) => LogicClauseEditor.EditDarkness(lmb, name, LanternToken, InferSceneName, (sink) =>
             {
                 LogicClause repl = GetCachedLogic(darkLogic);
                 foreach (var t in repl)
@@ -249,7 +253,7 @@ namespace DarknessRandomizer.Rando
         private LogicOverride CustomSceneLogicEdit(SceneName sceneName, string darkLogic)
         {
             return (lmb, name, lc) => lmb.DoLogicEdit(
-                new(name, $"ORIG + ($DarknessLevel[{sceneName}]<2 | LANTERN | {darkLogic})"));
+                new(name, $"ORIG + ($DarknessLevel[{sceneName}]<2 | {LanternToken.Write()} | {darkLogic})"));
         }
     }
 
@@ -257,7 +261,7 @@ namespace DarknessRandomizer.Rando
     {
         public static void Setup()
         {
-            RCData.RuntimeLogicOverride.Subscribe(100.0f, ModifyLMB);
+            RCData.RuntimeLogicOverride.Subscribe(60f, ModifyLMB);
         }
 
         public static void ModifyLMB(GenerationSettings gs, LogicManagerBuilder lmb)
@@ -265,10 +269,10 @@ namespace DarknessRandomizer.Rando
             if (RandoInterop.ShatteredLantern)
             {
                 var shardsTerm = lmb.GetOrAddTerm("LANTERNSHARDS");
-                var lanternTerm = lmb.GetOrAddTerm("LANTERN");
-                lmb.AddTemplateItem(new BranchedItemTemplate(LanternShardItem.Name, $"{shardsTerm.Name}<3",
-                    new SingleItem(LanternShardItem.Name, new(shardsTerm, 1)),
-                    new SingleItem(ItemNames.Lumafly_Lantern, new(lanternTerm, 1))));
+                var lanternTerm = lmb.GetOrAddTerm(RandoInterop.LanternTermName);
+                lmb.AddTemplateItem(new BranchedItemTemplate(RandoInterop.LanternShardItemName, $"{shardsTerm.Name}<3",
+                    new SingleItem(RandoInterop.LanternShardItemName, new(shardsTerm, 1)),
+                    new SingleItem(RandoInterop.LanternItemName, new(lanternTerm, 1))));
             }
 
             if (!RandoInterop.RandomizeDarkness) return;
@@ -303,7 +307,7 @@ namespace DarknessRandomizer.Rando
             if (overrides.MaybeInvokeLogicOverride(lmb, name, lc)) return;
 
             // No special matches, use the default editor.
-            LogicClauseEditor.EditDarkness(lmb, name, overrides.InferSceneName, sink => sink.Add(DarkroomsToken));
+            LogicClauseEditor.EditDarkness(lmb, name, overrides.LanternToken, overrides.InferSceneName, sink => sink.Add(DarkroomsToken));
         }
     }
 }
