@@ -89,7 +89,8 @@ namespace DarknessRandomizer.Rando
                 if (sceneName == null || !PreservedHazardRespawns.TryGetValue(sceneName, out HashSet<string> names)
                     || !names.Contains(obj.name))
                 {
-                    obj.gameObject.GetOrAddComponent<DeactivateInDarknessWithoutLantern>();
+                    obj.gameObject.GetOrAddComponent<DeactivateInDarknessWithoutLantern>().enabled = true;
+                    obj.gameObject.SetActive(false);
                 }
             }
         }
