@@ -41,6 +41,15 @@ namespace DarknessRandomizer.Lib
             {
                 this.forbiddenClusters.Add(c);
             }
+
+            if (!GS.PoolSettings.Keys)
+            {
+                // If lantern isn't randomized, we need to ensure the vanilla lantern location (Sly) is accessible.
+                // This won't work if they also didn't randomize stags but I'm not trying to fix that.
+                this.forbiddenClusters.Add(ClusterName.CrossroadsStag);
+                this.forbiddenClusters.Add(ClusterName.CrossroadsStagHub);
+                this.forbiddenClusters.Add(ClusterName.CrossroadsShops);
+            }
             
             // Always include the local cluster, even in TRANDO.
             if (SceneName.TryGetValue(startDef.SceneName, out SceneName sceneName))
