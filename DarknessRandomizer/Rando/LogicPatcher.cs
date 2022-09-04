@@ -154,8 +154,6 @@ namespace DarknessRandomizer.Rando
             }
         }
 
-        private LogicClause DoRandoPlusInterop(LogicManagerBuilder lmb) => new(RandoPlus.RandoPlus.GS.NoLantern ? "NOLANTERN" : "LANTERN");
-
         public bool InferSceneName(string term, out SceneName sceneName)
         { 
             if (SceneName.IsTransition(term, out sceneName))

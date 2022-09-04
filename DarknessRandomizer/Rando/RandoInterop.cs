@@ -24,11 +24,11 @@ namespace DarknessRandomizer.Rando
 
         public static bool ShatteredLantern => DarknessRandomizer.GS.DarknessRandomizationSettings.ShatteredLantern;
 
-        public static string LanternTermName => RandoPlusInterop.NoLantern ? "NOLANTERN" : "LANTERN";
+        public static string LanternTermName => RandoPlusInterop.LanternTermName;
 
-        public static string LanternItemName => RandoPlusInterop.NoLantern ? RandoPlus.Consts.NoLantern : ItemNames.Lumafly_Lantern;
+        public static string LanternItemName => RandoPlusInterop.LanternItemName;
 
-        public static string LanternShardItemName => RandoPlusInterop.NoLantern ? NoLanternShardItem.ItemName : LanternShardItem.ItemName;
+        public static string LanternShardItemName => RandoPlusInterop.LanternShardItemName;
 
         public static void Finish(RandoController rc)
         {
