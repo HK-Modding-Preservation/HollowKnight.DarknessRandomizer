@@ -18,11 +18,11 @@ namespace DarknessRandomizer.Rando
             // FIXME: Condensed spoiler
         }
 
-        public static bool IsEnabled => ShardedLantern || RandomizeDarkness;
+        public static bool IsEnabled => RandomizeDarkness || ShatteredLantern;
 
         public static bool RandomizeDarkness => DarknessRandomizer.GS.DarknessRandomizationSettings.RandomizeDarkness;
 
-        public static bool ShardedLantern => DarknessRandomizer.GS.DarknessRandomizationSettings.ShardedLantern;
+        public static bool ShatteredLantern => DarknessRandomizer.GS.DarknessRandomizationSettings.ShatteredLantern;
 
         public static void Finish(RandoController rc)
         {

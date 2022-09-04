@@ -1,7 +1,5 @@
 # Darkness Randomizer Mod
 
-DISCLAIMER: This documentation is aspirational. The mod is under development, and not yet released.
-
 A Rando 4 connection mod to randomize dark rooms in Hallownest.
 
 Search "DarknessRandomizer" on Scarab to install. Requires [Rando 4](https://github.com/homothetyhk/RandomizerMod) and [ItemChanger](https://github.com/homothetyhk/HollowKnight.ItemChanger). Compatible with (but does not require) [RandoPlus](https://github.com/flibber-hk/HollowKnight.RandoPlus), specifically the "Not Lantern" setting.
@@ -15,7 +13,10 @@ Probably doesn't work well with Room Rando, but you're welcome to try.
   * _Dim_: Vanilla levels of darkness. Less than 5% of hallownest will be dark.
   * _Dark_: Moderate levels of darkness. About 10-20% of hallownest will be dark.
   * _Cursed_: Extreme levels of darkness. Up to 50% of hallownest will be dark.
+* Shattered Lantern: Split Lumafly Lantern into 4 Lantern Shards
+* Two Dupe Shards: Add 2 extra Lantern Shards
 
+Duplicate Unique Keys will double the number of Lantern Shards, if Shattered Lantern is set.
 Some rooms will never be dark, some will never even be dim.
 Some rooms can only be dark on the Cursed setting.
 

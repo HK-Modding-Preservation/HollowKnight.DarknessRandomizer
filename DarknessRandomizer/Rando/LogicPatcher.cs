@@ -259,7 +259,7 @@ namespace DarknessRandomizer.Rando
 
         public static void ModifyLMB(GenerationSettings gs, LogicManagerBuilder lmb)
         {
-            if (RandoInterop.ShardedLantern)
+            if (RandoInterop.ShatteredLantern)
             {
                 LanternShardLogicItem lsli = new(lmb.GetOrAddTerm("LANTERNSHARDS"), lmb.GetOrAddTerm("LANTERN"));
                 lmb.AddItem(lsli);

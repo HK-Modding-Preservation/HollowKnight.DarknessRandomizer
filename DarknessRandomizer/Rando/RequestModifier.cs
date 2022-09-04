@@ -16,7 +16,7 @@ namespace DarknessRandomizer.Rando
 
         private static void SetupRefs(RequestBuilder rb)
         {
-            if (!RandoInterop.ShardedLantern) return;
+            if (!RandoInterop.ShatteredLantern) return;
 
             rb.EditItemRequest(LanternShardItem.Name, info =>
             {
@@ -39,7 +39,7 @@ namespace DarknessRandomizer.Rando
 
         private static void ModifyItems(RequestBuilder rb)
         {
-            if (!RandoInterop.ShardedLantern || rb.StartItems.GetCount(ItemNames.Lumafly_Lantern) > 0)
+            if (!RandoInterop.ShatteredLantern || rb.StartItems.GetCount(ItemNames.Lumafly_Lantern) > 0)
             {
                 // Nothing further to do.
                 return;
