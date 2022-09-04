@@ -1,9 +1,12 @@
 ﻿using DarknessRandomizer.Data;
+using DarknessRandomizer.IC;
 using DarknessRandomizer.Lib;
+using ItemChanger;
 using Modding;
 using RandomizerCore;
 using RandomizerCore.Logic;
 using RandomizerCore.LogicItems;
+using RandomizerCore.LogicItems.Templates;
 using RandomizerCore.StringLogic;
 using RandomizerMod.RC;
 using RandomizerMod.Settings;
@@ -261,8 +264,11 @@ namespace DarknessRandomizer.Rando
         {
             if (RandoInterop.ShatteredLantern)
             {
-                LanternShardLogicItem lsli = new(lmb.GetOrAddTerm("LANTERNSHARDS"), lmb.GetOrAddTerm("LANTERN"));
-                lmb.AddItem(lsli);
+                var shardsTerm = lmb.GetOrAddTerm("LANTERNSHARDS");
+                var lanternTerm = lmb.GetOrAddTerm("LANTERN");
+                lmb.AddTemplateItem(new BranchedItemTemplate(LanternShardItem.Name, $"{shardsTerm.Name}<3",
+                    new SingleItem(LanternShardItem.Name, new(shardsTerm, 1)),
+                    new SingleItem(ItemNames.Lumafly_Lantern, new(lanternTerm, 1))));
             }
 
             if (!RandoInterop.RandomizeDarkness) return;
