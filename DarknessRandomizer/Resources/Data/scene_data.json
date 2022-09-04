@@ -458,7 +458,7 @@
     "Alias": "City_Left_Elevator",
     "Cluster": "WestCityElevator",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false
   },
   "Crossroads_50": {
@@ -1613,7 +1613,7 @@
     "Alias": "Crystal_Dive_Entrance",
     "Cluster": "CrossroadsPeaksBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false
   },
   "Mines_02": {
@@ -1823,7 +1823,7 @@
     "Alias": "Grounds_Whispering_Root",
     "Cluster": "GroundsMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "IsVanillaDark": false
   },
   "RestingGrounds_06": {

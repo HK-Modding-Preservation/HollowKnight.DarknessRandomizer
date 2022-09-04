@@ -671,7 +671,7 @@
       "CityEastEntrance": "Brighter",
       "CityStoreroomsStag": "Brighter",
       "CityTollBench": "Brighter",
-      "WestCityElevator": "Darker"
+      "WestCityElevator": "Brighter"
     },
     "SceneAliases": [
       "City_Corridor_to_Storerooms",
@@ -683,7 +683,7 @@
       "Ruins1_17",
       "Ruins1_28"
     ],
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 20,
@@ -898,7 +898,7 @@
   "CrossroadsElevatorApproach": {
     "AdjacentClusters": {
       "CrossroadsStagHub": "Darker",
-      "WestCityElevator": "Darker"
+      "WestCityElevator": "Any"
     },
     "SceneAliases": [
       "Crossroads_Corridor_to_Elevator"
@@ -1274,7 +1274,7 @@
   },
   "CrossroadsVesselFragment": {
     "AdjacentClusters": {
-      "WestCityElevator": "Any"
+      "WestCityElevator": "Brighter"
     },
     "SceneAliases": [
       "Crossroads_Vessel_Fragment"
@@ -3473,7 +3473,7 @@
   },
   "GroundsDreamshield": {
     "AdjacentClusters": {
-      "GroundsMain": "Darker"
+      "GroundsMain": "Any"
     },
     "SceneAliases": [
       "Grounds_Dreamshield"
@@ -3505,10 +3505,10 @@
   "GroundsMain": {
     "AdjacentClusters": {
       "GroundsCatacombs": "Darker",
-      "GroundsDreamshield": "Brighter",
+      "GroundsDreamshield": "Any",
       "GroundsGlade": "Darker",
-      "GroundsOutsideDreamNail": "Brighter",
-      "GroundsStag": "Brighter"
+      "GroundsOutsideDreamNail": "Any",
+      "GroundsStag": "Any"
     },
     "SceneAliases": [
       "Grounds_Whispering_Root"
@@ -3517,16 +3517,13 @@
       "RestingGrounds_05"
     ],
     "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": false,
-    "DarkSettings": {
-      "ProbabilityWeight": 100,
-      "CostWeight": 40
-    }
+    "CursedOnly": null,
+    "DarkSettings": null
   },
   "GroundsOutsideDreamNail": {
     "AdjacentClusters": {
       "GroundsDreamNail": "Darker",
-      "GroundsMain": "Darker",
+      "GroundsMain": "Any",
       "GroundsXero": "Darker"
     },
     "SceneAliases": [
@@ -3541,7 +3538,7 @@
   },
   "GroundsStag": {
     "AdjacentClusters": {
-      "GroundsMain": "Darker"
+      "GroundsMain": "Any"
     },
     "SceneAliases": [
       "Grounds_Stag"
@@ -4031,9 +4028,9 @@
   },
   "WestCityElevator": {
     "AdjacentClusters": {
-      "CityStorerooms": "Brighter",
-      "CrossroadsElevatorApproach": "Brighter",
-      "CrossroadsVesselFragment": "Any"
+      "CityStorerooms": "Darker",
+      "CrossroadsElevatorApproach": "Any",
+      "CrossroadsVesselFragment": "Darker"
     },
     "SceneAliases": [
       "City_Left_Elevator",
@@ -4043,11 +4040,8 @@
       "Crossroads_49",
       "Crossroads_49b"
     ],
-    "OverrideCannotBeDarknessSource": false,
-    "CursedOnly": false,
-    "DarkSettings": {
-      "ProbabilityWeight": 30,
-      "CostWeight": 150
-    }
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null
   }
 }
