@@ -1,14 +1,6 @@
 ﻿using ItemChanger;
-using ItemChanger.Items;
 using ItemChanger.Tags;
 using ItemChanger.UIDefs;
-using Modding;
-using RandomizerMod.RandomizerData;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DarknessRandomizer.IC
 {
@@ -37,9 +29,9 @@ namespace DarknessRandomizer.IC
             };
 
             var interop = AddTag<InteropTag>();
-            interop.Message = "RandoSupplementalData";
-            interop.Properties["PoolGroup"] = "Keys";
-            interop.Properties["ModSource"] = DarknessRandomizer.Instance.GetName();
+            interop.Message = ConnectionMetadataInjector.SupplementalMetadata.InteropTagMessage;
+            interop.Properties[ConnectionMetadataInjector.InjectedProps.ItemPoolGroup.Name] = ConnectionMetadataInjector.Util.PoolGroup.Keys.ToString();
+            interop.Properties[ConnectionMetadataInjector.InjectedProps.ModSource.Name] = DarknessRandomizer.Instance.GetName();
 
             ModifyItem += MaybeCompleteLantern;
         }
