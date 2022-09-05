@@ -81,6 +81,14 @@ namespace DarknessRandomizer.Rando
 
         private static readonly Dictionary<SceneName, HashSet<string>> PreservedHazardRespawns = new();
 
+        private static void DeactiveGameObject(GameObject obj)
+        {
+            if (obj == null) return;
+
+            obj.GetOrAddComponent<DeactivateInDarknessWithoutLantern>().enabled = true;
+            obj.SetActive(false);
+        }
+
         private void DisableDarkRoomObjects(SceneName sceneName)
         {
             foreach (var obj in GameObject.FindObjectsOfType<HazardRespawnTrigger>())
@@ -88,8 +96,7 @@ namespace DarknessRandomizer.Rando
                 if (sceneName == null || !PreservedHazardRespawns.TryGetValue(sceneName, out HashSet<string> names)
                     || !names.Contains(obj.name))
                 {
-                    obj.gameObject.GetOrAddComponent<DeactivateInDarknessWithoutLantern>().enabled = true;
-                    obj.gameObject.SetActive(false);
+                    DeactiveGameObject(obj.gameObject);
                 }
             }
         }
@@ -198,7 +205,7 @@ namespace DarknessRandomizer.Rando
             {
                 if (IsDark(sceneName))
                 {
-                    fsm.gameObject.GetOrAddComponent<DeactivateInDarknessWithoutLantern>();
+                    DeactiveGameObject(fsm.gameObject);
                 }
             }));
         }
@@ -209,7 +216,7 @@ namespace DarknessRandomizer.Rando
             {
                 if (IsDark(sceneName))
                 {
-                    fsm.gameObject.GetOrAddComponent<DeactivateInDarknessWithoutLantern>();
+                    DeactiveGameObject(fsm.gameObject);
                 }
             }));
         }
@@ -222,7 +229,7 @@ namespace DarknessRandomizer.Rando
                 {
                     fsm.GetState("Can Talk?").GetFirstActionOfType<BoolTest>().boolVariable = new FsmBool() { Value = false };
                     fsm.gameObject.GetComponent<tk2dSprite>().color = darkTollColor;
-                    GameObject.Find("/Mage Door/Prompt Marker")?.GetOrAddComponent<DeactivateInDarknessWithoutLantern>();
+                    DeactiveGameObject(GameObject.Find("/Mage Door/Prompt Marker"));
                 }
             }));
         }
