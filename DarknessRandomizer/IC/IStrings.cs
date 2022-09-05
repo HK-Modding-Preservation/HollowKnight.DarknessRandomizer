@@ -32,7 +32,7 @@ namespace DarknessRandomizer.IC
                     case 2:
                         return "Are you going to weld these together or something?  How?!";
                     default:
-                        return "Pay no attention to the debug message behind the curtain.";
+                        return "I hear that with two lanterns you can explore advanced darkness.";
                 }
             }
         }
