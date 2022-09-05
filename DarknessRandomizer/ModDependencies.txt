@@ -1,0 +1,7 @@
+BenchRando
+ConnectionMetadataInjector
+ItemChanger
+MenuChanger
+RandomizerCore
+Randomizer 4
+RandoPlus
