@@ -126,17 +126,20 @@ namespace DarknessRandomizer.Rando
 
         private const string TrueBool = "DarknessRandomizerTrue";
         private const string FalseBool = "DarknessRandomizerFalse";
-        private readonly Dictionary<string, bool> customBool = new()
-        {
-            { TrueBool, true },
-            { FalseBool, false }
-        };
 
-        private bool OverrideGetBool(string name, bool orig) => customBool.TryGetValue(name, out bool b) ? b : orig;
+        private bool OverrideGetBool(string name, bool orig)
+        {
+            return name switch
+            {
+                TrueBool => true,
+                FalseBool => false,
+                _ => orig
+            };
+        }
 
         private bool OverrideSetBool(string name, bool orig)
         {
-            if (name == nameof(PlayerData.instance.hasLantern) && orig)
+            if (orig && name == nameof(PlayerData.instance.hasLantern))
             {
                 NumLanternShardsCollected = LanternShards.TotalNumShards;
             }
