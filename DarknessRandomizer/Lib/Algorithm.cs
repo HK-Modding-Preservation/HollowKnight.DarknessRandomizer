@@ -126,10 +126,12 @@ namespace DarknessRandomizer.Lib
                 }
             }
 
-            stats = new();
-            stats.ClusterDarkness = new(clusterDarkness);
-            stats.DarknessSpent = 0;
-            stats.DarknessRemaining = 0;
+            stats = new()
+            {
+                ClusterDarkness = new(clusterDarkness),
+                DarknessSpent = 0,
+                DarknessRemaining = 0
+            };
             foreach (var e in stats.ClusterDarkness.Enumerate())
             {
                 var cData = ClusterData.Get(e.Key);

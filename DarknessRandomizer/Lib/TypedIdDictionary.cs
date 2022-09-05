@@ -25,7 +25,7 @@ namespace DarknessRandomizer.Lib
     public class TypedIdDictionary<K, V> where K : ITypedId
     {
         private readonly ITypedIdFactory<K> factory;
-        private Dictionary<K, V> dict;
+        private readonly Dictionary<K, V> dict;
 
         [JsonIgnore]
         public SortedDictionary<string, V> AsSortedDict
@@ -81,16 +81,18 @@ namespace DarknessRandomizer.Lib
 
     public class TypedIdDictionaryConverter<K, V, T> : JsonConverter<T> where K : ITypedId where T : TypedIdDictionary<K, V>, new()
     {
-        public override T ReadJson(JsonReader reader, Type objectType, T existingValue, bool hasExistingValue, JsonSerializer serializer)
+        public override T ReadJson(JsonReader reader, Type objectType, T? existingValue, bool hasExistingValue, JsonSerializer serializer)
         {
-            T ret = new();
-            ret.AsSortedDict = serializer.Deserialize<SortedDictionary<string, V>>(reader);
+            T ret = new()
+            {
+                AsSortedDict = serializer.Deserialize<SortedDictionary<string, V>>(reader) ?? new()
+            };
             return ret;
         }
 
-        public override void WriteJson(JsonWriter writer, T value, JsonSerializer serializer)
+        public override void WriteJson(JsonWriter writer, T? value, JsonSerializer serializer)
         {
-            serializer.Serialize(writer, value.AsSortedDict);
+            serializer.Serialize(writer, value?.AsSortedDict);
         }
     }
 

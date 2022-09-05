@@ -122,7 +122,7 @@ namespace DarknessRandomizer.Rando
 
         private static readonly SimpleToken DarkroomsToken = new("DARKROOMS");
 
-        private Dictionary<string, SceneName> customSceneInferences = new();
+        private readonly Dictionary<string, SceneName> customSceneInferences = new();
 
         private void DoBenchRandoInterop()
         {
@@ -218,7 +218,7 @@ namespace DarknessRandomizer.Rando
             return false;
         }
 
-        private Dictionary<string, LogicClause> logicCache = new();
+        private readonly Dictionary<string, LogicClause> logicCache = new();
 
         private LogicClause GetCachedLogic(string logic)
         {

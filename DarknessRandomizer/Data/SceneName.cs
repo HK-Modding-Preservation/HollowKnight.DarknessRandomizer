@@ -443,26 +443,11 @@ namespace DarknessRandomizer.Data
         public static readonly SceneName POPVertical = new("White_Palace_19");
         public static readonly SceneName POPFinal = new("White_Palace_20");
         // @@@ INSERT_SCENE_NAMES END @@@
-
-        private static readonly HashSet<SceneName> VanillaDarkScenes = new()
-        {
-            CliffsJonisDark,
-            CrossroadsPeakDarkToll,
-            CrystalDarkRoom,
-            DeepnestFirstDevout,
-            DeepnestMidwife,
-            DeepnestOutsideGalien,
-            DeepnestOutsideMaskMaker,
-            DeepnestWhisperingRoot,
-            GreenpathStoneSanctuary
-        };
-
-        public bool IsVanillaDark() => VanillaDarkScenes.Contains(this);
     }
 
     class SceneNameConverter : JsonConverter<SceneName>
     {
-        public override SceneName ReadJson(JsonReader reader, Type objectType, SceneName existingValue, bool hasExistingValue, JsonSerializer serializer)
+        public override SceneName ReadJson(JsonReader reader, Type objectType, SceneName? existingValue, bool hasExistingValue, JsonSerializer serializer)
         {
             if (serializer.Deserialize(reader, typeof(string)) is string name && SceneName.TryGetValue(name, out SceneName sceneName))
             {
@@ -471,6 +456,6 @@ namespace DarknessRandomizer.Data
             throw new JsonReaderException("Error decoding SceneName");
         }
 
-        public override void WriteJson(JsonWriter writer, SceneName value, JsonSerializer serializer) => serializer.Serialize(writer, value.Name());
+        public override void WriteJson(JsonWriter writer, SceneName? value, JsonSerializer serializer) => serializer.Serialize(writer, value?.Name());
     }
 }

@@ -291,7 +291,7 @@ namespace DarknessRandomizer.Data
 
     class ClusterNameConverter : JsonConverter<ClusterName>
     {
-        public override ClusterName ReadJson(JsonReader reader, Type objectType, ClusterName existingValue, bool hasExistingValue, JsonSerializer serializer)
+        public override ClusterName ReadJson(JsonReader reader, Type objectType, ClusterName? existingValue, bool hasExistingValue, JsonSerializer serializer)
         {
             if (serializer.Deserialize(reader, typeof(string)) is string name && ClusterName.TryGetValue(name, out ClusterName clusterName))
             {
@@ -300,6 +300,6 @@ namespace DarknessRandomizer.Data
             throw new JsonReaderException("Error decoding ClusterName");
         }
 
-        public override void WriteJson(JsonWriter writer, ClusterName value, JsonSerializer serializer) => serializer.Serialize(writer, value.Name());
+        public override void WriteJson(JsonWriter writer, ClusterName? value, JsonSerializer serializer) => serializer.Serialize(writer, value?.Name());
     }
 }
