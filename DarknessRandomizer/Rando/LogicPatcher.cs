@@ -46,7 +46,7 @@ namespace DarknessRandomizer.Rando
                 { "Defeated_White_Defender", CustomSceneLogicEdit(SceneName.DreamWhiteDefender, "DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
 
                 // Specific checks with difficult platforming.
-                { "Void_Heart", CustomSceneLogicEdit(SceneName.AbyssBirthplace, "DARKROOMS + DIFFICULTSKIPS") },
+                { "Void_Heart", CustomSceneLogicEdit(SceneName.DreamAbyss, "DARKROOMS + DIFFICULTSKIPS") },
 
                 // QG stag checks are free except for these two.
                 { "Soul_Totem-Below_Marmu", CustomDarkLogicEdit("DARKROOMS") },
