@@ -133,10 +133,10 @@ namespace DarknessRandomizer.Rando
                 if (!SceneName.TryGetValue(def.SceneName, out SceneName sceneName)) continue;
 
                 // Make sure we apply darkness logic to other checks in the room obtainable from the bench.
-                customSceneInferences[e.Key] = sceneName;
+                customSceneInferences[benchName] = sceneName;
 
                 // Bench checks are obtainable even in dark rooms, if the player has the benchwarp pickup.
-                logicOverridesByName[e.Key] = (lmb, name, lc) =>
+                logicOverridesByName[benchName] = (lmb, name, lc) =>
                 {
                     bool inferScene(string term, out SceneName sceneName)
                     {
