@@ -1,6 +1,4 @@
 ﻿using DarknessRandomizer.Data;
-using DarknessRandomizer.IC;
-using ItemChanger;
 using Modding;
 using RandomizerCore.Logic;
 using RandomizerCore.LogicItems;

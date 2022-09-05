@@ -1,5 +1,4 @@
 ﻿using DarknessRandomizer.Lib;
-using System;
 using System.Collections.Generic;
 
 namespace DarknessRandomizer.Data

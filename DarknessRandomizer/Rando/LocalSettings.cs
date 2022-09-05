@@ -1,7 +1,5 @@
-﻿using DarknessRandomizer.Data;
-using DarknessRandomizer.Lib;
+﻿using DarknessRandomizer.Lib;
 using RandomizerMod.RandomizerData;
-using System.Collections.Generic;
 
 // Node-based logic for determining Hallownest darkness during randomization.
 // This does not deal with logic-overrides of any kind.

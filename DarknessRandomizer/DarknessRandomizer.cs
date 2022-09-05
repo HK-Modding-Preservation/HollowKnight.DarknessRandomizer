@@ -1,6 +1,5 @@
 ﻿using DarknessRandomizer.Data;
 using DarknessRandomizer.IC;
-using DarknessRandomizer.Lib;
 using DarknessRandomizer.Rando;
 using ItemChanger.Internal.Menu;
 using Modding;

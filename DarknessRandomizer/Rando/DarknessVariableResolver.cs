@@ -3,7 +3,6 @@ using DarknessRandomizer.Lib;
 using ItemChanger;
 using Newtonsoft.Json;
 using RandomizerCore.Logic;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;

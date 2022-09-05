@@ -1,5 +1,4 @@
-﻿using DarknessRandomizer.IC;
-using ItemChanger;
+﻿using ItemChanger;
 using RandomizerMod.RC;
 
 namespace DarknessRandomizer.Rando
