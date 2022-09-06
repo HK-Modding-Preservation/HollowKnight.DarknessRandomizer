@@ -81,7 +81,7 @@ namespace DarknessRandomizer.Data
         public int ProbabilityWeight => DarkSettings?.ProbabilityWeight ?? 100;
 
         [JsonIgnore]
-        public int CostWeight => DarkSettings?.CostWeight ?? 100;
+        public int CostWeight => DarkSettings?.CostWeight ?? 0;
 
         public bool CanBeDarknessSource(SceneLookup SL, DarknessRandomizationSettings settings = null)
         {

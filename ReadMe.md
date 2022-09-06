@@ -9,12 +9,13 @@ Probably doesn't work well with Room Rando, but you're welcome to try.
 ## Settings
 
 * Randomize Darkness: Enable to randomize dark rooms. Disable to not.
-* Darkness Level:
-  * _Dim_: Vanilla levels of darkness. Less than 5% of hallownest will be dark.
-  * _Dark_: Moderate levels of darkness. About 10-20% of hallownest will be dark.
-  * _Cursed_: Extreme levels of darkness. Up to 50% of hallownest will be dark.
+  * Darkness Level:
+    * _Dim_: Vanilla levels of darkness. Less than 5% of hallownest will be dark.
+    * _Dark_: Moderate levels of darkness. About 10-20% of hallownest will be dark.
+    * _Cursed_: Extreme levels of darkness. Up to 50% of hallownest will be dark.
+  * Chaos: Select dark rooms at random, ignoring balancing probabilities and adjacency constraints.
 * Shattered Lantern: Split Lumafly Lantern into 4 Lantern Shards
-* Two Dupe Shards: Add 2 extra Lantern Shards
+  * Two Dupe Shards: Add 2 extra Lantern Shards
 
 Duplicate Unique Keys will double the number of Lantern Shards, if Shattered Lantern is set.
 Some rooms will never be dark, some will never even be dim.

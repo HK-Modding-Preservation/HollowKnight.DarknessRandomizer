@@ -79,6 +79,17 @@ namespace DarknessRandomizer.Lib
             }
         }
 
+        private static void Shuffle<T>(Random r, List<T> list)
+        {
+            for (int i = 0; i < list.Count - 1; ++i)
+            {
+                int j = i + r.Next(0, list.Count - i);
+                T temp = list[i];
+                list[i] = list[j];
+                list[j] = temp;
+            }
+        }
+
         public void SelectDarknessLevels(out SceneDarknessDict darknessOverrides, out AlgorithmStats stats)
         {
             // Phase 0: Everything starts as bright.
@@ -87,18 +98,35 @@ namespace DarknessRandomizer.Lib
                 clusterDarkness[c] = Darkness.Bright;
             }
 
-            // Phase 1: Select source nodes until we run out of darkness.
-            foreach (var c in ClusterName.All())
+            if (settings.Chaos)
             {
-                var cData = ClusterData.Get(c);
-                if (ClusterData.Get(c).CanBeDarknessSource(settings) && !forcedBrightClusters.Contains(c))
+                // Randomly select individual clusters to be dark or semi-dark, ignoring all usual constraints.
+                List<ClusterName> clusters = new(ClusterName.All());
+                clusters.RemoveAll(c => ClusterData.Get(c).MaximumDarkness(settings) != Darkness.Dark);
+                Shuffle(r, clusters);
+
+                for (int i = 0; i < clusters.Count && darknessAvailable > 0; ++i)
                 {
-                    darkCandidates.Add(c, cData.ProbabilityWeight);
+                    var c = clusters[i];
+                    clusterDarkness[c] = Darkness.Dark;
+                    darknessAvailable -= ClusterData.Get(c).CostWeight;
                 }
             }
-            while (!darkCandidates.IsEmpty() && darknessAvailable > 0)
+            else
             {
-                SelectNewDarknessNode();
+                // Phase 1: Select source nodes until we run out of darkness.
+                foreach (var c in ClusterName.All())
+                {
+                    var cData = ClusterData.Get(c);
+                    if (cData.CanBeDarknessSource(settings) && !forcedBrightClusters.Contains(c))
+                    {
+                        darkCandidates.Add(c, cData.ProbabilityWeight);
+                    }
+                }
+                while (!darkCandidates.IsEmpty() && darknessAvailable > 0)
+                {
+                    SelectNewDarknessNode();
+                }
             }
 
             // Inject custom darkness here.
@@ -137,35 +165,7 @@ namespace DarknessRandomizer.Lib
             }
 
             // Phase 3: Output the per-scene darkness levels.
-            darknessOverrides = new();
-            foreach (var e in clusterDarkness.Enumerate())
-            {
-                var cluster = e.Key;
-                var darkness = e.Value;
-                foreach (var scene in ClusterData.Get(cluster).SceneNames)
-                {
-                    darknessOverrides[scene] = Data.SceneData.Get(scene).ClampDarkness(darkness);
-                }
-            }
-
-            stats = new()
-            {
-                ClusterDarkness = new(clusterDarkness),
-                DarknessSpent = 0,
-                DarknessRemaining = 0
-            };
-            foreach (var e in stats.ClusterDarkness.Enumerate())
-            {
-                var cData = ClusterData.Get(e.Key);
-                if (e.Value == Darkness.Dark)
-                {
-                    stats.DarknessSpent += cData.CostWeight;
-                }
-                else if (cData.MaximumDarkness(settings) == Darkness.Dark && !forcedBrightClusters.Contains(e.Key))
-                {
-                    stats.DarknessRemaining += cData.CostWeight;
-                }
-            }
+            GetPerSceneDarknessLevels(out darknessOverrides, out stats);
         }
 
         private void SelectNewDarknessNode()
@@ -194,6 +194,39 @@ namespace DarknessRandomizer.Lib
                         e => e.Value != RelativeDarkness.Darker || clusterDarkness[e.Key] == Darkness.Dark))
                 {
                     darkCandidates.Add(aName, aData.ProbabilityWeight);
+                }
+            }
+        }
+
+        private void GetPerSceneDarknessLevels(out SceneDarknessDict darknessOverrides, out AlgorithmStats stats)
+        {
+            darknessOverrides = new();
+            foreach (var e in clusterDarkness.Enumerate())
+            {
+                var cluster = e.Key;
+                var darkness = e.Value;
+                foreach (var scene in ClusterData.Get(cluster).SceneNames)
+                {
+                    darknessOverrides[scene] = Data.SceneData.Get(scene).ClampDarkness(darkness);
+                }
+            }
+
+            stats = new()
+            {
+                ClusterDarkness = new(clusterDarkness),
+                DarknessSpent = 0,
+                DarknessRemaining = 0
+            };
+            foreach (var e in stats.ClusterDarkness.Enumerate())
+            {
+                var cData = ClusterData.Get(e.Key);
+                if (e.Value == Darkness.Dark)
+                {
+                    stats.DarknessSpent += cData.CostWeight;
+                }
+                else if (cData.MaximumDarkness(settings) == Darkness.Dark && !forcedBrightClusters.Contains(e.Key))
+                {
+                    stats.DarknessRemaining += cData.CostWeight;
                 }
             }
         }

@@ -13,6 +13,7 @@ namespace DarknessRandomizer.Rando
     {
         public bool RandomizeDarkness = false;
         public DarknessLevel DarknessLevel = DarknessLevel.Dark;
+        public bool Chaos = false;
         public bool ShatteredLantern = false;
         public bool TwoDupeShards = false;
 
