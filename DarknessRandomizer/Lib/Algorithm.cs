@@ -24,7 +24,7 @@ namespace DarknessRandomizer.Lib
         private readonly ClusterDarknessDict clusterDarkness;
         private readonly WeightedHeap<ClusterName> darkCandidates;
         private readonly HashSet<ClusterName> semiDarkCandidates;
-        private readonly HashSet<ClusterName> forbiddenClusters;
+        private readonly HashSet<ClusterName> forcedBrightClusters;
 
         public Algorithm(GenerationSettings GS, StartDef startDef, DarknessRandomizationSettings settings)
         {
@@ -35,36 +35,36 @@ namespace DarknessRandomizer.Lib
             this.clusterDarkness = new();
             this.darkCandidates = new();
             this.semiDarkCandidates = new();
-            this.forbiddenClusters = new();
+            this.forcedBrightClusters = new();
 
             foreach (var c in Starts.GetStartClusters(startDef.Name))
             {
-                this.forbiddenClusters.Add(c);
+                this.forcedBrightClusters.Add(c);
             }
 
             // Always include the local cluster, even in TRANDO.
             if (SceneName.TryGetValue(startDef.SceneName, out SceneName sceneName))
             {
-                this.forbiddenClusters.Add(Data.SceneData.Get(sceneName).Cluster);
+                this.forcedBrightClusters.Add(Data.SceneData.Get(sceneName).Cluster);
             }
 
             if (!GS.PoolSettings.Keys)
             {
                 // If lantern isn't randomized, we need to ensure the vanilla lantern location (Sly) is accessible.
                 // This won't work if they also didn't randomize stags but I'm not trying to fix that.
-                this.forbiddenClusters.Add(ClusterName.CrossroadsStag);
-                this.forbiddenClusters.Add(ClusterName.CrossroadsStagHub);
-                this.forbiddenClusters.Add(ClusterName.CrossroadsShops);
+                this.forcedBrightClusters.Add(ClusterName.CrossroadsStag);
+                this.forcedBrightClusters.Add(ClusterName.CrossroadsStagHub);
+                this.forcedBrightClusters.Add(ClusterName.CrossroadsShops);
             }
             
             if (GS.CursedSettings.Deranged)
             {
                 // Disallow vanilla dark rooms.
-                this.forbiddenClusters.Add(ClusterName.CliffsJonis);
-                this.forbiddenClusters.Add(ClusterName.CrystalPeaksDarkRoom);
-                this.forbiddenClusters.Add(ClusterName.CrystalPeaksToll);
-                this.forbiddenClusters.Add(ClusterName.DeepnestDark);
-                this.forbiddenClusters.Add(ClusterName.GreenpathStoneSanctuary);
+                this.forcedBrightClusters.Add(ClusterName.CliffsJonis);
+                this.forcedBrightClusters.Add(ClusterName.CrystalPeaksDarkRoom);
+                this.forcedBrightClusters.Add(ClusterName.CrystalPeaksToll);
+                this.forcedBrightClusters.Add(ClusterName.DeepnestDark);
+                this.forcedBrightClusters.Add(ClusterName.GreenpathStoneSanctuary);
             }
 
             // If white palace rando is disabled, add all white palace rooms to the forbidden set.
@@ -75,7 +75,7 @@ namespace DarknessRandomizer.Lib
                     var cData = ClusterData.Get(cluster);
                     if (cData.IsInPathOfPain || (GS.LongLocationSettings.WhitePalaceRando == LongLocationSettings.WPSetting.ExcludeWhitePalace && cData.IsInWhitePalace))
                     {
-                        this.forbiddenClusters.Add(cluster);
+                        this.forcedBrightClusters.Add(cluster);
                     }
                 }
             }
@@ -93,7 +93,7 @@ namespace DarknessRandomizer.Lib
             foreach (var c in ClusterName.All())
             {
                 var cData = ClusterData.Get(c);
-                if (ClusterData.Get(c).CanBeDarknessSource(settings) && !forbiddenClusters.Contains(c))
+                if (ClusterData.Get(c).CanBeDarknessSource(settings) && !forcedBrightClusters.Contains(c))
                 {
                     darkCandidates.Add(c, cData.ProbabilityWeight);
                 }
@@ -149,7 +149,7 @@ namespace DarknessRandomizer.Lib
                 {
                     stats.DarknessSpent += cData.CostWeight;
                 }
-                else if (cData.MaximumDarkness(settings) == Darkness.Dark && !forbiddenClusters.Contains(e.Key))
+                else if (cData.MaximumDarkness(settings) == Darkness.Dark && !forcedBrightClusters.Contains(e.Key))
                 {
                     stats.DarknessRemaining += cData.CostWeight;
                 }
@@ -172,7 +172,7 @@ namespace DarknessRandomizer.Lib
                 var aName = e.Key;
                 var rd = e.Value;
 
-                if (clusterDarkness[aName] == Darkness.Dark || rd == RelativeDarkness.Disconnected || forbiddenClusters.Contains(aName))
+                if (clusterDarkness[aName] == Darkness.Dark || rd == RelativeDarkness.Disconnected || forcedBrightClusters.Contains(aName))
                 {
                     continue;
                 }
