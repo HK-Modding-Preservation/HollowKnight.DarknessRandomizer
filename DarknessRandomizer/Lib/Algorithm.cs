@@ -42,6 +42,12 @@ namespace DarknessRandomizer.Lib
                 this.forbiddenClusters.Add(c);
             }
 
+            // Always include the local cluster, even in TRANDO.
+            if (SceneName.TryGetValue(startDef.SceneName, out SceneName sceneName))
+            {
+                this.forbiddenClusters.Add(Data.SceneData.Get(sceneName).Cluster);
+            }
+
             if (!GS.PoolSettings.Keys)
             {
                 // If lantern isn't randomized, we need to ensure the vanilla lantern location (Sly) is accessible.
@@ -51,10 +57,14 @@ namespace DarknessRandomizer.Lib
                 this.forbiddenClusters.Add(ClusterName.CrossroadsShops);
             }
             
-            // Always include the local cluster, even in TRANDO.
-            if (SceneName.TryGetValue(startDef.SceneName, out SceneName sceneName))
+            if (GS.CursedSettings.Deranged)
             {
-                this.forbiddenClusters.Add(Data.SceneData.Get(sceneName).Cluster);
+                // Disallow vanilla dark rooms.
+                this.forbiddenClusters.Add(ClusterName.CliffsJonis);
+                this.forbiddenClusters.Add(ClusterName.CrystalPeaksDarkRoom);
+                this.forbiddenClusters.Add(ClusterName.CrystalPeaksToll);
+                this.forbiddenClusters.Add(ClusterName.DeepnestDark);
+                this.forbiddenClusters.Add(ClusterName.GreenpathStoneSanctuary);
             }
 
             // If white palace rando is disabled, add all white palace rooms to the forbidden set.
