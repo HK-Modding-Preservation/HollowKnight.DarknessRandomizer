@@ -1,5 +1,6 @@
 ﻿using DarknessRandomizer.Data;
 using Modding;
+using RandomizerCore;
 using RandomizerCore.Logic;
 using RandomizerCore.LogicItems;
 using RandomizerCore.LogicItems.Templates;
@@ -255,7 +256,7 @@ namespace DarknessRandomizer.Rando
                 var lanternTerm = lmb.GetOrAddTerm(RandoInterop.LanternTermName);
                 lmb.AddTemplateItem(new BranchedItemTemplate(RandoInterop.LanternShardItemName, $"{shardsTerm.Name}<3",
                     new SingleItem(RandoInterop.LanternShardItemName, new(shardsTerm, 1)),
-                    new SingleItem(RandoInterop.LanternItemName, new(lanternTerm, 1))));
+                    new CappedItem(RandoInterop.LanternItemName, new TermValue[] { new(shardsTerm, 1), new(lanternTerm, 1) }, new(lanternTerm, 1))));
             }
 
             if (!RandoInterop.RandomizeDarkness) return;
