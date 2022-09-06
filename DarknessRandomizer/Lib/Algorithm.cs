@@ -23,7 +23,6 @@ namespace DarknessRandomizer.Lib
         private int darknessAvailable;
         private readonly ClusterDarknessDict clusterDarkness;
         private readonly WeightedHeap<ClusterName> darkCandidates;
-        private readonly HashSet<ClusterName> semiDarkCandidates;
         private readonly HashSet<ClusterName> forcedBrightClusters;
 
         public Algorithm(GenerationSettings GS, StartDef startDef, DarknessRandomizationSettings settings)
@@ -34,7 +33,6 @@ namespace DarknessRandomizer.Lib
             this.darknessAvailable = settings.GetDarknessBudget(r);
             this.clusterDarkness = new();
             this.darkCandidates = new();
-            this.semiDarkCandidates = new();
             this.forcedBrightClusters = new();
 
             foreach (var c in Starts.GetStartClusters(startDef.Name))
@@ -103,12 +101,6 @@ namespace DarknessRandomizer.Lib
                 SelectNewDarknessNode();
             }
 
-            // Phase 2: Turn the remaining nodes into semi-darkness.
-            foreach (var c in semiDarkCandidates)
-            {
-                clusterDarkness[c] = Darkness.SemiDark;
-            }
-
             // Inject custom darkness here.
             // The code below does a full inversion - all traditionally lit rooms are dark, and vice versa.
             // Mainly for debugging/testing purposes. You'll need to turn on DARKROOMS for this to get past Logic.
@@ -123,6 +115,26 @@ namespace DarknessRandomizer.Lib
             // clusterDarkness[ClusterName.CrystalPeaksToll] = Darkness.Bright;
             // clusterDarkness[ClusterName.CrystalPeaksDarkRoom] = Darkness.Bright;
             // clusterDarkness[ClusterName.CliffsJonis] = Darkness.Bright;
+
+            // Phase 2: Calculate semi-dark clusters.
+            foreach (var name in ClusterName.All())
+            {
+                var darkness = clusterDarkness[name];
+                
+                if (darkness == Darkness.Dark)
+                {
+                    var cData = ClusterData.Get(name);
+                    foreach (var e in cData.AdjacentClusters.Enumerate())
+                    {
+                        var aName = e.Key;
+                        var rd = e.Value;
+                        if (clusterDarkness[aName] == Darkness.Bright && rd != RelativeDarkness.Disconnected)
+                        {
+                            clusterDarkness[aName] = Darkness.SemiDark;
+                        }
+                    }
+                }
+            }
 
             // Phase 3: Output the per-scene darkness levels.
             darknessOverrides = new();
@@ -160,7 +172,6 @@ namespace DarknessRandomizer.Lib
         {
             var name = darkCandidates.Remove(r);
             clusterDarkness[name] = Darkness.Dark;
-            semiDarkCandidates.Remove(name);
 
             // This can go negative; fixing that would require pruning the heap of high cost clusters.
             var cData = ClusterData.Get(name);
@@ -177,17 +188,12 @@ namespace DarknessRandomizer.Lib
                     continue;
                 }
 
-                var ncluster = ClusterData.Get(aName);
-                Darkness maxDark = ncluster.MaximumDarkness(settings);
-                if (maxDark >= Darkness.SemiDark)
+                var aData = ClusterData.Get(aName);
+                if (!darkCandidates.Contains(aName) && aData.MaximumDarkness(settings) == Darkness.Dark
+                    && aData.AdjacentClusters.Enumerate().All(
+                        e => e.Value != RelativeDarkness.Darker || clusterDarkness[e.Key] == Darkness.Dark))
                 {
-                    semiDarkCandidates.Add(aName);
-                    if (!darkCandidates.Contains(aName) && maxDark == Darkness.Dark
-                        && ncluster.AdjacentClusters.Enumerate().All(
-                            e => e.Value != RelativeDarkness.Darker || clusterDarkness[e.Key] == Darkness.Dark))
-                    {
-                        darkCandidates.Add(aName, ncluster.ProbabilityWeight);
-                    }
+                    darkCandidates.Add(aName, aData.ProbabilityWeight);
                 }
             }
         }
