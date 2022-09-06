@@ -14,7 +14,7 @@ namespace DarknessRandomizer.Rando
 {
     internal class LogicOverrides
     {
-        private delegate void LogicOverride(LogicManagerBuilder lmb, string name, LogicClause lc);
+        private delegate void LogicOverride(LogicManagerBuilder lmb, string logicName, LogicClause lc);
 
         private readonly Dictionary<string, LogicOverride> logicOverridesByName;
         private readonly Dictionary<SceneName, LogicOverride> logicOverridesByTransitionScene;
@@ -120,9 +120,8 @@ namespace DarknessRandomizer.Rando
             }
         }
 
-        private static readonly SimpleToken DarkroomsToken = new("DARKROOMS");
-
         private readonly Dictionary<string, SceneName> customSceneInferences = new();
+        private readonly Dictionary<string, SceneNameInferrer> sceneNameInferrerOverrides = new();
 
         private void DoBenchRandoInterop()
         {
@@ -136,9 +135,7 @@ namespace DarknessRandomizer.Rando
                 customSceneInferences[benchName] = sceneName;
 
                 // Bench checks are obtainable even in dark rooms, if the player has the benchwarp pickup.
-                logicOverridesByName[benchName] = (lmb, name, lc) =>
-                {
-                    bool inferScene(string term, out SceneName sceneName)
+                sceneNameInferrerOverrides[benchName] = (string term, out SceneName sceneName) =>
                     {
                         if (term == benchName)
                         {
@@ -146,13 +143,13 @@ namespace DarknessRandomizer.Rando
                             return false;
                         }
                         return InferSceneName(term, out sceneName);
-                    }
-                    LogicClauseEditor.EditDarkness(lmb, name, LanternToken, inferScene, tokens => tokens.Add(DarkroomsToken));
-                };
+                    };
             }
         }
 
-        public bool InferSceneName(string term, out SceneName sceneName)
+        public SceneNameInferrer GetSceneNameInferrer(string logicName) => sceneNameInferrerOverrides.TryGetValue(logicName, out SceneNameInferrer sni) ? sni : InferSceneName;
+
+        private bool InferSceneName(string term, out SceneName sceneName)
         { 
             if (SceneName.IsTransition(term, out sceneName))
             {
@@ -193,25 +190,25 @@ namespace DarknessRandomizer.Rando
             return false;
         }
 
-        public bool MaybeInvokeLogicOverride(LogicManagerBuilder lmb, string name, LogicClause lc)
+        public bool MaybeInvokeLogicOverride(LogicManagerBuilder lmb, string logicName, LogicClause lc)
         {
-            if (logicOverridesByName.TryGetValue(name, out LogicOverride handler))
+            if (logicOverridesByName.TryGetValue(logicName, out LogicOverride handler))
             {
-                handler.Invoke(lmb, name, lc);
+                handler.Invoke(lmb, logicName, lc);
                 return true;
             }
 
-            if (InferSceneName(name, out SceneName sceneName)
+            if (InferSceneName(logicName, out SceneName sceneName)
                 && logicOverridesByTransitionScene.TryGetValue(sceneName, out handler))
             {
-                handler.Invoke(lmb, name, lc);
+                handler.Invoke(lmb, logicName, lc);
                 return true;
             }
 
             // Check for an inferred scene match.
             if (InferSingleSceneName(lc, out SceneName inferred) && logicOverridesByUniqueScene.TryGetValue(inferred, out handler))
             {
-                handler.Invoke(lmb, name, lc);
+                handler.Invoke(lmb, logicName, lc);
                 return true;
             }
 
@@ -220,23 +217,13 @@ namespace DarknessRandomizer.Rando
 
         private readonly Dictionary<string, LogicClause> logicCache = new();
 
-        private LogicClause GetCachedLogic(string logic)
-        {
-            if (logicCache.TryGetValue(logic, out LogicClause lc))
-            {
-                return lc;
-            }
+        private LogicClause GetCachedLogic(string logic) => logicCache.TryGetValue(logic, out LogicClause lc) ? lc : (logicCache[logic] = new(logic));
 
-            lc = new(logic);
-            logicCache[logic] = lc;
-            return lc;
-        }
-
-        private void NoLogicEdit(LogicManagerBuilder lmb, string name, LogicClause lc) { }
+        private void NoLogicEdit(LogicManagerBuilder lmb, string logicName, LogicClause lc) { }
 
         private LogicOverride CustomDarkLogicEdit(string darkLogic)
         {
-            return (lmb, name, lc) => LogicClauseEditor.EditDarkness(lmb, name, LanternToken, InferSceneName, (sink) =>
+            return (lmb, logicName, lc) => LogicClauseEditor.EditDarkness(lmb, logicName, LanternToken, GetSceneNameInferrer(logicName), (sink) =>
             {
                 LogicClause repl = GetCachedLogic(darkLogic);
                 foreach (var t in repl)
@@ -289,21 +276,21 @@ namespace DarknessRandomizer.Rando
             List<Action> edits = new();
             foreach (var e in lmb.LogicLookup)
             {
-                var name = e.Key;
+                var logicName = e.Key;
                 var lc = e.Value;
-                edits.Add(() => EditLogicClause(overrides, lmb, name, lc));
+                edits.Add(() => EditLogicClause(overrides, lmb, logicName, lc));
             }
             edits.ForEach(e => e.Invoke());
         }
 
         private static readonly SimpleToken DarkroomsToken = new("DARKROOMS");
 
-        private static void EditLogicClause(LogicOverrides overrides, LogicManagerBuilder lmb, string name, LogicClause lc)
+        private static void EditLogicClause(LogicOverrides overrides, LogicManagerBuilder lmb, string logicName, LogicClause lc)
         {
-            if (overrides.MaybeInvokeLogicOverride(lmb, name, lc)) return;
+            if (overrides.MaybeInvokeLogicOverride(lmb, logicName, lc)) return;
 
             // No special matches, use the default editor.
-            LogicClauseEditor.EditDarkness(lmb, name, overrides.LanternToken, overrides.InferSceneName, sink => sink.Add(DarkroomsToken));
+            LogicClauseEditor.EditDarkness(lmb, logicName, overrides.LanternToken, overrides.GetSceneNameInferrer(logicName), sink => sink.Add(DarkroomsToken));
         }
     }
 }
