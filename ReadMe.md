@@ -8,7 +8,7 @@ Probably doesn't work well with Room Rando, but you're welcome to try.
 
 ## Settings
 
-* Randomize Darkness: Enable to randomize dark rooms. Disable to not.
+* Randomize Darkness: Randomize which rooms in Hallownest are dark.
   * Darkness Level:
     * _Dim_: Vanilla levels of darkness. Less than 5% of hallownest will be dark.
     * _Dark_: Moderate levels of darkness. About 10-20% of hallownest will be dark.
@@ -17,9 +17,9 @@ Probably doesn't work well with Room Rando, but you're welcome to try.
 * Shattered Lantern: Split Lumafly Lantern into 4 Lantern Shards
   * Two Dupe Shards: Add 2 extra Lantern Shards
 
-Duplicate Unique Keys will double the number of Lantern Shards, if Shattered Lantern is set.
-Some rooms will never be dark, some will never even be dim.
-Some rooms can only be dark on the Cursed setting.
+Some rooms will never be dark, some will never even be dim. Some rooms can only be dark on the Cursed setting.
+
+Enabling 'Unique Keys' in Duplicate Items settings will double the number of Lantern Shards.
 
 ## How it Works
 
@@ -27,7 +27,7 @@ Some rooms can only be dark on the Cursed setting.
 
 DarknessRandomizer randomly selects various corners of Hallownest to make dark, and slowly spreads the darkness from them to the rest of the map based on a hand-crafted set of probability and cost weights. High-connectivity areas, especially those traversable with low movement (like crossroads) have low probabilities, while corners of the map like Oro and Soul Sanctum are weighted more highly. This ensures that, most of the time, you will have access to a large swath of the map without Lantern, allowing Logic to place Lantern late in progression and provide interesting seeds.
 
-Darkness is gradual and smooth. Your starting position, and its immediate surroundings, are always well-lit for safety, but at almost any point you can encounter semi-darkness, and then eventually, darkness. Some areas, like Dirtmouth, always bright.
+Darkness is gradual and smooth. Your starting position, and its immediate surroundings, are always well-lit for safety, but at almost any point you can encounter semi-darkness, and then eventually, darkness. Some areas, like Dirtmouth, are always bright.
 
 ### Interactables
 
