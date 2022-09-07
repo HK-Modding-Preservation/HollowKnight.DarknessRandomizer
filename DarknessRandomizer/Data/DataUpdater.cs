@@ -326,9 +326,9 @@ namespace DarknessRandomizer.Data
             return DS;
         }
 
-        private static Dictionary<string, string> GetWaypointsDict()
+        private static SortedDictionary<string, string> GetWaypointsDict()
         {
-            Dictionary<string, string> dict = new();
+            SortedDictionary<string, string> dict = new();
             LogicManager lm = RCData.GetNewLogicManager(new());
             foreach (var lw in lm.Waypoints)
             {
