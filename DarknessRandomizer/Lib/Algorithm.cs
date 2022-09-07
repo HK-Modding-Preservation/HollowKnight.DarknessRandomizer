@@ -205,7 +205,7 @@ namespace DarknessRandomizer.Lib
             {
                 var cluster = e.Key;
                 var darkness = e.Value;
-                foreach (var scene in ClusterData.Get(cluster).SceneNames)
+                foreach (var scene in ClusterData.Get(cluster).SceneNames.Keys)
                 {
                     darknessOverrides[scene] = Data.SceneData.Get(scene).ClampDarkness(darkness);
                 }

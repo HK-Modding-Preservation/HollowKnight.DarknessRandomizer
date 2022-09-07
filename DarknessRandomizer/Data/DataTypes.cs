@@ -34,6 +34,9 @@ namespace DarknessRandomizer.Data
 
     public class ClusterData : BaseClusterData<SceneName, ClusterName>
     {
+        [JsonConverter(typeof(TypedIdDictionaryConverter<SceneName, string, AliasDict>))]
+        public class AliasDict : SceneDictionary<string> { }
+
         [JsonConverter(typeof(TypedIdDictionaryConverter<ClusterName, ClusterData, CDDict>))]
         public class CDDict : ClusterDictionary<ClusterData> { }
 
@@ -43,19 +46,21 @@ namespace DarknessRandomizer.Data
         private static readonly CDDict data = JsonUtil.DeserializeEmbedded<CDDict>(
                 "DarknessRandomizer.Resources.Data.cluster_data.json");
 
+        public AliasDict SceneNames = new();
+
         public RDDict AdjacentClusters = new();
 
         public static ClusterData Get(ClusterName clusterName) => data[clusterName];
 
         public static ClusterData Get(SceneName sceneName) => data[SceneData.Get(sceneName).Cluster];
 
-        protected override IEnumerable<KeyValuePair<ClusterName, RelativeDarkness>> AdjacentDarkness() => AdjacentClusters.Enumerate();
+        protected override IEnumerable<SceneName> EnumerateSceneNames() => SceneNames.Keys;
 
-        protected override RelativeDarkness GetAdjacentDarkness(ClusterName cluster) => AdjacentClusters[cluster];
+        protected override IEnumerable<KeyValuePair<ClusterName, RelativeDarkness>> EnumerateRelativeDarkness() => AdjacentClusters.Enumerate();
 
-        public bool IsInWhitePalace => SceneNames.Any(s => SceneMetadata.Get(s).MapArea == "White Palace");
+        public bool IsInWhitePalace => EnumerateSceneNames().Any(s => SceneMetadata.Get(s).MapArea == "White Palace");
 
-        public bool IsInPathOfPain => SceneNames.Any(s => SceneMetadata.Get(s).Alias.StartsWith("POP_"));
+        public bool IsInPathOfPain => EnumerateSceneNames().Any(s => SceneMetadata.Get(s).Alias.StartsWith("POP_"));
 
         public static void Load() { DarknessRandomizer.Log("Loaded ClusterData"); }
 

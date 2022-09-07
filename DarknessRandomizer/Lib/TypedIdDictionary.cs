@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DarknessRandomizer.Lib
 {
@@ -63,6 +64,8 @@ namespace DarknessRandomizer.Lib
         public bool TryGetValue(K id, out V value) => dict.TryGetValue(id, out value);
 
         public void Clear() => dict.Clear();
+
+        public IEnumerable<K> Keys => Enumerate().Select(e => e.Key);
 
         public IEnumerable<KeyValuePair<K, V>> Enumerate()
         {

@@ -1,16 +1,12 @@
 {
   "AbyssBirthplace": {
+    "SceneNames": {
+      "Abyss_15": "Abyss_Birthplace",
+      "Dream_Abyss": "Dream_Abyss"
+    },
     "AdjacentClusters": {
       "AbyssCore": "Brighter"
     },
-    "SceneAliases": [
-      "Abyss_Birthplace",
-      "Dream_Abyss"
-    ],
-    "SceneNames": [
-      "Abyss_15",
-      "Dream_Abyss"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -19,6 +15,9 @@
     }
   },
   "AbyssCore": {
+    "SceneNames": {
+      "Abyss_06_Core": "Abyss_Core"
+    },
     "AdjacentClusters": {
       "AbyssBirthplace": "Darker",
       "AbyssLifebloodCore": "Any",
@@ -26,12 +25,6 @@
       "AbyssShriekWing": "Brighter",
       "BasinFountain": "Any"
     },
-    "SceneAliases": [
-      "Abyss_Core"
-    ],
-    "SceneNames": [
-      "Abyss_06_Core"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -40,15 +33,12 @@
     }
   },
   "AbyssLifebloodCore": {
+    "SceneNames": {
+      "Abyss_08": "Abyss_Lifeblood_Core"
+    },
     "AdjacentClusters": {
       "AbyssCore": "Any"
     },
-    "SceneAliases": [
-      "Abyss_Lifeblood_Core"
-    ],
-    "SceneNames": [
-      "Abyss_08"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -57,21 +47,15 @@
     }
   },
   "AbyssShadeCloakWing": {
+    "SceneNames": {
+      "Abyss_09": "Abyss_Lighthouse_Climb",
+      "Abyss_10": "Abyss_Shade_Cloak",
+      "Abyss_16": "Abyss_Corridor_to_Lighthouse",
+      "Abyss_Lighthouse_room": "Abyss_Lighthouse"
+    },
     "AdjacentClusters": {
       "AbyssCore": "Brighter"
     },
-    "SceneAliases": [
-      "Abyss_Corridor_to_Lighthouse",
-      "Abyss_Lighthouse",
-      "Abyss_Lighthouse_Climb",
-      "Abyss_Shade_Cloak"
-    ],
-    "SceneNames": [
-      "Abyss_09",
-      "Abyss_10",
-      "Abyss_16",
-      "Abyss_Lighthouse_room"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -80,36 +64,27 @@
     }
   },
   "AbyssShriekWing": {
+    "SceneNames": {
+      "Abyss_12": "Abyss_Shriek"
+    },
     "AdjacentClusters": {
       "AbyssCore": "Darker"
     },
-    "SceneAliases": [
-      "Abyss_Shriek"
-    ],
-    "SceneNames": [
-      "Abyss_12"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "BasinBrokenVesselWing": {
+    "SceneNames": {
+      "Abyss_18": "Basin_Corridor_to_Broken_Vessel",
+      "Abyss_19": "Basin_Broken_Vessel_Grub",
+      "Abyss_20": "Basin_Simple_Key",
+      "Abyss_21": "Basin_Monarch_Wings"
+    },
     "AdjacentClusters": {
       "BasinFountain": "Brighter",
       "BasinLostKin": "Brighter"
     },
-    "SceneAliases": [
-      "Basin_Broken_Vessel_Grub",
-      "Basin_Corridor_to_Broken_Vessel",
-      "Basin_Monarch_Wings",
-      "Basin_Simple_Key"
-    ],
-    "SceneNames": [
-      "Abyss_18",
-      "Abyss_19",
-      "Abyss_20",
-      "Abyss_21"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -118,15 +93,12 @@
     }
   },
   "BasinCloth": {
+    "SceneNames": {
+      "Abyss_17": "Basin_Cloth"
+    },
     "AdjacentClusters": {
       "CityBridgeToBasin": "Darker"
     },
-    "SceneAliases": [
-      "Basin_Cloth"
-    ],
-    "SceneNames": [
-      "Abyss_17"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -135,18 +107,15 @@
     }
   },
   "BasinFountain": {
+    "SceneNames": {
+      "Abyss_04": "Basin_Fountain"
+    },
     "AdjacentClusters": {
       "AbyssCore": "Any",
       "BasinBrokenVesselWing": "Darker",
       "BasinPalaceWing": "Brighter",
       "CityBridgeToBasin": "Any"
     },
-    "SceneAliases": [
-      "Basin_Fountain"
-    ],
-    "SceneNames": [
-      "Abyss_04"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -155,15 +124,12 @@
     }
   },
   "BasinLostKin": {
+    "SceneNames": {
+      "Dream_03_Infected_Knight": "Dream_Lost_Kin"
+    },
     "AdjacentClusters": {
       "BasinBrokenVesselWing": "Darker"
     },
-    "SceneAliases": [
-      "Dream_Lost_Kin"
-    ],
-    "SceneNames": [
-      "Dream_03_Infected_Knight"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
@@ -172,32 +138,25 @@
     }
   },
   "BasinPalaceWing": {
+    "SceneNames": {
+      "Abyss_05": "Basin_Palace_Grounds",
+      "Abyss_22": "Basin_Hidden_Station"
+    },
     "AdjacentClusters": {
       "BasinFountain": "Darker"
     },
-    "SceneAliases": [
-      "Basin_Hidden_Station",
-      "Basin_Palace_Grounds"
-    ],
-    "SceneNames": [
-      "Abyss_05",
-      "Abyss_22"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "BlackEggKnight": {
+    "SceneNames": {
+      "Room_Final_Boss_Core": "Egg_Hollow_Knight"
+    },
     "AdjacentClusters": {
       "BlackEggRadiance": "Brighter",
       "BlackEggTemple": "Brighter"
     },
-    "SceneAliases": [
-      "Egg_Hollow_Knight"
-    ],
-    "SceneNames": [
-      "Room_Final_Boss_Core"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
@@ -206,15 +165,12 @@
     }
   },
   "BlackEggRadiance": {
+    "SceneNames": {
+      "Dream_Final": "Egg_Radiance"
+    },
     "AdjacentClusters": {
       "BlackEggKnight": "Darker"
     },
-    "SceneAliases": [
-      "Egg_Radiance"
-    ],
-    "SceneNames": [
-      "Dream_Final"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
@@ -223,36 +179,28 @@
     }
   },
   "BlackEggTemple": {
+    "SceneNames": {
+      "Room_Final_Boss_Atrium": "Egg_Bench",
+      "Room_temple": "Black_Egg_Temple"
+    },
     "AdjacentClusters": {
       "BlackEggKnight": "Darker",
       "CrossroadsOutsideBlackEgg": "Disconnected"
     },
-    "SceneAliases": [
-      "Black_Egg_Temple",
-      "Egg_Bench"
-    ],
-    "SceneNames": [
-      "Room_Final_Boss_Atrium",
-      "Room_temple"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "BlueLake": {
+    "SceneNames": {
+      "Crossroads_50": "Grounds_Blue_Lake",
+      "RestingGrounds_06": "Grounds_Corridor_Below_Xero"
+    },
     "AdjacentClusters": {
       "CrossroadsShops": "Any",
       "EastCityElevator": "Brighter",
       "GroundsXero": "Darker"
     },
-    "SceneAliases": [
-      "Grounds_Blue_Lake",
-      "Grounds_Corridor_Below_Xero"
-    ],
-    "SceneNames": [
-      "Crossroads_50",
-      "RestingGrounds_06"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -261,6 +209,10 @@
     }
   },
   "CityAboveLemm": {
+    "SceneNames": {
+      "Ruins1_05": "City_Grub_Above_Lemm",
+      "Ruins1_05c": "City_Egg_Above_Lemm"
+    },
     "AdjacentClusters": {
       "CityEastEntrance": "Any",
       "CityLemm": "Brighter",
@@ -268,14 +220,6 @@
       "CitySanctumEast": "Any",
       "CityTollBench": "Brighter"
     },
-    "SceneAliases": [
-      "City_Egg_Above_Lemm",
-      "City_Grub_Above_Lemm"
-    ],
-    "SceneNames": [
-      "Ruins1_05",
-      "Ruins1_05c"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -284,6 +228,11 @@
     }
   },
   "CityBridgeToBasin": {
+    "SceneNames": {
+      "Abyss_01": "City_Broken_Elevator",
+      "Abyss_02": "Basin_Broken_Bridge",
+      "Abyss_03": "Basin_Tram"
+    },
     "AdjacentClusters": {
       "BasinCloth": "Brighter",
       "BasinFountain": "Any",
@@ -292,16 +241,6 @@
       "WaterwaysIsmasGrove": "Disconnected",
       "WaterwaysMain": "Disconnected"
     },
-    "SceneAliases": [
-      "Basin_Broken_Bridge",
-      "Basin_Tram",
-      "City_Broken_Elevator"
-    ],
-    "SceneNames": [
-      "Abyss_01",
-      "Abyss_02",
-      "Abyss_03"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -310,15 +249,12 @@
     }
   },
   "CityCollector": {
+    "SceneNames": {
+      "Ruins2_11": "City_Collector_Arena"
+    },
     "AdjacentClusters": {
       "CityTowerOfLove": "Brighter"
     },
-    "SceneAliases": [
-      "City_Collector_Arena"
-    ],
-    "SceneNames": [
-      "Ruins2_11"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
@@ -327,6 +263,12 @@
     }
   },
   "CityEastEntrance": {
+    "SceneNames": {
+      "Ruins1_01": "City_Pilgrim's_Entrance",
+      "Ruins1_02": "City_Quirrel_Bench",
+      "Ruins1_03": "City_Rafters",
+      "Ruins1_04": "City_Outside_Nailsmith"
+    },
     "AdjacentClusters": {
       "CityAboveLemm": "Any",
       "CityLemm": "Brighter",
@@ -334,18 +276,6 @@
       "FungalPilgrimsWay": "Any",
       "WaterwaysFlukeHermit": "Disconnected"
     },
-    "SceneAliases": [
-      "City_Outside_Nailsmith",
-      "City_Pilgrim's_Entrance",
-      "City_Quirrel_Bench",
-      "City_Rafters"
-    ],
-    "SceneNames": [
-      "Ruins1_01",
-      "Ruins1_02",
-      "Ruins1_03",
-      "Ruins1_04"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -354,17 +284,14 @@
     }
   },
   "CityEdgeBridge": {
+    "SceneNames": {
+      "Ruins2_07": "City_Grub_Below_King's"
+    },
     "AdjacentClusters": {
       "CityKingsStation": "Any",
       "CityTowerOfLove": "Brighter",
       "EdgeTallRooms": "Darker"
     },
-    "SceneAliases": [
-      "City_Grub_Below_King's"
-    ],
-    "SceneNames": [
-      "Ruins2_07"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -373,45 +300,36 @@
     }
   },
   "CityEmilitia": {
+    "SceneNames": {
+      "Ruins_House_03": "City_Emilitia"
+    },
     "AdjacentClusters": {
       "CityRightHub": "Darker",
       "WaterwaysIsmasGrove": "Darker"
     },
-    "SceneAliases": [
-      "City_Emilitia"
-    ],
-    "SceneNames": [
-      "Ruins_House_03"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CityFountain": {
+    "SceneNames": {
+      "Ruins1_27": "City_Hollow_Knight_Fountain"
+    },
     "AdjacentClusters": {
       "CityLemm": "Any",
       "CitySpireLower": "Darker"
     },
-    "SceneAliases": [
-      "City_Hollow_Knight_Fountain"
-    ],
-    "SceneNames": [
-      "Ruins1_27"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CityKingsArena": {
+    "SceneNames": {
+      "Ruins2_09": "City_King's_Vessel_Fragment"
+    },
     "AdjacentClusters": {
       "CityKingsStation": "Brighter"
     },
-    "SceneAliases": [
-      "City_King's_Vessel_Fragment"
-    ],
-    "SceneNames": [
-      "Ruins2_09"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -420,22 +338,17 @@
     }
   },
   "CityKingsStation": {
+    "SceneNames": {
+      "Ruins2_05": "City_Above_King's",
+      "Ruins2_06": "City_King's_Station",
+      "Ruins2_08": "City_King's_Stag"
+    },
     "AdjacentClusters": {
       "CityEdgeBridge": "Any",
       "CityKingsArena": "Darker",
       "CityRightHub": "Any",
       "EastCityElevator": "Brighter"
     },
-    "SceneAliases": [
-      "City_Above_King's",
-      "City_King's_Stag",
-      "City_King's_Station"
-    ],
-    "SceneNames": [
-      "Ruins2_05",
-      "Ruins2_06",
-      "Ruins2_08"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -444,69 +357,59 @@
     }
   },
   "CityLemm": {
+    "SceneNames": {
+      "Ruins1_05b": "City_Lemm"
+    },
     "AdjacentClusters": {
       "CityAboveLemm": "Darker",
       "CityEastEntrance": "Darker",
       "CityFountain": "Any",
       "WaterwaysMain": "Darker"
     },
-    "SceneAliases": [
-      "City_Lemm"
-    ],
-    "SceneNames": [
-      "Ruins1_05b"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CityLowerSpire": {
+    "SceneNames": {
+      "Ruins1_18": "City_Corridor_to_Spire"
+    },
     "AdjacentClusters": {
       "CityAboveLemm": "Darker",
       "CitySpireLower": "Darker"
     },
-    "SceneAliases": [
-      "City_Corridor_to_Spire"
-    ],
-    "SceneNames": [
-      "Ruins1_18"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CityLurien": {
+    "SceneNames": {
+      "Ruins2_Watcher_Room": "City_Lurien_Elevator"
+    },
     "AdjacentClusters": {
       "CityWatcherKnights": "Darker"
     },
-    "SceneAliases": [
-      "City_Lurien_Elevator"
-    ],
-    "SceneNames": [
-      "Ruins2_Watcher_Room"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CityPleasureHouse": {
+    "SceneNames": {
+      "Ruins_Bathhouse": "City_Pleasure_House_Bench",
+      "Ruins_Elevator": "City_Pleasure_House_Elevator"
+    },
     "AdjacentClusters": {
       "CityRightHub": "Darker",
       "EastCityElevator": "Any"
     },
-    "SceneAliases": [
-      "City_Pleasure_House_Bench",
-      "City_Pleasure_House_Elevator"
-    ],
-    "SceneNames": [
-      "Ruins_Bathhouse",
-      "Ruins_Elevator"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CityRightHub": {
+    "SceneNames": {
+      "Ruins2_04": "City_Right_Hub"
+    },
     "AdjacentClusters": {
       "CityBridgeToBasin": "Any",
       "CityEmilitia": "Brighter",
@@ -515,12 +418,6 @@
       "CityRightHubRooms": "Darker",
       "CitySpireLower": "Any"
     },
-    "SceneAliases": [
-      "City_Right_Hub"
-    ],
-    "SceneNames": [
-      "Ruins2_04"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -529,17 +426,13 @@
     }
   },
   "CityRightHubRooms": {
+    "SceneNames": {
+      "Ruins_House_01": "City_Guarded_Grub",
+      "Ruins_House_02": "City_Gorgeous_Husk"
+    },
     "AdjacentClusters": {
       "CityRightHub": "Brighter"
     },
-    "SceneAliases": [
-      "City_Gorgeous_Husk",
-      "City_Guarded_Grub"
-    ],
-    "SceneNames": [
-      "Ruins_House_01",
-      "Ruins_House_02"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -548,21 +441,16 @@
     }
   },
   "CitySanctumEast": {
+    "SceneNames": {
+      "Ruins1_09": "City_Soul_Twister_Arena",
+      "Ruins1_23": "City_Sanctum_Entrance",
+      "Ruins1_25": "City_Sanctum_East_Elevators"
+    },
     "AdjacentClusters": {
       "CityAboveLemm": "Any",
       "CitySanctumMiddle": "Brighter",
       "CityTollBench": "Brighter"
     },
-    "SceneAliases": [
-      "City_Sanctum_East_Elevators",
-      "City_Sanctum_Entrance",
-      "City_Soul_Twister_Arena"
-    ],
-    "SceneNames": [
-      "Ruins1_09",
-      "Ruins1_23",
-      "Ruins1_25"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -571,16 +459,13 @@
     }
   },
   "CitySanctumMiddle": {
+    "SceneNames": {
+      "Ruins1_30": "City_Sanctum_Spell_Twister"
+    },
     "AdjacentClusters": {
       "CitySanctumEast": "Darker",
       "CitySanctumWest": "Darker"
     },
-    "SceneAliases": [
-      "City_Sanctum_Spell_Twister"
-    ],
-    "SceneNames": [
-      "Ruins1_30"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -589,15 +474,12 @@
     }
   },
   "CitySanctumSoulTyrant": {
+    "SceneNames": {
+      "Dream_02_Mage_Lord": "Dream_Soul_Tyrant"
+    },
     "AdjacentClusters": {
       "CitySanctumWest": "Darker"
     },
-    "SceneAliases": [
-      "Dream_Soul_Tyrant"
-    ],
-    "SceneNames": [
-      "Dream_02_Mage_Lord"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
@@ -606,18 +488,14 @@
     }
   },
   "CitySanctumWest": {
+    "SceneNames": {
+      "Ruins1_24": "City_Soul_Master_Arena",
+      "Ruins1_32": "City_Soul_Master_Rewards"
+    },
     "AdjacentClusters": {
       "CitySanctumMiddle": "Brighter",
       "CitySanctumSoulTyrant": "Brighter"
     },
-    "SceneAliases": [
-      "City_Soul_Master_Arena",
-      "City_Soul_Master_Rewards"
-    ],
-    "SceneNames": [
-      "Ruins1_24",
-      "Ruins1_32"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -626,15 +504,12 @@
     }
   },
   "CityShadeSoul": {
+    "SceneNames": {
+      "Ruins1_31b": "City_Shade_Soul_Arena"
+    },
     "AdjacentClusters": {
       "CityTollBench": "Brighter"
     },
-    "SceneAliases": [
-      "City_Shade_Soul_Arena"
-    ],
-    "SceneNames": [
-      "Ruins1_31b"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -643,22 +518,17 @@
     }
   },
   "CitySpireLower": {
+    "SceneNames": {
+      "Ruins2_01": "City_Spire_Great_Husk",
+      "Ruins2_01_b": "City_Spire_Base",
+      "Ruins2_03b": "City_Spire_Below_Watchers"
+    },
     "AdjacentClusters": {
       "CityFountain": "Brighter",
       "CityLowerSpire": "Brighter",
       "CityRightHub": "Any",
       "CityWatcherKnights": "Darker"
     },
-    "SceneAliases": [
-      "City_Spire_Base",
-      "City_Spire_Below_Watchers",
-      "City_Spire_Great_Husk"
-    ],
-    "SceneNames": [
-      "Ruins2_01",
-      "Ruins2_01_b",
-      "Ruins2_03b"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -667,22 +537,17 @@
     }
   },
   "CityStorerooms": {
+    "SceneNames": {
+      "Ruins1_06": "City_Corridor_to_Storerooms",
+      "Ruins1_17": "City_Whispering_Root",
+      "Ruins1_28": "City_Storerooms"
+    },
     "AdjacentClusters": {
       "CityEastEntrance": "Brighter",
       "CityStoreroomsStag": "Brighter",
       "CityTollBench": "Brighter",
       "WestCityElevator": "Brighter"
     },
-    "SceneAliases": [
-      "City_Corridor_to_Storerooms",
-      "City_Storerooms",
-      "City_Whispering_Root"
-    ],
-    "SceneNames": [
-      "Ruins1_06",
-      "Ruins1_17",
-      "Ruins1_28"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -691,32 +556,26 @@
     }
   },
   "CityStoreroomsStag": {
+    "SceneNames": {
+      "Ruins1_29": "City_Storerooms_Stag"
+    },
     "AdjacentClusters": {
       "CityStorerooms": "Darker"
     },
-    "SceneAliases": [
-      "City_Storerooms_Stag"
-    ],
-    "SceneNames": [
-      "Ruins1_29"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CityTollBench": {
+    "SceneNames": {
+      "Ruins1_31": "City_Toll_Bench"
+    },
     "AdjacentClusters": {
       "CityAboveLemm": "Darker",
       "CitySanctumEast": "Darker",
       "CityShadeSoul": "Darker",
       "CityStorerooms": "Darker"
     },
-    "SceneAliases": [
-      "City_Toll_Bench"
-    ],
-    "SceneNames": [
-      "Ruins1_31"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -725,32 +584,26 @@
     }
   },
   "CityTowerOfLove": {
+    "SceneNames": {
+      "Ruins2_11_b": "City_Tower_of_Love"
+    },
     "AdjacentClusters": {
       "CityCollector": "Darker",
       "CityEdgeBridge": "Darker",
       "EdgeTallRooms": "Darker"
     },
-    "SceneAliases": [
-      "City_Tower_of_Love"
-    ],
-    "SceneNames": [
-      "Ruins2_11_b"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CityWatcherKnights": {
+    "SceneNames": {
+      "Ruins2_03": "City_Spire_Watchers"
+    },
     "AdjacentClusters": {
       "CityLurien": "Brighter",
       "CitySpireLower": "Brighter"
     },
-    "SceneAliases": [
-      "City_Spire_Watchers"
-    ],
-    "SceneNames": [
-      "Ruins2_03"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -759,16 +612,13 @@
     }
   },
   "CliffsBaldurShell": {
+    "SceneNames": {
+      "Fungus1_28": "Cliffs_Baldur's_Shell"
+    },
     "AdjacentClusters": {
       "CliffsMain": "Any",
       "GreenpathUpperWest": "Any"
     },
-    "SceneAliases": [
-      "Cliffs_Baldur's_Shell"
-    ],
-    "SceneNames": [
-      "Fungus1_28"
-    ],
     "OverrideCannotBeDarknessSource": true,
     "CursedOnly": false,
     "DarkSettings": {
@@ -777,15 +627,12 @@
     }
   },
   "CliffsJonis": {
+    "SceneNames": {
+      "Cliffs_04": "Cliffs_Joni's_Dark"
+    },
     "AdjacentClusters": {
       "CliffsMain": "Any"
     },
-    "SceneAliases": [
-      "Cliffs_Joni's_Dark"
-    ],
-    "SceneNames": [
-      "Cliffs_04"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -794,26 +641,19 @@
     }
   },
   "CliffsMain": {
+    "SceneNames": {
+      "Cliffs_01": "Cliffs_Main",
+      "Cliffs_02": "Cliffs_Gorb",
+      "Cliffs_03": "Cliffs_Stag_Nest",
+      "Cliffs_05": "Cliffs_Joni's_Pickup",
+      "Cliffs_06": "Cliffs_Grimm_Lantern"
+    },
     "AdjacentClusters": {
       "CliffsBaldurShell": "Any",
       "CliffsJonis": "Any",
       "CliffsMato": "Brighter",
       "KingsPass": "Brighter"
     },
-    "SceneAliases": [
-      "Cliffs_Gorb",
-      "Cliffs_Grimm_Lantern",
-      "Cliffs_Joni's_Pickup",
-      "Cliffs_Main",
-      "Cliffs_Stag_Nest"
-    ],
-    "SceneNames": [
-      "Cliffs_01",
-      "Cliffs_02",
-      "Cliffs_03",
-      "Cliffs_05",
-      "Cliffs_06"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -822,29 +662,23 @@
     }
   },
   "CliffsMato": {
+    "SceneNames": {
+      "Room_nailmaster": "Cliffs_Mato"
+    },
     "AdjacentClusters": {
       "CliffsMain": "Darker"
     },
-    "SceneAliases": [
-      "Cliffs_Mato"
-    ],
-    "SceneNames": [
-      "Room_nailmaster"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CrossroadsAncestralMound": {
+    "SceneNames": {
+      "Crossroads_ShamanTemple": "Crossroads_Ancestral_Mound"
+    },
     "AdjacentClusters": {
       "CrossroadsOutsideMound": "Brighter"
     },
-    "SceneAliases": [
-      "Crossroads_Ancestral_Mound"
-    ],
-    "SceneNames": [
-      "Crossroads_ShamanTemple"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -853,18 +687,14 @@
     }
   },
   "CrossroadsCanyonBridge": {
+    "SceneNames": {
+      "Crossroads_12": "Crossroads_Corridor_to_Acid_Grub",
+      "Crossroads_35": "Crossroads_Acid_Grub"
+    },
     "AdjacentClusters": {
       "CrossroadsWest": "Brighter",
       "FogCanyonEast": "Brighter"
     },
-    "SceneAliases": [
-      "Crossroads_Acid_Grub",
-      "Crossroads_Corridor_to_Acid_Grub"
-    ],
-    "SceneNames": [
-      "Crossroads_12",
-      "Crossroads_35"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -873,21 +703,16 @@
     }
   },
   "CrossroadsCentralPass": {
+    "SceneNames": {
+      "Crossroads_05": "Crossroads_Central_Grub",
+      "Crossroads_16": "Crossroads_Above_Lever",
+      "Crossroads_40": "Crossroads_Corridor_Right_of_Central_Grub"
+    },
     "AdjacentClusters": {
       "CrossroadsPeaksBridge": "Any",
       "CrossroadsStagHub": "Brighter",
       "CrossroadsWest": "Brighter"
     },
-    "SceneAliases": [
-      "Crossroads_Above_Lever",
-      "Crossroads_Central_Grub",
-      "Crossroads_Corridor_Right_of_Central_Grub"
-    ],
-    "SceneNames": [
-      "Crossroads_05",
-      "Crossroads_16",
-      "Crossroads_40"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -896,31 +721,25 @@
     }
   },
   "CrossroadsElevatorApproach": {
+    "SceneNames": {
+      "Crossroads_43": "Crossroads_Corridor_to_Elevator"
+    },
     "AdjacentClusters": {
       "CrossroadsStagHub": "Darker",
       "WestCityElevator": "Any"
     },
-    "SceneAliases": [
-      "Crossroads_Corridor_to_Elevator"
-    ],
-    "SceneNames": [
-      "Crossroads_43"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CrossroadsEntrance": {
+    "SceneNames": {
+      "Crossroads_01": "Crossroads_Well"
+    },
     "AdjacentClusters": {
       "CrossroadsOutsideBlackEgg": "Brighter",
       "CrossroadsWest": "Any"
     },
-    "SceneAliases": [
-      "Crossroads_Well"
-    ],
-    "SceneNames": [
-      "Crossroads_01"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -929,15 +748,12 @@
     }
   },
   "CrossroadsFailedChampion": {
+    "SceneNames": {
+      "Dream_01_False_Knight": "Dream_Failed_Champion"
+    },
     "AdjacentClusters": {
       "CrossroadsFalseKnight": "Darker"
     },
-    "SceneAliases": [
-      "Dream_Failed_Champion"
-    ],
-    "SceneNames": [
-      "Dream_01_False_Knight"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
@@ -946,17 +762,14 @@
     }
   },
   "CrossroadsFalseKnight": {
+    "SceneNames": {
+      "Crossroads_10": "Crossroads_False_Knight_Arena"
+    },
     "AdjacentClusters": {
       "CrossroadsFailedChampion": "Brighter",
       "CrossroadsOutsideMound": "Brighter",
       "CrossroadsStagHub": "Brighter"
     },
-    "SceneAliases": [
-      "Crossroads_False_Knight_Arena"
-    ],
-    "SceneNames": [
-      "Crossroads_10"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -965,31 +778,25 @@
     }
   },
   "CrossroadsFungalBridge": {
+    "SceneNames": {
+      "Crossroads_18": "Crossroads_Fungal_Entrance"
+    },
     "AdjacentClusters": {
       "CrossroadsGoamJournal": "Any",
       "CrossroadsWest": "Darker",
       "FungalUpper": "Darker"
     },
-    "SceneAliases": [
-      "Crossroads_Fungal_Entrance"
-    ],
-    "SceneNames": [
-      "Crossroads_18"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CrossroadsGlowingWomb": {
+    "SceneNames": {
+      "Crossroads_22": "Crossroads_Glowing_Womb_Arena"
+    },
     "AdjacentClusters": {
       "CrossroadsStagHub": "Brighter"
     },
-    "SceneAliases": [
-      "Crossroads_Glowing_Womb_Arena"
-    ],
-    "SceneNames": [
-      "Crossroads_22"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -998,30 +805,24 @@
     }
   },
   "CrossroadsGoamJournal": {
+    "SceneNames": {
+      "Crossroads_52": "Crossroads_Goam_Journal"
+    },
     "AdjacentClusters": {
       "CrossroadsFungalBridge": "Any"
     },
-    "SceneAliases": [
-      "Crossroads_Goam_Journal"
-    ],
-    "SceneNames": [
-      "Crossroads_52"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CrossroadsGreenpathBridge": {
+    "SceneNames": {
+      "Crossroads_11_alt": "Crossroads_Greenpath_Entrance"
+    },
     "AdjacentClusters": {
       "CrossroadsWest": "Brighter",
       "GreenpathUpperEast": "Any"
     },
-    "SceneAliases": [
-      "Crossroads_Greenpath_Entrance"
-    ],
-    "SceneNames": [
-      "Crossroads_11_alt"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1030,32 +831,25 @@
     }
   },
   "CrossroadsHotSprings": {
+    "SceneNames": {
+      "Crossroads_30": "Crossroads_Hot_Spring"
+    },
     "AdjacentClusters": {
       "CrossroadsWest": "Darker"
     },
-    "SceneAliases": [
-      "Crossroads_Hot_Spring"
-    ],
-    "SceneNames": [
-      "Crossroads_30"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CrossroadsLowerPass": {
+    "SceneNames": {
+      "Crossroads_13": "Crossroads_Goam_Mask_Shard",
+      "Crossroads_42": "Crossroads_Right_Of_Mask_Shard"
+    },
     "AdjacentClusters": {
       "CrossroadsStagHub": "Any",
       "CrossroadsWest": "Brighter"
     },
-    "SceneAliases": [
-      "Crossroads_Goam_Mask_Shard",
-      "Crossroads_Right_Of_Mask_Shard"
-    ],
-    "SceneNames": [
-      "Crossroads_13",
-      "Crossroads_42"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1064,16 +858,13 @@
     }
   },
   "CrossroadsMawlek": {
+    "SceneNames": {
+      "Crossroads_09": "Crossroads_Mawlek_Boss"
+    },
     "AdjacentClusters": {
       "CrossroadsMawlekApproach": "Brighter",
       "CrossroadsWest": "Any"
     },
-    "SceneAliases": [
-      "Crossroads_Mawlek_Boss"
-    ],
-    "SceneNames": [
-      "Crossroads_09"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1082,18 +873,14 @@
     }
   },
   "CrossroadsMawlekApproach": {
+    "SceneNames": {
+      "Crossroads_25": "Crossroads_Mawlek_Entrance",
+      "Crossroads_36": "Crossroads_Mawlek_Middle"
+    },
     "AdjacentClusters": {
       "CrossroadsMawlek": "Darker",
       "CrossroadsWest": "Any"
     },
-    "SceneAliases": [
-      "Crossroads_Mawlek_Entrance",
-      "Crossroads_Mawlek_Middle"
-    ],
-    "SceneNames": [
-      "Crossroads_25",
-      "Crossroads_36"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1102,57 +889,44 @@
     }
   },
   "CrossroadsOutsideBlackEgg": {
+    "SceneNames": {
+      "Crossroads_02": "Crossroads_Outside_Temple"
+    },
     "AdjacentClusters": {
       "BlackEggTemple": "Disconnected",
       "CrossroadsEntrance": "Darker",
       "CrossroadsPeaksBridge": "Darker"
     },
-    "SceneAliases": [
-      "Crossroads_Outside_Temple"
-    ],
-    "SceneNames": [
-      "Crossroads_02"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CrossroadsOutsideMound": {
+    "SceneNames": {
+      "Crossroads_06": "Crossroads_Outside_Mound"
+    },
     "AdjacentClusters": {
       "CrossroadsAncestralMound": "Darker",
       "CrossroadsFalseKnight": "Darker",
       "CrossroadsWest": "Darker"
     },
-    "SceneAliases": [
-      "Crossroads_Outside_Mound"
-    ],
-    "SceneNames": [
-      "Crossroads_06"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CrossroadsPeaksBridge": {
+    "SceneNames": {
+      "Crossroads_14": "Crossroads_Outside_Myla",
+      "Crossroads_39": "Crossroads_Corridor_Right_of_Temple",
+      "Crossroads_45": "Crossroads_Myla",
+      "Crossroads_48": "Crossroads_Guarded_Grub",
+      "Mines_01": "Crystal_Dive_Entrance"
+    },
     "AdjacentClusters": {
       "CrossroadsCentralPass": "Any",
       "CrossroadsOutsideBlackEgg": "Brighter",
       "CrystalPeaksLowerPass": "Any"
     },
-    "SceneAliases": [
-      "Crossroads_Corridor_Right_of_Temple",
-      "Crossroads_Guarded_Grub",
-      "Crossroads_Myla",
-      "Crossroads_Outside_Myla",
-      "Crystal_Dive_Entrance"
-    ],
-    "SceneNames": [
-      "Crossroads_14",
-      "Crossroads_39",
-      "Crossroads_45",
-      "Crossroads_48",
-      "Mines_01"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1161,17 +935,14 @@
     }
   },
   "CrossroadsShops": {
+    "SceneNames": {
+      "Crossroads_04": "Crossroads_Gruz_Mother"
+    },
     "AdjacentClusters": {
       "BlueLake": "Any",
       "CrossroadsSlyRescue": "Brighter",
       "CrossroadsStagHub": "Brighter"
     },
-    "SceneAliases": [
-      "Crossroads_Gruz_Mother"
-    ],
-    "SceneNames": [
-      "Crossroads_04"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1180,29 +951,23 @@
     }
   },
   "CrossroadsSlyRescue": {
+    "SceneNames": {
+      "Room_ruinhouse": "Crossroads_Rescue_Sly"
+    },
     "AdjacentClusters": {
       "CrossroadsShops": "Darker"
     },
-    "SceneAliases": [
-      "Crossroads_Rescue_Sly"
-    ],
-    "SceneNames": [
-      "Room_ruinhouse"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CrossroadsSpikeGrub": {
+    "SceneNames": {
+      "Crossroads_31": "Crossroads_Spike_Grub"
+    },
     "AdjacentClusters": {
       "CrossroadsStagHub": "Brighter"
     },
-    "SceneAliases": [
-      "Crossroads_Spike_Grub"
-    ],
-    "SceneNames": [
-      "Crossroads_31"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1211,20 +976,24 @@
     }
   },
   "CrossroadsStag": {
+    "SceneNames": {
+      "Crossroads_47": "Crossroads_Stag"
+    },
     "AdjacentClusters": {
       "CrossroadsStagHub": "Darker"
     },
-    "SceneAliases": [
-      "Crossroads_Stag"
-    ],
-    "SceneNames": [
-      "Crossroads_47"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CrossroadsStagHub": {
+    "SceneNames": {
+      "Crossroads_03": "Crossroads_Outside_Stag",
+      "Crossroads_15": "Crossroads_Corridor_to_Tram",
+      "Crossroads_19": "Crossroads_Before_Gruz_Mother",
+      "Crossroads_21": "Crossroads_Outside_False_Knight",
+      "Crossroads_27": "Crossroads_Outside_Tram"
+    },
     "AdjacentClusters": {
       "CrossroadsCentralPass": "Darker",
       "CrossroadsElevatorApproach": "Brighter",
@@ -1237,20 +1006,6 @@
       "CrossroadsTram": "Brighter",
       "CrystalPeaksToll": "Disconnected"
     },
-    "SceneAliases": [
-      "Crossroads_Before_Gruz_Mother",
-      "Crossroads_Corridor_to_Tram",
-      "Crossroads_Outside_False_Knight",
-      "Crossroads_Outside_Stag",
-      "Crossroads_Outside_Tram"
-    ],
-    "SceneNames": [
-      "Crossroads_03",
-      "Crossroads_15",
-      "Crossroads_19",
-      "Crossroads_21",
-      "Crossroads_27"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1259,29 +1014,23 @@
     }
   },
   "CrossroadsTram": {
+    "SceneNames": {
+      "Crossroads_46": "Crossroads_Tram"
+    },
     "AdjacentClusters": {
       "CrossroadsStagHub": "Darker"
     },
-    "SceneAliases": [
-      "Crossroads_Tram"
-    ],
-    "SceneNames": [
-      "Crossroads_46"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CrossroadsVesselFragment": {
+    "SceneNames": {
+      "Crossroads_37": "Crossroads_Vessel_Fragment"
+    },
     "AdjacentClusters": {
       "WestCityElevator": "Brighter"
     },
-    "SceneAliases": [
-      "Crossroads_Vessel_Fragment"
-    ],
-    "SceneNames": [
-      "Crossroads_37"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1290,6 +1039,11 @@
     }
   },
   "CrossroadsWest": {
+    "SceneNames": {
+      "Crossroads_07": "Crossroads_Gruzzer",
+      "Crossroads_08": "Crossroads_Aspid_Arena",
+      "Crossroads_33": "Crossroads_Cornifer"
+    },
     "AdjacentClusters": {
       "CrossroadsCanyonBridge": "Darker",
       "CrossroadsCentralPass": "Darker",
@@ -1302,16 +1056,6 @@
       "CrossroadsMawlekApproach": "Any",
       "CrossroadsOutsideMound": "Brighter"
     },
-    "SceneAliases": [
-      "Crossroads_Aspid_Arena",
-      "Crossroads_Cornifer",
-      "Crossroads_Gruzzer"
-    ],
-    "SceneNames": [
-      "Crossroads_07",
-      "Crossroads_08",
-      "Crossroads_33"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1320,18 +1064,14 @@
     }
   },
   "CrystalPeaksCrown": {
+    "SceneNames": {
+      "Mines_25": "Crystal_Crown_Climb",
+      "Mines_34": "Crystal_Crown_Peak"
+    },
     "AdjacentClusters": {
       "CrystalPeaksRoot": "Brighter",
       "CrystalPeaksUpper": "Disconnected"
     },
-    "SceneAliases": [
-      "Crystal_Crown_Climb",
-      "Crystal_Crown_Peak"
-    ],
-    "SceneNames": [
-      "Mines_25",
-      "Mines_34"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1340,15 +1080,12 @@
     }
   },
   "CrystalPeaksCrownGrub": {
+    "SceneNames": {
+      "Mines_24": "Crystal_Crown_Grub"
+    },
     "AdjacentClusters": {
       "CrystalPeaksRoot": "Brighter"
     },
-    "SceneAliases": [
-      "Crystal_Crown_Grub"
-    ],
-    "SceneNames": [
-      "Mines_24"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1357,16 +1094,13 @@
     }
   },
   "CrystalPeaksCrushersGrub": {
+    "SceneNames": {
+      "Mines_19": "Crystal_Grub_Crushers"
+    },
     "AdjacentClusters": {
       "CrystalPeaksTallHub": "Brighter",
       "CrystalPeaksWest": "Brighter"
     },
-    "SceneAliases": [
-      "Crystal_Grub_Crushers"
-    ],
-    "SceneNames": [
-      "Mines_19"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1375,15 +1109,12 @@
     }
   },
   "CrystalPeaksCrystalHeart": {
+    "SceneNames": {
+      "Mines_31": "Crystal_Crystal_Heart_Gauntlet"
+    },
     "AdjacentClusters": {
       "CrystalPeaksTallHub": "Brighter"
     },
-    "SceneAliases": [
-      "Crystal_Crystal_Heart_Gauntlet"
-    ],
-    "SceneNames": [
-      "Mines_31"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1392,15 +1123,12 @@
     }
   },
   "CrystalPeaksCrystallizedMound": {
+    "SceneNames": {
+      "Mines_35": "Crystal_Mound"
+    },
     "AdjacentClusters": {
       "CrystalPeaksOutsideMound": "Brighter"
     },
-    "SceneAliases": [
-      "Crystal_Mound"
-    ],
-    "SceneNames": [
-      "Mines_35"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1409,16 +1137,13 @@
     }
   },
   "CrystalPeaksDarkRoom": {
+    "SceneNames": {
+      "Mines_07": "Crystal_Dark_Room"
+    },
     "AdjacentClusters": {
       "CrystalPeaksLowerPass": "Disconnected",
       "CrystalPeaksOutsideMound": "Brighter"
     },
-    "SceneAliases": [
-      "Crystal_Dark_Room"
-    ],
-    "SceneNames": [
-      "Mines_07"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1427,17 +1152,13 @@
     }
   },
   "CrystalPeaksDeepFocus": {
+    "SceneNames": {
+      "Mines_06": "Crystal_Deep_Focus_Gauntlet",
+      "Mines_36": "Crystal_Deep_Focus"
+    },
     "AdjacentClusters": {
       "CrystalPeaksWest": "Brighter"
     },
-    "SceneAliases": [
-      "Crystal_Deep_Focus",
-      "Crystal_Deep_Focus_Gauntlet"
-    ],
-    "SceneNames": [
-      "Mines_06",
-      "Mines_36"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1446,18 +1167,14 @@
     }
   },
   "CrystalPeaksElevatorWing": {
+    "SceneNames": {
+      "Mines_10": "Crystal_Elevator_Entrance",
+      "Mines_30": "Crystal_Cornifer"
+    },
     "AdjacentClusters": {
       "CrystalPeaksMimic": "Darker",
       "CrystalPeaksWest": "Any"
     },
-    "SceneAliases": [
-      "Crystal_Cornifer",
-      "Crystal_Elevator_Entrance"
-    ],
-    "SceneNames": [
-      "Mines_10",
-      "Mines_30"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1466,15 +1183,12 @@
     }
   },
   "CrystalPeaksEnragedGuardian": {
+    "SceneNames": {
+      "Mines_32": "Crystal_Enraged_Guardian_Arena"
+    },
     "AdjacentClusters": {
       "CrystalPeaksGuardian": "Brighter"
     },
-    "SceneAliases": [
-      "Crystal_Enraged_Guardian_Arena"
-    ],
-    "SceneNames": [
-      "Mines_32"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1483,17 +1197,14 @@
     }
   },
   "CrystalPeaksGuardian": {
+    "SceneNames": {
+      "Mines_18": "Crystal_Guardian_Bench"
+    },
     "AdjacentClusters": {
       "CrystalPeaksEnragedGuardian": "Darker",
       "CrystalPeaksTallHub": "Any",
       "CrystalPeaksWest": "Any"
     },
-    "SceneAliases": [
-      "Crystal_Guardian_Bench"
-    ],
-    "SceneNames": [
-      "Mines_18"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1502,6 +1213,11 @@
     }
   },
   "CrystalPeaksLowerPass": {
+    "SceneNames": {
+      "Mines_02": "Crystal_Main_Entrance",
+      "Mines_04": "Crystal_Entrance_Conveyors",
+      "Mines_29": "Crystal_Dark_Bench"
+    },
     "AdjacentClusters": {
       "CrossroadsPeaksBridge": "Any",
       "CrystalPeaksDarkRoom": "Disconnected",
@@ -1510,16 +1226,6 @@
       "CrystalPeaksToll": "Disconnected",
       "CrystalPeaksWest": "Darker"
     },
-    "SceneAliases": [
-      "Crystal_Dark_Bench",
-      "Crystal_Entrance_Conveyors",
-      "Crystal_Main_Entrance"
-    ],
-    "SceneNames": [
-      "Mines_02",
-      "Mines_04",
-      "Mines_29"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1528,16 +1234,13 @@
     }
   },
   "CrystalPeaksMiddleBridge": {
+    "SceneNames": {
+      "Mines_17": "Crystal_Corridor_to_Spike_Grub"
+    },
     "AdjacentClusters": {
       "CrystalPeaksLowerPass": "Any",
       "CrystalPeaksWest": "Darker"
     },
-    "SceneAliases": [
-      "Crystal_Corridor_to_Spike_Grub"
-    ],
-    "SceneNames": [
-      "Mines_17"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1546,15 +1249,12 @@
     }
   },
   "CrystalPeaksMimic": {
+    "SceneNames": {
+      "Mines_16": "Crystal_Mimic"
+    },
     "AdjacentClusters": {
       "CrystalPeaksElevatorWing": "Brighter"
     },
-    "SceneAliases": [
-      "Crystal_Mimic"
-    ],
-    "SceneNames": [
-      "Mines_16"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1563,33 +1263,27 @@
     }
   },
   "CrystalPeaksOutsideMound": {
+    "SceneNames": {
+      "Mines_28": "Crystal_Outside_Mound"
+    },
     "AdjacentClusters": {
       "CrystalPeaksCrystallizedMound": "Darker",
       "CrystalPeaksDarkRoom": "Darker",
       "GroundsXero": "Darker"
     },
-    "SceneAliases": [
-      "Crystal_Outside_Mound"
-    ],
-    "SceneNames": [
-      "Mines_28"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CrystalPeaksRoot": {
+    "SceneNames": {
+      "Mines_23": "Crystal_Crown_Whispering_Root"
+    },
     "AdjacentClusters": {
       "CrystalPeaksCrown": "Darker",
       "CrystalPeaksCrownGrub": "Darker",
       "CrystalPeaksTallHub": "Any"
     },
-    "SceneAliases": [
-      "Crystal_Crown_Whispering_Root"
-    ],
-    "SceneNames": [
-      "Mines_23"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1598,6 +1292,10 @@
     }
   },
   "CrystalPeaksTallHub": {
+    "SceneNames": {
+      "Mines_20": "Crystal_East_Tall",
+      "Mines_37": "Crystal_Chest_Crushers"
+    },
     "AdjacentClusters": {
       "CrystalPeaksCrushersGrub": "Darker",
       "CrystalPeaksCrystalHeart": "Darker",
@@ -1606,14 +1304,6 @@
       "CrystalPeaksRoot": "Any",
       "CrystalPeaksUpper": "Brighter"
     },
-    "SceneAliases": [
-      "Crystal_Chest_Crushers",
-      "Crystal_East_Tall"
-    ],
-    "SceneNames": [
-      "Mines_20",
-      "Mines_37"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1622,16 +1312,13 @@
     }
   },
   "CrystalPeaksToll": {
+    "SceneNames": {
+      "Mines_33": "Crossroads_Peak_Dark_Toll"
+    },
     "AdjacentClusters": {
       "CrossroadsStagHub": "Disconnected",
       "CrystalPeaksLowerPass": "Disconnected"
     },
-    "SceneAliases": [
-      "Crossroads_Peak_Dark_Toll"
-    ],
-    "SceneNames": [
-      "Mines_33"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1640,22 +1327,24 @@
     }
   },
   "CrystalPeaksUpper": {
+    "SceneNames": {
+      "Mines_13": "Crystal_Top_Corridor"
+    },
     "AdjacentClusters": {
       "CrystalPeaksCrown": "Disconnected",
       "CrystalPeaksTallHub": "Darker",
       "CrystalPeaksWest": "Darker"
     },
-    "SceneAliases": [
-      "Crystal_Top_Corridor"
-    ],
-    "SceneNames": [
-      "Mines_13"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "CrystalPeaksWest": {
+    "SceneNames": {
+      "Mines_03": "Crystal_Spike_Grub",
+      "Mines_05": "Crystal_Above_Spike_Grub",
+      "Mines_11": "Crystal_Left_Of_Guardian"
+    },
     "AdjacentClusters": {
       "CrystalPeaksCrushersGrub": "Darker",
       "CrystalPeaksDeepFocus": "Darker",
@@ -1665,16 +1354,6 @@
       "CrystalPeaksMiddleBridge": "Brighter",
       "CrystalPeaksUpper": "Brighter"
     },
-    "SceneAliases": [
-      "Crystal_Above_Spike_Grub",
-      "Crystal_Left_Of_Guardian",
-      "Crystal_Spike_Grub"
-    ],
-    "SceneNames": [
-      "Mines_03",
-      "Mines_05",
-      "Mines_11"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1683,15 +1362,12 @@
     }
   },
   "DeepnestBeastsDen": {
+    "SceneNames": {
+      "Deepnest_Spider_Town": "Deepnest_Beast's_Den"
+    },
     "AdjacentClusters": {
       "DeepnestVillage": "Brighter"
     },
-    "SceneAliases": [
-      "Deepnest_Beast's_Den"
-    ],
-    "SceneNames": [
-      "Deepnest_Spider_Town"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1700,6 +1376,13 @@
     }
   },
   "DeepnestDark": {
+    "SceneNames": {
+      "Deepnest_34": "Deepnest_First_Devout",
+      "Deepnest_35": "Deepnest_Outside_Galien",
+      "Deepnest_39": "Deepnest_Whispering_Root",
+      "Deepnest_41": "Deepnest_Midwife",
+      "Deepnest_42": "Deepnest_Outside_Mask_Maker"
+    },
     "AdjacentClusters": {
       "DeepnestFailedTram": "Any",
       "DeepnestGalien": "Any",
@@ -1708,20 +1391,6 @@
       "DeepnestWeaversDen": "Any",
       "GardensDeepnestBridge": "Any"
     },
-    "SceneAliases": [
-      "Deepnest_First_Devout",
-      "Deepnest_Midwife",
-      "Deepnest_Outside_Galien",
-      "Deepnest_Outside_Mask_Maker",
-      "Deepnest_Whispering_Root"
-    ],
-    "SceneNames": [
-      "Deepnest_34",
-      "Deepnest_35",
-      "Deepnest_39",
-      "Deepnest_41",
-      "Deepnest_42"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1730,6 +1399,13 @@
     }
   },
   "DeepnestDescent": {
+    "SceneNames": {
+      "Deepnest_01b": "Deepnest_Upper_Cornifer",
+      "Deepnest_02": "Deepnest_Outside_Mimics",
+      "Deepnest_17": "Deepnest_Garpede_Corridor_Below_Cornifer",
+      "Deepnest_30": "Deepnest_Hot_Spring",
+      "Deepnest_36": "Deepnest_Mimics"
+    },
     "AdjacentClusters": {
       "DeepnestFailedTram": "Any",
       "DeepnestLight": "Any",
@@ -1737,20 +1413,6 @@
       "DeepnestTramCorridor": "Any",
       "FungalDeepnestFall": "Brighter"
     },
-    "SceneAliases": [
-      "Deepnest_Garpede_Corridor_Below_Cornifer",
-      "Deepnest_Hot_Spring",
-      "Deepnest_Mimics",
-      "Deepnest_Outside_Mimics",
-      "Deepnest_Upper_Cornifer"
-    ],
-    "SceneNames": [
-      "Deepnest_01b",
-      "Deepnest_02",
-      "Deepnest_17",
-      "Deepnest_30",
-      "Deepnest_36"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1759,21 +1421,16 @@
     }
   },
   "DeepnestFailedTram": {
+    "SceneNames": {
+      "Deepnest_14": "Deepnest_Failed_Tramway_Bench",
+      "Deepnest_26": "Deepnest_Failed_Tramway_Lifeblood",
+      "Deepnest_26b": "Deepnest_Tram_Pass"
+    },
     "AdjacentClusters": {
       "DeepnestDark": "Any",
       "DeepnestDescent": "Any",
       "DeepnestLight": "Any"
     },
-    "SceneAliases": [
-      "Deepnest_Failed_Tramway_Bench",
-      "Deepnest_Failed_Tramway_Lifeblood",
-      "Deepnest_Tram_Pass"
-    ],
-    "SceneNames": [
-      "Deepnest_14",
-      "Deepnest_26",
-      "Deepnest_26b"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1782,15 +1439,12 @@
     }
   },
   "DeepnestGalien": {
+    "SceneNames": {
+      "Deepnest_40": "Deepnest_Galien_Arena"
+    },
     "AdjacentClusters": {
       "DeepnestDark": "Any"
     },
-    "SceneAliases": [
-      "Deepnest_Galien_Arena"
-    ],
-    "SceneNames": [
-      "Deepnest_40"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1799,20 +1453,16 @@
     }
   },
   "DeepnestLight": {
+    "SceneNames": {
+      "Deepnest_03": "Deepnest_Left_Of_Hot_Spring",
+      "Deepnest_33": "Deepnest_Zote_Arena"
+    },
     "AdjacentClusters": {
       "DeepnestDark": "Any",
       "DeepnestDescent": "Any",
       "DeepnestFailedTram": "Any",
       "DeepnestNoskApproach": "Brighter"
     },
-    "SceneAliases": [
-      "Deepnest_Left_Of_Hot_Spring",
-      "Deepnest_Zote_Arena"
-    ],
-    "SceneNames": [
-      "Deepnest_03",
-      "Deepnest_33"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1821,19 +1471,15 @@
     }
   },
   "DeepnestMantisEntrance": {
+    "SceneNames": {
+      "Deepnest_16": "Deepnest_After_Lower_Cornifer",
+      "Fungus2_25": "Deepnest_Lower_Cornifer"
+    },
     "AdjacentClusters": {
       "DeepnestDescent": "Any",
       "FungalCore": "Disconnected",
       "FungalMantisLords": "Any"
     },
-    "SceneAliases": [
-      "Deepnest_After_Lower_Cornifer",
-      "Deepnest_Lower_Cornifer"
-    ],
-    "SceneNames": [
-      "Deepnest_16",
-      "Fungus2_25"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1842,15 +1488,12 @@
     }
   },
   "DeepnestNosk": {
+    "SceneNames": {
+      "Deepnest_32": "Deepnest_Nosk_Arena"
+    },
     "AdjacentClusters": {
       "DeepnestNoskApproach": "Brighter"
     },
-    "SceneAliases": [
-      "Deepnest_Nosk_Arena"
-    ],
-    "SceneNames": [
-      "Deepnest_32"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1859,47 +1502,37 @@
     }
   },
   "DeepnestNoskApproach": {
+    "SceneNames": {
+      "Deepnest_31": "Deepnest_Nosk_Corridor"
+    },
     "AdjacentClusters": {
       "DeepnestLight": "Darker",
       "DeepnestNosk": "Darker"
     },
-    "SceneAliases": [
-      "Deepnest_Nosk_Corridor"
-    ],
-    "SceneNames": [
-      "Deepnest_31"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "DeepnestStag": {
+    "SceneNames": {
+      "Deepnest_09": "Deepnest_Distant_Village_Stag"
+    },
     "AdjacentClusters": {
       "DeepnestVillage": "Darker"
     },
-    "SceneAliases": [
-      "Deepnest_Distant_Village_Stag"
-    ],
-    "SceneNames": [
-      "Deepnest_09"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "DeepnestTramCorridor": {
+    "SceneNames": {
+      "Abyss_03_b": "Deepnest_Tram",
+      "Deepnest_37": "Deepnest_Corridor_to_Tram"
+    },
     "AdjacentClusters": {
       "DeepnestDescent": "Any",
       "DeepnestTramOutliers": "Brighter"
     },
-    "SceneAliases": [
-      "Deepnest_Corridor_to_Tram",
-      "Deepnest_Tram"
-    ],
-    "SceneNames": [
-      "Abyss_03_b",
-      "Deepnest_37"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1908,17 +1541,13 @@
     }
   },
   "DeepnestTramOutliers": {
+    "SceneNames": {
+      "Deepnest_38": "Deepnest_Vessel_Fragment",
+      "Deepnest_44": "Deepnest_Sharp_Shadow"
+    },
     "AdjacentClusters": {
       "DeepnestTramCorridor": "Darker"
     },
-    "SceneAliases": [
-      "Deepnest_Sharp_Shadow",
-      "Deepnest_Vessel_Fragment"
-    ],
-    "SceneNames": [
-      "Deepnest_38",
-      "Deepnest_44"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1927,17 +1556,14 @@
     }
   },
   "DeepnestVillage": {
+    "SceneNames": {
+      "Deepnest_10": "Deepnest_Distant_Village"
+    },
     "AdjacentClusters": {
       "DeepnestBeastsDen": "Darker",
       "DeepnestDark": "Any",
       "DeepnestStag": "Brighter"
     },
-    "SceneAliases": [
-      "Deepnest_Distant_Village"
-    ],
-    "SceneNames": [
-      "Deepnest_10"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1946,15 +1572,12 @@
     }
   },
   "DeepnestWeaversDen": {
+    "SceneNames": {
+      "Deepnest_45_v02": "Deepnest_Weaver's_Den"
+    },
     "AdjacentClusters": {
       "DeepnestDark": "Any"
     },
-    "SceneAliases": [
-      "Deepnest_Weaver's_Den"
-    ],
-    "SceneNames": [
-      "Deepnest_45_v02"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -1963,31 +1586,24 @@
     }
   },
   "DirtmouthBretta": {
+    "SceneNames": {
+      "Room_Bretta": "Bretta",
+      "Room_Bretta_Basement": "Bretta_Basement"
+    },
     "AdjacentClusters": {
       "DirtmouthGPZ": "Darker"
     },
-    "SceneAliases": [
-      "Bretta",
-      "Bretta_Basement"
-    ],
-    "SceneNames": [
-      "Room_Bretta",
-      "Room_Bretta_Basement"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "DirtmouthGPZ": {
+    "SceneNames": {
+      "Dream_Mighty_Zote": "Dream_Grey_Prince_Zote"
+    },
     "AdjacentClusters": {
       "DirtmouthBretta": "Brighter"
     },
-    "SceneAliases": [
-      "Dream_Grey_Prince_Zote"
-    ],
-    "SceneNames": [
-      "Dream_Mighty_Zote"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
@@ -1996,15 +1612,12 @@
     }
   },
   "DirtmouthGrimm": {
+    "SceneNames": {
+      "Grimm_Main_Tent": "Grimm_Tent"
+    },
     "AdjacentClusters": {
       "DirtmouthGrimmNKG": "Brighter"
     },
-    "SceneAliases": [
-      "Grimm_Tent"
-    ],
-    "SceneNames": [
-      "Grimm_Main_Tent"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2013,15 +1626,12 @@
     }
   },
   "DirtmouthGrimmNKG": {
+    "SceneNames": {
+      "Grimm_Nightmare": "Grimm_NKG"
+    },
     "AdjacentClusters": {
       "DirtmouthGrimm": "Darker"
     },
-    "SceneAliases": [
-      "Grimm_NKG"
-    ],
-    "SceneNames": [
-      "Grimm_Nightmare"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
@@ -2030,6 +1640,10 @@
     }
   },
   "EastCityElevator": {
+    "SceneNames": {
+      "Ruins2_10": "Grounds_Elevator",
+      "Ruins2_10b": "City_Right_Elevator"
+    },
     "AdjacentClusters": {
       "BlueLake": "Darker",
       "CityKingsStation": "Darker",
@@ -2037,61 +1651,42 @@
       "EdgeColoCorridor": "Any",
       "GroundsCatacombs": "Darker"
     },
-    "SceneAliases": [
-      "City_Right_Elevator",
-      "Grounds_Elevator"
-    ],
-    "SceneNames": [
-      "Ruins2_10",
-      "Ruins2_10b"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "EdgeCampBench": {
+    "SceneNames": {
+      "Deepnest_East_13": "Edge_Camp_Bench"
+    },
     "AdjacentClusters": {
       "EdgeEastUpper": "Darker"
     },
-    "SceneAliases": [
-      "Edge_Camp_Bench"
-    ],
-    "SceneNames": [
-      "Deepnest_East_13"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "EdgeColo": {
+    "SceneNames": {
+      "Room_Colosseum_01": "Edge_Colo_Entrance",
+      "Room_Colosseum_02": "Edge_Colo_Bench",
+      "Room_Colosseum_Spectate": "Edge_Colo_Spectate"
+    },
     "AdjacentClusters": {
       "EdgeColoCorridor": "Any",
       "EdgePaleLurker": "Darker"
     },
-    "SceneAliases": [
-      "Edge_Colo_Bench",
-      "Edge_Colo_Entrance",
-      "Edge_Colo_Spectate"
-    ],
-    "SceneNames": [
-      "Room_Colosseum_01",
-      "Room_Colosseum_02",
-      "Room_Colosseum_Spectate"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "EdgeColo1": {
+    "SceneNames": {
+      "Room_Colosseum_Bronze": "Edge_Colo_1_Arena"
+    },
     "AdjacentClusters": {
       "EdgeColo2": "Darker"
     },
-    "SceneAliases": [
-      "Edge_Colo_1_Arena"
-    ],
-    "SceneNames": [
-      "Room_Colosseum_Bronze"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
@@ -2100,16 +1695,13 @@
     }
   },
   "EdgeColo2": {
+    "SceneNames": {
+      "Room_Colosseum_Silver": "Edge_Colo_2_Arena"
+    },
     "AdjacentClusters": {
       "EdgeColo1": "Brighter",
       "EdgeColo3": "Darker"
     },
-    "SceneAliases": [
-      "Edge_Colo_2_Arena"
-    ],
-    "SceneNames": [
-      "Room_Colosseum_Silver"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
@@ -2118,15 +1710,12 @@
     }
   },
   "EdgeColo3": {
+    "SceneNames": {
+      "Room_Colosseum_Gold": "Edge_Colo_3_Arena"
+    },
     "AdjacentClusters": {
       "EdgeColo2": "Brighter"
     },
-    "SceneAliases": [
-      "Edge_Colo_3_Arena"
-    ],
-    "SceneNames": [
-      "Room_Colosseum_Gold"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
@@ -2135,16 +1724,13 @@
     }
   },
   "EdgeColoApproach": {
+    "SceneNames": {
+      "Deepnest_East_08": "Edge_Great_Hopper_Idol"
+    },
     "AdjacentClusters": {
       "EdgeColoCorridor": "Brighter",
       "EdgeTallRooms": "Any"
     },
-    "SceneAliases": [
-      "Edge_Great_Hopper_Idol"
-    ],
-    "SceneNames": [
-      "Deepnest_East_08"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2153,22 +1739,24 @@
     }
   },
   "EdgeColoCorridor": {
+    "SceneNames": {
+      "Deepnest_East_09": "Edge_Corridor_Outside_Colosseum"
+    },
     "AdjacentClusters": {
       "EastCityElevator": "Any",
       "EdgeColo": "Any",
       "EdgeColoApproach": "Darker"
     },
-    "SceneAliases": [
-      "Edge_Corridor_Outside_Colosseum"
-    ],
-    "SceneNames": [
-      "Deepnest_East_09"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "EdgeEastUpper": {
+    "SceneNames": {
+      "Deepnest_East_04": "Edge_Bardoon",
+      "Deepnest_East_11": "Edge_Below_Camp_Bench",
+      "Deepnest_East_18": "Edge_Outside_Markoth"
+    },
     "AdjacentClusters": {
       "EdgeCampBench": "Brighter",
       "EdgeHornetApproach": "Brighter",
@@ -2177,16 +1765,6 @@
       "EdgeOroWing": "Any",
       "EdgeTallRooms": "Brighter"
     },
-    "SceneAliases": [
-      "Edge_Bardoon",
-      "Edge_Below_Camp_Bench",
-      "Edge_Outside_Markoth"
-    ],
-    "SceneNames": [
-      "Deepnest_East_04",
-      "Deepnest_East_11",
-      "Deepnest_East_18"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2195,30 +1773,24 @@
     }
   },
   "EdgeHornetApproach": {
+    "SceneNames": {
+      "Deepnest_East_12": "Edge_Hornet_Sentinel_Corridor"
+    },
     "AdjacentClusters": {
       "EdgeEastUpper": "Darker",
       "EdgeHornetSentinel": "Darker"
     },
-    "SceneAliases": [
-      "Edge_Hornet_Sentinel_Corridor"
-    ],
-    "SceneNames": [
-      "Deepnest_East_12"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "EdgeHornetSentinel": {
+    "SceneNames": {
+      "Deepnest_East_Hornet": "Edge_Hornet_Sentinel_Arena"
+    },
     "AdjacentClusters": {
       "EdgeHornetApproach": "Brighter"
     },
-    "SceneAliases": [
-      "Edge_Hornet_Sentinel_Arena"
-    ],
-    "SceneNames": [
-      "Deepnest_East_Hornet"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2227,29 +1799,23 @@
     }
   },
   "EdgeLifeblood": {
+    "SceneNames": {
+      "Deepnest_East_15": "Edge_Lifeblood"
+    },
     "AdjacentClusters": {
       "EdgeEastUpper": "Darker"
     },
-    "SceneAliases": [
-      "Edge_Lifeblood"
-    ],
-    "SceneNames": [
-      "Deepnest_East_15"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "EdgeMarkoth": {
+    "SceneNames": {
+      "Deepnest_East_10": "Edge_Markoth_Arena"
+    },
     "AdjacentClusters": {
       "EdgeEastUpper": "Brighter"
     },
-    "SceneAliases": [
-      "Edge_Markoth_Arena"
-    ],
-    "SceneNames": [
-      "Deepnest_East_10"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2258,33 +1824,25 @@
     }
   },
   "EdgeOro": {
+    "SceneNames": {
+      "Room_nailmaster_03": "Edge_Oro"
+    },
     "AdjacentClusters": {
       "EdgeOroWing": "Darker"
     },
-    "SceneAliases": [
-      "Edge_Oro"
-    ],
-    "SceneNames": [
-      "Room_nailmaster_03"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "EdgeOroDive": {
+    "SceneNames": {
+      "Deepnest_East_14": "Edge_Below_Oro",
+      "Deepnest_East_14b": "Edge_Quick_Slash",
+      "Deepnest_East_17": "Edge_420_Geo_Rock"
+    },
     "AdjacentClusters": {
       "EdgeOroWing": "Brighter"
     },
-    "SceneAliases": [
-      "Edge_420_Geo_Rock",
-      "Edge_Below_Oro",
-      "Edge_Quick_Slash"
-    ],
-    "SceneNames": [
-      "Deepnest_East_14",
-      "Deepnest_East_14b",
-      "Deepnest_East_17"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2293,20 +1851,16 @@
     }
   },
   "EdgeOroWing": {
+    "SceneNames": {
+      "Deepnest_East_06": "Edge_Outside_Oro",
+      "Deepnest_East_16": "Edge_Oro_Scarecrow"
+    },
     "AdjacentClusters": {
       "EdgeEastUpper": "Any",
       "EdgeOro": "Brighter",
       "EdgeOroDive": "Darker",
       "EdgeTallRooms": "Any"
     },
-    "SceneAliases": [
-      "Edge_Oro_Scarecrow",
-      "Edge_Outside_Oro"
-    ],
-    "SceneNames": [
-      "Deepnest_East_06",
-      "Deepnest_East_16"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2315,15 +1869,12 @@
     }
   },
   "EdgePaleLurker": {
+    "SceneNames": {
+      "GG_Lurker": "Edge_Pale_Lurker"
+    },
     "AdjacentClusters": {
       "EdgeColo": "Brighter"
     },
-    "SceneAliases": [
-      "Edge_Pale_Lurker"
-    ],
-    "SceneNames": [
-      "GG_Lurker"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2332,6 +1883,10 @@
     }
   },
   "EdgeTallRooms": {
+    "SceneNames": {
+      "Deepnest_East_03": "Edge_Entrance",
+      "Deepnest_East_07": "Edge_Whispering_Root"
+    },
     "AdjacentClusters": {
       "CityEdgeBridge": "Brighter",
       "CityTowerOfLove": "Brighter",
@@ -2340,14 +1895,6 @@
       "EdgeOroWing": "Any",
       "EdgeTramWing": "Brighter"
     },
-    "SceneAliases": [
-      "Edge_Entrance",
-      "Edge_Whispering_Root"
-    ],
-    "SceneNames": [
-      "Deepnest_East_03",
-      "Deepnest_East_07"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2356,22 +1903,17 @@
     }
   },
   "EdgeTramWing": {
+    "SceneNames": {
+      "Abyss_03_c": "Edge_Tram",
+      "Deepnest_East_01": "Edge_Left_Of_Hive",
+      "Deepnest_East_02": "Edge_Above_Hive"
+    },
     "AdjacentClusters": {
       "EdgeTallRooms": "Darker",
       "HiveEntrance": "Any",
       "HiveMain": "Disconnected",
       "WaterwaysEdgeAcidCorridor": "Brighter"
     },
-    "SceneAliases": [
-      "Edge_Above_Hive",
-      "Edge_Left_Of_Hive",
-      "Edge_Tram"
-    ],
-    "SceneNames": [
-      "Abyss_03_c",
-      "Deepnest_East_01",
-      "Deepnest_East_02"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2380,17 +1922,13 @@
     }
   },
   "FogCanyonArchives": {
+    "SceneNames": {
+      "Fungus3_archive": "Fog_Archives_Bench",
+      "Fungus3_archive_02": "Fog_Uumuu_Arena"
+    },
     "AdjacentClusters": {
       "FogCanyonOutsideArchives": "Brighter"
     },
-    "SceneAliases": [
-      "Fog_Archives_Bench",
-      "Fog_Uumuu_Arena"
-    ],
-    "SceneNames": [
-      "Fungus3_archive",
-      "Fungus3_archive_02"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2399,29 +1937,23 @@
     }
   },
   "FogCanyonAutoPilot": {
+    "SceneNames": {
+      "Fungus3_30": "Fog_Lifeblood"
+    },
     "AdjacentClusters": {
       "FogCanyonWestWing": "Darker"
     },
-    "SceneAliases": [
-      "Fog_Lifeblood"
-    ],
-    "SceneNames": [
-      "Fungus3_30"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "FogCanyonCharmNotch": {
+    "SceneNames": {
+      "Fungus3_28": "Fog_Charm_Notch"
+    },
     "AdjacentClusters": {
       "FogCanyonEast": "Brighter"
     },
-    "SceneAliases": [
-      "Fog_Charm_Notch"
-    ],
-    "SceneNames": [
-      "Fungus3_28"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2430,6 +1962,11 @@
     }
   },
   "FogCanyonEast": {
+    "SceneNames": {
+      "Fungus3_25": "Fog_Cornifer",
+      "Fungus3_25b": "Fog_Corridor_to_Cornifer",
+      "Fungus3_26": "Fog_East_Tall"
+    },
     "AdjacentClusters": {
       "CrossroadsCanyonBridge": "Darker",
       "FogCanyonCharmNotch": "Darker",
@@ -2437,16 +1974,6 @@
       "FogCanyonWest": "Disconnected",
       "FungalUpper": "Disconnected"
     },
-    "SceneAliases": [
-      "Fog_Cornifer",
-      "Fog_Corridor_to_Cornifer",
-      "Fog_East_Tall"
-    ],
-    "SceneNames": [
-      "Fungus3_25",
-      "Fungus3_25b",
-      "Fungus3_26"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2455,19 +1982,15 @@
     }
   },
   "FogCanyonOutsideArchives": {
+    "SceneNames": {
+      "Fungus3_27": "Fog_Corridor_to_Archives",
+      "Fungus3_47": "Fog_Archives_Entrance"
+    },
     "AdjacentClusters": {
       "FogCanyonArchives": "Darker",
       "FogCanyonEast": "Any",
       "FogCanyonWest": "Any"
     },
-    "SceneAliases": [
-      "Fog_Archives_Entrance",
-      "Fog_Corridor_to_Archives"
-    ],
-    "SceneNames": [
-      "Fungus3_27",
-      "Fungus3_47"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2476,15 +1999,12 @@
     }
   },
   "FogCanyonOvergrownMound": {
+    "SceneNames": {
+      "Room_Fungus_Shaman": "Fog_Overgrown_Mound"
+    },
     "AdjacentClusters": {
       "FogCanyonWestWing": "Brighter"
     },
-    "SceneAliases": [
-      "Fog_Overgrown_Mound"
-    ],
-    "SceneNames": [
-      "Room_Fungus_Shaman"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2493,35 +2013,33 @@
     }
   },
   "FogCanyonQGA": {
+    "SceneNames": {
+      "Fungus3_03": "Fog_Queen's_Gardens_Acid_Entrance"
+    },
     "AdjacentClusters": {
       "FogCanyonWest": "Darker",
       "GardensEntrance": "Darker"
     },
-    "SceneAliases": [
-      "Fog_Queen's_Gardens_Acid_Entrance"
-    ],
-    "SceneNames": [
-      "Fungus3_03"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "FogCanyonRobber": {
+    "SceneNames": {
+      "Fungus3_35": "Fog_Millibelle"
+    },
     "AdjacentClusters": {
       "FogCanyonWest": "Darker"
     },
-    "SceneAliases": [
-      "Fog_Millibelle"
-    ],
-    "SceneNames": [
-      "Fungus3_35"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "FogCanyonWest": {
+    "SceneNames": {
+      "Fungus3_01": "Fog_Upper_West_Tall",
+      "Fungus3_02": "Fog_Lower_West_Tall"
+    },
     "AdjacentClusters": {
       "FogCanyonEast": "Disconnected",
       "FogCanyonOutsideArchives": "Any",
@@ -2531,14 +2049,6 @@
       "FungalQueensStation": "Any",
       "GreenpathLowerHub": "Any"
     },
-    "SceneAliases": [
-      "Fog_Lower_West_Tall",
-      "Fog_Upper_West_Tall"
-    ],
-    "SceneNames": [
-      "Fungus3_01",
-      "Fungus3_02"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2547,20 +2057,16 @@
     }
   },
   "FogCanyonWestWing": {
+    "SceneNames": {
+      "Fungus3_24": "Fog_Corridor_to_Overgrown_Mound",
+      "Fungus3_44": "Fog_Overgrown_Mound_Entrance"
+    },
     "AdjacentClusters": {
       "FogCanyonAutoPilot": "Brighter",
       "FogCanyonOvergrownMound": "Darker",
       "FogCanyonWest": "Brighter",
       "GardensEntrance": "Any"
     },
-    "SceneAliases": [
-      "Fog_Corridor_to_Overgrown_Mound",
-      "Fog_Overgrown_Mound_Entrance"
-    ],
-    "SceneNames": [
-      "Fungus3_24",
-      "Fungus3_44"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2569,33 +2075,26 @@
     }
   },
   "FungalClothCorridor": {
+    "SceneNames": {
+      "Fungus2_09": "Fungal_Cloth_Corridor"
+    },
     "AdjacentClusters": {
       "FungalElderHuWing": "Darker",
       "FungalPilgrimsWay": "Darker"
     },
-    "SceneAliases": [
-      "Fungal_Cloth_Corridor"
-    ],
-    "SceneNames": [
-      "Fungus2_09"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "FungalCore": {
+    "SceneNames": {
+      "Fungus2_29": "Fungal_Core_Upper",
+      "Fungus2_30": "Fungal_Core_Lower"
+    },
     "AdjacentClusters": {
       "DeepnestMantisEntrance": "Disconnected",
       "FungalLowerHub": "Brighter"
     },
-    "SceneAliases": [
-      "Fungal_Core_Lower",
-      "Fungal_Core_Upper"
-    ],
-    "SceneNames": [
-      "Fungus2_29",
-      "Fungus2_30"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2604,17 +2103,14 @@
     }
   },
   "FungalCorniferHub": {
+    "SceneNames": {
+      "Fungus2_18": "Fungal_Cornifer"
+    },
     "AdjacentClusters": {
       "FungalEntrance": "Any",
       "FungalLowerHub": "Any",
       "FungalSporeShroom": "Darker"
     },
-    "SceneAliases": [
-      "Fungal_Cornifer"
-    ],
-    "SceneNames": [
-      "Fungus2_18"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2623,36 +2119,28 @@
     }
   },
   "FungalDeepnestFall": {
+    "SceneNames": {
+      "Deepnest_01": "Fungal_Deepnest_Fall"
+    },
     "AdjacentClusters": {
       "DeepnestDescent": "Darker",
       "FungalSporeShroom": "Darker",
       "GardensLowerPass": "Darker"
     },
-    "SceneAliases": [
-      "Fungal_Deepnest_Fall"
-    ],
-    "SceneNames": [
-      "Deepnest_01"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "FungalElderHuWing": {
+    "SceneNames": {
+      "Fungus2_07": "Fungal_Shrumal_Warrior_Acid_Bridge",
+      "Fungus2_08": "Fungal_Outside_Elder_Hu",
+      "Fungus2_32": "Fungal_Elder_Hu"
+    },
     "AdjacentClusters": {
       "FungalClothCorridor": "Brighter",
       "FungalUpper": "Brighter"
     },
-    "SceneAliases": [
-      "Fungal_Elder_Hu",
-      "Fungal_Outside_Elder_Hu",
-      "Fungal_Shrumal_Warrior_Acid_Bridge"
-    ],
-    "SceneNames": [
-      "Fungus2_07",
-      "Fungus2_08",
-      "Fungus2_32"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2661,21 +2149,16 @@
     }
   },
   "FungalEntrance": {
+    "SceneNames": {
+      "Fungus2_03": "Fungal_Outside_Queen's",
+      "Fungus2_04": "Fungal_Below_Ogres",
+      "Fungus2_28": "Fungal_Shrumal_Warrior_Loop"
+    },
     "AdjacentClusters": {
       "FungalCorniferHub": "Any",
       "FungalOgres": "Darker",
       "FungalQueensStation": "Any"
     },
-    "SceneAliases": [
-      "Fungal_Below_Ogres",
-      "Fungal_Outside_Queen's",
-      "Fungal_Shrumal_Warrior_Loop"
-    ],
-    "SceneNames": [
-      "Fungus2_03",
-      "Fungus2_04",
-      "Fungus2_28"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2684,20 +2167,16 @@
     }
   },
   "FungalLowerHub": {
+    "SceneNames": {
+      "Fungus2_11": "Fungal_Epogo",
+      "Fungus2_17": "Fungal_Above_Mantis_Village"
+    },
     "AdjacentClusters": {
       "FungalCore": "Darker",
       "FungalCorniferHub": "Any",
       "FungalMantisVillage": "Any",
       "FungalPilgrimsWay": "Any"
     },
-    "SceneAliases": [
-      "Fungal_Above_Mantis_Village",
-      "Fungal_Epogo"
-    ],
-    "SceneNames": [
-      "Fungus2_11",
-      "Fungus2_17"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2706,18 +2185,14 @@
     }
   },
   "FungalMantisLords": {
+    "SceneNames": {
+      "Fungus2_15": "Fungal_Mantis_Lords",
+      "Fungus2_31": "Fungal_Mantis_Rewards"
+    },
     "AdjacentClusters": {
       "DeepnestMantisEntrance": "Any",
       "FungalMantisVillage": "Brighter"
     },
-    "SceneAliases": [
-      "Fungal_Mantis_Lords",
-      "Fungal_Mantis_Rewards"
-    ],
-    "SceneNames": [
-      "Fungus2_15",
-      "Fungus2_31"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2726,23 +2201,17 @@
     }
   },
   "FungalMantisVillage": {
+    "SceneNames": {
+      "Fungus2_12": "Fungal_Mantis_Corridor",
+      "Fungus2_13": "Fungal_Bretta_Bench",
+      "Fungus2_14": "Fungal_Mantis_Village",
+      "Fungus2_23": "Fungal_Dashmaster"
+    },
     "AdjacentClusters": {
       "FungalLowerHub": "Any",
       "FungalMantisLords": "Darker",
       "WaterwaysWestWing": "Any"
     },
-    "SceneAliases": [
-      "Fungal_Bretta_Bench",
-      "Fungal_Dashmaster",
-      "Fungal_Mantis_Corridor",
-      "Fungal_Mantis_Village"
-    ],
-    "SceneNames": [
-      "Fungus2_12",
-      "Fungus2_13",
-      "Fungus2_14",
-      "Fungus2_23"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2751,16 +2220,13 @@
     }
   },
   "FungalOgres": {
+    "SceneNames": {
+      "Fungus2_05": "Fungal_Shrumal_Ogres"
+    },
     "AdjacentClusters": {
       "FungalEntrance": "Brighter",
       "FungalUpper": "Brighter"
     },
-    "SceneAliases": [
-      "Fungal_Shrumal_Ogres"
-    ],
-    "SceneNames": [
-      "Fungus2_05"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2769,19 +2235,15 @@
     }
   },
   "FungalPilgrimsWay": {
+    "SceneNames": {
+      "Fungus2_10": "Fungal_Left_Of_Pilgrim's_Way",
+      "Fungus2_21": "Fungal_Pilgrim's_Way"
+    },
     "AdjacentClusters": {
       "CityEastEntrance": "Any",
       "FungalClothCorridor": "Brighter",
       "FungalLowerHub": "Any"
     },
-    "SceneAliases": [
-      "Fungal_Left_Of_Pilgrim's_Way",
-      "Fungal_Pilgrim's_Way"
-    ],
-    "SceneNames": [
-      "Fungus2_10",
-      "Fungus2_21"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2790,20 +2252,15 @@
     }
   },
   "FungalQueensStation": {
+    "SceneNames": {
+      "Fungus2_01": "Fungal_Queen's_Station",
+      "Fungus2_02": "Fungal_Queen's_Stag",
+      "Fungus2_34": "Fungal_Willoh"
+    },
     "AdjacentClusters": {
       "FogCanyonWest": "Any",
       "FungalEntrance": "Any"
     },
-    "SceneAliases": [
-      "Fungal_Queen's_Stag",
-      "Fungal_Queen's_Station",
-      "Fungal_Willoh"
-    ],
-    "SceneNames": [
-      "Fungus2_01",
-      "Fungus2_02",
-      "Fungus2_34"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2812,18 +2269,14 @@
     }
   },
   "FungalSporeShroom": {
+    "SceneNames": {
+      "Fungus2_19": "Fungal_Right_Of_Spore_Shroom",
+      "Fungus2_20": "Fungal_Spore_Shroom"
+    },
     "AdjacentClusters": {
       "FungalCorniferHub": "Brighter",
       "FungalDeepnestFall": "Brighter"
     },
-    "SceneAliases": [
-      "Fungal_Right_Of_Spore_Shroom",
-      "Fungal_Spore_Shroom"
-    ],
-    "SceneNames": [
-      "Fungus2_19",
-      "Fungus2_20"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2832,22 +2285,17 @@
     }
   },
   "FungalUpper": {
+    "SceneNames": {
+      "Fungus2_06": "Fungal_Outside_Leg_Eater",
+      "Fungus2_26": "Fungal_Leg_Eater",
+      "Fungus2_33": "Fungal_Leg_Eater_Root"
+    },
     "AdjacentClusters": {
       "CrossroadsFungalBridge": "Brighter",
       "FogCanyonEast": "Disconnected",
       "FungalElderHuWing": "Darker",
       "FungalOgres": "Darker"
     },
-    "SceneAliases": [
-      "Fungal_Leg_Eater",
-      "Fungal_Leg_Eater_Root",
-      "Fungal_Outside_Leg_Eater"
-    ],
-    "SceneNames": [
-      "Fungus2_06",
-      "Fungus2_26",
-      "Fungus2_33"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2856,15 +2304,12 @@
     }
   },
   "GardensCornifer": {
+    "SceneNames": {
+      "Fungus1_24": "Gardens_Cornifer"
+    },
     "AdjacentClusters": {
       "GardensPetraArena": "Brighter"
     },
-    "SceneAliases": [
-      "Gardens_Cornifer"
-    ],
-    "SceneNames": [
-      "Fungus1_24"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2873,17 +2318,14 @@
     }
   },
   "GardensDeepnestBridge": {
+    "SceneNames": {
+      "Deepnest_43": "Gardens_Corridor_To_Deepnest"
+    },
     "AdjacentClusters": {
       "DeepnestDark": "Any",
       "GardensLowerPass": "Any",
       "GardensTollBench": "Brighter"
     },
-    "SceneAliases": [
-      "Gardens_Corridor_To_Deepnest"
-    ],
-    "SceneNames": [
-      "Deepnest_43"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2892,17 +2334,14 @@
     }
   },
   "GardensEntrance": {
+    "SceneNames": {
+      "Fungus3_34": "Gardens_Entrance"
+    },
     "AdjacentClusters": {
       "FogCanyonQGA": "Brighter",
       "FogCanyonWestWing": "Any",
       "GardensStagHub": "Darker"
     },
-    "SceneAliases": [
-      "Gardens_Entrance"
-    ],
-    "SceneNames": [
-      "Fungus3_34"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2911,19 +2350,15 @@
     }
   },
   "GardensFrogsWing": {
+    "SceneNames": {
+      "Fungus1_23": "Gardens_First_Loodle_Corridor",
+      "Fungus3_48": "Gardens_Outside_White_Lady"
+    },
     "AdjacentClusters": {
       "GardensStag": "Brighter",
       "GardensStagHub": "Brighter",
       "GardensTraitorLord": "Any"
     },
-    "SceneAliases": [
-      "Gardens_First_Loodle_Corridor",
-      "Gardens_Outside_White_Lady"
-    ],
-    "SceneNames": [
-      "Fungus1_23",
-      "Fungus3_48"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2932,22 +2367,17 @@
     }
   },
   "GardensLowerPass": {
+    "SceneNames": {
+      "Fungus3_08": "Gardens_Lower_Petra_Corridor",
+      "Fungus3_11": "Gardens_Whispering_Root",
+      "Fungus3_39": "Gardens_Moss_Prophet"
+    },
     "AdjacentClusters": {
       "FungalDeepnestFall": "Brighter",
       "GardensDeepnestBridge": "Any",
       "GardensMainArena": "Darker",
       "GardensPetraArena": "Any"
     },
-    "SceneAliases": [
-      "Gardens_Lower_Petra_Corridor",
-      "Gardens_Moss_Prophet",
-      "Gardens_Whispering_Root"
-    ],
-    "SceneNames": [
-      "Fungus3_08",
-      "Fungus3_11",
-      "Fungus3_39"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2956,16 +2386,13 @@
     }
   },
   "GardensMainArena": {
+    "SceneNames": {
+      "Fungus3_10": "Gardens_Main_Arena"
+    },
     "AdjacentClusters": {
       "GardensLowerPass": "Brighter",
       "GardensStagHub": "Brighter"
     },
-    "SceneAliases": [
-      "Gardens_Main_Arena"
-    ],
-    "SceneNames": [
-      "Fungus3_10"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2974,17 +2401,14 @@
     }
   },
   "GardensPetraArena": {
+    "SceneNames": {
+      "Fungus3_05": "Gardens_Petra_Arena"
+    },
     "AdjacentClusters": {
       "GardensCornifer": "Darker",
       "GardensLowerPass": "Any",
       "GardensStagHub": "Brighter"
     },
-    "SceneAliases": [
-      "Gardens_Petra_Arena"
-    ],
-    "SceneNames": [
-      "Fungus3_05"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -2993,16 +2417,13 @@
     }
   },
   "GardensStag": {
+    "SceneNames": {
+      "Fungus3_40": "Gardens_Gardens_Stag"
+    },
     "AdjacentClusters": {
       "GardensFrogsWing": "Darker",
       "GardensStagHub": "Any"
     },
-    "SceneAliases": [
-      "Gardens_Gardens_Stag"
-    ],
-    "SceneNames": [
-      "Fungus3_40"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3011,6 +2432,10 @@
     }
   },
   "GardensStagHub": {
+    "SceneNames": {
+      "Fungus3_04": "Gardens_Before_Petra_Arena",
+      "Fungus3_13": "Gardens_Outside_Stag"
+    },
     "AdjacentClusters": {
       "GardensEntrance": "Brighter",
       "GardensFrogsWing": "Darker",
@@ -3020,14 +2445,6 @@
       "GardensTraitorsGrave": "Any",
       "GardensUpper": "Darker"
     },
-    "SceneAliases": [
-      "Gardens_Before_Petra_Arena",
-      "Gardens_Outside_Stag"
-    ],
-    "SceneNames": [
-      "Fungus3_04",
-      "Fungus3_13"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3036,30 +2453,24 @@
     }
   },
   "GardensTollBench": {
+    "SceneNames": {
+      "Fungus3_50": "Gardens_Toll_Bench"
+    },
     "AdjacentClusters": {
       "GardensDeepnestBridge": "Darker"
     },
-    "SceneAliases": [
-      "Gardens_Toll_Bench"
-    ],
-    "SceneNames": [
-      "Fungus3_50"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "GardensTraitorLord": {
+    "SceneNames": {
+      "Fungus3_23": "Gardens_Traitor_Lord_Arena"
+    },
     "AdjacentClusters": {
       "GardensFrogsWing": "Any",
       "GardensUpper": "Brighter"
     },
-    "SceneAliases": [
-      "Gardens_Traitor_Lord_Arena"
-    ],
-    "SceneNames": [
-      "Fungus3_23"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
@@ -3068,15 +2479,12 @@
     }
   },
   "GardensTraitorsGrave": {
+    "SceneNames": {
+      "Fungus3_49": "Gardens_Traitor's_Child's_Grave"
+    },
     "AdjacentClusters": {
       "GardensStagHub": "Any"
     },
-    "SceneAliases": [
-      "Gardens_Traitor's_Child's_Grave"
-    ],
-    "SceneNames": [
-      "Fungus3_49"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3085,19 +2493,15 @@
     }
   },
   "GardensUpper": {
+    "SceneNames": {
+      "Fungus3_21": "Gardens_Corridor_to_Traitor_Lord",
+      "Fungus3_22": "Gardens_Upper_Grub"
+    },
     "AdjacentClusters": {
       "GardensStagHub": "Brighter",
       "GardensTraitorLord": "Darker",
       "GreenpathMMC": "Disconnected"
     },
-    "SceneAliases": [
-      "Gardens_Corridor_to_Traitor_Lord",
-      "Gardens_Upper_Grub"
-    ],
-    "SceneNames": [
-      "Fungus3_21",
-      "Fungus3_22"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3106,16 +2510,13 @@
     }
   },
   "GreenpathHornet": {
+    "SceneNames": {
+      "Fungus1_04": "Greenpath_Hornet"
+    },
     "AdjacentClusters": {
       "GreenpathUnnBridge": "Brighter",
       "GreenpathWest": "Brighter"
     },
-    "SceneAliases": [
-      "Greenpath_Hornet"
-    ],
-    "SceneNames": [
-      "Fungus1_04"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3124,20 +2525,20 @@
     }
   },
   "GreenpathHunter": {
+    "SceneNames": {
+      "Fungus1_08": "Greenpath_Hunter"
+    },
     "AdjacentClusters": {
       "GreenpathUpperEast": "Darker"
     },
-    "SceneAliases": [
-      "Greenpath_Hunter"
-    ],
-    "SceneNames": [
-      "Fungus1_08"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "GreenpathLowerHub": {
+    "SceneNames": {
+      "Fungus1_11": "Greenpath_Above_Fog_Canyon"
+    },
     "AdjacentClusters": {
       "FogCanyonWest": "Any",
       "GreenpathLowerPass": "Any",
@@ -3145,12 +2546,6 @@
       "GreenpathStoneSanctuaryApproach": "Any",
       "GreenpathStoneSanctuaryBench": "Brighter"
     },
-    "SceneAliases": [
-      "Greenpath_Above_Fog_Canyon"
-    ],
-    "SceneNames": [
-      "Fungus1_11"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3159,6 +2554,11 @@
     }
   },
   "GreenpathLowerPass": {
+    "SceneNames": {
+      "Fungus1_05": "Greenpath_Outside_Thorns",
+      "Fungus1_10": "Greenpath_Acid_Bridge",
+      "Fungus1_19": "Greenpath_Above_Sanctuary_Bench"
+    },
     "AdjacentClusters": {
       "GreenpathLowerHub": "Any",
       "GreenpathThorns": "Darker",
@@ -3166,16 +2566,6 @@
       "GreenpathUpperWest": "Any",
       "GreenpathWest": "Any"
     },
-    "SceneAliases": [
-      "Greenpath_Above_Sanctuary_Bench",
-      "Greenpath_Acid_Bridge",
-      "Greenpath_Outside_Thorns"
-    ],
-    "SceneNames": [
-      "Fungus1_05",
-      "Fungus1_10",
-      "Fungus1_19"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3184,20 +2574,15 @@
     }
   },
   "GreenpathMMC": {
+    "SceneNames": {
+      "Fungus1_12": "Greenpath_MMC_Corridor",
+      "Fungus1_13": "Greenpath_Whispering_Root",
+      "Fungus1_29": "Greenpath_Massive_Moss_Charger"
+    },
     "AdjacentClusters": {
       "GardensUpper": "Disconnected",
       "GreenpathLowerHub": "Brighter"
     },
-    "SceneAliases": [
-      "Greenpath_Massive_Moss_Charger",
-      "Greenpath_MMC_Corridor",
-      "Greenpath_Whispering_Root"
-    ],
-    "SceneNames": [
-      "Fungus1_12",
-      "Fungus1_13",
-      "Fungus1_29"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3206,19 +2591,14 @@
     }
   },
   "GreenpathSheo": {
+    "SceneNames": {
+      "Fungus1_09": "Greenpath_Sheo_Gauntlet",
+      "Fungus1_15": "Greenpath_Outside_Sheo",
+      "Room_nailmaster_02": "Greenpath_Sheo"
+    },
     "AdjacentClusters": {
       "GreenpathWest": "Brighter"
     },
-    "SceneAliases": [
-      "Greenpath_Outside_Sheo",
-      "Greenpath_Sheo",
-      "Greenpath_Sheo_Gauntlet"
-    ],
-    "SceneNames": [
-      "Fungus1_09",
-      "Fungus1_15",
-      "Room_nailmaster_02"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3227,29 +2607,23 @@
     }
   },
   "GreenpathStag": {
+    "SceneNames": {
+      "Fungus1_16_alt": "Greenpath_Stag"
+    },
     "AdjacentClusters": {
       "GreenpathWest": "Darker"
     },
-    "SceneAliases": [
-      "Greenpath_Stag"
-    ],
-    "SceneNames": [
-      "Fungus1_16_alt"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "GreenpathStoneSanctuary": {
+    "SceneNames": {
+      "Fungus1_35": "Greenpath_Stone_Sanctuary"
+    },
     "AdjacentClusters": {
       "GreenpathStoneSanctuaryApproach": "Brighter"
     },
-    "SceneAliases": [
-      "Greenpath_Stone_Sanctuary"
-    ],
-    "SceneNames": [
-      "Fungus1_35"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3258,16 +2632,13 @@
     }
   },
   "GreenpathStoneSanctuaryApproach": {
+    "SceneNames": {
+      "Fungus1_34": "Greenpath_Stone_Sanctuary_Entrance"
+    },
     "AdjacentClusters": {
       "GreenpathLowerHub": "Any",
       "GreenpathStoneSanctuary": "Darker"
     },
-    "SceneAliases": [
-      "Greenpath_Stone_Sanctuary_Entrance"
-    ],
-    "SceneNames": [
-      "Fungus1_34"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3276,29 +2647,23 @@
     }
   },
   "GreenpathStoneSanctuaryBench": {
+    "SceneNames": {
+      "Fungus1_37": "Greenpath_Sanctuary_Bench"
+    },
     "AdjacentClusters": {
       "GreenpathLowerHub": "Darker"
     },
-    "SceneAliases": [
-      "Greenpath_Sanctuary_Bench"
-    ],
-    "SceneNames": [
-      "Fungus1_37"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "GreenpathThorns": {
+    "SceneNames": {
+      "Fungus1_14": "Greenpath_Thorns_of_Agony"
+    },
     "AdjacentClusters": {
       "GreenpathLowerPass": "Brighter"
     },
-    "SceneAliases": [
-      "Greenpath_Thorns_of_Agony"
-    ],
-    "SceneNames": [
-      "Fungus1_14"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3307,18 +2672,14 @@
     }
   },
   "GreenpathUnn": {
+    "SceneNames": {
+      "Fungus1_26": "Greenpath_Lake_Of_Unn",
+      "Fungus1_Slug": "Greenpath_Unn"
+    },
     "AdjacentClusters": {
       "GreenpathUnnBench": "Brighter",
       "GreenpathUnnBridge": "Brighter"
     },
-    "SceneAliases": [
-      "Greenpath_Lake_Of_Unn",
-      "Greenpath_Unn"
-    ],
-    "SceneNames": [
-      "Fungus1_26",
-      "Fungus1_Slug"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3327,55 +2688,42 @@
     }
   },
   "GreenpathUnnBench": {
+    "SceneNames": {
+      "Room_Slug_Shrine": "Greenpath_Unn_Bench"
+    },
     "AdjacentClusters": {
       "GreenpathUnn": "Darker"
     },
-    "SceneAliases": [
-      "Greenpath_Unn_Bench"
-    ],
-    "SceneNames": [
-      "Room_Slug_Shrine"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "GreenpathUnnBridge": {
+    "SceneNames": {
+      "Fungus1_25": "Greenpath_Corridor_to_Unn"
+    },
     "AdjacentClusters": {
       "GreenpathHornet": "Darker",
       "GreenpathUnn": "Darker"
     },
-    "SceneAliases": [
-      "Greenpath_Corridor_to_Unn"
-    ],
-    "SceneNames": [
-      "Fungus1_25"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "GreenpathUpperEast": {
+    "SceneNames": {
+      "Fungus1_01": "Greenpath_Entrance",
+      "Fungus1_01b": "Greenpath_Waterfall_Bench",
+      "Fungus1_02": "Greenpath_First_Hornet_Sighting",
+      "Fungus1_06": "Greenpath_Cornifer",
+      "Fungus1_07": "Greenpath_Outside_Hunter"
+    },
     "AdjacentClusters": {
       "CrossroadsGreenpathBridge": "Any",
       "GreenpathHunter": "Brighter",
       "GreenpathLowerPass": "Any",
       "GreenpathUpperWest": "Any"
     },
-    "SceneAliases": [
-      "Greenpath_Cornifer",
-      "Greenpath_Entrance",
-      "Greenpath_First_Hornet_Sighting",
-      "Greenpath_Outside_Hunter",
-      "Greenpath_Waterfall_Bench"
-    ],
-    "SceneNames": [
-      "Fungus1_01",
-      "Fungus1_01b",
-      "Fungus1_02",
-      "Fungus1_06",
-      "Fungus1_07"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3384,26 +2732,19 @@
     }
   },
   "GreenpathUpperWest": {
+    "SceneNames": {
+      "Fungus1_03": "Greenpath_Storerooms",
+      "Fungus1_17": "Greenpath_Charger_Corridor",
+      "Fungus1_20_v02": "Greenpath_Vengefly_King",
+      "Fungus1_31": "Greenpath_Toll",
+      "Fungus1_32": "Greenpath_Moss_Knight_Arena"
+    },
     "AdjacentClusters": {
       "CliffsBaldurShell": "Any",
       "GreenpathLowerPass": "Any",
       "GreenpathUpperEast": "Any",
       "GreenpathWest": "Darker"
     },
-    "SceneAliases": [
-      "Greenpath_Charger_Corridor",
-      "Greenpath_Moss_Knight_Arena",
-      "Greenpath_Storerooms",
-      "Greenpath_Toll",
-      "Greenpath_Vengefly_King"
-    ],
-    "SceneNames": [
-      "Fungus1_03",
-      "Fungus1_17",
-      "Fungus1_20_v02",
-      "Fungus1_31",
-      "Fungus1_32"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3412,6 +2753,11 @@
     }
   },
   "GreenpathWest": {
+    "SceneNames": {
+      "Fungus1_21": "Greenpath_Outside_Hornet",
+      "Fungus1_22": "Greenpath_Outside_Stag",
+      "Fungus1_30": "Greenpath_Below_Toll_Bench"
+    },
     "AdjacentClusters": {
       "GreenpathHornet": "Darker",
       "GreenpathLowerPass": "Any",
@@ -3419,16 +2765,6 @@
       "GreenpathStag": "Brighter",
       "GreenpathUpperWest": "Brighter"
     },
-    "SceneAliases": [
-      "Greenpath_Below_Toll_Bench",
-      "Greenpath_Outside_Hornet",
-      "Greenpath_Outside_Stag"
-    ],
-    "SceneNames": [
-      "Fungus1_21",
-      "Fungus1_22",
-      "Fungus1_30"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3437,16 +2773,13 @@
     }
   },
   "GroundsCatacombs": {
+    "SceneNames": {
+      "RestingGrounds_10": "Grounds_Crypts"
+    },
     "AdjacentClusters": {
       "EastCityElevator": "Brighter",
       "GroundsMain": "Brighter"
     },
-    "SceneAliases": [
-      "Grounds_Crypts"
-    ],
-    "SceneNames": [
-      "RestingGrounds_10"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3455,15 +2788,12 @@
     }
   },
   "GroundsDreamNail": {
+    "SceneNames": {
+      "Dream_Nailcollection": "Dream_Nail"
+    },
     "AdjacentClusters": {
       "GroundsOutsideDreamNail": "Brighter"
     },
-    "SceneAliases": [
-      "Dream_Nail"
-    ],
-    "SceneNames": [
-      "Dream_Nailcollection"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3472,29 +2802,23 @@
     }
   },
   "GroundsDreamshield": {
+    "SceneNames": {
+      "RestingGrounds_17": "Grounds_Dreamshield"
+    },
     "AdjacentClusters": {
       "GroundsMain": "Any"
     },
-    "SceneAliases": [
-      "Grounds_Dreamshield"
-    ],
-    "SceneNames": [
-      "RestingGrounds_17"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "GroundsGlade": {
+    "SceneNames": {
+      "RestingGrounds_08": "Grounds_Spirit's_Glade"
+    },
     "AdjacentClusters": {
       "GroundsMain": "Brighter"
     },
-    "SceneAliases": [
-      "Grounds_Spirit's_Glade"
-    ],
-    "SceneNames": [
-      "RestingGrounds_08"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3503,6 +2827,9 @@
     }
   },
   "GroundsMain": {
+    "SceneNames": {
+      "RestingGrounds_05": "Grounds_Whispering_Root"
+    },
     "AdjacentClusters": {
       "GroundsCatacombs": "Darker",
       "GroundsDreamshield": "Any",
@@ -3510,73 +2837,55 @@
       "GroundsOutsideDreamNail": "Any",
       "GroundsStag": "Any"
     },
-    "SceneAliases": [
-      "Grounds_Whispering_Root"
-    ],
-    "SceneNames": [
-      "RestingGrounds_05"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "GroundsOutsideDreamNail": {
+    "SceneNames": {
+      "RestingGrounds_04": "Grounds_Dream_Nail_Entrance"
+    },
     "AdjacentClusters": {
       "GroundsDreamNail": "Darker",
       "GroundsMain": "Any",
       "GroundsXero": "Darker"
     },
-    "SceneAliases": [
-      "Grounds_Dream_Nail_Entrance"
-    ],
-    "SceneNames": [
-      "RestingGrounds_04"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "GroundsStag": {
+    "SceneNames": {
+      "RestingGrounds_09": "Grounds_Stag"
+    },
     "AdjacentClusters": {
       "GroundsMain": "Any"
     },
-    "SceneAliases": [
-      "Grounds_Stag"
-    ],
-    "SceneNames": [
-      "RestingGrounds_09"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "GroundsTram": {
+    "SceneNames": {
+      "Crossroads_46b": "Grounds_Tram"
+    },
     "AdjacentClusters": {
       "GroundsXero": "Darker"
     },
-    "SceneAliases": [
-      "Grounds_Tram"
-    ],
-    "SceneNames": [
-      "Crossroads_46b"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "GroundsXero": {
+    "SceneNames": {
+      "RestingGrounds_02": "Grounds_Xero"
+    },
     "AdjacentClusters": {
       "BlueLake": "Brighter",
       "CrystalPeaksOutsideMound": "Brighter",
       "GroundsOutsideDreamNail": "Brighter",
       "GroundsTram": "Brighter"
     },
-    "SceneAliases": [
-      "Grounds_Xero"
-    ],
-    "SceneNames": [
-      "RestingGrounds_02"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3585,18 +2894,14 @@
     }
   },
   "HiveEntrance": {
+    "SceneNames": {
+      "Hive_01": "Hive_Entrance_And_Bench",
+      "Hive_02": "Hive_Whispering_Root"
+    },
     "AdjacentClusters": {
       "EdgeTramWing": "Any",
       "HiveMain": "Darker"
     },
-    "SceneAliases": [
-      "Hive_Entrance_And_Bench",
-      "Hive_Whispering_Root"
-    ],
-    "SceneNames": [
-      "Hive_01",
-      "Hive_02"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3605,15 +2910,12 @@
     }
   },
   "HiveKnight": {
+    "SceneNames": {
+      "Hive_05": "Hive_Knight_Arena"
+    },
     "AdjacentClusters": {
       "HiveMain": "Any"
     },
-    "SceneAliases": [
-      "Hive_Knight_Arena"
-    ],
-    "SceneNames": [
-      "Hive_05"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
@@ -3622,21 +2924,16 @@
     }
   },
   "HiveMain": {
+    "SceneNames": {
+      "Hive_03": "Hive_Outside_Grub",
+      "Hive_03_c": "Hive_Outside_Shortcut",
+      "Hive_04": "Hive_Mask_Shard"
+    },
     "AdjacentClusters": {
       "EdgeTramWing": "Disconnected",
       "HiveEntrance": "Brighter",
       "HiveKnight": "Any"
     },
-    "SceneAliases": [
-      "Hive_Mask_Shard",
-      "Hive_Outside_Grub",
-      "Hive_Outside_Shortcut"
-    ],
-    "SceneNames": [
-      "Hive_03",
-      "Hive_03_c",
-      "Hive_04"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3645,15 +2942,12 @@
     }
   },
   "KingsPass": {
+    "SceneNames": {
+      "Tutorial_01": "King's_Pass"
+    },
     "AdjacentClusters": {
       "CliffsMain": "Darker"
     },
-    "SceneAliases": [
-      "King's_Pass"
-    ],
-    "SceneNames": [
-      "Tutorial_01"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3662,18 +2956,14 @@
     }
   },
   "PalaceEntrance": {
+    "SceneNames": {
+      "White_Palace_01": "Palace_Entrance",
+      "White_Palace_11": "Palace_Outside"
+    },
     "AdjacentClusters": {
       "PalaceHub": "Brighter",
       "PalaceInnerKingsmould": "Darker"
     },
-    "SceneAliases": [
-      "Palace_Entrance",
-      "Palace_Outside"
-    ],
-    "SceneNames": [
-      "White_Palace_01",
-      "White_Palace_11"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3682,21 +2972,16 @@
     }
   },
   "PalaceFinale": {
+    "SceneNames": {
+      "White_Palace_07": "Palace_Lamp_Pogo",
+      "White_Palace_12": "Palace_Spike_Drop",
+      "White_Palace_13": "Palace_Thorn_Jump"
+    },
     "AdjacentClusters": {
       "PalaceHub": "Brighter",
       "PalaceThrone": "Brighter",
       "PalaceWorkshop": "Brighter"
     },
-    "SceneAliases": [
-      "Palace_Lamp_Pogo",
-      "Palace_Spike_Drop",
-      "Palace_Thorn_Jump"
-    ],
-    "SceneNames": [
-      "White_Palace_07",
-      "White_Palace_12",
-      "White_Palace_13"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3705,34 +2990,27 @@
     }
   },
   "PalaceHub": {
+    "SceneNames": {
+      "White_Palace_03_hub": "Palace_Hub",
+      "White_Palace_06": "Palace_Balcony"
+    },
     "AdjacentClusters": {
       "PalaceEntrance": "Darker",
       "PalaceFinale": "Darker",
       "PalacePOPEntrance": "Darker",
       "PalaceWings": "Darker"
     },
-    "SceneAliases": [
-      "Palace_Balcony",
-      "Palace_Hub"
-    ],
-    "SceneNames": [
-      "White_Palace_03_hub",
-      "White_Palace_06"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "PalaceInnerKingsmould": {
+    "SceneNames": {
+      "White_Palace_02": "Palace_First_Mold"
+    },
     "AdjacentClusters": {
       "PalaceEntrance": "Brighter"
     },
-    "SceneAliases": [
-      "Palace_First_Mold"
-    ],
-    "SceneNames": [
-      "White_Palace_02"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3741,18 +3019,14 @@
     }
   },
   "PalacePOPEntrance": {
+    "SceneNames": {
+      "White_Palace_17": "POP_Lever",
+      "White_Palace_18": "POP_Entrance"
+    },
     "AdjacentClusters": {
       "PalaceHub": "Brighter",
       "PalacePOPFinal": "Darker"
     },
-    "SceneAliases": [
-      "POP_Entrance",
-      "POP_Lever"
-    ],
-    "SceneNames": [
-      "White_Palace_17",
-      "White_Palace_18"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
@@ -3761,17 +3035,13 @@
     }
   },
   "PalacePOPFinal": {
+    "SceneNames": {
+      "White_Palace_19": "POP_Vertical",
+      "White_Palace_20": "POP_Final"
+    },
     "AdjacentClusters": {
       "PalacePOPEntrance": "Brighter"
     },
-    "SceneAliases": [
-      "POP_Final",
-      "POP_Vertical"
-    ],
-    "SceneNames": [
-      "White_Palace_19",
-      "White_Palace_20"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": true,
     "DarkSettings": {
@@ -3780,37 +3050,27 @@
     }
   },
   "PalaceThrone": {
+    "SceneNames": {
+      "White_Palace_09": "Palace_Throne"
+    },
     "AdjacentClusters": {
       "PalaceFinale": "Darker"
     },
-    "SceneAliases": [
-      "Palace_Throne"
-    ],
-    "SceneNames": [
-      "White_Palace_09"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "PalaceWings": {
+    "SceneNames": {
+      "White_Palace_04": "Palace_Left_Of_Hub",
+      "White_Palace_05": "Palace_Saw_Room",
+      "White_Palace_14": "Palace_Hell_Corridor",
+      "White_Palace_15": "Palace_Caged_Lever",
+      "White_Palace_16": "Palace_Saw_Climb"
+    },
     "AdjacentClusters": {
       "PalaceHub": "Brighter"
     },
-    "SceneAliases": [
-      "Palace_Caged_Lever",
-      "Palace_Hell_Corridor",
-      "Palace_Left_Of_Hub",
-      "Palace_Saw_Climb",
-      "Palace_Saw_Room"
-    ],
-    "SceneNames": [
-      "White_Palace_04",
-      "White_Palace_05",
-      "White_Palace_14",
-      "White_Palace_15",
-      "White_Palace_16"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3819,33 +3079,26 @@
     }
   },
   "PalaceWorkshop": {
+    "SceneNames": {
+      "White_Palace_08": "Palace_Workshop"
+    },
     "AdjacentClusters": {
       "PalaceFinale": "Darker"
     },
-    "SceneAliases": [
-      "Palace_Workshop"
-    ],
-    "SceneNames": [
-      "White_Palace_08"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "WaterwaysDungDefender": {
+    "SceneNames": {
+      "Waterways_05": "Waterways_Dung_Defender_Arena",
+      "Waterways_15": "Waterways_Dung_Defender's_Cave"
+    },
     "AdjacentClusters": {
       "CityBridgeToBasin": "Disconnected",
       "WaterwaysMain": "Brighter",
       "WaterwaysWhiteDefender": "Brighter"
     },
-    "SceneAliases": [
-      "Waterways_Dung_Defender_Arena",
-      "Waterways_Dung_Defender's_Cave"
-    ],
-    "SceneNames": [
-      "Waterways_05",
-      "Waterways_15"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3854,31 +3107,25 @@
     }
   },
   "WaterwaysEdgeAcidCorridor": {
+    "SceneNames": {
+      "Waterways_14": "Waterways_Edge_Acid_Corridor"
+    },
     "AdjacentClusters": {
       "EdgeTramWing": "Darker",
       "WaterwaysIsmasGrove": "Darker"
     },
-    "SceneAliases": [
-      "Waterways_Edge_Acid_Corridor"
-    ],
-    "SceneNames": [
-      "Waterways_14"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "WaterwaysFlukeHermit": {
+    "SceneNames": {
+      "Room_GG_Shortcut": "Waterways_Fluke_Hermit"
+    },
     "AdjacentClusters": {
       "CityEastEntrance": "Disconnected",
       "WaterwaysJunkPit": "Brighter"
     },
-    "SceneAliases": [
-      "Waterways_Fluke_Hermit"
-    ],
-    "SceneNames": [
-      "Room_GG_Shortcut"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3887,15 +3134,12 @@
     }
   },
   "WaterwaysFlukemarm": {
+    "SceneNames": {
+      "Waterways_12": "Waterways_Flukemarm_Arena"
+    },
     "AdjacentClusters": {
       "WaterwaysOutsideFlukemarm": "Darker"
     },
-    "SceneAliases": [
-      "Waterways_Flukemarm_Arena"
-    ],
-    "SceneNames": [
-      "Waterways_12"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3904,19 +3148,15 @@
     }
   },
   "WaterwaysIsmasGrove": {
+    "SceneNames": {
+      "Waterways_07": "Waterways_Left_Of_Isma's_Grove",
+      "Waterways_13": "Waterways_Isma's_Grove"
+    },
     "AdjacentClusters": {
       "CityBridgeToBasin": "Disconnected",
       "CityEmilitia": "Brighter",
       "WaterwaysEdgeAcidCorridor": "Brighter"
     },
-    "SceneAliases": [
-      "Waterways_Isma's_Grove",
-      "Waterways_Left_Of_Isma's_Grove"
-    ],
-    "SceneNames": [
-      "Waterways_07",
-      "Waterways_13"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3925,21 +3165,24 @@
     }
   },
   "WaterwaysJunkPit": {
+    "SceneNames": {
+      "GG_Waterways": "Waterways_Junk_Pit"
+    },
     "AdjacentClusters": {
       "WaterwaysFlukeHermit": "Darker",
       "WaterwaysOutsideFlukemarm": "Darker"
     },
-    "SceneAliases": [
-      "Waterways_Junk_Pit"
-    ],
-    "SceneNames": [
-      "GG_Waterways"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
   },
   "WaterwaysMain": {
+    "SceneNames": {
+      "Waterways_01": "Waterways_Entrance",
+      "Waterways_02": "Waterways_Main_Bench",
+      "Waterways_03": "Waterways_Tuk",
+      "Waterways_06": "Waterways_Corridor_to_Broken_Elevator"
+    },
     "AdjacentClusters": {
       "CityBridgeToBasin": "Disconnected",
       "CityLemm": "Brighter",
@@ -3947,18 +3190,6 @@
       "WaterwaysOutsideFlukemarm": "Darker",
       "WaterwaysWestWing": "Any"
     },
-    "SceneAliases": [
-      "Waterways_Corridor_to_Broken_Elevator",
-      "Waterways_Entrance",
-      "Waterways_Main_Bench",
-      "Waterways_Tuk"
-    ],
-    "SceneNames": [
-      "Waterways_01",
-      "Waterways_02",
-      "Waterways_03",
-      "Waterways_06"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3967,19 +3198,15 @@
     }
   },
   "WaterwaysOutsideFlukemarm": {
+    "SceneNames": {
+      "GG_Pipeway": "Waterways_Flukemunga_Corridor",
+      "Waterways_08": "Waterways_Outside_Flukemarm"
+    },
     "AdjacentClusters": {
       "WaterwaysFlukemarm": "Brighter",
       "WaterwaysJunkPit": "Brighter",
       "WaterwaysMain": "Brighter"
     },
-    "SceneAliases": [
-      "Waterways_Flukemunga_Corridor",
-      "Waterways_Outside_Flukemarm"
-    ],
-    "SceneNames": [
-      "GG_Pipeway",
-      "Waterways_08"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -3988,20 +3215,15 @@
     }
   },
   "WaterwaysWestWing": {
+    "SceneNames": {
+      "Waterways_04": "Waterways_Hidden_Grub",
+      "Waterways_04b": "Waterways_Mask_Shard",
+      "Waterways_09": "Waterways_Cornifer"
+    },
     "AdjacentClusters": {
       "FungalMantisVillage": "Any",
       "WaterwaysMain": "Any"
     },
-    "SceneAliases": [
-      "Waterways_Cornifer",
-      "Waterways_Hidden_Grub",
-      "Waterways_Mask_Shard"
-    ],
-    "SceneNames": [
-      "Waterways_04",
-      "Waterways_04b",
-      "Waterways_09"
-    ],
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
@@ -4010,15 +3232,12 @@
     }
   },
   "WaterwaysWhiteDefender": {
+    "SceneNames": {
+      "Dream_04_White_Defender": "Dream_White_Defender"
+    },
     "AdjacentClusters": {
       "WaterwaysDungDefender": "Darker"
     },
-    "SceneAliases": [
-      "Dream_White_Defender"
-    ],
-    "SceneNames": [
-      "Dream_04_White_Defender"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": true,
     "DarkSettings": {
@@ -4027,19 +3246,15 @@
     }
   },
   "WestCityElevator": {
+    "SceneNames": {
+      "Crossroads_49": "Crossroads_Elevator",
+      "Crossroads_49b": "City_Left_Elevator"
+    },
     "AdjacentClusters": {
       "CityStorerooms": "Darker",
       "CrossroadsElevatorApproach": "Any",
       "CrossroadsVesselFragment": "Darker"
     },
-    "SceneAliases": [
-      "City_Left_Elevator",
-      "Crossroads_Elevator"
-    ],
-    "SceneNames": [
-      "Crossroads_49",
-      "Crossroads_49b"
-    ],
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null

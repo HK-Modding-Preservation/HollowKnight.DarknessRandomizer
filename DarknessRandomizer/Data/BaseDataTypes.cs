@@ -64,17 +64,15 @@ namespace DarknessRandomizer.Data
 
     public abstract class BaseClusterData<SceneNameT, ClusterNameT>
     {
-        public SortedSet<string> SceneAliases = new();
-        public SortedSet<SceneNameT> SceneNames = new();
         public bool? OverrideCannotBeDarknessSource = null;
         public bool? CursedOnly = false;
         public DarkSettings DarkSettings = null;
 
         public delegate BaseSceneData<ClusterNameT> SceneLookup(SceneNameT scene);
 
-        protected abstract IEnumerable<KeyValuePair<ClusterNameT, RelativeDarkness>> AdjacentDarkness();
+        protected abstract IEnumerable<SceneNameT> EnumerateSceneNames();
 
-        protected abstract RelativeDarkness GetAdjacentDarkness(ClusterNameT cluster);
+        protected abstract IEnumerable<KeyValuePair<ClusterNameT, RelativeDarkness>> EnumerateRelativeDarkness();
 
         [JsonIgnore]
         public int ProbabilityWeight => DarkSettings?.ProbabilityWeight ?? 100;
@@ -86,13 +84,13 @@ namespace DarknessRandomizer.Data
         {
             if (MaximumDarkness(SL, settings) < Darkness.Dark) return false;
             if (OverrideCannotBeDarknessSource ?? false) return false;
-            return AdjacentDarkness().All(e => e.Value != RelativeDarkness.Darker);
+            return EnumerateRelativeDarkness().All(e => e.Value != RelativeDarkness.Darker);
         }
 
         public Darkness MaximumDarkness(SceneLookup SL, DarknessRandomizationSettings settings = null)
         {
             var d = Darkness.Bright;
-            foreach (var sn in SceneNames)
+            foreach (var sn in EnumerateSceneNames())
             {
                 Darkness d2 = SL.Invoke(sn).MaximumDarkness;
                 if (d2 > d) d = d2;
@@ -108,7 +106,7 @@ namespace DarknessRandomizer.Data
         public Darkness MinimumDarkness(SceneLookup SL)
         {
             var d = Darkness.Dark;
-            foreach (var sn in SceneNames)
+            foreach (var sn in EnumerateSceneNames())
             {
                 Darkness d2 = SL.Invoke(sn).MinimumDarkness;
                 if (d2 < d) d = d2;

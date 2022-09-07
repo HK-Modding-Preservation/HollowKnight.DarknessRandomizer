@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using static DarknessRandomizer.Data.ClusterData;
 
 namespace DarknessRandomizer.Data
 {
@@ -19,15 +20,17 @@ namespace DarknessRandomizer.Data
         public static SortedDictionary<string, RawClusterData> LoadFromPath(string path) =>
             JsonUtil.DeserializeFromPath<SortedDictionary<string, RawClusterData>>(path);
 
+        public SortedDictionary<string, string> SceneNames = new();
+
         public SortedDictionary<string, RelativeDarkness> AdjacentClusters = new();
 
-        protected override IEnumerable<KeyValuePair<string, RelativeDarkness>> AdjacentDarkness() {
+        protected override IEnumerable<string> EnumerateSceneNames() => SceneNames.Keys;
+
+        protected override IEnumerable<KeyValuePair<string, RelativeDarkness>> EnumerateRelativeDarkness() {
             foreach (var e in AdjacentClusters)
             {
                 yield return new(e.Key, e.Value);
             }
         }
-
-        protected override RelativeDarkness GetAdjacentDarkness(string cluster) => AdjacentClusters[cluster];
     }
 }

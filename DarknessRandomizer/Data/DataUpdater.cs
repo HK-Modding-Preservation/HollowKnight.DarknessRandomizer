@@ -141,12 +141,16 @@ namespace DarknessRandomizer.Data
 
                 // Update scene names.
                 cData.SceneNames = new();
-                cData.SceneAliases = new();
                 foreach (var scene in clusterToScenes[cluster])
                 {
-                    cData.SceneNames.Add(scene);
-                    cData.SceneAliases.Add(SM[scene].Alias);
+                    cData.SceneNames[scene] = SM[scene].Alias;
                 }
+            }
+
+            foreach (var e in CD)
+            {
+                var cluster = e.Key;
+                var cData = e.Value;
 
                 if (!clusterAdjacency.TryGetValue(cluster, out HashSet<string> aClusters))
                 {
