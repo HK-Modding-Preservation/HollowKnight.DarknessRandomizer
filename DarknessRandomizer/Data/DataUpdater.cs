@@ -1,8 +1,11 @@
 ﻿using DarknessRandomizer.Lib;
+using RandomizerCore.Logic;
+using RandomizerMod.RC;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
+using UnityEngine.UI;
 
 namespace DarknessRandomizer.Data
 {
@@ -53,14 +56,14 @@ namespace DarknessRandomizer.Data
 
         public static void UpdateGraphData()
         {
-            DataUpdaterMetadata gud =
+            DataUpdaterMetadata dum =
                 JsonUtil.DeserializeEmbedded<DataUpdaterMetadata>("DarknessRandomizer.Resources.Data.data_updater_metadata.json");
             DarknessRandomizer.Log("Loading Graph Data for update...");
 
             // Load all the data.
-            var SM = RawSceneMetadata.LoadFromPath($"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
-            var SD = RawSceneData.LoadFromPath($"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
-            var CD = RawClusterData.LoadFromPath($"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
+            var SM = RawSceneMetadata.LoadFromPath($"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
+            var SD = RawSceneData.LoadFromPath($"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
+            var CD = RawClusterData.LoadFromPath($"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
 
             // We delete scenes from metadata to not track them; make sure adjacencies are also updated.
             foreach (var e in SM)
@@ -256,17 +259,19 @@ namespace DarknessRandomizer.Data
             MaybeThrowException(exceptions);
 
             var DS = ComputeDataStats(SM, SD, CD);
-            RewriteJsonFile(DS, $"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/data_stats.json");
+            RewriteJsonFile(DS, $"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/data_stats.json");
 
             // Only update data at the end, if we have no exceptions.
-            RewriteJsonFile(SM, $"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
-            RewriteJsonFile(SD, $"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
-            RewriteJsonFile(CD, $"{gud.RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
+            RewriteJsonFile(SM, $"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
+            RewriteJsonFile(SD, $"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
+            RewriteJsonFile(CD, $"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
 
-            UpdateCSFile($"{gud.RepoRoot}/DarknessRandomizer/Data/SceneName.cs", "INSERT_SCENE_NAMES", SM,
-                (n, sm) => $"SceneName {CSharpClean(sm.Alias)} = new(\"{n}\")");
-            UpdateCSFile($"{gud.RepoRoot}/DarknessRandomizer/Data/ClusterName.cs", "INSERT_CLUSTER_NAMES", CD,
-                (n, cd) => $"ClusterName {CSharpClean(n)} = new(\"{n}\")");
+            UpdateCSFile($"{dum.RepoRoot}/DarknessRandomizer/Data/SceneName.cs", "INSERT_SCENE_NAMES", SM,
+                (n, sm) => $"public static readonly SceneName {CSharpClean(sm.Alias)} = new(\"{n}\")");
+            UpdateCSFile($"{dum.RepoRoot}/DarknessRandomizer/Data/ClusterName.cs", "INSERT_CLUSTER_NAMES", CD,
+                (n, cd) => $"public static readonly ClusterName {CSharpClean(n)} = new(\"{n}\")");
+            UpdateCSFile($"{dum.RepoRoot}/DarknessRandomizer/Data/WaypointNames.cs", "INSERT_WAYPOINTS", GetWaypointsDict(),
+                (k, v) => $"public const string {k} = \"{v}\"");
             DarknessRandomizer.Log("Updated Graph Data!");
         }
 
@@ -321,6 +326,17 @@ namespace DarknessRandomizer.Data
             return DS;
         }
 
+        private static Dictionary<string, string> GetWaypointsDict()
+        {
+            Dictionary<string, string> dict = new();
+            LogicManager lm = RCData.GetNewLogicManager(new());
+            foreach (var lw in lm.Waypoints)
+            {
+                dict[CSharpClean(lw.term.Name)] = lw.term.Name;
+            }
+            return dict;
+        }
+
         private static void RewriteJsonFile<T>(T data, string path)
         {
             File.Delete(path);
@@ -336,7 +352,7 @@ namespace DarknessRandomizer.Data
 
         private static void UpdateCSFile<K, V>(string path, string marker, IDictionary<K, V> dict, CSAssignment<K, V> assigner)
         {
-            StreamReader sr = new(path);
+            using StreamReader sr = new(path);
             List<string> outLines = new();
             string line, indent;
             int state = 0;
@@ -348,20 +364,20 @@ namespace DarknessRandomizer.Data
                 if (state == 0)
                 {
                     outLines.Add(line);
-                    Match match = Regex.Match(line, $"^(.+)// @@@ {marker} START @@@$");
+                    Match match = Regex.Match(line, $"^(.+)// @@@ {Regex.Escape(marker)} START @@@$");
                     if (match.Success)
                     {
                         state = 1;
                         indent = match.Groups[1].Value;
                         foreach (var e in dict)
                         {
-                            outLines.Add($"{indent}public static readonly {assigner.Invoke(e.Key, e.Value)};");
+                            outLines.Add($"{indent}{assigner.Invoke(e.Key, e.Value)};");
                         }
                     }
                 }
                 else if (state == 1)
                 {
-                    Match match = Regex.Match(line, $"^.+// @@@ {marker} END @@@$");
+                    Match match = Regex.Match(line, $"^.+// @@@ {Regex.Escape(marker)} END @@@$");
                     if (match.Success)
                     {
                         state = 2;
@@ -373,12 +389,12 @@ namespace DarknessRandomizer.Data
                     outLines.Add(line);
                 }
             }
-            sr.Close();
 
+            sr.Close();
             File.Delete(path);
-            StreamWriter sw = new(path);
+
+            using StreamWriter sw = new(path);
             outLines.ForEach(l => sw.WriteLine(l));
-            sw.Close();
         }
     }
 }
