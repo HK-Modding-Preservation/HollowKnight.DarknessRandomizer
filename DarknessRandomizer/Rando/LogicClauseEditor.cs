@@ -45,7 +45,7 @@ namespace DarknessRandomizer.Rando
     {
         private static bool GuaranteedLantern(this SceneTree tree) => tree.Metadata != null && tree.Metadata.GuaranteedLantern;
 
-        public static void EditDarkness(LogicManagerBuilder lmb, string name, SimpleToken lanternToken, SceneNameInferrer si, DarknessLogicAdder dla)
+        public static void EditDarkness(LogicManagerBuilder lmb, string name, SimpleToken lanternToken, SceneNameInferrer sni, DarknessLogicAdder dla)
         {
             var lc = lmb.LogicLookup[name];
 
@@ -59,7 +59,7 @@ namespace DarknessRandomizer.Rando
                 }
                 else
                 {
-                    stack.Push(LogicTree.CreateLeaf(ParsedToken.Parse(lt, si)));
+                    stack.Push(LogicTree.CreateLeaf(ParsedToken.Parse(lt, sni)));
                 }
             }
 
@@ -285,7 +285,7 @@ namespace DarknessRandomizer.Rando
 
         public static readonly ParsedToken Lantern = new(null, TokenType.Lantern, null);
 
-        public static ParsedToken Parse(LogicToken token, SceneNameInferrer si)
+        public static ParsedToken Parse(LogicToken token, SceneNameInferrer sni)
         {
             if (token is SimpleToken st)
             {
@@ -295,7 +295,7 @@ namespace DarknessRandomizer.Rando
                     return Lantern;
                 }
 
-                if (si.Invoke(name, out SceneName sceneName) && Data.SceneData.Get(sceneName).MaximumDarkness == Darkness.Dark)
+                if (sni.Invoke(name, out SceneName sceneName))
                 {
                     return new(token, TokenType.Scene, sceneName);
                 }

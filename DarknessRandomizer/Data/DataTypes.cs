@@ -47,6 +47,8 @@ namespace DarknessRandomizer.Data
 
         public static ClusterData Get(ClusterName clusterName) => data[clusterName];
 
+        public static ClusterData Get(SceneName sceneName) => data[SceneData.Get(sceneName).Cluster];
+
         protected override IEnumerable<KeyValuePair<ClusterName, RelativeDarkness>> AdjacentDarkness() => AdjacentClusters.Enumerate();
 
         protected override RelativeDarkness GetAdjacentDarkness(ClusterName cluster) => AdjacentClusters[cluster];
