@@ -97,8 +97,8 @@ namespace DarknessRandomizer.Data
                 Darkness d2 = SL.Invoke(sn).MaximumDarkness;
                 if (d2 > d) d = d2;
             }
-
-            if (d == Darkness.Dark && CursedOnly is bool b && b && settings != null && settings.DarknessLevel != DarknessLevel.Cursed)
+            
+            if (d == Darkness.Dark && (CursedOnly ?? false) && (settings?.DarknessLevel ?? DarknessLevel.Cursed) != DarknessLevel.Cursed)
             {
                 return Darkness.SemiDark;
             }
