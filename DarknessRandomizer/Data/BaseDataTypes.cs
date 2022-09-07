@@ -38,7 +38,6 @@ namespace DarknessRandomizer.Data
         public ClusterNameT Cluster;
         public Darkness MinimumDarkness = Darkness.Bright;
         public Darkness MaximumDarkness = Darkness.Dark;
-        public bool IsVanillaDark = false;
 
         public Darkness ClampDarkness(Darkness d)
         {
