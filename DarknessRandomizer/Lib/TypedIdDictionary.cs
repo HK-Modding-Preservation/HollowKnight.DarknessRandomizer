@@ -65,6 +65,8 @@ namespace DarknessRandomizer.Lib
 
         public void Clear() => dict.Clear();
 
+        public int Count => dict.Count;
+
         public IEnumerable<K> Keys => Enumerate().Select(e => e.Key);
 
         public IEnumerable<KeyValuePair<K, V>> Enumerate()

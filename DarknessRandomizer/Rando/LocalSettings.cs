@@ -17,8 +17,8 @@ namespace DarknessRandomizer.Rando
 
             if (Settings.RandomizeDarkness)
             {
-                Algorithm algorithm = new(GS, startDef, Settings);
-                algorithm.SelectDarknessLevels(out DarknessOverrides, out Stats);
+                var darknessAlgorithm = DarknessAlgorithm.Select(GS, startDef, Settings);
+                darknessAlgorithm.SpreadDarkness(out DarknessOverrides, out Stats);
             }
         }
     }
