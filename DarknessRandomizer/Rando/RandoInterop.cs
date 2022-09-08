@@ -1,5 +1,7 @@
 ﻿using ItemChanger;
+using Newtonsoft.Json;
 using RandomizerMod.RC;
+using System.IO;
 
 namespace DarknessRandomizer.Rando
 {
@@ -14,6 +16,7 @@ namespace DarknessRandomizer.Rando
             RequestModifier.Setup();
 
             RandoController.OnExportCompleted += Finish;
+            RandomizerMod.Logging.SettingsLog.AfterLogSettings += LogSettings;
             RandomizerMod.Logging.LogManager.AddLogger(new DarknessLogger());
         }
 
@@ -29,7 +32,7 @@ namespace DarknessRandomizer.Rando
 
         public static string LanternShardItemName => RandoPlusInterop.LanternShardItemName;
 
-        public static void Finish(RandoController rc)
+        private static void Finish(RandoController rc)
         {
             if (!IsEnabled) return;
 
@@ -44,6 +47,15 @@ namespace DarknessRandomizer.Rando
                     dlem.darknessLevelsByScene[entry.Key.Name()] = (int)entry.Value;
                 }
             }
+        }
+
+        private static void LogSettings(RandomizerMod.Logging.LogArguments args, TextWriter tw)
+        {
+            if (!IsEnabled) return;
+            tw.WriteLine("Logging DarknessRando DarknessRandomizationSettings:");
+            using JsonTextWriter jtw = new(tw) { CloseOutput = false };
+            JsonUtil._js.Serialize(jtw, LS.Settings);
+            tw.WriteLine();
         }
     }
 }
