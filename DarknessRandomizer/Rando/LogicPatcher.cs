@@ -70,6 +70,9 @@ namespace DarknessRandomizer.Rando
                 // All blue lake checks are free in the dark except the rancid egg.
                 { "Rancid_Egg-Blue_Lake", StandardLogicEdit },
 
+                // Greenpath toll bench requires lantern.
+                { "Bench-Greenpath_Toll", CustomDarkLogicEdit("Bench-Greenpath_Toll") },
+
                 // These checks are free from bench-rando benches.
                 { "Crystal_Heart", SkipDarkLogicFor("Bench-Mining_Golem") },
                 { "Isma's_Tear", SkipDarkLogicFor("Bench-Isma's_Grove") },
@@ -135,6 +138,7 @@ namespace DarknessRandomizer.Rando
             FreeDarkroomsClique($"{SceneName.FungalCoreUpper}[right1]", "Bench-Fungal_Core");
             FreeDarkroomsClique($"{SceneName.FungalLeftOfPilgrimsWay}[bot1]", $"{SceneName.FungalLeftOfPilgrimsWay}[right1]", "Bench-Pilgrim's_End");
             FreeDarkroomsClique($"{SceneName.GardensBeforePetraArena}[left1]", "Bench-Gardens_Atrium");
+            FreeDarkroomsClique($"{SceneName.GreenpathSheo}[door1]", "Bench-Sheo");
             FreeDarkroomsClique($"{SceneName.GreenpathSheoGauntlet}[right1]", "Bench-Duranda's_Trial");
             FreeDarkroomsClique($"{SceneName.GroundsCrypts}[top1]", "Bench-Crypts");
             FreeDarkroomsClique($"{SceneName.GroundsSpiritsGlade}[left1]", "Bench-Spirits'_Glade");
@@ -150,9 +154,6 @@ namespace DarknessRandomizer.Rando
                 // uniquely affected by darkness.
                 { SceneName.FungalQueensStation, NoLogicEdit },
                 { SceneName.GroundsXero, NoLogicEdit },
-
-                // These transitions are free from benches.
-                { SceneName.GreenpathOutsideSheo, SkipDarkLogicFor("Bench-Sheo") },
             };
 
             logicOverridesByUniqueScene = new()
