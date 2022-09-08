@@ -19,12 +19,12 @@ namespace DarknessRandomizer.Rando
         private delegate void LogicOverride(LogicManagerBuilder lmb, string logicName, LogicClause lc);
 
         private readonly Dictionary<string, LogicOverride> logicOverridesByName;
-        private readonly Dictionary<SceneName, LogicOverride> logicOverridesByTransitionScene;
+        private readonly Dictionary<SceneName, LogicOverride> logicOverridesBySceneTransition;
         private readonly Dictionary<SceneName, LogicOverride> logicOverridesByUniqueScene;
 
         public SimpleToken LanternToken { get; }
 
-        public LogicOverrides()
+        public LogicOverrides(LogicManagerBuilder lmb)
         {
             LanternToken = new SimpleToken(RandoInterop.LanternTermName);
 
@@ -47,12 +47,34 @@ namespace DarknessRandomizer.Rando
                 { WaypointNames.DefeatedSoulTyrant, CustomSceneLogicEdit(SceneName.DreamSoulTyrant, "DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
                 { WaypointNames.DefeatedWhiteDefender, CustomSceneLogicEdit(SceneName.DreamWhiteDefender, "DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
 
+                // These checks are free in the dark.
+                { "Bench-Ancestral_Mound", NoLogicEdit },
+                { "Dashmaster", NoLogicEdit },
+                { "Mask_Shard-Deepnest", NoLogicEdit },
+                { "Vengeful_Spirit", NoLogicEdit },
+
                 // Specific checks with difficult platforming.
                 { "Void_Heart", CustomSceneLogicEdit(SceneName.DreamAbyss, "DARKROOMS + DIFFICULTSKIPS") },
 
                 // QG stag checks are free except for these two.
                 { "Soul_Totem-Below_Marmu", CustomDarkLogicEdit("DARKROOMS") },
                 { $"{SceneName.GardensGardensStag}[top1]", CustomDarkLogicEdit("DARKROOMS") },
+
+                // Basin toll bench requires lantern.
+                { "Bench-Basin_Toll", CustomDarkLogicEdit("Bench-Basin_Toll") },
+
+                // Cornifer bench makes the left transition free, but not vice versa.
+                { $"{SceneName.GardensCornifer}[left1]", SkipDarkLogicFor("Bench-Gardens_Cornifer") },
+                { "Queen's_Gardens_Map", SkipDarkLogicFor("Bench-Gardens_Cornifer") },
+
+                // All blue lake checks are free in the dark except the rancid egg.
+                { "Rancid_Egg-Blue_Lake", StandardLogicEdit },
+
+                // These checks are free from bench-rando benches.
+                { "Crystal_Heart", SkipDarkLogicFor("Bench-Mining_Golem") },
+                { "Isma's_Tear", SkipDarkLogicFor("Bench-Isma's_Grove") },
+                { "King's_Idol-Deepnest", SkipDarkLogicFor("Bench-Zote's_Folly") },
+                { "Tram_Pass", SkipDarkLogicFor("Bench-Destroyed_Tram") },
 
                 // These bosses are deemed difficult in the dark.
                 { "Defeated_Any_Hollow_Knight", CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
@@ -78,23 +100,59 @@ namespace DarknessRandomizer.Rando
                 { WaypointNames.DefeatedUumuu, CustomDarkLogicEdit("DARKROOMS + PROFICIENTCOMBAT") },
                 { WaypointNames.DefeatedWatcherKnights, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
 
-                // Using Elegant Key requires lantern.
+                // These two checks in the city toll room require lantern. All else is free.
+                { "Bench-City_Toll", CustomDarkLogicEdit("Bench-City_Toll") },
                 { $"{SceneName.CityTollBench.Name()}[left3]", CustomDarkLogicEdit("FALSE") },
 
                 // Flower quest simply requires lantern.
                 { "Mask_Shard-Grey_Mourner", (lmb, ln, lc) => lmb.DoLogicEdit(new(ln, $"ORIG + {LanternToken.Write()}")) }
             };
 
-            logicOverridesByTransitionScene = new()
+            FreeDarkroomsClique($"{SceneName.AbyssLighthouseClimb}[right3]", "Bench-Abyss_Workshop");
+            FreeDarkroomsClique($"{SceneName.BasinBrokenVesselGrub}[bot2]", "Bench-Far_Basin");
+            FreeDarkroomsClique($"{SceneName.BasinFountain}[top1]", "Bench-Basin_Hub");
+            FreeDarkroomsClique($"{SceneName.CityGrubBelowKings}[left1]", "Bench-Flooded_Stag");
+            FreeDarkroomsClique($"{SceneName.CityOutsideNailsmith}[door1]", "Bench-Nailsmith");
+            FreeDarkroomsClique($"{SceneName.CityQuirrelBench}[bot1]", "Bench-Quirrel");
+            FreeDarkroomsClique($"{SceneName.CitySanctumSpellTwister}[right1]", "Bench-Inner_Sanctum");
+            FreeDarkroomsClique($"{SceneName.CliffsMain}[right1]", "Bench-Cliffs_Overhang");
+            FreeDarkroomsClique($"{SceneName.CliffsMain}[right3]", "Bench-Blasted_Plains");
+            FreeDarkroomsClique($"{SceneName.CrossroadsGreenpathEntrance}[right1]", "Bench-Pilgrim's_Start");
+            FreeDarkroomsClique($"{SceneName.CrossroadsGruzMother}[door_charmshop]", $"{SceneName.CrossroadsGruzMother}[right1]", "Bench-Salubra");
+            FreeDarkroomsClique($"{SceneName.CrystalDarkBench}[left1]", "Bench-Peak_Dark_Room");
+            FreeDarkroomsClique($"{SceneName.CrystalGuardianBench}[left1]", $"{SceneName.CrystalGuardianBench}[right1]", "Bench-Crystal_Guardian");
+            FreeDarkroomsClique($"{SceneName.DeepnestLowerCornifer}[top2]", $"{SceneName.DeepnestLowerCornifer}[right1]", "Bench-Deepnest_Gate");
+            FreeDarkroomsClique($"{SceneName.DeepnestHotSpring}[left1]", $"{SceneName.DeepnestHotSpring}[right1]", "Bench-Deepnest_Hot_Springs");
+            FreeDarkroomsClique($"{SceneName.DeepnestWeaversDen}[left1]", "Bench-Bench-Weaver's_Den");
+            FreeDarkroomsClique($"{SceneName.DeepnestNoskArena}[left1]", "Bench-Nosk's_Lair");
+            FreeDarkroomsClique($"{SceneName.DeepnestZoteArena}[bot1]", "Bench-Zote's_Folly");
+            FreeDarkroomsClique($"{SceneName.EdgeHornetSentinelArena}[left1]", "Bench-Hornet's_Outpost");
+            FreeDarkroomsClique($"{SceneName.EdgeOutsideOro}[door1]", $"{SceneName.EdgeOutsideOro}[right1]", "Bench-Oro");
+            FreeDarkroomsClique($"{SceneName.EdgePaleLurker}[left1]", "Bench-Lurker's_Overlook");
+            FreeDarkroomsClique($"{SceneName.EdgeWhisperingRoot}[left1]", "Bench-Edge_Summit");
+            FreeDarkroomsClique($"{SceneName.FogOvergrownMound}[left1]", "Bench-Overgrown_Mound");
+            FreeDarkroomsClique($"{SceneName.FungalBrettaBench}[left3]", "Bench-Bretta");
+            FreeDarkroomsClique($"{SceneName.FungalCoreUpper}[right1]", "Bench-Fungal_Core");
+            FreeDarkroomsClique($"{SceneName.FungalLeftOfPilgrimsWay}[bot1]", $"{SceneName.FungalLeftOfPilgrimsWay}[right1]", "Bench-Pilgrim's_End");
+            FreeDarkroomsClique($"{SceneName.GardensBeforePetraArena}[left1]", "Bench-Gardens_Atrium");
+            FreeDarkroomsClique($"{SceneName.GreenpathSheoGauntlet}[right1]", "Bench-Duranda's_Trial");
+            FreeDarkroomsClique($"{SceneName.GroundsCrypts}[top1]", "Bench-Crypts");
+            FreeDarkroomsClique($"{SceneName.GroundsSpiritsGlade}[left1]", "Bench-Spirits'_Glade");
+            FreeDarkroomsClique($"{SceneName.HiveOutsideShortcut}[right2]", "Bench-Hive_Hideaway");
+            FreeDarkroomsClique($"{SceneName.KingsPass}[top2]", "Bench-King's_Pass");
+
+            logicOverridesBySceneTransition = new()
             {
-                // TODO: Fix for bench rando
+                // This gets overridden for bench rando.
                 { SceneName.GreenpathToll, CustomDarkLogicEdit("FALSE") },
 
                 // The following scenes are trivial to navigate while dark, but may contain a check which is
                 // uniquely affected by darkness.
                 { SceneName.FungalQueensStation, NoLogicEdit },
-                { SceneName.GroundsBlueLake, NoLogicEdit },
                 { SceneName.GroundsXero, NoLogicEdit },
+
+                // These transitions are free from benches.
+                { SceneName.GreenpathOutsideSheo, SkipDarkLogicFor("Bench-Sheo") },
             };
 
             logicOverridesByUniqueScene = new()
@@ -108,6 +166,7 @@ namespace DarknessRandomizer.Rando
                 { SceneName.CityTollBench, CustomDarkLogicEdit("ANY") },
                 // Gardens checks by the stag are free; marmu, marmu totem, and the upper transition are exceptions.
                 { SceneName.GardensGardensStag, CustomDarkLogicEdit("ANY") },
+                { SceneName.GroundsBlueLake, CustomDarkLogicEdit("ANY") },
 
                 // These scenes have difficult dark platforming.
                 { SceneName.CrystalCrystalHeartGauntlet, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") },
@@ -118,7 +177,7 @@ namespace DarknessRandomizer.Rando
 
             if (ModHooks.GetMod("BenchRando") is Mod)
             {
-                DoBenchRandoInterop();
+                DoBenchRandoInterop(lmb);
             }
         }
 
@@ -128,7 +187,7 @@ namespace DarknessRandomizer.Rando
         };
         private readonly Dictionary<string, SceneNameInferrer> sceneNameInferrerOverrides = new();
 
-        private void DoBenchRandoInterop()
+        private void DoBenchRandoInterop(LogicManagerBuilder lmb)
         {
             foreach (var e in BenchRando.BRData.BenchLookup)
             {
@@ -141,6 +200,12 @@ namespace DarknessRandomizer.Rando
 
                 // Bench checks are obtainable even in dark rooms, if the player has the benchwarp pickup.
                 sceneNameInferrerOverrides[benchName] = (string term, out SceneName sceneName) => InferSceneName(term, out sceneName) && term != benchName;
+            }
+
+            // Apply custom overrides only applicable in bench rando.
+            if (lmb.LogicLookup.ContainsKey("Bench-Greenpath_Toll"))
+            {
+                logicOverridesByUniqueScene[SceneName.GreenpathToll] = CustomDarkLogicEdit("DARKROOMS | Bench-Greenpath_Toll");
             }
         }
 
@@ -201,7 +266,7 @@ namespace DarknessRandomizer.Rando
             }
 
             if (InferSceneName(logicName, out SceneName sceneName)
-                && logicOverridesByTransitionScene.TryGetValue(sceneName, out handler))
+                && logicOverridesBySceneTransition.TryGetValue(sceneName, out handler))
             {
                 handler.Invoke(lmb, logicName, lc);
                 return;
@@ -216,6 +281,18 @@ namespace DarknessRandomizer.Rando
 
             // Do the standard logic edit.
             StandardLogicEdit(lmb, logicName, lc);
+        }
+
+        // Specifies that each logic name given is accessible from the others even in darkrooms.
+        private void FreeDarkroomsClique(params string[] logicNames)
+        {
+            HashSet<string> all = new(logicNames);
+            foreach (var ln in logicNames)
+            {
+                HashSet<string> others = new(all);
+                others.Remove(ln);
+                logicOverridesByName[ln] = SkipDarkLogicFor(others.ToArray());
+            }
         }
 
         private readonly Dictionary<string, LogicClause> logicCache = new();
@@ -238,6 +315,31 @@ namespace DarknessRandomizer.Rando
                 }
             });
         }
+
+        private LogicOverride SkipDarkLogicFor(params string[] locTerms)
+        {
+            HashSet<string> set = new(locTerms);
+            return (lmb, logicName, lc) => {
+                var orig = GetSceneNameInferrer(logicName);
+                bool inferScene(string term, out SceneName sceneName)
+                {
+                    if (set.Contains(term))
+                    {
+                        sceneName = default;
+                        return false;
+                    }
+                    return orig(term, out sceneName);
+                }
+
+                LogicClauseEditor.EditDarkness(lmb, logicName, LanternToken, inferScene, (sink) => sink.Add(DarkroomsToken));
+            };
+        }
+
+        private LogicOverride CustomExtraLogicEdit(LogicOverride extra) => (lmb, logicName, lc) =>
+            {
+                StandardLogicEdit(lmb, logicName, lc);
+                extra.Invoke(lmb, logicName, lc);
+            };
 
         private LogicOverride CustomSceneLogicEdit(SceneName sceneName, string darkLogic)
         {
@@ -275,7 +377,7 @@ namespace DarknessRandomizer.Rando
             var newResolver = new DarknessVariableResolver(lmb.VariableResolver);
             lmb.VariableResolver = newResolver;
 
-            LogicOverrides overrides = new();
+            LogicOverrides overrides = new(lmb);
 
             // We want to generically modify logic by location (SceneName), but unfortunately the LogicManager is constructed
             // before any of the location info is provided via the RequestBuilder, so we have to be creative.
