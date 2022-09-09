@@ -121,10 +121,26 @@ namespace DarknessRandomizer.Lib
             foreach (var e in clusterDarkness.Enumerate())
             {
                 var cluster = e.Key;
+                var cData = ClusterData.Get(cluster);
                 var darkness = e.Value;
                 foreach (var scene in ClusterData.Get(cluster).SceneNames.Keys)
                 {
-                    darknessOverrides[scene] = Data.SceneData.Get(scene).ClampDarkness(darkness);
+                    if (darkness == Darkness.SemiDark)
+                    {
+                        // Only make a scene semi-dark if it has a dark neighbor.
+                        var anyDarkNeighbor = SceneMetadata.Get(scene).AdjacentScenes.Any(aScene =>
+                        {
+                            var aCluster = Data.SceneData.Get(aScene).Cluster;
+                            return aCluster != cluster && clusterDarkness[aCluster] == Darkness.Dark
+                                && cData.AdjacentClusters.TryGetValue(aCluster, out RelativeDarkness rd) && rd != RelativeDarkness.Disconnected;
+                        });
+
+                        darknessOverrides[scene] = Data.SceneData.Get(scene).ClampDarkness(anyDarkNeighbor ? Darkness.SemiDark : Darkness.Bright);
+                    }
+                    else
+                    {
+                        darknessOverrides[scene] = Data.SceneData.Get(scene).ClampDarkness(darkness);
+                    }
                 }
             }
 
