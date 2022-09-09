@@ -243,7 +243,7 @@
     "Alias": "Crossroads_Outside_Myla",
     "Cluster": "CrossroadsPeaksBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "SemiDark"
   },
   "Crossroads_15": {
     "Alias": "Crossroads_Corridor_to_Tram",
