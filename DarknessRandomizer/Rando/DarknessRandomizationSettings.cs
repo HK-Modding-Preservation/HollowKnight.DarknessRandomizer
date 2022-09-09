@@ -6,6 +6,7 @@ namespace DarknessRandomizer.Rando
     {
         Dim,
         Dark,
+        Darker,
         Cursed
     }
 
@@ -35,8 +36,12 @@ namespace DarknessRandomizer.Rando
                     min = 3500;
                     max = 4500;
                     break;
+                case DarknessLevel.Darker:
+                    min = 6000;
+                    max = 7000;
+                    break;
                 case DarknessLevel.Cursed:
-                    min = 12000;
+                    min = 13000;
                     max = 15000;
                     break;
                 default:
