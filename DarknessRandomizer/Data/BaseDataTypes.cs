@@ -7,6 +7,13 @@ using System.Linq;
 
 namespace DarknessRandomizer.Data
 {
+    public enum Darkness : int
+    {
+        Bright = 0,
+        SemiDark = 1,
+        Dark = 2
+    }
+
     // Because we use compiled identifier types, and the code which updates those types also depends on them, we need two classes
     // of data types in order to bootstrap. One, DataTypes.cs, uses the strongly-typed identifiers, where as RawDataTypes.cs uses
     // only strings. The graph updated code uses raw data types, whereas the rest uses DataTypes.cs.
@@ -108,6 +115,15 @@ namespace DarknessRandomizer.Data
             }
             return d;
         }
+    }
+
+    public static class DarknessUtil
+    {
+        public static Darkness Min(Darkness a, Darkness b) => a < b ? a : b;
+
+        public static Darkness Max(Darkness a, Darkness b) => a > b ? a : b;
+
+        public static Darkness Clamp(this Darkness self, Darkness min, Darkness max) => Min(Max(self, min), max);
     }
 
     public static class DataExtensions
