@@ -46,8 +46,8 @@ namespace DarknessRandomizer.Lib
             this.GS = GS;
             this.start = start;
             this.DRS = DRS;
-            this.darknessAvailable = DRS.GetDarknessBudget(r);
             this.r = new(GS.Seed + 7);
+            this.darknessAvailable = DRS.GetDarknessBudget(r);
 
             this.forcedBrightClusters = new();
 
