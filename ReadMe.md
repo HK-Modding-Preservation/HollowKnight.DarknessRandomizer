@@ -10,16 +10,22 @@ Probably doesn't work well with Room Rando, but you're welcome to try.
 
 * Randomize Darkness: Randomize which rooms in Hallownest are dark.
   * Darkness Level:
-    * _Dim_: Vanilla levels of darkness. Less than 5% of hallownest will be dark.
-    * _Dark_: Moderate levels of darkness. About 10-20% of hallownest will be dark.
-    * _Cursed_: Extreme levels of darkness. Up to 50% of hallownest will be dark.
+    * _Dim_: Vanilla levels of darkness. Less than 5% of Hallownest will be dark.
+    * _Dark_: Moderate levels of darkness. About 10-20% of Hallownest will be dark.
+    * _Darker_: Heavy levels of darkness. About 30% of Hallownest will be dark.
+    * _Cursed_: Extreme levels of darkness. Up to 50% of Hallownest will be dark.
   * Chaos: Select dark rooms at random, ignoring balancing probabilities and adjacency constraints.
 * Shattered Lantern: Split Lumafly Lantern into 4 Lantern Shards
   * Two Dupe Shards: Add 2 extra Lantern Shards
-
+  
 Some rooms will never be dark, some will never even be dim. Some rooms can only be dark on the Cursed setting.
 
-Enabling 'Unique Keys' in Duplicate Items settings will double the number of Lantern Shards.
+### Interop
+
+* Enabling 'Unique Keys' in Duplicate Items settings will double the number of Lantern Shards, if Shattered Lantern is enabled.
+* Applying the 'Deranged' constraint ensures that vanilla dark rooms will always be bright instead, if Randomize Darkness is enabled in non-Chaos mode.
+* Disabling White Palace and/or Path of Pain in the Long Location settings ensures those areas will not be darkened. Path of Pain can only be dark in Cursed mode.
+* Lantern Shards count as major items in All Majors, if unique keys are included.
 
 ## How it Works
 
