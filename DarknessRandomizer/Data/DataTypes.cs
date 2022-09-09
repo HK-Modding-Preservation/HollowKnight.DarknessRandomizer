@@ -3,6 +3,7 @@ using DarknessRandomizer.Rando;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 
 namespace DarknessRandomizer.Data
 {
@@ -53,6 +54,8 @@ namespace DarknessRandomizer.Data
         public static ClusterData Get(ClusterName clusterName) => data[clusterName];
 
         public static ClusterData Get(SceneName sceneName) => data[SceneData.Get(sceneName).Cluster];
+
+        public override int SceneCount => SceneNames.Count;
 
         protected override IEnumerable<SceneName> EnumerateSceneNames() => SceneNames.Keys;
 

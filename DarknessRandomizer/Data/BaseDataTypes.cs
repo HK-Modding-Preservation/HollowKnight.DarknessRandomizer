@@ -39,12 +39,7 @@ namespace DarknessRandomizer.Data
         public Darkness MinimumDarkness = Darkness.Bright;
         public Darkness MaximumDarkness = Darkness.Dark;
 
-        public Darkness ClampDarkness(Darkness d)
-        {
-            if (d < MinimumDarkness) return MinimumDarkness;
-            if (d > MaximumDarkness) return MaximumDarkness;
-            return d;
-        }
+        public Darkness ClampDarkness(Darkness d) => d.Clamp(MinimumDarkness, MaximumDarkness);
     }
 
     public enum RelativeDarkness
@@ -66,19 +61,19 @@ namespace DarknessRandomizer.Data
     {
         public bool? OverrideCannotBeDarknessSource = null;
         public bool? CursedOnly = false;
-        public DarkSettings DarkSettings = null;
+        public DarkSettings? DarkSettings = null;
 
         public delegate BaseSceneData<ClusterNameT> SceneLookup(SceneNameT scene);
+
+        public abstract int SceneCount { get; }
 
         protected abstract IEnumerable<SceneNameT> EnumerateSceneNames();
 
         protected abstract IEnumerable<KeyValuePair<ClusterNameT, RelativeDarkness>> EnumerateRelativeDarkness();
 
-        [JsonIgnore]
-        public int ProbabilityWeight => DarkSettings?.ProbabilityWeight ?? 100;
+        public int? ProbabilityWeight => DarkSettings?.ProbabilityWeight;
 
-        [JsonIgnore]
-        public int CostWeight => DarkSettings?.CostWeight ?? 0;
+        public int? CostWeight => DarkSettings?.CostWeight;
 
         public bool CanBeDarknessSource(SceneLookup SL, DarknessRandomizationSettings settings = null)
         {

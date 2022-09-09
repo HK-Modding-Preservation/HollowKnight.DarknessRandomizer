@@ -38,7 +38,7 @@ namespace DarknessRandomizer.Lib
                 var cData = ClusterData.Get(c);
                 if (cData.CanBeDarknessSource(DRS) && !forcedBrightClusters.Contains(c))
                 {
-                    darkCandidates.Add(c, cData.ProbabilityWeight);
+                    darkCandidates.Add(c, cData.ProbabilityWeight.Value);
                 }
             }
             while (!darkCandidates.IsEmpty() && darknessAvailable > 0)
@@ -92,7 +92,7 @@ namespace DarknessRandomizer.Lib
 
             // This can go negative; fixing that would require pruning the heap of high cost clusters.
             var cData = ClusterData.Get(name);
-            darknessAvailable -= cData.CostWeight;
+            darknessAvailable -= cData.CostWeight.Value;
 
             // Add adjacent clusters if constraints are satisfied.
             foreach (var e in cData.AdjacentClusters.Enumerate())
@@ -110,7 +110,7 @@ namespace DarknessRandomizer.Lib
                     && aData.AdjacentClusters.Enumerate().All(
                         e => e.Value != RelativeDarkness.Darker || clusterDarkness[e.Key] == Darkness.Dark))
                 {
-                    darkCandidates.Add(aName, aData.ProbabilityWeight);
+                    darkCandidates.Add(aName, aData.ProbabilityWeight.Value);
                 }
             }
         }
@@ -142,11 +142,11 @@ namespace DarknessRandomizer.Lib
                 var cData = ClusterData.Get(e.Key);
                 if (e.Value == Darkness.Dark)
                 {
-                    stats.DarknessSpent += cData.CostWeight;
+                    stats.DarknessSpent += cData.CostWeight.Value;
                 }
                 else if (cData.MaximumDarkness(DRS) == Darkness.Dark && !forcedBrightClusters.Contains(e.Key))
                 {
-                    stats.DarknessRemaining += cData.CostWeight;
+                    stats.DarknessRemaining += cData.CostWeight.Value;
                 }
             }
         }

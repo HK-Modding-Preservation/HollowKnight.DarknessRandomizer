@@ -24,6 +24,8 @@ namespace DarknessRandomizer.Data
 
         public SortedDictionary<string, RelativeDarkness> AdjacentClusters = new();
 
+        public override int SceneCount => SceneNames.Count;
+
         protected override IEnumerable<string> EnumerateSceneNames() => SceneNames.Keys;
 
         protected override IEnumerable<KeyValuePair<string, RelativeDarkness>> EnumerateRelativeDarkness() {

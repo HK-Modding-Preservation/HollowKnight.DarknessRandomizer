@@ -300,7 +300,7 @@ namespace DarknessRandomizer.Data
                 bool darkSource = cData.CanBeDarknessSource(s => SD[s]);
                 bool semiDark = cData.MaximumDarkness(s => SD[s]) == Darkness.SemiDark;
                 bool cursed = cData.CursedOnly ?? false;
-                int darkCost = cData.CostWeight;
+                int darkCost = cData.CostWeight.Value;
 
                 ++DS.NumClusters;
                 DS.NumDarknessSources += darkSource ? 1 : 0;
