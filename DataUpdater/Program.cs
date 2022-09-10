@@ -1,3 +1,9 @@
 ﻿using DarknessRandomizer.Data;
 
-DataUpdater.UpdateGraphData();
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        DarknessRandomizer.Data.DataUpdater.UpdateGraphData();
+    }
+}
