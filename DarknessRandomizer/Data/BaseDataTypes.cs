@@ -72,14 +72,17 @@ namespace DarknessRandomizer.Data
 
         public delegate BaseSceneData<ClusterNameT> SceneLookup(SceneNameT scene);
 
+        [JsonIgnore]
         public abstract int SceneCount { get; }
 
         protected abstract IEnumerable<SceneNameT> EnumerateSceneNames();
 
         protected abstract IEnumerable<KeyValuePair<ClusterNameT, RelativeDarkness>> EnumerateRelativeDarkness();
 
+        [JsonIgnore]
         public int? ProbabilityWeight => DarkSettings?.ProbabilityWeight;
 
+        [JsonIgnore]
         public int? CostWeight => DarkSettings?.CostWeight;
 
         public bool CanBeDarknessSource(SceneLookup SL, DarknessRandomizationSettings settings = null)

@@ -1970,7 +1970,7 @@
     "AdjacentClusters": {
       "CrossroadsCanyonBridge": "Darker",
       "FogCanyonCharmNotch": "Darker",
-      "FogCanyonOutsideArchives": "Any",
+      "FogCanyonOutsideArchives": "Brighter",
       "FogCanyonWest": "Disconnected",
       "FungalUpper": "Disconnected"
     },
@@ -1988,8 +1988,8 @@
     },
     "AdjacentClusters": {
       "FogCanyonArchives": "Darker",
-      "FogCanyonEast": "Any",
-      "FogCanyonWest": "Any"
+      "FogCanyonEast": "Darker",
+      "FogCanyonWest": "Darker"
     },
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
@@ -2042,11 +2042,11 @@
     },
     "AdjacentClusters": {
       "FogCanyonEast": "Disconnected",
-      "FogCanyonOutsideArchives": "Any",
+      "FogCanyonOutsideArchives": "Brighter",
       "FogCanyonQGA": "Brighter",
       "FogCanyonRobber": "Brighter",
       "FogCanyonWestWing": "Darker",
-      "FungalQueensStation": "Any",
+      "FungalQueensStation": "Brighter",
       "GreenpathLowerHub": "Any"
     },
     "OverrideCannotBeDarknessSource": null,
@@ -2072,6 +2072,21 @@
     "DarkSettings": {
       "ProbabilityWeight": 125,
       "CostWeight": 150
+    }
+  },
+  "FungalBretta": {
+    "SceneNames": {
+      "Fungus2_23": "Fungal_Dashmaster"
+    },
+    "AdjacentClusters": {
+      "FungalMantisVillage": "Brighter",
+      "WaterwaysWestWing": "Disconnected"
+    },
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 125,
+      "CostWeight": 100
     }
   },
   "FungalClothCorridor": {
@@ -2157,7 +2172,7 @@
     "AdjacentClusters": {
       "FungalCorniferHub": "Any",
       "FungalOgres": "Darker",
-      "FungalQueensStation": "Any"
+      "FungalQueensStation": "Brighter"
     },
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
@@ -2204,13 +2219,12 @@
     "SceneNames": {
       "Fungus2_12": "Fungal_Mantis_Corridor",
       "Fungus2_13": "Fungal_Bretta_Bench",
-      "Fungus2_14": "Fungal_Mantis_Village",
-      "Fungus2_23": "Fungal_Dashmaster"
+      "Fungus2_14": "Fungal_Mantis_Village"
     },
     "AdjacentClusters": {
+      "FungalBretta": "Darker",
       "FungalLowerHub": "Any",
-      "FungalMantisLords": "Darker",
-      "WaterwaysWestWing": "Any"
+      "FungalMantisLords": "Darker"
     },
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
@@ -2258,15 +2272,12 @@
       "Fungus2_34": "Fungal_Willoh"
     },
     "AdjacentClusters": {
-      "FogCanyonWest": "Any",
-      "FungalEntrance": "Any"
+      "FogCanyonWest": "Darker",
+      "FungalEntrance": "Darker"
     },
-    "OverrideCannotBeDarknessSource": false,
-    "CursedOnly": false,
-    "DarkSettings": {
-      "ProbabilityWeight": 50,
-      "CostWeight": 50
-    }
+    "OverrideCannotBeDarknessSource": null,
+    "CursedOnly": null,
+    "DarkSettings": null
   },
   "FungalSporeShroom": {
     "SceneNames": {
@@ -3221,7 +3232,7 @@
       "Waterways_09": "Waterways_Cornifer"
     },
     "AdjacentClusters": {
-      "FungalMantisVillage": "Any",
+      "FungalBretta": "Disconnected",
       "WaterwaysMain": "Any"
     },
     "OverrideCannotBeDarknessSource": false,

@@ -144,6 +144,7 @@ namespace DarknessRandomizer.Rando
             FreeDarkroomsClique($"{SceneName.GroundsSpiritsGlade}[left1]", "Bench-Spirits'_Glade");
             FreeDarkroomsClique($"{SceneName.HiveOutsideShortcut}[right2]", "Bench-Hive_Hideaway");
             FreeDarkroomsClique($"{SceneName.KingsPass}[top2]", "Bench-King's_Pass");
+            FreeDarkroomsClique($"{SceneName.WaterwaysHiddenGrub}[bot1]", $"{SceneName.WaterwaysHiddenGrub}[right1]");
 
             logicOverridesBySceneTransition = new()
             {
@@ -152,7 +153,6 @@ namespace DarknessRandomizer.Rando
 
                 // The following scenes are trivial to navigate while dark, but may contain a check which is
                 // uniquely affected by darkness.
-                { SceneName.FungalQueensStation, NoLogicEdit },
                 { SceneName.GroundsXero, NoLogicEdit },
             };
 

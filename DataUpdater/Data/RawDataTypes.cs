@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using static DarknessRandomizer.Data.ClusterData;
-
-namespace DarknessRandomizer.Data
+﻿namespace DarknessRandomizer.Data
 {
     public class RawSceneMetadata : BaseSceneMetadata<string>
     {

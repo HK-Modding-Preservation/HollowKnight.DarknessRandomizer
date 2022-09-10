@@ -957,7 +957,7 @@
     "Alias": "Fungal_Queen's_Station",
     "Cluster": "FungalQueensStation",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "SemiDark"
   },
   "Fungus2_02": {
     "Alias": "Fungal_Queen's_Stag",
@@ -1075,7 +1075,7 @@
   },
   "Fungus2_23": {
     "Alias": "Fungal_Dashmaster",
-    "Cluster": "FungalMantisVillage",
+    "Cluster": "FungalBretta",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark"
   },
@@ -1233,7 +1233,7 @@
     "Alias": "Fog_Corridor_to_Archives",
     "Cluster": "FogCanyonOutsideArchives",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "Dark"
   },
   "Fungus3_28": {
     "Alias": "Fog_Charm_Notch",
@@ -1281,7 +1281,7 @@
     "Alias": "Fog_Archives_Entrance",
     "Cluster": "FogCanyonOutsideArchives",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "SemiDark"
   },
   "Fungus3_48": {
     "Alias": "Gardens_Outside_White_Lady",

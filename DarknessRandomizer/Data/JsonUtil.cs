@@ -5,7 +5,7 @@ using System.IO;
 namespace DarknessRandomizer
 {
     // Borrowed from https://github.com/homothetyhk/BenchRando/blob/master/BenchRando/JsonUtil.cs
-    internal static class JsonUtil
+    public static class JsonUtil
     {
         public static T DeserializeEmbedded<T>(string embeddedResourcePath)
         {

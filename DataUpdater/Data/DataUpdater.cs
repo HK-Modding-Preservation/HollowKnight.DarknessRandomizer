@@ -1,20 +1,11 @@
 ﻿using DarknessRandomizer.Lib;
+using DarknessRandomizer.Rando;
 using RandomizerCore.Logic;
 using RandomizerMod.RC;
-using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Text.RegularExpressions;
-using UnityEngine.UI;
 
 namespace DarknessRandomizer.Data
 {
-    // TODO(You): Make a copy of /Resources/Data/data_updater_metadata.json as graph_update.json, and fill in your own params.
-    public class DataUpdaterMetadata
-    {
-        public string RepoRoot;
-    }
-
     public class DataStats
     {
         public int NumClusters;
@@ -54,16 +45,30 @@ namespace DarknessRandomizer.Data
             toRemove.ForEach(k => dst.Remove(k));
         }
 
+        private static string InferGitRoot(string path)
+        {
+            var info = Directory.GetParent(path);
+            while (info != null)
+            {
+                if (Directory.Exists(Path.Combine(info.FullName, ".git")))
+                {
+                    return info.FullName;
+                }
+                info = Directory.GetParent(info.FullName);
+            }
+
+            return path;
+        }
+
         public static void UpdateGraphData()
         {
-            DataUpdaterMetadata dum =
-                JsonUtil.DeserializeEmbedded<DataUpdaterMetadata>("DarknessRandomizer.Resources.Data.data_updater_metadata.json");
-            DarknessRandomizer.Log("Loading Graph Data for update...");
+            string root = InferGitRoot(System.IO.Directory.GetCurrentDirectory());
+            Console.WriteLine("Updating graph data");
 
             // Load all the data.
-            var SM = RawSceneMetadata.LoadFromPath($"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
-            var SD = RawSceneData.LoadFromPath($"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
-            var CD = RawClusterData.LoadFromPath($"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
+            var SM = RawSceneMetadata.LoadFromPath($"{root}/DarknessRandomizer/Resources/Data/scene_metadata.json");
+            var SD = RawSceneData.LoadFromPath($"{root}/DarknessRandomizer/Resources/Data/scene_data.json");
+            var CD = RawClusterData.LoadFromPath($"{root}/DarknessRandomizer/Resources/Data/cluster_data.json");
 
             // We delete scenes from metadata to not track them; make sure adjacencies are also updated.
             foreach (var e in SM)
@@ -263,25 +268,25 @@ namespace DarknessRandomizer.Data
             MaybeThrowException(exceptions);
 
             var DS = ComputeDataStats(SM, SD, CD);
-            RewriteJsonFile(DS, $"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/data_stats.json");
+            RewriteJsonFile(DS, $"{root}/DarknessRandomizer/Resources/Data/data_stats.json");
 
             // Only update data at the end, if we have no exceptions.
-            RewriteJsonFile(SM, $"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/scene_metadata.json");
-            RewriteJsonFile(SD, $"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/scene_data.json");
-            RewriteJsonFile(CD, $"{dum.RepoRoot}/DarknessRandomizer/Resources/Data/cluster_data.json");
+            RewriteJsonFile(SM, $"{root}/DarknessRandomizer/Resources/Data/scene_metadata.json");
+            RewriteJsonFile(SD, $"{root}/DarknessRandomizer/Resources/Data/scene_data.json");
+            RewriteJsonFile(CD, $"{root}/DarknessRandomizer/Resources/Data/cluster_data.json");
 
-            UpdateCSFile($"{dum.RepoRoot}/DarknessRandomizer/Data/SceneName.cs", "INSERT_SCENE_NAMES", SM,
+            UpdateCSFile($"{root}/DarknessRandomizer/Data/SceneName.cs", "INSERT_SCENE_NAMES", SM,
                 (n, sm) => $"public static readonly SceneName {CSharpClean(sm.Alias)} = new(\"{n}\")");
-            UpdateCSFile($"{dum.RepoRoot}/DarknessRandomizer/Data/ClusterName.cs", "INSERT_CLUSTER_NAMES", CD,
+            UpdateCSFile($"{root}/DarknessRandomizer/Data/ClusterName.cs", "INSERT_CLUSTER_NAMES", CD,
                 (n, cd) => $"public static readonly ClusterName {CSharpClean(n)} = new(\"{n}\")");
-            UpdateCSFile($"{dum.RepoRoot}/DarknessRandomizer/Data/WaypointNames.cs", "INSERT_WAYPOINTS", GetWaypointsDict(),
+            UpdateCSFile($"{root}/DarknessRandomizer/Data/WaypointNames.cs", "INSERT_WAYPOINTS", GetWaypointsDict(),
                 (k, v) => $"public const string {k} = \"{v}\"");
-            DarknessRandomizer.Log("Updated Graph Data!");
+            Console.WriteLine("Update Graph Data!");
         }
 
         private static void MaybeThrowException(List<string> exceptions)
         {
-            exceptions.ForEach(DarknessRandomizer.Log);
+            exceptions.ForEach(Console.WriteLine);
             if (exceptions.Count > 0)
             {
                 throw new ArgumentException($"{exceptions.Count} data errors encountered");
@@ -300,7 +305,7 @@ namespace DarknessRandomizer.Data
                 bool darkSource = cData.CanBeDarknessSource(s => SD[s]);
                 bool semiDark = cData.MaximumDarkness(s => SD[s]) == Darkness.SemiDark;
                 bool cursed = cData.CursedOnly ?? false;
-                int darkCost = cData.CostWeight.Value;
+                int darkCost = cData.CostWeight ?? 0;
 
                 ++DS.NumClusters;
                 DS.NumDarknessSources += darkSource ? 1 : 0;

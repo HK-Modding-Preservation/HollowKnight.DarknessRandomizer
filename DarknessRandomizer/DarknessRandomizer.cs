@@ -48,7 +48,6 @@ namespace DarknessRandomizer
         {
             ModMenuScreenBuilder builder = new(Localization.Localize("Darkness Randomizer Viewer"), modListMenu);
             builder.AddButton(Localization.Localize("Open DarknessSpoiler.json"), null, OpenDarknessSpoiler);
-            builder.AddButton(Localization.Localize("(DEV) Run Data Updater"), null, DataUpdater.UpdateGraphData);
             return builder.CreateMenuScreen();
         }
 

@@ -1,15 +1,15 @@
 {
-  "NumClusters": 213,
-  "NumSemiDarkOnlyClusters": 49,
+  "NumClusters": 214,
+  "NumSemiDarkOnlyClusters": 50,
   "NumCursedOnlyClusters": 16,
-  "NumClusterAdjacencies": 255,
+  "NumClusterAdjacencies": 256,
   "NumScenes": 359,
-  "NumSemiDarkOnlyScenes": 78,
+  "NumSemiDarkOnlyScenes": 80,
   "NumCursedOnlyScenes": 18,
   "NumSceneAdjacencies": 411,
   "NumDarknessSources": 96,
-  "TotalSourceBudget": 11865,
-  "TotalCursedSourceBudget": 13615,
-  "TotalDarknessBudget": 19435,
-  "TotalCursedDarknessBudget": 23685
+  "TotalSourceBudget": 11915,
+  "TotalCursedSourceBudget": 13665,
+  "TotalDarknessBudget": 19485,
+  "TotalCursedDarknessBudget": 23735
 }
