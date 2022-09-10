@@ -17,6 +17,9 @@ namespace DarknessRandomizer.IC
     {
         public string FinalItemName;
 
+        private const string InteropMessage = ConnectionMetadataInjector.SupplementalMetadata.InteropTagMessage;
+        private const string InteropItemPoolGroup = nameof(ConnectionMetadataInjector.Util.PoolGroup.Keys);
+
         protected AbstractLanternShardItem(string name, string finalName)
         {
             this.name = name;
@@ -29,9 +32,9 @@ namespace DarknessRandomizer.IC
             };
 
             var interop = AddTag<InteropTag>();
-            interop.Message = ConnectionMetadataInjector.SupplementalMetadata.InteropTagMessage;
-            interop.Properties[ConnectionMetadataInjector.InjectedProps.ItemPoolGroup.Name] = ConnectionMetadataInjector.Util.PoolGroup.Keys.ToString();
-            interop.Properties[ConnectionMetadataInjector.InjectedProps.ModSource.Name] = DarknessRandomizer.Instance.GetName();
+            interop.Message = InteropMessage;
+            interop.Properties["PoolGroup"] = InteropItemPoolGroup;
+            interop.Properties["ModSource"] = DarknessRandomizer.Instance.GetName();
 
             ModifyItem += MaybeCompleteLantern;
         }
