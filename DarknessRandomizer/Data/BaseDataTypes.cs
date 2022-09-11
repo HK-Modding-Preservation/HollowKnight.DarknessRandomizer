@@ -9,6 +9,7 @@ namespace DarknessRandomizer.Data
 {
     public enum Darkness : int
     {
+        SuperBright = -1,
         Bright = 0,
         SemiDark = 1,
         Dark = 2
@@ -131,23 +132,29 @@ namespace DarknessRandomizer.Data
 
     public static class DataExtensions
     {
+        public static Darkness? ToDarkness(this int darkness)
+        {
+            return darkness switch
+            {
+                -1 => (Darkness?)Darkness.SuperBright,
+                0 => (Darkness?)Darkness.Bright,
+                1 => (Darkness?)Darkness.SemiDark,
+                2 => (Darkness?)Darkness.Dark,
+                _ => null,
+            };
+        }
+
         public static RelativeDarkness Opposite(this RelativeDarkness rd)
         {
-            switch (rd)
+            return rd switch
             {
-                case RelativeDarkness.Any:
-                    return RelativeDarkness.Any;
-                case RelativeDarkness.Brighter:
-                    return RelativeDarkness.Darker;
-                case RelativeDarkness.Darker:
-                    return RelativeDarkness.Brighter;
-                case RelativeDarkness.Unspecified:
-                    return RelativeDarkness.Unspecified;
-                case RelativeDarkness.Disconnected:
-                    return RelativeDarkness.Disconnected;
-                default:
-                    throw new ArgumentException($"Unknown RelativeDarkness {rd}");
-            }
+                RelativeDarkness.Any => RelativeDarkness.Any,
+                RelativeDarkness.Brighter => RelativeDarkness.Darker,
+                RelativeDarkness.Darker => RelativeDarkness.Brighter,
+                RelativeDarkness.Unspecified => RelativeDarkness.Unspecified,
+                RelativeDarkness.Disconnected => RelativeDarkness.Disconnected,
+                _ => throw new ArgumentException($"Unknown RelativeDarkness {rd}"),
+            };
         }
     }
 }

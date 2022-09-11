@@ -35,8 +35,9 @@ namespace DarknessRandomizer.Rando
                 () => Modding.ModHooks.SetPlayerIntHook += OverrideSetInt,
                 () => Modding.ModHooks.SetPlayerIntHook -= OverrideSetInt));
             InstallHook(new LambdaHook(
-                () => Events.OnSceneChange += AdjustDarknessRelatedObjects,
-                () => Events.OnSceneChange -= AdjustDarknessRelatedObjects));
+                () => On.SceneManager.Start += OnSceneManagerStart,
+                () => On.SceneManager.Start -= OnSceneManagerStart));
+            InstallHook(new FsmEditHook(new("Darkness Region"), ModifyDarknessRegions));
 
             // Allow dark objects to be used if the room is bright.
             InstallMaybeDisableLanternCheck(SceneName.CrossroadsPeakDarkToll, new("Toll Gate Machine", "Disable if No Lantern"));
@@ -89,12 +90,13 @@ namespace DarknessRandomizer.Rando
             obj.SetActive(false);
         }
 
-        private void DisableDarkRoomObjects(SceneName sceneName)
+        private void DisableDarkRoomObjects()
         {
+            if (sceneData == null) return;
+
             foreach (var obj in GameObject.FindObjectsOfType<HazardRespawnTrigger>())
             {
-                if (sceneName == null || !PreservedHazardRespawns.TryGetValue(sceneName, out HashSet<string> names)
-                    || !names.Contains(obj.name))
+                if (!PreservedHazardRespawns.TryGetValue(sceneData.CurrentScene, out HashSet<string> names) || !names.Contains(obj.name))
                 {
                     DeactiveGameObject(obj.gameObject);
                 }
@@ -110,24 +112,73 @@ namespace DarknessRandomizer.Rando
             }
         }
 
-        private void AdjustDarknessRelatedObjects(UnityEngine.SceneManagement.Scene scene)
+        private record DarknessData
         {
-            if (!SceneName.TryGetValue(scene.name, out SceneName sceneName)
-                || !DarknessOverrides.TryGetValue(sceneName, out Darkness darkness))
+            public SceneName CurrentScene;
+            public Darkness PrevDarkness;
+            public Darkness NewDarkness;
+
+            public bool Brighter => PrevDarkness >= Darkness.SemiDark && PrevDarkness > NewDarkness;
+            public bool Darker => NewDarkness >= Darkness.SemiDark && NewDarkness > PrevDarkness;
+            public bool Unchanged => PrevDarkness == NewDarkness;
+        }
+        private DarknessData? sceneData;
+
+        private DarknessData? ComputeDarknessData(string sceneName, int prevDarkness)
+        {
+            if (!SceneName.TryGetValue(sceneName, out SceneName currentScene)
+                || !DarknessOverrides.TryGetValue(currentScene, out Darkness newDarkness))
             {
-                darkness = Darkness.Bright;
+                return null;
             }
 
+            Darkness prevDarknessTyped = prevDarkness.ToDarkness() ?? Darkness.SuperBright;
+
+            return new()
+            {
+                CurrentScene = currentScene,
+                PrevDarkness = prevDarknessTyped,
+                NewDarkness = newDarkness
+            };
+        }
+
+        private void OnSceneManagerStart(On.SceneManager.orig_Start orig, SceneManager self)
+        {
+            sceneData = ComputeDarknessData(self.gameObject.scene.name, self.darknessLevel);
+            if (sceneData?.Unchanged ?? true)
+            {
+                orig(self);
+                return;
+            }
+
+            self.darknessLevel = (int)sceneData.NewDarkness;
+            orig(self);
+
+            // Make logical changes first.
             if (!PlayerHasLantern())
             {
-                if (darkness == Darkness.Dark)
+                if (sceneData.NewDarkness == Darkness.Dark)
                 {
-                    DisableDarkRoomObjects(sceneName);
+                    DisableDarkRoomObjects();
                 }
                 else
                 {
                     EnableDisabledLanternObjects();
                 }
+            }
+        }
+
+        private void ModifyDarknessRegions(PlayMakerFSM fsm)
+        {
+            if (sceneData == null) return;
+
+            Darkness? d = fsm.FsmVariables.FindFsmInt("Darkness").Value.ToDarkness();
+            if (d == null) return;
+
+            // Disable this darkness region only if our change obsoletes it.
+            if ((sceneData.Brighter && d > sceneData.NewDarkness) || (sceneData.Darker && d < sceneData.NewDarkness))
+            {
+                fsm.GetState("Init").ClearTransitions();
             }
         }
 

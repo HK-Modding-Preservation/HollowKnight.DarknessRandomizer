@@ -36,17 +36,7 @@ namespace DarknessRandomizer.Rando
         {
             if (!IsEnabled) return;
 
-            var drm = ItemChangerMod.Modules.GetOrAdd<DarknessRandomizerModule>();
-            drm.DarknessOverrides = new(LS.DarknessOverrides);
-
-            if (RandomizeDarkness)
-            {
-                var dlem = ItemChangerMod.Modules.GetOrAdd<ItemChanger.Modules.DarknessLevelEditModule>();
-                foreach (var entry in LS.DarknessOverrides.Enumerate())
-                {
-                    dlem.darknessLevelsByScene[entry.Key.Name()] = (int)entry.Value;
-                }
-            }
+            ItemChangerMod.Modules.GetOrAdd<DarknessRandomizerModule>().DarknessOverrides = new(LS.DarknessOverrides);
         }
 
         private static void LogSettings(RandomizerMod.Logging.LogArguments args, TextWriter tw)

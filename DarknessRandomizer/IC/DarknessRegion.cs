@@ -31,7 +31,7 @@ namespace DarknessRandomizer.IC
 
             public override IEnumerable<(string, string)> GetPreloadNames()
             {
-                yield return (SceneName.GroundsBlueLake.Name(), "Darkness Region (3)");
+                yield return (SceneName.CliffsMain.Name(), "Darkness Region (3)");
             }
 
             private GameObject darknessRegionTemplate;
@@ -39,7 +39,7 @@ namespace DarknessRandomizer.IC
 
             public override void SavePreloads(Dictionary<string, Dictionary<string, GameObject>> objectsByScene)
             {
-                darknessRegionTemplate = objectsByScene[SceneName.GroundsBlueLake.Name()]["Darkness Region (3)"];
+                darknessRegionTemplate = objectsByScene[SceneName.CliffsMain.Name()]["Darkness Region (3)"];
             }
         }
     }
