@@ -8,6 +8,7 @@ using ItemChanger.Extensions;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Net.Http.Headers;
 using UnityEngine;
 
 namespace DarknessRandomizer.Rando
@@ -118,6 +119,7 @@ namespace DarknessRandomizer.Rando
             public Darkness PrevDarkness;
             public Darkness NewDarkness;
 
+            public Darkness DisplayDarkness => NewDarkness != Darkness.Dark || Data.SceneData.Get(CurrentScene).SemiDarkOverrides == null ? NewDarkness : Darkness.SemiDark;
             public bool Brighter => PrevDarkness >= Darkness.SemiDark && PrevDarkness > NewDarkness;
             public bool Darker => NewDarkness >= Darkness.SemiDark && NewDarkness > PrevDarkness;
             public bool Unchanged => PrevDarkness == NewDarkness;
@@ -151,7 +153,7 @@ namespace DarknessRandomizer.Rando
                 return;
             }
 
-            self.darknessLevel = (int)sceneData.NewDarkness;
+            self.darknessLevel = (int)sceneData.DisplayDarkness;
             orig(self);
 
             // Make logical changes first.
@@ -165,6 +167,12 @@ namespace DarknessRandomizer.Rando
                 {
                     EnableDisabledLanternObjects();
                 }
+            }
+
+            // Deploy additional darkness regions.
+            if (sceneData.NewDarkness == Darkness.Dark)
+            {
+                Data.SceneData.Get(sceneData.CurrentScene).SemiDarkOverrides?.DarkRegions.ForEach(DarknessRegion.Spawn);
             }
         }
 

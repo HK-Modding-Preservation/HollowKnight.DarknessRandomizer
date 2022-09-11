@@ -101,6 +101,11 @@ namespace DarknessRandomizer.Data
                 {
                     exceptions.Add($"Scene {scene} is missing fields");
                 }
+
+                if (sData.MaximumDarkness < Darkness.Dark)
+                {
+                    sData.SemiDarkOverrides = null;
+                }
             }
             MaybeThrowException(exceptions);
 

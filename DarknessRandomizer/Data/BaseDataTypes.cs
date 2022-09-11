@@ -1,4 +1,5 @@
-﻿using DarknessRandomizer.Lib;
+﻿using DarknessRandomizer.IC;
+using DarknessRandomizer.Lib;
 using DarknessRandomizer.Rando;
 using Newtonsoft.Json;
 using System;
@@ -40,12 +41,21 @@ namespace DarknessRandomizer.Data
         public SortedSet<SceneNameT> AdjacentScenes;
     }
 
+    public class SemiDarkOverrides
+    {
+        public List<DarknessRegion.Parameters> DarkRegions;
+    }
+
     public class BaseSceneData<ClusterNameT>
     {
         public string Alias;
         public ClusterNameT Cluster;
         public Darkness MinimumDarkness = Darkness.Bright;
         public Darkness MaximumDarkness = Darkness.Dark;
+
+        // The presence of this data means the scene should could as Dark in logic, but display as SemiDark.
+        // The DarknessRegions contained within will be deployed to make the relevant checks Dark.
+        public SemiDarkOverrides? SemiDarkOverrides;
 
         public Darkness ClampDarkness(Darkness d) => d.Clamp(MinimumDarkness, MaximumDarkness);
     }

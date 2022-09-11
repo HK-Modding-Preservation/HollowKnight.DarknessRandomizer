@@ -3,2154 +3,2513 @@
     "Alias": "City_Broken_Elevator",
     "Cluster": "CityBridgeToBasin",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_02": {
     "Alias": "Basin_Broken_Bridge",
     "Cluster": "CityBridgeToBasin",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_03": {
     "Alias": "Basin_Tram",
     "Cluster": "CityBridgeToBasin",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Abyss_03_b": {
     "Alias": "Deepnest_Tram",
     "Cluster": "DeepnestTramCorridor",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Abyss_03_c": {
     "Alias": "Edge_Tram",
     "Cluster": "EdgeTramWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_04": {
     "Alias": "Basin_Fountain",
     "Cluster": "BasinFountain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_05": {
     "Alias": "Basin_Palace_Grounds",
     "Cluster": "BasinPalaceWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Abyss_06_Core": {
     "Alias": "Abyss_Core",
     "Cluster": "AbyssCore",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_08": {
     "Alias": "Abyss_Lifeblood_Core",
     "Cluster": "AbyssLifebloodCore",
     "MinimumDarkness": "SemiDark",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_09": {
     "Alias": "Abyss_Lighthouse_Climb",
     "Cluster": "AbyssShadeCloakWing",
     "MinimumDarkness": "SemiDark",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_10": {
     "Alias": "Abyss_Shade_Cloak",
     "Cluster": "AbyssShadeCloakWing",
     "MinimumDarkness": "SemiDark",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_12": {
     "Alias": "Abyss_Shriek",
     "Cluster": "AbyssShriekWing",
     "MinimumDarkness": "SemiDark",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Abyss_15": {
     "Alias": "Abyss_Birthplace",
     "Cluster": "AbyssBirthplace",
     "MinimumDarkness": "SemiDark",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_16": {
     "Alias": "Abyss_Corridor_to_Lighthouse",
     "Cluster": "AbyssShadeCloakWing",
     "MinimumDarkness": "SemiDark",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_17": {
     "Alias": "Basin_Cloth",
     "Cluster": "BasinCloth",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_18": {
     "Alias": "Basin_Corridor_to_Broken_Vessel",
     "Cluster": "BasinBrokenVesselWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_19": {
     "Alias": "Basin_Broken_Vessel_Grub",
     "Cluster": "BasinBrokenVesselWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_20": {
     "Alias": "Basin_Simple_Key",
     "Cluster": "BasinBrokenVesselWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Abyss_21": {
     "Alias": "Basin_Monarch_Wings",
     "Cluster": "BasinBrokenVesselWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright"
+    "MaximumDarkness": "Bright",
+    "SemiDarkOverrides": null
   },
   "Abyss_22": {
     "Alias": "Basin_Hidden_Station",
     "Cluster": "BasinPalaceWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright"
+    "MaximumDarkness": "Bright",
+    "SemiDarkOverrides": null
   },
   "Abyss_Lighthouse_room": {
     "Alias": "Abyss_Lighthouse",
     "Cluster": "AbyssShadeCloakWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Cliffs_01": {
     "Alias": "Cliffs_Main",
     "Cluster": "CliffsMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Cliffs_02": {
     "Alias": "Cliffs_Gorb",
     "Cluster": "CliffsMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Cliffs_03": {
     "Alias": "Cliffs_Stag_Nest",
     "Cluster": "CliffsMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Cliffs_04": {
     "Alias": "Cliffs_Joni's_Dark",
     "Cluster": "CliffsJonis",
     "MinimumDarkness": "SemiDark",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Cliffs_05": {
     "Alias": "Cliffs_Joni's_Pickup",
     "Cluster": "CliffsMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright"
+    "MaximumDarkness": "Bright",
+    "SemiDarkOverrides": null
   },
   "Cliffs_06": {
     "Alias": "Cliffs_Grimm_Lantern",
     "Cluster": "CliffsMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_01": {
     "Alias": "Crossroads_Well",
     "Cluster": "CrossroadsEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_02": {
     "Alias": "Crossroads_Outside_Temple",
     "Cluster": "CrossroadsOutsideBlackEgg",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_03": {
     "Alias": "Crossroads_Outside_Stag",
     "Cluster": "CrossroadsStagHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_04": {
     "Alias": "Crossroads_Gruz_Mother",
     "Cluster": "CrossroadsShops",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_05": {
     "Alias": "Crossroads_Central_Grub",
     "Cluster": "CrossroadsCentralPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_06": {
     "Alias": "Crossroads_Outside_Mound",
     "Cluster": "CrossroadsOutsideMound",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_07": {
     "Alias": "Crossroads_Gruzzer",
     "Cluster": "CrossroadsWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_08": {
     "Alias": "Crossroads_Aspid_Arena",
     "Cluster": "CrossroadsWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_09": {
     "Alias": "Crossroads_Mawlek_Boss",
     "Cluster": "CrossroadsMawlek",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_10": {
     "Alias": "Crossroads_False_Knight_Arena",
     "Cluster": "CrossroadsFalseKnight",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_11_alt": {
     "Alias": "Crossroads_Greenpath_Entrance",
     "Cluster": "CrossroadsGreenpathBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_12": {
     "Alias": "Crossroads_Corridor_to_Acid_Grub",
     "Cluster": "CrossroadsCanyonBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_13": {
     "Alias": "Crossroads_Goam_Mask_Shard",
     "Cluster": "CrossroadsLowerPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_14": {
     "Alias": "Crossroads_Outside_Myla",
     "Cluster": "CrossroadsPeaksBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_15": {
     "Alias": "Crossroads_Corridor_to_Tram",
     "Cluster": "CrossroadsStagHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_16": {
     "Alias": "Crossroads_Above_Lever",
     "Cluster": "CrossroadsCentralPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_18": {
     "Alias": "Crossroads_Fungal_Entrance",
     "Cluster": "CrossroadsFungalBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_19": {
     "Alias": "Crossroads_Before_Gruz_Mother",
     "Cluster": "CrossroadsStagHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_21": {
     "Alias": "Crossroads_Outside_False_Knight",
     "Cluster": "CrossroadsStagHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_22": {
     "Alias": "Crossroads_Glowing_Womb_Arena",
     "Cluster": "CrossroadsGlowingWomb",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_25": {
     "Alias": "Crossroads_Mawlek_Entrance",
     "Cluster": "CrossroadsMawlekApproach",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_27": {
     "Alias": "Crossroads_Outside_Tram",
     "Cluster": "CrossroadsStagHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_30": {
     "Alias": "Crossroads_Hot_Spring",
     "Cluster": "CrossroadsHotSprings",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright"
+    "MaximumDarkness": "Bright",
+    "SemiDarkOverrides": null
   },
   "Crossroads_31": {
     "Alias": "Crossroads_Spike_Grub",
     "Cluster": "CrossroadsSpikeGrub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_33": {
     "Alias": "Crossroads_Cornifer",
     "Cluster": "CrossroadsWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_35": {
     "Alias": "Crossroads_Acid_Grub",
     "Cluster": "CrossroadsCanyonBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_36": {
     "Alias": "Crossroads_Mawlek_Middle",
     "Cluster": "CrossroadsMawlekApproach",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_37": {
     "Alias": "Crossroads_Vessel_Fragment",
     "Cluster": "CrossroadsVesselFragment",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_39": {
     "Alias": "Crossroads_Corridor_Right_of_Temple",
     "Cluster": "CrossroadsPeaksBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_40": {
     "Alias": "Crossroads_Corridor_Right_of_Central_Grub",
     "Cluster": "CrossroadsCentralPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_42": {
     "Alias": "Crossroads_Right_Of_Mask_Shard",
     "Cluster": "CrossroadsLowerPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_43": {
     "Alias": "Crossroads_Corridor_to_Elevator",
     "Cluster": "CrossroadsElevatorApproach",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_45": {
     "Alias": "Crossroads_Myla",
     "Cluster": "CrossroadsPeaksBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_46": {
     "Alias": "Crossroads_Tram",
     "Cluster": "CrossroadsTram",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_46b": {
     "Alias": "Grounds_Tram",
     "Cluster": "GroundsTram",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_47": {
     "Alias": "Crossroads_Stag",
     "Cluster": "CrossroadsStag",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_48": {
     "Alias": "Crossroads_Guarded_Grub",
     "Cluster": "CrossroadsPeaksBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_49": {
     "Alias": "Crossroads_Elevator",
     "Cluster": "WestCityElevator",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_49b": {
     "Alias": "City_Left_Elevator",
     "Cluster": "WestCityElevator",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_50": {
     "Alias": "Grounds_Blue_Lake",
     "Cluster": "BlueLake",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_52": {
     "Alias": "Crossroads_Goam_Journal",
     "Cluster": "CrossroadsGoamJournal",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Crossroads_ShamanTemple": {
     "Alias": "Crossroads_Ancestral_Mound",
     "Cluster": "CrossroadsAncestralMound",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_01": {
     "Alias": "Fungal_Deepnest_Fall",
     "Cluster": "FungalDeepnestFall",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_01b": {
     "Alias": "Deepnest_Upper_Cornifer",
     "Cluster": "DeepnestDescent",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_02": {
     "Alias": "Deepnest_Outside_Mimics",
     "Cluster": "DeepnestDescent",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_03": {
     "Alias": "Deepnest_Left_Of_Hot_Spring",
     "Cluster": "DeepnestLight",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_09": {
     "Alias": "Deepnest_Distant_Village_Stag",
     "Cluster": "DeepnestStag",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_10": {
     "Alias": "Deepnest_Distant_Village",
     "Cluster": "DeepnestVillage",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_14": {
     "Alias": "Deepnest_Failed_Tramway_Bench",
     "Cluster": "DeepnestFailedTram",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_16": {
     "Alias": "Deepnest_After_Lower_Cornifer",
     "Cluster": "DeepnestMantisEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_17": {
     "Alias": "Deepnest_Garpede_Corridor_Below_Cornifer",
     "Cluster": "DeepnestDescent",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_26": {
     "Alias": "Deepnest_Failed_Tramway_Lifeblood",
     "Cluster": "DeepnestFailedTram",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_26b": {
     "Alias": "Deepnest_Tram_Pass",
     "Cluster": "DeepnestFailedTram",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_30": {
     "Alias": "Deepnest_Hot_Spring",
     "Cluster": "DeepnestDescent",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_31": {
     "Alias": "Deepnest_Nosk_Corridor",
     "Cluster": "DeepnestNoskApproach",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_32": {
     "Alias": "Deepnest_Nosk_Arena",
     "Cluster": "DeepnestNosk",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_33": {
     "Alias": "Deepnest_Zote_Arena",
     "Cluster": "DeepnestLight",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_34": {
     "Alias": "Deepnest_First_Devout",
     "Cluster": "DeepnestDark",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_35": {
     "Alias": "Deepnest_Outside_Galien",
     "Cluster": "DeepnestDark",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_36": {
     "Alias": "Deepnest_Mimics",
     "Cluster": "DeepnestDescent",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_37": {
     "Alias": "Deepnest_Corridor_to_Tram",
     "Cluster": "DeepnestTramCorridor",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_38": {
     "Alias": "Deepnest_Vessel_Fragment",
     "Cluster": "DeepnestTramOutliers",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_39": {
     "Alias": "Deepnest_Whispering_Root",
     "Cluster": "DeepnestDark",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_40": {
     "Alias": "Deepnest_Galien_Arena",
     "Cluster": "DeepnestGalien",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_41": {
     "Alias": "Deepnest_Midwife",
     "Cluster": "DeepnestDark",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_42": {
     "Alias": "Deepnest_Outside_Mask_Maker",
     "Cluster": "DeepnestDark",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_43": {
     "Alias": "Gardens_Corridor_To_Deepnest",
     "Cluster": "GardensDeepnestBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_44": {
     "Alias": "Deepnest_Sharp_Shadow",
     "Cluster": "DeepnestTramOutliers",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_45_v02": {
     "Alias": "Deepnest_Weaver's_Den",
     "Cluster": "DeepnestWeaversDen",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_01": {
     "Alias": "Edge_Left_Of_Hive",
     "Cluster": "EdgeTramWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_02": {
     "Alias": "Edge_Above_Hive",
     "Cluster": "EdgeTramWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_03": {
     "Alias": "Edge_Entrance",
     "Cluster": "EdgeTallRooms",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_04": {
     "Alias": "Edge_Bardoon",
     "Cluster": "EdgeEastUpper",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_06": {
     "Alias": "Edge_Outside_Oro",
     "Cluster": "EdgeOroWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_07": {
     "Alias": "Edge_Whispering_Root",
     "Cluster": "EdgeTallRooms",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_08": {
     "Alias": "Edge_Great_Hopper_Idol",
     "Cluster": "EdgeColoApproach",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_09": {
     "Alias": "Edge_Corridor_Outside_Colosseum",
     "Cluster": "EdgeColoCorridor",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_10": {
     "Alias": "Edge_Markoth_Arena",
     "Cluster": "EdgeMarkoth",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_11": {
     "Alias": "Edge_Below_Camp_Bench",
     "Cluster": "EdgeEastUpper",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_12": {
     "Alias": "Edge_Hornet_Sentinel_Corridor",
     "Cluster": "EdgeHornetApproach",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_13": {
     "Alias": "Edge_Camp_Bench",
     "Cluster": "EdgeCampBench",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright"
+    "MaximumDarkness": "Bright",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_14": {
     "Alias": "Edge_Below_Oro",
     "Cluster": "EdgeOroDive",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_14b": {
     "Alias": "Edge_Quick_Slash",
     "Cluster": "EdgeOroDive",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_15": {
     "Alias": "Edge_Lifeblood",
     "Cluster": "EdgeLifeblood",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright"
+    "MaximumDarkness": "Bright",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_16": {
     "Alias": "Edge_Oro_Scarecrow",
     "Cluster": "EdgeOroWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_17": {
     "Alias": "Edge_420_Geo_Rock",
     "Cluster": "EdgeOroDive",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_18": {
     "Alias": "Edge_Outside_Markoth",
     "Cluster": "EdgeEastUpper",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_East_Hornet": {
     "Alias": "Edge_Hornet_Sentinel_Arena",
     "Cluster": "EdgeHornetSentinel",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Deepnest_Spider_Town": {
     "Alias": "Deepnest_Beast's_Den",
     "Cluster": "DeepnestBeastsDen",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Dream_01_False_Knight": {
     "Alias": "Dream_Failed_Champion",
     "Cluster": "CrossroadsFailedChampion",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Dream_02_Mage_Lord": {
     "Alias": "Dream_Soul_Tyrant",
     "Cluster": "CitySanctumSoulTyrant",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Dream_03_Infected_Knight": {
     "Alias": "Dream_Lost_Kin",
     "Cluster": "BasinLostKin",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Dream_04_White_Defender": {
     "Alias": "Dream_White_Defender",
     "Cluster": "WaterwaysWhiteDefender",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Dream_Abyss": {
     "Alias": "Dream_Abyss",
     "Cluster": "AbyssBirthplace",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Dream_Final": {
     "Alias": "Egg_Radiance",
     "Cluster": "BlackEggRadiance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Dream_Mighty_Zote": {
     "Alias": "Dream_Grey_Prince_Zote",
     "Cluster": "DirtmouthGPZ",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Dream_Nailcollection": {
     "Alias": "Dream_Nail",
     "Cluster": "GroundsDreamNail",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_01": {
     "Alias": "Greenpath_Entrance",
     "Cluster": "GreenpathUpperEast",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_01b": {
     "Alias": "Greenpath_Waterfall_Bench",
     "Cluster": "GreenpathUpperEast",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_02": {
     "Alias": "Greenpath_First_Hornet_Sighting",
     "Cluster": "GreenpathUpperEast",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_03": {
     "Alias": "Greenpath_Storerooms",
     "Cluster": "GreenpathUpperWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_04": {
     "Alias": "Greenpath_Hornet",
     "Cluster": "GreenpathHornet",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_05": {
     "Alias": "Greenpath_Outside_Thorns",
     "Cluster": "GreenpathLowerPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_06": {
     "Alias": "Greenpath_Cornifer",
     "Cluster": "GreenpathUpperEast",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_07": {
     "Alias": "Greenpath_Outside_Hunter",
     "Cluster": "GreenpathUpperEast",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_08": {
     "Alias": "Greenpath_Hunter",
     "Cluster": "GreenpathHunter",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_09": {
     "Alias": "Greenpath_Sheo_Gauntlet",
     "Cluster": "GreenpathSheo",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_10": {
     "Alias": "Greenpath_Acid_Bridge",
     "Cluster": "GreenpathLowerPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_11": {
     "Alias": "Greenpath_Above_Fog_Canyon",
     "Cluster": "GreenpathLowerHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_12": {
     "Alias": "Greenpath_MMC_Corridor",
     "Cluster": "GreenpathMMC",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_13": {
     "Alias": "Greenpath_Whispering_Root",
     "Cluster": "GreenpathMMC",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_14": {
     "Alias": "Greenpath_Thorns_of_Agony",
     "Cluster": "GreenpathThorns",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_15": {
     "Alias": "Greenpath_Outside_Sheo",
     "Cluster": "GreenpathSheo",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_16_alt": {
     "Alias": "Greenpath_Stag",
     "Cluster": "GreenpathStag",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_17": {
     "Alias": "Greenpath_Charger_Corridor",
     "Cluster": "GreenpathUpperWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_19": {
     "Alias": "Greenpath_Above_Sanctuary_Bench",
     "Cluster": "GreenpathLowerPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_20_v02": {
     "Alias": "Greenpath_Vengefly_King",
     "Cluster": "GreenpathUpperWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_21": {
     "Alias": "Greenpath_Outside_Hornet",
     "Cluster": "GreenpathWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_22": {
     "Alias": "Greenpath_Outside_Stag",
     "Cluster": "GreenpathWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_23": {
     "Alias": "Gardens_First_Loodle_Corridor",
     "Cluster": "GardensFrogsWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_24": {
     "Alias": "Gardens_Cornifer",
     "Cluster": "GardensCornifer",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_25": {
     "Alias": "Greenpath_Corridor_to_Unn",
     "Cluster": "GreenpathUnnBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_26": {
     "Alias": "Greenpath_Lake_Of_Unn",
     "Cluster": "GreenpathUnn",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_28": {
     "Alias": "Cliffs_Baldur's_Shell",
     "Cluster": "CliffsBaldurShell",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_29": {
     "Alias": "Greenpath_Massive_Moss_Charger",
     "Cluster": "GreenpathMMC",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_30": {
     "Alias": "Greenpath_Below_Toll_Bench",
     "Cluster": "GreenpathWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_31": {
     "Alias": "Greenpath_Toll",
     "Cluster": "GreenpathUpperWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_32": {
     "Alias": "Greenpath_Moss_Knight_Arena",
     "Cluster": "GreenpathUpperWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_34": {
     "Alias": "Greenpath_Stone_Sanctuary_Entrance",
     "Cluster": "GreenpathStoneSanctuaryApproach",
     "MinimumDarkness": "SemiDark",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_35": {
     "Alias": "Greenpath_Stone_Sanctuary",
     "Cluster": "GreenpathStoneSanctuary",
     "MinimumDarkness": "SemiDark",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus1_37": {
     "Alias": "Greenpath_Sanctuary_Bench",
     "Cluster": "GreenpathStoneSanctuaryBench",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright"
+    "MaximumDarkness": "Bright",
+    "SemiDarkOverrides": null
   },
   "Fungus1_Slug": {
     "Alias": "Greenpath_Unn",
     "Cluster": "GreenpathUnn",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_01": {
     "Alias": "Fungal_Queen's_Station",
     "Cluster": "FungalQueensStation",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_02": {
     "Alias": "Fungal_Queen's_Stag",
     "Cluster": "FungalQueensStation",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_03": {
     "Alias": "Fungal_Outside_Queen's",
     "Cluster": "FungalEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_04": {
     "Alias": "Fungal_Below_Ogres",
     "Cluster": "FungalEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_05": {
     "Alias": "Fungal_Shrumal_Ogres",
     "Cluster": "FungalOgres",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_06": {
     "Alias": "Fungal_Outside_Leg_Eater",
     "Cluster": "FungalUpper",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_07": {
     "Alias": "Fungal_Shrumal_Warrior_Acid_Bridge",
     "Cluster": "FungalElderHuWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_08": {
     "Alias": "Fungal_Outside_Elder_Hu",
     "Cluster": "FungalElderHuWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_09": {
     "Alias": "Fungal_Cloth_Corridor",
     "Cluster": "FungalClothCorridor",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_10": {
     "Alias": "Fungal_Left_Of_Pilgrim's_Way",
     "Cluster": "FungalPilgrimsWay",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_11": {
     "Alias": "Fungal_Epogo",
     "Cluster": "FungalLowerHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_12": {
     "Alias": "Fungal_Mantis_Corridor",
     "Cluster": "FungalMantisVillage",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_13": {
     "Alias": "Fungal_Bretta_Bench",
     "Cluster": "FungalMantisVillage",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_14": {
     "Alias": "Fungal_Mantis_Village",
     "Cluster": "FungalMantisVillage",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_15": {
     "Alias": "Fungal_Mantis_Lords",
     "Cluster": "FungalMantisLords",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_17": {
     "Alias": "Fungal_Above_Mantis_Village",
     "Cluster": "FungalLowerHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_18": {
     "Alias": "Fungal_Cornifer",
     "Cluster": "FungalCorniferHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_19": {
     "Alias": "Fungal_Right_Of_Spore_Shroom",
     "Cluster": "FungalSporeShroom",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_20": {
     "Alias": "Fungal_Spore_Shroom",
     "Cluster": "FungalSporeShroom",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_21": {
     "Alias": "Fungal_Pilgrim's_Way",
     "Cluster": "FungalPilgrimsWay",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_23": {
     "Alias": "Fungal_Dashmaster",
     "Cluster": "FungalBretta",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_25": {
     "Alias": "Deepnest_Lower_Cornifer",
     "Cluster": "DeepnestMantisEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_26": {
     "Alias": "Fungal_Leg_Eater",
     "Cluster": "FungalUpper",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_28": {
     "Alias": "Fungal_Shrumal_Warrior_Loop",
     "Cluster": "FungalEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_29": {
     "Alias": "Fungal_Core_Upper",
     "Cluster": "FungalCore",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_30": {
     "Alias": "Fungal_Core_Lower",
     "Cluster": "FungalCore",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_31": {
     "Alias": "Fungal_Mantis_Rewards",
     "Cluster": "FungalMantisLords",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_32": {
     "Alias": "Fungal_Elder_Hu",
     "Cluster": "FungalElderHuWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_33": {
     "Alias": "Fungal_Leg_Eater_Root",
     "Cluster": "FungalUpper",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus2_34": {
     "Alias": "Fungal_Willoh",
     "Cluster": "FungalQueensStation",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_01": {
     "Alias": "Fog_Upper_West_Tall",
     "Cluster": "FogCanyonWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_02": {
     "Alias": "Fog_Lower_West_Tall",
     "Cluster": "FogCanyonWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_03": {
     "Alias": "Fog_Queen's_Gardens_Acid_Entrance",
     "Cluster": "FogCanyonQGA",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_04": {
     "Alias": "Gardens_Before_Petra_Arena",
     "Cluster": "GardensStagHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_05": {
     "Alias": "Gardens_Petra_Arena",
     "Cluster": "GardensPetraArena",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_08": {
     "Alias": "Gardens_Lower_Petra_Corridor",
     "Cluster": "GardensLowerPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_10": {
     "Alias": "Gardens_Main_Arena",
     "Cluster": "GardensMainArena",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_11": {
     "Alias": "Gardens_Whispering_Root",
     "Cluster": "GardensLowerPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_13": {
     "Alias": "Gardens_Outside_Stag",
     "Cluster": "GardensStagHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_21": {
     "Alias": "Gardens_Corridor_to_Traitor_Lord",
     "Cluster": "GardensUpper",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_22": {
     "Alias": "Gardens_Upper_Grub",
     "Cluster": "GardensUpper",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_23": {
     "Alias": "Gardens_Traitor_Lord_Arena",
     "Cluster": "GardensTraitorLord",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_24": {
     "Alias": "Fog_Corridor_to_Overgrown_Mound",
     "Cluster": "FogCanyonWestWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_25": {
     "Alias": "Fog_Cornifer",
     "Cluster": "FogCanyonEast",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_25b": {
     "Alias": "Fog_Corridor_to_Cornifer",
     "Cluster": "FogCanyonEast",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_26": {
     "Alias": "Fog_East_Tall",
     "Cluster": "FogCanyonEast",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_27": {
     "Alias": "Fog_Corridor_to_Archives",
     "Cluster": "FogCanyonOutsideArchives",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_28": {
     "Alias": "Fog_Charm_Notch",
     "Cluster": "FogCanyonCharmNotch",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_30": {
     "Alias": "Fog_Lifeblood",
     "Cluster": "FogCanyonAutoPilot",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_34": {
     "Alias": "Gardens_Entrance",
     "Cluster": "GardensEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_35": {
     "Alias": "Fog_Millibelle",
     "Cluster": "FogCanyonRobber",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_39": {
     "Alias": "Gardens_Moss_Prophet",
     "Cluster": "GardensLowerPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_40": {
     "Alias": "Gardens_Gardens_Stag",
     "Cluster": "GardensStag",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_44": {
     "Alias": "Fog_Overgrown_Mound_Entrance",
     "Cluster": "FogCanyonWestWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_47": {
     "Alias": "Fog_Archives_Entrance",
     "Cluster": "FogCanyonOutsideArchives",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_48": {
     "Alias": "Gardens_Outside_White_Lady",
     "Cluster": "GardensFrogsWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_49": {
     "Alias": "Gardens_Traitor's_Child's_Grave",
     "Cluster": "GardensTraitorsGrave",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_50": {
     "Alias": "Gardens_Toll_Bench",
     "Cluster": "GardensTollBench",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright"
+    "MaximumDarkness": "Bright",
+    "SemiDarkOverrides": null
   },
   "Fungus3_archive": {
     "Alias": "Fog_Archives_Bench",
     "Cluster": "FogCanyonArchives",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Fungus3_archive_02": {
     "Alias": "Fog_Uumuu_Arena",
     "Cluster": "FogCanyonArchives",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "GG_Lurker": {
     "Alias": "Edge_Pale_Lurker",
     "Cluster": "EdgePaleLurker",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "GG_Pipeway": {
     "Alias": "Waterways_Flukemunga_Corridor",
     "Cluster": "WaterwaysOutsideFlukemarm",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "GG_Waterways": {
     "Alias": "Waterways_Junk_Pit",
     "Cluster": "WaterwaysJunkPit",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Grimm_Main_Tent": {
     "Alias": "Grimm_Tent",
     "Cluster": "DirtmouthGrimm",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Grimm_Nightmare": {
     "Alias": "Grimm_NKG",
     "Cluster": "DirtmouthGrimmNKG",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Hive_01": {
     "Alias": "Hive_Entrance_And_Bench",
     "Cluster": "HiveEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Hive_02": {
     "Alias": "Hive_Whispering_Root",
     "Cluster": "HiveEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Hive_03": {
     "Alias": "Hive_Outside_Grub",
     "Cluster": "HiveMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Hive_03_c": {
     "Alias": "Hive_Outside_Shortcut",
     "Cluster": "HiveMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Hive_04": {
     "Alias": "Hive_Mask_Shard",
     "Cluster": "HiveMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Hive_05": {
     "Alias": "Hive_Knight_Arena",
     "Cluster": "HiveKnight",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_01": {
     "Alias": "Crystal_Dive_Entrance",
     "Cluster": "CrossroadsPeaksBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Mines_02": {
     "Alias": "Crystal_Main_Entrance",
     "Cluster": "CrystalPeaksLowerPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_03": {
     "Alias": "Crystal_Spike_Grub",
     "Cluster": "CrystalPeaksWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_04": {
     "Alias": "Crystal_Entrance_Conveyors",
     "Cluster": "CrystalPeaksLowerPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_05": {
     "Alias": "Crystal_Above_Spike_Grub",
     "Cluster": "CrystalPeaksWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_06": {
     "Alias": "Crystal_Deep_Focus_Gauntlet",
     "Cluster": "CrystalPeaksDeepFocus",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_07": {
     "Alias": "Crystal_Dark_Room",
     "Cluster": "CrystalPeaksDarkRoom",
     "MinimumDarkness": "SemiDark",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_10": {
     "Alias": "Crystal_Elevator_Entrance",
     "Cluster": "CrystalPeaksElevatorWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_11": {
     "Alias": "Crystal_Left_Of_Guardian",
     "Cluster": "CrystalPeaksWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_13": {
     "Alias": "Crystal_Top_Corridor",
     "Cluster": "CrystalPeaksUpper",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Mines_16": {
     "Alias": "Crystal_Mimic",
     "Cluster": "CrystalPeaksMimic",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_17": {
     "Alias": "Crystal_Corridor_to_Spike_Grub",
     "Cluster": "CrystalPeaksMiddleBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_18": {
     "Alias": "Crystal_Guardian_Bench",
     "Cluster": "CrystalPeaksGuardian",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_19": {
     "Alias": "Crystal_Grub_Crushers",
     "Cluster": "CrystalPeaksCrushersGrub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_20": {
     "Alias": "Crystal_East_Tall",
     "Cluster": "CrystalPeaksTallHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_23": {
     "Alias": "Crystal_Crown_Whispering_Root",
     "Cluster": "CrystalPeaksRoot",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_24": {
     "Alias": "Crystal_Crown_Grub",
     "Cluster": "CrystalPeaksCrownGrub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_25": {
     "Alias": "Crystal_Crown_Climb",
     "Cluster": "CrystalPeaksCrown",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_28": {
     "Alias": "Crystal_Outside_Mound",
     "Cluster": "CrystalPeaksOutsideMound",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Mines_29": {
     "Alias": "Crystal_Dark_Bench",
     "Cluster": "CrystalPeaksLowerPass",
     "MinimumDarkness": "SemiDark",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_30": {
     "Alias": "Crystal_Cornifer",
     "Cluster": "CrystalPeaksElevatorWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_31": {
     "Alias": "Crystal_Crystal_Heart_Gauntlet",
     "Cluster": "CrystalPeaksCrystalHeart",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_32": {
     "Alias": "Crystal_Enraged_Guardian_Arena",
     "Cluster": "CrystalPeaksEnragedGuardian",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_33": {
     "Alias": "Crossroads_Peak_Dark_Toll",
     "Cluster": "CrystalPeaksToll",
     "MinimumDarkness": "SemiDark",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_34": {
     "Alias": "Crystal_Crown_Peak",
     "Cluster": "CrystalPeaksCrown",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_35": {
     "Alias": "Crystal_Mound",
     "Cluster": "CrystalPeaksCrystallizedMound",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Mines_36": {
     "Alias": "Crystal_Deep_Focus",
     "Cluster": "CrystalPeaksDeepFocus",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Mines_37": {
     "Alias": "Crystal_Chest_Crushers",
     "Cluster": "CrystalPeaksTallHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "RestingGrounds_02": {
     "Alias": "Grounds_Xero",
     "Cluster": "GroundsXero",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "RestingGrounds_04": {
     "Alias": "Grounds_Dream_Nail_Entrance",
     "Cluster": "GroundsOutsideDreamNail",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "RestingGrounds_05": {
     "Alias": "Grounds_Whispering_Root",
     "Cluster": "GroundsMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "RestingGrounds_06": {
     "Alias": "Grounds_Corridor_Below_Xero",
     "Cluster": "BlueLake",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "RestingGrounds_08": {
     "Alias": "Grounds_Spirit's_Glade",
     "Cluster": "GroundsGlade",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "RestingGrounds_09": {
     "Alias": "Grounds_Stag",
     "Cluster": "GroundsStag",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "RestingGrounds_10": {
     "Alias": "Grounds_Crypts",
     "Cluster": "GroundsCatacombs",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "RestingGrounds_17": {
     "Alias": "Grounds_Dreamshield",
     "Cluster": "GroundsDreamshield",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Room_Bretta": {
     "Alias": "Bretta",
     "Cluster": "DirtmouthBretta",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Room_Bretta_Basement": {
     "Alias": "Bretta_Basement",
     "Cluster": "DirtmouthBretta",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Room_Colosseum_01": {
     "Alias": "Edge_Colo_Entrance",
     "Cluster": "EdgeColo",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Room_Colosseum_02": {
     "Alias": "Edge_Colo_Bench",
     "Cluster": "EdgeColo",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright"
+    "MaximumDarkness": "Bright",
+    "SemiDarkOverrides": null
   },
   "Room_Colosseum_Bronze": {
     "Alias": "Edge_Colo_1_Arena",
     "Cluster": "EdgeColo1",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Room_Colosseum_Gold": {
     "Alias": "Edge_Colo_3_Arena",
     "Cluster": "EdgeColo3",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Room_Colosseum_Silver": {
     "Alias": "Edge_Colo_2_Arena",
     "Cluster": "EdgeColo2",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Room_Colosseum_Spectate": {
     "Alias": "Edge_Colo_Spectate",
     "Cluster": "EdgeColo",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Room_Final_Boss_Atrium": {
     "Alias": "Egg_Bench",
     "Cluster": "BlackEggTemple",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Room_Final_Boss_Core": {
     "Alias": "Egg_Hollow_Knight",
     "Cluster": "BlackEggKnight",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Room_Fungus_Shaman": {
     "Alias": "Fog_Overgrown_Mound",
     "Cluster": "FogCanyonOvergrownMound",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Room_GG_Shortcut": {
     "Alias": "Waterways_Fluke_Hermit",
     "Cluster": "WaterwaysFlukeHermit",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Room_nailmaster": {
     "Alias": "Cliffs_Mato",
     "Cluster": "CliffsMato",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Room_nailmaster_02": {
     "Alias": "Greenpath_Sheo",
     "Cluster": "GreenpathSheo",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Room_nailmaster_03": {
     "Alias": "Edge_Oro",
     "Cluster": "EdgeOro",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Room_ruinhouse": {
     "Alias": "Crossroads_Rescue_Sly",
     "Cluster": "CrossroadsSlyRescue",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Room_Slug_Shrine": {
     "Alias": "Greenpath_Unn_Bench",
     "Cluster": "GreenpathUnnBench",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Room_temple": {
     "Alias": "Black_Egg_Temple",
     "Cluster": "BlackEggTemple",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Ruins_Bathhouse": {
     "Alias": "City_Pleasure_House_Bench",
     "Cluster": "CityPleasureHouse",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Ruins_Elevator": {
     "Alias": "City_Pleasure_House_Elevator",
     "Cluster": "CityPleasureHouse",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Ruins_House_01": {
     "Alias": "City_Guarded_Grub",
     "Cluster": "CityRightHubRooms",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins_House_02": {
     "Alias": "City_Gorgeous_Husk",
     "Cluster": "CityRightHubRooms",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins_House_03": {
     "Alias": "City_Emilitia",
     "Cluster": "CityEmilitia",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_01": {
     "Alias": "City_Pilgrim's_Entrance",
     "Cluster": "CityEastEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_02": {
     "Alias": "City_Quirrel_Bench",
     "Cluster": "CityEastEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_03": {
     "Alias": "City_Rafters",
     "Cluster": "CityEastEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_04": {
     "Alias": "City_Outside_Nailsmith",
     "Cluster": "CityEastEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_05": {
     "Alias": "City_Grub_Above_Lemm",
     "Cluster": "CityAboveLemm",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_05b": {
     "Alias": "City_Lemm",
     "Cluster": "CityLemm",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_05c": {
     "Alias": "City_Egg_Above_Lemm",
     "Cluster": "CityAboveLemm",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_06": {
     "Alias": "City_Corridor_to_Storerooms",
     "Cluster": "CityStorerooms",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_09": {
     "Alias": "City_Soul_Twister_Arena",
     "Cluster": "CitySanctumEast",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_17": {
     "Alias": "City_Whispering_Root",
     "Cluster": "CityStorerooms",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_18": {
     "Alias": "City_Corridor_to_Spire",
     "Cluster": "CityLowerSpire",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_23": {
     "Alias": "City_Sanctum_Entrance",
     "Cluster": "CitySanctumEast",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_24": {
     "Alias": "City_Soul_Master_Arena",
     "Cluster": "CitySanctumWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_25": {
     "Alias": "City_Sanctum_East_Elevators",
     "Cluster": "CitySanctumEast",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_27": {
     "Alias": "City_Hollow_Knight_Fountain",
     "Cluster": "CityFountain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_28": {
     "Alias": "City_Storerooms",
     "Cluster": "CityStorerooms",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_29": {
     "Alias": "City_Storerooms_Stag",
     "Cluster": "CityStoreroomsStag",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_30": {
     "Alias": "City_Sanctum_Spell_Twister",
     "Cluster": "CitySanctumMiddle",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_31": {
     "Alias": "City_Toll_Bench",
     "Cluster": "CityTollBench",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_31b": {
     "Alias": "City_Shade_Soul_Arena",
     "Cluster": "CityShadeSoul",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins1_32": {
     "Alias": "City_Soul_Master_Rewards",
     "Cluster": "CitySanctumWest",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_01": {
     "Alias": "City_Spire_Great_Husk",
     "Cluster": "CitySpireLower",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_01_b": {
     "Alias": "City_Spire_Base",
     "Cluster": "CitySpireLower",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_03": {
     "Alias": "City_Spire_Watchers",
     "Cluster": "CityWatcherKnights",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_03b": {
     "Alias": "City_Spire_Below_Watchers",
     "Cluster": "CitySpireLower",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_04": {
     "Alias": "City_Right_Hub",
     "Cluster": "CityRightHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_05": {
     "Alias": "City_Above_King's",
     "Cluster": "CityKingsStation",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_06": {
     "Alias": "City_King's_Station",
     "Cluster": "CityKingsStation",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_07": {
     "Alias": "City_Grub_Below_King's",
     "Cluster": "CityEdgeBridge",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_08": {
     "Alias": "City_King's_Stag",
     "Cluster": "CityKingsStation",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_09": {
     "Alias": "City_King's_Vessel_Fragment",
     "Cluster": "CityKingsArena",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_10": {
     "Alias": "Grounds_Elevator",
     "Cluster": "EastCityElevator",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_10b": {
     "Alias": "City_Right_Elevator",
     "Cluster": "EastCityElevator",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_11": {
     "Alias": "City_Collector_Arena",
     "Cluster": "CityCollector",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_11_b": {
     "Alias": "City_Tower_of_Love",
     "Cluster": "CityTowerOfLove",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Ruins2_Watcher_Room": {
     "Alias": "City_Lurien_Elevator",
     "Cluster": "CityLurien",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Tutorial_01": {
     "Alias": "King's_Pass",
     "Cluster": "KingsPass",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Waterways_01": {
     "Alias": "Waterways_Entrance",
     "Cluster": "WaterwaysMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Waterways_02": {
     "Alias": "Waterways_Main_Bench",
     "Cluster": "WaterwaysMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Waterways_03": {
     "Alias": "Waterways_Tuk",
     "Cluster": "WaterwaysMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Waterways_04": {
     "Alias": "Waterways_Hidden_Grub",
     "Cluster": "WaterwaysWestWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Waterways_04b": {
     "Alias": "Waterways_Mask_Shard",
     "Cluster": "WaterwaysWestWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Waterways_05": {
     "Alias": "Waterways_Dung_Defender_Arena",
     "Cluster": "WaterwaysDungDefender",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Waterways_06": {
     "Alias": "Waterways_Corridor_to_Broken_Elevator",
     "Cluster": "WaterwaysMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Waterways_07": {
     "Alias": "Waterways_Left_Of_Isma's_Grove",
     "Cluster": "WaterwaysIsmasGrove",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Waterways_08": {
     "Alias": "Waterways_Outside_Flukemarm",
     "Cluster": "WaterwaysOutsideFlukemarm",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Waterways_09": {
     "Alias": "Waterways_Cornifer",
     "Cluster": "WaterwaysWestWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Waterways_12": {
     "Alias": "Waterways_Flukemarm_Arena",
     "Cluster": "WaterwaysFlukemarm",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Waterways_13": {
     "Alias": "Waterways_Isma's_Grove",
     "Cluster": "WaterwaysIsmasGrove",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "Waterways_14": {
     "Alias": "Waterways_Edge_Acid_Corridor",
     "Cluster": "WaterwaysEdgeAcidCorridor",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "Waterways_15": {
     "Alias": "Waterways_Dung_Defender's_Cave",
     "Cluster": "WaterwaysDungDefender",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_01": {
     "Alias": "Palace_Entrance",
     "Cluster": "PalaceEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_02": {
     "Alias": "Palace_First_Mold",
     "Cluster": "PalaceInnerKingsmould",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_03_hub": {
     "Alias": "Palace_Hub",
     "Cluster": "PalaceHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_04": {
     "Alias": "Palace_Left_Of_Hub",
     "Cluster": "PalaceWings",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_05": {
     "Alias": "Palace_Saw_Room",
     "Cluster": "PalaceWings",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_06": {
     "Alias": "Palace_Balcony",
     "Cluster": "PalaceHub",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_07": {
     "Alias": "Palace_Lamp_Pogo",
     "Cluster": "PalaceFinale",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_08": {
     "Alias": "Palace_Workshop",
     "Cluster": "PalaceWorkshop",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Bright"
+    "MaximumDarkness": "Bright",
+    "SemiDarkOverrides": null
   },
   "White_Palace_09": {
     "Alias": "Palace_Throne",
     "Cluster": "PalaceThrone",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_11": {
     "Alias": "Palace_Outside",
     "Cluster": "PalaceEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark"
+    "MaximumDarkness": "SemiDark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_12": {
     "Alias": "Palace_Spike_Drop",
     "Cluster": "PalaceFinale",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_13": {
     "Alias": "Palace_Thorn_Jump",
     "Cluster": "PalaceFinale",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_14": {
     "Alias": "Palace_Hell_Corridor",
     "Cluster": "PalaceWings",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_15": {
     "Alias": "Palace_Caged_Lever",
     "Cluster": "PalaceWings",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_16": {
     "Alias": "Palace_Saw_Climb",
     "Cluster": "PalaceWings",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_17": {
     "Alias": "POP_Lever",
     "Cluster": "PalacePOPEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_18": {
     "Alias": "POP_Entrance",
     "Cluster": "PalacePOPEntrance",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_19": {
     "Alias": "POP_Vertical",
     "Cluster": "PalacePOPFinal",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   },
   "White_Palace_20": {
     "Alias": "POP_Final",
     "Cluster": "PalacePOPFinal",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": null
   }
 }
