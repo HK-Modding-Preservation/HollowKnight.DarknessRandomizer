@@ -467,7 +467,7 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "SemiDarkOverrides": {
-      "DarkRegions": [
+      "DarknessRegions": [
         {
           "X": 90.0,
           "Y": 50.0,
@@ -1127,7 +1127,7 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "SemiDarkOverrides": {
-      "DarkRegions": [
+      "DarknessRegions": [
         {
           "X": 50.0,
           "Y": 17.5,

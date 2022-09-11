@@ -44,7 +44,7 @@ namespace DarknessRandomizer.Data
 
     public class SemiDarkOverrides
     {
-        public List<DarknessRegion.Parameters> DarkRegions;
+        public List<DarknessRegion> DarknessRegions;
     }
 
     public class BaseSceneData<ClusterNameT>

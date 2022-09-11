@@ -5,23 +5,20 @@ using UObject = UnityEngine.Object;
 
 namespace DarknessRandomizer.IC
 {
-    public class DarknessRegion
+    public record DarknessRegion
     {
-        public record Parameters
-        {
-            public float X;
-            public float Y;
-            public float Width;
-            public float Height;
-        }
+        public float X;
+        public float Y;
+        public float Width;
+        public float Height;
 
-        public static void Spawn(Parameters parameters)
+        public void Spawn()
         {
             var obj = Preloader.Instance.NewDarknessRegion();
-            obj.name = $"CustomDarknessRegion-{parameters.X}-{parameters.Y}";
-            obj.transform.position = new(parameters.X, parameters.Y, 0);
+            obj.name = $"CustomDarknessRegion-{X}-{Y}";
+            obj.transform.position = new(X, Y, 0);
             obj.transform.localScale = new(1, 1, 1);
-            obj.GetComponent<BoxCollider2D>().size = new(parameters.Width, parameters.Height);
+            obj.GetComponent<BoxCollider2D>().size = new(Width, Height);
             obj.LocateMyFSM("Darkness Region").FsmVariables.FindFsmInt("Darkness").Value = 2;
 
             obj.SetActive(true);

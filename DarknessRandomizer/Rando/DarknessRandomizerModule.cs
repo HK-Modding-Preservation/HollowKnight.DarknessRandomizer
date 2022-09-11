@@ -178,7 +178,7 @@ namespace DarknessRandomizer.Rando
             // Deploy additional darkness regions.
             if (data.NewDarkness == Darkness.Dark)
             {
-                Data.SceneData.Get(data.CurrentScene).SemiDarkOverrides?.DarkRegions.ForEach(DarknessRegion.Spawn);
+                Data.SceneData.Get(data.CurrentScene).SemiDarkOverrides?.DarknessRegions.ForEach(dr => dr.Spawn());
             }
         }
 
