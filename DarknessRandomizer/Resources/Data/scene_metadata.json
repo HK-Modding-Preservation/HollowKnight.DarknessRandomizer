@@ -2,6 +2,7 @@
   "Abyss_01": {
     "Alias": "City_Broken_Elevator",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_02",
       "Ruins2_04",
@@ -13,6 +14,7 @@
   "Abyss_02": {
     "Alias": "Basin_Broken_Bridge",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_01",
       "Abyss_03"
@@ -21,6 +23,7 @@
   "Abyss_03": {
     "Alias": "Basin_Tram",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_02",
       "Abyss_04",
@@ -30,6 +33,7 @@
   "Abyss_03_b": {
     "Alias": "Deepnest_Tram",
     "MapArea": "Deepnest",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_37"
     ]
@@ -37,6 +41,7 @@
   "Abyss_03_c": {
     "Alias": "Edge_Tram",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_01",
       "Hive_01"
@@ -45,6 +50,7 @@
   "Abyss_04": {
     "Alias": "Basin_Fountain",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_03",
       "Abyss_05",
@@ -55,6 +61,7 @@
   "Abyss_05": {
     "Alias": "Basin_Palace_Grounds",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_04",
       "Abyss_22"
@@ -63,6 +70,7 @@
   "Abyss_06_Core": {
     "Alias": "Abyss_Core",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_04",
       "Abyss_08",
@@ -74,6 +82,7 @@
   "Abyss_08": {
     "Alias": "Abyss_Lifeblood_Core",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Abyss_06_Core"
     ]
@@ -81,6 +90,7 @@
   "Abyss_09": {
     "Alias": "Abyss_Lighthouse_Climb",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Abyss_10",
       "Abyss_16",
@@ -90,6 +100,7 @@
   "Abyss_10": {
     "Alias": "Abyss_Shade_Cloak",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Abyss_09"
     ]
@@ -97,6 +108,7 @@
   "Abyss_12": {
     "Alias": "Abyss_Shriek",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Abyss_06_Core"
     ]
@@ -104,6 +116,7 @@
   "Abyss_15": {
     "Alias": "Abyss_Birthplace",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Abyss_06_Core",
       "Dream_Abyss"
@@ -112,6 +125,7 @@
   "Abyss_16": {
     "Alias": "Abyss_Corridor_to_Lighthouse",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Abyss_06_Core",
       "Abyss_09"
@@ -120,6 +134,7 @@
   "Abyss_17": {
     "Alias": "Basin_Cloth",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_03"
     ]
@@ -127,6 +142,7 @@
   "Abyss_18": {
     "Alias": "Basin_Corridor_to_Broken_Vessel",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_04",
       "Abyss_19",
@@ -136,6 +152,7 @@
   "Abyss_19": {
     "Alias": "Basin_Broken_Vessel_Grub",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_18",
       "Abyss_20",
@@ -145,6 +162,7 @@
   "Abyss_20": {
     "Alias": "Basin_Simple_Key",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_19"
     ]
@@ -152,6 +170,7 @@
   "Abyss_21": {
     "Alias": "Basin_Monarch_Wings",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_19"
     ]
@@ -159,6 +178,7 @@
   "Abyss_22": {
     "Alias": "Basin_Hidden_Station",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_05"
     ]
@@ -166,6 +186,7 @@
   "Abyss_Lighthouse_room": {
     "Alias": "Abyss_Lighthouse",
     "MapArea": "Ancient Basin",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_09"
     ]
@@ -173,6 +194,7 @@
   "Cliffs_01": {
     "Alias": "Cliffs_Main",
     "MapArea": "Howling Cliffs",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Cliffs_02",
       "Cliffs_04",
@@ -183,6 +205,7 @@
   "Cliffs_02": {
     "Alias": "Cliffs_Gorb",
     "MapArea": "Howling Cliffs",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Cliffs_01",
       "Cliffs_03",
@@ -193,6 +216,7 @@
   "Cliffs_03": {
     "Alias": "Cliffs_Stag_Nest",
     "MapArea": "Howling Cliffs",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Cliffs_02"
     ]
@@ -200,6 +224,7 @@
   "Cliffs_04": {
     "Alias": "Cliffs_Joni's_Dark",
     "MapArea": "Howling Cliffs",
+    "OrigDarkness": "Dark",
     "AdjacentScenes": [
       "Cliffs_01",
       "Cliffs_05"
@@ -208,6 +233,7 @@
   "Cliffs_05": {
     "Alias": "Cliffs_Joni's_Pickup",
     "MapArea": "Howling Cliffs",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Cliffs_04"
     ]
@@ -215,6 +241,7 @@
   "Cliffs_06": {
     "Alias": "Cliffs_Grimm_Lantern",
     "MapArea": "Howling Cliffs",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Cliffs_01"
     ]
@@ -222,6 +249,7 @@
   "Crossroads_01": {
     "Alias": "Crossroads_Well",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_02",
       "Crossroads_07"
@@ -230,6 +258,7 @@
   "Crossroads_02": {
     "Alias": "Crossroads_Outside_Temple",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_01",
       "Crossroads_39",
@@ -239,6 +268,7 @@
   "Crossroads_03": {
     "Alias": "Crossroads_Outside_Stag",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_15",
       "Crossroads_16",
@@ -251,6 +281,7 @@
   "Crossroads_04": {
     "Alias": "Crossroads_Gruz_Mother",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_19",
       "Crossroads_27",
@@ -261,6 +292,7 @@
   "Crossroads_05": {
     "Alias": "Crossroads_Central_Grub",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_07",
       "Crossroads_40"
@@ -269,6 +301,7 @@
   "Crossroads_06": {
     "Alias": "Crossroads_Outside_Mound",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_10",
       "Crossroads_33",
@@ -278,6 +311,7 @@
   "Crossroads_07": {
     "Alias": "Crossroads_Gruzzer",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_01",
       "Crossroads_05",
@@ -289,6 +323,7 @@
   "Crossroads_08": {
     "Alias": "Crossroads_Aspid_Arena",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_13",
       "Crossroads_18",
@@ -299,6 +334,7 @@
   "Crossroads_09": {
     "Alias": "Crossroads_Mawlek_Boss",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_33",
       "Crossroads_36"
@@ -307,6 +343,7 @@
   "Crossroads_10": {
     "Alias": "Crossroads_False_Knight_Arena",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "SuperBright",
     "AdjacentScenes": [
       "Crossroads_06",
       "Crossroads_21",
@@ -316,6 +353,7 @@
   "Crossroads_11_alt": {
     "Alias": "Crossroads_Greenpath_Entrance",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_07",
       "Fungus1_01"
@@ -324,6 +362,7 @@
   "Crossroads_12": {
     "Alias": "Crossroads_Corridor_to_Acid_Grub",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_33",
       "Crossroads_35"
@@ -332,6 +371,7 @@
   "Crossroads_13": {
     "Alias": "Crossroads_Goam_Mask_Shard",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_08",
       "Crossroads_42"
@@ -340,6 +380,7 @@
   "Crossroads_14": {
     "Alias": "Crossroads_Outside_Myla",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_16",
       "Crossroads_39",
@@ -350,6 +391,7 @@
   "Crossroads_15": {
     "Alias": "Crossroads_Corridor_to_Tram",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_03",
       "Crossroads_27"
@@ -358,6 +400,7 @@
   "Crossroads_16": {
     "Alias": "Crossroads_Above_Lever",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_03",
       "Crossroads_14",
@@ -367,6 +410,7 @@
   "Crossroads_18": {
     "Alias": "Crossroads_Fungal_Entrance",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_08",
       "Crossroads_52",
@@ -376,6 +420,7 @@
   "Crossroads_19": {
     "Alias": "Crossroads_Before_Gruz_Mother",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_03",
       "Crossroads_04",
@@ -386,6 +431,7 @@
   "Crossroads_21": {
     "Alias": "Crossroads_Outside_False_Knight",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_03",
       "Crossroads_10",
@@ -395,6 +441,7 @@
   "Crossroads_22": {
     "Alias": "Crossroads_Glowing_Womb_Arena",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_21"
     ]
@@ -402,6 +449,7 @@
   "Crossroads_25": {
     "Alias": "Crossroads_Mawlek_Entrance",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_07",
       "Crossroads_36"
@@ -410,6 +458,7 @@
   "Crossroads_27": {
     "Alias": "Crossroads_Outside_Tram",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_04",
       "Crossroads_15",
@@ -420,6 +469,7 @@
   "Crossroads_30": {
     "Alias": "Crossroads_Hot_Spring",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_08"
     ]
@@ -427,6 +477,7 @@
   "Crossroads_31": {
     "Alias": "Crossroads_Spike_Grub",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_27"
     ]
@@ -434,6 +485,7 @@
   "Crossroads_33": {
     "Alias": "Crossroads_Cornifer",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_06",
       "Crossroads_07",
@@ -445,6 +497,7 @@
   "Crossroads_35": {
     "Alias": "Crossroads_Acid_Grub",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_12",
       "Fungus3_26"
@@ -453,6 +506,7 @@
   "Crossroads_36": {
     "Alias": "Crossroads_Mawlek_Middle",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_09",
       "Crossroads_25"
@@ -461,6 +515,7 @@
   "Crossroads_37": {
     "Alias": "Crossroads_Vessel_Fragment",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_49"
     ]
@@ -468,6 +523,7 @@
   "Crossroads_39": {
     "Alias": "Crossroads_Corridor_Right_of_Temple",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_02",
       "Crossroads_14"
@@ -476,6 +532,7 @@
   "Crossroads_40": {
     "Alias": "Crossroads_Corridor_Right_of_Central_Grub",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_05",
       "Crossroads_16"
@@ -484,6 +541,7 @@
   "Crossroads_42": {
     "Alias": "Crossroads_Right_Of_Mask_Shard",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_13",
       "Crossroads_19"
@@ -492,6 +550,7 @@
   "Crossroads_43": {
     "Alias": "Crossroads_Corridor_to_Elevator",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_19",
       "Crossroads_49"
@@ -500,6 +559,7 @@
   "Crossroads_45": {
     "Alias": "Crossroads_Myla",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_14",
       "Mines_01"
@@ -508,6 +568,7 @@
   "Crossroads_46": {
     "Alias": "Crossroads_Tram",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_27"
     ]
@@ -515,6 +576,7 @@
   "Crossroads_46b": {
     "Alias": "Grounds_Tram",
     "MapArea": "Resting Grounds",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "RestingGrounds_02"
     ]
@@ -522,6 +584,7 @@
   "Crossroads_47": {
     "Alias": "Crossroads_Stag",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_03"
     ]
@@ -529,6 +592,7 @@
   "Crossroads_48": {
     "Alias": "Crossroads_Guarded_Grub",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_14"
     ]
@@ -536,6 +600,7 @@
   "Crossroads_49": {
     "Alias": "Crossroads_Elevator",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_37",
       "Crossroads_43"
@@ -544,6 +609,7 @@
   "Crossroads_49b": {
     "Alias": "City_Left_Elevator",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_28"
     ]
@@ -551,6 +617,7 @@
   "Crossroads_50": {
     "Alias": "Grounds_Blue_Lake",
     "MapArea": "Resting Grounds",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_04",
       "RestingGrounds_06"
@@ -559,6 +626,7 @@
   "Crossroads_52": {
     "Alias": "Crossroads_Goam_Journal",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_18"
     ]
@@ -566,6 +634,7 @@
   "Crossroads_ShamanTemple": {
     "Alias": "Crossroads_Ancestral_Mound",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_06"
     ]
@@ -573,6 +642,7 @@
   "Deepnest_01": {
     "Alias": "Fungal_Deepnest_Fall",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_01b",
       "Fungus2_20",
@@ -582,6 +652,7 @@
   "Deepnest_01b": {
     "Alias": "Deepnest_Upper_Cornifer",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_01",
       "Deepnest_02",
@@ -591,6 +662,7 @@
   "Deepnest_02": {
     "Alias": "Deepnest_Outside_Mimics",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_01b",
       "Deepnest_36"
@@ -599,6 +671,7 @@
   "Deepnest_03": {
     "Alias": "Deepnest_Left_Of_Hot_Spring",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_30",
       "Deepnest_31",
@@ -609,6 +682,7 @@
   "Deepnest_09": {
     "Alias": "Deepnest_Distant_Village_Stag",
     "MapArea": "Deepnest",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_10"
     ]
@@ -616,6 +690,7 @@
   "Deepnest_10": {
     "Alias": "Deepnest_Distant_Village",
     "MapArea": "Deepnest",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_09",
       "Deepnest_41",
@@ -625,6 +700,7 @@
   "Deepnest_14": {
     "Alias": "Deepnest_Failed_Tramway_Bench",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_17",
       "Deepnest_26",
@@ -634,6 +710,7 @@
   "Deepnest_16": {
     "Alias": "Deepnest_After_Lower_Cornifer",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_17",
       "Fungus2_25"
@@ -642,6 +719,7 @@
   "Deepnest_17": {
     "Alias": "Deepnest_Garpede_Corridor_Below_Cornifer",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_01b",
       "Deepnest_14",
@@ -652,6 +730,7 @@
   "Deepnest_26": {
     "Alias": "Deepnest_Failed_Tramway_Lifeblood",
     "MapArea": "Deepnest",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_14",
       "Deepnest_26b",
@@ -661,6 +740,7 @@
   "Deepnest_26b": {
     "Alias": "Deepnest_Tram_Pass",
     "MapArea": "Deepnest",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_26"
     ]
@@ -668,6 +748,7 @@
   "Deepnest_30": {
     "Alias": "Deepnest_Hot_Spring",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_03",
       "Deepnest_17",
@@ -677,6 +758,7 @@
   "Deepnest_31": {
     "Alias": "Deepnest_Nosk_Corridor",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_03",
       "Deepnest_32"
@@ -685,6 +767,7 @@
   "Deepnest_32": {
     "Alias": "Deepnest_Nosk_Arena",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_31"
     ]
@@ -692,6 +775,7 @@
   "Deepnest_33": {
     "Alias": "Deepnest_Zote_Arena",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_03",
       "Deepnest_14"
@@ -700,6 +784,7 @@
   "Deepnest_34": {
     "Alias": "Deepnest_First_Devout",
     "MapArea": "Deepnest",
+    "OrigDarkness": "Dark",
     "AdjacentScenes": [
       "Deepnest_03",
       "Deepnest_35",
@@ -709,6 +794,7 @@
   "Deepnest_35": {
     "Alias": "Deepnest_Outside_Galien",
     "MapArea": "Deepnest",
+    "OrigDarkness": "Dark",
     "AdjacentScenes": [
       "Deepnest_26",
       "Deepnest_34",
@@ -718,6 +804,7 @@
   "Deepnest_36": {
     "Alias": "Deepnest_Mimics",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_02"
     ]
@@ -725,6 +812,7 @@
   "Deepnest_37": {
     "Alias": "Deepnest_Corridor_to_Tram",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Abyss_03_b",
       "Deepnest_30",
@@ -735,6 +823,7 @@
   "Deepnest_38": {
     "Alias": "Deepnest_Vessel_Fragment",
     "MapArea": "Deepnest",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_37"
     ]
@@ -742,6 +831,7 @@
   "Deepnest_39": {
     "Alias": "Deepnest_Whispering_Root",
     "MapArea": "Deepnest",
+    "OrigDarkness": "Dark",
     "AdjacentScenes": [
       "Deepnest_34",
       "Deepnest_41",
@@ -752,6 +842,7 @@
   "Deepnest_40": {
     "Alias": "Deepnest_Galien_Arena",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_35"
     ]
@@ -759,6 +850,7 @@
   "Deepnest_41": {
     "Alias": "Deepnest_Midwife",
     "MapArea": "Deepnest",
+    "OrigDarkness": "Dark",
     "AdjacentScenes": [
       "Deepnest_10",
       "Deepnest_39"
@@ -767,6 +859,7 @@
   "Deepnest_42": {
     "Alias": "Deepnest_Outside_Mask_Maker",
     "MapArea": "Deepnest",
+    "OrigDarkness": "Dark",
     "AdjacentScenes": [
       "Deepnest_39",
       "Deepnest_43"
@@ -775,6 +868,7 @@
   "Deepnest_43": {
     "Alias": "Gardens_Corridor_To_Deepnest",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_42",
       "Fungus3_08",
@@ -784,6 +878,7 @@
   "Deepnest_44": {
     "Alias": "Deepnest_Sharp_Shadow",
     "MapArea": "Deepnest",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_37"
     ]
@@ -791,6 +886,7 @@
   "Deepnest_45_v02": {
     "Alias": "Deepnest_Weaver's_Den",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_39"
     ]
@@ -798,6 +894,7 @@
   "Deepnest_East_01": {
     "Alias": "Edge_Left_Of_Hive",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_03_c",
       "Deepnest_East_02",
@@ -807,6 +904,7 @@
   "Deepnest_East_02": {
     "Alias": "Edge_Above_Hive",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_01",
       "Deepnest_East_03",
@@ -817,6 +915,7 @@
   "Deepnest_East_03": {
     "Alias": "Edge_Entrance",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_02",
       "Deepnest_East_04",
@@ -828,6 +927,7 @@
   "Deepnest_East_04": {
     "Alias": "Edge_Bardoon",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_03",
       "Deepnest_East_07",
@@ -838,6 +938,7 @@
   "Deepnest_East_06": {
     "Alias": "Edge_Outside_Oro",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_03",
       "Deepnest_East_14b",
@@ -849,6 +950,7 @@
   "Deepnest_East_07": {
     "Alias": "Edge_Whispering_Root",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_03",
       "Deepnest_East_04",
@@ -859,6 +961,7 @@
   "Deepnest_East_08": {
     "Alias": "Edge_Great_Hopper_Idol",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_07",
       "Deepnest_East_09"
@@ -867,6 +970,7 @@
   "Deepnest_East_09": {
     "Alias": "Edge_Corridor_Outside_Colosseum",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_08",
       "Room_Colosseum_01",
@@ -876,6 +980,7 @@
   "Deepnest_East_10": {
     "Alias": "Edge_Markoth_Arena",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_18"
     ]
@@ -883,6 +988,7 @@
   "Deepnest_East_11": {
     "Alias": "Edge_Below_Camp_Bench",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_04",
       "Deepnest_East_12",
@@ -893,6 +999,7 @@
   "Deepnest_East_12": {
     "Alias": "Edge_Hornet_Sentinel_Corridor",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_11",
       "Deepnest_East_Hornet"
@@ -901,6 +1008,7 @@
   "Deepnest_East_13": {
     "Alias": "Edge_Camp_Bench",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_11"
     ]
@@ -908,6 +1016,7 @@
   "Deepnest_East_14": {
     "Alias": "Edge_Below_Oro",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_14b",
       "Deepnest_East_16",
@@ -917,6 +1026,7 @@
   "Deepnest_East_14b": {
     "Alias": "Edge_Quick_Slash",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_06",
       "Deepnest_East_14"
@@ -925,6 +1035,7 @@
   "Deepnest_East_15": {
     "Alias": "Edge_Lifeblood",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_04"
     ]
@@ -932,6 +1043,7 @@
   "Deepnest_East_16": {
     "Alias": "Edge_Oro_Scarecrow",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_06",
       "Deepnest_East_14"
@@ -940,6 +1052,7 @@
   "Deepnest_East_17": {
     "Alias": "Edge_420_Geo_Rock",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_East_14"
     ]
@@ -947,6 +1060,7 @@
   "Deepnest_East_18": {
     "Alias": "Edge_Outside_Markoth",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_06",
       "Deepnest_East_10",
@@ -956,6 +1070,7 @@
   "Deepnest_East_Hornet": {
     "Alias": "Edge_Hornet_Sentinel_Arena",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "SuperBright",
     "AdjacentScenes": [
       "Deepnest_East_12"
     ]
@@ -963,6 +1078,7 @@
   "Deepnest_Spider_Town": {
     "Alias": "Deepnest_Beast's_Den",
     "MapArea": "Deepnest",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Deepnest_10"
     ]
@@ -970,6 +1086,7 @@
   "Dream_01_False_Knight": {
     "Alias": "Dream_Failed_Champion",
     "MapArea": "",
+    "OrigDarkness": "SuperBright",
     "AdjacentScenes": [
       "Crossroads_10"
     ]
@@ -977,6 +1094,7 @@
   "Dream_02_Mage_Lord": {
     "Alias": "Dream_Soul_Tyrant",
     "MapArea": "",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_24"
     ]
@@ -984,6 +1102,7 @@
   "Dream_03_Infected_Knight": {
     "Alias": "Dream_Lost_Kin",
     "MapArea": "",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_18"
     ]
@@ -991,6 +1110,7 @@
   "Dream_04_White_Defender": {
     "Alias": "Dream_White_Defender",
     "MapArea": "",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Waterways_05"
     ]
@@ -998,6 +1118,7 @@
   "Dream_Abyss": {
     "Alias": "Dream_Abyss",
     "MapArea": "",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_15"
     ]
@@ -1005,6 +1126,7 @@
   "Dream_Final": {
     "Alias": "Egg_Radiance",
     "MapArea": "",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Room_Final_Boss_Core"
     ]
@@ -1012,6 +1134,7 @@
   "Dream_Mighty_Zote": {
     "Alias": "Dream_Grey_Prince_Zote",
     "MapArea": "",
+    "OrigDarkness": "SuperBright",
     "AdjacentScenes": [
       "Room_Bretta_Basement"
     ]
@@ -1019,6 +1142,7 @@
   "Dream_Nailcollection": {
     "Alias": "Dream_Nail",
     "MapArea": "",
+    "OrigDarkness": "SuperBright",
     "AdjacentScenes": [
       "RestingGrounds_04"
     ]
@@ -1026,6 +1150,7 @@
   "Fungus1_01": {
     "Alias": "Greenpath_Entrance",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_11_alt",
       "Fungus1_01b"
@@ -1034,6 +1159,7 @@
   "Fungus1_01b": {
     "Alias": "Greenpath_Waterfall_Bench",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_01",
       "Fungus1_02"
@@ -1042,6 +1168,7 @@
   "Fungus1_02": {
     "Alias": "Greenpath_First_Hornet_Sighting",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_01b",
       "Fungus1_06",
@@ -1051,6 +1178,7 @@
   "Fungus1_03": {
     "Alias": "Greenpath_Storerooms",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_05",
       "Fungus1_17",
@@ -1060,6 +1188,7 @@
   "Fungus1_04": {
     "Alias": "Greenpath_Hornet",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_21",
       "Fungus1_25"
@@ -1068,6 +1197,7 @@
   "Fungus1_05": {
     "Alias": "Greenpath_Outside_Thorns",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_03",
       "Fungus1_10",
@@ -1077,6 +1207,7 @@
   "Fungus1_06": {
     "Alias": "Greenpath_Cornifer",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_02",
       "Fungus1_07"
@@ -1085,6 +1216,7 @@
   "Fungus1_07": {
     "Alias": "Greenpath_Outside_Hunter",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_06",
       "Fungus1_08",
@@ -1094,6 +1226,7 @@
   "Fungus1_08": {
     "Alias": "Greenpath_Hunter",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_07"
     ]
@@ -1101,6 +1234,7 @@
   "Fungus1_09": {
     "Alias": "Greenpath_Sheo_Gauntlet",
     "MapArea": "Greenpath",
+    "OrigDarkness": "SuperBright",
     "AdjacentScenes": [
       "Fungus1_15",
       "Fungus1_30"
@@ -1109,6 +1243,7 @@
   "Fungus1_10": {
     "Alias": "Greenpath_Acid_Bridge",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_05",
       "Fungus1_19",
@@ -1118,6 +1253,7 @@
   "Fungus1_11": {
     "Alias": "Greenpath_Above_Fog_Canyon",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_19",
       "Fungus1_29",
@@ -1129,6 +1265,7 @@
   "Fungus1_12": {
     "Alias": "Greenpath_MMC_Corridor",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_13",
       "Fungus1_29"
@@ -1137,6 +1274,7 @@
   "Fungus1_13": {
     "Alias": "Greenpath_Whispering_Root",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_12",
       "Fungus3_22"
@@ -1145,6 +1283,7 @@
   "Fungus1_14": {
     "Alias": "Greenpath_Thorns_of_Agony",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_05"
     ]
@@ -1152,6 +1291,7 @@
   "Fungus1_15": {
     "Alias": "Greenpath_Outside_Sheo",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_09",
       "Room_nailmaster_02"
@@ -1160,6 +1300,7 @@
   "Fungus1_16_alt": {
     "Alias": "Greenpath_Stag",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_22"
     ]
@@ -1167,6 +1308,7 @@
   "Fungus1_17": {
     "Alias": "Greenpath_Charger_Corridor",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_02",
       "Fungus1_03"
@@ -1175,6 +1317,7 @@
   "Fungus1_19": {
     "Alias": "Greenpath_Above_Sanctuary_Bench",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_07",
       "Fungus1_10",
@@ -1184,6 +1327,7 @@
   "Fungus1_20_v02": {
     "Alias": "Greenpath_Vengefly_King",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_21",
       "Fungus1_28",
@@ -1193,6 +1337,7 @@
   "Fungus1_21": {
     "Alias": "Greenpath_Outside_Hornet",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_04",
       "Fungus1_20_v02",
@@ -1203,6 +1348,7 @@
   "Fungus1_22": {
     "Alias": "Greenpath_Outside_Stag",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_16_alt",
       "Fungus1_21",
@@ -1212,6 +1358,7 @@
   "Fungus1_23": {
     "Alias": "Gardens_First_Loodle_Corridor",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_13",
       "Fungus3_48"
@@ -1220,6 +1367,7 @@
   "Fungus1_24": {
     "Alias": "Gardens_Cornifer",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_05"
     ]
@@ -1227,6 +1375,7 @@
   "Fungus1_25": {
     "Alias": "Greenpath_Corridor_to_Unn",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_04",
       "Fungus1_26"
@@ -1235,6 +1384,7 @@
   "Fungus1_26": {
     "Alias": "Greenpath_Lake_Of_Unn",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_25",
       "Fungus1_Slug",
@@ -1244,6 +1394,7 @@
   "Fungus1_28": {
     "Alias": "Cliffs_Baldur's_Shell",
     "MapArea": "Howling Cliffs",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Cliffs_01",
       "Fungus1_20_v02"
@@ -1252,6 +1403,7 @@
   "Fungus1_29": {
     "Alias": "Greenpath_Massive_Moss_Charger",
     "MapArea": "Greenpath",
+    "OrigDarkness": "SuperBright",
     "AdjacentScenes": [
       "Fungus1_11",
       "Fungus1_12"
@@ -1260,6 +1412,7 @@
   "Fungus1_30": {
     "Alias": "Greenpath_Below_Toll_Bench",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_09",
       "Fungus1_10",
@@ -1270,6 +1423,7 @@
   "Fungus1_31": {
     "Alias": "Greenpath_Toll",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_03",
       "Fungus1_30",
@@ -1279,6 +1433,7 @@
   "Fungus1_32": {
     "Alias": "Greenpath_Moss_Knight_Arena",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_20_v02",
       "Fungus1_21",
@@ -1288,6 +1443,7 @@
   "Fungus1_34": {
     "Alias": "Greenpath_Stone_Sanctuary_Entrance",
     "MapArea": "Greenpath",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Fungus1_11",
       "Fungus1_35"
@@ -1296,6 +1452,7 @@
   "Fungus1_35": {
     "Alias": "Greenpath_Stone_Sanctuary",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Dark",
     "AdjacentScenes": [
       "Fungus1_34"
     ]
@@ -1303,6 +1460,7 @@
   "Fungus1_37": {
     "Alias": "Greenpath_Sanctuary_Bench",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_11"
     ]
@@ -1310,6 +1468,7 @@
   "Fungus1_Slug": {
     "Alias": "Greenpath_Unn",
     "MapArea": "Greenpath",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Fungus1_26"
     ]
@@ -1317,6 +1476,7 @@
   "Fungus2_01": {
     "Alias": "Fungal_Queen's_Station",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_02",
       "Fungus2_03",
@@ -1327,6 +1487,7 @@
   "Fungus2_02": {
     "Alias": "Fungal_Queen's_Stag",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_01"
     ]
@@ -1334,6 +1495,7 @@
   "Fungus2_03": {
     "Alias": "Fungal_Outside_Queen's",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_01",
       "Fungus2_04",
@@ -1343,6 +1505,7 @@
   "Fungus2_04": {
     "Alias": "Fungal_Below_Ogres",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_03",
       "Fungus2_05",
@@ -1352,6 +1515,7 @@
   "Fungus2_05": {
     "Alias": "Fungal_Shrumal_Ogres",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_04",
       "Fungus2_06"
@@ -1360,6 +1524,7 @@
   "Fungus2_06": {
     "Alias": "Fungal_Outside_Leg_Eater",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_18",
       "Fungus2_05",
@@ -1371,6 +1536,7 @@
   "Fungus2_07": {
     "Alias": "Fungal_Shrumal_Warrior_Acid_Bridge",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_06",
       "Fungus2_08"
@@ -1379,6 +1545,7 @@
   "Fungus2_08": {
     "Alias": "Fungal_Outside_Elder_Hu",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_07",
       "Fungus2_09",
@@ -1388,6 +1555,7 @@
   "Fungus2_09": {
     "Alias": "Fungal_Cloth_Corridor",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_08",
       "Fungus2_10"
@@ -1396,6 +1564,7 @@
   "Fungus2_10": {
     "Alias": "Fungal_Left_Of_Pilgrim's_Way",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_09",
       "Fungus2_11",
@@ -1405,6 +1574,7 @@
   "Fungus2_11": {
     "Alias": "Fungal_Epogo",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_10",
       "Fungus2_12",
@@ -1415,6 +1585,7 @@
   "Fungus2_12": {
     "Alias": "Fungal_Mantis_Corridor",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_11",
       "Fungus2_13"
@@ -1423,6 +1594,7 @@
   "Fungus2_13": {
     "Alias": "Fungal_Bretta_Bench",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_12",
       "Fungus2_14",
@@ -1432,6 +1604,7 @@
   "Fungus2_14": {
     "Alias": "Fungal_Mantis_Village",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_13",
       "Fungus2_15",
@@ -1441,6 +1614,7 @@
   "Fungus2_15": {
     "Alias": "Fungal_Mantis_Lords",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_14",
       "Fungus2_25",
@@ -1450,6 +1624,7 @@
   "Fungus2_17": {
     "Alias": "Fungal_Above_Mantis_Village",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_11",
       "Fungus2_14",
@@ -1459,6 +1634,7 @@
   "Fungus2_18": {
     "Alias": "Fungal_Cornifer",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_03",
       "Fungus2_11",
@@ -1468,6 +1644,7 @@
   "Fungus2_19": {
     "Alias": "Fungal_Right_Of_Spore_Shroom",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_18",
       "Fungus2_20"
@@ -1476,6 +1653,7 @@
   "Fungus2_20": {
     "Alias": "Fungal_Spore_Shroom",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_01",
       "Fungus2_19"
@@ -1484,6 +1662,7 @@
   "Fungus2_21": {
     "Alias": "Fungal_Pilgrim's_Way",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_10",
       "Ruins1_01"
@@ -1492,6 +1671,7 @@
   "Fungus2_23": {
     "Alias": "Fungal_Dashmaster",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_13",
       "Waterways_09"
@@ -1500,6 +1680,7 @@
   "Fungus2_25": {
     "Alias": "Deepnest_Lower_Cornifer",
     "MapArea": "Deepnest",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_16",
       "Fungus2_15",
@@ -1509,6 +1690,7 @@
   "Fungus2_26": {
     "Alias": "Fungal_Leg_Eater",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_06"
     ]
@@ -1516,6 +1698,7 @@
   "Fungus2_28": {
     "Alias": "Fungal_Shrumal_Warrior_Loop",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_04"
     ]
@@ -1523,6 +1706,7 @@
   "Fungus2_29": {
     "Alias": "Fungal_Core_Upper",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_17",
       "Fungus2_30"
@@ -1531,6 +1715,7 @@
   "Fungus2_30": {
     "Alias": "Fungal_Core_Lower",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_25",
       "Fungus2_29"
@@ -1539,6 +1724,7 @@
   "Fungus2_31": {
     "Alias": "Fungal_Mantis_Rewards",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_15"
     ]
@@ -1546,6 +1732,7 @@
   "Fungus2_32": {
     "Alias": "Fungal_Elder_Hu",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_08"
     ]
@@ -1553,6 +1740,7 @@
   "Fungus2_33": {
     "Alias": "Fungal_Leg_Eater_Root",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_06",
       "Fungus3_26"
@@ -1561,6 +1749,7 @@
   "Fungus2_34": {
     "Alias": "Fungal_Willoh",
     "MapArea": "Fungal Wastes",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_01"
     ]
@@ -1568,6 +1757,7 @@
   "Fungus3_01": {
     "Alias": "Fog_Upper_West_Tall",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_11",
       "Fungus3_02",
@@ -1578,6 +1768,7 @@
   "Fungus3_02": {
     "Alias": "Fog_Lower_West_Tall",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_01",
       "Fungus3_01",
@@ -1589,6 +1780,7 @@
   "Fungus3_03": {
     "Alias": "Fog_Queen's_Gardens_Acid_Entrance",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_02",
       "Fungus3_34"
@@ -1597,6 +1789,7 @@
   "Fungus3_04": {
     "Alias": "Gardens_Before_Petra_Arena",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_05",
       "Fungus3_13",
@@ -1607,6 +1800,7 @@
   "Fungus3_05": {
     "Alias": "Gardens_Petra_Arena",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_24",
       "Fungus3_04",
@@ -1616,6 +1810,7 @@
   "Fungus3_08": {
     "Alias": "Gardens_Lower_Petra_Corridor",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_43",
       "Fungus3_10",
@@ -1625,6 +1820,7 @@
   "Fungus3_10": {
     "Alias": "Gardens_Main_Arena",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_08",
       "Fungus3_13"
@@ -1633,6 +1829,7 @@
   "Fungus3_11": {
     "Alias": "Gardens_Whispering_Root",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_05",
       "Fungus3_08",
@@ -1642,6 +1839,7 @@
   "Fungus3_13": {
     "Alias": "Gardens_Outside_Stag",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_23",
       "Fungus3_04",
@@ -1653,6 +1851,7 @@
   "Fungus3_21": {
     "Alias": "Gardens_Corridor_to_Traitor_Lord",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_04",
       "Fungus3_22"
@@ -1661,6 +1860,7 @@
   "Fungus3_22": {
     "Alias": "Gardens_Upper_Grub",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_13",
       "Fungus3_21",
@@ -1670,6 +1870,7 @@
   "Fungus3_23": {
     "Alias": "Gardens_Traitor_Lord_Arena",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_22",
       "Fungus3_48"
@@ -1678,6 +1879,7 @@
   "Fungus3_24": {
     "Alias": "Fog_Corridor_to_Overgrown_Mound",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_01",
       "Fungus3_30",
@@ -1687,6 +1889,7 @@
   "Fungus3_25": {
     "Alias": "Fog_Cornifer",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_01",
       "Fungus3_25b"
@@ -1695,6 +1898,7 @@
   "Fungus3_25b": {
     "Alias": "Fog_Corridor_to_Cornifer",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_25",
       "Fungus3_26"
@@ -1703,6 +1907,7 @@
   "Fungus3_26": {
     "Alias": "Fog_East_Tall",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_35",
       "Fungus2_33",
@@ -1714,6 +1919,7 @@
   "Fungus3_27": {
     "Alias": "Fog_Corridor_to_Archives",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_26",
       "Fungus3_47"
@@ -1722,6 +1928,7 @@
   "Fungus3_28": {
     "Alias": "Fog_Charm_Notch",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_26"
     ]
@@ -1729,6 +1936,7 @@
   "Fungus3_30": {
     "Alias": "Fog_Lifeblood",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_24"
     ]
@@ -1736,6 +1944,7 @@
   "Fungus3_34": {
     "Alias": "Gardens_Entrance",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_03",
       "Fungus3_04",
@@ -1745,6 +1954,7 @@
   "Fungus3_35": {
     "Alias": "Fog_Millibelle",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_02"
     ]
@@ -1752,6 +1962,7 @@
   "Fungus3_39": {
     "Alias": "Gardens_Moss_Prophet",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_01",
       "Fungus3_11"
@@ -1760,6 +1971,7 @@
   "Fungus3_40": {
     "Alias": "Gardens_Gardens_Stag",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_13",
       "Fungus3_48"
@@ -1768,6 +1980,7 @@
   "Fungus3_44": {
     "Alias": "Fog_Overgrown_Mound_Entrance",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_24",
       "Fungus3_34",
@@ -1777,6 +1990,7 @@
   "Fungus3_47": {
     "Alias": "Fog_Archives_Entrance",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_02",
       "Fungus3_27",
@@ -1786,6 +2000,7 @@
   "Fungus3_48": {
     "Alias": "Gardens_Outside_White_Lady",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_23",
       "Fungus3_23",
@@ -1795,6 +2010,7 @@
   "Fungus3_49": {
     "Alias": "Gardens_Traitor's_Child's_Grave",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_13"
     ]
@@ -1802,6 +2018,7 @@
   "Fungus3_50": {
     "Alias": "Gardens_Toll_Bench",
     "MapArea": "Queen's Gardens",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_43"
     ]
@@ -1809,6 +2026,7 @@
   "Fungus3_archive": {
     "Alias": "Fog_Archives_Bench",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_47",
       "Fungus3_archive_02"
@@ -1817,6 +2035,7 @@
   "Fungus3_archive_02": {
     "Alias": "Fog_Uumuu_Arena",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_archive"
     ]
@@ -1824,6 +2043,7 @@
   "GG_Lurker": {
     "Alias": "Edge_Pale_Lurker",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Room_Colosseum_Spectate"
     ]
@@ -1831,6 +2051,7 @@
   "GG_Pipeway": {
     "Alias": "Waterways_Flukemunga_Corridor",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "GG_Waterways",
       "Waterways_08"
@@ -1839,6 +2060,7 @@
   "GG_Waterways": {
     "Alias": "Waterways_Junk_Pit",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "GG_Pipeway",
       "Room_GG_Shortcut"
@@ -1847,6 +2069,7 @@
   "Grimm_Main_Tent": {
     "Alias": "Grimm_Tent",
     "MapArea": "Dirtmouth",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Grimm_Nightmare"
     ]
@@ -1854,6 +2077,7 @@
   "Grimm_Nightmare": {
     "Alias": "Grimm_NKG",
     "MapArea": "",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Grimm_Main_Tent"
     ]
@@ -1861,6 +2085,7 @@
   "Hive_01": {
     "Alias": "Hive_Entrance_And_Bench",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_03_c",
       "Hive_02"
@@ -1869,6 +2094,7 @@
   "Hive_02": {
     "Alias": "Hive_Whispering_Root",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Hive_01",
       "Hive_03_c"
@@ -1877,6 +2103,7 @@
   "Hive_03": {
     "Alias": "Hive_Outside_Grub",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_02",
       "Hive_03_c",
@@ -1886,6 +2113,7 @@
   "Hive_03_c": {
     "Alias": "Hive_Outside_Shortcut",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_01",
       "Hive_02",
@@ -1896,6 +2124,7 @@
   "Hive_04": {
     "Alias": "Hive_Mask_Shard",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Hive_03",
       "Hive_03_c",
@@ -1905,6 +2134,7 @@
   "Hive_05": {
     "Alias": "Hive_Knight_Arena",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Hive_04"
     ]
@@ -1912,6 +2142,7 @@
   "Mines_01": {
     "Alias": "Crystal_Dive_Entrance",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_45",
       "Mines_02"
@@ -1920,6 +2151,7 @@
   "Mines_02": {
     "Alias": "Crystal_Main_Entrance",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_01",
       "Mines_03",
@@ -1930,6 +2162,7 @@
   "Mines_03": {
     "Alias": "Crystal_Spike_Grub",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_02",
       "Mines_05",
@@ -1939,6 +2172,7 @@
   "Mines_04": {
     "Alias": "Crystal_Entrance_Conveyors",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_07",
       "Mines_17",
@@ -1949,6 +2183,7 @@
   "Mines_05": {
     "Alias": "Crystal_Above_Spike_Grub",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_03",
       "Mines_06",
@@ -1960,6 +2195,7 @@
   "Mines_06": {
     "Alias": "Crystal_Deep_Focus_Gauntlet",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_05",
       "Mines_36"
@@ -1968,6 +2204,7 @@
   "Mines_07": {
     "Alias": "Crystal_Dark_Room",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Dark",
     "AdjacentScenes": [
       "Mines_04",
       "Mines_28"
@@ -1976,6 +2213,7 @@
   "Mines_10": {
     "Alias": "Crystal_Elevator_Entrance",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_16",
       "Mines_30"
@@ -1984,6 +2222,7 @@
   "Mines_11": {
     "Alias": "Crystal_Left_Of_Guardian",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_05",
       "Mines_13",
@@ -1993,6 +2232,7 @@
   "Mines_13": {
     "Alias": "Crystal_Top_Corridor",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_11",
       "Mines_20",
@@ -2002,6 +2242,7 @@
   "Mines_16": {
     "Alias": "Crystal_Mimic",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_10"
     ]
@@ -2009,6 +2250,7 @@
   "Mines_17": {
     "Alias": "Crystal_Corridor_to_Spike_Grub",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_03",
       "Mines_04"
@@ -2017,6 +2259,7 @@
   "Mines_18": {
     "Alias": "Crystal_Guardian_Bench",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_11",
       "Mines_20",
@@ -2026,6 +2269,7 @@
   "Mines_19": {
     "Alias": "Crystal_Grub_Crushers",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_05",
       "Mines_20"
@@ -2034,6 +2278,7 @@
   "Mines_20": {
     "Alias": "Crystal_East_Tall",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_13",
       "Mines_18",
@@ -2046,6 +2291,7 @@
   "Mines_23": {
     "Alias": "Crystal_Crown_Whispering_Root",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_20",
       "Mines_24",
@@ -2056,6 +2302,7 @@
   "Mines_24": {
     "Alias": "Crystal_Crown_Grub",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_23"
     ]
@@ -2063,6 +2310,7 @@
   "Mines_25": {
     "Alias": "Crystal_Crown_Climb",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_23",
       "Mines_34"
@@ -2071,6 +2319,7 @@
   "Mines_28": {
     "Alias": "Crystal_Outside_Mound",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_07",
       "Mines_35",
@@ -2080,6 +2329,7 @@
   "Mines_29": {
     "Alias": "Crystal_Dark_Bench",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Mines_02",
       "Mines_04"
@@ -2088,6 +2338,7 @@
   "Mines_30": {
     "Alias": "Crystal_Cornifer",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_05",
       "Mines_10"
@@ -2096,6 +2347,7 @@
   "Mines_31": {
     "Alias": "Crystal_Crystal_Heart_Gauntlet",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "SuperBright",
     "AdjacentScenes": [
       "Mines_20"
     ]
@@ -2103,6 +2355,7 @@
   "Mines_32": {
     "Alias": "Crystal_Enraged_Guardian_Arena",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_18"
     ]
@@ -2110,6 +2363,7 @@
   "Mines_33": {
     "Alias": "Crossroads_Peak_Dark_Toll",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Dark",
     "AdjacentScenes": [
       "Crossroads_03",
       "Mines_02"
@@ -2118,6 +2372,7 @@
   "Mines_34": {
     "Alias": "Crystal_Crown_Peak",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Mines_13",
       "Mines_23",
@@ -2127,6 +2382,7 @@
   "Mines_35": {
     "Alias": "Crystal_Mound",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_28"
     ]
@@ -2134,6 +2390,7 @@
   "Mines_36": {
     "Alias": "Crystal_Deep_Focus",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_06"
     ]
@@ -2141,6 +2398,7 @@
   "Mines_37": {
     "Alias": "Crystal_Chest_Crushers",
     "MapArea": "Crystal Peak",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Mines_04",
       "Mines_20"
@@ -2149,6 +2407,7 @@
   "RestingGrounds_02": {
     "Alias": "Grounds_Xero",
     "MapArea": "Resting Grounds",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_46b",
       "Mines_28",
@@ -2159,6 +2418,7 @@
   "RestingGrounds_04": {
     "Alias": "Grounds_Dream_Nail_Entrance",
     "MapArea": "Resting Grounds",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Dream_Nailcollection",
       "RestingGrounds_02",
@@ -2168,6 +2428,7 @@
   "RestingGrounds_05": {
     "Alias": "Grounds_Whispering_Root",
     "MapArea": "Resting Grounds",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "RestingGrounds_04",
       "RestingGrounds_08",
@@ -2179,6 +2440,7 @@
   "RestingGrounds_06": {
     "Alias": "Grounds_Corridor_Below_Xero",
     "MapArea": "Resting Grounds",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_50",
       "RestingGrounds_02",
@@ -2188,6 +2450,7 @@
   "RestingGrounds_08": {
     "Alias": "Grounds_Spirit's_Glade",
     "MapArea": "Resting Grounds",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "RestingGrounds_05"
     ]
@@ -2195,6 +2458,7 @@
   "RestingGrounds_09": {
     "Alias": "Grounds_Stag",
     "MapArea": "Resting Grounds",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "RestingGrounds_05"
     ]
@@ -2202,6 +2466,7 @@
   "RestingGrounds_10": {
     "Alias": "Grounds_Crypts",
     "MapArea": "Resting Grounds",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "RestingGrounds_05",
       "Ruins2_10"
@@ -2210,6 +2475,7 @@
   "RestingGrounds_17": {
     "Alias": "Grounds_Dreamshield",
     "MapArea": "Resting Grounds",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "RestingGrounds_05"
     ]
@@ -2217,6 +2483,7 @@
   "Room_Bretta": {
     "Alias": "Bretta",
     "MapArea": "Dirtmouth",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Room_Bretta_Basement"
     ]
@@ -2224,6 +2491,7 @@
   "Room_Bretta_Basement": {
     "Alias": "Bretta_Basement",
     "MapArea": "",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Dream_Mighty_Zote",
       "Room_Bretta"
@@ -2232,6 +2500,7 @@
   "Room_Colosseum_01": {
     "Alias": "Edge_Colo_Entrance",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_09",
       "Room_Colosseum_02"
@@ -2240,6 +2509,7 @@
   "Room_Colosseum_02": {
     "Alias": "Edge_Colo_Bench",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Room_Colosseum_01",
       "Room_Colosseum_Spectate"
@@ -2248,6 +2518,7 @@
   "Room_Colosseum_Bronze": {
     "Alias": "Edge_Colo_1_Arena",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Room_Colosseum_Silver"
     ]
@@ -2255,6 +2526,7 @@
   "Room_Colosseum_Gold": {
     "Alias": "Edge_Colo_3_Arena",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Room_Colosseum_Silver"
     ]
@@ -2262,6 +2534,7 @@
   "Room_Colosseum_Silver": {
     "Alias": "Edge_Colo_2_Arena",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Room_Colosseum_Bronze",
       "Room_Colosseum_Gold"
@@ -2270,6 +2543,7 @@
   "Room_Colosseum_Spectate": {
     "Alias": "Edge_Colo_Spectate",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "GG_Lurker",
       "Room_Colosseum_02"
@@ -2278,6 +2552,7 @@
   "Room_Final_Boss_Atrium": {
     "Alias": "Egg_Bench",
     "MapArea": "",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Room_Final_Boss_Core"
     ]
@@ -2285,6 +2560,7 @@
   "Room_Final_Boss_Core": {
     "Alias": "Egg_Hollow_Knight",
     "MapArea": "",
+    "OrigDarkness": "SuperBright",
     "AdjacentScenes": [
       "Dream_Final",
       "Room_Final_Boss_Atrium"
@@ -2293,6 +2569,7 @@
   "Room_Fungus_Shaman": {
     "Alias": "Fog_Overgrown_Mound",
     "MapArea": "Fog Canyon",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus3_44"
     ]
@@ -2300,6 +2577,7 @@
   "Room_GG_Shortcut": {
     "Alias": "Waterways_Fluke_Hermit",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "GG_Waterways",
       "Ruins1_04"
@@ -2308,6 +2586,7 @@
   "Room_nailmaster": {
     "Alias": "Cliffs_Mato",
     "MapArea": "Howling Cliffs",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Cliffs_02"
     ]
@@ -2315,6 +2594,7 @@
   "Room_nailmaster_02": {
     "Alias": "Greenpath_Sheo",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_15"
     ]
@@ -2322,6 +2602,7 @@
   "Room_nailmaster_03": {
     "Alias": "Edge_Oro",
     "MapArea": "Kingdom's Edge",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_06"
     ]
@@ -2329,6 +2610,7 @@
   "Room_ruinhouse": {
     "Alias": "Crossroads_Rescue_Sly",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_04"
     ]
@@ -2336,6 +2618,7 @@
   "Room_Slug_Shrine": {
     "Alias": "Greenpath_Unn_Bench",
     "MapArea": "Greenpath",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus1_26"
     ]
@@ -2343,6 +2626,7 @@
   "Room_temple": {
     "Alias": "Black_Egg_Temple",
     "MapArea": "Forgotten Crossroads",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_02"
     ]
@@ -2350,6 +2634,7 @@
   "Ruins_Bathhouse": {
     "Alias": "City_Pleasure_House_Bench",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins_Elevator",
       "Ruins2_10b"
@@ -2358,6 +2643,7 @@
   "Ruins_Elevator": {
     "Alias": "City_Pleasure_House_Elevator",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins_Bathhouse",
       "Ruins2_04"
@@ -2366,6 +2652,7 @@
   "Ruins_House_01": {
     "Alias": "City_Guarded_Grub",
     "MapArea": "City of Tears",
+    "OrigDarkness": "SuperBright",
     "AdjacentScenes": [
       "Ruins2_04"
     ]
@@ -2373,6 +2660,7 @@
   "Ruins_House_02": {
     "Alias": "City_Gorgeous_Husk",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins2_04"
     ]
@@ -2380,6 +2668,7 @@
   "Ruins_House_03": {
     "Alias": "City_Emilitia",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins2_04",
       "Waterways_07"
@@ -2388,6 +2677,7 @@
   "Ruins1_01": {
     "Alias": "City_Pilgrim's_Entrance",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_21",
       "Ruins1_02",
@@ -2397,6 +2687,7 @@
   "Ruins1_02": {
     "Alias": "City_Quirrel_Bench",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_01",
       "Ruins1_03"
@@ -2405,6 +2696,7 @@
   "Ruins1_03": {
     "Alias": "City_Rafters",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_02",
       "Ruins1_04",
@@ -2415,6 +2707,7 @@
   "Ruins1_04": {
     "Alias": "City_Outside_Nailsmith",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Room_GG_Shortcut",
       "Ruins1_03"
@@ -2423,6 +2716,7 @@
   "Ruins1_05": {
     "Alias": "City_Grub_Above_Lemm",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_05c",
       "Ruins1_09",
@@ -2433,6 +2727,7 @@
   "Ruins1_05b": {
     "Alias": "City_Lemm",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_03",
       "Ruins1_05c",
@@ -2443,6 +2738,7 @@
   "Ruins1_05c": {
     "Alias": "City_Egg_Above_Lemm",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_03",
       "Ruins1_05",
@@ -2452,6 +2748,7 @@
   "Ruins1_06": {
     "Alias": "City_Corridor_to_Storerooms",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_17",
       "Ruins1_31"
@@ -2460,6 +2757,7 @@
   "Ruins1_09": {
     "Alias": "City_Soul_Twister_Arena",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_05",
       "Ruins1_23"
@@ -2468,6 +2766,7 @@
   "Ruins1_17": {
     "Alias": "City_Whispering_Root",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_01",
       "Ruins1_06",
@@ -2477,6 +2776,7 @@
   "Ruins1_18": {
     "Alias": "City_Corridor_to_Spire",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_05",
       "Ruins2_01",
@@ -2486,6 +2786,7 @@
   "Ruins1_23": {
     "Alias": "City_Sanctum_Entrance",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_09",
       "Ruins1_25",
@@ -2496,6 +2797,7 @@
   "Ruins1_24": {
     "Alias": "City_Soul_Master_Arena",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Dream_02_Mage_Lord",
       "Ruins1_30",
@@ -2505,6 +2807,7 @@
   "Ruins1_25": {
     "Alias": "City_Sanctum_East_Elevators",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_23",
       "Ruins1_30"
@@ -2513,6 +2816,7 @@
   "Ruins1_27": {
     "Alias": "City_Hollow_Knight_Fountain",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_05b",
       "Ruins2_01_b"
@@ -2521,6 +2825,7 @@
   "Ruins1_28": {
     "Alias": "City_Storerooms",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Crossroads_49b",
       "Ruins1_17",
@@ -2530,6 +2835,7 @@
   "Ruins1_29": {
     "Alias": "City_Storerooms_Stag",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_28"
     ]
@@ -2537,6 +2843,7 @@
   "Ruins1_30": {
     "Alias": "City_Sanctum_Spell_Twister",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_23",
       "Ruins1_24",
@@ -2546,6 +2853,7 @@
   "Ruins1_31": {
     "Alias": "City_Toll_Bench",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_05",
       "Ruins1_06",
@@ -2556,6 +2864,7 @@
   "Ruins1_31b": {
     "Alias": "City_Shade_Soul_Arena",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_31"
     ]
@@ -2563,6 +2872,7 @@
   "Ruins1_32": {
     "Alias": "City_Soul_Master_Rewards",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_24"
     ]
@@ -2570,6 +2880,7 @@
   "Ruins2_01": {
     "Alias": "City_Spire_Great_Husk",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_18",
       "Ruins2_01_b",
@@ -2579,6 +2890,7 @@
   "Ruins2_01_b": {
     "Alias": "City_Spire_Base",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_27",
       "Ruins2_01",
@@ -2588,6 +2900,7 @@
   "Ruins2_03": {
     "Alias": "City_Spire_Watchers",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins2_03b",
       "Ruins2_Watcher_Room"
@@ -2596,6 +2909,7 @@
   "Ruins2_03b": {
     "Alias": "City_Spire_Below_Watchers",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins1_18",
       "Ruins2_01",
@@ -2605,6 +2919,7 @@
   "Ruins2_04": {
     "Alias": "City_Right_Hub",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_01",
       "Ruins_Elevator",
@@ -2618,6 +2933,7 @@
   "Ruins2_05": {
     "Alias": "City_Above_King's",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins2_06",
       "Ruins2_09",
@@ -2627,6 +2943,7 @@
   "Ruins2_06": {
     "Alias": "City_King's_Station",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins2_04",
       "Ruins2_05",
@@ -2637,6 +2954,7 @@
   "Ruins2_07": {
     "Alias": "City_Grub_Below_King's",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_03",
       "Ruins2_06",
@@ -2646,6 +2964,7 @@
   "Ruins2_08": {
     "Alias": "City_King's_Stag",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins2_06"
     ]
@@ -2653,6 +2972,7 @@
   "Ruins2_09": {
     "Alias": "City_King's_Vessel_Fragment",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins2_05"
     ]
@@ -2660,6 +2980,7 @@
   "Ruins2_10": {
     "Alias": "Grounds_Elevator",
     "MapArea": "Resting Grounds",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "RestingGrounds_06",
       "RestingGrounds_10"
@@ -2668,6 +2989,7 @@
   "Ruins2_10b": {
     "Alias": "City_Right_Elevator",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_09",
       "Ruins_Bathhouse",
@@ -2677,6 +2999,7 @@
   "Ruins2_11": {
     "Alias": "City_Collector_Arena",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins2_11_b"
     ]
@@ -2684,6 +3007,7 @@
   "Ruins2_11_b": {
     "Alias": "City_Tower_of_Love",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_07",
       "Ruins2_07",
@@ -2693,6 +3017,7 @@
   "Ruins2_Watcher_Room": {
     "Alias": "City_Lurien_Elevator",
     "MapArea": "City of Tears",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Ruins2_03"
     ]
@@ -2700,6 +3025,7 @@
   "Tutorial_01": {
     "Alias": "King's_Pass",
     "MapArea": "Dirtmouth",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Cliffs_02"
     ]
@@ -2707,6 +3033,7 @@
   "Waterways_01": {
     "Alias": "Waterways_Entrance",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Ruins1_05b",
       "Waterways_02",
@@ -2717,6 +3044,7 @@
   "Waterways_02": {
     "Alias": "Waterways_Main_Bench",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Waterways_01",
       "Waterways_04",
@@ -2728,6 +3056,7 @@
   "Waterways_03": {
     "Alias": "Waterways_Tuk",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Waterways_01"
     ]
@@ -2735,6 +3064,7 @@
   "Waterways_04": {
     "Alias": "Waterways_Hidden_Grub",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Waterways_01",
       "Waterways_02",
@@ -2744,6 +3074,7 @@
   "Waterways_04b": {
     "Alias": "Waterways_Mask_Shard",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Waterways_04",
       "Waterways_09"
@@ -2752,6 +3083,7 @@
   "Waterways_05": {
     "Alias": "Waterways_Dung_Defender_Arena",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_01",
       "Dream_04_White_Defender",
@@ -2762,6 +3094,7 @@
   "Waterways_06": {
     "Alias": "Waterways_Corridor_to_Broken_Elevator",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Abyss_01",
       "Waterways_02"
@@ -2770,6 +3103,7 @@
   "Waterways_07": {
     "Alias": "Waterways_Left_Of_Isma's_Grove",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Abyss_01",
       "Ruins_House_03",
@@ -2780,6 +3114,7 @@
   "Waterways_08": {
     "Alias": "Waterways_Outside_Flukemarm",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "GG_Pipeway",
       "Waterways_02",
@@ -2789,6 +3124,7 @@
   "Waterways_09": {
     "Alias": "Waterways_Cornifer",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Fungus2_23",
       "Waterways_04b"
@@ -2797,6 +3133,7 @@
   "Waterways_12": {
     "Alias": "Waterways_Flukemarm_Arena",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Waterways_08"
     ]
@@ -2804,6 +3141,7 @@
   "Waterways_13": {
     "Alias": "Waterways_Isma's_Grove",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Waterways_07"
     ]
@@ -2811,6 +3149,7 @@
   "Waterways_14": {
     "Alias": "Waterways_Edge_Acid_Corridor",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "Deepnest_East_02",
       "Waterways_07"
@@ -2819,6 +3158,7 @@
   "Waterways_15": {
     "Alias": "Waterways_Dung_Defender's_Cave",
     "MapArea": "Royal Waterways",
+    "OrigDarkness": "SemiDark",
     "AdjacentScenes": [
       "Waterways_05"
     ]
@@ -2826,6 +3166,7 @@
   "White_Palace_01": {
     "Alias": "Palace_Entrance",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_02",
       "White_Palace_03_hub",
@@ -2835,6 +3176,7 @@
   "White_Palace_02": {
     "Alias": "Palace_First_Mold",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_01"
     ]
@@ -2842,6 +3184,7 @@
   "White_Palace_03_hub": {
     "Alias": "Palace_Hub",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_01",
       "White_Palace_04",
@@ -2853,6 +3196,7 @@
   "White_Palace_04": {
     "Alias": "Palace_Left_Of_Hub",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_03_hub",
       "White_Palace_14"
@@ -2861,6 +3205,7 @@
   "White_Palace_05": {
     "Alias": "Palace_Saw_Room",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_15",
       "White_Palace_16"
@@ -2869,6 +3214,7 @@
   "White_Palace_06": {
     "Alias": "Palace_Balcony",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_03_hub",
       "White_Palace_07",
@@ -2878,6 +3224,7 @@
   "White_Palace_07": {
     "Alias": "Palace_Lamp_Pogo",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_06",
       "White_Palace_12"
@@ -2886,6 +3233,7 @@
   "White_Palace_08": {
     "Alias": "Palace_Workshop",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_13"
     ]
@@ -2893,6 +3241,7 @@
   "White_Palace_09": {
     "Alias": "Palace_Throne",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_13"
     ]
@@ -2900,6 +3249,7 @@
   "White_Palace_11": {
     "Alias": "Palace_Outside",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_01"
     ]
@@ -2907,6 +3257,7 @@
   "White_Palace_12": {
     "Alias": "Palace_Spike_Drop",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_07",
       "White_Palace_13"
@@ -2915,6 +3266,7 @@
   "White_Palace_13": {
     "Alias": "Palace_Thorn_Jump",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_08",
       "White_Palace_09",
@@ -2924,6 +3276,7 @@
   "White_Palace_14": {
     "Alias": "Palace_Hell_Corridor",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_03_hub",
       "White_Palace_04"
@@ -2932,6 +3285,7 @@
   "White_Palace_15": {
     "Alias": "Palace_Caged_Lever",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_03_hub",
       "White_Palace_05"
@@ -2940,6 +3294,7 @@
   "White_Palace_16": {
     "Alias": "Palace_Saw_Climb",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_05"
     ]
@@ -2947,6 +3302,7 @@
   "White_Palace_17": {
     "Alias": "POP_Lever",
     "MapArea": "White Palace",
+    "OrigDarkness": "SuperBright",
     "AdjacentScenes": [
       "White_Palace_18",
       "White_Palace_19"
@@ -2955,6 +3311,7 @@
   "White_Palace_18": {
     "Alias": "POP_Entrance",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_06",
       "White_Palace_17"
@@ -2963,6 +3320,7 @@
   "White_Palace_19": {
     "Alias": "POP_Vertical",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_17",
       "White_Palace_20"
@@ -2971,6 +3329,7 @@
   "White_Palace_20": {
     "Alias": "POP_Final",
     "MapArea": "White Palace",
+    "OrigDarkness": "Bright",
     "AdjacentScenes": [
       "White_Palace_19"
     ]

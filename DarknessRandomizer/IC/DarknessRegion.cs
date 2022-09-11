@@ -23,6 +23,8 @@ namespace DarknessRandomizer.IC
             obj.transform.localScale = new(1, 1, 1);
             obj.GetComponent<BoxCollider2D>().size = new(parameters.Width, parameters.Height);
             obj.LocateMyFSM("Darkness Region").FsmVariables.FindFsmInt("Darkness").Value = 2;
+
+            obj.SetActive(true);
         }
 
         public class Preloader : ItemChanger.Internal.Preloaders.Preloader

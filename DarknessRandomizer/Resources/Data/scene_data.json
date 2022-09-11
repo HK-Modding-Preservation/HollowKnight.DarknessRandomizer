@@ -466,7 +466,16 @@
     "Cluster": "BlueLake",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "SemiDarkOverrides": null
+    "SemiDarkOverrides": {
+      "DarkRegions": [
+        {
+          "X": 90.0,
+          "Y": 50.0,
+          "Width": 70.0,
+          "Height": 40.0
+        }
+      ]
+    }
   },
   "Crossroads_52": {
     "Alias": "Crossroads_Goam_Journal",

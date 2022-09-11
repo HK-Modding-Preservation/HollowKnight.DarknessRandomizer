@@ -38,6 +38,7 @@ namespace DarknessRandomizer.Data
     {
         public string Alias;
         public string MapArea;
+        public Darkness OrigDarkness;
         public SortedSet<SceneNameT> AdjacentScenes;
     }
 
