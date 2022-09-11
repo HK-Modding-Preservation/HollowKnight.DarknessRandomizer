@@ -214,6 +214,7 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName FungalCore = new("FungalCore");
         public static readonly ClusterName FungalCorniferHub = new("FungalCorniferHub");
         public static readonly ClusterName FungalDeepnestFall = new("FungalDeepnestFall");
+        public static readonly ClusterName FungalElderHu = new("FungalElderHu");
         public static readonly ClusterName FungalElderHuWing = new("FungalElderHuWing");
         public static readonly ClusterName FungalEntrance = new("FungalEntrance");
         public static readonly ClusterName FungalLowerHub = new("FungalLowerHub");

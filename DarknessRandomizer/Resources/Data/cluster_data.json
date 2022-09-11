@@ -2146,20 +2146,34 @@
     "CursedOnly": null,
     "DarkSettings": null
   },
-  "FungalElderHuWing": {
+  "FungalElderHu": {
     "SceneNames": {
-      "Fungus2_07": "Fungal_Shrumal_Warrior_Acid_Bridge",
-      "Fungus2_08": "Fungal_Outside_Elder_Hu",
       "Fungus2_32": "Fungal_Elder_Hu"
     },
     "AdjacentClusters": {
+      "FungalElderHuWing": "Brighter"
+    },
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 100,
+      "CostWeight": 100
+    }
+  },
+  "FungalElderHuWing": {
+    "SceneNames": {
+      "Fungus2_07": "Fungal_Shrumal_Warrior_Acid_Bridge",
+      "Fungus2_08": "Fungal_Outside_Elder_Hu"
+    },
+    "AdjacentClusters": {
       "FungalClothCorridor": "Brighter",
+      "FungalElderHu": "Unspecified",
       "FungalUpper": "Brighter"
     },
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
-      "ProbabilityWeight": 30,
+      "ProbabilityWeight": 40,
       "CostWeight": 150
     }
   },

@@ -1321,7 +1321,7 @@
   },
   "Fungus2_32": {
     "Alias": "Fungal_Elder_Hu",
-    "Cluster": "FungalElderHuWing",
+    "Cluster": "FungalElderHu",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "SemiDarkOverrides": null
