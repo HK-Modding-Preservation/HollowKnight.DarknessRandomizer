@@ -1499,7 +1499,16 @@
     "Cluster": "GardensStag",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "SemiDarkOverrides": null
+    "SemiDarkOverrides": {
+      "DarknessRegions": [
+        {
+          "X": 70.0,
+          "Y": 18.0,
+          "Width": 140.0,
+          "Height": 36.0
+        }
+      ]
+    }
   },
   "Fungus3_44": {
     "Alias": "Fog_Overgrown_Mound_Entrance",
@@ -1828,7 +1837,16 @@
     "Cluster": "GroundsXero",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "SemiDarkOverrides": null
+    "SemiDarkOverrides": {
+      "DarknessRegions": [
+        {
+          "X": 99.0,
+          "Y": 16.0,
+          "Width": 42.0,
+          "Height": 10.0
+        }
+      ]
+    }
   },
   "RestingGrounds_04": {
     "Alias": "Grounds_Dream_Nail_Entrance",

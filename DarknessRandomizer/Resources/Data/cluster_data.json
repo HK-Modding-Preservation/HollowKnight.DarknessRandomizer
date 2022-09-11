@@ -2167,10 +2167,10 @@
     },
     "AdjacentClusters": {
       "FungalClothCorridor": "Brighter",
-      "FungalElderHu": "Unspecified",
+      "FungalElderHu": "Darker",
       "FungalUpper": "Brighter"
     },
-    "OverrideCannotBeDarknessSource": false,
+    "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 40,
