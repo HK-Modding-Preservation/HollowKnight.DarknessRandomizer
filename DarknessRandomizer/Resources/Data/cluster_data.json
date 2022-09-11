@@ -2046,7 +2046,7 @@
       "FogCanyonQGA": "Brighter",
       "FogCanyonRobber": "Brighter",
       "FogCanyonWestWing": "Darker",
-      "FungalQueensStation": "Brighter",
+      "FungalQueensStation": "Any",
       "GreenpathLowerHub": "Any"
     },
     "OverrideCannotBeDarknessSource": null,
@@ -2172,7 +2172,7 @@
     "AdjacentClusters": {
       "FungalCorniferHub": "Any",
       "FungalOgres": "Darker",
-      "FungalQueensStation": "Brighter"
+      "FungalQueensStation": "Any"
     },
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": false,
@@ -2272,12 +2272,15 @@
       "Fungus2_34": "Fungal_Willoh"
     },
     "AdjacentClusters": {
-      "FogCanyonWest": "Darker",
-      "FungalEntrance": "Darker"
+      "FogCanyonWest": "Any",
+      "FungalEntrance": "Any"
     },
-    "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": null,
-    "DarkSettings": null
+    "OverrideCannotBeDarknessSource": false,
+    "CursedOnly": false,
+    "DarkSettings": {
+      "ProbabilityWeight": 80,
+      "CostWeight": 30
+    }
   },
   "FungalSporeShroom": {
     "SceneNames": {

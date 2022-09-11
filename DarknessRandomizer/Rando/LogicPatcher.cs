@@ -67,8 +67,9 @@ namespace DarknessRandomizer.Rando
                 { $"{SceneName.GardensCornifer}[left1]", SkipDarkLogicFor("Bench-Gardens_Cornifer") },
                 { "Queen's_Gardens_Map", SkipDarkLogicFor("Bench-Gardens_Cornifer") },
 
-                // All blue lake checks are free in the dark except the rancid egg.
+                // These checks are specifically dark-guarded in darkrooms.
                 { "Rancid_Egg-Blue_Lake", StandardLogicEdit },
+                { "Mask_Shard-Queen's_Station", StandardLogicEdit },
 
                 // Greenpath toll bench requires lantern.
                 { "Bench-Greenpath_Toll", CustomDarkLogicEdit("Bench-Greenpath_Toll") },
@@ -154,6 +155,7 @@ namespace DarknessRandomizer.Rando
                 // The following scenes are trivial to navigate while dark, but may contain a check which is
                 // uniquely affected by darkness.
                 { SceneName.GroundsXero, NoLogicEdit },
+                { SceneName.FungalQueensStation, NoLogicEdit }
             };
 
             logicOverridesByUniqueScene = new()

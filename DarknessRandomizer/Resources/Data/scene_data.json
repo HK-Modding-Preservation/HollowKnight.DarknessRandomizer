@@ -1125,8 +1125,17 @@
     "Alias": "Fungal_Queen's_Station",
     "Cluster": "FungalQueensStation",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "SemiDark",
-    "SemiDarkOverrides": null
+    "MaximumDarkness": "Dark",
+    "SemiDarkOverrides": {
+      "DarkRegions": [
+        {
+          "X": 50.0,
+          "Y": 17.5,
+          "Width": 20.0,
+          "Height": 37.0
+        }
+      ]
+    }
   },
   "Fungus2_02": {
     "Alias": "Fungal_Queen's_Stag",
