@@ -5,7 +5,9 @@ using ItemChanger.Internal.Menu;
 using Modding;
 using RandomizerMod;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using UnityEngine;
 
 namespace DarknessRandomizer
 {
@@ -23,8 +25,10 @@ namespace DarknessRandomizer
             Instance = this;
         }
 
-        public override void Initialize()
+        public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects)
         {
+            DarknessRegion.Preloader.Instance.SavePreloads(preloadedObjects);
+
             if (ModHooks.GetMod("Randomizer 4") is Mod)
             {
                 RandoInterop.Setup();
@@ -37,6 +41,8 @@ namespace DarknessRandomizer
             LanternShardItem.DefineICRefs();
             RandoPlusInterop.DefineICRefs();
         }
+
+        public override List<(string, string)> GetPreloadNames() => new(DarknessRegion.Preloader.Instance.GetPreloadNames());
 
         public void OnLoadGlobal(GlobalSettings s) => GS = s ?? new();
 
