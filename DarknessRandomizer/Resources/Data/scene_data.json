@@ -605,6 +605,13 @@
           "Y": 10.0,
           "Width": 45.0,
           "Height": 20.0
+        },
+        {
+          "Darkness": "SemiDark",
+          "X": 85.0,
+          "Y": 7.5,
+          "Width": 80.0,
+          "Height": 15.0
         }
       ]
     }
@@ -747,7 +754,21 @@
     "Cluster": "EdgeOroWing",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "DisplayDarknessOverrides": null
+    "DisplayDarknessOverrides": {
+      "Conditions": [
+        "Dark"
+      ],
+      "SceneDarkness": "Dark",
+      "DarknessRegions": [
+        {
+          "Darkness": "SemiDark",
+          "X": 325.0,
+          "Y": 20.0,
+          "Width": 50.0,
+          "Height": 20.0
+        }
+      ]
+    }
   },
   "Deepnest_East_07": {
     "Alias": "Edge_Whispering_Root",
@@ -1258,7 +1279,29 @@
     "Cluster": "FungalMantisVillage",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "DisplayDarknessOverrides": null
+    "DisplayDarknessOverrides": {
+      "Conditions": [
+        "SemiDark",
+        "Dark"
+      ],
+      "SceneDarkness": "Dark",
+      "DarknessRegions": [
+        {
+          "Darkness": "SemiDark",
+          "X": 12.5,
+          "Y": 8.5,
+          "Width": 25.0,
+          "Height": 17.0
+        },
+        {
+          "Darkness": "Bright",
+          "X": 32.5,
+          "Y": 10.0,
+          "Width": 15.0,
+          "Height": 10.0
+        }
+      ]
+    }
   },
   "Fungus2_14": {
     "Alias": "Fungal_Mantis_Village",
@@ -1314,7 +1357,21 @@
     "Cluster": "FungalBretta",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "DisplayDarknessOverrides": null
+    "DisplayDarknessOverrides": {
+      "Conditions": [
+        "Dark"
+      ],
+      "SceneDarkness": "Dark",
+      "DarknessRegions": [
+        {
+          "Darkness": "SemiDark",
+          "X": 70.0,
+          "Y": 40.0,
+          "Width": 40.0,
+          "Height": 80.0
+        }
+      ]
+    }
   },
   "Fungus2_25": {
     "Alias": "Deepnest_Lower_Cornifer",
