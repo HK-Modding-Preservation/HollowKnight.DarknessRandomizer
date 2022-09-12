@@ -594,6 +594,7 @@
     "MaximumDarkness": "Dark",
     "DisplayDarknessOverrides": {
       "Conditions": [
+        "SemiDark",
         "Dark"
       ],
       "SceneDarkness": "Dark",

@@ -294,11 +294,13 @@ namespace DarknessRandomizer.Data
             var ddo = sceneData.DisplayDarknessOverrides;
             if (ddo == null) return null;
 
+            ddo.DarknessRegions.RemoveAll(dr => dr.Darkness == ddo.SceneDarkness);
+            ddo.DarknessRegions.Sort((a, b) => Math.Sign((a.X != b.X) ? a.X - b.X : a.Y - b.Y));
+
             ddo.Conditions.RemoveWhere(d => d < sceneData.MinimumDarkness || d > sceneData.MaximumDarkness);
             ddo.Conditions.RemoveWhere(d => !DDOHasDiff(ddo, d));
             if (ddo.Conditions.Count == 0) return null;
 
-            ddo.DarknessRegions.Sort((a, b) => Math.Sign((a.X != b.X) ? a.X - b.X : a.Y - b.Y));
             return ddo;
         }
 
