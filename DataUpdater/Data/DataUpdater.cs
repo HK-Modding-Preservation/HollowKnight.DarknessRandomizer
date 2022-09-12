@@ -104,7 +104,7 @@ namespace DarknessRandomizer.Data
 
                 if (sData.MaximumDarkness < Darkness.Dark)
                 {
-                    sData.SemiDarkOverrides = null;
+                    sData.DisplayDarknessOverrides = null;
                 }
             }
             MaybeThrowException(exceptions);

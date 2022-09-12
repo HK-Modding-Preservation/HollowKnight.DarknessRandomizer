@@ -12,14 +12,14 @@ namespace DarknessRandomizer.IC
         public float Width;
         public float Height;
 
-        public void Spawn()
+        public void Spawn(Darkness darkness)
         {
             var obj = Preloader.Instance.NewDarknessRegion();
             obj.name = $"CustomDarknessRegion-{X}-{Y}";
             obj.transform.position = new(X, Y, 0);
             obj.transform.localScale = new(1, 1, 1);
             obj.GetComponent<BoxCollider2D>().size = new(Width, Height);
-            obj.LocateMyFSM("Darkness Region").FsmVariables.FindFsmInt("Darkness").Value = 2;
+            obj.LocateMyFSM("Darkness Region").FsmVariables.FindFsmInt("Darkness").Value = (int)darkness;
 
             obj.SetActive(true);
         }

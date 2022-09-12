@@ -117,7 +117,7 @@ namespace DarknessRandomizer.Rando
             public Darkness PrevDarkness;
             public Darkness NewDarkness;
 
-            public Darkness DisplayDarkness => NewDarkness != Darkness.Dark || Data.SceneData.Get(CurrentScene).SemiDarkOverrides == null ? NewDarkness : Darkness.SemiDark;
+            public Darkness DisplayDarkness => Data.SceneData.Get(CurrentScene).DisplayDarknessOverrides?.SceneDarkness ?? NewDarkness;
             public bool Brighter => PrevDarkness >= Darkness.SemiDark && PrevDarkness > NewDarkness;
             public bool Darker => NewDarkness >= Darkness.SemiDark && NewDarkness > PrevDarkness;
             public bool Unchanged => PrevDarkness == NewDarkness;
@@ -178,7 +178,8 @@ namespace DarknessRandomizer.Rando
             // Deploy additional darkness regions.
             if (data.NewDarkness == Darkness.Dark)
             {
-                Data.SceneData.Get(data.CurrentScene).SemiDarkOverrides?.DarknessRegions.ForEach(dr => dr.Spawn());
+                var ddo = Data.SceneData.Get(data.CurrentScene).DisplayDarknessOverrides;
+                ddo?.DarknessRegions.ForEach(dr => dr.Spawn(ddo.RegionDarkness));
             }
         }
 

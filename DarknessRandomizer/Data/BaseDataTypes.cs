@@ -42,8 +42,10 @@ namespace DarknessRandomizer.Data
         public SortedSet<SceneNameT> AdjacentScenes;
     }
 
-    public class SemiDarkOverrides
+    public class DisplayDarknessOverrides
     {
+        public Darkness SceneDarkness = Darkness.SemiDark;
+        public Darkness RegionDarkness = Darkness.Dark;
         public List<DarknessRegion> DarknessRegions;
     }
 
@@ -56,7 +58,7 @@ namespace DarknessRandomizer.Data
 
         // The presence of this data means the scene should could as Dark in logic, but display as SemiDark.
         // The DarknessRegions contained within will be deployed to make the relevant checks Dark.
-        public SemiDarkOverrides? SemiDarkOverrides;
+        public DisplayDarknessOverrides? DisplayDarknessOverrides;
 
         public Darkness ClampDarkness(Darkness d) => d.Clamp(MinimumDarkness, MaximumDarkness);
     }
