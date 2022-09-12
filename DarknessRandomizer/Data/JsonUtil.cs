@@ -38,7 +38,7 @@ namespace DarknessRandomizer
             _js = new JsonSerializer
             {
                 DefaultValueHandling = DefaultValueHandling.Include,
-                // MissingMemberHandling = MissingMemberHandling.Ignore,
+                MissingMemberHandling = MissingMemberHandling.Ignore, //
                 Formatting = Formatting.Indented,
                 TypeNameHandling = TypeNameHandling.Auto,
             };

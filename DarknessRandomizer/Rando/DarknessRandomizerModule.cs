@@ -189,7 +189,7 @@ namespace DarknessRandomizer.Rando
             if (data.NewDarkness == Darkness.Dark)
             {
                 var ddo = Data.SceneData.Get(data.CurrentScene).DisplayDarknessOverrides;
-                ddo?.DarknessRegions.ForEach(dr => dr.Spawn(ddo.RegionDarkness));
+                ddo?.DarknessRegions.ForEach(dr => dr.Deploy());
             }
         }
 

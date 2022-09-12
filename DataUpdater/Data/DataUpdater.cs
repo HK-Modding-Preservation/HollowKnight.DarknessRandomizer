@@ -287,11 +287,7 @@ namespace DarknessRandomizer.Data
             Console.WriteLine("Update Graph Data!");
         }
 
-        private static bool DDOHasDiff(DisplayDarknessOverrides ddo, Darkness d)
-        {
-            // FIXME: Denormalize regions
-            return ddo.SceneDarkness != d || (ddo.RegionDarkness != d && ddo.DarknessRegions.Count > 0);
-        }
+        private static bool DDOHasDiff(DisplayDarknessOverrides ddo, Darkness d) => ddo.SceneDarkness != d || ddo.DarknessRegions.Any(dr => dr.Darkness != d);
 
         private static DisplayDarknessOverrides CleanDDO(RawSceneData sceneData)
         {

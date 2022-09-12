@@ -471,9 +471,9 @@
         "Dark"
       ],
       "SceneDarkness": "SemiDark",
-      "RegionDarkness": "Dark",
       "DarknessRegions": [
         {
+          "Darkness": "Dark",
           "X": 90.0,
           "Y": 50.0,
           "Width": 70.0,
@@ -499,9 +499,9 @@
         "Dark"
       ],
       "SceneDarkness": "Dark",
-      "RegionDarkness": "SemiDark",
       "DarknessRegions": [
         {
+          "Darkness": "SemiDark",
           "X": 17.5,
           "Y": 10.0,
           "Width": 35.0,
@@ -597,9 +597,9 @@
         "Dark"
       ],
       "SceneDarkness": "Dark",
-      "RegionDarkness": "Bright",
       "DarknessRegions": [
         {
+          "Darkness": "Bright",
           "X": 22.5,
           "Y": 10.0,
           "Width": 45.0,
@@ -1164,9 +1164,9 @@
         "Dark"
       ],
       "SceneDarkness": "SemiDark",
-      "RegionDarkness": "Dark",
       "DarknessRegions": [
         {
+          "Darkness": "Dark",
           "X": 50.0,
           "Y": 17.5,
           "Width": 20.0,
@@ -1542,9 +1542,9 @@
         "Dark"
       ],
       "SceneDarkness": "Dark",
-      "RegionDarkness": "SemiDark",
       "DarknessRegions": [
         {
+          "Darkness": "SemiDark",
           "X": 165.0,
           "Y": 20.0,
           "Width": 50.0,
@@ -1885,9 +1885,9 @@
         "Dark"
       ],
       "SceneDarkness": "SemiDark",
-      "RegionDarkness": "Dark",
       "DarknessRegions": [
         {
+          "Darkness": "Dark",
           "X": 99.0,
           "Y": 16.0,
           "Width": 42.0,
@@ -2382,9 +2382,9 @@
         "Dark"
       ],
       "SceneDarkness": "Dark",
-      "RegionDarkness": "SemiDark",
       "DarknessRegions": [
         {
+          "Darkness": "SemiDark",
           "X": 17.0,
           "Y": 11.0,
           "Width": 34.0,
@@ -2410,9 +2410,9 @@
         "Dark"
       ],
       "SceneDarkness": "Dark",
-      "RegionDarkness": "SemiDark",
       "DarknessRegions": [
         {
+          "Darkness": "SemiDark",
           "X": 145.0,
           "Y": 20.0,
           "Width": 20.0,

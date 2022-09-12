@@ -7,19 +7,20 @@ namespace DarknessRandomizer.IC
 {
     public record DarknessRegion
     {
+        public Darkness Darkness;
         public float X;
         public float Y;
         public float Width;
         public float Height;
 
-        public void Spawn(Darkness darkness)
+        public void Deploy()
         {
             var obj = Preloader.Instance.NewDarknessRegion();
             obj.name = $"CustomDarknessRegion-{X}-{Y}";
             obj.transform.position = new(X, Y, 0);
             obj.transform.localScale = new(1, 1, 1);
             obj.GetComponent<BoxCollider2D>().size = new(Width, Height);
-            obj.LocateMyFSM("Darkness Region").FsmVariables.FindFsmInt("Darkness").Value = (int)darkness;
+            obj.LocateMyFSM("Darkness Region").FsmVariables.FindFsmInt("Darkness").Value = (int)Darkness;
 
             obj.SetActive(true);
         }

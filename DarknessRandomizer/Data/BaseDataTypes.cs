@@ -46,7 +46,6 @@ namespace DarknessRandomizer.Data
     {
         public SortedSet<Darkness> Conditions = new() { Darkness.Dark };
         public Darkness SceneDarkness = Darkness.SemiDark;
-        public Darkness RegionDarkness = Darkness.Dark;
         public List<DarknessRegion> DarknessRegions;
 
         public bool Applies(Darkness d) => Conditions.Contains(d);
