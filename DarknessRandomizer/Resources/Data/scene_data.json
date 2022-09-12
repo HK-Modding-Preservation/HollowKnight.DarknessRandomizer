@@ -491,7 +491,18 @@
     "Cluster": "CrossroadsAncestralMound",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "DisplayDarknessOverrides": null
+    "DisplayDarknessOverrides": {
+      "SceneDarkness": "Dark",
+      "RegionDarkness": "SemiDark",
+      "DarknessRegions": [
+        {
+          "X": 17.5,
+          "Y": 10.0,
+          "Width": 35,
+          "Height": 20.0
+        }
+      ]
+    },
   },
   "Deepnest_01": {
     "Alias": "Fungal_Deepnest_Fall",
@@ -575,7 +586,18 @@
     "Cluster": "DeepnestDescent",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "DisplayDarknessOverrides": null
+    "DisplayDarknessOverrides": {
+      "SceneDarkness": "Dark",
+      "RegionDarkness": "Bright",
+      "DarknessRegions": [
+        {
+          "X": 22.5,
+          "Y": 10.0,
+          "Width": 45,
+          "Height": 20.0
+        }
+      ]
+    },
   },
   "Deepnest_31": {
     "Alias": "Deepnest_Nosk_Corridor",
