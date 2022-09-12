@@ -467,6 +467,9 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "DisplayDarknessOverrides": {
+      "Conditions": [
+        "Dark"
+      ],
       "SceneDarkness": "SemiDark",
       "RegionDarkness": "Dark",
       "DarknessRegions": [
@@ -492,17 +495,20 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "DisplayDarknessOverrides": {
+      "Conditions": [
+        "Dark"
+      ],
       "SceneDarkness": "Dark",
       "RegionDarkness": "SemiDark",
       "DarknessRegions": [
         {
           "X": 17.5,
           "Y": 10.0,
-          "Width": 35,
+          "Width": 35.0,
           "Height": 20.0
         }
       ]
-    },
+    }
   },
   "Deepnest_01": {
     "Alias": "Fungal_Deepnest_Fall",
@@ -587,17 +593,20 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "DisplayDarknessOverrides": {
+      "Conditions": [
+        "Dark"
+      ],
       "SceneDarkness": "Dark",
       "RegionDarkness": "Bright",
       "DarknessRegions": [
         {
           "X": 22.5,
           "Y": 10.0,
-          "Width": 45,
+          "Width": 45.0,
           "Height": 20.0
         }
       ]
-    },
+    }
   },
   "Deepnest_31": {
     "Alias": "Deepnest_Nosk_Corridor",
@@ -1151,6 +1160,9 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "DisplayDarknessOverrides": {
+      "Conditions": [
+        "Dark"
+      ],
       "SceneDarkness": "SemiDark",
       "RegionDarkness": "Dark",
       "DarknessRegions": [
@@ -1526,6 +1538,9 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "DisplayDarknessOverrides": {
+      "Conditions": [
+        "Dark"
+      ],
       "SceneDarkness": "Dark",
       "RegionDarkness": "SemiDark",
       "DarknessRegions": [
@@ -1866,6 +1881,9 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "DisplayDarknessOverrides": {
+      "Conditions": [
+        "Dark"
+      ],
       "SceneDarkness": "SemiDark",
       "RegionDarkness": "Dark",
       "DarknessRegions": [
@@ -2360,6 +2378,9 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "DisplayDarknessOverrides": {
+      "Conditions": [
+        "Dark"
+      ],
       "SceneDarkness": "Dark",
       "RegionDarkness": "SemiDark",
       "DarknessRegions": [
@@ -2385,6 +2406,9 @@
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
     "DisplayDarknessOverrides": {
+      "Conditions": [
+        "Dark"
+      ],
       "SceneDarkness": "Dark",
       "RegionDarkness": "SemiDark",
       "DarknessRegions": [

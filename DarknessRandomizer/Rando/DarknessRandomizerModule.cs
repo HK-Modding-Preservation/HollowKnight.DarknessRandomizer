@@ -121,10 +121,8 @@ namespace DarknessRandomizer.Rando
             {
                 get
                 {
-                    if (NewDarkness == Darkness.Dark)
-                        return Data.SceneData.Get(CurrentScene).DisplayDarknessOverrides?.SceneDarkness ?? NewDarkness;
-                    else
-                        return NewDarkness;
+                    var ddo = Data.SceneData.Get(CurrentScene).DisplayDarknessOverrides;
+                    return (ddo?.Applies(NewDarkness) ?? false) ? ddo.SceneDarkness : NewDarkness;
                 }
             }
 

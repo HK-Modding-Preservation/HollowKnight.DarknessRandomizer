@@ -2,6 +2,7 @@
 using DarknessRandomizer.Rando;
 using RandomizerCore.Logic;
 using RandomizerMod.RC;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 
 namespace DarknessRandomizer.Data
@@ -102,10 +103,7 @@ namespace DarknessRandomizer.Data
                     exceptions.Add($"Scene {scene} is missing fields");
                 }
 
-                if (sData.MaximumDarkness < Darkness.Dark)
-                {
-                    sData.DisplayDarknessOverrides = null;
-                }
+                sData.DisplayDarknessOverrides = CleanDDO(sData);
             }
             MaybeThrowException(exceptions);
 
@@ -287,6 +285,25 @@ namespace DarknessRandomizer.Data
             UpdateCSFile($"{root}/DarknessRandomizer/Data/WaypointNames.cs", "INSERT_WAYPOINTS", GetWaypointsDict(),
                 (k, v) => $"public const string {k} = \"{v}\"");
             Console.WriteLine("Update Graph Data!");
+        }
+
+        private static bool DDOHasDiff(DisplayDarknessOverrides ddo, Darkness d)
+        {
+            // FIXME: Denormalize regions
+            return ddo.SceneDarkness != d || (ddo.RegionDarkness != d && ddo.DarknessRegions.Count > 0);
+        }
+
+        private static DisplayDarknessOverrides CleanDDO(RawSceneData sceneData)
+        {
+            var ddo = sceneData.DisplayDarknessOverrides;
+            if (ddo == null) return null;
+
+            ddo.Conditions.RemoveWhere(d => d < sceneData.MinimumDarkness || d > sceneData.MaximumDarkness);
+            ddo.Conditions.RemoveWhere(d => !DDOHasDiff(ddo, d));
+            if (ddo.Conditions.Count == 0) return null;
+
+            ddo.DarknessRegions.Sort((a, b) => Math.Sign((a.X != b.X) ? a.X - b.X : a.Y - b.Y));
+            return ddo;
         }
 
         private static void MaybeThrowException(List<string> exceptions)
