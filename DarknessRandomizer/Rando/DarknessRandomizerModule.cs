@@ -117,9 +117,21 @@ namespace DarknessRandomizer.Rando
             public Darkness PrevDarkness;
             public Darkness NewDarkness;
 
-            public Darkness DisplayDarkness => Data.SceneData.Get(CurrentScene).DisplayDarknessOverrides?.SceneDarkness ?? NewDarkness;
+            public Darkness DisplayDarkness
+            {
+                get
+                {
+                    if (NewDarkness == Darkness.Dark)
+                        return Data.SceneData.Get(CurrentScene).DisplayDarknessOverrides?.SceneDarkness ?? NewDarkness;
+                    else
+                        return NewDarkness;
+                }
+            }
+
             public bool Brighter => PrevDarkness >= Darkness.SemiDark && PrevDarkness > NewDarkness;
+
             public bool Darker => NewDarkness >= Darkness.SemiDark && NewDarkness > PrevDarkness;
+
             public bool Unchanged => PrevDarkness == NewDarkness;
         }
         private string sceneDataCacheName;
