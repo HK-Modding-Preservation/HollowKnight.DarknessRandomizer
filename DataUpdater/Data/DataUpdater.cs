@@ -7,25 +7,25 @@ using System.Text.RegularExpressions;
 
 namespace DarknessRandomizer.Data
 {
-    public class DataStats
+    public static class DataUpdater
     {
-        public int NumClusters;
-        public int NumSemiDarkOnlyClusters;
-        public int NumCursedOnlyClusters;
-        public int NumClusterAdjacencies;
-        public int NumScenes;
-        public int NumSemiDarkOnlyScenes;
-        public int NumCursedOnlyScenes;
-        public int NumSceneAdjacencies;
-        public int NumDarknessSources;
-        public int TotalSourceBudget;
-        public int TotalCursedSourceBudget;
-        public int TotalDarknessBudget;
-        public int TotalCursedDarknessBudget;
-    }
+        private class Stats
+        {
+            public int NumClusters;
+            public int NumSemiDarkOnlyClusters;
+            public int NumCursedOnlyClusters;
+            public int NumClusterAdjacencies;
+            public int NumScenes;
+            public int NumSemiDarkOnlyScenes;
+            public int NumCursedOnlyScenes;
+            public int NumSceneAdjacencies;
+            public int NumDarknessSources;
+            public int TotalSourceBudget;
+            public int TotalCursedSourceBudget;
+            public int TotalDarknessBudget;
+            public int TotalCursedDarknessBudget;
+        }
 
-    class DataUpdater
-    {
         private static void SyncDicts<K,V1,V2>(IDictionary<K, V1> src, IDictionary<K, V2> dst, Func<K, V2> creator)
         {
             // Add missing values.
@@ -61,10 +61,10 @@ namespace DarknessRandomizer.Data
             return path;
         }
 
-        public static void UpdateGraphData()
+        public static void Run()
         {
             string root = InferGitRoot(System.IO.Directory.GetCurrentDirectory());
-            Console.WriteLine("Updating graph data");
+            Console.WriteLine("Updating data");
 
             // Load all the data.
             var SM = RawSceneMetadata.LoadFromPath($"{root}/DarknessRandomizer/Resources/Data/scene_metadata.json");
@@ -282,12 +282,10 @@ namespace DarknessRandomizer.Data
                 (n, sm) => $"public static readonly SceneName {CSharpClean(sm.Alias)} = new(\"{n}\")");
             UpdateCSFile($"{root}/DarknessRandomizer/Data/ClusterName.cs", "INSERT_CLUSTER_NAMES", CD,
                 (n, cd) => $"public static readonly ClusterName {CSharpClean(n)} = new(\"{n}\")");
-            UpdateCSFile($"{root}/DarknessRandomizer/Data/WaypointNames.cs", "INSERT_WAYPOINTS", GetWaypointsDict(),
+            UpdateCSFile($"{root}/DarknessRandomizer/Data/WaypointName.cs", "INSERT_WAYPOINTS", GetWaypointsDict(),
                 (k, v) => $"public const string {k} = \"{v}\"");
-            Console.WriteLine("Update Graph Data!");
+            Console.WriteLine("Updated data!");
         }
-
-        private static bool DDOHasDiff(DisplayDarknessOverrides ddo, Darkness d) => ddo.SceneDarkness != d || ddo.DarknessRegions.Any(dr => dr.Darkness != d);
 
         private static DisplayDarknessOverrides CleanDDO(RawSceneData sceneData)
         {
@@ -298,7 +296,7 @@ namespace DarknessRandomizer.Data
             ddo.DarknessRegions.Sort((a, b) => Math.Sign((a.X != b.X) ? a.X - b.X : a.Y - b.Y));
 
             ddo.Conditions.RemoveWhere(d => d < sceneData.MinimumDarkness || d > sceneData.MaximumDarkness);
-            ddo.Conditions.RemoveWhere(d => !DDOHasDiff(ddo, d));
+            ddo.Conditions.RemoveWhere(d => ddo.SceneDarkness == d && ddo.DarknessRegions.All(dr => dr.Darkness == d));
             if (ddo.Conditions.Count == 0) return null;
 
             return ddo;
@@ -313,10 +311,10 @@ namespace DarknessRandomizer.Data
             }
         }
 
-        private static DataStats ComputeDataStats(SortedDictionary<string, RawSceneMetadata> SM,
+        private static Stats ComputeDataStats(SortedDictionary<string, RawSceneMetadata> SM,
             SortedDictionary<string, RawSceneData> SD, SortedDictionary<string, RawClusterData> CD)
         {
-            DataStats DS = new();
+            Stats stats = new();
             foreach (var e in CD)
             {
                 var cluster = e.Key;
@@ -327,15 +325,15 @@ namespace DarknessRandomizer.Data
                 bool cursed = cData.CursedOnly ?? false;
                 int darkCost = cData.CostWeight ?? 0;
 
-                ++DS.NumClusters;
-                DS.NumDarknessSources += darkSource ? 1 : 0;
-                DS.NumClusterAdjacencies += cData.AdjacentClusters.Count;
-                DS.NumCursedOnlyClusters += cursed ? 1 : 0;
-                DS.NumSemiDarkOnlyClusters += semiDark ? 1 : 0;
-                DS.TotalDarknessBudget += cursed ? 0 : darkCost;
-                DS.TotalCursedDarknessBudget += darkCost;
-                DS.TotalSourceBudget += darkSource ? (cursed ? 0 : darkCost) : 0;
-                DS.TotalCursedSourceBudget += darkSource ? darkCost : 0;
+                ++stats.NumClusters;
+                stats.NumDarknessSources += darkSource ? 1 : 0;
+                stats.NumClusterAdjacencies += cData.AdjacentClusters.Count;
+                stats.NumCursedOnlyClusters += cursed ? 1 : 0;
+                stats.NumSemiDarkOnlyClusters += semiDark ? 1 : 0;
+                stats.TotalDarknessBudget += cursed ? 0 : darkCost;
+                stats.TotalCursedDarknessBudget += darkCost;
+                stats.TotalSourceBudget += darkSource ? (cursed ? 0 : darkCost) : 0;
+                stats.TotalCursedSourceBudget += darkSource ? darkCost : 0;
             }
             foreach (var e in SD)
             {
@@ -345,14 +343,14 @@ namespace DarknessRandomizer.Data
 
                 bool semiDark = sData.MaximumDarkness == Darkness.SemiDark;
 
-                ++DS.NumScenes;
-                DS.NumSceneAdjacencies += SM[scene].AdjacentScenes.Count;
-                DS.NumSemiDarkOnlyScenes += semiDark ? 1 : 0;
-                DS.NumCursedOnlyScenes += cData.CursedOnly ?? false ? 1 : 0;
+                ++stats.NumScenes;
+                stats.NumSceneAdjacencies += SM[scene].AdjacentScenes.Count;
+                stats.NumSemiDarkOnlyScenes += semiDark ? 1 : 0;
+                stats.NumCursedOnlyScenes += cData.CursedOnly ?? false ? 1 : 0;
             }
-            DS.NumSceneAdjacencies /= 2;
-            DS.NumClusterAdjacencies /= 2;
-            return DS;
+            stats.NumSceneAdjacencies /= 2;
+            stats.NumClusterAdjacencies /= 2;
+            return stats;
         }
 
         private static SortedDictionary<string, string> GetWaypointsDict()

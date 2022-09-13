@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DarknessRandomizer.Data
 {
-    public static class WaypointNames
+    public static class WaypointName
     {
         // @@@ INSERT_WAYPOINTS START @@@
         public const string Abyss01 = "Abyss_01";
