@@ -5,6 +5,9 @@ using UObject = UnityEngine.Object;
 
 namespace DarknessRandomizer.IC
 {
+    // Marks a darkness region that was placed by DarknessRandomizer, and should not be altered.
+    public class DarknessRandoMarker : Component { }
+
     public record DarknessRegion
     {
         public Darkness Darkness;
@@ -40,6 +43,7 @@ namespace DarknessRandomizer.IC
             public override void SavePreloads(Dictionary<string, Dictionary<string, GameObject>> objectsByScene)
             {
                 darknessRegionTemplate = objectsByScene[SceneName.CliffsMain.Name()]["Darkness Region (3)"];
+                darknessRegionTemplate.AddComponent<DarknessRandoMarker>();
             }
         }
     }
