@@ -7,6 +7,8 @@ namespace DarknessRandomizer.Lib
     {
         public delegate V Supplier<V>();
 
+        public static bool HasLantern(this PlayerData self) => self.GetBool(nameof(self.hasLantern));
+
         public static void AddIfEmpty<K,V>(this IDictionary<K, V> dict, K key, Supplier<V> creator)
         {
             if(!dict.ContainsKey(key))

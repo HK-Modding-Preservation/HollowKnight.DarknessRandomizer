@@ -1,4 +1,7 @@
 ﻿using DarknessRandomizer.Data;
+using DarknessRandomizer.Lib;
+using ItemChanger.Extensions;
+using ItemChanger.FsmStateActions;
 using System.Collections.Generic;
 using UnityEngine;
 using UObject = UnityEngine.Object;
@@ -23,7 +26,17 @@ namespace DarknessRandomizer.IC
             obj.transform.position = new(X, Y, 0);
             obj.transform.localScale = new(1, 1, 1);
             obj.GetComponent<BoxCollider2D>().size = new(Width, Height);
-            obj.LocateMyFSM("Darkness Region").FsmVariables.FindFsmInt("Darkness").Value = (int)Darkness;
+
+            var fsm = obj.LocateMyFSM("Darkness Region");
+            fsm.FsmVariables.FindFsmInt("Darkness").Value = (int)Darkness;
+            fsm.GetState("Enter").AddLastAction(new Lambda(() =>
+            {
+                if (!PlayerData.instance.HasLantern())
+                {
+                    GameObject.Find("/Knight/Vignette/Darkness Plates")?.SetActive(true);
+                }
+            }));
+            fsm.GetState("Exit").AddLastAction(new Lambda(() => GameObject.Find("/Knight/Vignette/Darkness Plates")?.SetActive(false)));
 
             obj.SetActive(true);
         }
