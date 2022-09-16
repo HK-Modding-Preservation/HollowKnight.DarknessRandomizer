@@ -498,14 +498,21 @@
       "Conditions": [
         "Dark"
       ],
-      "SceneDarkness": "Dark",
+      "SceneDarkness": "SemiDark",
       "DarknessRegions": [
         {
-          "Darkness": "SemiDark",
+          "Darkness": "Dark",
           "X": 17.5,
-          "Y": 10.0,
+          "Y": 60.0,
           "Width": 35.0,
-          "Height": 20.0
+          "Height": 80.0
+        },
+        {
+          "Darkness": "Dark",
+          "X": 235,
+          "Y": 50,
+          "Width": 400,
+          "Height": 100
         }
       ]
     }
@@ -597,21 +604,14 @@
         "SemiDark",
         "Dark"
       ],
-      "SceneDarkness": "Dark",
+      "SceneDarkness": "SemiDark",
       "DarknessRegions": [
         {
-          "Darkness": "Bright",
-          "X": 22.5,
-          "Y": 10.0,
-          "Width": 45.0,
-          "Height": 20.0
-        },
-        {
-          "Darkness": "SemiDark",
-          "X": 85.0,
-          "Y": 7.5,
-          "Width": 80.0,
-          "Height": 15.0
+          "Darkness": "Dark",
+          "X": 100,
+          "Y": 230,
+          "Width": 200,
+          "Height": 400
         }
       ]
     }
@@ -758,14 +758,14 @@
       "Conditions": [
         "Dark"
       ],
-      "SceneDarkness": "Dark",
+      "SceneDarkness": "SemiDark",
       "DarknessRegions": [
         {
-          "Darkness": "SemiDark",
-          "X": 325.0,
-          "Y": 20.0,
-          "Width": 50.0,
-          "Height": 20.0
+          "Darkness": "Dark",
+          "X": 157.5,
+          "Y": 50.0,
+          "Width": 325,
+          "Height": 100
         }
       ]
     }
@@ -1284,21 +1284,14 @@
         "SemiDark",
         "Dark"
       ],
-      "SceneDarkness": "Dark",
+      "SceneDarkness": "SemiDark",
       "DarknessRegions": [
         {
-          "Darkness": "SemiDark",
-          "X": 12.5,
-          "Y": 8.5,
-          "Width": 25.0,
-          "Height": 17.0
-        },
-        {
-          "Darkness": "Bright",
-          "X": 32.5,
-          "Y": 10.0,
-          "Width": 15.0,
-          "Height": 10.0
+          "Darkness": "Dark",
+          "X": 30,
+          "Y": 217,
+          "Width": 60,
+          "Height": 400
         }
       ]
     }
@@ -1361,13 +1354,13 @@
       "Conditions": [
         "Dark"
       ],
-      "SceneDarkness": "Dark",
+      "SceneDarkness": "SemiDark",
       "DarknessRegions": [
         {
-          "Darkness": "SemiDark",
-          "X": 70.0,
+          "Darkness": "Dark",
+          "X": 25.0,
           "Y": 40.0,
-          "Width": 40.0,
+          "Width": 50.0,
           "Height": 80.0
         }
       ]
@@ -1599,14 +1592,14 @@
       "Conditions": [
         "Dark"
       ],
-      "SceneDarkness": "Dark",
+      "SceneDarkness": "SemiDark",
       "DarknessRegions": [
         {
-          "Darkness": "SemiDark",
-          "X": 165.0,
-          "Y": 20.0,
-          "Width": 50.0,
-          "Height": 30.0
+          "Darkness": "Dark",
+          "X": 70.0,
+          "Y": 50.0,
+          "Width": 140.0,
+          "Height": 100.0
         }
       ]
     }
@@ -2439,14 +2432,21 @@
       "Conditions": [
         "Dark"
       ],
-      "SceneDarkness": "Dark",
+      "SceneDarkness": "SemiDark",
       "DarknessRegions": [
         {
-          "Darkness": "SemiDark",
+          "Darkness": "Dark",
+          "X": 234.0,
+          "Y": 50.0,
+          "Width": 400.0,
+          "Height": 100.0
+        },
+        {
+          "Darkness": "Dark",
           "X": 17.0,
-          "Y": 11.0,
+          "Y": 42.0,
           "Width": 34.0,
-          "Height": 22.0
+          "Height": 40.0
         }
       ]
     }
@@ -2467,13 +2467,13 @@
       "Conditions": [
         "Dark"
       ],
-      "SceneDarkness": "Dark",
+      "SceneDarkness": "SemiDark",
       "DarknessRegions": [
         {
-          "Darkness": "SemiDark",
-          "X": 145.0,
+          "Darkness": "Dark",
+          "X": 67.5,
           "Y": 20.0,
-          "Width": 20.0,
+          "Width": 135.0,
           "Height": 50.0
         }
       ]
