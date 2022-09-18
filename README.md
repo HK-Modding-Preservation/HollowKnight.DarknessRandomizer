@@ -45,7 +45,7 @@ Semi-darkness has no effect on Logic, and only provides a slight challenge incre
 
 Most rooms which are trivial and safe to navigate, dark or light, are constrained to be at most semi-dark for simplicity since darkness does not add a unique challenge. However, there are some exceptions for unique purposes. Consult your helper log if unsure.
 
-Rooms with particularly difficult platforming or enemies are not in Logic while dark unless Difficult Skips or Proficient Combat, respectively, are also enabled in skips. For instance, a true-dark Path of Pain is not in Logic without Lantern unless both Dark Rooms and Difficult Skips are enabled.
+Rooms with difficult dark enemies are not in Logic while dark unless Difficult Skips and/or Proficient Combat are also enabled in skips. For instance, dark Soul Tyrant is not in logic without Lantern unless Darkrooms, Difficult Skips, and Proficient Combat are all enabled (in addition to standard combat logic).
 
 ## Don't Forget!
 
