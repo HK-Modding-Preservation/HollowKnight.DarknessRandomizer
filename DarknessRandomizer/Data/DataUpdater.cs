@@ -1,8 +1,10 @@
 ﻿using DarknessRandomizer.Lib;
-using DarknessRandomizer.Rando;
 using RandomizerCore.Logic;
 using RandomizerMod.RC;
-using System.Text.Json;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace DarknessRandomizer.Data

@@ -1,4 +1,6 @@
-﻿namespace DarknessRandomizer.Data
+﻿using System.Collections.Generic;
+
+namespace DarknessRandomizer.Data
 {
     public class RawSceneMetadata : BaseSceneMetadata<string>
     {
