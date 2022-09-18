@@ -74,6 +74,9 @@ namespace DarknessRandomizer.Rando
                 // Greenpath toll bench requires lantern.
                 { "Bench-Greenpath_Toll", CustomDarkLogicEdit("Bench-Greenpath_Toll") },
 
+                // Dream nail has a custom scene which may be dark.
+                { "Dream_Nail", CustomSceneLogicEdit(SceneName.DreamNail, "DARKROOMS") },
+
                 // These checks are free from bench-rando benches.
                 { "Crystal_Heart", SkipDarkLogicFor("Bench-Mining_Golem") },
                 { "Isma's_Tear", SkipDarkLogicFor("Bench-Isma's_Grove") },
