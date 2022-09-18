@@ -195,7 +195,7 @@ namespace DarknessRandomizer.Rando
 
         private void ModifyDarknessRegions(PlayMakerFSM fsm)
         {
-            if (fsm.gameObject.GetComponent<DarknessRandoMarker>() != null) return;
+            if (fsm.gameObject.GetComponent<CustomDarknessRegion>() != null) return;
 
             var data = GetSceneData(fsm.gameObject.scene.name);
             if (data == null) return;
