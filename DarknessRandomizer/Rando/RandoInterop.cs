@@ -1,8 +1,7 @@
-﻿using ItemChanger;
-using Modding;
+﻿using DarknessRandomizer.Imports;
+using ItemChanger;
 using Newtonsoft.Json;
 using RandomizerMod.RC;
-using RandoPlus.Imports;
 using System.IO;
 
 namespace DarknessRandomizer.Rando
@@ -16,11 +15,7 @@ namespace DarknessRandomizer.Rando
             ConnectionMenu.Setup();
             LogicPatcher.Setup();
             RequestModifier.Setup();
-
-            if (ModHooks.GetMod("CondensedSpoilerLogger") is Mod)
-            {
-                CondensedSpoilerLogger.AddCategory("Lantern Shards", _ => ShatteredLantern, new() { LanternItemName });
-            }
+            CondensedSpoilerLogger.AddCategory("Lantern Shards", _ => ShatteredLantern, new() { LanternItemName });
 
             RandoController.OnExportCompleted += Finish;
             RandomizerMod.Logging.SettingsLog.AfterLogSettings += LogSettings;
