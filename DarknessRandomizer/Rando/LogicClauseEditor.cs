@@ -222,11 +222,11 @@ namespace DarknessRandomizer.Rando
                     {
                         // If we have NOLANTERN, HRTs are never re-enabled, so the skip may be impossible.
                         sink.Add(lanternToken.Write() == "NOLANTERN" ? ConstToken.False : lanternToken);
-                        sink.Add(OperatorToken.AND);
                         if (sceneTree != null && ListLanternTreeTokens(sceneTree, sink))
                         {
                             sink.Add(OperatorToken.OR);
                         }
+                        sink.Add(OperatorToken.AND);
                     }
                 }
             }
