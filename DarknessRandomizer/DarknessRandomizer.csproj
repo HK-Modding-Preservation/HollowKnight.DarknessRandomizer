@@ -62,6 +62,9 @@
     <Reference Include="BenchRando">
       <HintPath>$(HollowKnightRefs)/Mods/BenchRando/BenchRando.dll</HintPath>
     </Reference>
+    <Reference Include="CondensedSpoilerLogger">
+      <HintPath>$(HollowKnightRefs)/Mods/CondensedSpoilerLogger/CondensedSpoilerLogger.dll</HintPath>
+    </Reference>
     <Reference Include="ConnectionMetadataInjector">
       <HintPath>$(HollowKnightRefs)/Mods/ConnectionMetadataInjector/ConnectionMetadataInjector.dll</HintPath>
     </Reference>
