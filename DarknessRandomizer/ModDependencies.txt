@@ -5,4 +5,3 @@ MenuChanger
 RandomizerCore
 Randomizer 4
 RandoPlus
-CondensedSpoilerLogger
