@@ -73,9 +73,17 @@ namespace DarknessRandomizer.Data
         public static bool IsTransition(string token, out SceneName sceneName)
         {
             int i = token.IndexOf('[');
-            if (i != -1 && SceneName.TryGetValue(token.Substring(0, i), out sceneName))
+            if (i != -1)
             {
-                return true;
+                string sn = token.Substring(0, i);
+                if (sn.EndsWith("_Proxy"))
+                {
+                    return SceneName.TryGetValue(sn.Substring(0, i - 6), out sceneName);
+                }
+                else
+                {
+                    return SceneName.TryGetValue(token.Substring(0, i), out sceneName))
+                }
             }
 
             sceneName = default;
