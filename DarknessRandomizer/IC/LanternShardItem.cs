@@ -31,6 +31,8 @@ namespace DarknessRandomizer.IC
 
         public override string GetPostviewName()
         {
+            if (IsFinal) return $"Lantern Shard (#{LanternShards.TotalNumShards})";
+
             int count = LanternShards.GetPDShardCount();
             return count >= LanternShards.TotalNumShards ? "Lantern Shard" : $"Lantern Shard (#{count})";
         }
@@ -52,7 +54,7 @@ namespace DarknessRandomizer.IC
             {
                 BigItemPopup.Show(
                     bigSprite.Value,
-                    null,
+                    "Assembled the",
                     new LanguageString("UI", "INV_NAME_LANTERN").Value,
                     null,
                     null,
