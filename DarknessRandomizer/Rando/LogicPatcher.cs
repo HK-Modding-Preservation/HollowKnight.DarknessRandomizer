@@ -177,7 +177,11 @@ namespace DarknessRandomizer.Rando
                 { SceneName.CrystalCrystalHeartGauntlet, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") },
                 { SceneName.CrystalDeepFocusGauntlet, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") },
                 { SceneName.EdgeWhisperingRoot, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") },
-                { SceneName.GreenpathSheoGauntlet, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") }
+                { SceneName.GreenpathSheoGauntlet, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") },
+                { SceneName.POPEntrance, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") },
+                { SceneName.POPFinal, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") },
+                { SceneName.POPLever, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") },
+                { SceneName.POPVertical, CustomDarkLogicEdit("DARKROOMS + DIFFICULTSKIPS") },
             };
 
             if (ModHooks.GetMod("BenchRando") is Mod)
