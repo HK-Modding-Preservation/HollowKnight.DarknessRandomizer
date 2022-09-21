@@ -168,7 +168,6 @@ namespace DarknessRandomizer.Rando
                 { SceneName.GreenpathUnn, CustomDarkLogicEdit("ACID") },
 
                 // Checks in these scenes are free, even if dark.
-                { SceneName.BasinCorridortoBrokenVessel, CustomDarkLogicEdit("ANY") },
                 { SceneName.CityTollBench, CustomDarkLogicEdit("ANY") },
                 // Gardens checks by the stag are free; marmu, marmu totem, and the upper transition are exceptions.
                 { SceneName.GardensGardensStag, CustomDarkLogicEdit("ANY") },
