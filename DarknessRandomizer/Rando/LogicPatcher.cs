@@ -189,7 +189,7 @@ namespace DarknessRandomizer.Rando
                 DoBenchRandoInterop(lmb);
             }
 
-            if (ModHooks.GetMod("RandomizableLevers") is Mod)
+            if (ModHooks.GetMod("RandomizableLevers") is Mod && LeversAreEnabled())
             {
                 DoLeverRandoInterop(lmb);
             }
@@ -228,6 +228,8 @@ namespace DarknessRandomizer.Rando
                 logicOverridesByUniqueScene[SceneName.GreenpathToll] = CustomDarkLogicEdit("DARKROOMS | Bench-Greenpath_Toll");
             }
         }
+
+        private static bool LeversAreEnabled() => RandomizableLevers.RandomizableLevers.GS.RandoSettings.RandomizeLevers;
 
         private void DoLeverRandoInterop(LogicManagerBuilder lmb)
         {
