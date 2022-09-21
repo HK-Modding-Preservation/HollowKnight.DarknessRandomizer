@@ -164,8 +164,8 @@ namespace DarknessRandomizer.Rando
             logicOverridesByUniqueScene = new()
             {
                 // Checks in these rooms are easy to obtain if the player has isma's tear; there is no danger.
-                { SceneName.GreenpathLakeOfUnn, CustomDarkLogicEdit("ACID") },
-                { SceneName.GreenpathUnn, CustomDarkLogicEdit("ACID") },
+                { SceneName.GreenpathLakeOfUnn, CustomDarkLogicEdit("DARKROOMS | ACID") },
+                { SceneName.GreenpathUnn, CustomDarkLogicEdit("DARKROOMS | ACID") },
 
                 // Checks in these scenes are free, even if dark.
                 { SceneName.CityTollBench, CustomDarkLogicEdit("ANY") },
