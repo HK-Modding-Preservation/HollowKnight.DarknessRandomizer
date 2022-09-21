@@ -188,6 +188,17 @@ namespace DarknessRandomizer.Rando
             {
                 DoBenchRandoInterop(lmb);
             }
+
+            if (ModHooks.GetMod("RandomizableLevers") is Mod)
+            {
+                DoLeverRandoInterop(lmb);
+            }
+            else
+            {
+                // We only care about the pilgrims way right transition.
+                logicOverridesByName[$"{SceneName.FungalPilgrimsWay}[right1]"] =
+                    CustomDarkLogicEdit($"DARKROOMS | {SceneName.FungalPilgrimsWay}[left1] + (ACID | RIGHTSUPERDASH)");
+            }
         }
 
         private readonly Dictionary<string, SceneName> customSceneInferences = new()
@@ -216,6 +227,18 @@ namespace DarknessRandomizer.Rando
             {
                 logicOverridesByUniqueScene[SceneName.GreenpathToll] = CustomDarkLogicEdit("DARKROOMS | Bench-Greenpath_Toll");
             }
+        }
+
+        private void DoLeverRandoInterop(LogicManagerBuilder lmb)
+        {
+            string leftTransition = $"{SceneName.FungalPilgrimsWay}[left1]";
+            // Apply custom lever logic to Pilgrim's way, which is partially dark.
+            logicOverridesByName["Lever-Pilgrim's_Way_Left"] =
+                CustomDarkLogicEdit($"DARKROOMS | {leftTransition} + (ACID | RIGHTSUPERDASH | Lever-Pilgrim's_Way_Left)");
+            logicOverridesByName["Lever-Pilgrim's_Way_Right"] =
+                CustomDarkLogicEdit($"DARKROOMS | {leftTransition} + (ACID | RIGHTSUPERDASH | Lever-Pilgrim's_Way_Left + Lever-Pilgrim's_Way_Right)");
+            logicOverridesByName[$"{SceneName.FungalPilgrimsWay}[right1]"] =
+                CustomDarkLogicEdit($"DARKROOMS | {leftTransition} + (ACID | RIGHTSUPERDASH | Lever-Pilgrim's_Way_Left + Lever-Pilgrim's_Way_Right)");
         }
 
         public SceneNameInferrer GetSceneNameInferrer(string logicName) => sceneNameInferrerOverrides.TryGetValue(logicName, out SceneNameInferrer sni) ? sni : InferSceneName;

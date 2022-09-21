@@ -1258,7 +1258,21 @@
     "Cluster": "FungalPilgrimsWay",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "DisplayDarknessOverrides": null
+    "DisplayDarknessOverrides": {
+      "Conditions": [
+        "Dark"
+      ],
+      "SceneDarkness": "SemiDark",
+      "DarknessRegions": [
+        {
+          "Darkness": "Dark",
+          "X": 75.0,
+          "Y": 39.0,
+          "Width": 150.0,
+          "Height": 50.0
+        }
+      ]
+    }
   },
   "Fungus2_11": {
     "Alias": "Fungal_Epogo",
@@ -1343,7 +1357,21 @@
     "Cluster": "FungalPilgrimsWay",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "Dark",
-    "DisplayDarknessOverrides": null
+    "DisplayDarknessOverrides": {
+      "Conditions": [
+        "Dark"
+      ],
+      "SceneDarkness": "SemiDark",
+      "DarknessRegions": [
+        {
+          "Darkness": "Dark",
+          "X": 35.0,
+          "Y": 45.0,
+          "Width": 70.0,
+          "Height": 70.0
+        }
+      ]
+    }
   },
   "Fungus2_23": {
     "Alias": "Fungal_Dashmaster",
