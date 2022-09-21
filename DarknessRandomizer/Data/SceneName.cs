@@ -82,7 +82,7 @@ namespace DarknessRandomizer.Data
                 }
                 else
                 {
-                    return SceneName.TryGetValue(token.Substring(0, i), out sceneName))
+                    return SceneName.TryGetValue(token.Substring(0, i), out sceneName);
                 }
             }
 
