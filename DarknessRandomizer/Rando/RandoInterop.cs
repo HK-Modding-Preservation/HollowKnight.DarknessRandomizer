@@ -22,7 +22,7 @@ namespace DarknessRandomizer.Rando
             RandomizerMod.Logging.LogManager.AddLogger(new DarknessLogger());
         }
 
-        public static bool IsEnabled => RandomizeDarkness || ShatteredLantern;
+        public static bool IsEnabled => DarknessRandomizer.GS.DarknessRandomizationSettings.IsEnabled;
 
         public static bool RandomizeDarkness => DarknessRandomizer.GS.DarknessRandomizationSettings.RandomizeDarkness;
 

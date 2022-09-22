@@ -29,12 +29,10 @@ namespace DarknessRandomizer.Rando
         }
 
         public SmallButton entryButton;
-        public MenuPage mainPage;
-        public GridItemPanel gridPanel;
 
         private static T Lookup<T>(MenuElementFactory<DarknessRandomizationSettings> factory, string name) where T : MenuItem => factory.ElementLookup[name] as T ?? throw new ArgumentException("Menu error");
 
-        private static void LockIfFalse(MenuItem<bool> src, List<ILockable> dest)
+        private void LockIfFalse(MenuItem<bool> src, List<ILockable> dest)
         {
             void onChange(bool value)
             {
@@ -43,15 +41,18 @@ namespace DarknessRandomizer.Rando
                     if (value) lockable.Unlock();
                     else lockable.Lock();
                 }
+                SetEnabledColor();
             }
 
             src.ValueChanged += onChange;
             onChange(src.Value);
         }
 
+        private void SetEnabledColor() => entryButton.Text.color = DarknessRandomizer.GS.DarknessRandomizationSettings.IsEnabled ? Colors.TRUE_COLOR : Colors.DEFAULT_COLOR; 
+
         private ConnectionMenu(MenuPage landingPage)
         {
-            mainPage = new("DarknessRando Main Page", landingPage);
+            MenuPage mainPage = new("DarknessRando Main Page", landingPage);
             entryButton = new(landingPage, Localize("Darkness Rando"));
             entryButton.AddHideAndShowEvent(mainPage);
 
@@ -65,13 +66,14 @@ namespace DarknessRandomizer.Rando
 
             LockIfFalse(randomizeDarkness, new() { darknessLevel, chaos });
             LockIfFalse(shatteredLantern, new() { twoDupeShards });
+            SetEnabledColor();
 
-            gridPanel = new(mainPage, SpaceParameters.TOP_CENTER_UNDER_TITLE, 2, SpaceParameters.VSPACE_MEDIUM, SpaceParameters.HSPACE_LARGE, true);
-            gridPanel.Insert(0, 0, randomizeDarkness);
-            gridPanel.Insert(0, 1, shatteredLantern);
-            gridPanel.Insert(1, 0, darknessLevel);
-            gridPanel.Insert(1, 1, twoDupeShards);
-            gridPanel.Insert(2, 0, chaos);
+            GridItemPanel gridItemPanel = new(mainPage, SpaceParameters.TOP_CENTER_UNDER_TITLE, 2, SpaceParameters.VSPACE_MEDIUM, SpaceParameters.HSPACE_LARGE, true);
+            gridItemPanel.Insert(0, 0, randomizeDarkness);
+            gridItemPanel.Insert(0, 1, shatteredLantern);
+            gridItemPanel.Insert(1, 0, darknessLevel);
+            gridItemPanel.Insert(1, 1, twoDupeShards);
+            gridItemPanel.Insert(2, 0, chaos);
         }
     }
 }

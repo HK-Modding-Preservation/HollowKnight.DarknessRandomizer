@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 
 namespace DarknessRandomizer.Rando
 {
@@ -17,6 +18,9 @@ namespace DarknessRandomizer.Rando
         public bool Chaos = false;
         public bool ShatteredLantern = false;
         public bool TwoDupeShards = false;
+
+        [JsonIgnore]
+        public bool IsEnabled => RandomizeDarkness || ShatteredLantern;
 
         public DarknessRandomizationSettings Clone()
         {
