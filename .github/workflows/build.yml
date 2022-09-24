@@ -6,7 +6,7 @@ on:
       should_release:
         description: "Create release?"
         required: true
-        default: false
+        default: true
         type: boolean
 
 jobs:
