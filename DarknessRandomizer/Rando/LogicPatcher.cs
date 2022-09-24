@@ -53,6 +53,10 @@ namespace DarknessRandomizer.Rando
                 { "Mask_Shard-Deepnest", NoLogicEdit },
                 { "Vengeful_Spirit", NoLogicEdit },
 
+                // This check is special - ITEMRANDO assumes it's always open, even with infection, because even with infection you
+                // can always go around itemless. We can't assume that, because parts of the route might be dark.
+                { $"{SceneName.CrossroadsOutsideMound}[right1]", (lmb, ln, lc) => lmb.DoLogicEdit(new(ln, $"({SceneName.CrossroadsOutsideMound}[left1] | {SceneName.CrossroadsOutsideMound}[door1]) + ROOMRANDO")) },
+
                 // Specific checks with difficult platforming.
                 { "Void_Heart", CustomSceneLogicEdit(SceneName.DreamAbyss, "DARKROOMS + DIFFICULTSKIPS") },
 
