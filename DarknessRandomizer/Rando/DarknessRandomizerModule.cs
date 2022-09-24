@@ -93,7 +93,7 @@ namespace DarknessRandomizer.Rando
 
         private void DisableDarkRoomObjects(DarknessData sceneData)
         {
-            foreach (var obj in GameObject.FindObjectsOfType<HazardRespawnTrigger>())
+            foreach (var obj in UnityEngine.Object.FindObjectsOfType<HazardRespawnTrigger>())
             {
                 if (!PreservedHazardRespawns.TryGetValue(sceneData.CurrentScene, out HashSet<string> names) || !names.Contains(obj.name))
                 {
@@ -104,7 +104,7 @@ namespace DarknessRandomizer.Rando
 
         private void EnableDisabledLanternObjects()
         {
-            foreach (var obj in GameObject.FindObjectsOfType<DeactivateInDarknessWithoutLantern>(true))
+            foreach (var obj in UnityEngine.Object.FindObjectsOfType<DeactivateInDarknessWithoutLantern>(true))
             {
                 obj.enabled = false;
                 obj.gameObject.SetActive(true);

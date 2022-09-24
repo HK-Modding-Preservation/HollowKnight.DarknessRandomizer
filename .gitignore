@@ -5,6 +5,5 @@
 /.vs
 /DarknessRandomizer/Hollow Knight 1.5 Mod1/LocalBuildProperties.props
 /DarknessRandomizer/LocalBuildProperties.props
-/DarknessRandomizer/Resources/Data/data_updater_metadata.json
 **/bin/**
 **/obj/**

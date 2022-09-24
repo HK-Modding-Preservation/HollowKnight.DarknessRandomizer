@@ -65,7 +65,7 @@ namespace DarknessRandomizer.Data
 
         public static void Run()
         {
-            string root = InferGitRoot(System.IO.Directory.GetCurrentDirectory());
+            string root = InferGitRoot(Directory.GetCurrentDirectory());
             Console.WriteLine("Updating data");
 
             // Load all the data.
