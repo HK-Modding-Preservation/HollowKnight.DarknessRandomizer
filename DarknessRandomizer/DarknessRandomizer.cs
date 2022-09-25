@@ -31,6 +31,7 @@ namespace DarknessRandomizer
 
             if (ModHooks.GetMod("Randomizer 4") is Mod)
             {
+                Vanilla.Setup();
                 RandoInterop.Setup();
             }
 

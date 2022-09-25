@@ -16,11 +16,10 @@ namespace DarknessRandomizer.Rando
             On.UIManager.StartNewGame += PlaceVanillaItems;
         }
 
-        private static bool VanillaShatteredLantern => RandoInterop.ShatteredLantern && !RandomizerMod.RandomizerMod.RS.GenerationSettings.PoolSettings.Keys;
-
+        private static bool VanillaShatteredLantern(RequestBuilder? rb = null) => RandoInterop.ShatteredLantern && !(rb?.gs ?? RandomizerMod.RandomizerMod.RS.GenerationSettings).PoolSettings.Keys;
         private static void RemoveLantern(RequestBuilder rb)
         {
-            if (!VanillaShatteredLantern) return;
+            if (!VanillaShatteredLantern(rb)) return;
 
             rb.EditLocationRequest(LocationNames.Sly, info =>
             {
@@ -40,20 +39,21 @@ namespace DarknessRandomizer.Rando
 
         private static void PlaceVanillaItems(On.UIManager.orig_StartNewGame orig, UIManager self, bool permaDeath, bool bossRush)
         {
-            if (!VanillaShatteredLantern)
+            if (!VanillaShatteredLantern())
             {
                 orig(self, permaDeath, bossRush);
                 return;
             }
 
-            List<AbstractPlacement> placements = new();
-            var sly = Finder.GetLocation(LocationNames.Sly);
-            var item = Finder.GetItem(RandoInterop.LanternShardItemName);
+            var placement = Finder.GetLocation(LocationNames.Sly).Wrap();
             for (int i = 0; i < 4; i++)
             {
-                var placement = sly.Wrap().Add(item);
-                placement.AddTag<CostTag>().Cost = Cost.NewGeoCost(300 + i * 100);
+                var item = Finder.GetItem(RandoInterop.LanternShardItemName);
+                item.AddTag<CostTag>().Cost = Cost.NewGeoCost(300 + i * 100);
+                placement.Add(item);
             }
+            List<AbstractPlacement> placements = new() { placement };
+            ItemChangerMod.AddPlacements(placements);
 
             orig(self, permaDeath, bossRush);
         }

@@ -41,7 +41,7 @@ namespace DarknessRandomizer.IC
         {
             0 => "I suppose this piece of trash is worth something?",
             1 => "What are you going to do with two pieces of trash?",
-            2 => "Are you going to weld these together or something?  How?!",
+            2 => "Are you going to weld these together or something? How?!",
             3 => "Wow, you actually found the whole thing. I'm impressed.",
             _ => "I hear that with two lanterns you can explore advanced darkness.",
         };
