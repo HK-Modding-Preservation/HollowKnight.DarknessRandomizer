@@ -65,8 +65,6 @@ namespace DarknessRandomizer.Rando
             }
             else
             {
-                // Ideally, vanilla shards would go in Sly's shop but it just doesn't work and idk why.
-                // It doesn't actually provide any interesting gameplay though, so not a priority to fix.
                 rb.RemoveFromVanilla(LocationNames.Sly, lanternItemName);
                 rb.RemoveFromVanilla(LocationNames.Sly, Placeholder(lanternItemName));
                 
