@@ -3,6 +3,7 @@ using DarknessRandomizer.IC;
 using DarknessRandomizer.Rando;
 using ItemChanger.Internal.Menu;
 using Modding;
+using PurenailCore.ModUtil;
 using RandomizerMod;
 using System;
 using System.Collections.Generic;
@@ -49,7 +50,9 @@ namespace DarknessRandomizer
 
         public GlobalSettings OnSaveGlobal() => GS ?? new();
 
-        public override string GetVersion() => Version.Instance;
+        private static readonly string Version = VersionUtil.ComputeVersion<DarknessRandomizer>();
+
+        public override string GetVersion() => Version;
 
         public MenuScreen GetMenuScreen(MenuScreen modListMenu, ModToggleDelegates? toggleDelegates)
         {
