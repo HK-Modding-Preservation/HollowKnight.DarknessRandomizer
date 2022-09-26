@@ -394,7 +394,7 @@ namespace DarknessRandomizer.Rando
         public static void Setup()
         {
             RCData.RuntimeLogicOverride.Subscribe(60f, ModifyLMB);
-            InfectionWallLogicFix.Setup(InfectionWallLogicFix.DefaultTester, InfectionWallLogicFix.DEFAULT_PRIORITY);
+            InfectionWallLogicFix.Setup(_ => RandoInterop.IsEnabled, InfectionWallLogicFix.DEFAULT_PRIORITY);
         }
 
         public static void ModifyLMB(GenerationSettings gs, LogicManagerBuilder lmb)
