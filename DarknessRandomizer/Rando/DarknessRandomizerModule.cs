@@ -6,6 +6,7 @@ using HutongGames.PlayMaker.Actions;
 using ItemChanger;
 using ItemChanger.Extensions;
 using Newtonsoft.Json;
+using PurenailCore.ICUtil;
 using System;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
@@ -36,8 +37,11 @@ namespace DarknessRandomizer.Rando
                 () => Modding.ModHooks.SetPlayerIntHook += OverrideSetInt,
                 () => Modding.ModHooks.SetPlayerIntHook -= OverrideSetInt));
             InstallHook(new LambdaHook(
-                () => On.SceneManager.Start += OnSceneManagerStart,
-                () => On.SceneManager.Start -= OnSceneManagerStart));
+                () => PriorityEvents.BeforeSceneManagerStart.Subscribe(100f, BeforeSceneManagerStart),
+                () => PriorityEvents.BeforeSceneManagerStart.Unsubscribe(100f, BeforeSceneManagerStart)));
+            InstallHook(new LambdaHook(
+                () => PriorityEvents.AfterSceneManagerStart.Subscribe(100f, AfterSceneManagerStart),
+                () => PriorityEvents.AfterSceneManagerStart.Unsubscribe(100f, AfterSceneManagerStart)));
             InstallHook(new FsmEditHook(new("Darkness Region"), ModifyDarknessRegions));
 
             // Allow dark objects to be used if the room is bright.
@@ -160,19 +164,19 @@ namespace DarknessRandomizer.Rando
             return null;
         }
 
-        private void OnSceneManagerStart(On.SceneManager.orig_Start orig, SceneManager self)
+        private void BeforeSceneManagerStart(SceneManager sm)
         {
-            var data = GetSceneData(self.gameObject.scene.name);
-            if (data?.Unchanged ?? true)
-            {
-                orig(self);
-                return;
-            }
+            var data = GetSceneData(sm.gameObject.scene.name);
+            if (data?.Unchanged ?? true) return;
 
-            self.darknessLevel = (int)data.DisplayDarkness;
-            orig(self);
+            sm.darknessLevel = (int)data.DisplayDarkness;
+        }
 
-            // Make logical changes first.
+        private void AfterSceneManagerStart(SceneManager sm)
+        {
+            var data = GetSceneData(sm.gameObject.scene.name);
+            if (data?.Unchanged ?? true) return;
+
             if (!PlayerHasLantern())
             {
                 if (data.NewDarkness == Darkness.Dark)
