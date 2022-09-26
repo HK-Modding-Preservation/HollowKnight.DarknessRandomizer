@@ -1,6 +1,7 @@
 ﻿using DarknessRandomizer.Data;
 using DarknessRandomizer.Lib;
 using Modding;
+using PurenailCore.RandoUtil;
 using RandomizerCore;
 using RandomizerCore.Logic;
 using RandomizerCore.LogicItems;
@@ -52,10 +53,6 @@ namespace DarknessRandomizer.Rando
                 { "Dashmaster", NoLogicEdit },
                 { "Mask_Shard-Deepnest", NoLogicEdit },
                 { "Vengeful_Spirit", NoLogicEdit },
-
-                // This check is special - ITEMRANDO assumes it's always open, even with infection, because even with infection you
-                // can always go around itemless. We can't assume that, because parts of the route might be dark.
-                { $"{SceneName.CrossroadsOutsideMound}[right1]", (lmb, ln, lc) => lmb.DoLogicEdit(new(ln, $"({SceneName.CrossroadsOutsideMound}[left1] | {SceneName.CrossroadsOutsideMound}[door1]) + ROOMRANDO")) },
 
                 // Specific checks with difficult platforming.
                 { "Void_Heart", CustomSceneLogicEdit(SceneName.DreamAbyss, "DARKROOMS + DIFFICULTSKIPS") },
@@ -397,6 +394,7 @@ namespace DarknessRandomizer.Rando
         public static void Setup()
         {
             RCData.RuntimeLogicOverride.Subscribe(60f, ModifyLMB);
+            InfectionWallLogicFix.Setup(InfectionWallLogicFix.DefaultTester, InfectionWallLogicFix.DEFAULT_PRIORITY);
         }
 
         public static void ModifyLMB(GenerationSettings gs, LogicManagerBuilder lmb)

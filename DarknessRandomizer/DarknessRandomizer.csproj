@@ -101,6 +101,9 @@
     <Reference Include="PlayMaker">
       <HintPath>$(HollowKnightRefs)/PlayMaker.dll</HintPath>
     </Reference>
+    <Reference Include="PurenailCore">
+      <HintPath>$(HollowKnightRefs)/Mods/PurenailCore/PurenailCore.dll</HintPath>
+    </Reference>
     <Reference Include="RandomizableLevers">
       <HintPath>$(HollowKnightRefs)/Mods/Randomizable Levers/RandomizableLevers.dll</HintPath>
     </Reference>

@@ -6,3 +6,4 @@ RandomizerCore
 Randomizer 4
 RandoPlus
 Randomizable Levers
+PurenailCore
