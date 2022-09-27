@@ -16,7 +16,7 @@ namespace DarknessRandomizer.Rando
             On.UIManager.StartNewGame += PlaceVanillaItems;
         }
 
-        private static bool VanillaShatteredLantern(RequestBuilder? rb = null) => RandoInterop.ShatteredLantern && !(rb?.gs ?? RandomizerMod.RandomizerMod.RS.GenerationSettings).PoolSettings.Keys;
+        private static bool VanillaShatteredLantern(RequestBuilder? rb = null) => RandoInterop.ShatteredLantern && !((rb?.gs ?? RandomizerMod.RandomizerMod.RS?.GenerationSettings)?.PoolSettings.Keys ?? true);
         private static void RemoveLantern(RequestBuilder rb)
         {
             if (!VanillaShatteredLantern(rb)) return;
