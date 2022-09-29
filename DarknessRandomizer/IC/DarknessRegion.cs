@@ -1,6 +1,7 @@
 ﻿using DarknessRandomizer.Data;
 using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
+using PurenailCore.ModUtil;
 using System.Collections.Generic;
 using UnityEngine;
 using UObject = UnityEngine.Object;
@@ -40,22 +41,18 @@ namespace DarknessRandomizer.IC
             obj.SetActive(true);
         }
 
-        public class Preloader : ItemChanger.Internal.Preloaders.Preloader
+        public class Preloader : PurenailCore.ModUtil.Preloader
         {
-            public static Preloader Instance { get; } = new();
+            public static readonly Preloader Instance = new();
 
-            public override IEnumerable<(string, string)> GetPreloadNames()
+            [Preload("Cliffs_01", "Darkness Region (3)")]
+            private GameObject _darknessRegion;
+
+            public GameObject NewDarknessRegion()
             {
-                yield return (SceneName.CliffsMain.Name(), "Darkness Region (3)");
-            }
-
-            private GameObject darknessRegionTemplate;
-            public GameObject NewDarknessRegion() => UObject.Instantiate(darknessRegionTemplate);
-
-            public override void SavePreloads(Dictionary<string, Dictionary<string, GameObject>> objectsByScene)
-            {
-                darknessRegionTemplate = objectsByScene[SceneName.CliffsMain.Name()]["Darkness Region (3)"];
-                darknessRegionTemplate.AddComponent<CustomDarknessRegion>();
+                var obj = UObject.Instantiate(_darknessRegion);
+                obj.AddComponent<CustomDarknessRegion>();
+                return obj;
             }
         }
     }
