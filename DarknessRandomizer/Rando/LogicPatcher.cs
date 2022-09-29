@@ -1,5 +1,4 @@
 ﻿using DarknessRandomizer.Data;
-using DarknessRandomizer.Lib;
 using Modding;
 using PurenailCore.RandoUtil;
 using RandomizerCore;
@@ -9,7 +8,6 @@ using RandomizerCore.LogicItems.Templates;
 using RandomizerCore.StringLogic;
 using RandomizerMod.RC;
 using RandomizerMod.Settings;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -394,7 +392,7 @@ namespace DarknessRandomizer.Rando
         public static void Setup()
         {
             RCData.RuntimeLogicOverride.Subscribe(60f, ModifyLMB);
-            InfectionWallLogicFix.Setup(_ => RandoInterop.IsEnabled, InfectionWallLogicFix.DEFAULT_PRIORITY);
+            InfectionWallLogicFix.Setup(_ => RandoInterop.IsEnabled, 59f);
         }
 
         public static void ModifyLMB(GenerationSettings gs, LogicManagerBuilder lmb)

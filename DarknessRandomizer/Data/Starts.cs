@@ -1,4 +1,4 @@
-﻿using DarknessRandomizer.Lib;
+﻿using PurenailCore.SystemUtil;
 using System.Collections.Generic;
 
 namespace DarknessRandomizer.Data

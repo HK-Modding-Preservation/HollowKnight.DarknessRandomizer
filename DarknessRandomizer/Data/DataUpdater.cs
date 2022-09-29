@@ -1,4 +1,4 @@
-﻿using DarknessRandomizer.Lib;
+﻿using PurenailCore.SystemUtil;
 using RandomizerCore.Logic;
 using RandomizerMod.RC;
 using System;

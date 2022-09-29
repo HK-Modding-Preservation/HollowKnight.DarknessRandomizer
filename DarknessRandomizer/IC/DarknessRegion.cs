@@ -1,5 +1,4 @@
 ﻿using DarknessRandomizer.Data;
-using DarknessRandomizer.Lib;
 using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
 using System.Collections.Generic;
@@ -31,7 +30,7 @@ namespace DarknessRandomizer.IC
             fsm.FsmVariables.FindFsmInt("Darkness").Value = (int)Darkness;
             fsm.GetState("Enter").AddLastAction(new Lambda(() =>
             {
-                if (!PlayerData.instance.HasLantern())
+                if (!PlayerData.instance.GetBool(nameof(PlayerData.instance.hasLantern)))
                 {
                     GameObject.Find("/Knight/Vignette/Darkness Plates")?.SetActive(true);
                 }

@@ -1,10 +1,9 @@
 ﻿using DarknessRandomizer.Data;
 using DarknessRandomizer.Rando;
+using PurenailCore.SystemUtil;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.Settings;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace DarknessRandomizer.Lib
 {
@@ -28,7 +27,6 @@ namespace DarknessRandomizer.Lib
             costWeight = cData.CostWeight ?? (50 * cData.SceneCount) / cData.SceneCount;
         }
 
-        // TODO: Switch chaos mode to a scene-based darkness algorithm.
         public override void SpreadDarkness(out SceneDarknessDict darknessOverrides, out AlgorithmStats stats)
         {
             // Phase 0: Everything starts as bright.

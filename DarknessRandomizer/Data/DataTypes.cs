@@ -3,7 +3,6 @@ using DarknessRandomizer.Rando;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Policy;
 
 namespace DarknessRandomizer.Data
 {

@@ -2,8 +2,6 @@
 using DarknessRandomizer.Rando;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.Settings;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace DarknessRandomizer.Lib

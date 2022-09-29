@@ -1,5 +1,4 @@
 ﻿using DarknessRandomizer.Data;
-using DarknessRandomizer.Lib;
 using ItemChanger;
 using Newtonsoft.Json;
 using RandomizerCore.Logic;

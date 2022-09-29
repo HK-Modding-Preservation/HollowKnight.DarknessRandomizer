@@ -7,9 +7,9 @@ using ItemChanger;
 using ItemChanger.Extensions;
 using Newtonsoft.Json;
 using PurenailCore.ICUtil;
+using PurenailCore.SystemUtil;
 using System;
 using System.Collections.Generic;
-using System.Net.Http.Headers;
 using UnityEngine;
 
 namespace DarknessRandomizer.Rando

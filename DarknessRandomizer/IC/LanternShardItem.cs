@@ -1,7 +1,6 @@
 ﻿using ItemChanger;
 using ItemChanger.Components;
 using ItemChanger.Tags;
-using ItemChanger.UIDefs;
 using System;
 using UnityEngine;
 
