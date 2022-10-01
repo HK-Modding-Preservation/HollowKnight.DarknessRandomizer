@@ -30,13 +30,13 @@ namespace DarknessRandomizer.Rando
             logicOverridesByName = new()
             {
                 // Dream warriors do not appear in dark rooms without lantern.
-                { WaypointName.DefeatedElderHu, CustomDarkLogicEdit("FALSE") },
-                { WaypointName.DefeatedGalien, CustomDarkLogicEdit("FALSE") },
-                { WaypointName.DefeatedGorb, CustomDarkLogicEdit("FALSE") },
-                { WaypointName.DefeatedMarkoth, CustomDarkLogicEdit("FALSE") },
-                { WaypointName.DefeatedMarmu, CustomDarkLogicEdit("FALSE") },
-                { WaypointName.DefeatedNoEyes, CustomDarkLogicEdit("FALSE") },
-                { WaypointName.DefeatedXero, CustomDarkLogicEdit("FALSE") },
+                { WaypointName.DefeatedElderHu, CustomSceneLogicEdit(SceneName.FungalElderHu, "FALSE") },
+                { WaypointName.DefeatedGalien, CustomSceneLogicEdit(SceneName.DeepnestGalienArena, "FALSE") },
+                { WaypointName.DefeatedGorb, CustomSceneLogicEdit(SceneName.CliffsGorb, "FALSE") },
+                { WaypointName.DefeatedMarkoth, CustomSceneLogicEdit(SceneName.EdgeMarkothArena, "FALSE") },
+                { WaypointName.DefeatedMarmu, CustomSceneLogicEdit(SceneName.GardensGardensStag, "FALSE") },
+                { WaypointName.DefeatedNoEyes, CustomSceneLogicEdit(SceneName.GreenpathStoneSanctuary, "FALSE") },
+                { WaypointName.DefeatedXero, CustomSceneLogicEdit(SceneName.GroundsXero, "FALSE") },
 
                 // Dream bosses are coded specially because the checks are located where the dream nail is swung,
                 // but we care whether or not the actual fight room is dark. So we have to account for both rooms.
