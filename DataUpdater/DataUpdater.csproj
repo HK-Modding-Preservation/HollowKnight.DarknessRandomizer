@@ -7,7 +7,6 @@
   </PropertyGroup>
   <Import Project="../DarknessRandomizer/LocalOverrides.targets" Condition="Exists('../DarknessRandomizer/LocalOverrides.targets')" />
   <ItemGroup>
-    <ProjectReference Include="..\..\HollowKnight.PurenailCore\PurenailCore\PurenailCore.csproj" />
     <ProjectReference Include="..\DarknessRandomizer\DarknessRandomizer.csproj" />
   </ItemGroup>
   <ItemGroup>

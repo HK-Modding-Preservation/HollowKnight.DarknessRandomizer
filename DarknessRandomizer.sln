@@ -14,8 +14,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataUpdater", "DataUpdater\DataUpdater.csproj", "{16819D3A-B9EA-4AA4-92DE-26029D9B133E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PurenailCore", "..\HollowKnight.PurenailCore\PurenailCore\PurenailCore.csproj", "{A7B616FF-2F7D-45DF-B4AF-B6EBD64137BD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,10 +28,6 @@ Global
 		{16819D3A-B9EA-4AA4-92DE-26029D9B133E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16819D3A-B9EA-4AA4-92DE-26029D9B133E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16819D3A-B9EA-4AA4-92DE-26029D9B133E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A7B616FF-2F7D-45DF-B4AF-B6EBD64137BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7B616FF-2F7D-45DF-B4AF-B6EBD64137BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7B616FF-2F7D-45DF-B4AF-B6EBD64137BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7B616FF-2F7D-45DF-B4AF-B6EBD64137BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
