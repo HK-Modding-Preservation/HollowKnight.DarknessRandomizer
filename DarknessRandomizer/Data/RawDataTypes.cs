@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 
+using JsonUtil = PurenailCore.SystemUtil.JsonUtil<DarknessRandomizer.DarknessRandomizer>;
+
 namespace DarknessRandomizer.Data
 {
     public class RawSceneMetadata : BaseSceneMetadata<string>

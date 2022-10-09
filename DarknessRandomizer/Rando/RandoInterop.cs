@@ -1,8 +1,9 @@
 ﻿using DarknessRandomizer.Imports;
 using ItemChanger;
-using Newtonsoft.Json;
 using RandomizerMod.RC;
 using System.IO;
+
+using JsonUtil = PurenailCore.SystemUtil.JsonUtil<DarknessRandomizer.DarknessRandomizer>;
 
 namespace DarknessRandomizer.Rando
 {
@@ -45,8 +46,7 @@ namespace DarknessRandomizer.Rando
         {
             if (!IsEnabled) return;
             tw.WriteLine("Logging DarknessRando DarknessRandomizationSettings:");
-            using JsonTextWriter jtw = new(tw) { CloseOutput = false };
-            JsonUtil._js.Serialize(jtw, LS.Settings);
+            JsonUtil.Serialize(LS.Settings, tw);
             tw.WriteLine();
         }
     }

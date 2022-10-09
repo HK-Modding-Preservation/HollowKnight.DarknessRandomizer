@@ -4,6 +4,8 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 
+using JsonUtil = PurenailCore.SystemUtil.JsonUtil<DarknessRandomizer.DarknessRandomizer>;
+
 namespace DarknessRandomizer.Data
 {
     public class SceneMetadata : BaseSceneMetadata<SceneName>
