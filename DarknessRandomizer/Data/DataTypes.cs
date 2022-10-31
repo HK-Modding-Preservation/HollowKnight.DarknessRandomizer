@@ -68,9 +68,9 @@ namespace DarknessRandomizer.Data
 
         public static void Load() { DarknessRandomizer.Log("Loaded ClusterData"); }
 
-        public bool CanBeDarknessSource(DarknessRandomizationSettings settings) => CanBeDarknessSource(SceneData.Get, settings);
+        public bool CanBeDarknessSource(RandomizationSettings settings) => CanBeDarknessSource(SceneData.Get, settings);
 
-        public Darkness MaximumDarkness(DarknessRandomizationSettings settings) => MaximumDarkness(SceneData.Get, settings);
+        public Darkness MaximumDarkness(RandomizationSettings settings) => MaximumDarkness(SceneData.Get, settings);
 
         public Darkness MinimumDarkness() => MinimumDarkness(SceneData.Get);
     }

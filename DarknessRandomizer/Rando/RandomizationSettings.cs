@@ -11,8 +11,10 @@ namespace DarknessRandomizer.Rando
         Cursed
     }
 
-    public class DarknessRandomizationSettings
+    public class RandomizationSettings
     {
+        public const string Version = "1";
+
         public bool RandomizeDarkness = false;
         public DarknessLevel DarknessLevel = DarknessLevel.Dark;
         public bool Chaos = false;
@@ -22,9 +24,9 @@ namespace DarknessRandomizer.Rando
         [JsonIgnore]
         public bool IsEnabled => RandomizeDarkness || ShatteredLantern;
 
-        public DarknessRandomizationSettings Clone()
+        public RandomizationSettings Clone()
         {
-            return (DarknessRandomizationSettings)MemberwiseClone();
+            return (RandomizationSettings)MemberwiseClone();
         }
 
         public int GetDarknessBudget(Random r)

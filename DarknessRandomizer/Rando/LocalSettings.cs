@@ -7,7 +7,7 @@ namespace DarknessRandomizer.Rando
 {
     public class LocalSettings
     {
-        public DarknessRandomizationSettings Settings;
+        public RandomizationSettings Settings;
         public SceneDarknessDict DarknessOverrides = new();
         public AlgorithmStats Stats = new();
 

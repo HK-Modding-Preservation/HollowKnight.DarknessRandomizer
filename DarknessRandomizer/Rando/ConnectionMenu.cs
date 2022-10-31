@@ -1,8 +1,11 @@
-﻿using MenuChanger;
+﻿using ItemChanger;
+using MenuChanger;
 using MenuChanger.Extensions;
 using MenuChanger.MenuElements;
 using MenuChanger.MenuPanels;
+using Modding;
 using RandomizerMod.Menu;
+using RandoSettingsManager;
 using System;
 using System.Collections.Generic;
 using static RandomizerMod.Localization;
@@ -17,7 +20,14 @@ namespace DarknessRandomizer.Rando
         {
             RandomizerMenuAPI.AddMenuPage(OnRandomizerMenuConstruction, TryGetMenuButton);
             MenuChangerMod.OnExitMainMenu += () => Instance = null;
+
+            if (ModHooks.GetMod("RandoSettingsManager") is Mod)
+            {
+                HookRandoSettingsManager();
+            }
         }
+
+        private static void HookRandoSettingsManager() => RandoSettingsManagerMod.Instance.RegisterConnection(SettingsProxy.Instance);
 
         public static void OnRandomizerMenuConstruction(MenuPage page) => Instance = new(page);
 
@@ -27,9 +37,14 @@ namespace DarknessRandomizer.Rando
             return true;
         }
 
-        public SmallButton entryButton;
+        private SmallButton entryButton;
+        private MenuItem<bool> randomizeDarkness;
+        private MenuItem<DarknessLevel> darknessLevel;
+        private MenuItem<bool> chaos;
+        private MenuItem<bool> shatteredLantern;
+        private MenuItem<bool> twoDupeShards;
 
-        private static T Lookup<T>(MenuElementFactory<DarknessRandomizationSettings> factory, string name) where T : MenuItem => factory.ElementLookup[name] as T ?? throw new ArgumentException("Menu error");
+        private static T Lookup<T>(MenuElementFactory<RandomizationSettings> factory, string name) where T : MenuItem => factory.ElementLookup[name] as T ?? throw new ArgumentException("Menu error");
 
         private void LockIfFalse(MenuItem<bool> src, List<ILockable> dest)
         {
@@ -56,12 +71,12 @@ namespace DarknessRandomizer.Rando
             entryButton.AddHideAndShowEvent(mainPage);
 
             var settings = DarknessRandomizer.GS.DarknessRandomizationSettings;
-            MenuElementFactory<DarknessRandomizationSettings> factory = new(mainPage, settings);
-            var randomizeDarkness = Lookup<MenuItem<bool>>(factory, nameof(settings.RandomizeDarkness));
-            var darknessLevel = Lookup<MenuItem>(factory, nameof(settings.DarknessLevel));
-            var chaos = Lookup<MenuItem>(factory, nameof(settings.Chaos));
-            var shatteredLantern = Lookup<MenuItem<bool>>(factory, nameof(settings.ShatteredLantern));
-            var twoDupeShards = Lookup<MenuItem>(factory, nameof(settings.TwoDupeShards));
+            MenuElementFactory<RandomizationSettings> factory = new(mainPage, settings);
+            randomizeDarkness = Lookup<MenuItem<bool>>(factory, nameof(settings.RandomizeDarkness));
+            darknessLevel = Lookup<MenuItem<DarknessLevel>>(factory, nameof(settings.DarknessLevel));
+            chaos = Lookup<MenuItem<bool>>(factory, nameof(settings.Chaos));
+            shatteredLantern = Lookup<MenuItem<bool>>(factory, nameof(settings.ShatteredLantern));
+            twoDupeShards = Lookup<MenuItem<bool>>(factory, nameof(settings.TwoDupeShards));
 
             LockIfFalse(randomizeDarkness, new() { darknessLevel, chaos });
             LockIfFalse(shatteredLantern, new() { twoDupeShards });
@@ -73,6 +88,19 @@ namespace DarknessRandomizer.Rando
             gridItemPanel.Insert(1, 0, darknessLevel);
             gridItemPanel.Insert(1, 1, twoDupeShards);
             gridItemPanel.Insert(2, 0, chaos);
+        }
+
+        public void ApplySettings(RandomizationSettings settings)
+        {
+            darknessLevel.Unlock();
+            darknessLevel.SetValue(settings.DarknessLevel);
+            chaos.Unlock();
+            chaos.SetValue(settings.Chaos);
+            twoDupeShards.Unlock();
+            twoDupeShards.SetValue(settings.TwoDupeShards);
+
+            randomizeDarkness.SetValue(settings.RandomizeDarkness);
+            shatteredLantern.SetValue(settings.ShatteredLantern);
         }
     }
 }

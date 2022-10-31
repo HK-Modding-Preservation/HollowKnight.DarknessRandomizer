@@ -101,14 +101,14 @@ namespace DarknessRandomizer.Data
         [JsonIgnore]
         public int? CostWeight => DarkSettings?.CostWeight;
 
-        public bool CanBeDarknessSource(SceneLookup SL, DarknessRandomizationSettings settings = null)
+        public bool CanBeDarknessSource(SceneLookup SL, RandomizationSettings settings = null)
         {
             if (MaximumDarkness(SL, settings) < Darkness.Dark) return false;
             if (OverrideCannotBeDarknessSource ?? false) return false;
             return EnumerateRelativeDarkness().All(e => e.Value != RelativeDarkness.Darker);
         }
 
-        public Darkness MaximumDarkness(SceneLookup SL, DarknessRandomizationSettings settings = null)
+        public Darkness MaximumDarkness(SceneLookup SL, RandomizationSettings settings = null)
         {
             var d = Darkness.Bright;
             foreach (var sn in EnumerateSceneNames())

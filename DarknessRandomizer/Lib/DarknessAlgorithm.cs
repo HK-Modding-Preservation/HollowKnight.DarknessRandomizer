@@ -18,7 +18,7 @@ namespace DarknessRandomizer.Lib
 
     public abstract class DarknessAlgorithm
     {
-        public static DarknessAlgorithm Select(GenerationSettings GS, StartDef start, DarknessRandomizationSettings DRS)
+        public static DarknessAlgorithm Select(GenerationSettings GS, StartDef start, RandomizationSettings DRS)
         {
             if (DRS.Chaos)
             {
@@ -32,13 +32,13 @@ namespace DarknessRandomizer.Lib
 
         protected readonly GenerationSettings GS;
         protected readonly StartDef start;
-        protected readonly DarknessRandomizationSettings DRS;
+        protected readonly RandomizationSettings DRS;
 
         protected readonly Random r;
         protected int darknessAvailable;
         protected readonly HashSet<ClusterName> forcedBrightClusters;
 
-        protected DarknessAlgorithm(GenerationSettings GS, StartDef start, DarknessRandomizationSettings DRS)
+        protected DarknessAlgorithm(GenerationSettings GS, StartDef start, RandomizationSettings DRS)
         {
             this.GS = GS;
             this.start = start;

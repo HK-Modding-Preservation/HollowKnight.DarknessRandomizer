@@ -16,7 +16,7 @@ namespace DarknessRandomizer.Lib
         private readonly ClusterDarknessDict clusterDarkness;
         private readonly WeightedHeap<ClusterName> darkCandidates;
 
-        public DefaultDarknessAlgorithm(GenerationSettings GS, StartDef start, DarknessRandomizationSettings DRS) : base(GS, start, DRS)
+        public DefaultDarknessAlgorithm(GenerationSettings GS, StartDef start, RandomizationSettings DRS) : base(GS, start, DRS)
         {
             this.clusterDarkness = new();
             this.darkCandidates = new();
