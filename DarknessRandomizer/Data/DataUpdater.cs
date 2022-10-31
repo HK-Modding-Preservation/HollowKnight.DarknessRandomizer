@@ -50,24 +50,9 @@ namespace DarknessRandomizer.Data
             toRemove.ForEach(k => dst.Remove(k));
         }
 
-        private static string InferGitRoot(string path)
-        {
-            var info = Directory.GetParent(path);
-            while (info != null)
-            {
-                if (Directory.Exists(Path.Combine(info.FullName, ".git")))
-                {
-                    return info.FullName;
-                }
-                info = Directory.GetParent(info.FullName);
-            }
-
-            return path;
-        }
-
         public static void Run()
         {
-            string root = InferGitRoot(Directory.GetCurrentDirectory());
+            string root = JsonUtil.InferGitRoot();
             Console.WriteLine("Updating data");
 
             // Load all the data.
