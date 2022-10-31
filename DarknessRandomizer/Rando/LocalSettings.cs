@@ -13,7 +13,7 @@ namespace DarknessRandomizer.Rando
 
         public LocalSettings(RandomizerMod.Settings.GenerationSettings GS, StartDef startDef)
         {
-            Settings = DarknessRandomizer.GS.DarknessRandomizationSettings.Clone();
+            Settings = DarknessRandomizer.GS.RandomizationSettings.Clone();
 
             if (Settings.RandomizeDarkness)
             {

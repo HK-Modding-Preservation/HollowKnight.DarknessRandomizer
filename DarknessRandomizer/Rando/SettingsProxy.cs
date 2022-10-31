@@ -28,7 +28,7 @@ namespace DarknessRandomizer.Rando
 
         public override bool TryProvideSettings(out RandomizationSettings? settings)
         {
-            settings = DarknessRandomizer.GS.DarknessRandomizationSettings;
+            settings = DarknessRandomizer.GS.RandomizationSettings;
             return settings.IsEnabled;
         }
 

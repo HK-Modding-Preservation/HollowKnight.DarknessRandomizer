@@ -62,7 +62,7 @@ namespace DarknessRandomizer.Rando
             onChange(src.Value);
         }
 
-        private void SetEnabledColor() => entryButton.Text.color = DarknessRandomizer.GS.DarknessRandomizationSettings.IsEnabled ? Colors.TRUE_COLOR : Colors.DEFAULT_COLOR; 
+        private void SetEnabledColor() => entryButton.Text.color = DarknessRandomizer.GS.RandomizationSettings.IsEnabled ? Colors.TRUE_COLOR : Colors.DEFAULT_COLOR; 
 
         private ConnectionMenu(MenuPage landingPage)
         {
@@ -70,7 +70,7 @@ namespace DarknessRandomizer.Rando
             entryButton = new(landingPage, Localize("Darkness Rando"));
             entryButton.AddHideAndShowEvent(mainPage);
 
-            var settings = DarknessRandomizer.GS.DarknessRandomizationSettings;
+            var settings = DarknessRandomizer.GS.RandomizationSettings;
             MenuElementFactory<RandomizationSettings> factory = new(mainPage, settings);
             randomizeDarkness = Lookup<MenuItem<bool>>(factory, nameof(settings.RandomizeDarkness));
             darknessLevel = Lookup<MenuItem<DarknessLevel>>(factory, nameof(settings.DarknessLevel));

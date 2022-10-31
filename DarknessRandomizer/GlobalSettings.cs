@@ -4,6 +4,6 @@ namespace DarknessRandomizer
 {
     public class GlobalSettings
     {
-        public RandomizationSettings DarknessRandomizationSettings = new();
+        public RandomizationSettings RandomizationSettings = new();
     }
 }

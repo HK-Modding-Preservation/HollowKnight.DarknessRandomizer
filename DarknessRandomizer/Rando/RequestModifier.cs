@@ -58,7 +58,7 @@ namespace DarknessRandomizer.Rando
             if (rb.gs.PoolSettings.Keys)
             {
                 int numShards = LanternShards.TotalNumShards;
-                numShards += DarknessRandomizer.GS.DarknessRandomizationSettings.TwoDupeShards ? 2 : 0;
+                numShards += DarknessRandomizer.GS.RandomizationSettings.TwoDupeShards ? 2 : 0;
                 numShards *= rb.gs.DuplicateItemSettings.DuplicateUniqueKeys ? 2 : 1;
                 rb.AddItemByName(lanternShardItemName, LanternShards.TotalNumShards);
                 rb.AddItemByName(Placeholder(lanternShardItemName), numShards - LanternShards.TotalNumShards);

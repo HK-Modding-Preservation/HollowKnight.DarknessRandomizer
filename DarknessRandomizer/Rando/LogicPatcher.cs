@@ -245,7 +245,7 @@ namespace DarknessRandomizer.Rando
         public SceneNameInferrer GetSceneNameInferrer(string logicName) => sceneNameInferrerOverrides.TryGetValue(logicName, out SceneNameInferrer sni) ? sni : InferSceneName;
 
         // Don't infer scene names for rooms which cannot be dark.
-        private static bool SceneCanBeDark(SceneName sceneName) => Data.SceneData.Get(sceneName).MaximumDarkness >= Darkness.Dark && ClusterData.Get(sceneName).MaximumDarkness(DarknessRandomizer.GS.DarknessRandomizationSettings) >= Darkness.Dark;
+        private static bool SceneCanBeDark(SceneName sceneName) => Data.SceneData.Get(sceneName).MaximumDarkness >= Darkness.Dark && ClusterData.Get(sceneName).MaximumDarkness(DarknessRandomizer.GS.RandomizationSettings) >= Darkness.Dark;
 
         private bool InferSceneName(string term, out SceneName sceneName)
         {
