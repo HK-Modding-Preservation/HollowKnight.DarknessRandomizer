@@ -18,7 +18,7 @@ namespace DarknessRandomizer.Data
 
     // Because we use compiled identifier types, and the code which updates those types also depends on them, we need two classes
     // of data types in order to bootstrap. One, DataTypes.cs, uses the strongly-typed identifiers, where as RawDataTypes.cs uses
-    // only strings. The graph updated code uses raw data types, whereas the rest uses DataTypes.cs.
+    // only strings. The DataUpdater code uses raw data types, whereas the rest uses DataTypes.cs.
     //
     // Both sets of classes load from the same json files and therefore must have compatible serialization as well.
 
