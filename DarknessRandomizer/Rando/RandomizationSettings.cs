@@ -13,8 +13,6 @@ namespace DarknessRandomizer.Rando
 
     public class RandomizationSettings
     {
-        public const string Version = "1";
-
         public bool RandomizeDarkness = false;
         public DarknessLevel DarknessLevel = DarknessLevel.Dark;
         public bool Chaos = false;

@@ -1,10 +1,7 @@
 ﻿using DarknessRandomizer.Data;
 using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
-using PurenailCore.ModUtil;
-using System.Collections.Generic;
 using UnityEngine;
-using UObject = UnityEngine.Object;
 
 namespace DarknessRandomizer.IC
 {
