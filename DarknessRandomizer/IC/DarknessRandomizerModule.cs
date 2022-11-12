@@ -1,5 +1,4 @@
 ﻿using DarknessRandomizer.Data;
-using DarknessRandomizer.IC;
 using DarknessRandomizer.Lib;
 using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
@@ -12,7 +11,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DarknessRandomizer.Rando
+namespace DarknessRandomizer.IC
 {
     public class DarknessRandomizerModule : ItemChanger.Modules.Module
     {
@@ -126,7 +125,7 @@ namespace DarknessRandomizer.Rando
                 get
                 {
                     var ddo = Data.SceneData.Get(CurrentScene).DisplayDarknessOverrides;
-                    return (ddo?.Applies(NewDarkness) ?? false) ? ddo.SceneDarkness : NewDarkness;
+                    return ddo?.Applies(NewDarkness) ?? false ? ddo.SceneDarkness : NewDarkness;
                 }
             }
 
@@ -151,7 +150,7 @@ namespace DarknessRandomizer.Rando
         private DarknessData? ComputeSceneData(string sceneName)
         {
             if (SceneName.TryGetValue(sceneName, out SceneName currentScene)
-                &&  DarknessOverrides.TryGetValue(currentScene, out Darkness newDarkness))
+                && DarknessOverrides.TryGetValue(currentScene, out Darkness newDarkness))
             {
                 return new()
                 {
@@ -208,7 +207,7 @@ namespace DarknessRandomizer.Rando
             if (d == null) return;
 
             // Disable this darkness region only if our change obsoletes it.
-            if ((data.Brighter && d > data.NewDarkness) || (data.Darker && d < data.NewDarkness))
+            if (data.Brighter && d > data.NewDarkness || data.Darker && d < data.NewDarkness)
             {
                 fsm.GetState("Init").ClearTransitions();
             }
@@ -344,10 +343,12 @@ namespace DarknessRandomizer.Rando
     {
         public FsmEditHook(SceneName scene, FsmID id, Action<PlayMakerFSM> action) : base(
             () => Events.AddFsmEdit(scene.Name(), id, action),
-            () => Events.RemoveFsmEdit(scene.Name(), id, action)) { }
+            () => Events.RemoveFsmEdit(scene.Name(), id, action))
+        { }
 
         public FsmEditHook(FsmID id, Action<PlayMakerFSM> action) : base(
             () => Events.AddFsmEdit(id, action),
-            () => Events.RemoveFsmEdit(id, action)) { }
+            () => Events.RemoveFsmEdit(id, action))
+        { }
     }
 }

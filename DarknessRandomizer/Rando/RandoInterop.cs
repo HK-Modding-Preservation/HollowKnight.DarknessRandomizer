@@ -1,4 +1,5 @@
-﻿using DarknessRandomizer.Imports;
+﻿using DarknessRandomizer.IC;
+using DarknessRandomizer.Imports;
 using ItemChanger;
 using RandomizerMod.RC;
 using System.IO;
