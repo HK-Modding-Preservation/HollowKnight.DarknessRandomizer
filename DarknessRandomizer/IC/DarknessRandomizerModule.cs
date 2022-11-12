@@ -7,9 +7,11 @@ using ItemChanger.Extensions;
 using Newtonsoft.Json;
 using PurenailCore.ICUtil;
 using PurenailCore.SystemUtil;
+using SFCore.Utils;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace DarknessRandomizer.IC
 {
@@ -72,6 +74,9 @@ namespace DarknessRandomizer.IC
             PreservedHazardRespawns.GetOrAddNew(SceneName.FogUumuuArena).Add("Hazard Respawn Trigger v2 (6)");
             PreservedHazardRespawns.GetOrAddNew(SceneName.FungalMantisLords).Add("Hazard Respawn Trigger (5)");
             PreservedHazardRespawns.GetOrAddNew(SceneName.CrystalMound).Add("Hazard Respawn Trigger v2 (3)");
+
+            // Install escape hatch for dark Dreamnail cutscene
+            InstallDreamnailEscape();
         }
 
         public override void Unload() => UnloadHooks.ForEach(a => a.Invoke());
@@ -101,6 +106,23 @@ namespace DarknessRandomizer.IC
                 if (!PreservedHazardRespawns.TryGetValue(sceneData.CurrentScene, out HashSet<string> names) || !names.Contains(obj.name))
                 {
                     DeactiveGameObject(obj.gameObject);
+                }
+            }
+
+            if (sceneData.CurrentScene == SceneName.DreamNail &&
+                DarknessOverrides[SceneName.DreamNail] == Darkness.Dark &&
+                !PlayerData.instance.GetBool(nameof(PlayerData.hasLantern)))
+            {
+                var door = GameObject.Find("door_dreamReturn");
+                var hrm = door.transform.Find("Hazard Respawn Marker");
+                var hsl = hrm.GetComponent<HazardRespawnMarker>().GetAttr<HazardRespawnMarker, Vector2>("heroSpawnLocation");
+                for (int i = 2; i <= 4; i++)
+                {
+                    var door2 = GameObject.Find($"door_dreamReturn{i}");
+                    door2.transform.position = door.transform.position;
+                    var hrm2 = door2.transform.Find("Hazard Respawn Marker");
+                    hrm2.transform.position = hrm.transform.position;
+                    hrm2.GetComponent<HazardRespawnMarker>().SetAttr("heroSpawnLocation", hsl);
                 }
             }
         }
@@ -209,7 +231,7 @@ namespace DarknessRandomizer.IC
             // Disable this darkness region only if our change obsoletes it.
             if (data.Brighter && d > data.NewDarkness || data.Darker && d < data.NewDarkness)
             {
-                fsm.GetState("Init").ClearTransitions();
+                GetState(fsm, "Init").ClearTransitions();
             }
         }
 
@@ -260,13 +282,16 @@ namespace DarknessRandomizer.IC
             return false;
         }
 
+        // Disambig with SFCore
+        private static FsmState GetState(PlayMakerFSM fsm, string name) => ItemChanger.Extensions.PlayMakerExtensions.GetState(fsm, name);
+
         private void InstallMaybeDisableLanternCheck(SceneName sceneName, FsmID id)
         {
             InstallHook(new FsmEditHook(sceneName, id, fsm =>
             {
                 if (!IsDark(sceneName))
                 {
-                    fsm.GetState("Check").GetFirstActionOfType<PlayerDataBoolTest>().boolName = TrueBool;
+                    GetState(fsm, "Check").GetFirstActionOfType<PlayerDataBoolTest>().boolName = TrueBool;
                 }
             }));
         }
@@ -279,7 +304,7 @@ namespace DarknessRandomizer.IC
             {
                 if (IsDark(sceneName))
                 {
-                    fsm.GetState("Can Inspect?").GetFirstActionOfType<BoolTest>().boolVariable = new FsmBool() { Value = false };
+                    GetState(fsm, "Can inspet?").GetFirstActionOfType<BoolTest>().boolVariable = new FsmBool() { Value = false };
                     fsm.gameObject.GetComponent<tk2dSprite>().color = darkTollColor;
                 }
             }));
@@ -309,11 +334,30 @@ namespace DarknessRandomizer.IC
             {
                 if (IsDark(SceneName.CityTollBench))
                 {
-                    fsm.GetState("Can Talk?").GetFirstActionOfType<BoolTest>().boolVariable = new FsmBool() { Value = false };
+                    GetState(fsm, "Can Talk?").GetFirstActionOfType<BoolTest>().boolVariable = new FsmBool() { Value = false };
                     fsm.gameObject.GetComponent<tk2dSprite>().color = darkTollColor;
                     DeactiveGameObject(GameObject.Find("/Mage Door/Prompt Marker"));
                 }
             }));
+        }
+        private void InstallDreamnailEscape()
+        {
+            DeployerHook.Test dreamNailDark = () => DarknessOverrides[SceneName.DreamNail] == Darkness.Dark;
+            DeployerHook.Test dreamNailDarkNoLantern = () => dreamNailDark() && !PlayerData.instance.GetBool(nameof(PlayerData.hasLantern));
+
+            InstallHook(new DeployerHook(new DreamnailWarp(), dreamNailDarkNoLantern));
+            InstallHook(new DeployerHook(new DreamnailWarpGlow(), dreamNailDarkNoLantern));
+            InstallHook(new DeployerHook(new DreamnailWarpTarget(), dreamNailDark));
+
+            InstallHook(new LambdaHook(
+                () => On.GameManager.EnterHero += BlockAdditiveGateSearch,
+                () => On.GameManager.EnterHero -= BlockAdditiveGateSearch));
+        }
+
+        private void BlockAdditiveGateSearch(On.GameManager.orig_EnterHero orig, GameManager gm, bool additiveGateSearch)
+        {
+            if (!additiveGateSearch || gm.GetAttr<GameManager, string>("entryGateName") == DreamnailWarpTarget.GATE_NAME) orig(gm, false);
+            else orig(gm, additiveGateSearch);
         }
     }
 
@@ -350,5 +394,22 @@ namespace DarknessRandomizer.IC
             () => Events.AddFsmEdit(id, action),
             () => Events.RemoveFsmEdit(id, action))
         { }
+    }
+
+    class DeployerHook : LambdaHook
+    {
+        public delegate bool Test();
+
+        public DeployerHook(Deployer deployer, Test test) : this(deployer.SceneName, scene => OnSceneLoad(deployer, test, scene)) { }
+
+        private DeployerHook(string sceneName, Action<Scene> action) : base(
+            () => Events.AddSceneChangeEdit(sceneName, action),
+            () => Events.RemoveSceneChangeEdit(sceneName, action))
+        { }
+
+        private static void OnSceneLoad(Deployer deployer, Test test, Scene scene)
+        {
+            if (deployer.SceneName == scene.name && test()) deployer.OnSceneChange(scene);
+        }
     }
 }

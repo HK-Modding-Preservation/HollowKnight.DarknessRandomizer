@@ -8,3 +8,4 @@ RandomizerCore
 Randomizer 4
 RandoPlus
 RandoSettingsManager
+SFCore

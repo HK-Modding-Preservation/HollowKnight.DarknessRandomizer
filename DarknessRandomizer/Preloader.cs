@@ -1,5 +1,4 @@
-﻿using DarknessRandomizer.IC;
-using PurenailCore.ModUtil;
+﻿using PurenailCore.ModUtil;
 using UnityEngine;
 
 namespace DarknessRandomizer
