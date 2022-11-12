@@ -1956,28 +1956,14 @@
   },
   "RestingGrounds_02": {
     "Alias": "Grounds_Xero",
-    "Cluster": "GroundsXero",
+    "Cluster": "GroundsMain",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "DisplayDarknessOverrides": {
-      "Conditions": [
-        "Dark"
-      ],
-      "SceneDarkness": "SemiDark",
-      "DarknessRegions": [
-        {
-          "Darkness": "Dark",
-          "X": 99.0,
-          "Y": 16.0,
-          "Width": 42.0,
-          "Height": 10.0
-        }
-      ]
-    }
+    "MaximumDarkness": "SemiDark",
+    "DisplayDarknessOverrides": null
   },
   "RestingGrounds_04": {
     "Alias": "Grounds_Dream_Nail_Entrance",
-    "Cluster": "GroundsOutsideDreamNail",
+    "Cluster": "GroundsMain",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
     "DisplayDarknessOverrides": null

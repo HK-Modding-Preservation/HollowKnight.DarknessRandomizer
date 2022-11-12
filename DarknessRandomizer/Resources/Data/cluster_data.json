@@ -199,9 +199,9 @@
     "AdjacentClusters": {
       "CrossroadsShops": "Any",
       "EastCityElevator": "Brighter",
-      "GroundsXero": "Darker"
+      "GroundsMain": "Brighter"
     },
-    "OverrideCannotBeDarknessSource": null,
+    "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
     "DarkSettings": {
       "ProbabilityWeight": 120,
@@ -1269,7 +1269,7 @@
     "AdjacentClusters": {
       "CrystalPeaksCrystallizedMound": "Darker",
       "CrystalPeaksDarkRoom": "Darker",
-      "GroundsXero": "Darker"
+      "GroundsMain": "Any"
     },
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
@@ -2820,7 +2820,7 @@
       "Dream_Nailcollection": "Dream_Nail"
     },
     "AdjacentClusters": {
-      "GroundsOutsideDreamNail": "Brighter"
+      "GroundsMain": "Brighter"
     },
     "OverrideCannotBeDarknessSource": false,
     "CursedOnly": false,
@@ -2856,27 +2856,19 @@
   },
   "GroundsMain": {
     "SceneNames": {
+      "RestingGrounds_02": "Grounds_Xero",
+      "RestingGrounds_04": "Grounds_Dream_Nail_Entrance",
       "RestingGrounds_05": "Grounds_Whispering_Root"
     },
     "AdjacentClusters": {
+      "BlueLake": "Darker",
+      "CrystalPeaksOutsideMound": "Any",
       "GroundsCatacombs": "Darker",
+      "GroundsDreamNail": "Darker",
       "GroundsDreamshield": "Any",
       "GroundsGlade": "Darker",
-      "GroundsOutsideDreamNail": "Any",
-      "GroundsStag": "Any"
-    },
-    "OverrideCannotBeDarknessSource": null,
-    "CursedOnly": null,
-    "DarkSettings": null
-  },
-  "GroundsOutsideDreamNail": {
-    "SceneNames": {
-      "RestingGrounds_04": "Grounds_Dream_Nail_Entrance"
-    },
-    "AdjacentClusters": {
-      "GroundsDreamNail": "Darker",
-      "GroundsMain": "Any",
-      "GroundsXero": "Darker"
+      "GroundsStag": "Any",
+      "GroundsTram": "Any"
     },
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
@@ -2898,28 +2890,11 @@
       "Crossroads_46b": "Grounds_Tram"
     },
     "AdjacentClusters": {
-      "GroundsXero": "Darker"
+      "GroundsMain": "Any"
     },
     "OverrideCannotBeDarknessSource": null,
     "CursedOnly": null,
     "DarkSettings": null
-  },
-  "GroundsXero": {
-    "SceneNames": {
-      "RestingGrounds_02": "Grounds_Xero"
-    },
-    "AdjacentClusters": {
-      "BlueLake": "Brighter",
-      "CrystalPeaksOutsideMound": "Brighter",
-      "GroundsOutsideDreamNail": "Brighter",
-      "GroundsTram": "Brighter"
-    },
-    "OverrideCannotBeDarknessSource": false,
-    "CursedOnly": false,
-    "DarkSettings": {
-      "ProbabilityWeight": 150,
-      "CostWeight": 100
-    }
   },
   "HiveEntrance": {
     "SceneNames": {

@@ -361,4 +361,5 @@
     <None Include=".gitignore" />
     <None Include="LocalOverrides.targets" />
   </ItemGroup>
+  <ProjectExtensions><VisualStudio><UserProperties resources_4data_4scene_3data_1json__JsonSchema="https://docs.renovatebot.com/renovate-schema.json" /></VisualStudio></ProjectExtensions>
 </Project>

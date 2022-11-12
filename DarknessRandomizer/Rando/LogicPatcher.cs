@@ -36,7 +36,6 @@ namespace DarknessRandomizer.Rando
                 { WaypointName.DefeatedMarkoth, CustomSceneLogicEdit(SceneName.EdgeMarkothArena, "FALSE") },
                 { WaypointName.DefeatedMarmu, CustomSceneLogicEdit(SceneName.GardensGardensStag, "FALSE") },
                 { WaypointName.DefeatedNoEyes, CustomSceneLogicEdit(SceneName.GreenpathStoneSanctuary, "FALSE") },
-                { WaypointName.DefeatedXero, CustomSceneLogicEdit(SceneName.GroundsXero, "FALSE") },
 
                 // Dream bosses are coded specially because the checks are located where the dream nail is swung,
                 // but we care whether or not the actual fight room is dark. So we have to account for both rooms.
@@ -156,7 +155,6 @@ namespace DarknessRandomizer.Rando
 
                 // The following scenes are trivial to navigate while dark, but may contain a check which is
                 // uniquely affected by darkness.
-                { SceneName.GroundsXero, NoLogicEdit },
                 { SceneName.FungalQueensStation, NoLogicEdit }
             };
 

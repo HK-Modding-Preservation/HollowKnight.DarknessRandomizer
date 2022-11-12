@@ -260,10 +260,8 @@ namespace DarknessRandomizer.Data
         public static readonly ClusterName GroundsDreamshield = new("GroundsDreamshield");
         public static readonly ClusterName GroundsGlade = new("GroundsGlade");
         public static readonly ClusterName GroundsMain = new("GroundsMain");
-        public static readonly ClusterName GroundsOutsideDreamNail = new("GroundsOutsideDreamNail");
         public static readonly ClusterName GroundsStag = new("GroundsStag");
         public static readonly ClusterName GroundsTram = new("GroundsTram");
-        public static readonly ClusterName GroundsXero = new("GroundsXero");
         public static readonly ClusterName HiveEntrance = new("HiveEntrance");
         public static readonly ClusterName HiveKnight = new("HiveKnight");
         public static readonly ClusterName HiveMain = new("HiveMain");
