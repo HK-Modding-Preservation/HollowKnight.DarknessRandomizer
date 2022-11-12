@@ -28,7 +28,7 @@ namespace DarknessRandomizer
 
         public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects)
         {
-            DarknessRegion.Preloader.Instance.Initialize(preloadedObjects);
+            Preloader.Instance.Initialize(preloadedObjects);
 
             if (ModHooks.GetMod("Randomizer 4") is Mod)
             {
@@ -44,7 +44,7 @@ namespace DarknessRandomizer
             RandoPlusInterop.DefineICRefs();
         }
 
-        public override List<(string, string)> GetPreloadNames() => new(DarknessRegion.Preloader.Instance.GetPreloadNames());
+        public override List<(string, string)> GetPreloadNames() => new(Preloader.Instance.GetPreloadNames());
 
         public void OnLoadGlobal(GlobalSettings s) => GS = s ?? new();
 

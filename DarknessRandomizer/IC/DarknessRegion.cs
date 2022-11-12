@@ -40,20 +40,5 @@ namespace DarknessRandomizer.IC
 
             obj.SetActive(true);
         }
-
-        public class Preloader : PurenailCore.ModUtil.Preloader
-        {
-            public static readonly Preloader Instance = new();
-
-            [Preload("Cliffs_01", "Darkness Region (3)")]
-            private GameObject _darknessRegion;
-
-            public GameObject NewDarknessRegion()
-            {
-                var obj = UObject.Instantiate(_darknessRegion);
-                obj.AddComponent<CustomDarknessRegion>();
-                return obj;
-            }
-        }
     }
 }
