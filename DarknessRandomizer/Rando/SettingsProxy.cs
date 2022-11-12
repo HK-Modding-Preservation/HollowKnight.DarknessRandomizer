@@ -5,8 +5,6 @@ namespace DarknessRandomizer.Rando
 {
     public class SettingsProxy : RandoSettingsProxy<RandomizationSettings, string>
     {
-        public static readonly SettingsProxy Instance = new SettingsProxy();
-
         public override string ModKey => nameof(DarknessRandomizer);
 
         public override VersioningPolicy<string> VersioningPolicy => new StrictModVersioningPolicy(DarknessRandomizer.Instance);

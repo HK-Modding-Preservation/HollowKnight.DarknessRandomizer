@@ -26,7 +26,7 @@ namespace DarknessRandomizer.Rando
             }
         }
 
-        private static void HookRandoSettingsManager() => RandoSettingsManagerMod.Instance.RegisterConnection(SettingsProxy.Instance);
+        private static void HookRandoSettingsManager() => RandoSettingsManagerMod.Instance.RegisterConnection(new SettingsProxy());
 
         public static void OnRandomizerMenuConstruction(MenuPage page) => Instance = new(page);
 
