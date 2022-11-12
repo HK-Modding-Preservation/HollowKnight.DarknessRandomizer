@@ -18,7 +18,8 @@ namespace DarknessRandomizer.IC
 
         public void Deploy()
         {
-            var obj = Preloader.Instance.NewDarknessRegion();
+            var obj = Object.Instantiate(Preloader.Instance.DarknessRegion);
+            obj.AddComponent<CustomDarknessRegion>();
             obj.name = $"CustomDarknessRegion-{X}-{Y}";
             obj.transform.position = new(X, Y, 0);
             obj.transform.localScale = new(1, 1, 1);

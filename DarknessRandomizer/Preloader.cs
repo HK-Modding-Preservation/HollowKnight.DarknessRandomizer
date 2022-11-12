@@ -9,13 +9,15 @@ namespace DarknessRandomizer
         public static readonly Preloader Instance = new();
 
         [Preload("Cliffs_01", "Darkness Region (3)")]
-        private GameObject _darknessRegion;
+        public GameObject DarknessRegion { get; private set; }
 
-        public GameObject NewDarknessRegion()
-        {
-            var obj = Object.Instantiate(_darknessRegion);
-            obj.AddComponent<CustomDarknessRegion>();
-            return obj;
-        }
+        [Preload("White_Palace_03_hub", "doorWarp")]
+        public GameObject DreamWarp { get; private set; }
+
+        [Preload("White_Palace_03_hub", "dream_beam_animation")]
+        public GameObject DreamBeamAnim { get; private set; }
+
+        [Preload("Abyss_05", "door_dreamReturn_reality")]
+        public GameObject DreamReturn { get; private set; }
     }
 }
