@@ -7,5 +7,4 @@ RandomizerCore
 Randomizer 4
 RandoPlus
 RandoSettingsManager
-SFCorettingsManager
 SFCore
