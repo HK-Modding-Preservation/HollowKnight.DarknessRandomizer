@@ -330,12 +330,6 @@ namespace DarknessRandomizer.Rando
             };
         }
 
-        private LogicOverride CustomExtraLogicEdit(LogicOverride extra) => (lmb, logicName, lc) =>
-            {
-                StandardLogicEdit(lmb, logicName, lc);
-                extra.Invoke(lmb, logicName, lc);
-            };
-
         private LogicOverride CustomSceneLogicEdit(SceneName sceneName, string darkLogic)
         {
             return (lmb, logicName, lc) =>
