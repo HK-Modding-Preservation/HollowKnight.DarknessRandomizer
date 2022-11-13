@@ -493,22 +493,7 @@
     "Alias": "Crossroads_Ancestral_Mound",
     "Cluster": "CrossroadsAncestralMound",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "DisplayDarknessOverrides": {
-      "Conditions": [
-        "Dark"
-      ],
-      "SceneDarkness": "SemiDark",
-      "DarknessRegions": [
-        {
-          "Darkness": "Dark",
-          "X": 200.0,
-          "Y": 60.0,
-          "Width": 400.0,
-          "Height": 80.0
-        }
-      ]
-    }
+    "MaximumDarkness": "Dark"
   },
   "Deepnest_01": {
     "Alias": "Fungal_Deepnest_Fall",
@@ -1250,22 +1235,7 @@
     "Alias": "Fungal_Left_Of_Pilgrim's_Way",
     "Cluster": "FungalPilgrimsWay",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "DisplayDarknessOverrides": {
-      "Conditions": [
-        "Dark"
-      ],
-      "SceneDarkness": "SemiDark",
-      "DarknessRegions": [
-        {
-          "Darkness": "Dark",
-          "X": 75.0,
-          "Y": 39.0,
-          "Width": 150.0,
-          "Height": 50.0
-        }
-      ]
-    }
+    "MaximumDarkness": "Dark"
   },
   "Fungus2_11": {
     "Alias": "Fungal_Epogo",
@@ -1349,43 +1319,13 @@
     "Alias": "Fungal_Pilgrim's_Way",
     "Cluster": "FungalPilgrimsWay",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "DisplayDarknessOverrides": {
-      "Conditions": [
-        "Dark"
-      ],
-      "SceneDarkness": "SemiDark",
-      "DarknessRegions": [
-        {
-          "Darkness": "Dark",
-          "X": 35.0,
-          "Y": 45.0,
-          "Width": 70.0,
-          "Height": 70.0
-        }
-      ]
-    }
+    "MaximumDarkness": "SemiDark",
   },
   "Fungus2_23": {
     "Alias": "Fungal_Dashmaster",
     "Cluster": "FungalBretta",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
-    "DisplayDarknessOverrides": {
-      "Conditions": [
-        "Dark"
-      ],
-      "SceneDarkness": "SemiDark",
-      "DarknessRegions": [
-        {
-          "Darkness": "Dark",
-          "X": 25.0,
-          "Y": 40.0,
-          "Width": 50.0,
-          "Height": 80.0
-        }
-      ]
-    }
+    "MaximumDarkness": "Dark"
   },
   "Fungus2_25": {
     "Alias": "Deepnest_Lower_Cornifer",

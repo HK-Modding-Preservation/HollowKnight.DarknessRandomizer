@@ -10,8 +10,8 @@
     <Copyright>Copyright © dplochcoder 2022</Copyright>
     <Authors>dplochcoder</Authors>
     <NoWarn>7035</NoWarn>
-    <AssemblyVersion>1.4.1.0</AssemblyVersion>
-    <FileVersion>1.4.1.0</FileVersion>
+    <AssemblyVersion>1.4.2.0</AssemblyVersion>
+    <FileVersion>1.4.2.0</FileVersion>
     <Deterministic>false</Deterministic>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <LangVersion>latest</LangVersion>
@@ -103,9 +103,6 @@
     </Reference>
     <Reference Include="PurenailCore">
       <HintPath>$(HollowKnightRefs)/Mods/PurenailCore/PurenailCore.dll</HintPath>
-    </Reference>
-    <Reference Include="RandomizableLevers">
-      <HintPath>$(HollowKnightRefs)/Mods/Randomizable Levers/RandomizableLevers.dll</HintPath>
     </Reference>
     <Reference Include="RandomizerCore">
       <HintPath>$(HollowKnightRefs)/Mods/RandomizerCore/RandomizerCore.dll</HintPath>
@@ -361,5 +358,9 @@
     <None Include=".gitignore" />
     <None Include="LocalOverrides.targets" />
   </ItemGroup>
-  <ProjectExtensions><VisualStudio><UserProperties resources_4data_4scene_3data_1json__JsonSchema="https://docs.renovatebot.com/renovate-schema.json" /></VisualStudio></ProjectExtensions>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties resources_4data_4scene_3data_1json__JsonSchema="https://docs.renovatebot.com/renovate-schema.json" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

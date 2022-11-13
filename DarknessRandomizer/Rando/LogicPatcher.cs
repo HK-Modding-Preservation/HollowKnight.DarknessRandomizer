@@ -45,12 +45,6 @@ namespace DarknessRandomizer.Rando
                 { WaypointName.DefeatedSoulTyrant, CustomSceneLogicEdit(SceneName.DreamSoulTyrant, "DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
                 { WaypointName.DefeatedWhiteDefender, CustomSceneLogicEdit(SceneName.DreamWhiteDefender, "DARKROOMS + DIFFICULTSKIPS + PROFICIENTCOMBAT") },
 
-                // These checks are free in the dark.
-                { "Bench-Ancestral_Mound", NoLogicEdit },
-                { "Dashmaster", NoLogicEdit },
-                { "Mask_Shard-Deepnest", NoLogicEdit },
-                { "Vengeful_Spirit", NoLogicEdit },
-
                 // Specific checks with difficult platforming.
                 { "Void_Heart", CustomSceneLogicEdit(SceneName.DreamAbyss, "DARKROOMS + DIFFICULTSKIPS") },
 
@@ -138,7 +132,6 @@ namespace DarknessRandomizer.Rando
             FreeDarkroomsClique($"{SceneName.FogOvergrownMound}[left1]", "Bench-Overgrown_Mound");
             FreeDarkroomsClique($"{SceneName.FungalBrettaBench}[left3]", "Bench-Bretta");
             FreeDarkroomsClique($"{SceneName.FungalCoreUpper}[right1]", "Bench-Fungal_Core");
-            FreeDarkroomsClique($"{SceneName.FungalLeftOfPilgrimsWay}[bot1]", $"{SceneName.FungalLeftOfPilgrimsWay}[right1]", "Bench-Pilgrim's_End");
             FreeDarkroomsClique($"{SceneName.GardensBeforePetraArena}[left1]", "Bench-Gardens_Atrium");
             FreeDarkroomsClique($"{SceneName.GreenpathSheo}[door1]", "Bench-Sheo");
             FreeDarkroomsClique($"{SceneName.GreenpathSheoGauntlet}[right1]", "Bench-Duranda's_Trial");
@@ -185,17 +178,6 @@ namespace DarknessRandomizer.Rando
             {
                 DoBenchRandoInterop(lmb);
             }
-
-            if (ModHooks.GetMod("RandomizableLevers") is Mod && LeversAreEnabled())
-            {
-                DoLeverRandoInterop(lmb);
-            }
-            else
-            {
-                // We only care about the pilgrims way right transition.
-                logicOverridesByName[$"{SceneName.FungalPilgrimsWay}[right1]"] =
-                    CustomDarkLogicEdit($"DARKROOMS | {SceneName.FungalPilgrimsWay}[left1] + (ACID | RIGHTSUPERDASH)");
-            }
         }
 
         private readonly Dictionary<string, SceneName> customSceneInferences = new()
@@ -224,20 +206,6 @@ namespace DarknessRandomizer.Rando
             {
                 logicOverridesByUniqueScene[SceneName.GreenpathToll] = CustomDarkLogicEdit("DARKROOMS | Bench-Greenpath_Toll");
             }
-        }
-
-        private static bool LeversAreEnabled() => RandomizableLevers.RandomizableLevers.GS.RandoSettings.RandomizeLevers;
-
-        private void DoLeverRandoInterop(LogicManagerBuilder lmb)
-        {
-            string leftTransition = $"{SceneName.FungalPilgrimsWay}[left1]";
-            // Apply custom lever logic to Pilgrim's way, which is partially dark.
-            logicOverridesByName["Lever-Pilgrim's_Way_Left"] =
-                CustomDarkLogicEdit($"DARKROOMS | {leftTransition} + (ACID | RIGHTSUPERDASH | Lever-Pilgrim's_Way_Left)");
-            logicOverridesByName["Lever-Pilgrim's_Way_Right"] =
-                CustomDarkLogicEdit($"DARKROOMS | {leftTransition} + (ACID | RIGHTSUPERDASH | Lever-Pilgrim's_Way_Left + Lever-Pilgrim's_Way_Right)");
-            logicOverridesByName[$"{SceneName.FungalPilgrimsWay}[right1]"] =
-                CustomDarkLogicEdit($"DARKROOMS | {leftTransition} + (ACID | RIGHTSUPERDASH | Lever-Pilgrim's_Way_Left + Lever-Pilgrim's_Way_Right)");
         }
 
         public SceneNameInferrer GetSceneNameInferrer(string logicName) => sceneNameInferrerOverrides.TryGetValue(logicName, out SceneNameInferrer sni) ? sni : InferSceneName;
