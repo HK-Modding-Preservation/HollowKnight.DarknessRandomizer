@@ -493,7 +493,8 @@
     "Alias": "Crossroads_Ancestral_Mound",
     "Cluster": "CrossroadsAncestralMound",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "DisplayDarknessOverrides": null
   },
   "Deepnest_01": {
     "Alias": "Fungal_Deepnest_Fall",
@@ -1087,7 +1088,7 @@
   "Fungus1_26": {
     "Alias": "Greenpath_Lake_Of_Unn",
     "Cluster": "GreenpathUnn",
-    "MinimumDarkness": "Bright",
+    "MinimumDarkness": "SemiDark",
     "MaximumDarkness": "Dark",
     "DisplayDarknessOverrides": null
   },
@@ -1151,7 +1152,7 @@
     "Alias": "Greenpath_Unn",
     "Cluster": "GreenpathUnn",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "DisplayDarknessOverrides": null
   },
   "Fungus2_01": {
@@ -1235,7 +1236,8 @@
     "Alias": "Fungal_Left_Of_Pilgrim's_Way",
     "Cluster": "FungalPilgrimsWay",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "DisplayDarknessOverrides": null
   },
   "Fungus2_11": {
     "Alias": "Fungal_Epogo",
@@ -1320,12 +1322,14 @@
     "Cluster": "FungalPilgrimsWay",
     "MinimumDarkness": "Bright",
     "MaximumDarkness": "SemiDark",
+    "DisplayDarknessOverrides": null
   },
   "Fungus2_23": {
     "Alias": "Fungal_Dashmaster",
     "Cluster": "FungalBretta",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark"
+    "MaximumDarkness": "Dark",
+    "DisplayDarknessOverrides": null
   },
   "Fungus2_25": {
     "Alias": "Deepnest_Lower_Cornifer",
