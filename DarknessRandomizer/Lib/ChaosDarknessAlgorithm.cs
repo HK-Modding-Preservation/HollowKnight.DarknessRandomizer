@@ -7,10 +7,10 @@ using System.Collections.Generic;
 
 namespace DarknessRandomizer.Lib
 {
-    public class ChaosDarknessAlgoritm : DarknessAlgorithm
+    public class ChaosDarknessAlgorithm : DarknessAlgorithm
     {
 
-        public ChaosDarknessAlgoritm(GenerationSettings GS, StartDef start, RandomizationSettings DRS) : base(GS, start, DRS) { }
+        public ChaosDarknessAlgorithm(GenerationSettings GS, StartDef start, RandomizationSettings DRS) : base(GS, start, DRS) { }
 
         private void GetPerSceneStats(SceneName s, out Darkness maxDarkness, out int costWeight)
         {

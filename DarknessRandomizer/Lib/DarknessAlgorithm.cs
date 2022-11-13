@@ -22,7 +22,7 @@ namespace DarknessRandomizer.Lib
         {
             if (DRS.Chaos)
             {
-                return new ChaosDarknessAlgoritm(GS, start, DRS);
+                return new ChaosDarknessAlgorithm(GS, start, DRS);
             }
             else
             {
