@@ -5,17 +5,14 @@ using Newtonsoft.Json;
 using RandomizerCore.Logic;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
 
 namespace DarknessRandomizer.Rando
 {
     public class DarknessVariableResolver : VariableResolver
     {
-        public VariableResolver Parent;
-
-        public DarknessVariableResolver(VariableResolver parent)
+        public DarknessVariableResolver(VariableResolver inner)
         {
-            this.Parent = parent;
+            this.Inner = inner;
         }
 
         [JsonConstructor]
@@ -35,12 +32,12 @@ namespace DarknessRandomizer.Rando
             }
         }
 
-        public override bool TryMatch(LogicManager lm, string term, out LogicInt variable)
+        public override bool TryMatch(LogicManager lm, string term, out LogicVariable variable)
         {
-            if (Parent.TryMatch(lm, term, out variable)) return true;
+            if (base.TryMatch(lm, term, out variable)) return true;
 
-            Match match = Regex.Match(term, @"^\$DarknessLevel\[(.+)\]$");
-            if (match.Success && SceneName.TryGetValue(match.Groups[1].Value, out SceneName sceneName))
+            if (TryMatchPrefix(term, "$DarknessLevel", out var parameters) && parameters.Length == 1 &&
+                SceneName.TryGetValue(parameters[0], out var sceneName))
             {
                 variable = new DarknessLevelInt(sceneName);
                 return true;
