@@ -101,10 +101,7 @@ namespace DarknessRandomizer.Rando
 
                 // These two checks in the city toll room require lantern. All else is free.
                 { "Bench-City_Toll", CustomDarkLogicEdit("Bench-City_Toll") },
-                { $"{SceneName.CityTollBench.Name()}[left3]", CustomDarkLogicEdit("FALSE") },
-
-                // Flower quest simply requires lantern.
-                { "Mask_Shard-Grey_Mourner", (lmb, ln, lc) => lmb.DoLogicEdit(new(ln, $"ORIG + {LanternToken.Write()}")) }
+                { $"{SceneName.CityTollBench.Name()}[left3]", CustomDarkLogicEdit("FALSE") }
             };
 
             FreeDarkroomsClique($"{SceneName.AbyssLighthouseClimb}[right3]", "Bench-Abyss_Workshop");
