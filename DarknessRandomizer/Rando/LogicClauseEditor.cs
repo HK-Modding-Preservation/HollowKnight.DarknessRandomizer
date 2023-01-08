@@ -59,7 +59,7 @@ namespace DarknessRandomizer.Rando
                 }
                 else
                 {
-                    stack.Push(LogicTree.CreateLeaf(ParsedToken.Parse(lt, sni)));
+                    stack.Push(LogicTree.CreateLeaf(ParsedToken.Parse(lt, name, sni)));
                 }
             }
 
@@ -297,7 +297,7 @@ namespace DarknessRandomizer.Rando
 
         public static readonly ParsedToken Lantern = new(null, TokenType.Lantern, null);
 
-        public static ParsedToken Parse(LogicToken token, SceneNameInferrer sni)
+        public static ParsedToken Parse(LogicToken token, string logicName, SceneNameInferrer sni)
         {
             if (token is SimpleToken st)
             {
@@ -307,6 +307,11 @@ namespace DarknessRandomizer.Rando
                     return Lantern;
                 }
 
+                if (name == logicName)
+                {
+                    // Do not infer scenes for self-matching transition names.
+                    return new(token, TokenType.Irrelevant, null);
+                }
                 if (sni.Invoke(name, out SceneName sceneName))
                 {
                     return new(token, TokenType.Scene, sceneName);
