@@ -217,6 +217,7 @@ namespace DarknessRandomizer.Data
         public const string GGAtrium = "GG_Atrium";
         public const string GGWaterways = "GG_Waterways";
         public const string GGWorkshop = "GG_Workshop";
+        public const string GreyMourner = "Grey_Mourner";
         public const string Hive03c = "Hive_03_c";
         public const string LeftElevator = "Left_Elevator";
         public const string LeverDungDefender = "Lever-Dung_Defender";
