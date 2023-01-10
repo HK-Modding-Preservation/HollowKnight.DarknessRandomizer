@@ -2,7 +2,7 @@ BenchRando
 ConnectionMetadataInjector
 ItemChanger
 MenuChanger
-PurenailCore from https://github.com/dplochcoder/HollowKnight.PurenailCore/releases/download/v1.1.5.0/PurenailCore.zip
+PurenailCore
 Randomizer 4
 RandomizerCore
 RandoPlus
