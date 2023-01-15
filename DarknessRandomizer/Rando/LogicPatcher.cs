@@ -8,6 +8,7 @@ using RandomizerCore.LogicItems.Templates;
 using RandomizerCore.StringLogic;
 using RandomizerMod.RC;
 using RandomizerMod.Settings;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -345,7 +346,6 @@ namespace DarknessRandomizer.Rando
         public static void Setup()
         {
             RCData.RuntimeLogicOverride.Subscribe(60f, ModifyLMB);
-            InfectionWallLogicFix.Setup(_ => RandoInterop.IsEnabled, 59f);
         }
 
         public static void ModifyLMB(GenerationSettings gs, LogicManagerBuilder lmb)
@@ -380,6 +380,28 @@ namespace DarknessRandomizer.Rando
                 names.Add(e.Key);
             }
             names.ForEach(n => overrides.EditLogicClause(lmb, n, lmb.LogicLookup[n]));
+
+            if (ModHooks.GetMod("MoreDoors") is Mod) MoreDoorsInterop(gs, lmb);
+        }
+
+        private static void MoreDoorsInterop(GenerationSettings gs, LogicManagerBuilder lmb)
+        {
+            foreach (var doorName in MoreDoors.Rando.RandoInterop.LS.EnabledDoorNames)
+            {
+                var data = MoreDoors.Data.DoorData.Get(doorName);
+
+                var leftGate = data.Door.LeftLocation.TransitionName;
+                if (SceneName.IsTransition(leftGate, out var leftScene))
+                {
+                    lmb.DoLogicEdit(new(leftGate, $"ORIG + ({RandoInterop.LanternTermName} | $DarknessLevel[{leftScene}] < 2 | {data.DoorOpenedTermName})"));
+                }
+
+                var rightGate = data.Door.RightLocation.TransitionName;
+                if (SceneName.IsTransition(rightGate, out var rightScene))
+                {
+                    lmb.DoLogicEdit(new(leftGate, $"ORIG + ({RandoInterop.LanternTermName} | $DarknessLevel[{rightScene}] < 2 | {data.DoorOpenedTermName})"));
+                }
+            }
         }
     }
 }
