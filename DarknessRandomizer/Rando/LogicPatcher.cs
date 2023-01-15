@@ -381,6 +381,12 @@ namespace DarknessRandomizer.Rando
             }
             names.ForEach(n => overrides.EditLogicClause(lmb, n, lmb.LogicLookup[n]));
 
+            // Darkness can block routes around infection walls in crossroads.
+            lmb.DoLogicEdit(new("Crossroads_10[left1]", "ORIG + (ROOMRANDO | Crossroads_06[left1]"));
+            lmb.DoLogicEdit(new("Crossroads_06[right1]", "ORIG + (ROOMRANDO | Defeated_False_Knight"));
+            lmb.DoLogicEdit(new("Crossroads_03[bot1]", "ORIG + (ROOMRANDO | Crossroads_19[left1]"));
+            lmb.DoLogicEdit(new("Crossroads_19[top1]", "ORIG + (ROOMRANDO | Crossroads_03[right1]"));
+
             if (ModHooks.GetMod("MoreDoors") is Mod) MoreDoorsInterop(gs, lmb);
         }
 
