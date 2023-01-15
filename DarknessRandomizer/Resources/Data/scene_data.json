@@ -108,7 +108,7 @@
     "Alias": "Basin_Corridor_to_Broken_Vessel",
     "Cluster": "BasinBrokenVesselWing",
     "MinimumDarkness": "Bright",
-    "MaximumDarkness": "Dark",
+    "MaximumDarkness": "SemiDark",
     "DisplayDarknessOverrides": null
   },
   "Abyss_19": {
