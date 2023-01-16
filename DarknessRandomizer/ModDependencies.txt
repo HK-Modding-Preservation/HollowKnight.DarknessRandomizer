@@ -8,4 +8,4 @@ RandomizerCore
 RandoPlus
 RandoSettingsManager
 SFCore
-MoreDoors from https://github.com/dplochcoder/HollowKnight.MoreDoors/releases/download/v2.0.5.1/MoreDoors.zip
+MoreDoors
