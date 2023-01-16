@@ -405,7 +405,7 @@ namespace DarknessRandomizer.Rando
                 var rightGate = data.Door.RightLocation.TransitionName;
                 if (SceneName.IsTransition(rightGate, out var rightScene))
                 {
-                    lmb.DoLogicEdit(new(leftGate, $"ORIG + ({RandoInterop.LanternTermName} | $DarknessLevel[{rightScene}] < 2 | {data.DoorOpenedWaypoint})"));
+                    lmb.DoLogicEdit(new(rightGate, $"ORIG + ({RandoInterop.LanternTermName} | $DarknessLevel[{rightScene}] < 2 | {data.DoorOpenedWaypoint})"));
                 }
             }
         }
