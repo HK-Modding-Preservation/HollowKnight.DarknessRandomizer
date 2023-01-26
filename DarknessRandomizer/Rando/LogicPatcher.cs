@@ -399,13 +399,13 @@ namespace DarknessRandomizer.Rando
                 var leftGate = data.Door.LeftLocation.TransitionName;
                 if (SceneName.IsTransition(leftGate, out var leftScene))
                 {
-                    lmb.DoLogicEdit(new(leftGate, $"ORIG + ({RandoInterop.LanternTermName} | $DarknessLevel[{leftScene}] < 2 | {data.DoorOpenedWaypoint})"));
+                    lmb.DoLogicEdit(new(leftGate, $"ORIG + ({RandoInterop.LanternTermName} | $DarknessLevel[{leftScene}] < 2)"));
                 }
 
                 var rightGate = data.Door.RightLocation.TransitionName;
                 if (SceneName.IsTransition(rightGate, out var rightScene))
                 {
-                    lmb.DoLogicEdit(new(rightGate, $"ORIG + ({RandoInterop.LanternTermName} | $DarknessLevel[{rightScene}] < 2 | {data.DoorOpenedWaypoint})"));
+                    lmb.DoLogicEdit(new(rightGate, $"ORIG + ({RandoInterop.LanternTermName} | $DarknessLevel[{rightScene}] < 2)"));
                 }
             }
         }
