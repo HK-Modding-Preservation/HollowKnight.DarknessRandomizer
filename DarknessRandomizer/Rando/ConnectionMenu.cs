@@ -87,6 +87,7 @@ namespace DarknessRandomizer.Rando
             gridItemPanel.Insert(1, 0, darknessLevel);
             gridItemPanel.Insert(1, 1, twoDupeShards);
             gridItemPanel.Insert(2, 0, chaos);
+            gridItemPanel.ResetNavigation();
         }
 
         public void ApplySettings(RandomizationSettings settings)
