@@ -109,9 +109,7 @@ namespace DarknessRandomizer.IC
                 }
             }
 
-            if (sceneData.CurrentScene == SceneName.DreamNail &&
-                DarknessOverrides[SceneName.DreamNail] == Darkness.Dark &&
-                !PlayerData.instance.GetBool(nameof(PlayerData.hasLantern)))
+            if (sceneData.CurrentScene == SceneName.DreamNail && IsDark(SceneName.DreamNail))
             {
                 var door = GameObject.Find("door_dreamReturn");
                 var hrm = door.transform.Find("Hazard Respawn Marker");
@@ -342,7 +340,7 @@ namespace DarknessRandomizer.IC
         }
         private void InstallDreamnailEscape()
         {
-            DeployerHook.Test dreamNailDark = () => DarknessOverrides[SceneName.DreamNail] == Darkness.Dark;
+            DeployerHook.Test dreamNailDark = () => IsDark(SceneName.DreamNail);
             DeployerHook.Test dreamNailDarkNoLantern = () => dreamNailDark() && !PlayerData.instance.GetBool(nameof(PlayerData.hasLantern));
 
             InstallHook(new DeployerHook(new DreamnailWarp(), dreamNailDarkNoLantern));
