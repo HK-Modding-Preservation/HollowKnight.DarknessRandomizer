@@ -2,7 +2,7 @@ BenchRando
 ConnectionMetadataInjector
 ItemChanger
 MenuChanger
-MoreDoors
+MoreDoors from https://github.com/dplochcoder/HollowKnight.MoreDoors/releases/download/v2.0.7.0/MoreDoors.zip
 PurenailCore from https://github.com/dplochcoder/HollowKnight.PurenailCore/releases/download/v1.1.7.0/PurenailCore.zip
 Randomizer 4
 RandomizerCore
