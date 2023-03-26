@@ -392,6 +392,8 @@ namespace DarknessRandomizer.Rando
 
         private static void MoreDoorsInterop(GenerationSettings gs, LogicManagerBuilder lmb)
         {
+            if (!MoreDoors.Rando.RandoInterop.IsEnabled) return;
+
             foreach (var doorName in MoreDoors.Rando.RandoInterop.LS.EnabledDoorNames)
             {
                 var data = MoreDoors.Data.DoorData.Get(doorName);
