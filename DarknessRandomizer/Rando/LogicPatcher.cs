@@ -396,7 +396,7 @@ namespace DarknessRandomizer.Rando
 
             foreach (var doorName in MoreDoors.Rando.RandoInterop.LS.EnabledDoorNames)
             {
-                var data = MoreDoors.Data.DoorData.Get(doorName);
+                var data = MoreDoors.Data.DoorData.GetFromJson(doorName);
 
                 var leftGate = data.Door.LeftLocation.TransitionName;
                 if (SceneName.IsTransition(leftGate, out var leftScene))
