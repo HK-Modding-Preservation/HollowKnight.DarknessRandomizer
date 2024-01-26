@@ -1,6 +1,5 @@
 ﻿using DarknessRandomizer.Data;
 using Modding;
-using PurenailCore.RandoUtil;
 using RandomizerCore;
 using RandomizerCore.Logic;
 using RandomizerCore.LogicItems;
@@ -8,7 +7,6 @@ using RandomizerCore.LogicItems.Templates;
 using RandomizerCore.StringLogic;
 using RandomizerMod.RC;
 using RandomizerMod.Settings;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -354,7 +352,7 @@ namespace DarknessRandomizer.Rando
             {
                 var shardsTerm = lmb.GetOrAddTerm("LANTERNSHARDS");
                 var lanternTerm = lmb.GetOrAddTerm(RandoInterop.LanternTermName);
-                lmb.AddTemplateItem(new BranchedItemTemplate(RandoInterop.LanternShardItemName, $"{shardsTerm.Name}<3",
+                lmb.AddItem(new BranchedItemTemplate(RandoInterop.LanternShardItemName, $"{shardsTerm.Name}<3",
                     new SingleItem("LanternShard-GetShard", new(shardsTerm, 1)),
                     new CappedItem("LanternShard-GetLantern", new TermValue[] { new(shardsTerm, 1), new(lanternTerm, 1) }, new(lanternTerm, 1))));
             }
