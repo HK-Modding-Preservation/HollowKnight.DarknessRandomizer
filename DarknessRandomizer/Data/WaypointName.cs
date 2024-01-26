@@ -75,6 +75,7 @@ namespace DarknessRandomizer.Data
         public const string BrokeBasinGrubQuakeFloor = "Broke_Basin_Grub_Quake_Floor";
         public const string BrokeCampBenchWall = "Broke_Camp_Bench_Wall";
         public const string BrokeCliffsDarkRoomQuakeFloor = "Broke_Cliffs_Dark_Room_Quake_Floor";
+        public const string BrokeCryptsOneWayFloor = "Broke_Crypts_One_Way_Floor";
         public const string BrokeCrystallizedMoundQuakeFloor = "Broke_Crystallized_Mound_Quake_Floor";
         public const string BrokeCrystalPeakDiveEggQuakeFloor = "Broke_Crystal_Peak_Dive_Egg_Quake_Floor";
         public const string BrokeCrystalPeakEntranceQuakeFloor = "Broke_Crystal_Peak_Entrance_Quake_Floor";
@@ -199,6 +200,7 @@ namespace DarknessRandomizer.Data
         public const string Fungus211 = "Fungus2_11";
         public const string Fungus213 = "Fungus2_13";
         public const string Fungus214 = "Fungus2_14";
+        public const string Fungus215 = "Fungus2_15";
         public const string Fungus217 = "Fungus2_17";
         public const string Fungus218 = "Fungus2_18";
         public const string Fungus220 = "Fungus2_20";
@@ -220,7 +222,9 @@ namespace DarknessRandomizer.Data
         public const string GreyMourner = "Grey_Mourner";
         public const string Hive03c = "Hive_03_c";
         public const string LeftElevator = "Left_Elevator";
+        public const string LeverCityFountain = "Lever-City_Fountain";
         public const string LeverDungDefender = "Lever-Dung_Defender";
+        public const string LeverPathofPain = "Lever-Path_of_Pain";
         public const string LeverShadeSoul = "Lever-Shade_Soul";
         public const string LitAbyssLighthouse = "Lit_Abyss_Lighthouse";
         public const string LowerTram = "Lower_Tram";
@@ -261,6 +265,7 @@ namespace DarknessRandomizer.Data
         public const string RestingGrounds05 = "RestingGrounds_05";
         public const string RestingGrounds10 = "RestingGrounds_10";
         public const string RightElevator = "Right_Elevator";
+        public const string RoomGGShortcut = "Room_GG_Shortcut";
         public const string Ruins103 = "Ruins1_03";
         public const string Ruins105 = "Ruins1_05";
         public const string Ruins105b = "Ruins1_05b";
@@ -279,6 +284,7 @@ namespace DarknessRandomizer.Data
         public const string Town = "Town";
         public const string Tutorial01 = "Tutorial_01";
         public const string UpperTram = "Upper_Tram";
+        public const string UumuuArena = "Uumuu_Arena";
         public const string WarpGodhometoJunkPit = "Warp-Godhome_to_Junk_Pit";
         public const string WarpJunkPittoGodhome = "Warp-Junk_Pit_to_Godhome";
         public const string WarpLifebloodCoretoAbyss = "Warp-Lifeblood_Core_to_Abyss";
@@ -288,8 +294,10 @@ namespace DarknessRandomizer.Data
         public const string WarpWhitePalaceEntrancetoPalaceGrounds = "Warp-White_Palace_Entrance_to_Palace_Grounds";
         public const string Waterways01 = "Waterways_01";
         public const string Waterways02 = "Waterways_02";
+        public const string Waterways04 = "Waterways_04";
         public const string Waterways04b = "Waterways_04b";
         public const string Waterways07 = "Waterways_07";
+        public const string Waterways13 = "Waterways_13";
         public const string WhitePalace01 = "White_Palace_01";
         public const string WhitePalace03hub = "White_Palace_03_hub";
         public const string WhitePalace13 = "White_Palace_13";
