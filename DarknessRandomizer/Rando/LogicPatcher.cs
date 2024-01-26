@@ -359,9 +359,7 @@ namespace DarknessRandomizer.Rando
 
             if (!RandoInterop.RandomizeDarkness) return;
 
-            var newResolver = new DarknessVariableResolver(lmb.VariableResolver);
-            lmb.VariableResolver = newResolver;
-
+            lmb.VariableResolver = new DarknessVariableResolver(lmb.VariableResolver);
             LogicOverrides overrides = new(lmb);
 
             // We want to generically modify logic by location (SceneName), but unfortunately the LogicManager is constructed
