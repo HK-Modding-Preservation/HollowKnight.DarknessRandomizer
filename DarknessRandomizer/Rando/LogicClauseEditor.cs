@@ -55,7 +55,9 @@ namespace DarknessRandomizer.Rando
             {
                 if (lt is OperatorToken ot)
                 {
-                    stack.Push(LogicTree.CreateTree(ot.OperatorType, new List<LogicTree> { stack.Pop(), stack.Pop() }));
+                    var arg2 = stack.Pop();
+                    var arg1 = stack.Pop();
+                    stack.Push(LogicTree.CreateTree(ot.OperatorType, new List<LogicTree> { arg1, arg2 }));
                 }
                 else
                 {
