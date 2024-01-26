@@ -1,2 +1,3 @@
-PurenailCore
 DarknessRandomizer
+PurenailCore
+RandomizerCore.Json
