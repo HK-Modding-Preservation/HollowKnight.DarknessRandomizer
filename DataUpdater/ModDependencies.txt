@@ -1,3 +1,5 @@
 DarknessRandomizer
 PurenailCore
+RandomizerCore
 RandomizerCore.Json
+Randomizer 4
