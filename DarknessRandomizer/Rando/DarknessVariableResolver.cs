@@ -10,10 +10,7 @@ namespace DarknessRandomizer.Rando
 {
     public class DarknessVariableResolver : VariableResolver
     {
-        public DarknessVariableResolver(VariableResolver inner)
-        {
-            this.Inner = inner;
-        }
+        public DarknessVariableResolver(VariableResolver inner) => Inner = inner;
 
         [JsonConstructor]
         DarknessVariableResolver() { }
@@ -34,8 +31,6 @@ namespace DarknessRandomizer.Rando
 
         public override bool TryMatch(LogicManager lm, string term, out LogicVariable variable)
         {
-            if (base.TryMatch(lm, term, out variable)) return true;
-
             if (TryMatchPrefix(term, "$DarknessLevel", out var parameters) && parameters.Length == 1 &&
                 SceneName.TryGetValue(parameters[0], out var sceneName))
             {
@@ -43,7 +38,7 @@ namespace DarknessRandomizer.Rando
                 return true;
             }
 
-            return false;
+            return Inner.TryMatch(lm, term, out variable);
         }
     }
 
@@ -67,13 +62,7 @@ namespace DarknessRandomizer.Rando
         public override int GetValue(object sender, ProgressionManager pm) => cache ?? (cache = GetValueImpl()).Value;
 
         private int GetValueImpl() {
-            if (DarknessVariableResolver.TryGetDarkness(sceneName, out Darkness d))
-            {
-                return (int)d;
-            } else
-            {
-                return (int)Darkness.Bright;
-            }
+            return DarknessVariableResolver.TryGetDarkness(sceneName, out Darkness d) ? (int)d : (int)Darkness.Bright;
         }
     }
 }
