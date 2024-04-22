@@ -6,7 +6,7 @@ MoreDoors
 PurenailCore
 RandomizerCore
 RandomizerCore.Json
-Randomizer 4 from
+Randomizer 4
 RandoPlus
 RandoSettingsManager
 SFCore
