@@ -17,7 +17,7 @@ namespace DarknessRandomizer.Rando
             ConnectionMenu.Setup();
             LogicPatcher.Setup();
             RequestModifier.Setup();
-            CondensedSpoilerLogger.AddCategory("Lantern Shards", _ => ShatteredLantern, new() { LanternItemName });
+            CondensedSpoilerLogger.AddCategory("Lantern Shards", _ => ShatteredLantern, new() { LanternShardItemName });
 
             RandoController.OnExportCompleted += Finish;
             RandomizerMod.Logging.SettingsLog.AfterLogSettings += LogSettings;
