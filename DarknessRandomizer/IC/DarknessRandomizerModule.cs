@@ -4,6 +4,7 @@ using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
 using ItemChanger;
 using ItemChanger.Extensions;
+using ItemChanger.FsmStateActions;
 using Newtonsoft.Json;
 using PurenailCore.ICUtil;
 using PurenailCore.SystemUtil;
@@ -22,6 +23,13 @@ namespace DarknessRandomizer.IC
 
         [JsonIgnore]
         private readonly List<Action> UnloadHooks = new();
+        [JsonIgnore]
+        private readonly List<EmbeddedSprite> ShatteredLanternSprites = new()
+        {
+            new("ShatteredLantern_1"),
+            new("ShatteredLantern_2"),
+            new("ShatteredLantern_3"),
+        };
 
         public override void Initialize()
         {
@@ -37,6 +45,13 @@ namespace DarknessRandomizer.IC
             InstallHook(new LambdaHook(
                 () => Modding.ModHooks.SetPlayerIntHook += OverrideSetInt,
                 () => Modding.ModHooks.SetPlayerIntHook -= OverrideSetInt));
+
+            InstallHook(new FsmEditHook(new("Equipment", "Build Equipment List"), ModifyInventory));
+            InstallHook(new LanguageEditHook("UI", "INV_NAME_SHATTERED_LANTERN", "Shattered Lumafly Lantern"));
+            InstallHook(new LanguageEditHook("UI", "INV_DESC_SHATTERED_LANTERN_1", "A single shard of the old light. There is more to gather."));
+            InstallHook(new LanguageEditHook("UI", "INV_DESC_SHATTERED_LANTERN_2", "A half reconstructed lantern, the cracks partially sealed."));
+            InstallHook(new LanguageEditHook("UI", "INV_DESC_SHATTERED_LANTERN_3", "A near complete orb of glass, only the cap remains."));
+
             InstallHook(new LambdaHook(
                 () => PriorityEvents.BeforeSceneManagerStart.Subscribe(100f, BeforeSceneManagerStart),
                 () => PriorityEvents.BeforeSceneManagerStart.Unsubscribe(100f, BeforeSceneManagerStart)));
@@ -269,6 +284,38 @@ namespace DarknessRandomizer.IC
             return orig;
         }
 
+        private void ModifyInventory(PlayMakerFSM fsm)
+        {
+            var lantern = fsm.gameObject.FindChild("Lantern");
+            var spriteRenderer = lantern.GetComponent<SpriteRenderer>();
+            var origSprite = spriteRenderer.sprite;
+
+            var state = fsm.GetFsmState("Lantern");
+            var sets = state.GetActionsOfType<SetFsmString>();
+            var setName = sets[0];
+            var setDesc = sets[1];
+
+            state.RemoveFirstActionOfType<PlayerDataBoolTest>();
+            state.AddFirstAction(new Lambda(() =>
+            {
+                if (PlayerHasLantern())
+                {
+                    setName.setValue.Value = "INV_NAME_LANTERN";
+                    setDesc.setValue.Value = "INV_DESC_LANTERN";
+                    spriteRenderer.sprite = origSprite;
+                }
+                if (NumLanternShardsCollected == 0)
+                {
+                    fsm.SendEvent("FINISHED");
+                    return;
+                }
+
+                setName.setValue.Value = $"INV_NAME_SHATTERED_LANTERN";
+                setDesc.setValue.Value = $"INV_DESC_SHATTERED_LANTERN_{NumLanternShardsCollected}";
+                spriteRenderer.sprite = ShatteredLanternSprites[NumLanternShardsCollected - 1].Value;
+            }));
+        }
+
         private bool IsDark(SceneName sceneName)
         {
             if (PlayerHasLantern()) return false;
@@ -392,6 +439,25 @@ namespace DarknessRandomizer.IC
             () => Events.AddFsmEdit(id, action),
             () => Events.RemoveFsmEdit(id, action))
         { }
+    }
+
+    class LanguageEditHook : IHook
+    {
+        private readonly string sheet;
+        private readonly string name;
+        private readonly string text;
+
+        public LanguageEditHook(string sheet, string name, string text)
+        {
+            this.sheet = sheet;
+            this.name = name;
+            this.text = text;
+        }
+
+        public void Load() => Events.AddLanguageEdit(new(sheet, name), EditText);
+        public void Unload() => Events.RemoveLanguageEdit(new(sheet, name), EditText);
+
+        private void EditText(ref string value) => value = text;
     }
 
     class DeployerHook : LambdaHook
