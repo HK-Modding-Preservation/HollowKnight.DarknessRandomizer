@@ -1,9 +1,18 @@
-﻿using ItemChanger;
+﻿using DarknessRandomizer.IC;
+using ItemChanger;
+using ItemChanger.Tags;
 using RandomizerMod.RC;
 using System.Collections.Generic;
 
 namespace DarknessRandomizer.Rando
 {
+    internal class SlyLanternShardTag : Tag, IShopRequirementTag
+    {
+        public int RequiredShards;
+
+        public bool MeetsRequirement => ItemChangerMod.Modules.Get<DarknessRandomizerModule>().NumLanternShardsCollected >= RequiredShards;
+    }
+
     public static class Vanilla
     {
         public static void Setup()
@@ -46,10 +55,11 @@ namespace DarknessRandomizer.Rando
             {
                 var item = Finder.GetItem(RandoInterop.LanternShardItemName);
                 item.AddTag<CostTag>().Cost = Cost.NewGeoCost(300 + i * 100);
+                item.AddTag<SlyLanternShardTag>().RequiredShards = i;
                 placement.Add(item);
             }
             List<AbstractPlacement> placements = new() { placement };
-            ItemChangerMod.AddPlacements(placements);
+            ItemChangerMod.AddPlacements(placements, PlacementConflictResolution.MergeKeepingOld);
 
             orig(self, permaDeath, bossRush);
         }
