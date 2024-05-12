@@ -303,6 +303,7 @@ namespace DarknessRandomizer.IC
                     setName.setValue.Value = "INV_NAME_LANTERN";
                     setDesc.setValue.Value = "INV_DESC_LANTERN";
                     spriteRenderer.sprite = origSprite;
+                    return;
                 }
                 if (NumLanternShardsCollected == 0)
                 {
