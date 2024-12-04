@@ -392,15 +392,15 @@ namespace DarknessRandomizer.Rando
 
             foreach (var doorName in MoreDoors.Rando.RandoInterop.LS.EnabledDoorNames)
             {
-                var data = MoreDoors.Data.DoorData.GetFromJson(doorName);
+                var data = MoreDoors.Data.DoorData.GetDoor(doorName)!;
 
-                var leftGate = data.Door.LeftLocation.TransitionName;
+                var leftGate = data.Door!.LeftLocation!.TransitionName;
                 if (SceneName.IsTransition(leftGate, out var leftScene))
                 {
                     lmb.DoLogicEdit(new(leftGate, $"ORIG + ({RandoInterop.LanternTermName} | $DarknessLevel[{leftScene}] < 2)"));
                 }
 
-                var rightGate = data.Door.RightLocation.TransitionName;
+                var rightGate = data.Door!.RightLocation!.TransitionName;
                 if (SceneName.IsTransition(rightGate, out var rightScene))
                 {
                     lmb.DoLogicEdit(new(rightGate, $"ORIG + ({RandoInterop.LanternTermName} | $DarknessLevel[{rightScene}] < 2)"));
